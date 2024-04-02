@@ -1,0 +1,26 @@
+{
+  "0.1" = {
+    sha256 = "e3e0c01910de3e1f078e5d93fb8d5508c50b5941803d086bb9213bfe962bbfe7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/spirv-reflect-yaml-0.1-r0-1a9e23f81260ec65df0a9f7de4251331145c0b1fe6868588a845a21bb8f1fe7b.nix;
+        revNum = 0;
+        revTimestamp = "2022-07-04T21:19:47Z";
+        sha256 = "1a9e23f81260ec65df0a9f7de4251331145c0b1fe6868588a845a21bb8f1fe7b";
+        };
+      default = "r0";
+      };
+    };
+  "0.2" = {
+    sha256 = "2ba5706ea400ea7790732e47ee0e18cd5cb90d3cc61b70d42c88b8ce5d05f97d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/spirv-reflect-yaml-0.2-r0-f73c9ddf8941191cf10dac07353e45ee0badb1a94e451f7f2bcce2744cb3dd90.nix;
+        revNum = 0;
+        revTimestamp = "2022-09-04T10:41:54Z";
+        sha256 = "f73c9ddf8941191cf10dac07353e45ee0badb1a94e451f7f2bcce2744cb3dd90";
+        };
+      default = "r0";
+      };
+    };
+  }

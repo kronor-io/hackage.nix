@@ -1,0 +1,314 @@
+{
+  "0.1.0.0" = {
+    sha256 = "431f6df6631340f47619cc3724daecd52654f5511c9fab6ca04f35a8d15680ad";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.1.0.0-r0-4ae1449593ed3deb57f8d2326709523de68748f0df4d39c6fb4a9a4e00de1c75.nix;
+        revNum = 0;
+        revTimestamp = "2021-03-27T21:18:03Z";
+        sha256 = "4ae1449593ed3deb57f8d2326709523de68748f0df4d39c6fb4a9a4e00de1c75";
+        };
+      default = "r0";
+      };
+    };
+  "0.10.0.0" = {
+    sha256 = "9d22e36ed0ed4e5d00060450a7dbed9ce59ea53aa6df8330a42966c9aeeea87b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.10.0.0-r0-f040e50c0cfdb5081bf3cc89f6c25e3feef451332056b5a1cfdba0c7399baf42.nix;
+        revNum = 0;
+        revTimestamp = "2023-09-18T14:16:07Z";
+        sha256 = "f040e50c0cfdb5081bf3cc89f6c25e3feef451332056b5a1cfdba0c7399baf42";
+        };
+      default = "r0";
+      };
+    };
+  "0.10.0.1" = {
+    sha256 = "3ff1874b94dc4e20c014737b2d4e4085ea684a82b347be1ba6e85a5d2c6e3eeb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.10.0.1-r0-562eb8fdbaef68cacf4ac4d87af7e0f86101514363c9e5005483709cb5ba3b5a.nix;
+        revNum = 0;
+        revTimestamp = "2023-09-23T17:00:33Z";
+        sha256 = "562eb8fdbaef68cacf4ac4d87af7e0f86101514363c9e5005483709cb5ba3b5a";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.0.0" = {
+    sha256 = "135641f7c0d6738d4760575855d194ac261a874350cca0c0c3062505d57bdcb5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.0.0-r0-5e016377efb8019931e1fb152403d781d28f5fde55812643becc6f092beec22d.nix;
+        revNum = 0;
+        revTimestamp = "2021-03-28T22:31:29Z";
+        sha256 = "5e016377efb8019931e1fb152403d781d28f5fde55812643becc6f092beec22d";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.0.1" = {
+    sha256 = "9b2262f5fccf63a955c827678363fbdf658d6b3d33c6bdc4bcca2b9e76378858";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.0.1-r0-07bc327ed8b06b2216f83735ad903e926419ccab7cbb741b91b8a144bf5d302c.nix;
+        revNum = 0;
+        revTimestamp = "2021-03-30T20:48:27Z";
+        sha256 = "07bc327ed8b06b2216f83735ad903e926419ccab7cbb741b91b8a144bf5d302c";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.1.0" = {
+    sha256 = "340c36cdb825f7036c17295d2641359d6e2a664a80264d25dab15ddc1fdc32a7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.1.0-r0-df418a2d1a0e16d8b56560ba4b981d4fd47ee40ff2aab658b086e9aebed54118.nix;
+        revNum = 0;
+        revTimestamp = "2021-04-03T12:06:38Z";
+        sha256 = "df418a2d1a0e16d8b56560ba4b981d4fd47ee40ff2aab658b086e9aebed54118";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.2.0" = {
+    sha256 = "f133c2f4c41a5b0629824c4e5fe84688307487a0ec807d6c1fa69846db5702d0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.2.0-r0-c511c7502e4ca3858ccd2f4dad33350d8c60cb50c586fa73efb95de014427f42.nix;
+        revNum = 0;
+        revTimestamp = "2021-04-03T17:49:32Z";
+        sha256 = "c511c7502e4ca3858ccd2f4dad33350d8c60cb50c586fa73efb95de014427f42";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.2.1" = {
+    sha256 = "c5ad54075e63a663f3427c7cfe413caecd3e64e50e71543a5f1883d9ff9e7167";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.2.1-r0-4c87049f1e2f2625a58acb8d22b321c82957350fab429c016ec40542ea73c2f1.nix;
+        revNum = 0;
+        revTimestamp = "2021-04-06T19:51:09Z";
+        sha256 = "4c87049f1e2f2625a58acb8d22b321c82957350fab429c016ec40542ea73c2f1";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.2.2" = {
+    sha256 = "7fe2e2edc7f0ed59199d3572c26eba68ed65c98072815f65dfd81d22f8f93a5c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.2.2-r0-e71a69a2e2a634201e2c8bf2a3270f76e8668600a00b00a948ddf83a8d8446f4.nix;
+        revNum = 0;
+        revTimestamp = "2021-07-12T23:22:06Z";
+        sha256 = "e71a69a2e2a634201e2c8bf2a3270f76e8668600a00b00a948ddf83a8d8446f4";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.2.3" = {
+    sha256 = "92730ff24625d1e7500cffbe03cad4aa05aba5fe6c05800f224392f6b4081e14";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.2.3-r0-2c8751917da472bf2cc3e52c206a9005bf15c8c167f90145af7c32f871796146.nix;
+        revNum = 0;
+        revTimestamp = "2021-08-24T22:15:49Z";
+        sha256 = "2c8751917da472bf2cc3e52c206a9005bf15c8c167f90145af7c32f871796146";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.2.4" = {
+    sha256 = "6f86539be50a8fdd8f21a82a518ed1f392431b9412f08d586ea053529ed65fd4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.2.2.4-r0-1d51cc7b1fdb1b18d730478f1557674870e47b37abca1d824e5efe85ea49c570.nix;
+        revNum = 0;
+        revTimestamp = "2021-09-11T17:54:30Z";
+        sha256 = "1d51cc7b1fdb1b18d730478f1557674870e47b37abca1d824e5efe85ea49c570";
+        };
+      default = "r0";
+      };
+    };
+  "0.3.0.0" = {
+    sha256 = "0db854dd92cf6c0589e762cd42cbde36e67785816574fdfd3193adad96f6fbfe";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.3.0.0-r0-a56c7284c94ffeb03b53171a3ead1ad934802e2b1846ca9c83da0e3d4826a68e.nix;
+        revNum = 0;
+        revTimestamp = "2021-11-13T22:12:56Z";
+        sha256 = "a56c7284c94ffeb03b53171a3ead1ad934802e2b1846ca9c83da0e3d4826a68e";
+        };
+      default = "r0";
+      };
+    };
+  "0.3.0.1" = {
+    sha256 = "7600a6461cb0b3b03a25cabd79fb35dd51e38df29bd0f3e167f03cc2cd15ec58";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.3.0.1-r0-0c75567a24069a053081de3f23097d817a3a085d03899a38479da32bed281477.nix;
+        revNum = 0;
+        revTimestamp = "2021-11-13T22:29:59Z";
+        sha256 = "0c75567a24069a053081de3f23097d817a3a085d03899a38479da32bed281477";
+        };
+      default = "r0";
+      };
+    };
+  "0.3.0.2" = {
+    sha256 = "383c8b29df75b9a79a660b5dfc84dc620db94af2429cc7bf0b001391780e2665";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.3.0.2-r0-6641c4c9ab2c410452d828f2121500355c10a891eaea04852ae1146f6297cb6d.nix;
+        revNum = 0;
+        revTimestamp = "2021-11-14T03:07:14Z";
+        sha256 = "6641c4c9ab2c410452d828f2121500355c10a891eaea04852ae1146f6297cb6d";
+        };
+      default = "r0";
+      };
+    };
+  "0.4.0.0" = {
+    sha256 = "4ce76c0ca374a2bd767b6a1e439c22da57530894061249ebf15278a764cfd736";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.4.0.0-r0-d85f19aec87db2b8b107876bbe3fa18347b431b4a39801cfdf774b1a7eed76e0.nix;
+        revNum = 0;
+        revTimestamp = "2021-12-18T02:47:11Z";
+        sha256 = "d85f19aec87db2b8b107876bbe3fa18347b431b4a39801cfdf774b1a7eed76e0";
+        };
+      default = "r0";
+      };
+    };
+  "0.4.1.0" = {
+    sha256 = "3813eadc22c2a333e353d64550dc995f28b48263d5a737f5250a05a04adaf48d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.4.1.0-r0-6b4ace26f77bb498ebc2f38f4535883649aa2177f3b75325bbb9978236eb4120.nix;
+        revNum = 0;
+        revTimestamp = "2021-12-21T20:00:26Z";
+        sha256 = "6b4ace26f77bb498ebc2f38f4535883649aa2177f3b75325bbb9978236eb4120";
+        };
+      default = "r0";
+      };
+    };
+  "0.4.2.0" = {
+    sha256 = "33242393626297e7ecbc19d62225c0f73e6b3abd24ba1aa753ea36aa9de7b94e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.4.2.0-r0-b8bb19c9a9f2a1ffd72f56515b66ac7e0aad5c2a91489de849ce8ecfcf6dd55c.nix;
+        revNum = 0;
+        revTimestamp = "2021-12-21T20:35:55Z";
+        sha256 = "b8bb19c9a9f2a1ffd72f56515b66ac7e0aad5c2a91489de849ce8ecfcf6dd55c";
+        };
+      default = "r0";
+      };
+    };
+  "0.4.3.0" = {
+    sha256 = "b428ad963a1a25c7631fc1911938c4c1223923b9ffd71db3b0a692b53c8fc133";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.4.3.0-r0-8ba1d6164eebc9599e2c6438aade80f4a8667ae34711ec14bf6a5056e598267d.nix;
+        revNum = 0;
+        revTimestamp = "2022-01-22T00:34:26Z";
+        sha256 = "8ba1d6164eebc9599e2c6438aade80f4a8667ae34711ec14bf6a5056e598267d";
+        };
+      default = "r0";
+      };
+    };
+  "0.5.0.0" = {
+    sha256 = "dace88c3eb6ffef2b3fbaa0706af48442cd1b4547799990c0d47d3074914e250";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.5.0.0-r0-e2385ec2ad7d40106e67b7d598a914ef2b1942938f4d2e7568059b0a5ad201fa.nix;
+        revNum = 0;
+        revTimestamp = "2022-02-24T01:31:20Z";
+        sha256 = "e2385ec2ad7d40106e67b7d598a914ef2b1942938f4d2e7568059b0a5ad201fa";
+        };
+      default = "r0";
+      };
+    };
+  "0.6.0.0" = {
+    sha256 = "1af717e8a9f2377e308c4d7aa14c055456c8b39d9e914c6000251c2978340c7e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.6.0.0-r0-dba4f4b9bcb384570151f6a72951b338877d9bbc7fe1d2b30ccead250c6eb9b5.nix;
+        revNum = 0;
+        revTimestamp = "2022-03-10T22:17:42Z";
+        sha256 = "dba4f4b9bcb384570151f6a72951b338877d9bbc7fe1d2b30ccead250c6eb9b5";
+        };
+      default = "r0";
+      };
+    };
+  "0.6.0.1" = {
+    sha256 = "3ce109cd43a4f388bae3514476096473997d5c12f94839febc5021442b8bd604";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.6.0.1-r0-c4de63c23021e1c03b38669c32d6b77be0b95a7f18de114731bc3eeff3cd0a26.nix;
+        revNum = 0;
+        revTimestamp = "2022-03-10T22:29:15Z";
+        sha256 = "c4de63c23021e1c03b38669c32d6b77be0b95a7f18de114731bc3eeff3cd0a26";
+        };
+      default = "r0";
+      };
+    };
+  "0.7.0.0" = {
+    sha256 = "334d0f05fea3274d808d2df2b7ec4154d94e711511ca4e553a55301e52972e0f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.7.0.0-r0-1e5b5ed792375ba3589aa814fb3995e4621ec65b10fad43e0550c80a59aa7654.nix;
+        revNum = 0;
+        revTimestamp = "2022-06-11T17:57:12Z";
+        sha256 = "1e5b5ed792375ba3589aa814fb3995e4621ec65b10fad43e0550c80a59aa7654";
+        };
+      default = "r0";
+      };
+    };
+  "0.7.1.0" = {
+    sha256 = "e9ae72143a0af64affcfd4c67f42b52914c0e2aac6d785a28288c5a683a4f8db";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.7.1.0-r0-0443da93b19bd20d6a7920016b734496d8db42ff4e9b7fcc40a24d5d8d4e4e06.nix;
+        revNum = 0;
+        revTimestamp = "2022-09-18T20:00:02Z";
+        sha256 = "0443da93b19bd20d6a7920016b734496d8db42ff4e9b7fcc40a24d5d8d4e4e06";
+        };
+      default = "r0";
+      };
+    };
+  "0.7.2.0" = {
+    sha256 = "3e81bce0b7cca8f8efecf7e2bf08ef29b7bdd99fc1d64d3503f92a75d6e6ff6c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.7.2.0-r0-fee82e5b09337306b78459b8f933c6bcddddb07c4f4928e72c69eef3ac8f9d92.nix;
+        revNum = 0;
+        revTimestamp = "2022-10-09T23:21:57Z";
+        sha256 = "fee82e5b09337306b78459b8f933c6bcddddb07c4f4928e72c69eef3ac8f9d92";
+        };
+      default = "r0";
+      };
+    };
+  "0.8.0.0" = {
+    sha256 = "3fb36c3fd67fdf463ef3ecf67ca8721382e614935f71ff21f2e518c26dcdbcbe";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.8.0.0-r0-09f709d622078e1157d9b2723c952c0538095c48c3ad9379a5cc09d9c4049f86.nix;
+        revNum = 0;
+        revTimestamp = "2022-12-05T00:24:54Z";
+        sha256 = "09f709d622078e1157d9b2723c952c0538095c48c3ad9379a5cc09d9c4049f86";
+        };
+      default = "r0";
+      };
+    };
+  "0.9.0.0" = {
+    sha256 = "ae007ab71fb97163a659b711721e362701beace3e307067ce4f0960a96d98c7f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-log-di-0.9.0.0-r0-83e1094ac506530deec7397d21373460beab4319ecf42ef3c06c87f63c6e79a5.nix;
+        revNum = 0;
+        revTimestamp = "2022-12-29T00:51:04Z";
+        sha256 = "83e1094ac506530deec7397d21373460beab4319ecf42ef3c06c87f63c6e79a5";
+        };
+      default = "r0";
+      };
+    };
+  }
