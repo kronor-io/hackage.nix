@@ -1,0 +1,32 @@
+name: "Update hackage.nix"
+
+on:
+  push:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update-hackage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/install-nix-action@v15
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+          extra_nix_config: |
+            trusted-public-keys = hydra.iohk.io:f/Ea+s+dFdN+3Y/G+FDgSq+a5NEWhJGzdjvKNGv0/EQ= loony-tools:pr9m4BkM/5/eSTZlkQyRt57Jz7OMBxNSUiMC4FkcNfk= cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=
+            substituters = https://cache.iog.io https://cache.zw3rk.com https://cache.nixos.org/
+      - name: "Update hackage.nix"
+        run: |
+          export CABAL_DIR=$HOME/.cabal
+          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.cabal-install.ghc8107 -- v2-update
+          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.nix-tools.ghc8107.project.hsPkgs.nix-tools.components.exes.hackage-to-nix -- . $CABAL_DIR/packages/hackage.haskell.org/01-index.tar
+          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.update-index-state-hashes > index-state-hashes.nix
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "pranaysashank@users.noreply.github.com"
+          git config --local user.name "Pranay Sashank"
+          git add .
+          git commit -m "Automatic Update"
+          git push

@@ -1,0 +1,3 @@
+# Drop all index.tar.gz's
+*-index.tar.gz
+/index.tar.gz
