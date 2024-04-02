@@ -1,7 +1,6 @@
 name: "Update hackage.nix"
 
 on:
-  push:
   workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
@@ -26,7 +25,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --local user.email "pranaysashank@users.noreply.github.com"
-          git config --local user.name "Pranay Sashank"
+          git config --local user.name "pranaysashank"
           git add .
           git commit -m "Automatic Update"
           git push
