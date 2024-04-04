@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.4" = {
+    sha256 = "1d0541507937c3b4bbf575b55978d3b91e97be1ff81c7b7529004aa696ce637f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/free-alacarte-0.1.0.4-r0-4d21e2800a78987cf6ccbbded7d3eabec22946cf3cbb51e62608c49f4e9a6ca2.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-02T09:13:48Z";
+        sha256 = "4d21e2800a78987cf6ccbbded7d3eabec22946cf3cbb51e62608c49f4e9a6ca2";
+        };
+      default = "r0";
+      };
+    };
   }

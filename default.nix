@@ -400,6 +400,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "GLURaw" = import ./nix/_G_L_U_Raw.nix;
   "GLUT" = import ./nix/_G_L_U_T.nix;
   "GLUtil" = import ./nix/_G_L_Util.nix;
+  "GOST34112012-Hash" = import ./nix/_G_O_S_T34112012-_Hash.nix;
   "GPX" = import ./nix/_G_P_X.nix;
   "GPipe" = import ./nix/_G_Pipe.nix;
   "GPipe-Collada" = import ./nix/_G_Pipe-_Collada.nix;
@@ -7843,6 +7844,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hie-compat" = import ./nix/hie-compat.nix;
   "hie-core" = import ./nix/hie-core.nix;
   "hiedb" = import ./nix/hiedb.nix;
+  "hiedb-plugin" = import ./nix/hiedb-plugin.nix;
   "hieraclus" = import ./nix/hieraclus.nix;
   "hierarchical-clustering" = import ./nix/hierarchical-clustering.nix;
   "hierarchical-clustering-diagrams" = import ./nix/hierarchical-clustering-diagrams.nix;
@@ -13229,6 +13231,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "rcu" = import ./nix/rcu.nix;
   "rdf" = import ./nix/rdf.nix;
   "rdf4h" = import ./nix/rdf4h.nix;
+  "rdf4h-vocab-activitystreams" = import ./nix/rdf4h-vocab-activitystreams.nix;
   "rdioh" = import ./nix/rdioh.nix;
   "rds-data-codecs" = import ./nix/rds-data-codecs.nix;
   "rdtsc" = import ./nix/rdtsc.nix;

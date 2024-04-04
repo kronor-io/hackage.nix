@@ -323,4 +323,16 @@
       default = "r0";
       };
     };
+  "0.7.4" = {
+    sha256 = "6543090b3f8a7ad1e0ee20b7e72193ec0a6c0bec98ce917b0f99d2758998edd8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/rzk-0.7.4-r0-26bcf459a1635e3edd31fc6458e55293010709af80cd90dd22e39914a7443af8.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-02T06:26:39Z";
+        sha256 = "26bcf459a1635e3edd31fc6458e55293010709af80cd90dd22e39914a7443af8";
+        };
+      default = "r0";
+      };
+    };
   }

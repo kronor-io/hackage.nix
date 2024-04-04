@@ -95,4 +95,28 @@
       default = "r0";
       };
     };
+  "0.3.0.1" = {
+    sha256 = "637700ab6cb8380de2acd35d2f42f3fbc92e42a64a5f60618f60edc41436162e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yaya-hedgehog-0.3.0.1-r0-2c1c1813644d26d81dd15220ebda312c5bdb666cb2ce6fd620b9c874ed1ad107.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-03T14:55:14Z";
+        sha256 = "2c1c1813644d26d81dd15220ebda312c5bdb666cb2ce6fd620b9c874ed1ad107";
+        };
+      default = "r0";
+      };
+    };
+  "0.3.0.2" = {
+    sha256 = "faf83f9074587299e05b6796335d21d01c25e116fdcce7b54c1172822e5ed8cf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yaya-hedgehog-0.3.0.2-r0-165c91cf5241db13be33413125bf6437ce94ed701c42b263b2dd46aab74180be.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-03T14:56:14Z";
+        sha256 = "165c91cf5241db13be33413125bf6437ce94ed701c42b263b2dd46aab74180be";
+        };
+      default = "r0";
+      };
+    };
   }
