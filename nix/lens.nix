@@ -4208,7 +4208,13 @@
         revTimestamp = "2024-03-17T16:04:56Z";
         sha256 = "32b70e31fcae77c24c89888c7f8b56c760e1f80e95cfb9fb756179544f1bbfa2";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/lens-5.2.3-r4-769ec476f19cba23e5db678bc60aebb141360435cddb34b54d413efc43500f48.nix;
+        revNum = 4;
+        revTimestamp = "2024-04-05T20:10:48Z";
+        sha256 = "769ec476f19cba23e5db678bc60aebb141360435cddb34b54d413efc43500f48";
+        };
+      default = "r4";
       };
     };
   }
