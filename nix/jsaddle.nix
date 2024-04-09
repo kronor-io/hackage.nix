@@ -599,4 +599,16 @@
       default = "r0";
       };
     };
+  "0.9.9.0" = {
+    sha256 = "2a55a22905b38c3d7910085027a38ef9293f7b45620799f75a7e3716b939ed6e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-0.9.9.0-r0-8cd222174d3a22479c9c0507e279220ae33579bef797cde795c07d4c39c8a6ba.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-08T05:11:56Z";
+        sha256 = "8cd222174d3a22479c9c0507e279220ae33579bef797cde795c07d4c39c8a6ba";
+        };
+      default = "r0";
+      };
+    };
   }

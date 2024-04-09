@@ -251,4 +251,16 @@
       default = "r0";
       };
     };
+  "0.9.9.0" = {
+    sha256 = "c1fb0fb903bdeaa030c59948d77876a5582f3912d0ad87cbe113a0d013d20c3a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ghcjs-dom-jsffi-0.9.9.0-r0-1c399f5ab3838e8a5e361d4206ac20bcd76a6ef1e6ec92ac42d5592eb05072af.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-08T05:23:42Z";
+        sha256 = "1c399f5ab3838e8a5e361d4206ac20bcd76a6ef1e6ec92ac42d5592eb05072af";
+        };
+      default = "r0";
+      };
+    };
   }
