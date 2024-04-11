@@ -128,7 +128,13 @@
         revTimestamp = "2023-11-14T01:19:31Z";
         sha256 = "6c045ceb28a533fb0216698f2f4e94e646c8c9f851c2b0a281d849187d03c428";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/cborg-json-0.2.6.0-r1-5ba8729c8a1961ecb593524d9ac0bd6c262528f63ac7d0d0b55a64724305f92d.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-10T11:48:27Z";
+        sha256 = "5ba8729c8a1961ecb593524d9ac0bd6c262528f63ac7d0d0b55a64724305f92d";
+        };
+      default = "r1";
       };
     };
   }
