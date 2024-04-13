@@ -8,7 +8,13 @@
         revTimestamp = "2008-04-12T15:51:00Z";
         sha256 = "208b7418965b1ad9714d8fb15a40bd9389ce2f3206801365bf65e92c491ff2a9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.1.20080412-r1-90dbc35906f42a628c79470c8d4d0f9feefe7c08408269d64e889130e8938d88.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:35:13Z";
+        sha256 = "90dbc35906f42a628c79470c8d4d0f9feefe7c08408269d64e889130e8938d88";
+        };
+      default = "r1";
       };
     };
   "0.1.20080413" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2008-04-14T19:53:53Z";
         sha256 = "cfb93aa65f8103cdd929d84624e5c61cb5d954889029d5c15ea33746980e27c1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.1.20080413-r1-464522bec9cf118504a9e2488a39eecc1f528f08f8746efa386b005921914769.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:31:04Z";
+        sha256 = "464522bec9cf118504a9e2488a39eecc1f528f08f8746efa386b005921914769";
+        };
+      default = "r1";
       };
     };
   "0.1.20090606" = {
@@ -116,7 +128,13 @@
         revTimestamp = "2012-02-09T23:38:36Z";
         sha256 = "51a451d8e930de475ca6c2a9923a3031ff49e99848881c4f6b31a184c88b6fd6";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.2.0-r1-7a29b1c0f29705a2493c4d23c317dc76f6d2386ef85093fef1a3990041ee72b5.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:24:37Z";
+        sha256 = "7a29b1c0f29705a2493c4d23c317dc76f6d2386ef85093fef1a3990041ee72b5";
+        };
+      default = "r1";
       };
     };
   "0.2.1" = {
@@ -128,7 +146,13 @@
         revTimestamp = "2012-03-24T07:19:58Z";
         sha256 = "0b7fca2336e52544f0e539839aaee21a3a5beb484df2f671926058fc5c338670";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.2.1-r1-5630d2f3a6f69bfbaeca61853c05dfd6e1666540692e5f8fede6ea3199345f94.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:15:25Z";
+        sha256 = "5630d2f3a6f69bfbaeca61853c05dfd6e1666540692e5f8fede6ea3199345f94";
+        };
+      default = "r1";
       };
     };
   "0.2.10" = {
@@ -206,7 +230,13 @@
         revTimestamp = "2012-11-25T09:56:01Z";
         sha256 = "578db615f1c77307bc8b36b85261bf7c2f7b167ba042161a5f544be5c8c827fe";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.2.6-r1-a095896455896b5990e17f175b0bb4bdffee7d4a59311e15e86b1fe9423e5d7c.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:12:39Z";
+        sha256 = "a095896455896b5990e17f175b0bb4bdffee7d4a59311e15e86b1fe9423e5d7c";
+        };
+      default = "r1";
       };
     };
   "0.2.6.5" = {
@@ -410,7 +440,13 @@
         revTimestamp = "2018-06-05T23:15:35Z";
         sha256 = "6dca6329bed16e71d6094c9e0f6e3c98fc4f5011e774510628f862b1f13e1ad0";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/LambdaHack-0.8.0.0-r2-7287d9c902534ed1d16f81b8c349fd42450fc214138ac993a0420b1353634f7d.nix;
+        revNum = 2;
+        revTimestamp = "2024-04-12T07:45:16Z";
+        sha256 = "7287d9c902534ed1d16f81b8c349fd42450fc214138ac993a0420b1353634f7d";
+        };
+      default = "r2";
       };
     };
   "0.8.1.0" = {
@@ -422,7 +458,13 @@
         revTimestamp = "2018-06-07T12:13:34Z";
         sha256 = "2ee983c729a65777fd38fa0e4c1521c20fce6b6acbd6cac659bba8781bd9ca6c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.8.1.0-r1-68b0e6d8404a33bda0f3e101a44b26490685bd8efde50f00584bfbe42640735c.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:45:01Z";
+        sha256 = "68b0e6d8404a33bda0f3e101a44b26490685bd8efde50f00584bfbe42640735c";
+        };
+      default = "r1";
       };
     };
   "0.8.1.1" = {
@@ -434,7 +476,13 @@
         revTimestamp = "2018-06-09T03:20:47Z";
         sha256 = "3f820f4353cb5fcbebf006ba2471f041f9cee61a8f9fae6ca64bd54ec1d1dbaa";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.8.1.1-r1-2370dcb2dbc002657a743d0f402e9d86de8c13df9206a29e1a61b5897c403e6a.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:44:42Z";
+        sha256 = "2370dcb2dbc002657a743d0f402e9d86de8c13df9206a29e1a61b5897c403e6a";
+        };
+      default = "r1";
       };
     };
   "0.8.1.2" = {
@@ -446,7 +494,13 @@
         revTimestamp = "2018-06-10T12:15:13Z";
         sha256 = "e178254fae73db7275c89e6c389554f2ef7b8aca6722998cb76ab89b2416532e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LambdaHack-0.8.1.2-r1-7baf32458cdc9ade028ba32c3771b9a259f1a8d9245b6c682cc2efd47789d9af.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-12T07:44:19Z";
+        sha256 = "7baf32458cdc9ade028ba32c3771b9a259f1a8d9245b6c682cc2efd47789d9af";
+        };
+      default = "r1";
       };
     };
   "0.8.3.0" = {
@@ -464,7 +518,13 @@
         revTimestamp = "2020-06-24T14:27:41Z";
         sha256 = "25eaae15a0f484ec6843ca391ffb6fb448a3e86660dc111819926aa9f5ad282a";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/LambdaHack-0.8.3.0-r2-782cff9f9659cdc9071614f61f183e6ae34214d5e88e9e48c3e68ac543c0031e.nix;
+        revNum = 2;
+        revTimestamp = "2024-04-12T07:07:04Z";
+        sha256 = "782cff9f9659cdc9071614f61f183e6ae34214d5e88e9e48c3e68ac543c0031e";
+        };
+      default = "r2";
       };
     };
   "0.9.3.0" = {
