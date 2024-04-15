@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.3.0" = {
+    sha256 = "ab40f61d6d3823b5cf96ff730076373e86d37da4536ba10e81c11fa45a722581";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/amqp-streamly-0.3.0-r0-7377fb533b7fe1fb513def2c44613d796bcb40ce3cb7de43ddfee2a21a830a4d.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-14T10:44:09Z";
+        sha256 = "7377fb533b7fe1fb513def2c44613d796bcb40ce3cb7de43ddfee2a21a830a4d";
+        };
+      default = "r0";
+      };
+    };
   }

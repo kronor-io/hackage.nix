@@ -74,7 +74,13 @@
         revTimestamp = "2024-02-09T10:15:17Z";
         sha256 = "9ad0b83dcc0c9543a9b31213a020145e5a5d03580008f7620201997be258896a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/retroclash-lib-0.1.2.2-r1-4ddf6efb9c8d8da98333ecebdd9d0aee0d99c40767721c16879e80f377175438.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-14T06:25:45Z";
+        sha256 = "4ddf6efb9c8d8da98333ecebdd9d0aee0d99c40767721c16879e80f377175438";
+        };
+      default = "r1";
       };
     };
   }
