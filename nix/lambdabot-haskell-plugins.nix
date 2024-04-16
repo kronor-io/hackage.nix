@@ -236,7 +236,13 @@
         revTimestamp = "2023-11-10T16:55:17Z";
         sha256 = "fdefb912c6932b6c595af4d8b54a9cf60dca08057abb5434f03134bc9f206c10";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lambdabot-haskell-plugins-5.3.1.2-r1-d075a81b0df20f4809d1fe389ab5ac8ff2489761784632144e37b42a76240a20.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-15T12:32:38Z";
+        sha256 = "d075a81b0df20f4809d1fe389ab5ac8ff2489761784632144e37b42a76240a20";
+        };
+      default = "r1";
       };
     };
   }

@@ -182,7 +182,13 @@
         revTimestamp = "2023-11-10T16:55:44Z";
         sha256 = "1be229245ca2d9544d3dc5ccd33ca753b43e232466e56d6d3715b8dfb30611d3";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lambdabot-reference-plugins-5.3.1.2-r1-cda63d7ce367cbd231de020a4503cc8969e791cd3cf048761db62d98ef84f4e9.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-15T12:34:05Z";
+        sha256 = "cda63d7ce367cbd231de020a4503cc8969e791cd3cf048761db62d98ef84f4e9";
+        };
+      default = "r1";
       };
     };
   }

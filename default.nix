@@ -7044,6 +7044,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "h-reversi" = import ./nix/h-reversi.nix;
   "h2048" = import ./nix/h2048.nix;
   "h2c" = import ./nix/h2c.nix;
+  "h3spec" = import ./nix/h3spec.nix;
   "hArduino" = import ./nix/h_Arduino.nix;
   "hBDD" = import ./nix/h_B_D_D.nix;
   "hBDD-CMUBDD" = import ./nix/h_B_D_D-_C_M_U_B_D_D.nix;
@@ -10231,6 +10232,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "lsp-client" = import ./nix/lsp-client.nix;
   "lsp-test" = import ./nix/lsp-test.nix;
   "lsp-types" = import ./nix/lsp-types.nix;
+  "lsql-csv" = import ./nix/lsql-csv.nix;
   "lss" = import ./nix/lss.nix;
   "lsystem" = import ./nix/lsystem.nix;
   "ltext" = import ./nix/ltext.nix;
