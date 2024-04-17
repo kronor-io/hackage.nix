@@ -56,7 +56,13 @@
         revTimestamp = "2023-12-04T20:22:12Z";
         sha256 = "0ae080f4a41238182415c5dab24010f7580991f7e383c35bca8ccd17f5194d3a";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/phatsort-0.6.0.0-r4-e7ae7410adedcfdd97c367697da4aee386244bee58dcbd15e49f5822b0a5b160.nix;
+        revNum = 4;
+        revTimestamp = "2024-04-16T22:43:22Z";
+        sha256 = "e7ae7410adedcfdd97c367697da4aee386244bee58dcbd15e49f5822b0a5b160";
+        };
+      default = "r4";
       };
     };
   }
