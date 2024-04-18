@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.1" = {
+    sha256 = "e19717bdceea7be7e56680d1337f33e9daa81ad19a072e506f80c5346319aa25";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/resourcet-extra-0.1.1-r0-3c1e38af8693228eaefa085a9bbc1de4f079bbbcab82a20b2f061af7844d88b0.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-17T17:36:00Z";
+        sha256 = "3c1e38af8693228eaefa085a9bbc1de4f079bbbcab82a20b2f061af7844d88b0";
+        };
+      default = "r0";
+      };
+    };
   }

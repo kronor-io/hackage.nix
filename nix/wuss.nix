@@ -419,4 +419,16 @@
       default = "r0";
       };
     };
+  "2.0.1.8" = {
+    sha256 = "f3b68294968e7fd67d7f0c57a85d02539faa33434251b4fc93befb103221b0dd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wuss-2.0.1.8-r0-5aa58c0c95d76e1edb9386479816beb3d8e091eec01c7e6e26635987d4f9beb7.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-17T01:31:33Z";
+        sha256 = "5aa58c0c95d76e1edb9386479816beb3d8e091eec01c7e6e26635987d4f9beb7";
+        };
+      default = "r0";
+      };
+    };
   }
