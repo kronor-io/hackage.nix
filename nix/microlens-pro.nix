@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.2.0.1" = {
+    sha256 = "d57a80271f53203b1156513c93192d4d2732c6db20213ab19ebc2bea7c2d6b99";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/microlens-pro-0.2.0.1-r0-e98d97d98d16d3cf65ca53460e95df9865f10a38768ad5d95fbc41903cffae00.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-19T05:38:40Z";
+        sha256 = "e98d97d98d16d3cf65ca53460e95df9865f10a38768ad5d95fbc41903cffae00";
+        };
+      default = "r0";
+      };
+    };
   }
