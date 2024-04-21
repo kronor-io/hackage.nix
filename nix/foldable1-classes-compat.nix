@@ -32,7 +32,13 @@
         revTimestamp = "2023-09-30T12:15:50Z";
         sha256 = "fb4b3cedd33d5c22c573c39baa930c78eaa4feb22d43abb680c3149f8ab9fa4e";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/foldable1-classes-compat-0.1-r5-5054fb2451852fa38bbb374a47829c061328b86967232433924db5028a9de903.nix;
+        revNum = 5;
+        revTimestamp = "2024-04-20T19:05:02Z";
+        sha256 = "5054fb2451852fa38bbb374a47829c061328b86967232433924db5028a9de903";
+        };
+      default = "r5";
       };
     };
   }

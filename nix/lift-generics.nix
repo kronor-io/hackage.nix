@@ -134,7 +134,13 @@
         revTimestamp = "2023-09-30T12:51:46Z";
         sha256 = "5ed9e21b1df63cb88d887c9238118303983b189b484119dafadb05fea17ca85f";
         };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/lift-generics-0.2.1-r7-780848d1322fe9454d9472fbf19450b79643f7021f136e7736f8200a1dd0c1ec.nix;
+        revNum = 7;
+        revTimestamp = "2024-04-20T12:06:45Z";
+        sha256 = "780848d1322fe9454d9472fbf19450b79643f7021f136e7736f8200a1dd0c1ec";
+        };
+      default = "r7";
       };
     };
   }

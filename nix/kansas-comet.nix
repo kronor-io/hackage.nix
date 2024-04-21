@@ -266,7 +266,13 @@
         revTimestamp = "2024-03-11T19:49:39Z";
         sha256 = "ec5f6de718992003d036b2b64b5de08388a38b89f7584e5ee6207f762b5134e2";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/kansas-comet-0.4.2-r3-fbb9f8af0a4e606a8acee114026bf5cb42edf07dc1708e0340e4dad6d3269e03.nix;
+        revNum = 3;
+        revTimestamp = "2024-04-20T14:45:16Z";
+        sha256 = "fbb9f8af0a4e606a8acee114026bf5cb42edf07dc1708e0340e4dad6d3269e03";
+        };
+      default = "r3";
       };
     };
   }

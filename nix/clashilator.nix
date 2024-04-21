@@ -65,4 +65,16 @@
       default = "r0";
       };
     };
+  "0.1.4" = {
+    sha256 = "9609a3e2191b8f204321ec5a7dfa91aecb9a38570551810e2ba99eedba664188";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/clashilator-0.1.4-r0-fc7109a1f7f5ce63a8e03bbf2481bcca3995675a05f5e64fea3d6cd5f1a20d86.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-20T10:21:37Z";
+        sha256 = "fc7109a1f7f5ce63a8e03bbf2481bcca3995675a05f5e64fea3d6cd5f1a20d86";
+        };
+      default = "r0";
+      };
+    };
   }

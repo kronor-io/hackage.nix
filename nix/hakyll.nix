@@ -1604,7 +1604,13 @@
         revTimestamp = "2024-03-30T17:12:30Z";
         sha256 = "8bf54daf61f20e6a92ef2e301c145acd90643bb714ee7b12812d37f0b54cde06";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/hakyll-4.16.2.0-r6-5c69aeac558050c94763a5630cfb60ea40f67bdc9b0e9796fbf7fc9564d4aadd.nix;
+        revNum = 6;
+        revTimestamp = "2024-04-20T18:34:54Z";
+        sha256 = "5c69aeac558050c94763a5630cfb60ea40f67bdc9b0e9796fbf7fc9564d4aadd";
+        };
+      default = "r6";
       };
     };
   "4.2.0.0" = {
