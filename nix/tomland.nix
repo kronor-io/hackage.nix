@@ -308,7 +308,13 @@
         revTimestamp = "2023-11-02T16:10:30Z";
         sha256 = "887dc39a8c9819deb8fcb6fde72e87dad4c94108b1736a5bf7215ccf3117bd0f";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/tomland-1.3.3.2-r3-8a7924fb8ced9d82810f603cf195cd26b89a248b685ec21b99ffb28df3ea7c1a.nix;
+        revNum = 3;
+        revTimestamp = "2024-04-21T11:59:37Z";
+        sha256 = "8a7924fb8ced9d82810f603cf195cd26b89a248b685ec21b99ffb28df3ea7c1a";
+        };
+      default = "r3";
       };
     };
   }
