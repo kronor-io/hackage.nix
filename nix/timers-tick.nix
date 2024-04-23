@@ -194,7 +194,13 @@
         revTimestamp = "2023-04-23T17:25:59Z";
         sha256 = "b8def97226d770575c761fd90d9375862d6f04b0b983989e1d124e0d02aa163a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timers-tick-0.5.0.4-r1-8dfd2c43645e2f248bc8383454c4c1bf2f18f2d93017254c5226b93a5b668ed0.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-22T19:41:19Z";
+        sha256 = "8dfd2c43645e2f248bc8383454c4c1bf2f18f2d93017254c5226b93a5b668ed0";
+        };
+      default = "r1";
       };
     };
   }

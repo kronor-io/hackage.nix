@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "1.2.1.0" = {
+    sha256 = "513801c325ee5d3dfe1729a14ed01f364789777a2f3cfc0e1620ef96df48bbcb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/extism-manifest-1.2.1.0-r0-00d9934e67fa1d2c0967b3086cc0d56772c46c7832acdd97b6b7a731ef407314.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-22T21:06:15Z";
+        sha256 = "00d9934e67fa1d2c0967b3086cc0d56772c46c7832acdd97b6b7a731ef407314";
+        };
+      default = "r0";
+      };
+    };
   }

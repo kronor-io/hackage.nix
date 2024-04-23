@@ -446,7 +446,13 @@
         revTimestamp = "2023-12-04T21:54:55Z";
         sha256 = "58961d1f42538955f562ea6de9087ef675f7d930ab651137d5568140474b610d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/mueval-0.9.4-r1-02e24a736362c91f786daf6a40633ccf0fa6d95a5747dbdd39a885353e563590.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-22T14:51:18Z";
+        sha256 = "02e24a736362c91f786daf6a40633ccf0fa6d95a5747dbdd39a885353e563590";
+        };
+      default = "r1";
       };
     };
   }

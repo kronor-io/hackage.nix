@@ -101,4 +101,16 @@
       default = "r0";
       };
     };
+  "0.12.5" = {
+    sha256 = "3ff2b5a377c98ee2db605f8c05ba72a6f325847e40f1d0f4ef56a312275e6f3e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yaml-streamly-0.12.5-r0-61b4d2d16c4be3aa2ebcc0af3d1a15e0c8302d14da3b91faf3b181573acd35c5.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-22T15:33:05Z";
+        sha256 = "61b4d2d16c4be3aa2ebcc0af3d1a15e0c8302d14da3b91faf3b181573acd35c5";
+        };
+      default = "r0";
+      };
+    };
   }

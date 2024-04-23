@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "0.2.0" = {
+    sha256 = "fca7a825be05e20c22808a2f2f5076ac037a7b372f192bc5065c82c3d86daf22";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/libsecp256k1-0.2.0-r0-1c64fa4f06a2681376263c8ce426339e32cdf30dd95b095c037505a1a351db95.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-22T18:08:03Z";
+        sha256 = "1c64fa4f06a2681376263c8ce426339e32cdf30dd95b095c037505a1a351db95";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -116,7 +116,19 @@
         revTimestamp = "2024-04-19T06:06:30Z";
         sha256 = "5ce3bad4ceb520b1fd657696601a2b35af95a58f71125fbecb2e2d571e81d92d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/grisette-0.5.0.1-r1-971e4f22569f81ba17b420ddbf38f7edaf73aee3ef44229e60e1f1f6751dc3ad.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-22T19:46:13Z";
+        sha256 = "971e4f22569f81ba17b420ddbf38f7edaf73aee3ef44229e60e1f1f6751dc3ad";
+        };
+      r2 = {
+        nix = import ../hackage/grisette-0.5.0.1-r2-8d05b1b6115cd71847ff8fbb50f7d5125ecbcd5d887994dde083f51d6192306a.nix;
+        revNum = 2;
+        revTimestamp = "2024-04-22T19:47:55Z";
+        sha256 = "8d05b1b6115cd71847ff8fbb50f7d5125ecbcd5d887994dde083f51d6192306a";
+        };
+      default = "r2";
       };
     };
   }

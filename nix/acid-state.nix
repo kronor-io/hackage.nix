@@ -824,7 +824,13 @@
         revTimestamp = "2023-08-03T15:55:49Z";
         sha256 = "fc5d083b9ba8e2913109be4d7743bd87b80e5c695f59ba771975d853035c8627";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/acid-state-0.16.1.3-r1-4d41284affb73a703e4c4899093a619b6756ddcb44e1d7e319556de1c301a29e.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-22T14:44:52Z";
+        sha256 = "4d41284affb73a703e4c4899093a619b6756ddcb44e1d7e319556de1c301a29e";
+        };
+      default = "r1";
       };
     };
   "0.2" = {
