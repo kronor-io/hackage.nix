@@ -3659,4 +3659,16 @@
       default = "r0";
       };
     };
+  "1.5.1" = {
+    sha256 = "223d51ce7877f1ad868a3f2b98b09b9af6725c75fe8a110bb27280c20f213d81";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haskoin-store-1.5.1-r0-ac28797d6633040973b811a43aaa4900acbc24c42f32ad36291dd0933410df44.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-23T11:00:14Z";
+        sha256 = "ac28797d6633040973b811a43aaa4900acbc24c42f32ad36291dd0933410df44";
+        };
+      default = "r0";
+      };
+    };
   }

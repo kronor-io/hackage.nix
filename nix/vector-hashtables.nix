@@ -116,7 +116,13 @@
         revTimestamp = "2023-12-13T20:26:59Z";
         sha256 = "e11585296b395f78c0e75e7642c9a5461dd91064a28e62b79ac2a079776f4807";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/vector-hashtables-0.1.1.4-r1-0c9ec358b8fe1df315374a161b5de825eaa706495147c7316fa140f13e337ad8.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-23T13:08:36Z";
+        sha256 = "0c9ec358b8fe1df315374a161b5de825eaa706495147c7316fa140f13e337ad8";
+        };
+      default = "r1";
       };
     };
   }

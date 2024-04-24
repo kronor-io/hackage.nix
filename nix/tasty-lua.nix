@@ -176,7 +176,13 @@
         revTimestamp = "2024-01-18T17:17:00Z";
         sha256 = "4dda0a47b8801d00c3adf454fe0d9fd95e1675d1726dfb63ec489e82ecb3ad03";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tasty-lua-1.1.1-r1-16be526d9b5ddff7d33bc0a3a3f7820a415a6a6bdcbe5ee473ad9e0c1bf212a0.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-23T09:55:53Z";
+        sha256 = "16be526d9b5ddff7d33bc0a3a3f7820a415a6a6bdcbe5ee473ad9e0c1bf212a0";
+        };
+      default = "r1";
       };
     };
   }

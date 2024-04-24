@@ -56,7 +56,13 @@
         revTimestamp = "2023-08-01T15:26:09Z";
         sha256 = "9c73ac61d1247b0ff8704666adccfa66dcb3fccd613ecc16fd000a1cb60f3117";
         };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/brotli-streams-0.0.0.0-r9-45fde1fcca67f9d4d3f32cc0884cf27dab22a5a56d8d3775c8690f2f43031ee6.nix;
+        revNum = 9;
+        revTimestamp = "2024-04-23T07:39:54Z";
+        sha256 = "45fde1fcca67f9d4d3f32cc0884cf27dab22a5a56d8d3775c8690f2f43031ee6";
+        };
+      default = "r9";
       };
     };
   }
