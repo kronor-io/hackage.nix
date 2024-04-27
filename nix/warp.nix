@@ -4322,7 +4322,13 @@
         revTimestamp = "2024-01-22T03:23:28Z";
         sha256 = "d356ab622dc335d9717aaed8e69877a40d8e265053a88f3467b298da0793d9a2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/warp-3.4.0-r1-6583a5adb2db50c350c39b03d0bfbb8542370af0058f654dbe2094baacdcaff2.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-26T02:50:04Z";
+        sha256 = "6583a5adb2db50c350c39b03d0bfbb8542370af0058f654dbe2094baacdcaff2";
+        };
+      default = "r1";
       };
     };
   }
