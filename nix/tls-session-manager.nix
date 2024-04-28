@@ -122,7 +122,13 @@
         revTimestamp = "2024-03-01T03:32:12Z";
         sha256 = "49277591521ded97e6a1d80026e4c9c98318be7526796d21a4aedc67f4012d81";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tls-session-manager-0.0.5-r2-dbc0d7c38657dde69d1148813c26b684aebac038f1826db16ec331f9811795e2.nix;
+        revNum = 2;
+        revTimestamp = "2024-04-27T10:55:46Z";
+        sha256 = "dbc0d7c38657dde69d1148813c26b684aebac038f1826db16ec331f9811795e2";
+        };
+      default = "r2";
       };
     };
   }
