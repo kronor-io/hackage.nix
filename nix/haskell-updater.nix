@@ -383,4 +383,16 @@
       default = "r0";
       };
     };
+  "1.3.3" = {
+    sha256 = "e33aa4af002065346eb270b2260f880c6d128eda58b062d4d52090152f4d101a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haskell-updater-1.3.3-r0-53bc464d68495c81e15b1bbee09279db5ff14b4e9c84b5ff13ca38d3cba81907.nix;
+        revNum = 0;
+        revTimestamp = "2024-04-28T21:10:00Z";
+        sha256 = "53bc464d68495c81e15b1bbee09279db5ff14b4e9c84b5ff13ca38d3cba81907";
+        };
+      default = "r0";
+      };
+    };
   }
