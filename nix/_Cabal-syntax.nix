@@ -50,7 +50,13 @@
         revTimestamp = "2024-04-26T17:44:54Z";
         sha256 = "0e5e999809c9610590b34efca309fc119e02a32452d38a34d797f49e42ea4af1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/Cabal-syntax-3.12.0.0-r1-f0addf18b89da27face98be54cd8f072ba38951ee5a98d9b0c53a865ea28a4ea.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-29T14:26:12Z";
+        sha256 = "f0addf18b89da27face98be54cd8f072ba38951ee5a98d9b0c53a865ea28a4ea";
+        };
+      default = "r1";
       };
     };
   "3.6.0.0" = {
