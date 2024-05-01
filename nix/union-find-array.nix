@@ -56,7 +56,13 @@
         revTimestamp = "2024-04-29T13:21:20Z";
         sha256 = "28196798c4350062421421561f3c5f8535ab4724de8edc40e05815c370c1979c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/union-find-array-0.1.0.4-r1-1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621.nix;
+        revNum = 1;
+        revTimestamp = "2024-04-30T10:44:19Z";
+        sha256 = "1522d9b8f34f16340455ca0b80c7ead2a54bf703329e2fddd9a3cae1ce9b3621";
+        };
+      default = "r1";
       };
     };
   }
