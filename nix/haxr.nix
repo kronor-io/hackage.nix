@@ -518,7 +518,13 @@
         revTimestamp = "2024-04-16T23:33:34Z";
         sha256 = "991f7eda7b960f5d0078051177edc232e9c96a65d783b52fe2526c9a9c9f24a8";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/haxr-3000.11.5-r4-25d7c299705731a23efe04c071e98bd011356a1227fcffd3fd8891ecf0d79591.nix;
+        revNum = 4;
+        revTimestamp = "2024-05-01T18:25:49Z";
+        sha256 = "25d7c299705731a23efe04c071e98bd011356a1227fcffd3fd8891ecf0d79591";
+        };
+      default = "r4";
       };
     };
   "3000.2.0" = {
