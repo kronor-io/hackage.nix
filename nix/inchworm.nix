@@ -104,7 +104,13 @@
         revTimestamp = "2021-11-07T10:34:11Z";
         sha256 = "beb33061e2521f456e13bfc74b9ff3a627270adeea9e09c8059710f9ac98aa75";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/inchworm-1.1.1.2-r2-0a95be3534b9928441a00503d2b67c959d0c886616075acc0c0e303cdc8dfe55.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-02T10:34:03Z";
+        sha256 = "0a95be3534b9928441a00503d2b67c959d0c886616075acc0c0e303cdc8dfe55";
+        };
+      default = "r2";
       };
     };
   }

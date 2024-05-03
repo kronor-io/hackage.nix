@@ -32,7 +32,13 @@
         revTimestamp = "2023-09-17T13:52:41Z";
         sha256 = "06174bf22c01107c0508d393825b897f5391cfc28849712294b000509c1383c9";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/SpatialMath-0.2.7.1-r2-c19a43c1d9f1a73c91633bfc1431230973f8a16d7050172faa29f637c90214eb.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-02T16:09:24Z";
+        sha256 = "c19a43c1d9f1a73c91633bfc1431230973f8a16d7050172faa29f637c90214eb";
+        };
+      default = "r2";
       };
     };
   }

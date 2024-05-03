@@ -128,7 +128,13 @@
         revTimestamp = "2023-06-27T19:39:04Z";
         sha256 = "8f3caca8ff809c14ebbec791bd6cc1ca2767232c3ddcb57923d7ce0dec73f5bc";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/aeson-optics-1.2.1-r1-f0dc0ffba23baed6ee93e3ca91e1630c4da38eee46c56c28f3b264f376c361c0.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-02T14:01:46Z";
+        sha256 = "f0dc0ffba23baed6ee93e3ca91e1630c4da38eee46c56c28f3b264f376c361c0";
+        };
+      default = "r1";
       };
     };
   }
