@@ -71,4 +71,16 @@
       default = "r0";
       };
     };
+  "0.1.4.0" = {
+    sha256 = "1f092e83cc058cbe2af0ca9c2e10800c019d16c93ca414c1473102c90757abfe";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ridley-extras-0.1.4.0-r0-4f3bdbbd947f5d8fe14790ed9d4204fa0929eb07f4920d1afe84fd42b09cb947.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-03T09:47:05Z";
+        sha256 = "4f3bdbbd947f5d8fe14790ed9d4204fa0929eb07f4920d1afe84fd42b09cb947";
+        };
+      default = "r0";
+      };
+    };
   }
