@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.2.2" = {
+    sha256 = "ec19e149baddebf33826bd540b7d29b041faa1cb0b91e6608f62c0e990877592";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pagure-cli-0.2.2-r0-1cbb488de198f7f0c391ee2f2c2ae32fd0ea499219acd69927adea7403beb967.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-06T13:46:43Z";
+        sha256 = "1cbb488de198f7f0c391ee2f2c2ae32fd0ea499219acd69927adea7403beb967";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -962,7 +962,13 @@
         revTimestamp = "2019-12-29T07:20:55Z";
         sha256 = "7d6fd2e6f737890857aa60be1ba2828093c057db272e16180e99cd51566fead7";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tmp-postgres-1.34.1.0-r1-a08a5fc554cfe19def3cb25bdbdb48456ab217669633ac01973231e1402d27cb.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-06T14:14:54Z";
+        sha256 = "a08a5fc554cfe19def3cb25bdbdb48456ab217669633ac01973231e1402d27cb";
+        };
+      default = "r1";
       };
     };
   "1.4.0.0" = {
