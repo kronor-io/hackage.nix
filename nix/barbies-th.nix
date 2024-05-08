@@ -56,7 +56,13 @@
         revTimestamp = "2023-12-12T07:39:57Z";
         sha256 = "fcf34351fccc71cebb8ab8c6774198e1c1c5985cf5309fd518c786934f6be848";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/barbies-th-0.1.11-r1-df9648ae23b2a97f7766fae2ca923b7554b53775925ba15fbcb062cc837e1040.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-07T09:06:30Z";
+        sha256 = "df9648ae23b2a97f7766fae2ca923b7554b53775925ba15fbcb062cc837e1040";
+        };
+      default = "r1";
       };
     };
   "0.1.2" = {
