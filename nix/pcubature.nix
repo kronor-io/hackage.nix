@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.2.0.0" = {
+    sha256 = "6f6fa09941e3e5fcd4b5d049b6e23d2d0f11691de97d19e4f3ba529ba7dd2d43";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pcubature-0.2.0.0-r0-5a2586d7d9591843a72417ea6a01cbc500a653d9c293aebbcd463b715c5303ca.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-08T09:29:11Z";
+        sha256 = "5a2586d7d9591843a72417ea6a01cbc500a653d9c293aebbcd463b715c5303ca";
+        };
+      default = "r0";
+      };
+    };
   }
