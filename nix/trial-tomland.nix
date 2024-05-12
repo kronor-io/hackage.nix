@@ -26,7 +26,13 @@
         revTimestamp = "2023-11-06T10:57:40Z";
         sha256 = "c10c5c3f94e3dcfcad4a66cf70682ace77d5381596aff91fa2030636d07de977";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/trial-tomland-0.0.0.0-r4-5dc32bd4003dc84565170e316576eb7a0c1cea3e8b8b3815d5f509b4a40577fd.nix;
+        revNum = 4;
+        revTimestamp = "2024-05-11T16:47:29Z";
+        sha256 = "5dc32bd4003dc84565170e316576eb7a0c1cea3e8b8b3815d5f509b4a40577fd";
+        };
+      default = "r4";
       };
     };
   }

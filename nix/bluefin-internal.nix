@@ -92,7 +92,13 @@
         revTimestamp = "2024-04-27T16:25:35Z";
         sha256 = "45755ab16ee3758295261b5dfdb1d0b8384852ba4c2a230cf8ef67f7f95eee57";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/bluefin-internal-0.0.6.0-r1-b9cd33ac5afad1e6a54b569b5eb7479e3d89f150e7136501395879dd6aef3e56.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-11T13:36:14Z";
+        sha256 = "b9cd33ac5afad1e6a54b569b5eb7479e3d89f150e7136501395879dd6aef3e56";
+        };
+      default = "r1";
       };
     };
   }
