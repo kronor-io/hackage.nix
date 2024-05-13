@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.1.1" = {
+    sha256 = "c7b03ea7e435368ba5d2a4be837fe33f832d185c8c5bba02d963c5df43ff63c1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/doctest-lib-0.1.1.1-r0-a9bf5f8067914803a7ddafcc3f9b034b1fdbd3a46f76199a960e7c90637939da.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-12T15:21:14Z";
+        sha256 = "a9bf5f8067914803a7ddafcc3f9b034b1fdbd3a46f76199a960e7c90637939da";
+        };
+      default = "r0";
+      };
+    };
   }

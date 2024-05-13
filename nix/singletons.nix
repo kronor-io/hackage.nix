@@ -773,4 +773,16 @@
       default = "r2";
       };
     };
+  "3.0.3" = {
+    sha256 = "99600410644fd8331f0fd546b8ce2b5c4b399321d43c3047542a609bca0a1c7e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/singletons-3.0.3-r0-ba8e87c8be6a944574e09ec2e702bab82fa3c98cec9b6032f76921efde02f0cb.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-12T23:03:58Z";
+        sha256 = "ba8e87c8be6a944574e09ec2e702bab82fa3c98cec9b6032f76921efde02f0cb";
+        };
+      default = "r0";
+      };
+    };
   }

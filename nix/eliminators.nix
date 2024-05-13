@@ -215,4 +215,16 @@
       default = "r1";
       };
     };
+  "0.9.5" = {
+    sha256 = "fa9502939ff99e9253a9f655fa4ead44ae8190a6cd5750f8fc4fdd955e15f49e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/eliminators-0.9.5-r0-84f68de50d1cab3e6413e4f2689c26b2da31ca87304fabe2fd874238454a626e.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-12T23:39:03Z";
+        sha256 = "84f68de50d1cab3e6413e4f2689c26b2da31ca87304fabe2fd874238454a626e";
+        };
+      default = "r0";
+      };
+    };
   }

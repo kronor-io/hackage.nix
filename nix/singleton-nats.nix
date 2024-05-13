@@ -224,7 +224,13 @@
         revTimestamp = "2023-10-13T12:41:00Z";
         sha256 = "1bae8e1a912b63f8d8784434f189b856900c320c5be98ded9a830f714f459070";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/singleton-nats-0.4.7-r1-1a63ed9d9b3d0ed6343b5ada90576e721d4cc24d386e1e8496152ce9027c758a.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-12T23:20:45Z";
+        sha256 = "1a63ed9d9b3d0ed6343b5ada90576e721d4cc24d386e1e8496152ce9027c758a";
+        };
+      default = "r1";
       };
     };
   }
