@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:36:36Z";
         sha256 = "1af9972bf2b0c260ba7dcb4d35038bcb1da2ec3518a2e2011720ad73f4cb308a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-healthlake-2.0-r1-cc4b9b55d2b64373dffeba0f84dfadba2ebb4085046406ac365e7398f5bfdd5f.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:58Z";
+        sha256 = "cc4b9b55d2b64373dffeba0f84dfadba2ebb4085046406ac365e7398f5bfdd5f";
+        };
+      default = "r1";
       };
     };
   }

@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.0.1.1" = {
+    sha256 = "ec9ff932d1d55750cdbde444ca670d77572a5fd9954fbcc5cfea8dbe94dbb22e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/exceptiot-0.0.1.1-r0-84df520a6bf7dd3920b2b4a6d52ce53105c579ac4be400fd7a9bf9015fe900ba.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-13T16:06:27Z";
+        sha256 = "84df520a6bf7dd3920b2b4a6d52ce53105c579ac4be400fd7a9bf9015fe900ba";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:08:07Z";
         sha256 = "b7a9a7f2e883785fef9812aa267c0f5ba08d42abb4ec2a90c32449ecbc51bffd";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-codeguru-reviewer-2.0-r1-b16568e6a66f826c3029072da2d568611848671e19acdceb6566b5546015d53c.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:43:48Z";
+        sha256 = "b16568e6a66f826c3029072da2d568611848671e19acdceb6566b5546015d53c";
+        };
+      default = "r1";
       };
     };
   }

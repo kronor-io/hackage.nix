@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:44:18Z";
         sha256 = "e51e9fdfd45b42bd1ef382b6fd3a895a53d8ff01d3f857f78dcbe45585eba8c6";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-ram-2.0-r1-7130b80a388ec71f9212947f60f33531a733b61f2502b4401defab00322b3148.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:51:29Z";
+        sha256 = "7130b80a388ec71f9212947f60f33531a733b61f2502b4401defab00322b3148";
+        };
+      default = "r1";
       };
     };
   }

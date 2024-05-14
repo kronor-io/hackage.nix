@@ -8,7 +8,13 @@
         revTimestamp = "2017-11-15T08:22:12Z";
         sha256 = "539bfef7c20c6ebaecc1aac9adb3c0d2bb7d0ff670030da7bf7021f564b47745";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-waf-regional-1.5.0-r1-0c4fce4c0dda17acb703acf19a6b346cf981e6784892134734779dae41005672.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:56:07Z";
+        sha256 = "0c4fce4c0dda17acb703acf19a6b346cf981e6784892134734779dae41005672";
+        };
+      default = "r1";
       };
     };
   "1.6.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2018-05-16T14:33:44Z";
         sha256 = "9460780f190e12fee98eb4c6907998649c8a5105abe87e0b515f265947415014";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-waf-regional-1.6.0-r1-bfa74150524a34893cf57d9cf85aad6bc2153765eeb708c60c4566c546b2cdd9.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:56:09Z";
+        sha256 = "bfa74150524a34893cf57d9cf85aad6bc2153765eeb708c60c4566c546b2cdd9";
+        };
+      default = "r1";
       };
     };
   "1.6.1" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2019-02-06T07:42:12Z";
         sha256 = "bb55f937ec77cad6dd49890296639d3b73ae4413413dc5280df84b8401ccf4fc";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-waf-regional-1.6.1-r1-e1acf10200dfed9b09d044905895a684f5500939fbd0ffe012a2e91c41c0ff7d.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:56:09Z";
+        sha256 = "e1acf10200dfed9b09d044905895a684f5500939fbd0ffe012a2e91c41c0ff7d";
+        };
+      default = "r1";
       };
     };
   "2.0" = {
@@ -44,7 +62,13 @@
         revTimestamp = "2023-07-27T21:49:28Z";
         sha256 = "07f0c6c10cfcf8dae71376824c639b0ce860ad5723dbe9e8e4d5ad221ded0935";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-waf-regional-2.0-r1-09a7770608d23a41a8baa669572d5cbcb417e85e65d3710b973d58f717d033d9.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:56:09Z";
+        sha256 = "09a7770608d23a41a8baa669572d5cbcb417e85e65d3710b973d58f717d033d9";
+        };
+      default = "r1";
       };
     };
   }

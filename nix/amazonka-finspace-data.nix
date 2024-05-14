@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:12:29Z";
         sha256 = "cec39033cd24c00f3bae3239bc7c95a1a9a9be94c7f4d5c78761849c14cf3a67";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-finspace-data-2.0-r1-146492428fe7d719a6879a90ce1e82f94cb680d54a6397348cf8f15a7626a988.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:42Z";
+        sha256 = "146492428fe7d719a6879a90ce1e82f94cb680d54a6397348cf8f15a7626a988";
+        };
+      default = "r1";
       };
     };
   }

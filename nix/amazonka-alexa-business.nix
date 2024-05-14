@@ -8,7 +8,13 @@
         revTimestamp = "2018-05-16T15:06:58Z";
         sha256 = "6254125093b91ef7de59ab7b605d4bc7971cc8d7510d19acca9853a510702042";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-alexa-business-1.6.0-r1-0fd41794e5578e20db9a8c29761267c8daaa6f74c5e67653b4fc6ea60850f900.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:34:54Z";
+        sha256 = "0fd41794e5578e20db9a8c29761267c8daaa6f74c5e67653b4fc6ea60850f900";
+        };
+      default = "r1";
       };
     };
   "1.6.1" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2019-02-06T07:57:22Z";
         sha256 = "6387e45c1f00fd1a8bfd3181175f553ace0fc310e5090712a9efb8f834a0e22d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-alexa-business-1.6.1-r1-ffbec24495257e86326a6f16c2a2172a451e2a1640bafd581131ce250a67019a.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:34:55Z";
+        sha256 = "ffbec24495257e86326a6f16c2a2172a451e2a1640bafd581131ce250a67019a";
+        };
+      default = "r1";
       };
     };
   "2.0" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2023-07-27T21:04:06Z";
         sha256 = "53afa56b646329971cfdeacc47c15bf33b65e57832ea7cce7c3de61b23fafc42";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-alexa-business-2.0-r1-1cf2323f158267875387394c552ca1a7b6fb932daf41da6d40d1402df97b7dd5.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:34:55Z";
+        sha256 = "1cf2323f158267875387394c552ca1a7b6fb932daf41da6d40d1402df97b7dd5";
+        };
+      default = "r1";
       };
     };
   }

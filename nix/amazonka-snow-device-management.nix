@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:47:45Z";
         sha256 = "9f4bc15a24bc8022082608a261c94744f420b1a5b885055c09b43f66ec546f43";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-snow-device-management-2.0-r1-c59d7a48d87c4f3c084123268862aebdd6c368c66413628359d7f4fc0f68aed3.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:20Z";
+        sha256 = "c59d7a48d87c4f3c084123268862aebdd6c368c66413628359d7f4fc0f68aed3";
+        };
+      default = "r1";
       };
     };
   }

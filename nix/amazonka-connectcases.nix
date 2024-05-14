@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:09:09Z";
         sha256 = "c56626f9d8ae019fecc492ee5321f5e11f59de5e2cf742d31de7ccd2b70cc7f4";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-connectcases-2.0-r1-33d4cb48437f5c37eae48c97ff5e2df7ec47095464da2f45c8c3ee78750c8c8c.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:44:34Z";
+        sha256 = "33d4cb48437f5c37eae48c97ff5e2df7ec47095464da2f45c8c3ee78750c8c8c";
+        };
+      default = "r1";
       };
     };
   }

@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:36:24Z";
         sha256 = "3f71eae5446600171bb226a9777b23cd49c2932c504ae0fb5887cb55c6dbc199";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-groundstation-2.0-r1-3a8acc9ce0904c98740192c3b72bb04dd9a1cc502b497e7c53a8ebe2a08cd0fa.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:56Z";
+        sha256 = "3a8acc9ce0904c98740192c3b72bb04dd9a1cc502b497e7c53a8ebe2a08cd0fa";
+        };
+      default = "r1";
       };
     };
   }

@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:13:01Z";
         sha256 = "e96dd5362ca6cb24578c8865cf4d700991fdbddf71e5fb8539ac20fa710211ef";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-gamesparks-2.0-r1-fba1928e1f5de6258f895bc4afb4816402f0948c5ef4954df282049a5bb5b9f2.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:47Z";
+        sha256 = "fba1928e1f5de6258f895bc4afb4816402f0948c5ef4954df282049a5bb5b9f2";
+        };
+      default = "r1";
       };
     };
   }

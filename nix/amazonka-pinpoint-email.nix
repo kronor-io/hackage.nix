@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:43:33Z";
         sha256 = "c2e843dfd961bacb35afe38ed193622c6bd6a0a8e862fbc0d5113c0946d1710b";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-pinpoint-email-2.0-r1-151f3cdd6e3552bb5a89faa5a67b2b6b8599a342c106824633c191aa88ebce71.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:51:25Z";
+        sha256 = "151f3cdd6e3552bb5a89faa5a67b2b6b8599a342c106824633c191aa88ebce71";
+        };
+      default = "r1";
       };
     };
   }

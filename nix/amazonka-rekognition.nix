@@ -8,7 +8,13 @@
         revTimestamp = "2016-12-04T15:32:00Z";
         sha256 = "bac5ccd00a65fefbf3aabf5a2f1ab8af8962f3350e682825649a12737f6a254b";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rekognition-1.4.5-r1-6c27a9d58aa66295a138eb72995a19a64b2942490f51a51ef0c955db0d537790.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:04Z";
+        sha256 = "6c27a9d58aa66295a138eb72995a19a64b2942490f51a51ef0c955db0d537790";
+        };
+      default = "r1";
       };
     };
   "1.5.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2017-11-15T08:21:56Z";
         sha256 = "bd968f2427e5c36f6586ca8f6595b645cade6dc3b918b34bfbfb4f32a491cde4";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rekognition-1.5.0-r1-263241bb9ba3ed9fd4faeea38c29543824008d9928408198e28bbce4695bb03c.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:04Z";
+        sha256 = "263241bb9ba3ed9fd4faeea38c29543824008d9928408198e28bbce4695bb03c";
+        };
+      default = "r1";
       };
     };
   "1.6.0" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2018-05-16T14:34:37Z";
         sha256 = "01c1dce82dd5f875fbda42a8203ba6943f31d3c6420a3c4b7ecadc872a16d542";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rekognition-1.6.0-r1-3824051743f6aed43e62a6a0f2404a96d0421a8c901430e3397ddb1752500adb.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:04Z";
+        sha256 = "3824051743f6aed43e62a6a0f2404a96d0421a8c901430e3397ddb1752500adb";
+        };
+      default = "r1";
       };
     };
   "1.6.1" = {
@@ -44,7 +62,13 @@
         revTimestamp = "2019-02-06T07:43:06Z";
         sha256 = "692b2214e61a83c427e5685dee4c4e61f5f2aa44d869eda16ad408efb0e50828";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rekognition-1.6.1-r1-977f87cd76ac0a52e5f93d3499013e96b0f37a00f3d7e7498b579ddb5dedc7ed.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:04Z";
+        sha256 = "977f87cd76ac0a52e5f93d3499013e96b0f37a00f3d7e7498b579ddb5dedc7ed";
+        };
+      default = "r1";
       };
     };
   "2.0" = {
@@ -56,7 +80,13 @@
         revTimestamp = "2023-07-27T21:44:47Z";
         sha256 = "e049de825b29cd0cb8e77c4d2a7561e9ce53cf4aa27f1016258410cd3a76a425";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rekognition-2.0-r1-bcd96141fa96915843723af3dd1cbe5aa47a0d99203df58311b8a057942599b6.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:04Z";
+        sha256 = "bcd96141fa96915843723af3dd1cbe5aa47a0d99203df58311b8a057942599b6";
+        };
+      default = "r1";
       };
     };
   }

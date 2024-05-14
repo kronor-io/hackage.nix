@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:10:06Z";
         sha256 = "9772bcd13c8e035d79aea3641521e1c6f1d3064c0b6aaee70f7cc6d59458cbd6";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-devops-guru-2.0-r1-db05b182aa09719f480fdc9e08adef620e3ae2359829fa9d1bcaddc514145080.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:45:57Z";
+        sha256 = "db05b182aa09719f480fdc9e08adef620e3ae2359829fa9d1bcaddc514145080";
+        };
+      default = "r1";
       };
     };
   }

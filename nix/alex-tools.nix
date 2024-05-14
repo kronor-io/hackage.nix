@@ -182,7 +182,13 @@
         revTimestamp = "2023-05-25T21:57:10Z";
         sha256 = "d3cb4c1bd3b2b606119d3c0179177a35c90a0b1b8cb3296de774cf1251604f68";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/alex-tools-0.6.1-r2-c881e11cd89b81128262f9d57169bab5124692572eb2a69a9c9243d5993775fa.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-13T00:51:22Z";
+        sha256 = "c881e11cd89b81128262f9d57169bab5124692572eb2a69a9c9243d5993775fa";
+        };
+      default = "r2";
       };
     };
   }

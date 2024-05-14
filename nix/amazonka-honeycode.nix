@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:36:41Z";
         sha256 = "198cc7b403afb0db9cd7d158a4dc8f52bdec5837e515a662e42de48be1581783";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-honeycode-2.0-r1-97ce242439464cc5567cef877f25530b5822e489671551911071f40029c0c7b7.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:58Z";
+        sha256 = "97ce242439464cc5567cef877f25530b5822e489671551911071f40029c0c7b7";
+        };
+      default = "r1";
       };
     };
   }

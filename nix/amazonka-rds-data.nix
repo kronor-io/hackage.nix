@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:44:31Z";
         sha256 = "429d36df5882a0527720163586b7732de03189c578a7128ae876fa43103c1c0a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-rds-data-2.0-r1-aa8c1a38952334a4526d41f228e35411dcc5b20244f00d5116334f8e9eefcdb5.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:51:46Z";
+        sha256 = "aa8c1a38952334a4526d41f228e35411dcc5b20244f00d5116334f8e9eefcdb5";
+        };
+      default = "r1";
       };
     };
   }

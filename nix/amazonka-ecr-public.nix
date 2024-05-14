@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:11:14Z";
         sha256 = "3a4173d754d44da4f44adad5ad240626a0d5b74d043c015cfd1e9c6880804717";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-ecr-public-2.0-r1-18756970558f9a03992cbe5b2d4ee9fe066e2f679f894681ecdeaea5aef38b86.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:47:04Z";
+        sha256 = "18756970558f9a03992cbe5b2d4ee9fe066e2f679f894681ecdeaea5aef38b86";
+        };
+      default = "r1";
       };
     };
   }

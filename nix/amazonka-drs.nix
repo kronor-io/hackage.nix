@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:10:37Z";
         sha256 = "c61c4c051890deb44144a10a447825111f3a73fcd95881f7a3b1a0f606b6d204";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-drs-2.0-r1-8f46f60a8e0f19a3a5e94e84b6022bc9a406bfcd0ed71b4a9fc3b6b6a8a5cbdf.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:46:18Z";
+        sha256 = "8f46f60a8e0f19a3a5e94e84b6022bc9a406bfcd0ed71b4a9fc3b6b6a8a5cbdf";
+        };
+      default = "r1";
       };
     };
   }

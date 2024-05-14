@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:48:21Z";
         sha256 = "cd74ffd667751bde082434adcec0213e5bea8312d88b725c97bbff8846800cd2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-sso-oidc-2.0-r1-c4424093aa0ffc5e5f20cdcfc18dedf5804487a59eed0e3990c1c97ccaf351ac.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:49Z";
+        sha256 = "c4424093aa0ffc5e5f20cdcfc18dedf5804487a59eed0e3990c1c97ccaf351ac";
+        };
+      default = "r1";
       };
     };
   }

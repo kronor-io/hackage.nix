@@ -86,7 +86,13 @@
         revTimestamp = "2023-06-22T21:13:02Z";
         sha256 = "04875ac4aebeb36ccd7ce486353a6c0310a013d5a22f4209c41521ee2f258bff";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/optics-0.4.2.1-r1-9ffd0ffb288594c3aea9535f4389a07b0361b4df02ee2b07eb4243ace85103e3.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T18:09:09Z";
+        sha256 = "9ffd0ffb288594c3aea9535f4389a07b0361b4df02ee2b07eb4243ace85103e3";
+        };
+      default = "r1";
       };
     };
   }

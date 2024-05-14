@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:44:51Z";
         sha256 = "7b2dc2871e1f8f2929d7a3accc790616eca28f9c06b57c8599ee03f3dc20cff3";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-resiliencehub-2.0-r1-307589c45b57aa13f386a56d2f8a0743126da829274483959a8d5dc6cc53ef41.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:05Z";
+        sha256 = "307589c45b57aa13f386a56d2f8a0743126da829274483959a8d5dc6cc53ef41";
+        };
+      default = "r1";
       };
     };
   }

@@ -8,7 +8,13 @@
         revTimestamp = "2016-12-04T15:34:06Z";
         sha256 = "c78b84af46d9886da544bd16654cc9d922dc2140ed88abdb69890103b1222318";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-shield-1.4.5-r1-62b46c81a979b5ac14eb492d5298d6fa12c802c8acb5f730ea0af887b39943e8.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:17Z";
+        sha256 = "62b46c81a979b5ac14eb492d5298d6fa12c802c8acb5f730ea0af887b39943e8";
+        };
+      default = "r1";
       };
     };
   "1.5.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2017-11-15T08:20:26Z";
         sha256 = "0039bf14231836422c9facc797467319eaf2b4dce7ed683f09653e3e4dd37a9a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-shield-1.5.0-r1-a44e8f15e0d587d192dd5a563aa8c04d63327410115f7c500380e18eda65b30d.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:17Z";
+        sha256 = "a44e8f15e0d587d192dd5a563aa8c04d63327410115f7c500380e18eda65b30d";
+        };
+      default = "r1";
       };
     };
   "1.6.0" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2018-05-16T14:40:00Z";
         sha256 = "ac70ca98fb043d466cd92964ca9a4c9f73edd1e67b9e187e69e64b2cddbb950d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-shield-1.6.0-r1-874daaf25e7a903479bf3a4abcebe43b611472bf6a9ee30420822025b47948ce.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:17Z";
+        sha256 = "874daaf25e7a903479bf3a4abcebe43b611472bf6a9ee30420822025b47948ce";
+        };
+      default = "r1";
       };
     };
   "1.6.1" = {
@@ -44,7 +62,13 @@
         revTimestamp = "2019-02-06T07:48:54Z";
         sha256 = "ab4812e1183fa746e1bf0ba29d2d736e61986f6c070ea2cfe4c62cf18dc8d40d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-shield-1.6.1-r1-dc779308fd44f39dd5be37c6f79f4dfb5831fb6f8bae4287d3d98363599c2978.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:17Z";
+        sha256 = "dc779308fd44f39dd5be37c6f79f4dfb5831fb6f8bae4287d3d98363599c2978";
+        };
+      default = "r1";
       };
     };
   "2.0" = {
@@ -56,7 +80,13 @@
         revTimestamp = "2023-07-27T21:47:19Z";
         sha256 = "8f540ab70a58e1dea11ecec72ce0f067f011a6be2b3cc0524b601bb5b64dfc6d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-shield-2.0-r1-f23f020100937bcc175c3209f749c59f2d7ec8f075655330dceff2e691bc63ba.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:17Z";
+        sha256 = "f23f020100937bcc175c3209f749c59f2d7ec8f075655330dceff2e691bc63ba";
+        };
+      default = "r1";
       };
     };
   }

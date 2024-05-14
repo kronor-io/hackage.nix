@@ -8,7 +8,13 @@
         revTimestamp = "2018-05-16T14:40:10Z";
         sha256 = "1f8075ddae4dde49f172c9b7c2dcaf25693e79c6958e65f373b9e9d6d88206f0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-kinesis-video-1.6.0-r1-45a2c6960e6917c714d53f2c30b64ea567d4caba2c99d8a692d79c1404d2b98a.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:47Z";
+        sha256 = "45a2c6960e6917c714d53f2c30b64ea567d4caba2c99d8a692d79c1404d2b98a";
+        };
+      default = "r1";
       };
     };
   "1.6.1" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2019-02-06T07:49:04Z";
         sha256 = "be2e2805005d11613e7006152fad803f2c47ea4b06938fc209bb4797582794f8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-kinesis-video-1.6.1-r1-40cf77a75e9b5fb5e2b34be51e7a58e099486fefa4899d0d1656a493d3fc5ba0.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:48Z";
+        sha256 = "40cf77a75e9b5fb5e2b34be51e7a58e099486fefa4899d0d1656a493d3fc5ba0";
+        };
+      default = "r1";
       };
     };
   "2.0" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2023-07-27T21:39:00Z";
         sha256 = "b326295c304f662c9edd78597987b78d492c70ea64d235b80f456c854ab93002";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-kinesis-video-2.0-r1-3f4834f92929cfd4247032c55a4ac3aac7dbade700a156edf57249809603fdc3.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:48Z";
+        sha256 = "3f4834f92929cfd4247032c55a4ac3aac7dbade700a156edf57249809603fdc3";
+        };
+      default = "r1";
       };
     };
   }

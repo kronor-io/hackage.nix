@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:37:12Z";
         sha256 = "3f42423378d7e5826b6e71d4afee51e455e1a8cb7238d7784c15d474382e9869";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-iot1click-projects-2.0-r1-6ab623db4107c4da3bc77875966e9ab074b2562d568aef349b29ca4e33c4b019.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:27Z";
+        sha256 = "6ab623db4107c4da3bc77875966e9ab074b2562d568aef349b29ca4e33c4b019";
+        };
+      default = "r1";
       };
     };
   }

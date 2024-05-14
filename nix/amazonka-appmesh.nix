@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:05:10Z";
         sha256 = "e5d8fbef6daf2dcd0efe0aaae0cc329d1b3d479c8249d153df9207b3b1701659";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-appmesh-2.0-r1-3f7efecf02d195ede1a7b3bff66589fe2a9a23494afa5ba55c4667600e0721fb.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:34:58Z";
+        sha256 = "3f7efecf02d195ede1a7b3bff66589fe2a9a23494afa5ba55c4667600e0721fb";
+        };
+      default = "r1";
       };
     };
   }

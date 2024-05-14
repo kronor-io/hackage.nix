@@ -362,7 +362,13 @@
         revTimestamp = "2023-10-18T09:48:58Z";
         sha256 = "db1929b3c61a6ed4cb5fe99c5a6a1baf0c4e36846d5a3dbb5052f39cc042fcb2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/generics-sop-0.5.1.4-r1-d979030003ccbce93dcc3ffa2caf744f19ce08b4e569fd007100ca43a4982682.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T17:11:07Z";
+        sha256 = "d979030003ccbce93dcc3ffa2caf744f19ce08b4e569fd007100ca43a4982682";
+        };
+      default = "r1";
       };
     };
   }

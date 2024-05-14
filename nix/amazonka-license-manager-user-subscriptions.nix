@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:39:53Z";
         sha256 = "9432f507e2827576ac5abfa33fe127431fec2dfcb772760225c7b03341a5e1f0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-license-manager-user-subscriptions-2.0-r1-59b8af043602230e1a8221a8a06eda7f648778328d207a8ecdf7566879abdf35.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:50:15Z";
+        sha256 = "59b8af043602230e1a8221a8a06eda7f648778328d207a8ecdf7566879abdf35";
+        };
+      default = "r1";
       };
     };
   }

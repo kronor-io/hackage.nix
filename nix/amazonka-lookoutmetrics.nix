@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:40:14Z";
         sha256 = "177b00abaeb2dc4d6e055e77ecdeaf1bde1c332db898c5762524c7e2679842d8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-lookoutmetrics-2.0-r1-81d71e6a66c8d350de5ef558986d21d28fc540fdc27acd11ad6b8464ba0ec2e7.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:50:17Z";
+        sha256 = "81d71e6a66c8d350de5ef558986d21d28fc540fdc27acd11ad6b8464ba0ec2e7";
+        };
+      default = "r1";
       };
     };
   }

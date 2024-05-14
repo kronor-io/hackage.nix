@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:12:20Z";
         sha256 = "b84cbf1772045f163313b2917bc54ec401ffafea3d2edd72457a697f851bb702";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-evidently-2.0-r1-2b9d32d1bea53da044624b98cc407b4fa5db8f6fa57c059b66bc94a269a88c9c.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:48:41Z";
+        sha256 = "2b9d32d1bea53da044624b98cc407b4fa5db8f6fa57c059b66bc94a269a88c9c";
+        };
+      default = "r1";
       };
     };
   }

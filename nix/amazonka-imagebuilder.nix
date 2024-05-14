@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:36:52Z";
         sha256 = "544ff0f0fd60ef2dc2867e99fd7170b7a31eea6a74dc693fcd792d6c1690276c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-imagebuilder-2.0-r1-f17efe2d660bc448de263994e8cea927cc689e40e2e4e18577d88b2f58150fc8.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:09Z";
+        sha256 = "f17efe2d660bc448de263994e8cea927cc689e40e2e4e18577d88b2f58150fc8";
+        };
+      default = "r1";
       };
     };
   }

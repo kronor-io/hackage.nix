@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:48:01Z";
         sha256 = "524cd8044612a520eadda984fa8b150b9f697e9109da0a1657837467b9d150d0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-ssm-contacts-2.0-r1-ba5ad9bc3dfcacc9cf7440e9f461e78dd0804b9a9be066212456e8defc5bf5e7.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:54:49Z";
+        sha256 = "ba5ad9bc3dfcacc9cf7440e9f461e78dd0804b9a9be066212456e8defc5bf5e7";
+        };
+      default = "r1";
       };
     };
   }

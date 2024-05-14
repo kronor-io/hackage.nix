@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:45:27Z";
         sha256 = "ca869278ebd6f90177ffde71bf53f445e9c84b10308ef07abc598dd1ca922d57";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-route53-recovery-cluster-2.0-r1-d62f221dc89079f0765c7d4daccccced877c0290c6b420f89d7c036813b6daf0.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:52:44Z";
+        sha256 = "d62f221dc89079f0765c7d4daccccced877c0290c6b420f89d7c036813b6daf0";
+        };
+      default = "r1";
       };
     };
   }

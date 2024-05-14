@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:37:37Z";
         sha256 = "b69a38731766a6b183ac78f0e742565ce482987c604cea6bdd2455d8f6fd2731";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-iotevents-data-2.0-r1-cde4ce67b3ec2e9e2ab26ce5b6b37cbc1caa327e3a9161cbb4c958ffa5c357a5.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:30Z";
+        sha256 = "cde4ce67b3ec2e9e2ab26ce5b6b37cbc1caa327e3a9161cbb4c958ffa5c357a5";
+        };
+      default = "r1";
       };
     };
   }

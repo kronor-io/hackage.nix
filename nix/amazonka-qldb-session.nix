@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:44:09Z";
         sha256 = "e5ce0b39ff8a41895907d9548394c1f8f56a44133f324c0e7b54bf7f06f5e0f7";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-qldb-session-2.0-r1-f574bea2eca65840ac5d2af09a02ad4e7fbb54da37b8fc39c451ac105ac93faa.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:51:29Z";
+        sha256 = "f574bea2eca65840ac5d2af09a02ad4e7fbb54da37b8fc39c451ac105ac93faa";
+        };
+      default = "r1";
       };
     };
   }

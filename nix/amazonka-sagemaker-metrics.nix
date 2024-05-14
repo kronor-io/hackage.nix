@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:46:19Z";
         sha256 = "090f8d23f1f613cedef3ce2c771470628c3f6cb53cc7ff5cbb78dc23aac58b65";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-sagemaker-metrics-2.0-r1-bc3ac7c149e7571c94c4287c322803f8073e28bdac7b2e8289b3b02ab7d8f991.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:53:33Z";
+        sha256 = "bc3ac7c149e7571c94c4287c322803f8073e28bdac7b2e8289b3b02ab7d8f991";
+        };
+      default = "r1";
       };
     };
   }

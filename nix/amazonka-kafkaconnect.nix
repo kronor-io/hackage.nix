@@ -8,7 +8,13 @@
         revTimestamp = "2023-07-27T21:38:31Z";
         sha256 = "c6045f98126d206bfd9ec64c9c94858e46e9f345557a5ab2ae4a8fbd5dbbb7b6";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/amazonka-kafkaconnect-2.0-r1-e2b67eca9a6ce0837496e4b37a7b3c1ac537d5ae77bc826548ab3abd5b3a757a.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-13T07:49:33Z";
+        sha256 = "e2b67eca9a6ce0837496e4b37a7b3c1ac537d5ae77bc826548ab3abd5b3a757a";
+        };
+      default = "r1";
       };
     };
   }
