@@ -464,7 +464,13 @@
         revTimestamp = "2022-08-17T15:17:44Z";
         sha256 = "c7926f679e7f31af247f52c13e2060b9d94641180e17a0bed9768a1040c53ded";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/filestore-0.6.5-r2-7af5f43a3ee9d47fabf86122f6754e8941a81e33cb5954237be5907d8889d8d4.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-14T00:13:37Z";
+        sha256 = "7af5f43a3ee9d47fabf86122f6754e8941a81e33cb5954237be5907d8889d8d4";
+        };
+      default = "r2";
       };
     };
   }
