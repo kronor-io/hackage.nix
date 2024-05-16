@@ -143,4 +143,16 @@
       default = "r0";
       };
     };
+  "1.8.7" = {
+    sha256 = "7299342598d2899a466d9344018e7f583351e67fe99d75335a9c6452f4c81e98";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haeredes-1.8.7-r0-42838543986a70400583e929b2725b9c54cc04573277205b12689aa80f7a71d5.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-15T23:26:24Z";
+        sha256 = "42838543986a70400583e929b2725b9c54cc04573277205b12689aa80f7a71d5";
+        };
+      default = "r0";
+      };
+    };
   }

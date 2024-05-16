@@ -71,4 +71,16 @@
       default = "r0";
       };
     };
+  "1.8.7" = {
+    sha256 = "02f1cbdf3dfacb18d429cc7c75b9015fd15f32311fa0486d8130b626f9b7aaeb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mailbox-count-1.8.7-r0-0610b714b6652a4bffaf661045a068703e02128fe859b4458df6d4c27cb2d14b.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-15T23:44:04Z";
+        sha256 = "0610b714b6652a4bffaf661045a068703e02128fe859b4458df6d4c27cb2d14b";
+        };
+      default = "r0";
+      };
+    };
   }

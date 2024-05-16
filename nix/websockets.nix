@@ -434,7 +434,13 @@
         revTimestamp = "2023-12-30T08:15:48Z";
         sha256 = "e95c55c6c5547a0d7e013048e0aab386820c1672666f61a3cd41ae5a01d46b76";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/websockets-0.13.0.0-r1-0c20a7eae801c762b831d4adb3f602660c50461da3f701eb36af051c6737958d.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-15T18:10:08Z";
+        sha256 = "0c20a7eae801c762b831d4adb3f602660c50461da3f701eb36af051c6737958d";
+        };
+      default = "r1";
       };
     };
   "0.2.0.1" = {
