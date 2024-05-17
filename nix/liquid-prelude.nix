@@ -56,7 +56,13 @@
         revTimestamp = "2024-03-07T11:32:13Z";
         sha256 = "f91d3a6dfc913f9ea1665af4ad92cc0e32d27d981244552129b083d169b1eb2e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/liquid-prelude-0.9.2.8.1-r1-cda0011af90b7464270146ba39ebd540d0d6390af80e17fe65c15d19ecbdfc23.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-16T01:22:41Z";
+        sha256 = "cda0011af90b7464270146ba39ebd540d0d6390af80e17fe65c15d19ecbdfc23";
+        };
+      default = "r1";
       };
     };
   }

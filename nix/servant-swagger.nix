@@ -536,7 +536,13 @@
         revTimestamp = "2023-11-27T21:41:22Z";
         sha256 = "f235e4584cd9aa4b9074391c94021ae24f6d412658ed66debb8a7e2581b3a7be";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/servant-swagger-1.2-r4-db79bf9d08440843aae06780e1d139d374f29317d01276de315236f4c0256d63.nix;
+        revNum = 4;
+        revTimestamp = "2024-05-16T21:53:13Z";
+        sha256 = "db79bf9d08440843aae06780e1d139d374f29317d01276de315236f4c0256d63";
+        };
+      default = "r4";
       };
     };
   }

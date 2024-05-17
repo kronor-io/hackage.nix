@@ -95,4 +95,16 @@
       default = "r3";
       };
     };
+  "1.0.2" = {
+    sha256 = "5be31c61c5d8bf32bd37fa4ac79f4d9202dde331e07dd9f83d311024b1ebc328";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/these-optics-1.0.2-r0-a7fe2d73d0efc314dcc41b5c4b52707e05d003c460e0e013bf0c6758e5aad4ac.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-16T19:49:23Z";
+        sha256 = "a7fe2d73d0efc314dcc41b5c4b52707e05d003c460e0e013bf0c6758e5aad4ac";
+        };
+      default = "r0";
+      };
+    };
   }

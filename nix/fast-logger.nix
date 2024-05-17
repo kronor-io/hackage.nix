@@ -1217,4 +1217,16 @@
       default = "r0";
       };
     };
+  "3.2.3" = {
+    sha256 = "e358df6e9d5286c642e78a94be4402f159005d417d03c09f1b4f6c9b9110c429";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fast-logger-3.2.3-r0-41b4f1c07d5ee4a7cc785689eb7772554d29ddbbcced3cc184fe50fc63ece3f7.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-16T07:11:46Z";
+        sha256 = "41b4f1c07d5ee4a7cc785689eb7772554d29ddbbcced3cc184fe50fc63ece3f7";
+        };
+      default = "r0";
+      };
+    };
   }

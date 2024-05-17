@@ -470,7 +470,13 @@
         revTimestamp = "2024-05-06T11:30:00Z";
         sha256 = "9e8f1e5207cfaa860487e49e9935fc12a6372d595f8d20d8372ff61574a4c8cf";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/tasty-hspec-1.2.0.4-r4-72a3b16841bb9a33f71930e7b5244dc29ca191f239bd505e30889a1c59c25cc4.nix;
+        revNum = 4;
+        revTimestamp = "2024-05-16T02:14:42Z";
+        sha256 = "72a3b16841bb9a33f71930e7b5244dc29ca191f239bd505e30889a1c59c25cc4";
+        };
+      default = "r4";
       };
     };
   }

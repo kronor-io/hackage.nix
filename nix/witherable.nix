@@ -452,7 +452,13 @@
         revTimestamp = "2023-03-07T10:07:20Z";
         sha256 = "cec516b35df0ff53ab0068e70a912a0ba7b65c672fbc554727183faa195ad3b8";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/witherable-0.4.2-r5-f0c6b10ec5d4747aea989c2ab275694d6504dd4d975629914c8641a704a026fc.nix;
+        revNum = 5;
+        revTimestamp = "2024-05-16T22:45:35Z";
+        sha256 = "f0c6b10ec5d4747aea989c2ab275694d6504dd4d975629914c8641a704a026fc";
+        };
+      default = "r5";
       };
     };
   }

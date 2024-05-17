@@ -125,4 +125,16 @@
       default = "r3";
       };
     };
+  "1.1.4" = {
+    sha256 = "50509a93a472886aa0d688bd43f43bc4b3b5ab18107b96f3e5339206895a7c4f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/universe-instances-extended-1.1.4-r0-a051e7ff53fff66db3cf496b857633317181c362d6db6384ffa0d1643335502f.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-16T12:49:44Z";
+        sha256 = "a051e7ff53fff66db3cf496b857633317181c362d6db6384ffa0d1643335502f";
+        };
+      default = "r0";
+      };
+    };
   }
