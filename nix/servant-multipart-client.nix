@@ -56,7 +56,13 @@
         revTimestamp = "2023-12-27T22:30:24Z";
         sha256 = "04ee32201c9aebd0ad68e3aa67323a0132c70b92868b12ddd2070c69fcaba1ec";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/servant-multipart-client-0.12.2-r2-e8105783e7dbef178a38dcfd05f4d12a8229eac88cfe49319f272dcb544e7365.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-17T10:26:51Z";
+        sha256 = "e8105783e7dbef178a38dcfd05f4d12a8229eac88cfe49319f272dcb544e7365";
+        };
+      default = "r2";
       };
     };
   }

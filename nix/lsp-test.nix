@@ -464,7 +464,13 @@
         revTimestamp = "2024-05-09T14:48:51Z";
         sha256 = "76beca91cbe741979623ea984960d623988938284d3941a7b64cbd587dcacf5a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lsp-test-0.17.0.2-r1-fdfd5d04052fd48b3b3f8eacfc6e4a39f48ff49497e458e2e5e5a7911249f912.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-17T11:37:19Z";
+        sha256 = "fdfd5d04052fd48b3b3f8eacfc6e4a39f48ff49497e458e2e5e5a7911249f912";
+        };
+      default = "r1";
       };
     };
   "0.2.0.0" = {

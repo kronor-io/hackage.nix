@@ -1562,7 +1562,13 @@
         revTimestamp = "2024-05-02T06:23:12Z";
         sha256 = "23e8c114fe826cf3c053993d7d320573b9ccba4f5265c128ce9a85216d720ef7";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hledger-1.33-r2-9b397d0841eede8b3fd03d0d0a4fe19364a547bf6ef1d90ecbb3097a6d260b64.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-18T02:04:10Z";
+        sha256 = "9b397d0841eede8b3fd03d0d0a4fe19364a547bf6ef1d90ecbb3097a6d260b64";
+        };
+      default = "r2";
       };
     };
   "1.33.1" = {
@@ -1574,7 +1580,13 @@
         revTimestamp = "2024-05-02T11:03:18Z";
         sha256 = "ca98eeb0c8948e3d8f1f1f96fbb137a61e0989880033e7f89348e747bdcd4426";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hledger-1.33.1-r1-b429d94a6d00a9d739720078e3eae7e44dbdf1b450b568554da358c4d64670ad.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-18T02:04:21Z";
+        sha256 = "b429d94a6d00a9d739720078e3eae7e44dbdf1b450b568554da358c4d64670ad";
+        };
+      default = "r1";
       };
     };
   "1.4" = {

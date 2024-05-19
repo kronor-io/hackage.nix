@@ -98,7 +98,19 @@
         revTimestamp = "2022-01-07T20:29:11Z";
         sha256 = "39417ebbb47e96a40097aaeb8185fbf0b8887f7a93596a7a2c0e06e30e5209e2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/freer-simple-1.2.1.2-r1-4332ee5c6274c50f4f3211078d6d97d37c215a36904ff3632eb3c6a16e79dde1.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-17T11:21:58Z";
+        sha256 = "4332ee5c6274c50f4f3211078d6d97d37c215a36904ff3632eb3c6a16e79dde1";
+        };
+      r2 = {
+        nix = import ../hackage/freer-simple-1.2.1.2-r2-f4fd265a931d3290113a7036c5fd21b199d509f8f939736be2f992b8023ead5c.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-18T06:59:23Z";
+        sha256 = "f4fd265a931d3290113a7036c5fd21b199d509f8f939736be2f992b8023ead5c";
+        };
+      default = "r2";
       };
     };
   }

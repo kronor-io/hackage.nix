@@ -83,4 +83,40 @@
       default = "r0";
       };
     };
+  "0.2.4.0" = {
+    sha256 = "d7e322a38f638b877747350ddcfeb05b67144e05e8997398ba56ee36713c1d21";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hw-polysemy-0.2.4.0-r0-09851e324c26004f3049b5f8c0e28b8ed14f60de116e875cdf62905fa4a66440.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-17T14:38:43Z";
+        sha256 = "09851e324c26004f3049b5f8c0e28b8ed14f60de116e875cdf62905fa4a66440";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.4.1" = {
+    sha256 = "bbb1f141476ab86218896c012e469711320cc65c5cd9287b496d7231871dda28";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hw-polysemy-0.2.4.1-r0-6cdd740dd9c9fea5be8269a27fa850c05435dfa9d2c576bc5685f74cdccc90d3.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-18T04:42:42Z";
+        sha256 = "6cdd740dd9c9fea5be8269a27fa850c05435dfa9d2c576bc5685f74cdccc90d3";
+        };
+      default = "r0";
+      };
+    };
+  "0.2.4.2" = {
+    sha256 = "09c03c2b7bf64621ada30b2533c628494be5fcf1e2e81e53ae0f6d8ff0d3f1b3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hw-polysemy-0.2.4.2-r0-386b321f3666df5aba911c5aced703790d0a1ff7fd5c3a527b47b054c140e54b.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-18T10:18:09Z";
+        sha256 = "386b321f3666df5aba911c5aced703790d0a1ff7fd5c3a527b47b054c140e54b";
+        };
+      default = "r0";
+      };
+    };
   }

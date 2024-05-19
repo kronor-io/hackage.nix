@@ -2525,4 +2525,22 @@
       default = "r1";
       };
     };
+  "2.2.2.0" = {
+    sha256 = "b3bde1446333f92bba035f6f1b94031d3e2f1342dd63b062f5f2132309fd6276";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/aeson-2.2.2.0-r0-33bcfda9d41c4865b48df346705d4bc3d486c4e5f9e25106abfd82879a8297a0.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-17T00:08:30Z";
+        sha256 = "33bcfda9d41c4865b48df346705d4bc3d486c4e5f9e25106abfd82879a8297a0";
+        };
+      r1 = {
+        nix = import ../hackage/aeson-2.2.2.0-r1-ac0d0dfc1054c021891a34279e474f8009087216762296ee7d6577f8b0a76fa2.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-17T03:42:00Z";
+        sha256 = "ac0d0dfc1054c021891a34279e474f8009087216762296ee7d6577f8b0a76fa2";
+        };
+      default = "r1";
+      };
+    };
   }
