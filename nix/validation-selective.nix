@@ -80,7 +80,13 @@
         revTimestamp = "2024-05-11T16:34:48Z";
         sha256 = "65bc6ddf15619f68e427b96361c07951a91dba05b972b704675780f97a102f1d";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/validation-selective-0.2.0.0-r4-cc847f1a110e3b1bd437a5356f115881b61cafcb11781b570b180efd88bf0907.nix;
+        revNum = 4;
+        revTimestamp = "2024-05-19T16:04:15Z";
+        sha256 = "cc847f1a110e3b1bd437a5356f115881b61cafcb11781b570b180efd88bf0907";
+        };
+      default = "r4";
       };
     };
   }

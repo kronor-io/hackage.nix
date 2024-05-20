@@ -140,7 +140,13 @@
         revTimestamp = "2024-04-23T07:29:28Z";
         sha256 = "5852759da6f4050c460d5a75f0d9773367fcd4eb938b7c9e0f7c33a68b58f8e1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hie-bios-0.14.0-r1-e2d012825d441f1cd0637fb327f11bc2295d36df08f39f70feea4a11e4532fbd.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-19T07:39:59Z";
+        sha256 = "e2d012825d441f1cd0637fb327f11bc2295d36df08f39f70feea4a11e4532fbd";
+        };
+      default = "r1";
       };
     };
   "0.2.0" = {

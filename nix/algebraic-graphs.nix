@@ -200,7 +200,13 @@
         revTimestamp = "2023-11-06T00:09:13Z";
         sha256 = "75f8bbfffc8bc6c8a0a3c61f7f3ed2129fee35fd929822230b693786059f4fdf";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/algebraic-graphs-0.7-r3-de8e3c278b3ebe546f263a3a21f5175a01ca4a34f3e0aa962388b43f68431104.nix;
+        revNum = 3;
+        revTimestamp = "2024-05-19T21:59:04Z";
+        sha256 = "de8e3c278b3ebe546f263a3a21f5175a01ca4a34f3e0aa962388b43f68431104";
+        };
+      default = "r3";
       };
     };
   }
