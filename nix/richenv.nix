@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.2" = {
+    sha256 = "e6a0476198919885de12960884861731ec70272f8ac83a924bc29e072d33b47b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/richenv-0.1.0.2-r0-a9ae0bf1265042a9ca834653891773fb09d1ba6184eacaf8b2bd19135f25e5c2.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-20T22:04:26Z";
+        sha256 = "a9ae0bf1265042a9ca834653891773fb09d1ba6184eacaf8b2bd19135f25e5c2";
+        };
+      default = "r0";
+      };
+    };
   }

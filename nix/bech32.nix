@@ -137,4 +137,16 @@
       default = "r0";
       };
     };
+  "1.1.7" = {
+    sha256 = "ef6e4885319ccff679282820b9312da6f415b46f1f72ff23a53577b9984e87e2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/bech32-1.1.7-r0-077a5f51e3fb2b217bbf9c54dc97c83287fbeeba1d925885bd2f077d1819800a.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-20T07:45:14Z";
+        sha256 = "077a5f51e3fb2b217bbf9c54dc97c83287fbeeba1d925885bd2f077d1819800a";
+        };
+      default = "r0";
+      };
+    };
   }

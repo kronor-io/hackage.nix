@@ -227,4 +227,16 @@
       default = "r0";
       };
     };
+  "0.7.0" = {
+    sha256 = "cfccb5ad67e905813d251066c5aa00982b3751bb8871cf759bc4bcaf7bcab095";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hix-0.7.0-r0-6baefce7d88cadcafd28f13d5a4e65a114c48f4c3685ff6365af2a62a84aefdd.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-20T12:40:45Z";
+        sha256 = "6baefce7d88cadcafd28f13d5a4e65a114c48f4c3685ff6365af2a62a84aefdd";
+        };
+      default = "r0";
+      };
+    };
   }
