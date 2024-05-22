@@ -44,7 +44,13 @@
         revTimestamp = "2023-12-17T23:18:09Z";
         sha256 = "a3fb289e68b365d6d12393b02c689257727a9cbd05f2988045cf3e0e71c8ceca";
         };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/package-version-0.1.0.0-r7-c36e436e0c69acba403bdf4191339a1471aa773b4e67b7a3e6eed68cd10ed072.nix;
+        revNum = 7;
+        revTimestamp = "2024-05-22T00:05:18Z";
+        sha256 = "c36e436e0c69acba403bdf4191339a1471aa773b4e67b7a3e6eed68cd10ed072";
+        };
+      default = "r7";
       };
     };
   "0.2" = {
