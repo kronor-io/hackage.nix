@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.9.9.2" = {
+    sha256 = "38319f93f7e424b3e97cd1733923505eab5316aeb49563c1a1afc433fae59a5d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-warp-0.9.9.2-r0-85c592bd70640766e9b5fa33bc07d04c8cc312f678d0e2bb2e7333d5f88282b7.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-22T04:39:24Z";
+        sha256 = "85c592bd70640766e9b5fa33bc07d04c8cc312f678d0e2bb2e7333d5f88282b7";
+        };
+      default = "r0";
+      };
+    };
   }

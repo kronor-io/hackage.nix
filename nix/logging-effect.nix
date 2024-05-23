@@ -332,7 +332,13 @@
         revTimestamp = "2023-03-26T13:48:14Z";
         sha256 = "4195038e1ded923469e3dd7a826a63a3b284ea6a64f613fd6adf445e7549a5f1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/logging-effect-1.4.0-r1-c7559e4343806e83b3433073ce1f7ab6dca9f96891323dd77d7ef94c18e5547a.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-22T22:04:53Z";
+        sha256 = "c7559e4343806e83b3433073ce1f7ab6dca9f96891323dd77d7ef94c18e5547a";
+        };
+      default = "r1";
       };
     };
   }
