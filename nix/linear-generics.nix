@@ -74,7 +74,13 @@
         revTimestamp = "2024-03-26T13:32:56Z";
         sha256 = "7df8ed37daf0013a347b90d9e04a49e7bb959b089bc9cb45e0d5cb05186cc9cf";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/linear-generics-0.2.3-r2-3ef7d555f239a10254b61d9debdb24aa2d77529f791818db80f7030039792c62.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-23T13:41:47Z";
+        sha256 = "3ef7d555f239a10254b61d9debdb24aa2d77529f791818db80f7030039792c62";
+        };
+      default = "r2";
       };
     };
   }
