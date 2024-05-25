@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.2.7.0" = {
+    sha256 = "b379bb78fa1762b4d40672003acfb8456f1d3d0439634e0b006c0ccb958b93d3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/zoovisitor-0.2.7.0-r0-422c5bf3217f067855c01870f2fe07ea530985f617cf4560bbd7c4cb9751c37b.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-24T09:11:31Z";
+        sha256 = "422c5bf3217f067855c01870f2fe07ea530985f617cf4560bbd7c4cb9751c37b";
+        };
+      default = "r0";
+      };
+    };
   }
