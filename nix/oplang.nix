@@ -80,7 +80,13 @@
         revTimestamp = "2024-04-28T18:44:39Z";
         sha256 = "f9ccc493e631137a8c965c972e35e2aa4e8ded81a94094bcd90a7f55b550e004";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/oplang-0.5.0.0-r1-c834bb62216737b7cd243444f99dbcdf88811305dd37af9efa184a8fb2eb7510.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-25T23:31:13Z";
+        sha256 = "c834bb62216737b7cd243444f99dbcdf88811305dd37af9efa184a8fb2eb7510";
+        };
+      default = "r1";
       };
     };
   }

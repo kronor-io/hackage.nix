@@ -446,7 +446,13 @@
         revTimestamp = "2024-04-03T10:18:26Z";
         sha256 = "4fad4c1e473deabf3da1b8b4f3635572c4ef2a87eb547cea77d8738fed5e52d5";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/hedgehog-1.4-r6-e50562d73a08ca49cb5155519769d058996e122f7bd4d5251ea94dcc0c7abc1d.nix;
+        revNum = 6;
+        revTimestamp = "2024-05-25T09:09:57Z";
+        sha256 = "e50562d73a08ca49cb5155519769d058996e122f7bd4d5251ea94dcc0c7abc1d";
+        };
+      default = "r6";
       };
     };
   }

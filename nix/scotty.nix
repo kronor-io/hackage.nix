@@ -488,7 +488,13 @@
         revTimestamp = "2024-03-10T07:22:27Z";
         sha256 = "12365f7867e50368db053b0f3aac96a0bdaace0ff2058cb4a8f17fc10fcea6f7";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/scotty-0.22-r2-b3c799b3c4896176342062c1140c290ffb9a8d81e6da2ea3e12f7a83cbda78d4.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-25T04:43:26Z";
+        sha256 = "b3c799b3c4896176342062c1140c290ffb9a8d81e6da2ea3e12f7a83cbda78d4";
+        };
+      default = "r2";
       };
     };
   "0.3.0" = {
