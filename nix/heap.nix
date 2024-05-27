@@ -212,7 +212,13 @@
         revTimestamp = "2018-04-11T15:14:59Z";
         sha256 = "ad0e192efbff268e85042068c308c69fa6c787c3cd6ab96c34f89e5bfee01cf9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/heap-1.0.4-r1-d2492138714916700b2f66855f99f54bd51684c375121b73be114cafcbdb1504.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-26T20:01:37Z";
+        sha256 = "d2492138714916700b2f66855f99f54bd51684c375121b73be114cafcbdb1504";
+        };
+      default = "r1";
       };
     };
   }
