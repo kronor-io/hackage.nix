@@ -50,7 +50,19 @@
         revTimestamp = "2022-07-01T13:37:56Z";
         sha256 = "d7e69881cb15f4702fe1f74407d8ba50280b3893cddfbe70fcaff512f05262d2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gargoyle-postgresql-0.2.0.2-r1-98448bf434c8ab9d0720d7101314e0c484e9c6fd16846d2979de306d904fb555.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-28T20:26:23Z";
+        sha256 = "98448bf434c8ab9d0720d7101314e0c484e9c6fd16846d2979de306d904fb555";
+        };
+      r2 = {
+        nix = import ../hackage/gargoyle-postgresql-0.2.0.2-r2-b8a36bf47faaf9b6e2a8d804d7d2e1831344eb0d0319263092c3bbda808f373c.nix;
+        revNum = 2;
+        revTimestamp = "2024-05-28T20:29:22Z";
+        sha256 = "b8a36bf47faaf9b6e2a8d804d7d2e1831344eb0d0319263092c3bbda808f373c";
+        };
+      default = "r2";
       };
     };
   }

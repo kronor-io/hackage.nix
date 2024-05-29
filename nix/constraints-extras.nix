@@ -299,4 +299,16 @@
       default = "r2";
       };
     };
+  "0.4.0.1" = {
+    sha256 = "ff90f734576e9660a1787eed685a4d10fd37c5b14bbe485c180e67831294ac30";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/constraints-extras-0.4.0.1-r0-6ebfc249396e39d3173554bff76024334c7da56746195fe2788d439d7bb06f8c.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-28T02:07:13Z";
+        sha256 = "6ebfc249396e39d3173554bff76024334c7da56746195fe2788d439d7bb06f8c";
+        };
+      default = "r0";
+      };
+    };
   }
