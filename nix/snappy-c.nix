@@ -26,7 +26,13 @@
         revTimestamp = "2024-04-10T15:35:09Z";
         sha256 = "bdcb7aad6400d11e7e6799d699ee93c793c4c91305fe864e21f84141b9301d28";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/snappy-c-0.1.1-r1-b113aa1c7c095325cc218e8fcc4ad05e719f5ed0d2febb910d42e21387759ac9.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-29T12:46:20Z";
+        sha256 = "b113aa1c7c095325cc218e8fcc4ad05e719f5ed0d2febb910d42e21387759ac9";
+        };
+      default = "r1";
       };
     };
   }

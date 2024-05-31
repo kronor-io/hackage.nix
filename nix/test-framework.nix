@@ -794,7 +794,13 @@
         revTimestamp = "2024-02-07T11:37:13Z";
         sha256 = "e63b8d29a9132a83c139f7373f74afe5e908760cf4a3ea33745c40e398080adc";
         };
-      default = "r11";
+      r12 = {
+        nix = import ../hackage/test-framework-0.8.2.0-r12-9fa62d8daa76e3277b8057111bf5d5562ea4d8062b1a357b0154495ff5eae299.nix;
+        revNum = 12;
+        revTimestamp = "2024-05-29T08:49:10Z";
+        sha256 = "9fa62d8daa76e3277b8057111bf5d5562ea4d8062b1a357b0154495ff5eae299";
+        };
+      default = "r12";
       };
     };
   }

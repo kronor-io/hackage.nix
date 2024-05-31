@@ -80,7 +80,13 @@
         revTimestamp = "2024-03-25T10:39:21Z";
         sha256 = "4b79d7b25594b608b4dad678976b1033511c7cfe84c30fd9dde2a2cc2bddae19";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/quickcheck-lockstep-0.5.0-r1-b8968ecbb09268493797603ab7b69be98348d0def75246c04454a459668e38a6.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-30T10:43:04Z";
+        sha256 = "b8968ecbb09268493797603ab7b69be98348d0def75246c04454a459668e38a6";
+        };
+      default = "r1";
       };
     };
   }

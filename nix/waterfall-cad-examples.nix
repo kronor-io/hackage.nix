@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.2.2.1" = {
+    sha256 = "9816d396ea49b7af1b13a289a11a59447c65ee43d9ff2c64803b14b27a331588";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/waterfall-cad-examples-0.2.2.1-r0-1e9a19bd35ba7ba136eb6f40ddf8f1cdf765f883f07319c84824a4f75340172d.nix;
+        revNum = 0;
+        revTimestamp = "2024-05-29T20:04:57Z";
+        sha256 = "1e9a19bd35ba7ba136eb6f40ddf8f1cdf765f883f07319c84824a4f75340172d";
+        };
+      default = "r0";
+      };
+    };
   }

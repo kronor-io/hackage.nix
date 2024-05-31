@@ -32,7 +32,13 @@
         revTimestamp = "2024-02-13T15:43:14Z";
         sha256 = "10c3290d83704837300a28f5dca3733d4b041876971aaeb4078b51fe13d9a12c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/th-letrec-0.1.1-r1-59bbab39a0612cf101a0267275658fc9299ba85fb6aff51176b4fc8f6985f0fd.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-29T14:22:12Z";
+        sha256 = "59bbab39a0612cf101a0267275658fc9299ba85fb6aff51176b4fc8f6985f0fd";
+        };
+      default = "r1";
       };
     };
   }
