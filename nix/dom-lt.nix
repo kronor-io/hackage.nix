@@ -134,7 +134,13 @@
         revTimestamp = "2021-11-12T11:44:53Z";
         sha256 = "89f17bbeb0d23f5a46fe7099b81cc9b4b5df32aadb5080fc171c874aafc802c0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dom-lt-0.2.3-r1-1df9402e21e97de0da74fdf2a9f8c96ab8a710c602eb6d22ac8e9c274db51090.nix;
+        revNum = 1;
+        revTimestamp = "2024-05-31T09:33:03Z";
+        sha256 = "1df9402e21e97de0da74fdf2a9f8c96ab8a710c602eb6d22ac8e9c274db51090";
+        };
+      default = "r1";
       };
     };
   }
