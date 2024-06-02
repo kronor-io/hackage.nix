@@ -212,7 +212,19 @@
         revTimestamp = "2023-09-20T11:41:59Z";
         sha256 = "a3b73b5a6938ad8ab8f0ee452044fd83c8b965ee78c7ba7e2e8dc748ca972d88";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/learn-physics-0.6.6-r1-ddd512917726067607682d1b46ae5fd8faea565e425fe0e6057cbca37e6c040f.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-01T23:17:58Z";
+        sha256 = "ddd512917726067607682d1b46ae5fd8faea565e425fe0e6057cbca37e6c040f";
+        };
+      r2 = {
+        nix = import ../hackage/learn-physics-0.6.6-r2-764c48d150711615b86c8665c9592e02cb57187cd3c372952568edb8326aa626.nix;
+        revNum = 2;
+        revTimestamp = "2024-06-01T23:31:26Z";
+        sha256 = "764c48d150711615b86c8665c9592e02cb57187cd3c372952568edb8326aa626";
+        };
+      default = "r2";
       };
     };
   "0.6.7" = {
