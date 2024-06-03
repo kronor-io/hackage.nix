@@ -50,7 +50,13 @@
         revTimestamp = "2023-11-18T03:28:29Z";
         sha256 = "c910d798fef75c928c71955ac08b86a13798470f5e2fb947fdb588859f0cfa2e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/rounded-hw-0.4.0-r1-851eb39abff9cbaacf2986e3c1713e4f9ba7eec0d234d756c1f5d67e48ec4cc0.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-02T02:18:56Z";
+        sha256 = "851eb39abff9cbaacf2986e3c1713e4f9ba7eec0d234d756c1f5d67e48ec4cc0";
+        };
+      default = "r1";
       };
     };
   }

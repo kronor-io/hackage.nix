@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "0.9.0" = {
+    sha256 = "6c519724d3ec8de5c6a992e68db8d2fdb55139adf45d3b3f1db47d610e17b23b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hoppy-docs-0.9.0-r0-6f61604621df5e66700456252310e60bd466d9891eb756d880a6e1d73a3f50c4.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-02T00:45:15Z";
+        sha256 = "6f61604621df5e66700456252310e60bd466d9891eb756d880a6e1d73a3f50c4";
+        };
+      default = "r0";
+      };
+    };
   }

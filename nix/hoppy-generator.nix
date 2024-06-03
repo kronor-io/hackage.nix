@@ -191,4 +191,16 @@
       default = "r0";
       };
     };
+  "0.9.0" = {
+    sha256 = "1c2bdf317ca08e50eae3410532a2ee19cd5ea419ff8dcd0eed2128570047ea9a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hoppy-generator-0.9.0-r0-095f218d88f13ede2a6b6e32b671846f0aa026c17e925cad9027d9eec31600ae.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-02T00:29:33Z";
+        sha256 = "095f218d88f13ede2a6b6e32b671846f0aa026c17e925cad9027d9eec31600ae";
+        };
+      default = "r0";
+      };
+    };
   }

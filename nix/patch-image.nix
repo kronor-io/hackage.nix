@@ -158,7 +158,13 @@
         revTimestamp = "2023-10-05T21:19:30Z";
         sha256 = "2467e2c985c432f855c570d728eb801ef2340065e47d8516e1a632d453bb1d25";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/patch-image-0.3.3.2-r3-9f16f6f3bb97500627cbe689b0675b742028e6de04d68b1160d96e2900da6ef8.nix;
+        revNum = 3;
+        revTimestamp = "2024-06-02T16:27:55Z";
+        sha256 = "9f16f6f3bb97500627cbe689b0675b742028e6de04d68b1160d96e2900da6ef8";
+        };
+      default = "r3";
       };
     };
   }

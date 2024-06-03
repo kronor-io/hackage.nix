@@ -122,7 +122,13 @@
         revTimestamp = "2023-11-02T04:48:52Z";
         sha256 = "28800633b20e0f7bfbdda1248c28022749aa0935aea10b1e3fc9c88cbebb06de";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/unliftio-core-0.2.1.0-r4-f6a2736f858b5390d9384dca43d3ea4d96e9ca17217791791ca4951ba6e8072a.nix;
+        revNum = 4;
+        revTimestamp = "2024-06-02T07:53:28Z";
+        sha256 = "f6a2736f858b5390d9384dca43d3ea4d96e9ca17217791791ca4951ba6e8072a";
+        };
+      default = "r4";
       };
     };
   }

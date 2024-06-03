@@ -20,7 +20,13 @@
         revTimestamp = "2024-03-27T13:37:06Z";
         sha256 = "a8f76076a40409a36ee975970c53273c2089aec9d9ece8168dfc736dfec24b9d";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/semaphore-compat-1.0.0-r3-2de5218cef72b8ef090bd7d0fd930ffa143242a120c62e013b5cf039858f1855.nix;
+        revNum = 3;
+        revTimestamp = "2024-06-02T16:53:09Z";
+        sha256 = "2de5218cef72b8ef090bd7d0fd930ffa143242a120c62e013b5cf039858f1855";
+        };
+      default = "r3";
       };
     };
   }
