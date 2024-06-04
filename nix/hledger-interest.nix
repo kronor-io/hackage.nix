@@ -374,7 +374,13 @@
         revTimestamp = "2024-04-21T14:27:30Z";
         sha256 = "e19ce71d0ebda2a61265c6cb99ac8320a1fc23b85c9ebc05d4ba653faef5dc7b";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/hledger-interest-1.6.6-r4-2514f6d2c114f9ec40cd57644742351c3535a170787760dc47157e3f53de2d2c.nix;
+        revNum = 4;
+        revTimestamp = "2024-06-03T16:16:58Z";
+        sha256 = "2514f6d2c114f9ec40cd57644742351c3535a170787760dc47157e3f53de2d2c";
+        };
+      default = "r4";
       };
     };
   }

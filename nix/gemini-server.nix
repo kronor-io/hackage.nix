@@ -50,7 +50,13 @@
         revTimestamp = "2023-07-24T10:16:42Z";
         sha256 = "8663ffadb428f8d283610471830018febce9eb630a9ed57749ac286d4a832f94";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/gemini-server-0.3.0.0-r2-773a6a22e1ab354644a9da86640f921df6dd892af783c2af6b86c8df0f28e7fa.nix;
+        revNum = 2;
+        revTimestamp = "2024-06-03T09:24:42Z";
+        sha256 = "773a6a22e1ab354644a9da86640f921df6dd892af783c2af6b86c8df0f28e7fa";
+        };
+      default = "r2";
       };
     };
   }
