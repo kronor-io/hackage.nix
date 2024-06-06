@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.2" = {
+    sha256 = "152566aba90c41345f28415301321e8fa899b4834ff1f9e4b840dbfc2d1256ab";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/elmental-0.1.0.2-r0-82d1143f0a8ebc88c44a6b9e9af857f684069896899f4faf4a31f498948e918d.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-05T07:43:40Z";
+        sha256 = "82d1143f0a8ebc88c44a6b9e9af857f684069896899f4faf4a31f498948e918d";
+        };
+      default = "r0";
+      };
+    };
   }
