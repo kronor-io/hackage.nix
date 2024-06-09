@@ -191,4 +191,16 @@
       default = "r0";
       };
     };
+  "0.6.2" = {
+    sha256 = "56261522d0311f546f652404f53f0969ca7b8397ed217bbe9aa0e61804b8c28c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cabal-install-parsers-0.6.2-r0-dcb64e37002929ff63bd98dea45877e27d6dbc11e566af96c4ec74593cee7dbc.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-08T13:55:09Z";
+        sha256 = "dcb64e37002929ff63bd98dea45877e27d6dbc11e566af96c4ec74593cee7dbc";
+        };
+      default = "r0";
+      };
+    };
   }
