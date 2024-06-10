@@ -647,4 +647,16 @@
       default = "r0";
       };
     };
+  "0.6.0.3" = {
+    sha256 = "8fa3136405e0cb715995c5e91be718b7349c4d920a9c4c7b07ee3c981f513d2e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/http-reverse-proxy-0.6.0.3-r0-55e3dc0fb8900eae0be6677fa2958b574be10e28cc2b4f0bec756fe772b3f38b.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-09T09:48:32Z";
+        sha256 = "55e3dc0fb8900eae0be6677fa2958b574be10e28cc2b4f0bec756fe772b3f38b";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -179,4 +179,16 @@
       default = "r0";
       };
     };
+  "0.4.0.1" = {
+    sha256 = "6f7e8de06d2ec7ff0be88cc7d5179cc524bbe9fc49499a1d845634050daf6d02";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/push-notify-apn-0.4.0.1-r0-c681c7a6f39d8b5121beedde19de29be0753432102732589afafc7ef2519dd43.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-09T11:43:36Z";
+        sha256 = "c681c7a6f39d8b5121beedde19de29be0753432102732589afafc7ef2519dd43";
+        };
+      default = "r0";
+      };
+    };
   }
