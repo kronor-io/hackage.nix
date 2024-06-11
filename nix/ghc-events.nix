@@ -230,7 +230,13 @@
         revTimestamp = "2024-02-02T22:08:25Z";
         sha256 = "fb5f6b6cfa19530839ffc0419509cd38893b2377a0e19347ee9698585d9f5925";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ghc-events-0.19.0.1-r2-ba04165305af0b263dfdbda0e859e678f5d7bc0ed0ec8971316408d857cb81dc.nix;
+        revNum = 2;
+        revTimestamp = "2024-06-10T13:47:33Z";
+        sha256 = "ba04165305af0b263dfdbda0e859e678f5d7bc0ed0ec8971316408d857cb81dc";
+        };
+      default = "r2";
       };
     };
   "0.2" = {
