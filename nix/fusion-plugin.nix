@@ -116,7 +116,19 @@
         revTimestamp = "2023-11-01T12:47:27Z";
         sha256 = "71068b72c095e3c03a885fc091066e1e03354fac7cb7d8b95d4d395ade69cbd8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fusion-plugin-0.2.7-r1-70cec8fa4849f0ac4f547f34963e819459bf6f4899ee947c009a82ef83dddc13.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-11T17:22:17Z";
+        sha256 = "70cec8fa4849f0ac4f547f34963e819459bf6f4899ee947c009a82ef83dddc13";
+        };
+      r2 = {
+        nix = import ../hackage/fusion-plugin-0.2.7-r2-741ca3749c63f1f574a70a49017cd7edcc4131923fa2c3103069616ecfcf63ea.nix;
+        revNum = 2;
+        revTimestamp = "2024-06-11T18:55:17Z";
+        sha256 = "741ca3749c63f1f574a70a49017cd7edcc4131923fa2c3103069616ecfcf63ea";
+        };
+      default = "r2";
       };
     };
   }

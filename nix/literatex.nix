@@ -146,7 +146,13 @@
         revTimestamp = "2024-04-16T21:36:12Z";
         sha256 = "71d047d68480ebabcbbdc1900b279fc58a699cd43a82cb50a487481311ed0370";
         };
-      default = "r7";
+      r8 = {
+        nix = import ../hackage/literatex-0.3.0.0-r8-0cd9c7c2a6a29df5094bf73b94691ab3e1936232d443768b714803eba19ee971.nix;
+        revNum = 8;
+        revTimestamp = "2024-06-11T21:49:54Z";
+        sha256 = "0cd9c7c2a6a29df5094bf73b94691ab3e1936232d443768b714803eba19ee971";
+        };
+      default = "r8";
       };
     };
   }
