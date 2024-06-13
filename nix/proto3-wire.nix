@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "1.4.3" = {
+    sha256 = "7fa316e7d309bd298ce6f28b85b5bb3d7ec9ce5ada895e2531febedb3f064b3f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/proto3-wire-1.4.3-r0-3c8acf8288a3062c2f3b4c1ffec9b8d54e07477e0c8e574845e2da7933e16079.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-12T06:12:52Z";
+        sha256 = "3c8acf8288a3062c2f3b4c1ffec9b8d54e07477e0c8e574845e2da7933e16079";
+        };
+      default = "r0";
+      };
+    };
   }
