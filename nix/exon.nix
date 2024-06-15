@@ -278,7 +278,13 @@
         revTimestamp = "2024-05-31T15:41:53Z";
         sha256 = "f25b3ccd06bd772e15f4a7f803e4f42ab9f7a6300b9c6908f36f69ef58766aaf";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/exon-1.7.0.0-r1-4778a3292efc3aa6327afca7967ee59dcfe4f354cf10f0aecb64b2e6106bfbac.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-14T21:20:55Z";
+        sha256 = "4778a3292efc3aa6327afca7967ee59dcfe4f354cf10f0aecb64b2e6106bfbac";
+        };
+      default = "r1";
       };
     };
   }
