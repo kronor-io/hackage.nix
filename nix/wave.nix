@@ -116,7 +116,13 @@
         revTimestamp = "2023-10-25T16:34:04Z";
         sha256 = "34fcedb08a84fcc373a59e415c4477836d4daa7bce41673b6ccb097864ab1700";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wave-0.2.1-r1-3fb6cdb127a95d8c6fd408aa001b1276a4ead6165affe5eb84b330b34363dec8.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-15T21:22:18Z";
+        sha256 = "3fb6cdb127a95d8c6fd408aa001b1276a4ead6165affe5eb84b330b34363dec8";
+        };
+      default = "r1";
       };
     };
   }

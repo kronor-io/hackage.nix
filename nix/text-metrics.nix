@@ -104,7 +104,13 @@
         revTimestamp = "2023-10-22T13:28:08Z";
         sha256 = "98bc097523232b855696bb52c50ab931132e00cac476168469a71b35e5d9bdc1";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/text-metrics-0.3.2-r4-18e76875b58556f6944cbdc92ad52b5f0bcaee5114114b7048ba68473db59bae.nix;
+        revNum = 4;
+        revTimestamp = "2024-06-15T16:34:32Z";
+        sha256 = "18e76875b58556f6944cbdc92ad52b5f0bcaee5114114b7048ba68473db59bae";
+        };
+      default = "r4";
       };
     };
   }

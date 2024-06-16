@@ -20,7 +20,13 @@
         revTimestamp = "2023-11-20T16:07:24Z";
         sha256 = "4f43be2bd35dfef02bef498ebab116ccabafaaca983d4beb0ea338d3dc5a15ce";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/skew-list-0.1-r3-3c22f558d995c03d9b5973b14cf5e11d6ce161c187d4699c38b73806d3d584b4.nix;
+        revNum = 3;
+        revTimestamp = "2024-06-15T13:27:26Z";
+        sha256 = "3c22f558d995c03d9b5973b14cf5e11d6ce161c187d4699c38b73806d3d584b4";
+        };
+      default = "r3";
       };
     };
   }
