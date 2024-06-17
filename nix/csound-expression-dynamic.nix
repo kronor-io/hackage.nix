@@ -359,4 +359,16 @@
       default = "r0";
       };
     };
+  "0.4.0.0" = {
+    sha256 = "342f6034e1045e36e6c4fed0829ebefafa9c62ed40a19e68d66fd1fa94ce714f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/csound-expression-dynamic-0.4.0.0-r0-35ef5a42aa07b868c02059a808ff9aceea413aa0696edeb72cd143fbf284f464.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-16T16:28:57Z";
+        sha256 = "35ef5a42aa07b868c02059a808ff9aceea413aa0696edeb72cd143fbf284f464";
+        };
+      default = "r0";
+      };
+    };
   }

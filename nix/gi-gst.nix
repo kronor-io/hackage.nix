@@ -263,6 +263,18 @@
       default = "r0";
       };
     };
+  "1.0.30" = {
+    sha256 = "f32c2e39249b01672682a22d41660f081abbef4f4c29a1a7d94f3a8d49b0d31e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-gst-1.0.30-r0-b8e2d1ab59e04d76860a1fdb60bc67b67bb0dadcc1eb1479397db93bcc8536b8.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-16T21:12:58Z";
+        sha256 = "b8e2d1ab59e04d76860a1fdb60bc67b67bb0dadcc1eb1479397db93bcc8536b8";
+        };
+      default = "r0";
+      };
+    };
   "1.0.4" = {
     sha256 = "6bf1d0d2e85e1c999d7e3ed14e9ff53f1f84ecf61555767db4e09499b95b025c";
     revisions = {

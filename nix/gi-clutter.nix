@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "1.0.6" = {
+    sha256 = "42e079676b0ccf66010a0c4c2514c88abf54abf6ac0a64e32ebb9f3213290407";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-clutter-1.0.6-r0-14704d1c552c56a4b33a8acf147728453a7aedf8844c0da4f67faff05d1e0940.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-16T21:12:43Z";
+        sha256 = "14704d1c552c56a4b33a8acf147728453a7aedf8844c0da4f67faff05d1e0940";
+        };
+      default = "r0";
+      };
+    };
   }

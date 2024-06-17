@@ -587,6 +587,18 @@
       default = "r0";
       };
     };
+  "4.0.28" = {
+    sha256 = "d7c15f86a2caf2dd314a41adf5d4893bc446b671393a2538a481ecf4d1d84750";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-javascriptcore-4.0.28-r0-0d880fbd9a8acd31f8dfc4cacff97b59eb3af88c26136800a9050b5b68721653.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-16T21:13:06Z";
+        sha256 = "0d880fbd9a8acd31f8dfc4cacff97b59eb3af88c26136800a9050b5b68721653";
+        };
+      default = "r0";
+      };
+    };
   "4.0.3" = {
     sha256 = "4de96b5ffa891588f2aa77e78c7d369c26afc3a233134a01b90438d057786597";
     revisions = {
@@ -679,6 +691,18 @@
         revNum = 0;
         revTimestamp = "2023-04-02T21:18:31Z";
         sha256 = "75b9b966297c54bf95f72e96f1f23ef70dfcba09e143ea3a9b972079d33a53ea";
+        };
+      default = "r0";
+      };
+    };
+  "6.0.4" = {
+    sha256 = "605a1c5c1a57fb0cf4521b73078e7b5d11f64df9668c739c48ef8c0741f1b524";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-javascriptcore-6.0.4-r0-3f6e39ddab473ad045e096d2fda6fe305cce7215099376b2cfe3837f6d725a43.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-16T20:33:28Z";
+        sha256 = "3f6e39ddab473ad045e096d2fda6fe305cce7215099376b2cfe3837f6d725a43";
         };
       default = "r0";
       };

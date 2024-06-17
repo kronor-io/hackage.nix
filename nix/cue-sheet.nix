@@ -176,7 +176,13 @@
         revTimestamp = "2023-12-31T14:15:43Z";
         sha256 = "5e64d0d8ff0138a7518990ff1f3d8e9b651c20e20a562437fd6b8ce96c3342e3";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/cue-sheet-2.0.2-r4-e1d9cc17bb5542589a63d24286729c5be4f0856714d89311d1a5d749c3705ae4.nix;
+        revNum = 4;
+        revTimestamp = "2024-06-16T14:15:16Z";
+        sha256 = "e1d9cc17bb5542589a63d24286729c5be4f0856714d89311d1a5d749c3705ae4";
+        };
+      default = "r4";
       };
     };
   }
