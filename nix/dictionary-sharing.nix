@@ -26,7 +26,13 @@
         revTimestamp = "2018-11-06T13:16:11Z";
         sha256 = "6990c4cb6e5c7fd2b3c545576accc2c00a56cdc52ffe646f70680d781893c7d6";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/dictionary-sharing-0.1.0.0-r4-1e0f9264f2f55e7ebc21e79b9b76e706b60b573ab531d40a0e05c1282fe866a3.nix;
+        revNum = 4;
+        revTimestamp = "2024-06-17T23:23:36Z";
+        sha256 = "1e0f9264f2f55e7ebc21e79b9b76e706b60b573ab531d40a0e05c1282fe866a3";
+        };
+      default = "r4";
       };
     };
   }
