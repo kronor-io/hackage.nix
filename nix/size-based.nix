@@ -104,7 +104,13 @@
         revTimestamp = "2023-10-20T11:51:01Z";
         sha256 = "5d0988677ce55b522329fc330e438ba6540e435f725eb18ad7e09c8074e15d21";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/size-based-0.1.3.2-r1-9385a22eb71558e4e1bce6e033fd1c735bb5081ea7f1d76a7957178eaf7891c0.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-18T10:57:40Z";
+        sha256 = "9385a22eb71558e4e1bce6e033fd1c735bb5081ea7f1d76a7957178eaf7891c0";
+        };
+      default = "r1";
       };
     };
   }

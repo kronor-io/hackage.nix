@@ -116,7 +116,13 @@
         revTimestamp = "2023-12-20T19:13:59Z";
         sha256 = "3dfb67058b93a59a5bd0047e606e5207c8335beee3b4fc1f74ebd8142abbb047";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/unicode-collation-0.1.3.6-r1-aef6fc69cea1f6bfcc77c241d2852c1291e3fc61ebee0afcddcbc5259a394707.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-18T01:33:39Z";
+        sha256 = "aef6fc69cea1f6bfcc77c241d2852c1291e3fc61ebee0afcddcbc5259a394707";
+        };
+      default = "r1";
       };
     };
   }
