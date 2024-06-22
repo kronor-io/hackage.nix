@@ -227,4 +227,16 @@
       default = "r0";
       };
     };
+  "0.5.4.0" = {
+    sha256 = "daf8e1801489150f1add1b6df1b5c7933ff685d131b01a855240c70dd793c407";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hspray-0.5.4.0-r0-21ce78ca776a16bd58fd24b60b66c8a4457dc9b95987b3aa327a5c25df584f34.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-21T15:03:37Z";
+        sha256 = "21ce78ca776a16bd58fd24b60b66c8a4457dc9b95987b3aa327a5c25df584f34";
+        };
+      default = "r0";
+      };
+    };
   }
