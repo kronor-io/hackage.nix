@@ -104,7 +104,13 @@
         revTimestamp = "2024-01-15T21:29:03Z";
         sha256 = "4f94f83d41b4b411b6e7327830ff84e76a1f0c241c3a8d32d4a946285cf5cb40";
         };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/svg-builder-0.1.1-r9-a56ed20d33be4bc95760f66877e634df80bb5ed8b20c29c2bf66e65ef65b4631.nix;
+        revNum = 9;
+        revTimestamp = "2024-06-22T21:11:22Z";
+        sha256 = "a56ed20d33be4bc95760f66877e634df80bb5ed8b20c29c2bf66e65ef65b4631";
+        };
+      default = "r9";
       };
     };
   }
