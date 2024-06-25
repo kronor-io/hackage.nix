@@ -71,4 +71,16 @@
       default = "r0";
       };
     };
+  "0.1.3.0" = {
+    sha256 = "74a7bb9340ec5d7cb88ba356d49cd6e13738d2bbf1305bccd58f8832c82f831e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/keid-ui-dearimgui-0.1.3.0-r0-d07b0ae27f79d2e1d9e6c5e3d922e7fbb4454820daf322128da4ffc40cbfb1a5.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-24T18:51:17Z";
+        sha256 = "d07b0ae27f79d2e1d9e6c5e3d922e7fbb4454820daf322128da4ffc40cbfb1a5";
+        };
+      default = "r0";
+      };
+    };
   }

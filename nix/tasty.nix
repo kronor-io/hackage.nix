@@ -1658,7 +1658,13 @@
         revTimestamp = "2024-06-22T10:14:39Z";
         sha256 = "393043e6f42feb57931149127345266e0fc0f954bec43ea86428ba927b267380";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tasty-1.5.1-r1-1fab3620c17ee9895f211ec9ab4f041649a0dba74d93f006d3812036e8247be3.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-24T19:41:17Z";
+        sha256 = "1fab3620c17ee9895f211ec9ab4f041649a0dba74d93f006d3812036e8247be3";
+        };
+      default = "r1";
       };
     };
   }
