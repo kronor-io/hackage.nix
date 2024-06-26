@@ -242,7 +242,13 @@
         revTimestamp = "2024-04-25T10:29:23Z";
         sha256 = "7c730a96939b35d2afcebe871bec0463b1b48dd70103babac8852fd024b98e3b";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/HsYAML-0.2.1.4-r1-7d824d9c526e4b7581d39849ea6b8a3b95c8e61088f37081311b550a4530cd13.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-25T09:45:27Z";
+        sha256 = "7d824d9c526e4b7581d39849ea6b8a3b95c8e61088f37081311b550a4530cd13";
+        };
+      default = "r1";
       };
     };
   }

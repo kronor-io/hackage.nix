@@ -176,7 +176,13 @@
         revTimestamp = "2018-10-30T23:30:18Z";
         sha256 = "a13e5cc0c044713f923851a87b7cc757986ef199a76c94aa596fde10ae52ab49";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/symbol-0.2.4-r3-dcfe60e394428fa00f496428b2350e7e0c73f3ce3f4c477d7a319681599da62f.nix;
+        revNum = 3;
+        revTimestamp = "2024-06-25T10:13:44Z";
+        sha256 = "dcfe60e394428fa00f496428b2350e7e0c73f3ce3f4c477d7a319681599da62f";
+        };
+      default = "r3";
       };
     };
   }

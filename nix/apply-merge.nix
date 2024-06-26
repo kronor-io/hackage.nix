@@ -26,7 +26,13 @@
         revTimestamp = "2024-05-13T12:16:15Z";
         sha256 = "971a4bfc5510cdbe9e6a6ed7678a9e17d90fc2051a1d127f707720a3fca19c76";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/apply-merge-0.1.1.0-r2-e617d5392133fc62f7ebbc95d27fc1167977934390e8593f20516c80b854b1cc.nix;
+        revNum = 2;
+        revTimestamp = "2024-06-25T07:55:57Z";
+        sha256 = "e617d5392133fc62f7ebbc95d27fc1167977934390e8593f20516c80b854b1cc";
+        };
+      default = "r2";
       };
     };
   }
