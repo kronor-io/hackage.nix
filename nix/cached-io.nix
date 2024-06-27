@@ -68,7 +68,13 @@
         revTimestamp = "2024-03-12T01:24:06Z";
         sha256 = "97efc15aa9aa194ba2647b7ddc84e7c96be14cc24b0d9741ddc6aa519d893f47";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/cached-io-1.3.0.0-r1-3148fe036f5d411e201fc30169358dbfcfc7fdfe0e28a1623aaddc0a4a1992a0.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-26T08:36:38Z";
+        sha256 = "3148fe036f5d411e201fc30169358dbfcfc7fdfe0e28a1623aaddc0a4a1992a0";
+        };
+      default = "r1";
       };
     };
   }
