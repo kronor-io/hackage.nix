@@ -32,7 +32,13 @@
         revTimestamp = "2023-11-15T02:51:19Z";
         sha256 = "f5a15b4b22ed9487b650002b58dd757cf3ad084d777dc578b29c96a05452816c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/termbox-bindings-c-0.1.0.1-r1-1b9997e7ce62c8753193671b94f5be107bc002a01253536b788346b04700c206.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-28T13:55:25Z";
+        sha256 = "1b9997e7ce62c8753193671b94f5be107bc002a01253536b788346b04700c206";
+        };
+      default = "r1";
       };
     };
   }

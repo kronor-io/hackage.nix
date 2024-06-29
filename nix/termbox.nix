@@ -140,7 +140,13 @@
         revTimestamp = "2023-11-15T02:53:14Z";
         sha256 = "89aebedaeb2011213f941be97efe365d76cf6b67968b1c423bff3c2620e05fbe";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/termbox-2.0.0.1-r1-878356270fef243a1dc1b614701f170940c7eb5a168d6da34daaebc6f1b73511.nix;
+        revNum = 1;
+        revTimestamp = "2024-06-28T13:56:07Z";
+        sha256 = "878356270fef243a1dc1b614701f170940c7eb5a168d6da34daaebc6f1b73511";
+        };
+      default = "r1";
       };
     };
   }
