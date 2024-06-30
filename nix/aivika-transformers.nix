@@ -311,4 +311,16 @@
       default = "r0";
       };
     };
+  "6.1.1" = {
+    sha256 = "5958f90d25a03104362eb22c5899cc80408b2cb0790e9ce37d937fdc65a9f5f3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/aivika-transformers-6.1.1-r0-415c786fd489fabe3fb88fbc13a7f70fbbdc32fac61a53a82210ae5b73819b43.nix;
+        revNum = 0;
+        revTimestamp = "2024-06-29T13:24:12Z";
+        sha256 = "415c786fd489fabe3fb88fbc13a7f70fbbdc32fac61a53a82210ae5b73819b43";
+        };
+      default = "r0";
+      };
+    };
   }
