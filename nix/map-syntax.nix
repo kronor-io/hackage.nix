@@ -140,7 +140,13 @@
         revTimestamp = "2023-07-11T13:12:25Z";
         sha256 = "a5736453bf80743fd18ed374321617a2c56f949a02856fe36d413edfd8901733";
         };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/map-syntax-0.3-r9-319161a47106b937078fd758ffbd50851f1447d81a4547235cd23b49e545eb77.nix;
+        revNum = 9;
+        revTimestamp = "2024-06-30T20:07:58Z";
+        sha256 = "319161a47106b937078fd758ffbd50851f1447d81a4547235cd23b49e545eb77";
+        };
+      default = "r9";
       };
     };
   }

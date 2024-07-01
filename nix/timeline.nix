@@ -38,7 +38,13 @@
         revTimestamp = "2023-12-12T04:58:35Z";
         sha256 = "55bd07bc5cb32fa796316ba2c9474c7eb40c253852d2ff4b26f8637085d4ae1d";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/timeline-0.1.0.0-r6-389bd5ea99405435789066e508886c51af50f4f4e657b65ef6691188dfaec172.nix;
+        revNum = 6;
+        revTimestamp = "2024-06-30T22:03:25Z";
+        sha256 = "389bd5ea99405435789066e508886c51af50f4f4e657b65ef6691188dfaec172";
+        };
+      default = "r6";
       };
     };
   }
