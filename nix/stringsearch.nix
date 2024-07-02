@@ -236,7 +236,13 @@
         revTimestamp = "2018-10-10T16:32:59Z";
         sha256 = "e88c03f4adb4bb3ab88550c921a9a8a2836a0a70f58b9cc64cff2ac65af9b77c";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/stringsearch-0.3.6.6-r2-cd72bb03946006b18a6a374b7dc4a1c783a29df1889861604f95b1de1da98607.nix;
+        revNum = 2;
+        revTimestamp = "2024-07-01T20:47:12Z";
+        sha256 = "cd72bb03946006b18a6a374b7dc4a1c783a29df1889861604f95b1de1da98607";
+        };
+      default = "r2";
       };
     };
   }

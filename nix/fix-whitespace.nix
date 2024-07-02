@@ -104,7 +104,13 @@
         revTimestamp = "2023-12-28T15:39:33Z";
         sha256 = "114a1a04169b33d57b71b6d07b192ffe58e2f2543a9f60a46f231bafb25492ea";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/fix-whitespace-0.1-r2-80f8da1796f636a83424d8e0d72e0e3039e259431f2ce22fb3b116f5081f2fb5.nix;
+        revNum = 2;
+        revTimestamp = "2024-07-01T13:14:09Z";
+        sha256 = "80f8da1796f636a83424d8e0d72e0e3039e259431f2ce22fb3b116f5081f2fb5";
+        };
+      default = "r2";
       };
     };
   }

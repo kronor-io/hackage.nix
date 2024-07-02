@@ -896,7 +896,13 @@
         revTimestamp = "2023-09-28T13:03:30Z";
         sha256 = "de3ea3ef41a19c9b04d4f4004d867fc286fca948db6aedb0bad32b99408abaee";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/haskeline-0.8.2.1-r2-40096f75591b5391aa99c5ed87148da0e9288ca4be302dd9e5c4326f814089ba.nix;
+        revNum = 2;
+        revTimestamp = "2024-07-01T08:00:42Z";
+        sha256 = "40096f75591b5391aa99c5ed87148da0e9288ca4be302dd9e5c4326f814089ba";
+        };
+      default = "r2";
       };
     };
   }

@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "0.7.0.1" = {
+    sha256 = "ce0a04371e2a391bbc1d5d9f3b8a0664a666e98a9739027b160221ed5cacbecb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tmp-proc-rabbitmq-0.7.0.1-r0-77de753120d67ccd6c1da534eec9734c4a5df302b2aa608727f1fbc1a12a811b.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-01T08:37:35Z";
+        sha256 = "77de753120d67ccd6c1da534eec9734c4a5df302b2aa608727f1fbc1a12a811b";
+        };
+      default = "r0";
+      };
+    };
   }

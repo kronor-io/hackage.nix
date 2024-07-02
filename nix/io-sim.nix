@@ -74,7 +74,13 @@
         revTimestamp = "2023-11-20T18:20:46Z";
         sha256 = "65a406a6a9446fdcfec8adc1a6aa9c55c223742d6ae120d8c16ea53e8cde3609";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/io-sim-1.3.1.0-r2-ad0699b66376c8be31ac410cd8e3b332341b10bbfbf662a7faa2148ec12bad53.nix;
+        revNum = 2;
+        revTimestamp = "2024-07-01T06:09:15Z";
+        sha256 = "ad0699b66376c8be31ac410cd8e3b332341b10bbfbf662a7faa2148ec12bad53";
+        };
+      default = "r2";
       };
     };
   "1.4.0.0" = {

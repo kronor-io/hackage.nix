@@ -8,7 +8,13 @@
         revTimestamp = "2024-02-06T08:42:41Z";
         sha256 = "d07ffa19513051c6da5c626151562ca51b5d6430496a1d8f1819de0a56f62516";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/serdoc-core-0.1.0.0-r1-24eca67e954d206a8147a0adbe9cf23c54aba642ad365f366ee97ea7dea62740.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-01T02:18:35Z";
+        sha256 = "24eca67e954d206a8147a0adbe9cf23c54aba642ad365f366ee97ea7dea62740";
+        };
+      default = "r1";
       };
     };
   }

@@ -68,7 +68,13 @@
         revTimestamp = "2023-11-08T09:44:49Z";
         sha256 = "5f73d5104003de2faa955fbca11f381d5d2712ba870dbf584daa1ae9e8671b3d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/strict-stm-1.3.0.0-r1-ebc803f5bfc6c2d66117fc2b206742366b43b2e5ad0a5a39b909e48e85fd6b55.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-01T07:04:30Z";
+        sha256 = "ebc803f5bfc6c2d66117fc2b206742366b43b2e5ad0a5a39b909e48e85fd6b55";
+        };
+      default = "r1";
       };
     };
   "1.4.0.0" = {
