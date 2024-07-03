@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.1.4" = {
+    sha256 = "e4275eee4a41d97a966ad805516799b9e4007e7614161add2d57a80b6267be38";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/typelet-0.1.4-r0-d52397a7bd4218b3cc383a36e1d40a1b83625d072e8acb96427b6500228a886d.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-02T14:01:00Z";
+        sha256 = "d52397a7bd4218b3cc383a36e1d40a1b83625d072e8acb96427b6500228a886d";
+        };
+      default = "r0";
+      };
+    };
   }

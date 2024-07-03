@@ -92,7 +92,13 @@
         revTimestamp = "2024-01-04T16:50:17Z";
         sha256 = "e0da5dec7d6c3a351e11c140b238211edc5467339ad2c701b1aad70cfe2101be";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/capability-0.5.0.1-r4-3b3fa095891573bbdff854bf8351c3fcfa986d502c8071a2e4a2686ff3819302.nix;
+        revNum = 4;
+        revTimestamp = "2024-07-02T09:42:34Z";
+        sha256 = "3b3fa095891573bbdff854bf8351c3fcfa986d502c8071a2e4a2686ff3819302";
+        };
+      default = "r4";
       };
     };
   }

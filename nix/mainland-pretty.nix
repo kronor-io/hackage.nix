@@ -491,4 +491,16 @@
       default = "r4";
       };
     };
+  "0.7.1.1" = {
+    sha256 = "ebc2dd5bdc8ce652e034c2dac3499022d060484bc84db8f903d4cacaaecbdc0b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mainland-pretty-0.7.1.1-r0-183a829d43dead51e0cdb5769300e1d13aa1f4c445ecb1508fb307b8588b8242.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-02T14:23:43Z";
+        sha256 = "183a829d43dead51e0cdb5769300e1d13aa1f4c445ecb1508fb307b8588b8242";
+        };
+      default = "r0";
+      };
+    };
   }
