@@ -179,4 +179,16 @@
       default = "r0";
       };
     };
+  "0.7.0.0" = {
+    sha256 = "8ad7ea3c8217778b67a06c759069c2bccfea48958c42b401f95ad91a11b03c8d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mmzk-typeid-0.7.0.0-r0-3cc2111fc8be765ad451efa6233222e782ff289734ccd01099b9bde89f80a892.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-03T16:43:10Z";
+        sha256 = "3cc2111fc8be765ad451efa6233222e782ff289734ccd01099b9bde89f80a892";
+        };
+      default = "r0";
+      };
+    };
   }
