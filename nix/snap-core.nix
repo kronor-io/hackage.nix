@@ -1190,7 +1190,13 @@
         revTimestamp = "2024-04-26T23:58:20Z";
         sha256 = "c1112eaf146b15abe287479138cd8babd43c7d45d56cbb677adf3149e7d05f0b";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/snap-core-1.0.5.1-r6-0c2f6cbdf2ce5ebb7916444a2a421b185693732e4276a87e07dea40c552a8569.nix;
+        revNum = 6;
+        revTimestamp = "2024-07-04T22:39:46Z";
+        sha256 = "0c2f6cbdf2ce5ebb7916444a2a421b185693732e4276a87e07dea40c552a8569";
+        };
+      default = "r6";
       };
     };
   }

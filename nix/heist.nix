@@ -950,7 +950,13 @@
         revTimestamp = "2024-07-02T14:46:22Z";
         sha256 = "68f5e30bee43c8c5d5386db78e5364e212062c1a722582b1881edc72adcb60bf";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/heist-1.1.1.2-r3-a6d7be99800d5504e75d7a53d42368100b79b177a51ae1083774b8258cbb9944.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-04T22:38:48Z";
+        sha256 = "a6d7be99800d5504e75d7a53d42368100b79b177a51ae1083774b8258cbb9944";
+        };
+      default = "r3";
       };
     };
   }

@@ -218,7 +218,13 @@
         revTimestamp = "2024-05-11T16:54:13Z";
         sha256 = "a1bef3b18e6be1d49e3ec814c652c6ea35fc29eb9015125eb5aeebc7a685f4ee";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/relude-1.2.1.0-r3-288392175f4fd9587e200b10c0c51e6dcdf92bc798216a88c54c80464c7e98f8.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-04T21:09:21Z";
+        sha256 = "288392175f4fd9587e200b10c0c51e6dcdf92bc798216a88c54c80464c7e98f8";
+        };
+      default = "r3";
       };
     };
   }

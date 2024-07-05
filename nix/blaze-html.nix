@@ -884,7 +884,13 @@
         revTimestamp = "2024-03-06T08:07:25Z";
         sha256 = "740a88d84555102b452b9cbb0241b9b6fd27501537b3335c35be554052ebe344";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/blaze-html-0.9.2.0-r1-85c42f84f4ead2c48844fbe0865069add3bb3bb3322d38607e93d5515a4c9c58.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-04T12:14:36Z";
+        sha256 = "85c42f84f4ead2c48844fbe0865069add3bb3bb3322d38607e93d5515a4c9c58";
+        };
+      default = "r1";
       };
     };
   }

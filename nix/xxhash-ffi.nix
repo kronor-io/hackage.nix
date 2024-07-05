@@ -44,7 +44,13 @@
         revTimestamp = "2024-03-28T21:49:54Z";
         sha256 = "f3377d04b42b29667f53eca52a4991cde37920da81c0974d86f740fa64c1209e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xxhash-ffi-0.3-r1-3fe4acaa60c58af35de491c8bd9a24f9e6ead495f5736fb17d70384b693eac1e.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-04T20:38:50Z";
+        sha256 = "3fe4acaa60c58af35de491c8bd9a24f9e6ead495f5736fb17d70384b693eac1e";
+        };
+      default = "r1";
       };
     };
   }
