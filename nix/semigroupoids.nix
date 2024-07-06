@@ -1262,7 +1262,13 @@
         revTimestamp = "2024-05-04T15:38:56Z";
         sha256 = "6b17658b6a0b470bf6f02c199e0210fc4acf843947f82fe5268e91eed0af6269";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/semigroupoids-6.0.1-r1-f65892f65f941c7368334bdfdcdb9db2ad3952502e94e88785a5a428fa2f3f4e.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-05T12:13:56Z";
+        sha256 = "f65892f65f941c7368334bdfdcdb9db2ad3952502e94e88785a5a428fa2f3f4e";
+        };
+      default = "r1";
       };
     };
   }

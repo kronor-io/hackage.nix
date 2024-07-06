@@ -1490,7 +1490,13 @@
         revTimestamp = "2024-02-07T15:52:11Z";
         sha256 = "b0d87f892fa5bdc008cbadbc57bb2de17729da510ff974afac99eeb70844d94e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/trifecta-2.1.4-r1-d36667b3b3016afb14af2c9971c8069e43eda934b6464c51db14b8e23ed52150.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-06T00:00:12Z";
+        sha256 = "d36667b3b3016afb14af2c9971c8069e43eda934b6464c51db14b8e23ed52150";
+        };
+      default = "r1";
       };
     };
   }

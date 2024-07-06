@@ -86,7 +86,13 @@
         revTimestamp = "2024-07-02T13:01:58Z";
         sha256 = "9d59f6434e17c85c20635ec42a257ce6dd6aa7cde3e6d669a0f14c830d7bda41";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/streamly-0.10.1-r3-f0896a2ba47e9e201815fbdb8fd18c219e438f7802e27fd2aac9ae845fd992bc.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-05T11:04:51Z";
+        sha256 = "f0896a2ba47e9e201815fbdb8fd18c219e438f7802e27fd2aac9ae845fd992bc";
+        };
+      default = "r3";
       };
     };
   "0.2.0" = {

@@ -728,7 +728,13 @@
         revTimestamp = "2023-09-30T13:14:07Z";
         sha256 = "2bb029cacf13a9d53fc74def7958d45b44cd0113189c533df20bfda4cf36880a";
         };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/reducers-3.12.4-r7-08aaa2c3f6143f247fd2b60e16ed21f9711dd45a3b56e515a78aa82c1f5d2668.nix;
+        revNum = 7;
+        revTimestamp = "2024-07-05T12:16:14Z";
+        sha256 = "08aaa2c3f6143f247fd2b60e16ed21f9711dd45a3b56e515a78aa82c1f5d2668";
+        };
+      default = "r7";
       };
     };
   }
