@@ -554,7 +554,13 @@
         revTimestamp = "2024-01-08T15:03:37Z";
         sha256 = "6dc62a43a43259847c4b4a87d7ae5b563c0c9dc3d2f04883024fc54329d933f3";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/OpenGLRaw-3.3.4.1-r3-01b745fbd269fc96d982c3c915c5559793457ff02f9f6cce3ee259aed97378f1.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-06T11:45:28Z";
+        sha256 = "01b745fbd269fc96d982c3c915c5559793457ff02f9f6cce3ee259aed97378f1";
+        };
+      default = "r3";
       };
     };
   }

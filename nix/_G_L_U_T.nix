@@ -464,7 +464,13 @@
         revTimestamp = "2024-01-08T16:19:24Z";
         sha256 = "2ad7c698acbe1e45f8335ba55cc5bb86f74726c58129cb27c128a918f6b17c9f";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/GLUT-2.7.0.16-r3-ad8cbb5a08d2e3c5c8b9e8c22dc9f7917571342c7b1cc3ef0ce1bbbe91035202.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-06T12:24:13Z";
+        sha256 = "ad8cbb5a08d2e3c5c8b9e8c22dc9f7917571342c7b1cc3ef0ce1bbbe91035202";
+        };
+      default = "r3";
       };
     };
   "2.7.0.2" = {

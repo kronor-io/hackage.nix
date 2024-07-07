@@ -245,4 +245,16 @@
       default = "r3";
       };
     };
+  "0.1.1.1" = {
+    sha256 = "d55e26e2e566527b3940994923f38c11e53f67d30f8fd6e23166d2370fad4492";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/set-cover-0.1.1.1-r0-6cf5df48292e8f9a97ac8d57ee30ebe4a960b621c6dea45fab1d4c34be430e61.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-06T08:47:40Z";
+        sha256 = "6cf5df48292e8f9a97ac8d57ee30ebe4a960b621c6dea45fab1d4c34be430e61";
+        };
+      default = "r0";
+      };
+    };
   }
