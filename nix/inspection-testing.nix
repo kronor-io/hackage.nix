@@ -302,7 +302,13 @@
         revTimestamp = "2023-12-29T09:33:07Z";
         sha256 = "ac2ffdf531f629b1bbc486a365c65d2e5213218b75fe66ebe74ec00a97b39cd9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/inspection-testing-0.5.0.3-r1-2db8c4818955f086e85dc823f6b2507f296869e1070bec5897e88e8690a22da5.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-08T09:45:06Z";
+        sha256 = "2db8c4818955f086e85dc823f6b2507f296869e1070bec5897e88e8690a22da5";
+        };
+      default = "r1";
       };
     };
   }
