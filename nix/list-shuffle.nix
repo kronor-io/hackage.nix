@@ -20,7 +20,13 @@
         revTimestamp = "2024-05-16T01:39:27Z";
         sha256 = "91b80a786eb5ddb0ceb66bbdd64d3222ed35c6c2536b26b70f5a3200b788ac18";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/list-shuffle-1.0.0.1-r1-6a1d98bfeda9e1a3c8a61e2a3821d331f3a07b52a16dc7ca71c3a5c2a8d1e842.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-09T14:33:31Z";
+        sha256 = "6a1d98bfeda9e1a3c8a61e2a3821d331f3a07b52a16dc7ca71c3a5c2a8d1e842";
+        };
+      default = "r1";
       };
     };
   }

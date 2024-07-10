@@ -86,7 +86,13 @@
         revTimestamp = "2024-05-30T17:17:29Z";
         sha256 = "016ee0950a1cec09d19fa07792c366809bb8491f379b6145d3c3f5f3232a852b";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/extensions-0.1.0.2-r5-8de9ec6ebaa20fe9ccf78dd52c712de2a52f6ed9d33b5c3c6ce892f437acf412.nix;
+        revNum = 5;
+        revTimestamp = "2024-07-09T06:50:52Z";
+        sha256 = "8de9ec6ebaa20fe9ccf78dd52c712de2a52f6ed9d33b5c3c6ce892f437acf412";
+        };
+      default = "r5";
       };
     };
   }

@@ -806,7 +806,13 @@
         revTimestamp = "2023-04-14T07:00:42Z";
         sha256 = "3dbb69fb5b5934adf3e5c4259d80d378bfe46b0d8b4b483036eb7033bf1990ce";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hedis-0.15.2-r1-fb386e8af67da750653d92e19f12ae75c44dfe8578ae7165bd441f9aa7f03381.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-09T14:12:53Z";
+        sha256 = "fb386e8af67da750653d92e19f12ae75c44dfe8578ae7165bd441f9aa7f03381";
+        };
+      default = "r1";
       };
     };
   "0.2" = {
