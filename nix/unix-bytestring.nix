@@ -230,7 +230,13 @@
         revTimestamp = "2024-02-19T20:43:13Z";
         sha256 = "3b7227ef65b83e6d3af586e5231bddb37a1dea5694a055b50a97cad9202ee600";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/unix-bytestring-0.4.0.1-r1-ad6bee28e8f28acb2bce21ce8874f6a3c56afba906d450aaf1e12ad96b8b1403.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-10T03:51:54Z";
+        sha256 = "ad6bee28e8f28acb2bce21ce8874f6a3c56afba906d450aaf1e12ad96b8b1403";
+        };
+      default = "r1";
       };
     };
   }
