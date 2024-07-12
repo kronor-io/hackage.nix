@@ -347,6 +347,18 @@
       default = "r0";
       };
     };
+  "1.7.13" = {
+    sha256 = "6bfb84356fba952ab47243867a95a3ce39bdc7761ea06ca7687596627ad00c25";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/iproute-1.7.13-r0-db38adf1850f0d0e07458e907748abdf45a6f9befed5d29c331d4525dec1b036.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-11T01:03:32Z";
+        sha256 = "db38adf1850f0d0e07458e907748abdf45a6f9befed5d29c331d4525dec1b036";
+        };
+      default = "r0";
+      };
+    };
   "1.7.2" = {
     sha256 = "97b62050a67906b136c9d3435852181e64a991a16b99d06ac30b82a362338597";
     revisions = {

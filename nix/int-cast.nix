@@ -92,7 +92,13 @@
         revTimestamp = "2023-07-04T14:50:13Z";
         sha256 = "bc0f46a1839bcaa5e5e4991594d552e4590a9b0e9ab404d311aa92bb29d4db87";
         };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/int-cast-0.2.0.0-r7-140bfe43b00828ca264b2d4e84f4ab7ec8d9579dee19759211eea0d3b3732b7c.nix;
+        revNum = 7;
+        revTimestamp = "2024-07-11T04:39:48Z";
+        sha256 = "140bfe43b00828ca264b2d4e84f4ab7ec8d9579dee19759211eea0d3b3732b7c";
+        };
+      default = "r7";
       };
     };
   }
