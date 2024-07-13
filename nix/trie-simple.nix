@@ -80,7 +80,13 @@
         revTimestamp = "2024-05-17T11:58:03Z";
         sha256 = "c5a7350ce818dc250a5f936fa22e346ad9351da4e746ca5f3ddf16bb656095b8";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/trie-simple-0.4.2-r5-0b7bbdd8b88eea81c99302754442b5724bf376f359c901bcb8288103d4cde6b3.nix;
+        revNum = 5;
+        revTimestamp = "2024-07-12T11:52:07Z";
+        sha256 = "0b7bbdd8b88eea81c99302754442b5724bf376f359c901bcb8288103d4cde6b3";
+        };
+      default = "r5";
       };
     };
   }

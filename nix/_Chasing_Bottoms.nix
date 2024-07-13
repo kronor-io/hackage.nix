@@ -308,7 +308,13 @@
         revTimestamp = "2024-04-23T13:22:29Z";
         sha256 = "409c35bb955d1913cdea226a1ed3ff58dd0074a5b91be47820901f1d3556e259";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ChasingBottoms-1.3.1.14-r1-3ecb985854ef0d9e63c2a881c2c305f0e619c8f15009158be17011bc5fb4cd8a.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-12T04:46:11Z";
+        sha256 = "3ecb985854ef0d9e63c2a881c2c305f0e619c8f15009158be17011bc5fb4cd8a";
+        };
+      default = "r1";
       };
     };
   "1.3.1.2" = {
