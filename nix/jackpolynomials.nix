@@ -203,4 +203,16 @@
       default = "r0";
       };
     };
+  "1.4.7.0" = {
+    sha256 = "2f75a32e7c278c040dd3071c80740e93ab49d21c330bf7bcc2dd2b2fe8a70b02";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jackpolynomials-1.4.7.0-r0-63eca8d9e78b4a781804bd7447cde69deaa679c0cf9610b37636019d351eaf24.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-13T19:04:01Z";
+        sha256 = "63eca8d9e78b4a781804bd7447cde69deaa679c0cf9610b37636019d351eaf24";
+        };
+      default = "r0";
+      };
+    };
   }

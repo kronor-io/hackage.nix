@@ -164,7 +164,13 @@
         revTimestamp = "2023-12-02T21:47:51Z";
         sha256 = "42f76fa3404d07bd1843d56fb68d5ef2f77ef04cc2a59cd249a4ed680eee576f";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/yasi-0.2.0.1-r6-46899f5a1da3842dd42a83d30bc136f4e8f58089355145f96f9f57b39acb1d71.nix;
+        revNum = 6;
+        revTimestamp = "2024-07-13T13:48:09Z";
+        sha256 = "46899f5a1da3842dd42a83d30bc136f4e8f58089355145f96f9f57b39acb1d71";
+        };
+      default = "r6";
       };
     };
   }
