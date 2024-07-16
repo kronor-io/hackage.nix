@@ -44,7 +44,13 @@
         revTimestamp = "2018-11-05T23:03:57Z";
         sha256 = "6d8c8e780e9efc538a30e7336be837cd12488d81c035cff1fe395dc09cc616b1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/yoda-0.1.3.0-r1-66ffd7ce76cf8a4b59ef40c6614e4db6d7e30fea3c1632f087b4f63d29a06fb6.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-15T10:58:01Z";
+        sha256 = "66ffd7ce76cf8a4b59ef40c6614e4db6d7e30fea3c1632f087b4f63d29a06fb6";
+        };
+      default = "r1";
       };
     };
   }
