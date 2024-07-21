@@ -116,7 +116,13 @@
         revTimestamp = "2024-06-13T11:40:58Z";
         sha256 = "d85885faaedd1918062b5c09927bf6d214ac859173308ee2f9c6aac8f0869168";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/webgear-openapi-1.3.0-r1-801c8211ed85941d6e93f15cb785ee09c2fb519c63d1de948045bf2740e15fdc.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-20T12:15:50Z";
+        sha256 = "801c8211ed85941d6e93f15cb785ee09c2fb519c63d1de948045bf2740e15fdc";
+        };
+      default = "r1";
       };
     };
   }

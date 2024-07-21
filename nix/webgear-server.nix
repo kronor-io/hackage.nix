@@ -152,7 +152,13 @@
         revTimestamp = "2024-06-13T11:40:16Z";
         sha256 = "87ff88ab7e580c5d317980b245525c15725a2a535c54af258eee63d2ae87da12";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/webgear-server-1.3.0-r1-0fecebaf70a1fb8151b2879398396f63b6eea690e6f9c6c52062c36a5385e3bc.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-20T12:11:16Z";
+        sha256 = "0fecebaf70a1fb8151b2879398396f63b6eea690e6f9c6c52062c36a5385e3bc";
+        };
+      default = "r1";
       };
     };
   }
