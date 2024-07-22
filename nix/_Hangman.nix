@@ -41,4 +41,16 @@
       default = "r0";
       };
     };
+  "0.10.0.0" = {
+    sha256 = "5082c36532affe285471bbab48205a7b96e6cacfb666c6c4f0fc4711ff67c34c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Hangman-0.10.0.0-r0-a441d316b73c452438b723ad8dad9238f0a72a05ea78c39c2665e56cc30cca3a.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-21T05:14:08Z";
+        sha256 = "a441d316b73c452438b723ad8dad9238f0a72a05ea78c39c2665e56cc30cca3a";
+        };
+      default = "r0";
+      };
+    };
   }
