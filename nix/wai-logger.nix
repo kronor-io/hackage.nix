@@ -665,4 +665,16 @@
       default = "r0";
       };
     };
+  "2.4.1" = {
+    sha256 = "9a67ebd9a70cc3aecff08c0562571ff04b2fb19874ae1e32c0729387c67ea35c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wai-logger-2.4.1-r0-0508c2f86509f76a278ac2d0019cf8366568bfce3fd31e0dafe3a3a539c0646b.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-24T21:57:36Z";
+        sha256 = "0508c2f86509f76a278ac2d0019cf8366568bfce3fd31e0dafe3a3a539c0646b";
+        };
+      default = "r0";
+      };
+    };
   }
