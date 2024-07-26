@@ -104,7 +104,13 @@
         revTimestamp = "2023-12-12T18:01:56Z";
         sha256 = "8203671b722f92f4b81c778ababc2d1a6abdb10b533c0dfacdbff33e74443ad6";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/curve25519-0.2.8-r1-f6a30d76e7260757a199deaab85348ba189d4703c4a0e56521cef39c03a13cfd.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-25T16:22:25Z";
+        sha256 = "f6a30d76e7260757a199deaab85348ba189d4703c4a0e56521cef39c03a13cfd";
+        };
+      default = "r1";
       };
     };
   }
