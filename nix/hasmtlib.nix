@@ -131,4 +131,16 @@
       default = "r0";
       };
     };
+  "2.1.0" = {
+    sha256 = "9b9bf29530fe1430177c3594f39c781c0b7dca57b94785e6e82bf9fd23d52a1c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hasmtlib-2.1.0-r0-b43b9b91f35f49e53a404fc94f91e92a2b3ff470fcdf264c3564e1e5c4f63fdc.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-26T13:50:24Z";
+        sha256 = "b43b9b91f35f49e53a404fc94f91e92a2b3ff470fcdf264c3564e1e5c4f63fdc";
+        };
+      default = "r0";
+      };
+    };
   }
