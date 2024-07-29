@@ -1322,7 +1322,13 @@
         revTimestamp = "2024-01-14T11:31:50Z";
         sha256 = "1372458e97dff541fcda099236af7936bf93ee6b8c5d15695ee6d9426dff5eed";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hoogle-5.0.18.4-r1-aaf0274da7de4e31ade69ad09f57a59ee25b3765cd102e631629850521754984.nix;
+        revNum = 1;
+        revTimestamp = "2024-07-28T21:48:40Z";
+        sha256 = "aaf0274da7de4e31ade69ad09f57a59ee25b3765cd102e631629850521754984";
+        };
+      default = "r1";
       };
     };
   "5.0.2" = {
