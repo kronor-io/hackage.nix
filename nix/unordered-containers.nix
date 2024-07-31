@@ -398,7 +398,13 @@
         revTimestamp = "2024-05-14T23:56:58Z";
         sha256 = "5a3e730fb548640f2ec050ec7517af67deede21de51e32bbebf6b7b222e6d0f5";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/unordered-containers-0.2.20-r3-c7fe9cba405ed9905e12d89c7add3b3eb9868dfba7975e70ba0cdd64b7b11abc.nix;
+        revNum = 3;
+        revTimestamp = "2024-07-30T18:49:50Z";
+        sha256 = "c7fe9cba405ed9905e12d89c7add3b3eb9868dfba7975e70ba0cdd64b7b11abc";
+        };
+      default = "r3";
       };
     };
   "0.2.3.0" = {
