@@ -467,4 +467,16 @@
       default = "r0";
       };
     };
+  "0.4.1.0" = {
+    sha256 = "172a4134bf3dcee2803c45fc07c134805c05a0c3329999312793b263dcd3af0d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ekg-0.4.1.0-r0-65eec0909ad70666f58ec6c0263720758f1b5130b8ff59c409c93a0bbe04849f.nix;
+        revNum = 0;
+        revTimestamp = "2024-07-31T13:12:29Z";
+        sha256 = "65eec0909ad70666f58ec6c0263720758f1b5130b8ff59c409c93a0bbe04849f";
+        };
+      default = "r0";
+      };
+    };
   }
