@@ -68,7 +68,13 @@
         revTimestamp = "2023-08-18T10:11:24Z";
         sha256 = "7596d3bfad05695c01215c8dc00770062d0fb3d6ac9c421c523287e2653e8f51";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/single-tuple-0.1.3.0-r2-36010c22049f379fece47afd0ff201802c2bdd8d5827f911fc88b53adcabc346.nix;
+        revNum = 2;
+        revTimestamp = "2024-08-01T10:16:40Z";
+        sha256 = "36010c22049f379fece47afd0ff201802c2bdd8d5827f911fc88b53adcabc346";
+        };
+      default = "r2";
       };
     };
   }

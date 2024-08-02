@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.1.1.0" = {
+    sha256 = "58bd95724cb6b1eba871e456b36d84cdae6f41cb5dabb4ea2021eee4cb1ff317";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/raven-haskell-scotty-0.1.1.0-r0-8f2cf5f3702dc48b05bf4b631855da10b6b1af706b1e8f120cbada62d0fce3f8.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-01T09:35:37Z";
+        sha256 = "8f2cf5f3702dc48b05bf4b631855da10b6b1af706b1e8f120cbada62d0fce3f8";
+        };
+      default = "r0";
+      };
+    };
   }
