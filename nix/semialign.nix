@@ -128,7 +128,13 @@
         revTimestamp = "2024-05-16T19:49:27Z";
         sha256 = "520364c94058b00b2411881a109206b5523ab66a7726fdb23e77e92d0b8b21b2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/semialign-1.3.1-r1-0ebafdb9c3bfac8c5311999ae195115c1452a205b273d54e7b1145a65c1bf610.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-02T08:11:00Z";
+        sha256 = "0ebafdb9c3bfac8c5311999ae195115c1452a205b273d54e7b1145a65c1bf610";
+        };
+      default = "r1";
       };
     };
   }

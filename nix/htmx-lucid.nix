@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.2.0.0" = {
+    sha256 = "6648dccc011293bcb297e0572d353f9ccf47ccfc4aab513c737fab9a550f99c6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/htmx-lucid-0.2.0.0-r0-c205eb8ba3d8276d52dce96dab7a468e8b1acb8e05fa2e511d8ba5e4a4dfc053.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-02T13:29:09Z";
+        sha256 = "c205eb8ba3d8276d52dce96dab7a468e8b1acb8e05fa2e511d8ba5e4a4dfc053";
+        };
+      default = "r0";
+      };
+    };
   }

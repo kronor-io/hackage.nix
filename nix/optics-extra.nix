@@ -140,7 +140,13 @@
         revTimestamp = "2024-05-13T18:09:09Z";
         sha256 = "fa57084c75e57b849dc2d83348ae392ac9522b2e9dd56673021e4e3b48e101b6";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/optics-extra-0.4.2.1-r4-4d2750a267441534ff427777ccfbad551468b531056ec4ee9a5835cc33725b65.nix;
+        revNum = 4;
+        revTimestamp = "2024-08-02T15:03:05Z";
+        sha256 = "4d2750a267441534ff427777ccfbad551468b531056ec4ee9a5835cc33725b65";
+        };
+      default = "r4";
       };
     };
   }

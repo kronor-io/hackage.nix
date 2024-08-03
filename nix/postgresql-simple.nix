@@ -1382,7 +1382,13 @@
         revTimestamp = "2023-11-19T19:59:50Z";
         sha256 = "94ec1f140bec01d92bdf236cad9b45fe3b5c90e35a2385f53de52d6e407f0f7a";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/postgresql-simple-0.7.0.0-r2-dc386c85b054193477008941e53d82ebd88a9793f8566d1a02d3b93beac50679.nix;
+        revNum = 2;
+        revTimestamp = "2024-08-02T12:32:16Z";
+        sha256 = "dc386c85b054193477008941e53d82ebd88a9793f8566d1a02d3b93beac50679";
+        };
+      default = "r2";
       };
     };
   }
