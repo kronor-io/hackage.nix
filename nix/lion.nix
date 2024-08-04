@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.4.0.1" = {
+    sha256 = "593471a959cf3bb3fb7357721cd8a8f11de8f9afb230e4984655c78e6fbc8415";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/lion-0.4.0.1-r0-f863a7cfa51a16ac46865cdad6fce098d3b32f010efd8438c7485c676971845b.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-03T07:54:16Z";
+        sha256 = "f863a7cfa51a16ac46865cdad6fce098d3b32f010efd8438c7485c676971845b";
+        };
+      default = "r0";
+      };
+    };
   }
