@@ -59,4 +59,16 @@
       default = "r0";
       };
     };
+  "0.3.0.1" = {
+    sha256 = "3e70d5b72d954041402353623e62a749a77932612fcf865059e95c5d4484a37e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/typed-fsm-0.3.0.1-r0-3e0ab4ac021d26a7edf0b10ec934ad3cfe08365802d1dcba153f8797d5d80fa0.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-04T02:44:12Z";
+        sha256 = "3e0ab4ac021d26a7edf0b10ec934ad3cfe08365802d1dcba153f8797d5d80fa0";
+        };
+      default = "r0";
+      };
+    };
   }

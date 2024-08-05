@@ -128,7 +128,13 @@
         revTimestamp = "2022-11-21T02:20:47Z";
         sha256 = "ef0ded4868ac349a57fc32f4e22f7bade0daa37a2dd9e6c5dee170c70c22b77a";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hlrdb-0.4.0.0-r2-4f87564db62d1c386a7d0895e4f7e38b6be6b1bb4150721b529bde08131dcd79.nix;
+        revNum = 2;
+        revTimestamp = "2024-08-04T17:58:44Z";
+        sha256 = "4f87564db62d1c386a7d0895e4f7e38b6be6b1bb4150721b529bde08131dcd79";
+        };
+      default = "r2";
       };
     };
   }

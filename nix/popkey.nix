@@ -56,7 +56,13 @@
         revTimestamp = "2022-05-08T01:52:20Z";
         sha256 = "87d244e236e081938623e515e31a092e0d87c4eb7eff89b5fcefc92cb963f3a2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/popkey-0.1.0.2-r1-52d028a958ff2594690371a9a84b143a388efbfb001c27d2c45d6dba27e39f47.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-04T18:05:17Z";
+        sha256 = "52d028a958ff2594690371a9a84b143a388efbfb001c27d2c45d6dba27e39f47";
+        };
+      default = "r1";
       };
     };
   }

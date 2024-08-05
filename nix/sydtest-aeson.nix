@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.2.0.0" = {
+    sha256 = "908c7fbd2660aed6db79e31188bff35a63b1ece5e777a3f0fdb18dd515e64c91";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sydtest-aeson-0.2.0.0-r0-cf2211814f3a87422ce04c6fb1fedce01c615625780fe47978539690f68b3a16.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-04T10:06:46Z";
+        sha256 = "cf2211814f3a87422ce04c6fb1fedce01c615625780fe47978539690f68b3a16";
+        };
+      default = "r0";
+      };
+    };
   }

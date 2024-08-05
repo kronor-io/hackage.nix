@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.1.0.0" = {
+    sha256 = "7c76c36ac034b4db530b8077b10bd1b794ed0fc1b0308ede474f19d7b9b28fc9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sydtest-webdriver-screenshot-0.1.0.0-r0-f829921c6e4238faef7315fcc2f5885d5a0ce6bca1229d85fcd0abc5a214b9a9.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-04T10:07:08Z";
+        sha256 = "f829921c6e4238faef7315fcc2f5885d5a0ce6bca1229d85fcd0abc5a214b9a9";
+        };
+      default = "r0";
+      };
+    };
   }
