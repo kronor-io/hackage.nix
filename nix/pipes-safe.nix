@@ -356,7 +356,13 @@
         revTimestamp = "2023-11-20T01:20:53Z";
         sha256 = "5efa3607d5744ffd174e33ed41cffd1840374b140ef0558601610594f193de13";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/pipes-safe-2.3.5-r3-9a997da87846eff024922ff7accf3467dd5b719198b45e7317ef0436ea442cf2.nix;
+        revNum = 3;
+        revTimestamp = "2024-08-08T15:29:53Z";
+        sha256 = "9a997da87846eff024922ff7accf3467dd5b719198b45e7317ef0436ea442cf2";
+        };
+      default = "r3";
       };
     };
   }
