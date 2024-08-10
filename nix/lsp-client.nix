@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.4.0.0" = {
+    sha256 = "2257f24dccb182536a9278acfd5ed9770abc7cf2beff87219880ef43ae8dc695";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/lsp-client-0.4.0.0-r0-13a78512b7d105650eb1109c0305d02d847d719d14cb75013df176946c9892bd.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-09T18:01:17Z";
+        sha256 = "13a78512b7d105650eb1109c0305d02d847d719d14cb75013df176946c9892bd";
+        };
+      default = "r0";
+      };
+    };
   }
