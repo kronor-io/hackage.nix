@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.1.0.1" = {
+    sha256 = "c329b0b6e70a7a0434b4d7601b7909c67d897fb7765dfb21ecc72e6499ba6701";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haskell-ffprobe-0.1.0.1-r0-3dc915c3545fe91a931a7e4f42cba6c16ca01271148f3819fe4858d32723923e.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-10T20:34:07Z";
+        sha256 = "3dc915c3545fe91a931a7e4f42cba6c16ca01271148f3819fe4858d32723923e";
+        };
+      default = "r0";
+      };
+    };
   }
