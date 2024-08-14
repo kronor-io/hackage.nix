@@ -68,7 +68,13 @@
         revTimestamp = "2018-04-29T22:34:35Z";
         sha256 = "aafde42e71b64821843b5368261a7207b129f6a7961fe7b2e97fbf4d6d1573b1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/scotty-resource-0.2.0.2-r1-b74e2f4e22eaff6078a19bd88a7b8300819a9bbcd268c95d737115c15c7ddc86.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-13T13:48:31Z";
+        sha256 = "b74e2f4e22eaff6078a19bd88a7b8300819a9bbcd268c95d737115c15c7ddc86";
+        };
+      default = "r1";
       };
     };
   }
