@@ -8,7 +8,13 @@
         revTimestamp = "2023-08-31T13:16:58Z";
         sha256 = "8779bf845990a9399ae08d90293e34d92a438e7fc49258ea15cddd48bf08d073";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dupIO-0.1.0-r1-dffce961863724ac4efb6a3db9625543972a807c76f60d1790126023d480f742.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-14T10:50:27Z";
+        sha256 = "dffce961863724ac4efb6a3db9625543972a807c76f60d1790126023d480f742";
+        };
+      default = "r1";
       };
     };
   }
