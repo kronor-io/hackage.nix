@@ -35,4 +35,16 @@
       default = "r1";
       };
     };
+  "0.0.2.1" = {
+    sha256 = "99c8f9259e791008f681fbadea2e29d829dab1106913a2c071e116aa02890503";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/evdev-streamly-0.0.2.1-r0-31238de82338fd95c19a03346123064def6eae58a895f7ea2e6b128a31f624ae.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-15T16:53:38Z";
+        sha256 = "31238de82338fd95c19a03346123064def6eae58a895f7ea2e6b128a31f624ae";
+        };
+      default = "r0";
+      };
+    };
   }

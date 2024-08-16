@@ -197,4 +197,16 @@
       default = "r5";
       };
     };
+  "0.0.1.1" = {
+    sha256 = "f9259b76a6d21474d5b4081e511536ed6a00470c842298861546ebfab98ddfec";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hw-streams-0.0.1.1-r0-4b53e3a99a33a78960b4de40c3950961578945f2d43407c33308b9d20901c99b.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-15T08:53:32Z";
+        sha256 = "4b53e3a99a33a78960b4de40c3950961578945f2d43407c33308b9d20901c99b";
+        };
+      default = "r0";
+      };
+    };
   }

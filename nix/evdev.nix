@@ -206,7 +206,13 @@
         revTimestamp = "2023-09-01T11:12:18Z";
         sha256 = "898654a2b9151bf392055229aa35935189ae1dcf5cd231b53e7e6d0ec84efde0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/evdev-2.3.1.1-r1-76f0dbb5999f18e7b34614d4406a98f69c04045d358bbad8fad5e553bf026917.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-15T16:54:55Z";
+        sha256 = "76f0dbb5999f18e7b34614d4406a98f69c04045d358bbad8fad5e553bf026917";
+        };
+      default = "r1";
       };
     };
   }
