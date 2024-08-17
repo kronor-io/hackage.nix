@@ -707,4 +707,16 @@
       default = "r1";
       };
     };
+  "2.7.0" = {
+    sha256 = "007a0938cd148387a9f8979f3f5f581c7faccafb8ea1624d28349f65c8d4b900";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Agda-2.7.0-r0-d35219334169b3000569b596a42aad453a2df111928c30d7e03a4cc6461aa5d7.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-16T12:31:53Z";
+        sha256 = "d35219334169b3000569b596a42aad453a2df111928c30d7e03a4cc6461aa5d7";
+        };
+      default = "r0";
+      };
+    };
   }
