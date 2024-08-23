@@ -134,7 +134,13 @@
         revTimestamp = "2022-10-11T00:21:43Z";
         sha256 = "e975f85c790c3eed9ca4e4fa5d990ffe91c017a053c5cfd55b5504c50a6e7238";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ruby-marshal-0.2.1-r2-2d5703a50bc6e9b1b3bd68ba75042a2a3627e82ae309e14bd670b8b3c57ca66a.nix;
+        revNum = 2;
+        revTimestamp = "2024-08-21T12:02:24Z";
+        sha256 = "2d5703a50bc6e9b1b3bd68ba75042a2a3627e82ae309e14bd670b8b3c57ca66a";
+        };
+      default = "r2";
       };
     };
   }

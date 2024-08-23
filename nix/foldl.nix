@@ -692,7 +692,13 @@
         revTimestamp = "2024-03-02T06:37:40Z";
         sha256 = "de7c1312dc460785f5e5b546bda3cd779b64a346276ee84416a24a4949c9d2a0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/foldl-1.4.16-r1-ec0f71ef66d6fe9eb4c5ec3d5b5e5cc643d6d3da2116a61d5dd70b9ddc46c2dc.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-21T03:35:03Z";
+        sha256 = "ec0f71ef66d6fe9eb4c5ec3d5b5e5cc643d6d3da2116a61d5dd70b9ddc46c2dc";
+        };
+      default = "r1";
       };
     };
   "1.4.2" = {

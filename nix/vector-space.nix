@@ -284,7 +284,13 @@
         revTimestamp = "2024-08-06T18:13:50Z";
         sha256 = "2d36ea0fbbfeebe1df46a9e6d8dab256e642e79e085066c7e63ce2d579a75e4a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/vector-space-0.19-r1-627fe0c379b4548cc1344057cb388d46e26cad77dd8dcc0b93531691c59756ae.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-21T20:41:48Z";
+        sha256 = "627fe0c379b4548cc1344057cb388d46e26cad77dd8dcc0b93531691c59756ae";
+        };
+      default = "r1";
       };
     };
   "0.2.0" = {

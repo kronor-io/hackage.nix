@@ -65,4 +65,16 @@
       default = "r1";
       };
     };
+  "0.1.0.5" = {
+    sha256 = "1e6d4260dc6359fd49abff34260ccd633d55fccaecf4225b0a8d4029889b8d4c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ekg-prometheus-adapter-0.1.0.5-r0-1ec198c99bdf0b4d322eb64fc8840056c53433fa844cdd2c335406b5dc157786.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-22T10:20:02Z";
+        sha256 = "1ec198c99bdf0b4d322eb64fc8840056c53433fa844cdd2c335406b5dc157786";
+        };
+      default = "r0";
+      };
+    };
   }
