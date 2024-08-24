@@ -176,7 +176,13 @@
         revTimestamp = "2024-07-08T14:42:42Z";
         sha256 = "7c1fbc0bc64aaf6a76d3b0a812f79f44df4af9b7896e05b343459d39791d4530";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/parameterized-utils-2.1.8.0-r2-107a139c30a82a9c52d8e841fb14d24694890681e643a1757705216d441a61ce.nix;
+        revNum = 2;
+        revTimestamp = "2024-08-23T16:05:54Z";
+        sha256 = "107a139c30a82a9c52d8e841fb14d24694890681e643a1757705216d441a61ce";
+        };
+      default = "r2";
       };
     };
   }
