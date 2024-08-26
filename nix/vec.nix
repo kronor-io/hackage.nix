@@ -176,7 +176,13 @@
         revTimestamp = "2024-06-08T14:36:15Z";
         sha256 = "f6c78ecd133efb2c9bb3cefce4098a408d73f035fd755df5916b22bdc6be1138";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/vec-0.5.1-r1-dd39b053ceca6bdc2aa7dab1d960e96fb9123c43297e889278b6aad4c7d1ce7e.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-24T21:13:18Z";
+        sha256 = "dd39b053ceca6bdc2aa7dab1d960e96fb9123c43297e889278b6aad4c7d1ce7e";
+        };
+      default = "r1";
       };
     };
   }

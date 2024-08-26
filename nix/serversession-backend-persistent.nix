@@ -95,4 +95,16 @@
       default = "r0";
       };
     };
+  "2.0.2" = {
+    sha256 = "8d57bcb76fb136e2eb30f3200446ea7ff4d0b7865a2bf1b023a1a0c138d75aa6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/serversession-backend-persistent-2.0.2-r0-d70b7d69a7248ec8f0a23754004f0d2c6e3ec238a705c160a0b0e83bb42b714f.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-24T06:30:16Z";
+        sha256 = "d70b7d69a7248ec8f0a23754004f0d2c6e3ec238a705c160a0b0e83bb42b714f";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -386,7 +386,13 @@
         revTimestamp = "2024-06-22T21:08:37Z";
         sha256 = "ad14ba3b7e0344d3542f698887f9cc68bdf5129cd798c428a2b3368b49930ded";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/diagrams-rasterific-1.4.2.3-r3-e77ddcc10fd6245455cc29f3b19fada6e80d1240d544ca516c236e74fbdce87b.nix;
+        revNum = 3;
+        revTimestamp = "2024-08-24T13:21:41Z";
+        sha256 = "e77ddcc10fd6245455cc29f3b19fada6e80d1240d544ca516c236e74fbdce87b";
+        };
+      default = "r3";
       };
     };
   }

@@ -80,7 +80,13 @@
         revTimestamp = "2024-03-14T00:00:50Z";
         sha256 = "770d84790c071847aa161c9433316b915f1286b60259de66beda6e2f0caadf7d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/pseudo-boolean-0.1.11.0-r1-3e03a1fd845c70397d4e47c0da79a126c747bf4c3b0e4553eb4026297376dfd7.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-25T08:55:34Z";
+        sha256 = "3e03a1fd845c70397d4e47c0da79a126c747bf4c3b0e4553eb4026297376dfd7";
+        };
+      default = "r1";
       };
     };
   "0.1.2.0" = {

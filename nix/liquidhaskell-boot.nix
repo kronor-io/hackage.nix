@@ -80,7 +80,13 @@
         revTimestamp = "2024-08-21T15:43:23Z";
         sha256 = "058e96ff407caa49e54c41d5cea846753ba4409ddcc18b1811389d95106b19a9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/liquidhaskell-boot-0.9.8.2-r1-05c456660efa53322a95d33fe515c01d9800ba4c139b3626338f04eba0e1f79a.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-24T18:32:36Z";
+        sha256 = "05c456660efa53322a95d33fe515c01d9800ba4c139b3626338f04eba0e1f79a";
+        };
+      default = "r1";
       };
     };
   }
