@@ -110,7 +110,13 @@
         revTimestamp = "2024-06-22T21:11:22Z";
         sha256 = "a56ed20d33be4bc95760f66877e634df80bb5ed8b20c29c2bf66e65ef65b4631";
         };
-      default = "r9";
+      r10 = {
+        nix = import ../hackage/svg-builder-0.1.1-r10-f9bafd52ce5d0783f7f32c8706d4af8ee310a1b92d88884c155fc9fa5c8aa7a8.nix;
+        revNum = 10;
+        revTimestamp = "2024-08-26T22:15:17Z";
+        sha256 = "f9bafd52ce5d0783f7f32c8706d4af8ee310a1b92d88884c155fc9fa5c8aa7a8";
+        };
+      default = "r10";
       };
     };
   }
