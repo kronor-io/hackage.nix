@@ -1163,4 +1163,16 @@
       default = "r0";
       };
     };
+  "6.1.0" = {
+    sha256 = "7dd65c5ff74e0a68f1d546bb9b6baf74611178546db86f2a632eb84163d716c6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sbp-6.1.0-r0-dbdb6054c20857cfa7cca8290b742ed4f19f8a731f9e3080b4132cbcdaff052a.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-27T23:29:41Z";
+        sha256 = "dbdb6054c20857cfa7cca8290b742ed4f19f8a731f9e3080b4132cbcdaff052a";
+        };
+      default = "r0";
+      };
+    };
   }

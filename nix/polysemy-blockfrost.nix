@@ -62,7 +62,13 @@
         revTimestamp = "2024-06-25T14:48:00Z";
         sha256 = "f80f69d730a2de1b972701910be375a592acebb7386efbc53b4c52a42ac5cd4e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/polysemy-blockfrost-0.1.4.0-r1-6746bf37adb9bba8ab10f91b7a08bf9e3aa695adc22f50d7c3d3222655aa92ca.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-27T09:10:08Z";
+        sha256 = "6746bf37adb9bba8ab10f91b7a08bf9e3aa695adc22f50d7c3d3222655aa92ca";
+        };
+      default = "r1";
       };
     };
   }

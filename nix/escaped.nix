@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "1.1.0.0" = {
+    sha256 = "53952303c483ca8196dbcfde5db9d5e0de844a7cc36aff530d041c4af2b67775";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/escaped-1.1.0.0-r0-ab908f931377791b7eb886559e6c8ba18984ab38ba8654d0788f38cea30429cf.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-27T13:32:37Z";
+        sha256 = "ab908f931377791b7eb886559e6c8ba18984ab38ba8654d0788f38cea30429cf";
+        };
+      default = "r0";
+      };
+    };
   }
