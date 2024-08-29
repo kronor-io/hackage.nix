@@ -323,4 +323,16 @@
       default = "r0";
       };
     };
+  "0.6.1.1" = {
+    sha256 = "7822bb80fcbb9580680bdbd372a1a8f37bc08b2d61c12ddb8bc3f00f054935f0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ghc-tags-plugin-0.6.1.1-r0-650f418911996111feee2de243e14fbab05f3ab8ed2955ead5727e4accd325ba.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-28T11:10:26Z";
+        sha256 = "650f418911996111feee2de243e14fbab05f3ab8ed2955ead5727e4accd325ba";
+        };
+      default = "r0";
+      };
+    };
   }
