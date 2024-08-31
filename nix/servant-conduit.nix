@@ -83,4 +83,16 @@
       default = "r2";
       };
     };
+  "0.16.1" = {
+    sha256 = "88d01abbfe7f19440a2eeb6d5def5016d868505fe849965d0c8bbe85676ead63";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-conduit-0.16.1-r0-c0626cd0db8435792c491b9e51a945feaefafd08d3320dda882e404af79b7efb.nix;
+        revNum = 0;
+        revTimestamp = "2024-08-30T02:30:48Z";
+        sha256 = "c0626cd0db8435792c491b9e51a945feaefafd08d3320dda882e404af79b7efb";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -1466,7 +1466,13 @@
         revTimestamp = "2024-07-16T21:31:51Z";
         sha256 = "c1c02d66078f92e5676b21ee9780e77be7bee48ff05d36f005d102902ca417c5";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-5.3.0-r1-b91741588765413b2bd2c55433cac6bd2857dcc86f574512f72e7c9272a82423.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-30T06:35:08Z";
+        sha256 = "b91741588765413b2bd2c55433cac6bd2857dcc86f574512f72e7c9272a82423";
+        };
+      default = "r1";
       };
     };
   "5.3.1" = {
@@ -1478,7 +1484,13 @@
         revTimestamp = "2024-07-24T21:53:02Z";
         sha256 = "51bbc299a4873bbc14bf75e9866f4c4ee0d432dd37553988550288a052e879a7";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-5.3.1-r1-f06aeef4291d40cf98fde6217c44b5d3a6bc45de2eb13e126d8fde66c1211a8e.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-30T06:36:02Z";
+        sha256 = "f06aeef4291d40cf98fde6217c44b5d3a6bc45de2eb13e126d8fde66c1211a8e";
+        };
+      default = "r1";
       };
     };
   "5.3.2" = {
@@ -1490,7 +1502,13 @@
         revTimestamp = "2024-08-08T07:21:21Z";
         sha256 = "60f2089d15203b29186c6f8a89b76bdf4b28f168c9095b25a0d9104a23723b08";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-5.3.2-r1-6b4f624ba2513cfe43969a2cfecc633e821294a17564dfb08080aa1336820528.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-30T06:36:29Z";
+        sha256 = "6b4f624ba2513cfe43969a2cfecc633e821294a17564dfb08080aa1336820528";
+        };
+      default = "r1";
       };
     };
   "5.3.3" = {
@@ -1502,7 +1520,13 @@
         revTimestamp = "2024-08-29T00:38:57Z";
         sha256 = "3f3d0d86527965da8066cf1dae1914dd39b9a9d42e13610fe4760dba13e572de";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-5.3.3-r1-8c16ee4e65b9240653ae50f717b27444217c98973a10acf5c6488af2be46c31b.nix;
+        revNum = 1;
+        revTimestamp = "2024-08-30T01:50:16Z";
+        sha256 = "8c16ee4e65b9240653ae50f717b27444217c98973a10acf5c6488af2be46c31b";
+        };
+      default = "r1";
       };
     };
   "5.3.4" = {
