@@ -296,7 +296,13 @@
         revTimestamp = "2024-05-27T12:47:25Z";
         sha256 = "109c93e7a56ce3d946b03f42e6222ad4590f84b7da3be56a90f3263860956b49";
         };
-      default = "r7";
+      r8 = {
+        nix = import ../hackage/vault-0.3.1.5-r8-1bbfdd061747cee5f678b5ac21d2513fa7184524506a3ab42f58191972694b59.nix;
+        revNum = 8;
+        revTimestamp = "2024-08-31T11:37:47Z";
+        sha256 = "1bbfdd061747cee5f678b5ac21d2513fa7184524506a3ab42f58191972694b59";
+        };
+      default = "r8";
       };
     };
   }
