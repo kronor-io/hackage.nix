@@ -263,4 +263,16 @@
       default = "r0";
       };
     };
+  "0.4.2.2" = {
+    sha256 = "a6d606c12638927f44ac02bdbf34e77ce69b3c1cc6640f98ee89f038b486d5d4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/autodocodec-0.4.2.2-r0-93b72477d84181a62c81b54bcffec31afbe15af987214e66bc408c37b9555b4f.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-01T14:35:33Z";
+        sha256 = "93b72477d84181a62c81b54bcffec31afbe15af987214e66bc408c37b9555b4f";
+        };
+      default = "r0";
+      };
+    };
   }
