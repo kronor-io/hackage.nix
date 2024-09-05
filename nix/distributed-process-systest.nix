@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.3.2" = {
+    sha256 = "c846b18f4b19930876b042d69bab67f90bc38088d72ccc29ac54b9b7038ac612";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/distributed-process-systest-0.3.2-r0-c455174603dbbefe162846625057655342e53b85db1760b9a508573fb4647027.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-03T15:09:30Z";
+        sha256 = "c455174603dbbefe162846625057655342e53b85db1760b9a508573fb4647027";
+        };
+      default = "r0";
+      };
+    };
   }

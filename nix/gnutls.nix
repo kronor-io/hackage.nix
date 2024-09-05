@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.3.1" = {
+    sha256 = "d79c8edbddd0b6468a857a42ac08993bedfd1cab527f070077cfff06761a5a7a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gnutls-0.3.1-r0-17f3982adbd2c50d0ecbff6ca000206ba2bc6eddee6a964d99f5e14279583945.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-04T22:53:05Z";
+        sha256 = "17f3982adbd2c50d0ecbff6ca000206ba2bc6eddee6a964d99f5e14279583945";
+        };
+      default = "r0";
+      };
+    };
   }

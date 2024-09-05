@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.1.1.0" = {
+    sha256 = "6d9ea7e1aad76e25a804bc5f61d396b9dab236f8d1431a46db842a260b1ee662";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pa-error-tree-0.1.1.0-r0-3c5c1b02fe4c7ac77b026009ae5bcfdce358786d947acab2a394c93b5c8ecaa4.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-04T12:36:12Z";
+        sha256 = "3c5c1b02fe4c7ac77b026009ae5bcfdce358786d947acab2a394c93b5c8ecaa4";
+        };
+      default = "r0";
+      };
+    };
   }
