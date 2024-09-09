@@ -170,7 +170,13 @@
         revTimestamp = "2024-09-06T12:59:15Z";
         sha256 = "54d149e05b6ca0cd2b063830acf2f9c5b1df0764b4e59cb04986bec3a2f43612";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/distributed-process-extras-0.3.6-r1-89493cc63556990d9f6a2ff4d0254828357dde555e54a14222b98cce50f68a28.nix;
+        revNum = 1;
+        revTimestamp = "2024-09-08T18:56:46Z";
+        sha256 = "89493cc63556990d9f6a2ff4d0254828357dde555e54a14222b98cce50f68a28";
+        };
+      default = "r1";
       };
     };
   }
