@@ -248,7 +248,19 @@
         revTimestamp = "2023-11-23T15:40:40Z";
         sha256 = "eb97ca14b5be92e8f888bb5abf112b5610133f15c9c68d604351dd5857d8fbb9";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/hedgehog-classes-0.2.5.4-r4-2235c1dc00e3365debd799e2975086b1402ac5f1a18d5db8c26edbb666b64261.nix;
+        revNum = 4;
+        revTimestamp = "2024-09-09T07:26:48Z";
+        sha256 = "2235c1dc00e3365debd799e2975086b1402ac5f1a18d5db8c26edbb666b64261";
+        };
+      r5 = {
+        nix = import ../hackage/hedgehog-classes-0.2.5.4-r5-d757e915c7a29a81368e74e1b75a37e89a71b525168cc608647b7eddd29a5da6.nix;
+        revNum = 5;
+        revTimestamp = "2024-09-09T15:03:52Z";
+        sha256 = "d757e915c7a29a81368e74e1b75a37e89a71b525168cc608647b7eddd29a5da6";
+        };
+      default = "r5";
       };
     };
   }

@@ -140,7 +140,13 @@
         revTimestamp = "2024-06-10T05:22:06Z";
         sha256 = "78b4d9fd53bb78c5a020c14bb7e0c9743b94d9053765603c1ec1af41625b6c8e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hslua-module-doclayout-1.1.1.2-r1-6493a86b21d124d23ec2aa8eb04c1db969a5c070937c214c9a34ed702a34ab5b.nix;
+        revNum = 1;
+        revTimestamp = "2024-09-09T15:24:45Z";
+        sha256 = "6493a86b21d124d23ec2aa8eb04c1db969a5c070937c214c9a34ed702a34ab5b";
+        };
+      default = "r1";
       };
     };
   }
