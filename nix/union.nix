@@ -152,7 +152,13 @@
         revTimestamp = "2022-10-11T17:54:17Z";
         sha256 = "856669b7084f992ab7c369e64fefe3833814b35409ff67f1aad4657548b5a466";
         };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/union-0.1.2-r9-04e5fe3a3a2b1235cf5d2fc193e6d6d2624ee762d7b2145fce975afbc8c40686.nix;
+        revNum = 9;
+        revTimestamp = "2024-09-10T10:28:09Z";
+        sha256 = "04e5fe3a3a2b1235cf5d2fc193e6d6d2624ee762d7b2145fce975afbc8c40686";
+        };
+      default = "r9";
       };
     };
   }
