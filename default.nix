@@ -16448,6 +16448,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "twitter-feed" = import ./nix/twitter-feed.nix;
   "twitter-types" = import ./nix/twitter-types.nix;
   "twitter-types-lens" = import ./nix/twitter-types-lens.nix;
+  "twobitreader" = import ./nix/twobitreader.nix;
   "tx" = import ./nix/tx.nix;
   "txt" = import ./nix/txt.nix;
   "txt-sushi" = import ./nix/txt-sushi.nix;
