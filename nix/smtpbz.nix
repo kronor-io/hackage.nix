@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "1.1.0" = {
+    sha256 = "d392d8a78702cb6d20ccf61375f95164fcb2ea9bddfad31b1f71af34022fd911";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/smtpbz-1.1.0-r0-9f918e4deed33abb2b9ad67320cb9a47b110425414703b84131222a393b5e998.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-13T09:28:31Z";
+        sha256 = "9f918e4deed33abb2b9ad67320cb9a47b110425414703b84131222a393b5e998";
+        };
+      default = "r0";
+      };
+    };
   }

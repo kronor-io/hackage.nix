@@ -6589,6 +6589,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "gitdo" = import ./nix/gitdo.nix;
   "githash" = import ./nix/githash.nix;
   "github" = import ./nix/github.nix;
+  "github-app-token" = import ./nix/github-app-token.nix;
   "github-backup" = import ./nix/github-backup.nix;
   "github-data" = import ./nix/github-data.nix;
   "github-post-receive" = import ./nix/github-post-receive.nix;
