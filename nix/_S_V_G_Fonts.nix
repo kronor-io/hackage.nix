@@ -338,7 +338,13 @@
         revTimestamp = "2021-11-01T14:34:27Z";
         sha256 = "66a29cebd825bdac6ed1da83bd3a310ba6e8db5d63d6511015d644b9a8ec48b8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/SVGFonts-1.8.0.1-r1-57e5f92965f9a311d23a25978bd1122e4c93f7ef46691f1d975703255d658b70.nix;
+        revNum = 1;
+        revTimestamp = "2024-09-14T21:36:10Z";
+        sha256 = "57e5f92965f9a311d23a25978bd1122e4c93f7ef46691f1d975703255d658b70";
+        };
+      default = "r1";
       };
     };
   }

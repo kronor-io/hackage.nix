@@ -104,7 +104,13 @@
         revTimestamp = "2024-01-26T17:57:55Z";
         sha256 = "06276d1f4d4fdef8cf4b41facc52bd2bc3490b6c8a8ce33017e2bc519f467486";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/diagrams-graphviz-1.4.1.1-r6-36c02a7ff8ac60cf098c73a98abbff1eaa6fa759be42f0c2dcfe8083761b1ec0.nix;
+        revNum = 6;
+        revTimestamp = "2024-09-14T21:31:32Z";
+        sha256 = "36c02a7ff8ac60cf098c73a98abbff1eaa6fa759be42f0c2dcfe8083761b1ec0";
+        };
+      default = "r6";
       };
     };
   }
