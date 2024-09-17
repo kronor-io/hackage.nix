@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.7.0.1" = {
+    sha256 = "0a2854caa46de910fd3956c5242d5e6590862b2b9a8eeb5a88fe5c177a6f1f14";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/happstack-static-routing-0.7.0.1-r0-b849334e92119b4a6810225800370ca14179900a10adf29931368eb7c38b24c6.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-16T11:57:20Z";
+        sha256 = "b849334e92119b4a6810225800370ca14179900a10adf29931368eb7c38b24c6";
+        };
+      default = "r0";
+      };
+    };
   }
