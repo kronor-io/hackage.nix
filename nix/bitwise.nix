@@ -152,7 +152,13 @@
         revTimestamp = "2024-01-15T16:15:09Z";
         sha256 = "805aeb3ccd9d80398665c162647a5cb1d2f61d799720d8c84ee5bbe98db981f5";
         };
-      default = "r9";
+      r10 = {
+        nix = import ../hackage/bitwise-1.0.0.1-r10-a9a6055dbfaa4145e34900d3bedf6ced1345e114092394658b2953f28c3fa31e.nix;
+        revNum = 10;
+        revTimestamp = "2024-09-17T10:23:42Z";
+        sha256 = "a9a6055dbfaa4145e34900d3bedf6ced1345e114092394658b2953f28c3fa31e";
+        };
+      default = "r10";
       };
     };
   }

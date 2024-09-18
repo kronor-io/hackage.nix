@@ -110,7 +110,13 @@
         revTimestamp = "2024-01-18T18:40:46Z";
         sha256 = "a329f109aaf5931025a926ecb7964185444dcfc71847cf3bae9ff52511af46b6";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/lumberjack-1.0.3.0-r2-df8c8963075a9533d98500f328f4996b427e19a210c80b4544abd5c64250eaeb.nix;
+        revNum = 2;
+        revTimestamp = "2024-09-17T16:11:31Z";
+        sha256 = "df8c8963075a9533d98500f328f4996b427e19a210c80b4544abd5c64250eaeb";
+        };
+      default = "r2";
       };
     };
   }
