@@ -152,7 +152,13 @@
         revTimestamp = "2024-01-05T14:53:41Z";
         sha256 = "912e9152aa33686e7410129c9d5fc051ca35e8bc5922c0723ec36da324ef9a49";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/streamly-fsnotify-2.1.0.2-r1-c281b235e1815beba4be9f1382990abe587f92b7736674e355d64c3aa2716556.nix;
+        revNum = 1;
+        revTimestamp = "2024-09-18T17:42:37Z";
+        sha256 = "c281b235e1815beba4be9f1382990abe587f92b7736674e355d64c3aa2716556";
+        };
+      default = "r1";
       };
     };
   "2.1.1" = {
