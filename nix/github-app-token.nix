@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.0.1.2" = {
+    sha256 = "c9d29e2e707bd3f8d3820930cfaccb155514cab174491d1d699b1196f85f204b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/github-app-token-0.0.1.2-r0-36e45b1398413cbcd756601c6b76d7302de6db75a20dcb57b84961cab7a1de4f.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-20T12:03:55Z";
+        sha256 = "36e45b1398413cbcd756601c6b76d7302de6db75a20dcb57b84961cab7a1de4f";
+        };
+      default = "r0";
+      };
+    };
   }
