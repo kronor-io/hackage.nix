@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.2.8.0" = {
+    sha256 = "eb6d6c437a933f31deb6ae85fc4bd345f69d31581a520dfa6523b20835c8f98f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hasql-transaction-io-0.2.8.0-r0-5a1e156c61073cc80a739921df33f29709347a1d15797d301f60fb87f8c77aa0.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-23T17:30:59Z";
+        sha256 = "5a1e156c61073cc80a739921df33f29709347a1d15797d301f60fb87f8c77aa0";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -149,4 +149,16 @@
       default = "r0";
       };
     };
+  "1.6.2" = {
+    sha256 = "df39918308990f7f541842f8699fc68ca3aef3365dd2cedef0c001b222a974e3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/what4-1.6.2-r0-953b5b11f79a66e8f3769c52615009f79bcc63908345365dbeadb0050595d48d.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-23T14:07:46Z";
+        sha256 = "953b5b11f79a66e8f3769c52615009f79bcc63908345365dbeadb0050595d48d";
+        };
+      default = "r0";
+      };
+    };
   }

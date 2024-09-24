@@ -83,4 +83,16 @@
       default = "r0";
       };
     };
+  "0.4.0" = {
+    sha256 = "3360f3861c9659f8da525fb203b66350cb45474a69dfadaa289c59d517bbae31";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/elm2nix-0.4.0-r0-3cc74f0c0b7638c1c69619140d6e91d93775f35e2415c93243fb1a44769794b0.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-23T13:41:11Z";
+        sha256 = "3cc74f0c0b7638c1c69619140d6e91d93775f35e2415c93243fb1a44769794b0";
+        };
+      default = "r0";
+      };
+    };
   }
