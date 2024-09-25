@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.2" = {
+    sha256 = "59fb87bb3dd890067ef191b5b5fd8e1d176b98e1d63a25c415ac38a75dbc68f0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unclogging-0.1.0.2-r0-4f04ff29bdee2f46fcf415f786e2ed0eb5c9422bdcd7b860b68def6d01eeaf6b.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-24T09:02:41Z";
+        sha256 = "4f04ff29bdee2f46fcf415f786e2ed0eb5c9422bdcd7b860b68def6d01eeaf6b";
+        };
+      default = "r0";
+      };
+    };
   }
