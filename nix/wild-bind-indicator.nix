@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "1.0.0.2" = {
+    sha256 = "dff19071ee17616f6cbe237b71c037ec3f9aeb1fe5d9c67ebf36c9b38efd7c2e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wild-bind-indicator-1.0.0.2-r0-7577042b61e2cf84e613a33d64d2beac398aa3ccddc8e41d199aad5505834976.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-25T07:29:16Z";
+        sha256 = "7577042b61e2cf84e613a33d64d2beac398aa3ccddc8e41d199aad5505834976";
+        };
+      default = "r0";
+      };
+    };
   }
