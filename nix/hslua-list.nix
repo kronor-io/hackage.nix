@@ -59,4 +59,16 @@
       default = "r0";
       };
     };
+  "1.1.3" = {
+    sha256 = "1cb7b674cf2476bc5a7c9acb65ea1d05834e93afd257f98760cd0e76f370f5c6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hslua-list-1.1.3-r0-81ea59d87399d44fe7a41031ca1d2366c0a5d92b20064fc7b495efd10be192de.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-26T16:31:56Z";
+        sha256 = "81ea59d87399d44fe7a41031ca1d2366c0a5d92b20064fc7b495efd10be192de";
+        };
+      default = "r0";
+      };
+    };
   }
