@@ -599,4 +599,16 @@
       default = "r0";
       };
     };
+  "1.9.1" = {
+    sha256 = "a34a08faf483ed7c9c5e7c439ac275077b9262bb3384d1f551e47d6aa59dd434";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pandoc-plot-1.9.1-r0-91dccac3a86302c2ce9092f9fc6ed2b55e042354aa7bfcd827f2cdb3bbbf999d.nix;
+        revNum = 0;
+        revTimestamp = "2024-09-27T12:26:50Z";
+        sha256 = "91dccac3a86302c2ce9092f9fc6ed2b55e042354aa7bfcd827f2cdb3bbbf999d";
+        };
+      default = "r0";
+      };
+    };
   }
