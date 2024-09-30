@@ -614,7 +614,13 @@
         revTimestamp = "2023-12-28T01:59:57Z";
         sha256 = "de9712d0d538a4e4ff5c86b6949f8776fd499cee9a7e537e31348566e74a317a";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/dhall-json-1.7.12-r3-12b8c44ad2e3f035630bfc220ad72a63661b4c37117298cdfbd02895ccf241ec.nix;
+        revNum = 3;
+        revTimestamp = "2024-09-29T13:33:18Z";
+        sha256 = "12b8c44ad2e3f035630bfc220ad72a63661b4c37117298cdfbd02895ccf241ec";
+        };
+      default = "r3";
       };
     };
   "1.7.2" = {

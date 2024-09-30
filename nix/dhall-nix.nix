@@ -428,7 +428,13 @@
         revTimestamp = "2023-12-28T02:00:53Z";
         sha256 = "b8f368e1dcd9b70a410b4bbe4edec75d0d9131494857bdc2322a3dba9f055eae";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/dhall-nix-1.1.26-r2-4339f6e8d3471b9222320771a344b4cf96bfda23e751091e43c7920b53603d1a.nix;
+        revNum = 2;
+        revTimestamp = "2024-09-29T13:35:50Z";
+        sha256 = "4339f6e8d3471b9222320771a344b4cf96bfda23e751091e43c7920b53603d1a";
+        };
+      default = "r2";
       };
     };
   "1.1.3" = {
