@@ -74,7 +74,13 @@
         revTimestamp = "2023-06-07T16:20:07Z";
         sha256 = "54c68b3ba10e8cdf5c33f448e0a8516d89d0d88e755208234a198e4ab5f9d82e";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/wizards-1.0.3-r3-cb7798895ee35e06c00a69eb1cd8a3c45921e3c5fb76ffcf11a76a15fbda4365.nix;
+        revNum = 3;
+        revTimestamp = "2024-09-30T22:59:27Z";
+        sha256 = "cb7798895ee35e06c00a69eb1cd8a3c45921e3c5fb76ffcf11a76a15fbda4365";
+        };
+      default = "r3";
       };
     };
   }
