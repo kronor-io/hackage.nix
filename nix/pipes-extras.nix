@@ -158,7 +158,13 @@
         revTimestamp = "2024-05-12T01:38:47Z";
         sha256 = "1561adbefa05da00e1c72548337e87985d4fc61c26dd9fd2a92f089ea94605d2";
         };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/pipes-extras-1.0.15-r9-d7603819bcffe47bddbe7f48e1bfbae97bcda40d52f5deab30aa3660ee068d03.nix;
+        revNum = 9;
+        revTimestamp = "2024-10-01T13:40:15Z";
+        sha256 = "d7603819bcffe47bddbe7f48e1bfbae97bcda40d52f5deab30aa3660ee068d03";
+        };
+      default = "r9";
       };
     };
   "1.0.2" = {
