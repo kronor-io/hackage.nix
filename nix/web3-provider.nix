@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "1.0.1.0" = {
+    sha256 = "0d2cbdca727cc7379a6bc6e88acf7b9c5a464c4b4eb9bb006f8f11d859d3b8da";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/web3-provider-1.0.1.0-r0-39ff6862ff4e14db325dca7ce6f55f40193f19b5d00eca67c57d9b27e421472e.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-03T12:52:48Z";
+        sha256 = "39ff6862ff4e14db325dca7ce6f55f40193f19b5d00eca67c57d9b27e421472e";
+        };
+      default = "r0";
+      };
+    };
   }
