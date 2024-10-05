@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "1.1.0.1" = {
+    sha256 = "b6f0bdd360a9f6489630fce7272505d0797c19a8e9ed003fc4d9241c854d45e8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fused-effects-random-1.1.0.1-r0-fbfbecd9d2a4679e285cfd79e68e7fa37fac96a52a847705b0c14bc473ebdffc.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-04T16:06:20Z";
+        sha256 = "fbfbecd9d2a4679e285cfd79e68e7fa37fac96a52a847705b0c14bc473ebdffc";
+        };
+      default = "r0";
+      };
+    };
   }
