@@ -83,4 +83,16 @@
       default = "r0";
       };
     };
+  "0.1.2.2" = {
+    sha256 = "d099da4afbcd9d345abd760bd26457af581dcc2942314e938c2a5bcbd4b7d89d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/djot-0.1.2.2-r0-9f4447e32a6d2e667753660ea791cb3b5557d4177169ea9ce03f619a8ed1302f.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-05T02:07:07Z";
+        sha256 = "9f4447e32a6d2e667753660ea791cb3b5557d4177169ea9ce03f619a8ed1302f";
+        };
+      default = "r0";
+      };
+    };
   }
