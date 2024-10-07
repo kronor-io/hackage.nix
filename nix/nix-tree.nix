@@ -227,4 +227,16 @@
       default = "r0";
       };
     };
+  "0.5.0" = {
+    sha256 = "ad2b21ea6b8c4f022ea397c36d471990550df45f418d90ffbf65e11fa7ad553e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nix-tree-0.5.0-r0-0d3c1ac5dea1aa52216a1cfa8194ec2f160cd573a5b0217665298293ad23104a.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-06T08:42:57Z";
+        sha256 = "0d3c1ac5dea1aa52216a1cfa8194ec2f160cd573a5b0217665298293ad23104a";
+        };
+      default = "r0";
+      };
+    };
   }
