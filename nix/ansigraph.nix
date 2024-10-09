@@ -98,7 +98,13 @@
         revTimestamp = "2019-01-13T15:44:56Z";
         sha256 = "73a488fd3e2548e19ba1c7d2f5e4c1d2d8287e8b9fa5de7950316e9ddab5f710";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ansigraph-0.3.0.5-r2-3a2bfc5968e97ab03d2cbd4504fbe4fa8f0d7669658f3dc2ed9e64a8646c034f.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-08T21:33:35Z";
+        sha256 = "3a2bfc5968e97ab03d2cbd4504fbe4fa8f0d7669658f3dc2ed9e64a8646c034f";
+        };
+      default = "r2";
       };
     };
   }
