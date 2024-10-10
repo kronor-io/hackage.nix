@@ -50,7 +50,13 @@
         revTimestamp = "2024-08-23T21:20:27Z";
         sha256 = "b913b5c0344993184b519506f0016a5ceafc7ca22add061e9a3bcf4a092a61a3";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/window-utils-0.2.2.0-r1-bb463d0ba05bbc3a810515df7caef9d41be95aa8fd93ab760af9277272c48c94.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-09T01:03:48Z";
+        sha256 = "bb463d0ba05bbc3a810515df7caef9d41be95aa8fd93ab760af9277272c48c94";
+        };
+      default = "r1";
       };
     };
   }
