@@ -170,7 +170,13 @@
         revTimestamp = "2019-06-27T05:02:43Z";
         sha256 = "8da81c156abbcaee3bdda60763bb9780ae1b9ff447bd5580202c0e0f5f8f7bcb";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wai-middleware-throttle-0.3.0.1-r1-0ce76da530a500b86907ce5323865f05d3ae6afbc91210abde0354b9aff4dfb4.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-11T22:49:55Z";
+        sha256 = "0ce76da530a500b86907ce5323865f05d3ae6afbc91210abde0354b9aff4dfb4";
+        };
+      default = "r1";
       };
     };
   }
