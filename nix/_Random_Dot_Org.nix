@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "1.0" = {
+    sha256 = "466a91764f63fbbd49ab2ba1d4c8ba700febcbe246a3b2913011816107dc4481";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/RandomDotOrg-1.0-r0-9ee8258c1459e09a0299b9c6f048bda279ae037eee1d52e66d4ef54e3053b192.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-12T18:46:22Z";
+        sha256 = "9ee8258c1459e09a0299b9c6f048bda279ae037eee1d52e66d4ef54e3053b192";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.0" = {
+    sha256 = "ba4e3f38eb7f8ef9ac63ca0fd6777bad647506beb210ed4d7a38cfe5fbb70927";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cabal-fix-0.1.0.0-r0-538cf5d29f175de09a7a77ec3d9fd35726e7e02af10498793f1342ed0762a724.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-12T05:29:03Z";
+        sha256 = "538cf5d29f175de09a7a77ec3d9fd35726e7e02af10498793f1342ed0762a724";
+        };
+      default = "r0";
+      };
+    };
   }
