@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.1.1" = {
+    sha256 = "7efb613ed049389ec378f41e94d8f2b5295651798e6351cf1d40ccaa74f8a442";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-sha512-0.1.1-r0-655d690cdfb65aaa4b67e9b537a29ead61bcfc868f6ae7c5c29486b2d8817182.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-13T13:06:54Z";
+        sha256 = "655d690cdfb65aaa4b67e9b537a29ead61bcfc868f6ae7c5c29486b2d8817182";
+        };
+      default = "r0";
+      };
+    };
   }
