@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.1.0.1" = {
+    sha256 = "c2a178fc657e326eea84ec3634163659f4c633b7431683b19571bca5f87c0899";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/harpie-numhask-0.1.0.1-r0-a06298cb3622848d1e04ccffda62e3878d1d12891f6f7abe7a03ea559ef05742.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-14T22:44:26Z";
+        sha256 = "a06298cb3622848d1e04ccffda62e3878d1d12891f6f7abe7a03ea559ef05742";
+        };
+      default = "r0";
+      };
+    };
   }
