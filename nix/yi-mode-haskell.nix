@@ -215,4 +215,16 @@
       default = "r0";
       };
     };
+  "0.19.1" = {
+    sha256 = "fc534658fa352d59b73dec6389538041555477b761a92943f1883abe1f4a0ec2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yi-mode-haskell-0.19.1-r0-eb6151462133f78b6e20ab34f81eb454c9adda64a2838218903b23e517b405b5.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-16T11:50:52Z";
+        sha256 = "eb6151462133f78b6e20ab34f81eb454c9adda64a2838218903b23e517b405b5";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -128,7 +128,13 @@
         revTimestamp = "2022-09-21T07:52:39Z";
         sha256 = "0b988569ad8718df17ef3b9c4f87b896684400181de6ac5ef32c61e38de86a26";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dsp-0.2.5.2-r1-b8d8002f9098555969780608383a950ef3920929eaa334f875316eaf5997991a.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-16T21:31:09Z";
+        sha256 = "b8d8002f9098555969780608383a950ef3920929eaa334f875316eaf5997991a";
+        };
+      default = "r1";
       };
     };
   }

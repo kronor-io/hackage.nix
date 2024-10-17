@@ -257,4 +257,16 @@
       default = "r0";
       };
     };
+  "0.19.4" = {
+    sha256 = "faae8dce26dc48393e2188d666952207d9c5eedbc338cb44773bcddf19e1503d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yi-core-0.19.4-r0-1187df63b910bc98cacd445715a75570e3d425a0178e106d3133da14b6d70a4e.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-16T11:51:32Z";
+        sha256 = "1187df63b910bc98cacd445715a75570e3d425a0178e106d3133da14b6d70a4e";
+        };
+      default = "r0";
+      };
+    };
   }
