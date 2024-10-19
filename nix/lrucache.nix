@@ -188,7 +188,13 @@
         revTimestamp = "2018-11-29T03:27:46Z";
         sha256 = "18fc3d7052012c7ab3cd395160f34b53c5e1ec5379cc45185baf35b90ffadc2e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lrucache-1.2.0.1-r1-13e0c552ac9a7a928d9ba94a2f45c9a718f757bdfa67b5ec2c7bdb2966615c6c.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-18T23:16:59Z";
+        sha256 = "13e0c552ac9a7a928d9ba94a2f45c9a718f757bdfa67b5ec2c7bdb2966615c6c";
+        };
+      default = "r1";
       };
     };
   }
