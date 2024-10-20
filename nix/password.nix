@@ -221,4 +221,16 @@
       default = "r1";
       };
     };
+  "3.1.0.0" = {
+    sha256 = "58c48f1d0b30fa02758866a75306efaab4ba847a12de1b54c59628bed2adac66";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/password-3.1.0.0-r0-185311704dcdeb23081a2c94facc7a2a4fbec4491a0c77c4f12a7ffdf688a1bc.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-19T07:07:25Z";
+        sha256 = "185311704dcdeb23081a2c94facc7a2a4fbec4491a0c77c4f12a7ffdf688a1bc";
+        };
+      default = "r0";
+      };
+    };
   }

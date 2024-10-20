@@ -350,7 +350,13 @@
         revTimestamp = "2024-10-18T09:35:27Z";
         sha256 = "a9687a958b639f4aa414af4ce57c337cdf939032781ec5f25ad23ea167e919cf";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/jacinda-3.2.0.0-r2-2c742e516cd78a74b2ba0ce6fd48eb69c0451383b086d242a493ee3351fcc561.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-19T02:31:00Z";
+        sha256 = "2c742e516cd78a74b2ba0ce6fd48eb69c0451383b086d242a493ee3351fcc561";
+        };
+      default = "r2";
       };
     };
   }

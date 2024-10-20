@@ -1319,4 +1319,16 @@
       default = "r1";
       };
     };
+  "1.8" = {
+    sha256 = "2fa4ce5eae50560bba80f1883913cf2ed52b3d87fd290dae27d838c94f5389a1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/extra-1.8-r0-57d9200fbea2e88e05e0be35925511764827b1c86d3214106b0b610f331fc40c.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-19T13:35:44Z";
+        sha256 = "57d9200fbea2e88e05e0be35925511764827b1c86d3214106b0b610f331fc40c";
+        };
+      default = "r0";
+      };
+    };
   }
