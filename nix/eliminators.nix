@@ -224,7 +224,13 @@
         revTimestamp = "2024-05-12T23:39:03Z";
         sha256 = "84f68de50d1cab3e6413e4f2689c26b2da31ca87304fabe2fd874238454a626e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/eliminators-0.9.5-r1-f56ecc88c35b625537646bd1a87abac5a8028c68c083b9126e596c05dad4fe37.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-20T11:46:16Z";
+        sha256 = "f56ecc88c35b625537646bd1a87abac5a8028c68c083b9126e596c05dad4fe37";
+        };
+      default = "r1";
       };
     };
   }
