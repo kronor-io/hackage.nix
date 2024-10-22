@@ -164,7 +164,13 @@
         revTimestamp = "2024-06-17T14:23:43Z";
         sha256 = "e1fe430a0bfa3f6f844f4d7eb934064bdfd8b53c2b72acb6ddd07edd3d013187";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/NanoID-3.4.0.2-r1-2ee34bc371a1d895023ddc15469c9e94e85bca6f1aaf6114903bfcc01b11b94d.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-21T13:14:12Z";
+        sha256 = "2ee34bc371a1d895023ddc15469c9e94e85bca6f1aaf6114903bfcc01b11b94d";
+        };
+      default = "r1";
       };
     };
   }

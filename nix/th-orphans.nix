@@ -254,7 +254,13 @@
         revTimestamp = "2024-04-20T14:35:51Z";
         sha256 = "521dc3f24abc4ecee658101652b626439c4bf90e44ca7e203b4245818043f0a5";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/th-orphans-0.13.14-r4-34432d4f77a328fa8799974e0adad1494db0e8163ab8179ff62c40325429d881.nix;
+        revNum = 4;
+        revTimestamp = "2024-10-21T11:23:24Z";
+        sha256 = "34432d4f77a328fa8799974e0adad1494db0e8163ab8179ff62c40325429d881";
+        };
+      default = "r4";
       };
     };
   "0.13.2" = {

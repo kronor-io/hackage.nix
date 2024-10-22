@@ -86,7 +86,13 @@
         revTimestamp = "2024-06-18T21:58:48Z";
         sha256 = "8d69a11774c4c9074b73c7692eb0237c025e557d9b1d9b9e44cfa0863d7de5cf";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/pantry-0.10.0-r2-d13f99099753b0acf0695a00dc4d82f2671d3c604161d169ac0fc8fcf3004dec.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-21T22:14:55Z";
+        sha256 = "d13f99099753b0acf0695a00dc4d82f2671d3c604161d169ac0fc8fcf3004dec";
+        };
+      default = "r2";
       };
     };
   "0.2.0.0" = {
