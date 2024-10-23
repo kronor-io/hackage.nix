@@ -803,4 +803,16 @@
       default = "r4";
       };
     };
+  "0.6.1" = {
+    sha256 = "8893ff5194d105800a4c32b303b02950cadac94d48a040d1be18507257376527";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/MonadRandom-0.6.1-r0-17914ff7ca7bf9982ee65fe5a18780e9f54ce2d9ca4d3c3950cfc9284b8d72e3.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-22T17:42:58Z";
+        sha256 = "17914ff7ca7bf9982ee65fe5a18780e9f54ce2d9ca4d3c3950cfc9284b8d72e3";
+        };
+      default = "r0";
+      };
+    };
   }
