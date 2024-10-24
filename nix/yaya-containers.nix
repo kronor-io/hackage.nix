@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.1.2.1" = {
+    sha256 = "71aabcfb5c8a66e34476a272cb8aa0eb39238b6b1e00d3e18f96511b0fe4539d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yaya-containers-0.1.2.1-r0-8de24f8b32fb4b26e984b5bc2c9c80b64255d48dce9fd9704f651b494f4c466b.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-23T23:37:19Z";
+        sha256 = "8de24f8b32fb4b26e984b5bc2c9c80b64255d48dce9fd9704f651b494f4c466b";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -1034,7 +1034,13 @@
         revTimestamp = "2024-05-11T02:06:35Z";
         sha256 = "4b23484853da17bd9fb43ac9fda8de13e38709daed5d46ac5513e7d7362117a2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ghc-lib-9.10.1.20240511-r1-3b6a6c2930647ddefeb39b674466ae8d7c3b0ed36594460307fa52936941f77f.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-23T12:07:50Z";
+        sha256 = "3b6a6c2930647ddefeb39b674466ae8d7c3b0ed36594460307fa52936941f77f";
+        };
+      default = "r1";
       };
     };
   "9.2.1.20211030" = {
@@ -1430,7 +1436,13 @@
         revTimestamp = "2024-10-22T03:03:01Z";
         sha256 = "309921a8f0b8b4fcf8c209a80d04da3748817f4cb6677cadfcf624c349f63be4";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ghc-lib-9.8.3.20241022-r1-713baf1e74126f9655a385958c1adb207e474ecfec2856e64e730a6785002a64.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-23T12:06:30Z";
+        sha256 = "713baf1e74126f9655a385958c1adb207e474ecfec2856e64e730a6785002a64";
+        };
+      default = "r1";
       };
     };
   }
