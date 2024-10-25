@@ -20,7 +20,13 @@
         revTimestamp = "2024-07-28T14:57:34Z";
         sha256 = "af7eb5e503a665dc0c537709f0722a010b035f1f8204e4325aba7708632f5a64";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sequitur-0.2.0.0-r1-d10104cc400cb27b579680130bca5225051e46ea82a0272f10aae4ce51f9b2d0.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-24T23:35:10Z";
+        sha256 = "d10104cc400cb27b579680130bca5225051e46ea82a0272f10aae4ce51f9b2d0";
+        };
+      default = "r1";
       };
     };
   }

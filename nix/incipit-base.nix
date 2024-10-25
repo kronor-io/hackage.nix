@@ -146,7 +146,13 @@
         revTimestamp = "2024-10-12T00:07:17Z";
         sha256 = "d036556939edc8697a7afad4b2411933e86da81c51e905268221ded6ec7c87a5";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/incipit-base-0.6.1.0-r1-32c46c8d3721fb3956c64c3c3eea654bfcc649ab0040e7eed1eec4e5604ae43d.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-24T17:54:14Z";
+        sha256 = "32c46c8d3721fb3956c64c3c3eea654bfcc649ab0040e7eed1eec4e5604ae43d";
+        };
+      default = "r1";
       };
     };
   }
