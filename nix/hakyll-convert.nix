@@ -146,7 +146,13 @@
         revTimestamp = "2024-07-03T16:41:50Z";
         sha256 = "992853ddb0d00d09ecc4b5f64fd43657e7bc5bf641e07c1aec51053e261a0899";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hakyll-convert-0.3.0.5-r2-ba411b7ccbfed56eec05116333387ed9f6232b708b50ea2a7a750ea9f8e4b252.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-25T18:02:53Z";
+        sha256 = "ba411b7ccbfed56eec05116333387ed9f6232b708b50ea2a7a750ea9f8e4b252";
+        };
+      default = "r2";
       };
     };
   }
