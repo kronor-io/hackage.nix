@@ -44,7 +44,13 @@
         revTimestamp = "2024-01-08T14:04:56Z";
         sha256 = "4b1bfd79d74cfb49895340e9940add8fc8b562efce1ce8e3a6875e63dfde45e2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fcf-family-0.2.0.1-r1-aae5a45bd91431ae4d03cd183fc1b58f06c35cb046bb9dbdc084bbaa9155c0ab.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T20:07:15Z";
+        sha256 = "aae5a45bd91431ae4d03cd183fc1b58f06c35cb046bb9dbdc084bbaa9155c0ab";
+        };
+      default = "r1";
       };
     };
   }

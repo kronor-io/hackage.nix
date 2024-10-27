@@ -140,7 +140,13 @@
         revTimestamp = "2023-09-30T10:03:56Z";
         sha256 = "7c9ca1e54458912b2d0979ef882b8f18f0ed3c80917e97d8e731621b3beffd2c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wraxml-0.5-r1-0aae772d68b4a11901a9c456d099083ca03086770751285ca82c311d81201278.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T18:12:39Z";
+        sha256 = "0aae772d68b4a11901a9c456d099083ca03086770751285ca82c311d81201278";
+        };
+      default = "r1";
       };
     };
   }

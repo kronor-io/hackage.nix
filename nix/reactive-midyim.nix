@@ -86,7 +86,13 @@
         revTimestamp = "2023-02-16T11:10:46Z";
         sha256 = "1c9802c0f28344cf5ef741eceb1ee294c6e4dab128f46cbc227dda8421f5ca2d";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/reactive-midyim-0.4.1.1-r2-fd1d12185e20c5efa827334236d4b70e932ee6a2f5a20c73a55fb266387a358c.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-26T18:12:38Z";
+        sha256 = "fd1d12185e20c5efa827334236d4b70e932ee6a2f5a20c73a55fb266387a358c";
+        };
+      default = "r2";
       };
     };
   }

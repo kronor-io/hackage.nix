@@ -218,7 +218,13 @@
         revTimestamp = "2023-01-14T21:32:03Z";
         sha256 = "82739c8bea7b38086138456233a24db90bdd0029e1e242370bdd1907078c3649";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sox-0.2.3.2-r1-6d1eed25c72ac0cea3d3a0e86df04955a387aefef151d4e16ef911f2295b95d9.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T18:12:38Z";
+        sha256 = "6d1eed25c72ac0cea3d3a0e86df04955a387aefef151d4e16ef911f2295b95d9";
+        };
+      default = "r1";
       };
     };
   }

@@ -116,7 +116,13 @@
         revTimestamp = "2023-02-15T12:19:55Z";
         sha256 = "765bb6e63c3a4f516cfc9983453d8c644527dc231a061ac60b7a2261eb800894";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/unique-logic-tf-0.5.1-r3-a271d2e37af0cb39f4646436f2e26a886473ec295983a96dabe0a1c291e87aa2.nix;
+        revNum = 3;
+        revTimestamp = "2024-10-26T18:12:38Z";
+        sha256 = "a271d2e37af0cb39f4646436f2e26a886473ec295983a96dabe0a1c291e87aa2";
+        };
+      default = "r3";
       };
     };
   }

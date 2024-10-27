@@ -56,7 +56,13 @@
         revTimestamp = "2023-12-26T20:24:44Z";
         sha256 = "b8c2b8256d6e3c87309f310543973b907442c2256ab66ae8f1d34d64f489a441";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/comfort-glpk-0.1-r2-f0283980d001f5edf63fafade17dc87baf48f9191bbf538c5b6880d5e558743e.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-26T18:25:06Z";
+        sha256 = "f0283980d001f5edf63fafade17dc87baf48f9191bbf538c5b6880d5e558743e";
+        };
+      default = "r2";
       };
     };
   }

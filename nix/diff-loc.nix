@@ -20,7 +20,13 @@
         revTimestamp = "2024-01-08T13:48:34Z";
         sha256 = "1e5bedc65079f6527f7613d2bcaf0e54ce2b5eea99500218e56cf716eecb0bf3";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/diff-loc-0.1.0.0-r3-36eb0c8c4b200c279aa17af90618a2c0cd53b0dfbc3518722bdf26c8f0335e57.nix;
+        revNum = 3;
+        revTimestamp = "2024-10-26T20:09:40Z";
+        sha256 = "36eb0c8c4b200c279aa17af90618a2c0cd53b0dfbc3518722bdf26c8f0335e57";
+        };
+      default = "r3";
       };
     };
   }

@@ -128,7 +128,13 @@
         revTimestamp = "2023-07-17T10:59:00Z";
         sha256 = "65bbef30a41f5cc0bd37fbcc9dde617892d0b8654e2fe2e1577d6d627c9ce2cb";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/lapack-ffi-tools-0.1.3.1-r3-5fbea1254366e340255d4dd426f18976464d33b5080a59e13f2311fe08c2b6a7.nix;
+        revNum = 3;
+        revTimestamp = "2024-10-26T16:10:44Z";
+        sha256 = "5fbea1254366e340255d4dd426f18976464d33b5080a59e13f2311fe08c2b6a7";
+        };
+      default = "r3";
       };
     };
   }

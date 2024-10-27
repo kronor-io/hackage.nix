@@ -32,7 +32,13 @@
         revTimestamp = "2023-06-02T14:54:08Z";
         sha256 = "4ab392c6b4822ad4e622b8827398373088db384c0f555203468cb8275a4913e1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/align-audio-0.0.0.1-r1-1e463c1d8d6e70b6fefd600d2aafeb6a03af4ac2ad75e7767c349c0fadfa1db3.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T18:12:32Z";
+        sha256 = "1e463c1d8d6e70b6fefd600d2aafeb6a03af4ac2ad75e7767c349c0fadfa1db3";
+        };
+      default = "r1";
       };
     };
   }

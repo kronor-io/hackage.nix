@@ -182,7 +182,13 @@
         revTimestamp = "2023-02-15T11:15:55Z";
         sha256 = "d3bc4fe1e4eaa4c27d0e094b09ae25d2ba4a35afc5b5ca03d91e25e1f631fdac";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/probability-0.2.8-r1-650acf8475d827355a9970f2c17b62bfaf3d9cf233351dfeaeb507e68b475295.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T18:12:36Z";
+        sha256 = "650acf8475d827355a9970f2c17b62bfaf3d9cf233351dfeaeb507e68b475295";
+        };
+      default = "r1";
       };
     };
   }

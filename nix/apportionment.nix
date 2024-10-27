@@ -56,7 +56,13 @@
         revTimestamp = "2022-01-02T17:56:47Z";
         sha256 = "73ec8944658a646d22cd2ab26a947fdd1cae482ed6c3887c64f24ea0482c6fdc";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/apportionment-0.0.0.4-r1-0e33faad2507ee9ebf52f55bfaf7c03d8d7b40ec35e1120ea08f443bb7fd2c14.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-26T18:12:32Z";
+        sha256 = "0e33faad2507ee9ebf52f55bfaf7c03d8d7b40ec35e1120ea08f443bb7fd2c14";
+        };
+      default = "r1";
       };
     };
   }

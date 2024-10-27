@@ -311,4 +311,16 @@
       default = "r0";
       };
     };
+  "1.4.0.0" = {
+    sha256 = "edb4a9d52a341f7a40936b7b88fd1356cafe6ba3d669532e2628349955b48ab6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/graphql-1.4.0.0-r0-ac7152ad40c1400c69e30522a3dd560539d3e1e7ae54553e05a40ebc1d3f4c43.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-26T20:30:12Z";
+        sha256 = "ac7152ad40c1400c69e30522a3dd560539d3e1e7ae54553e05a40ebc1d3f4c43";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -530,7 +530,13 @@
         revTimestamp = "2024-04-30T16:09:41Z";
         sha256 = "0f5fbee4329ff6b8e3c91988c1dbc31c9d232c70bc6fc80e4e4d7887279de428";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/blank-canvas-0.7.4-r5-44e70ee8880eec791f8328e6fec96d3216457704ddefb0504c7de0cfd6b25346.nix;
+        revNum = 5;
+        revTimestamp = "2024-10-26T20:53:30Z";
+        sha256 = "44e70ee8880eec791f8328e6fec96d3216457704ddefb0504c7de0cfd6b25346";
+        };
+      default = "r5";
       };
     };
   }
