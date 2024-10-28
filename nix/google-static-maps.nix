@@ -155,4 +155,16 @@
       default = "r0";
       };
     };
+  "0.7.0.3" = {
+    sha256 = "3d9c45aa0d13f670babeb6a703027202143fadfb723f84e0893f1079be97f587";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/google-static-maps-0.7.0.3-r0-ba900e9cb7972a2f6ad69b1a83623b0561703b237fa2cb8603e1360a996f8ed4.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-27T20:48:33Z";
+        sha256 = "ba900e9cb7972a2f6ad69b1a83623b0561703b237fa2cb8603e1360a996f8ed4";
+        };
+      default = "r0";
+      };
+    };
   }

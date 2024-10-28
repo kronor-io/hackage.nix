@@ -449,4 +449,16 @@
       default = "r0";
       };
     };
+  "0.3.6.4" = {
+    sha256 = "7756006fee8ab924c521372e0f9d6705579016b9fab0b0312d1b9a335cfc18a3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/http-client-tls-0.3.6.4-r0-17217717fbbcda951b4ff000a7fbce416975b154c9bc09e56d9cac8ffb3b9525.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-27T07:49:17Z";
+        sha256 = "17217717fbbcda951b4ff000a7fbce416975b154c9bc09e56d9cac8ffb3b9525";
+        };
+      default = "r0";
+      };
+    };
   }

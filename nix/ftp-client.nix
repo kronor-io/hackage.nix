@@ -218,7 +218,13 @@
         revTimestamp = "2024-05-18T15:07:00Z";
         sha256 = "fab127defe1efb165af58f84dbc0f57a39334e39cca9829946149b363a71d1ca";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ftp-client-0.5.1.6-r1-ee1db40f80b2caebb77f9db6d1020f632741e445380b5f1a1ebb9a746a75ed92.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-27T06:07:43Z";
+        sha256 = "ee1db40f80b2caebb77f9db6d1020f632741e445380b5f1a1ebb9a746a75ed92";
+        };
+      default = "r1";
       };
     };
   }
