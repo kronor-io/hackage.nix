@@ -590,7 +590,13 @@
         revTimestamp = "2024-06-23T15:02:15Z";
         sha256 = "a63f5d2d9c0a60edda58dffad05580859853a49fa25ed4fab2ed4bd3ae8cf180";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/stache-2.3.4-r3-e4edd793398cabdba9ba4e7246c868ae141a3071feb4f3af304d9a44cc7df3f4.nix;
+        revNum = 3;
+        revTimestamp = "2024-10-28T14:35:21Z";
+        sha256 = "e4edd793398cabdba9ba4e7246c868ae141a3071feb4f3af304d9a44cc7df3f4";
+        };
+      default = "r3";
       };
     };
   }

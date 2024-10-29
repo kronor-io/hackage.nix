@@ -134,7 +134,13 @@
         revTimestamp = "2024-06-15T17:03:27Z";
         sha256 = "f2e2c148f06908b9e6bb4981682a57ab2208891bfa28155bc7901b304d22d8af";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/flac-0.2.1-r3-579a2118931ef7cb51d9dbba5921e69953aecadf1162e59bbe8cf9fc7f4b3de8.nix;
+        revNum = 3;
+        revTimestamp = "2024-10-28T09:03:09Z";
+        sha256 = "579a2118931ef7cb51d9dbba5921e69953aecadf1162e59bbe8cf9fc7f4b3de8";
+        };
+      default = "r3";
       };
     };
   }

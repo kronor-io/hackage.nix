@@ -146,7 +146,13 @@
         revTimestamp = "2024-09-03T15:09:32Z";
         sha256 = "3e89db09330023ecabd579b24b903943f0d8a412c847e5ce2e97aa020fab23b5";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/network-transport-tests-0.3.3-r1-9709f11fe747c3758e4b6be377469f2b97af934c2edf351f23444fcdad469e76.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-28T16:16:12Z";
+        sha256 = "9709f11fe747c3758e4b6be377469f2b97af934c2edf351f23444fcdad469e76";
+        };
+      default = "r1";
       };
     };
   }

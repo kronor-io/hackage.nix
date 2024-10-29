@@ -110,7 +110,13 @@
         revTimestamp = "2023-12-31T14:42:48Z";
         sha256 = "d767b761d9e523c811089e6311846de86e1d4cca01e006cc1ea8427e5eee22b4";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/lame-0.2.2-r2-9d7640863af04ba0a6422e488fa7a78de24ec304a502781611b1acff143de984.nix;
+        revNum = 2;
+        revTimestamp = "2024-10-28T14:17:03Z";
+        sha256 = "9d7640863af04ba0a6422e488fa7a78de24ec304a502781611b1acff143de984";
+        };
+      default = "r2";
       };
     };
   }
