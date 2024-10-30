@@ -719,4 +719,16 @@
       default = "r2";
       };
     };
+  "1.4.6" = {
+    sha256 = "d3105f45f9ba114dc206a9f7f866aa8dd2813dffc0d5bc0628cae1da8319bff4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/diagrams-contrib-1.4.6-r0-518f654b939dee63f91e108efe97d4ff74c5eabebee55cacfed6bdf42930e371.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-29T18:11:54Z";
+        sha256 = "518f654b939dee63f91e108efe97d4ff74c5eabebee55cacfed6bdf42930e371";
+        };
+      default = "r0";
+      };
+    };
   }
