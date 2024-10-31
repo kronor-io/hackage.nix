@@ -422,7 +422,13 @@
         revTimestamp = "2024-10-05T07:07:16Z";
         sha256 = "f8389547d9a6ed91bece4653887224ee010082d962539fec2b6adb6aa24e2526";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lifted-async-0.10.2.6-r1-f3a082f13f91b5aaf60bbc0b1a356bd995002c0554226ba69aa1364654143544.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-30T14:26:53Z";
+        sha256 = "f3a082f13f91b5aaf60bbc0b1a356bd995002c0554226ba69aa1364654143544";
+        };
+      default = "r1";
       };
     };
   "0.2.0" = {

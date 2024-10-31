@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.2.0.0" = {
+    sha256 = "2bc242428a8264f9c6863898c95a7a59cdd3499da042b7f1d1ba0d3045358a69";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sydtest-mongo-0.2.0.0-r0-8d24d012016f300a9284d3bff8d2c67d02673c12819236d950b9a359e0f22544.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-30T20:50:17Z";
+        sha256 = "8d24d012016f300a9284d3bff8d2c67d02673c12819236d950b9a359e0f22544";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -62,7 +62,13 @@
         revTimestamp = "2024-02-14T22:09:08Z";
         sha256 = "9f3ff5a8f2fa708f70ac7b6672daacbc491c71066a7eb8749dc9323815e7a00a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/bytehash-0.1.1.2-r1-14e4ea73a5f76b767fd4d84796efc929f89b2ca01fd64d041e39426a8d07eaed.nix;
+        revNum = 1;
+        revTimestamp = "2024-10-30T17:20:32Z";
+        sha256 = "14e4ea73a5f76b767fd4d84796efc929f89b2ca01fd64d041e39426a8d07eaed";
+        };
+      default = "r1";
       };
     };
   }
