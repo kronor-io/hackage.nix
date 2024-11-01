@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.9.5.0" = {
+    sha256 = "da63bf1f4f27fa7cc59284cb1be9dc44a429d9dd33a5aa803b7408733a2c6afb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/chessIO-0.9.5.0-r0-829e50791b32c2310f07e89afb236decaa347f8168dc9773fdf85e7134834f41.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-31T07:59:43Z";
+        sha256 = "829e50791b32c2310f07e89afb236decaa347f8168dc9773fdf85e7134834f41";
+        };
+      default = "r0";
+      };
+    };
   }

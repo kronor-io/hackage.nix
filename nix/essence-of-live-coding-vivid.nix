@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.2.8" = {
+    sha256 = "8287c2dc3b41ec346bb7e5f33ec519947330908196e1acd539def190a17b4e66";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/essence-of-live-coding-vivid-0.2.8-r0-1da624adcfb8455256d6dec004e08b0e0c9199b393d399aadc676b3c4ea94553.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-31T17:18:56Z";
+        sha256 = "1da624adcfb8455256d6dec004e08b0e0c9199b393d399aadc676b3c4ea94553";
+        };
+      default = "r0";
+      };
+    };
   }

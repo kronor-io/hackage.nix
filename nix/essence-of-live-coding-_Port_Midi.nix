@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.2.8" = {
+    sha256 = "1df26ca65d3fc23d779aae9a59dccc63b62838eaa32e3d9c1c156a363d2191df";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/essence-of-live-coding-PortMidi-0.2.8-r0-e03d3e02084d988c84a44f1d093bb4631955af8b03b514bbe0c4940775130e7d.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-31T17:19:05Z";
+        sha256 = "e03d3e02084d988c84a44f1d093bb4631955af8b03b514bbe0c4940775130e7d";
+        };
+      default = "r0";
+      };
+    };
   }

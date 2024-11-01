@@ -503,4 +503,16 @@
       default = "r4";
       };
     };
+  "1.5.2" = {
+    sha256 = "c5c34c587c371c3402d1920497c5706487989993fc7a95a58e13985c9a857822";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/diagrams-postscript-1.5.2-r0-d182cc881220fecb540a4a8f16a51b324a818c82c6ee4c84b2d6a97e0c94f9e8.nix;
+        revNum = 0;
+        revTimestamp = "2024-10-31T17:08:18Z";
+        sha256 = "d182cc881220fecb540a4a8f16a51b324a818c82c6ee4c84b2d6a97e0c94f9e8";
+        };
+      default = "r0";
+      };
+    };
   }
