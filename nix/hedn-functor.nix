@@ -20,7 +20,13 @@
         revTimestamp = "2022-03-19T16:18:09Z";
         sha256 = "dec7deb8f8c9b096bb042dc05a7bd8592c6302632dc216b55365086aea321ca1";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/hedn-functor-0.1.0.0-r3-ab06565b5df1bf689860032309d89a687dc5fb91c21085781625a6986908effb.nix;
+        revNum = 3;
+        revTimestamp = "2024-11-01T10:41:02Z";
+        sha256 = "ab06565b5df1bf689860032309d89a687dc5fb91c21085781625a6986908effb";
+        };
+      default = "r3";
       };
     };
   }
