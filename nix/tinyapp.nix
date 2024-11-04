@@ -44,7 +44,13 @@
         revTimestamp = "2024-11-01T19:20:09Z";
         sha256 = "11b05a8c9f1868aab214f76a524863a95681e053daea6d0d6d23f818e0b166b0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tinyapp-0.2.0.0-r1-3888f99af680dc85809115fdbfb44682b95bf60239093310b6256b732b93777a.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-03T22:23:33Z";
+        sha256 = "3888f99af680dc85809115fdbfb44682b95bf60239093310b6256b732b93777a";
+        };
+      default = "r1";
       };
     };
   }
