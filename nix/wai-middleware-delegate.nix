@@ -155,4 +155,16 @@
       default = "r0";
       };
     };
+  "0.2.0.0" = {
+    sha256 = "4ae13f675b84155171f454d6dcfa6be617466da25fd59fb8b3291fec76f68bc9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wai-middleware-delegate-0.2.0.0-r0-1684244bd461abc2e4b42768e2b940216d542387a7d65dff07b4f0766a95bea7.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-05T02:34:35Z";
+        sha256 = "1684244bd461abc2e4b42768e2b940216d542387a7d65dff07b4f0766a95bea7";
+        };
+      default = "r0";
+      };
+    };
   }
