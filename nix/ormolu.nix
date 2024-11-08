@@ -458,7 +458,13 @@
         revTimestamp = "2024-10-29T12:42:33Z";
         sha256 = "42f2f92cf31a1cfdc890fb0ff5eb14be218be59d3a387bc045e011d8d3f560f2";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/ormolu-0.7.4.0-r5-be4b06bbc7f86fa68c88171fec95e5409960f1646a22691853ee010cbb00f780.nix;
+        revNum = 5;
+        revTimestamp = "2024-11-07T16:08:09Z";
+        sha256 = "be4b06bbc7f86fa68c88171fec95e5409960f1646a22691853ee010cbb00f780";
+        };
+      default = "r5";
       };
     };
   "0.7.5.0" = {
@@ -470,7 +476,13 @@
         revTimestamp = "2024-05-22T17:42:39Z";
         sha256 = "7f56ba2fde3291ac9ad8c77c4f027e247ff57deff1f5675d9c2cb5dd993d51c9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ormolu-0.7.5.0-r1-2e26c9e466cfdc878442bfb87ff53151d3a112e54a802568059b29d4353bcee3.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-07T16:08:31Z";
+        sha256 = "2e26c9e466cfdc878442bfb87ff53151d3a112e54a802568059b29d4353bcee3";
+        };
+      default = "r1";
       };
     };
   "0.7.6.0" = {
@@ -482,7 +494,13 @@
         revTimestamp = "2024-06-12T13:14:23Z";
         sha256 = "5a4a0c2666274b39f0669aaa15e1cabfb90f38eff2d2aad6725754c8e0d707df";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ormolu-0.7.6.0-r1-c49b0a741ab99a1a2a6eea81f4239dedfb98b0eea18aca59fef62ba8ab4a9f75.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-07T16:08:58Z";
+        sha256 = "c49b0a741ab99a1a2a6eea81f4239dedfb98b0eea18aca59fef62ba8ab4a9f75";
+        };
+      default = "r1";
       };
     };
   "0.7.7.0" = {
@@ -494,7 +512,13 @@
         revTimestamp = "2024-06-16T12:59:16Z";
         sha256 = "80ad4419dbc478e22e9b230af1404bf1ffb8cc3c80a558738771a1627691af11";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ormolu-0.7.7.0-r1-2c1d251f4d5cfb08d3826ccabca1afa8699c8531612283ec8f7e6a8edc2416ed.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-07T16:09:17Z";
+        sha256 = "2c1d251f4d5cfb08d3826ccabca1afa8699c8531612283ec8f7e6a8edc2416ed";
+        };
+      default = "r1";
       };
     };
   }

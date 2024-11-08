@@ -1499,4 +1499,16 @@
       default = "r0";
       };
     };
+  "3.2.5.0" = {
+    sha256 = "d503477891f4ef15f9aa26e44e713b3930691d7b4514f9b38a0d65fbb76b4cc6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/network-3.2.5.0-r0-f59225c987b153a58fe7b37e40465e710ff0591af01b3fed57e93ec56a558b02.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-07T00:14:32Z";
+        sha256 = "f59225c987b153a58fe7b37e40465e710ff0591af01b3fed57e93ec56a558b02";
+        };
+      default = "r0";
+      };
+    };
   }

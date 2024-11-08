@@ -29,4 +29,16 @@
       default = "r0";
       };
     };
+  "0.0.2" = {
+    sha256 = "39d02e5076636a9e5837bc5a5d1adb77ca9ceff0a93e7c36e431d0b3cbee69c1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/warp-quic-0.0.2-r0-e7e7149355bdb46b974df93c38b6b07a389ed3b7abebf82e321fad976116e790.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-07T02:02:41Z";
+        sha256 = "e7e7149355bdb46b974df93c38b6b07a389ed3b7abebf82e321fad976116e790";
+        };
+      default = "r0";
+      };
+    };
   }
