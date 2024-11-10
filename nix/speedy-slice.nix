@@ -116,7 +116,13 @@
         revTimestamp = "2021-02-21T07:49:28Z";
         sha256 = "e225c02da5a0db26b33f362de21fb3890896bc22c660fb9731796da0f7a5255e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/speedy-slice-0.3.2-r1-abcb4db8bf7224258b0bd5f7c2445f4b7cb3cb849646852573c95620b2dda9cc.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-09T07:40:42Z";
+        sha256 = "abcb4db8bf7224258b0bd5f7c2445f4b7cb3cb849646852573c95620b2dda9cc";
+        };
+      default = "r1";
       };
     };
   }

@@ -92,7 +92,13 @@
         revTimestamp = "2020-05-21T17:22:32Z";
         sha256 = "0d97141389077346326a684d929f31c31e6306c5f48e6b9197676366bd08049e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/mighty-metropolis-2.0.0-r1-33ac2007a54954af04e2e737fd83521ceb23ed215f391ef5e627b41ca8008750.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-09T07:40:05Z";
+        sha256 = "33ac2007a54954af04e2e737fd83521ceb23ed215f391ef5e627b41ca8008750";
+        };
+      default = "r1";
       };
     };
   }

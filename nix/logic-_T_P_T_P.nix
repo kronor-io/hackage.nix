@@ -473,4 +473,16 @@
       default = "r0";
       };
     };
+  "0.6.0.0" = {
+    sha256 = "9c424f4afaf25e1b76b106d36b2abb4b695ed6de5bef45c1fa452e0ac2782c36";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/logic-TPTP-0.6.0.0-r0-ea790302e6d0ebc6fc6a2a602e9ce5d786bb4a8209f7a8b009bc011c14abbf12.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-09T06:29:18Z";
+        sha256 = "ea790302e6d0ebc6fc6a2a602e9ce5d786bb4a8209f7a8b009bc011c14abbf12";
+        };
+      default = "r0";
+      };
+    };
   }
