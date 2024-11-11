@@ -71,4 +71,16 @@
       default = "r0";
       };
     };
+  "0.3.1.2" = {
+    sha256 = "061d801d84a68c416388785956e4a85fa1b8aae99c37794a6c7b40b38036ae9c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/MicroCabal-0.3.1.2-r0-66d7c02517df782343913f109b7d3a3b14308064a3b7cada87215ff7a9da0770.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-10T17:44:31Z";
+        sha256 = "66d7c02517df782343913f109b7d3a3b14308064a3b7cada87215ff7a9da0770";
+        };
+      default = "r0";
+      };
+    };
   }

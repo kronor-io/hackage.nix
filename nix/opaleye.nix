@@ -146,7 +146,13 @@
         revTimestamp = "2024-10-04T19:56:46Z";
         sha256 = "0165672acb41d4aca9f87abbc87a314c44e3a80757f7012f85a5f4e0b78f248f";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/opaleye-0.10.4.0-r1-a30614caddbf918540cafe465555944c272badceb6c5aac6ad11c9b6ee3558bc.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-10T13:08:54Z";
+        sha256 = "a30614caddbf918540cafe465555944c272badceb6c5aac6ad11c9b6ee3558bc";
+        };
+      default = "r1";
       };
     };
   "0.2" = {

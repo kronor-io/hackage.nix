@@ -203,6 +203,18 @@
       default = "r0";
       };
     };
+  "0.3.4.5" = {
+    sha256 = "e911fc67296ce2c134c3700e4eb9f4ad670dc1c31f44a11d1adf7441a78483d4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/text-builder-dev-0.3.4.5-r0-0089637d791af0107776c0000acf7c28f8dda0c6e4ce27524eb850daf2c777fd.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-10T16:56:50Z";
+        sha256 = "0089637d791af0107776c0000acf7c28f8dda0c6e4ce27524eb850daf2c777fd";
+        };
+      default = "r0";
+      };
+    };
   "0.3.5" = {
     sha256 = "50ed442c38d62dff890e1cdf3c03731a481a7053f8da73e55d85ca71d400e5d5";
     revisions = {
@@ -211,6 +223,18 @@
         revNum = 0;
         revTimestamp = "2024-09-09T15:43:03Z";
         sha256 = "0c272f5cad11f9758615fe0151f91af902d25e35dc7df723a39efab5a4092f52";
+        };
+      default = "r0";
+      };
+    };
+  "0.3.6" = {
+    sha256 = "2b2b4d945026c29f60afc9d1b8f9698282bc06ef921ab2d4455c8868509c8944";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/text-builder-dev-0.3.6-r0-6f170ea5a19a2e020ff320280fd15f0de25d3d74df4f4eb4250d9afbe3307984.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-10T17:22:18Z";
+        sha256 = "6f170ea5a19a2e020ff320280fd15f0de25d3d74df4f4eb4250d9afbe3307984";
         };
       default = "r0";
       };

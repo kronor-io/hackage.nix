@@ -170,7 +170,13 @@
         revTimestamp = "2024-05-05T21:55:29Z";
         sha256 = "98648074b81a100320b2206ecc132f1b962dae9f1b0f312386f0d9aaa816e79b";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/dependent-sum-template-0.2.0.1-r2-a9673d54508f462cd268993241cbca93043bd57c3a955907709c62c2f1ea0a5b.nix;
+        revNum = 2;
+        revTimestamp = "2024-11-10T21:40:23Z";
+        sha256 = "a9673d54508f462cd268993241cbca93043bd57c3a955907709c62c2f1ea0a5b";
+        };
+      default = "r2";
       };
     };
   }
