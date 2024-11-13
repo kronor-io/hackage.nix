@@ -29,6 +29,18 @@
       default = "r1";
       };
     };
+  "0.1.0.11" = {
+    sha256 = "71aa17132bff71814d653caed8f9da55c27e3c3425eb4db404fa65b3ca296dfe";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/murmur-hash-0.1.0.11-r0-92b86e7826aebf3c6f2e13a193476533866f5f8917a60e4d02b01a1f216ec547.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-12T20:33:20Z";
+        sha256 = "92b86e7826aebf3c6f2e13a193476533866f5f8917a60e4d02b01a1f216ec547";
+        };
+      default = "r0";
+      };
+    };
   "0.1.0.2" = {
     sha256 = "5926acad8b8cf2898afaa3972effa2b47a8cd4b49a2ea9b3f47235f1d9c45591";
     revisions = {
