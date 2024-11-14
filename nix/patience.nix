@@ -86,7 +86,13 @@
         revTimestamp = "2019-07-29T15:54:30Z";
         sha256 = "fe3a2c5b1ac4d3425bad3d1ee0b6bb529b6e74ab41151f8526f26fc8dfa1206b";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/patience-0.3-r1-491a8d0bfbffc06311c41dadf225eb96b52a0dd95c089778ac2ba0b13dd58d6e.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-13T10:45:17Z";
+        sha256 = "491a8d0bfbffc06311c41dadf225eb96b52a0dd95c089778ac2ba0b13dd58d6e";
+        };
+      default = "r1";
       };
     };
   }
