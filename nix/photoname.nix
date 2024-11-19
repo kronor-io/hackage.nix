@@ -143,4 +143,16 @@
       default = "r0";
       };
     };
+  "5.3" = {
+    sha256 = "72c86c93f81a7ef7f8154d5a0df6edf761db29a877104360a4bf32042bf58406";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/photoname-5.3-r0-c129987eae22f6210929ee75ad9b4adafccccefbd814ca5faf382ba6bc7ed819.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-18T20:03:42Z";
+        sha256 = "c129987eae22f6210929ee75ad9b4adafccccefbd814ca5faf382ba6bc7ed819";
+        };
+      default = "r0";
+      };
+    };
   }
