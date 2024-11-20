@@ -539,4 +539,16 @@
       default = "r0";
       };
     };
+  "2.8.6.0" = {
+    sha256 = "8117599bb3e4aa1d4656710afbc85aef2a75483eddfac5338f8cc88fb505eea2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unix-2.8.6.0-r0-949fd4d9f77512754935fe79dd68d5a940792aedf7c597c969e9e366f3231e18.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-19T15:41:03Z";
+        sha256 = "949fd4d9f77512754935fe79dd68d5a940792aedf7c597c969e9e366f3231e18";
+        };
+      default = "r0";
+      };
+    };
   }

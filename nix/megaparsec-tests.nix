@@ -227,4 +227,16 @@
       default = "r1";
       };
     };
+  "9.7.0" = {
+    sha256 = "61dd6c65f451748ccbe4b257482599b7f264379361ebec6a75d952e484f95c9e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/megaparsec-tests-9.7.0-r0-6d2afc514c4853aca3338d7260d5a7e5f27e9976749f18d57035a1845788b6d5.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-19T16:16:38Z";
+        sha256 = "6d2afc514c4853aca3338d7260d5a7e5f27e9976749f18d57035a1845788b6d5";
+        };
+      default = "r0";
+      };
+    };
   }
