@@ -1136,7 +1136,13 @@
         revTimestamp = "2024-11-18T08:17:47Z";
         sha256 = "91e1779862516df909ed1ca3482c70ad9173ca1f03ac2e147c9875c394222858";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lentil-1.5.8.0-r1-051ff2075eca4113094847ff170b33516f737502e775f7a8ac904946e50a2959.nix;
+        revNum = 1;
+        revTimestamp = "2024-11-21T06:43:51Z";
+        sha256 = "051ff2075eca4113094847ff170b33516f737502e775f7a8ac904946e50a2959";
+        };
+      default = "r1";
       };
     };
   }
