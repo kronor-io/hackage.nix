@@ -227,4 +227,16 @@
       default = "r0";
       };
     };
+  "1.5" = {
+    sha256 = "cd6c872b04987839314018b0fb02c01d15f77243e06bf9ff88c76c3a7394a4af";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/winery-1.5-r0-811e149601920f4b3fd356c9b854e33e78691b17d18bb74551cbab5c1bf2a002.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-23T02:32:06Z";
+        sha256 = "811e149601920f4b3fd356c9b854e33e78691b17d18bb74551cbab5c1bf2a002";
+        };
+      default = "r0";
+      };
+    };
   }
