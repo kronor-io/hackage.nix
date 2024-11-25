@@ -44,7 +44,13 @@
         revTimestamp = "2024-09-08T18:49:57Z";
         sha256 = "0002c9737dcfe1a3f9ede515f49e4e604519584a4ad3d195bc75affa96ff5185";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/javelin-0.1.2.0-r3-13db165bfbc69fff157021b90eb3aed77fa7d74d61528dafe35c680df8a79754.nix;
+        revNum = 3;
+        revTimestamp = "2024-11-24T19:16:32Z";
+        sha256 = "13db165bfbc69fff157021b90eb3aed77fa7d74d61528dafe35c680df8a79754";
+        };
+      default = "r3";
       };
     };
   }

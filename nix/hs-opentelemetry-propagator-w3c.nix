@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.0.1.4" = {
+    sha256 = "817f8d20f5e2a1d624164c044fe9d5eac3d27f7ff3bfa5b1681776aff3530e38";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hs-opentelemetry-propagator-w3c-0.0.1.4-r0-251428754454fbaf71d9b6acbbea473014b1ab50bdcda8bc8fe1532e63193374.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-24T20:29:40Z";
+        sha256 = "251428754454fbaf71d9b6acbbea473014b1ab50bdcda8bc8fe1532e63193374";
+        };
+      default = "r0";
+      };
+    };
   }

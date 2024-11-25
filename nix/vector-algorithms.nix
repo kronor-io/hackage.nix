@@ -431,4 +431,16 @@
       default = "r1";
       };
     };
+  "0.9.0.3" = {
+    sha256 = "61900b798fc6a581dd0916b32a1397aaed022d7f92fd737d663cbbf4d7144d9e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/vector-algorithms-0.9.0.3-r0-3234811da39ea334aedb0639a8a3aaea91ca544950805cf2f51a41e050a61ab1.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-24T20:23:06Z";
+        sha256 = "3234811da39ea334aedb0639a8a3aaea91ca544950805cf2f51a41e050a61ab1";
+        };
+      default = "r0";
+      };
+    };
   }

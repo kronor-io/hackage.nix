@@ -131,4 +131,16 @@
       default = "r0";
       };
     };
+  "7.4.4" = {
+    sha256 = "90dc79404ed5cde349d1ca7c71101e5cc213fab079077b6ef3cfe83877813eee";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/telegram-bot-api-7.4.4-r0-7e69463e16d1c1f0bb22fe319322296de09951fa14d2fdde3d514dffcdf6ef09.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-24T18:48:19Z";
+        sha256 = "7e69463e16d1c1f0bb22fe319322296de09951fa14d2fdde3d514dffcdf6ef09";
+        };
+      default = "r0";
+      };
+    };
   }
