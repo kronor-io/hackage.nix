@@ -95,4 +95,16 @@
       default = "r0";
       };
     };
+  "0.4.0.6" = {
+    sha256 = "d3c07eacc6dbfb0a18a9b180bc167a466b8da02bd93b24f3ce48d73f523899e8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hscim-0.4.0.6-r0-7ba9873fdde20696026e36b9851e9492f1cfd2acaf5a17002b679c0bc8410dba.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-25T16:43:12Z";
+        sha256 = "7ba9873fdde20696026e36b9851e9492f1cfd2acaf5a17002b679c0bc8410dba";
+        };
+      default = "r0";
+      };
+    };
   }

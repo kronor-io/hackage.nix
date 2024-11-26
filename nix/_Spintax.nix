@@ -137,4 +137,16 @@
       default = "r1";
       };
     };
+  "0.3.7.0" = {
+    sha256 = "e5646cd2a25880c8eb956d084fe62073cbe4764c0da8221f76917aaf127659f0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Spintax-0.3.7.0-r0-9d350df8f3d76d23358fed168a292d9ad27656655b3035a05908ff99c447b5bf.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-25T17:52:41Z";
+        sha256 = "9d350df8f3d76d23358fed168a292d9ad27656655b3035a05908ff99c447b5bf";
+        };
+      default = "r0";
+      };
+    };
   }
