@@ -773,4 +773,16 @@
       default = "r0";
       };
     };
+  "1.4.1" = {
+    sha256 = "5019354b79692b264432206cd28073799151a947ea719d4a679508600d874410";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hashtables-1.4.1-r0-339615e16b705492d10a86aa34b64232a4d32d77939950c87443ce50994183e6.nix;
+        revNum = 0;
+        revTimestamp = "2024-11-26T22:13:09Z";
+        sha256 = "339615e16b705492d10a86aa34b64232a4d32d77939950c87443ce50994183e6";
+        };
+      default = "r0";
+      };
+    };
   }
