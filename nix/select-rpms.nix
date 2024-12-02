@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.2.0" = {
+    sha256 = "8ceadb980f6857f4a762c560301c0bda022f210a44cd7bcb69186bd924908993";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/select-rpms-0.2.0-r0-6838e11080f3f868a8efcf9213a9bad42166cd3faf2eddfab3f8e1a5591bbfc0.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-01T08:33:28Z";
+        sha256 = "6838e11080f3f868a8efcf9213a9bad42166cd3faf2eddfab3f8e1a5591bbfc0";
+        };
+      default = "r0";
+      };
+    };
   }

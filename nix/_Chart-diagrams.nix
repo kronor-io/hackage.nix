@@ -410,7 +410,13 @@
         revTimestamp = "2024-09-20T07:20:49Z";
         sha256 = "2720fe6d6627047397177f21d5aed6bbe0c0dd318f08ac2b3b3e085f33264c68";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/Chart-diagrams-1.9.5.1-r2-1fc6d72807e32e2257ceb50e86f4ec61f27ac1a3f01be37f1dc3b28e0dd1e893.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-01T09:43:24Z";
+        sha256 = "1fc6d72807e32e2257ceb50e86f4ec61f27ac1a3f01be37f1dc3b28e0dd1e893";
+        };
+      default = "r2";
       };
     };
   }

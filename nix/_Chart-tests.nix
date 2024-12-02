@@ -32,7 +32,13 @@
         revTimestamp = "2023-10-22T05:17:44Z";
         sha256 = "349c072e3c95c2a26190e0c79d0a086fb8d85d72e6fb5999bec082485789ea78";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/Chart-tests-1.9.4-r1-15a436d12afb5b6d8a5465f50e56b3c65dd7531a965fc5f4b7b1739d7919f836.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-01T09:45:11Z";
+        sha256 = "15a436d12afb5b6d8a5465f50e56b3c65dd7531a965fc5f4b7b1739d7919f836";
+        };
+      default = "r1";
       };
     };
   }

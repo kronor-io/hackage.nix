@@ -308,7 +308,13 @@
         revTimestamp = "2020-01-19T09:17:39Z";
         sha256 = "f85c04ad9b12b1f9e7331724e63222c2b3a74e67707ca733aa771120f24d0175";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/Chart-gtk-1.9.3-r1-6bb902e333baaeed2e71f69f2a72edf62a122ea22d8e926ec578e407d7c32fa9.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-01T09:43:59Z";
+        sha256 = "6bb902e333baaeed2e71f69f2a72edf62a122ea22d8e926ec578e407d7c32fa9";
+        };
+      default = "r1";
       };
     };
   }
