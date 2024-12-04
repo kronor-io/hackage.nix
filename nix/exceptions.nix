@@ -206,7 +206,13 @@
         revTimestamp = "2024-10-31T12:54:02Z";
         sha256 = "6dc51893a998ee0db63852ccf7f47c04b5166a902086dc7ead1c9656c20245b4";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/exceptions-0.10.9-r1-661e9114615eb5367cf50889a58c83c3b33385e7286448af5f6ff9d15e68e086.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-03T12:26:07Z";
+        sha256 = "661e9114615eb5367cf50889a58c83c3b33385e7286448af5f6ff9d15e68e086";
+        };
+      default = "r1";
       };
     };
   "0.2" = {

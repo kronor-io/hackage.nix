@@ -143,4 +143,16 @@
       default = "r0";
       };
     };
+  "1.3.0.0" = {
+    sha256 = "cbfd62f733d7b235c048c05f67b326a46db88100d5fffc3b6f0f10e53f9e319c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/extism-1.3.0.0-r0-8945ddf0a549b3a9d2652dc8e2919bf902f480b630c0db54f4fea6185ded7acf.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-03T22:58:28Z";
+        sha256 = "8945ddf0a549b3a9d2652dc8e2919bf902f480b630c0db54f4fea6185ded7acf";
+        };
+      default = "r0";
+      };
+    };
   }
