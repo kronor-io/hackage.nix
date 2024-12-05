@@ -104,7 +104,13 @@
         revTimestamp = "2022-03-20T08:44:32Z";
         sha256 = "f2e5749bcf43aa0cd0cf74834f923d09417eb417f426ac0586c4da19eef9fce5";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gloss-algorithms-1.13.0.3-r1-0601fb6c0cc5277028851759668bf869ea8ab8ebe878964daec0f6478ab53bb3.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-04T21:23:49Z";
+        sha256 = "0601fb6c0cc5277028851759668bf869ea8ab8ebe878964daec0f6478ab53bb3";
+        };
+      default = "r1";
       };
     };
   "1.9.2.1" = {
