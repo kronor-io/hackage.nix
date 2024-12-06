@@ -647,4 +647,16 @@
       default = "r0";
       };
     };
+  "0.9.2" = {
+    sha256 = "bdba58ef19e243f2d182cc4cc961ddc727e5c6bbff737300f973e7640a1fdc7a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/extensible-0.9.2-r0-9a79f5f82b16b053231ed9045b4810728423525b0a3efeaa2427afd83ddf42d9.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-05T00:57:58Z";
+        sha256 = "9a79f5f82b16b053231ed9045b4810728423525b0a3efeaa2427afd83ddf42d9";
+        };
+      default = "r0";
+      };
+    };
   }

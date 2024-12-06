@@ -182,7 +182,13 @@
         revTimestamp = "2024-04-20T19:51:03Z";
         sha256 = "9a28311264daa1dec7121369e15974397dd3730076b8cce72d9b284f1d3c7dd2";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/structs-0.1.9-r3-6a6779753132f4eb9ef11affded2c7298d122416344ad1279646adbf53b7d517.nix;
+        revNum = 3;
+        revTimestamp = "2024-12-05T12:32:59Z";
+        sha256 = "6a6779753132f4eb9ef11affded2c7298d122416344ad1279646adbf53b7d517";
+        };
+      default = "r3";
       };
     };
   }
