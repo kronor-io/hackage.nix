@@ -8,7 +8,13 @@
         revTimestamp = "2017-09-28T20:18:39Z";
         sha256 = "efa857654c5d30747b7befc9b299e2f42be77127ac54dc1c630b7b74326f0e85";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/android-activity-0.1-r1-4c553016b8470ab450ec258fcf67f6751f55ab0a0ec5a4fa0579cd33f333a047.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-06T18:18:35Z";
+        sha256 = "4c553016b8470ab450ec258fcf67f6751f55ab0a0ec5a4fa0579cd33f333a047";
+        };
+      default = "r1";
       };
     };
   }
