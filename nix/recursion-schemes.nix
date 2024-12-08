@@ -734,7 +734,13 @@
         revTimestamp = "2024-06-12T12:08:31Z";
         sha256 = "1d0077342500f3057c9335f1f6f8605d763579dc3d231b306400f35e34d5c062";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/recursion-schemes-5.2.3-r1-918e804084122e022d3784a4ca9add536fe9fcc2150ceef5865ca14d4fab4851.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-07T03:27:01Z";
+        sha256 = "918e804084122e022d3784a4ca9add536fe9fcc2150ceef5865ca14d4fab4851";
+        };
+      default = "r1";
       };
     };
   }
