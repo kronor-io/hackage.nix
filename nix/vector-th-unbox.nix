@@ -350,7 +350,13 @@
         revTimestamp = "2024-04-19T21:22:16Z";
         sha256 = "3942bf27ed264bf5df6742365e5a2ccdcaa924d912b5b4c4789fac90770fb4dd";
         };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/vector-th-unbox-0.2.2-r7-a94fcf658e8faf861241000e03f3b8a684f25377678061c2ce4cf823dc1e5211.nix;
+        revNum = 7;
+        revTimestamp = "2024-12-10T23:24:43Z";
+        sha256 = "a94fcf658e8faf861241000e03f3b8a684f25377678061c2ce4cf823dc1e5211";
+        };
+      default = "r7";
       };
     };
   }

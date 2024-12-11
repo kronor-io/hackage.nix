@@ -3428,7 +3428,13 @@
         revTimestamp = "2024-07-17T15:22:06Z";
         sha256 = "dda0218a99e69987db0db88ec7eb58dab1253c377c1cddef7d4c1c593ce32c23";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/yesod-core-1.6.26.0-r1-38845d166cb492103a47ad5dd59ad711dc02eb3effa8af588ba5af21578d0aff.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-10T18:52:39Z";
+        sha256 = "38845d166cb492103a47ad5dd59ad711dc02eb3effa8af588ba5af21578d0aff";
+        };
+      default = "r1";
       };
     };
   "1.6.3" = {

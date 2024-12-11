@@ -389,4 +389,16 @@
       default = "r5";
       };
     };
+  "1.6.7" = {
+    sha256 = "e45a53e31d6e4074768627e3c976423448e63e2e4402133e8a5f200edff339ca";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hledger-interest-1.6.7-r0-2d0084be99c3f5deeefc60f2fe03b0447fb2c01be0611c1afd8bbaea93cd506b.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-10T11:14:38Z";
+        sha256 = "2d0084be99c3f5deeefc60f2fe03b0447fb2c01be0611c1afd8bbaea93cd506b";
+        };
+      default = "r0";
+      };
+    };
   }

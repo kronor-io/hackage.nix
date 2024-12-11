@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.0.4.1" = {
+    sha256 = "2efb40edf93c6e2de6fd50733c3277d29056a1dd57ccebf69eef5b7b5af87264";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hw-prelude-0.0.4.1-r0-c6a238a7df6cf4e87f4388f48e630cdfbc211cfc644aa36b8c6318764dfd3a38.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-10T23:58:27Z";
+        sha256 = "c6a238a7df6cf4e87f4388f48e630cdfbc211cfc644aa36b8c6318764dfd3a38";
+        };
+      default = "r0";
+      };
+    };
   }
