@@ -89,4 +89,16 @@
       default = "r0";
       };
     };
+  "0.2.2.0" = {
+    sha256 = "55c7484b90b278fe502bda5feff67dec37a9bd64454a68e6e855277d96d73d67";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/arion-compose-0.2.2.0-r0-6b770747c4d4d78e6132ac4d03ed2c804801d66a731e80012c595d0718262494.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-11T11:57:22Z";
+        sha256 = "6b770747c4d4d78e6132ac4d03ed2c804801d66a731e80012c595d0718262494";
+        };
+      default = "r0";
+      };
+    };
   }

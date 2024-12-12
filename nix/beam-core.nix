@@ -50,7 +50,13 @@
         revTimestamp = "2024-10-15T19:36:43Z";
         sha256 = "e8e9c958ffad6d40367522a8465d2b486531de3dc9bf19b162d1925bfbf39d9c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/beam-core-0.10.3.0-r1-e7b9fd239874c6ce69f79dafcb694cb814f2214c47fe87679dbeea853b1dfeea.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-11T14:24:37Z";
+        sha256 = "e7b9fd239874c6ce69f79dafcb694cb814f2214c47fe87679dbeea853b1dfeea";
+        };
+      default = "r1";
       };
     };
   "0.6.0.0" = {
