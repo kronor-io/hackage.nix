@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.1.0.4" = {
+    sha256 = "a0c0bd7bb907eb8896013436ce636244e75be0b115c5355c0021e57fed5931de";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cairo-image-0.1.0.4-r0-9162e2a643f42704d322e9cf9793d0d7ec2103ddb36127c64cc00493f015c092.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-12T05:16:02Z";
+        sha256 = "9162e2a643f42704d322e9cf9793d0d7ec2103ddb36127c64cc00493f015c092";
+        };
+      default = "r0";
+      };
+    };
   }

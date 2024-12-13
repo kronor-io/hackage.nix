@@ -152,7 +152,13 @@
         revTimestamp = "2024-09-30T13:09:13Z";
         sha256 = "0650858c913c22ab5fe3ffb6e7649ee261b67924695b82c4fcda500ffff0944f";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/goldplate-0.2.2.1-r1-ee452a363e0082a6b683ec2632ac4e1d73c74b9a16adb51459ee010b87140ebe.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-12T07:39:10Z";
+        sha256 = "ee452a363e0082a6b683ec2632ac4e1d73c74b9a16adb51459ee010b87140ebe";
+        };
+      default = "r1";
       };
     };
   }

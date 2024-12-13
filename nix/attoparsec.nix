@@ -1148,7 +1148,13 @@
         revTimestamp = "2023-10-10T14:12:34Z";
         sha256 = "ec709539b881d6431620bd7c40fbfa680aaf4a98c6f35b51536d8f455682b1ae";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/attoparsec-0.14.4-r6-35129d0ab1741f000f1a7d2fc839544919ee6fbb8f2d6e7f0a629c41f91035f3.nix;
+        revNum = 6;
+        revTimestamp = "2024-12-12T03:39:20Z";
+        sha256 = "35129d0ab1741f000f1a7d2fc839544919ee6fbb8f2d6e7f0a629c41f91035f3";
+        };
+      default = "r6";
       };
     };
   "0.4" = {
