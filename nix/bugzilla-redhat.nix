@@ -128,7 +128,19 @@
         revTimestamp = "2023-10-02T06:22:17Z";
         sha256 = "9de92e837ec614f21687ac6e6fcdc2fd76e0df714326990c409ca3e63b44cfe2";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/bugzilla-redhat-1.0.1.1-r1-e8704b2ff4f6c3d82e3c640cf63ee082f4b902ca9fb13f3c1b87cda34d53a023.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-13T09:50:05Z";
+        sha256 = "e8704b2ff4f6c3d82e3c640cf63ee082f4b902ca9fb13f3c1b87cda34d53a023";
+        };
+      r2 = {
+        nix = import ../hackage/bugzilla-redhat-1.0.1.1-r2-648709c7df282f336f7693a82f1c75149096d4bd1f1003450f2d4ae9616ba65c.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-13T10:55:58Z";
+        sha256 = "648709c7df282f336f7693a82f1c75149096d4bd1f1003450f2d4ae9616ba65c";
+        };
+      default = "r2";
       };
     };
   }
