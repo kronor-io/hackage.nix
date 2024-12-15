@@ -860,7 +860,13 @@
         revTimestamp = "2024-10-13T03:22:42Z";
         sha256 = "72d227bfda17ff9dcbe477e3a265700c278753f7f47312e148cb903cd8cf8b04";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/pandoc-crossref-0.3.18.0-r2-90c76f648d9f5c0c568e52b42aa38936724947942a79f038a0b6549c707906a7.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-14T15:40:34Z";
+        sha256 = "90c76f648d9f5c0c568e52b42aa38936724947942a79f038a0b6549c707906a7";
+        };
+      default = "r2";
       };
     };
   "0.3.2.0" = {

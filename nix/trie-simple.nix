@@ -89,4 +89,16 @@
       default = "r5";
       };
     };
+  "0.4.3" = {
+    sha256 = "cff347be087f1825ee0bbc1af3a5d6dfba18e6a08299fd7dc7b642a5c2e56cc1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/trie-simple-0.4.3-r0-77eada9a166a38320ee08bdc76c65922ff90be2d80621ca70c255b4a50b28e30.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-14T06:07:38Z";
+        sha256 = "77eada9a166a38320ee08bdc76c65922ff90be2d80621ca70c255b4a50b28e30";
+        };
+      default = "r0";
+      };
+    };
   }
