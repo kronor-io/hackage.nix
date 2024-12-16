@@ -350,7 +350,13 @@
         revTimestamp = "2024-03-08T21:08:37Z";
         sha256 = "cb3efd76b71a9e8a930f4ce5d8c91adcb63ac0d8dc3d2d4a132d490bd1ecb391";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/bitvec-1.1.5.0-r2-c04630f6b68f8deebfa6a07d468d3ff4582ab452b721797ef497642cf75e8b99.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-15T19:56:01Z";
+        sha256 = "c04630f6b68f8deebfa6a07d468d3ff4582ab452b721797ef497642cf75e8b99";
+        };
+      default = "r2";
       };
     };
   }
