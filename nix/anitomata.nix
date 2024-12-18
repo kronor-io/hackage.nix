@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.1.0.3" = {
+    sha256 = "7041d77fda51cadd50ea6c3eaf0f94d0d7f4edc61271eaec122ce0a0378f6013";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/anitomata-0.1.0.3-r0-fe40ca20172413468db038cc2125fdab7003e07d032f76fd22b6e8cc471d930d.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-17T17:19:31Z";
+        sha256 = "fe40ca20172413468db038cc2125fdab7003e07d032f76fd22b6e8cc471d930d";
+        };
+      default = "r0";
+      };
+    };
   }

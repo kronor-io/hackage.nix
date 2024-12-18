@@ -10650,6 +10650,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "megastore" = import ./nix/megastore.nix;
   "meldable-heap" = import ./nix/meldable-heap.nix;
   "melf" = import ./nix/melf.nix;
+  "mello" = import ./nix/mello.nix;
   "mellon-core" = import ./nix/mellon-core.nix;
   "mellon-gpio" = import ./nix/mellon-gpio.nix;
   "mellon-web" = import ./nix/mellon-web.nix;
@@ -14170,6 +14171,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "scons2dot" = import ./nix/scons2dot.nix;
   "scope" = import ./nix/scope.nix;
   "scope-cairo" = import ./nix/scope-cairo.nix;
+  "scoped-codensity" = import ./nix/scoped-codensity.nix;
   "scottish" = import ./nix/scottish.nix;
   "scotty" = import ./nix/scotty.nix;
   "scotty-binding-play" = import ./nix/scotty-binding-play.nix;

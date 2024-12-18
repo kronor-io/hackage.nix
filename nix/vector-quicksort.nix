@@ -17,4 +17,16 @@
       default = "r1";
       };
     };
+  "0.2" = {
+    sha256 = "ab83803c3182476fea5e3b3fa50bc4ee92aa0bab07a667b0115ad42b636f9e33";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/vector-quicksort-0.2-r0-18d0999483954286a3f6e46e2896110973d4e04cc9c3523fdbd8dfeaab584400.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-17T23:08:58Z";
+        sha256 = "18d0999483954286a3f6e46e2896110973d4e04cc9c3523fdbd8dfeaab584400";
+        };
+      default = "r0";
+      };
+    };
   }
