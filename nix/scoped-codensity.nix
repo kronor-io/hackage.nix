@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.2" = {
+    sha256 = "cb65f6a22e3bca9a5839454b1e75c917114ed713c28c21ddb536220151fee98e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/scoped-codensity-0.1.0.2-r0-1d391629b8bfab9a6d7ef757f31f0221fd384e67a2ed68ff2f13ba91c2d478e8.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-18T10:21:36Z";
+        sha256 = "1d391629b8bfab9a6d7ef757f31f0221fd384e67a2ed68ff2f13ba91c2d478e8";
+        };
+      default = "r0";
+      };
+    };
   }

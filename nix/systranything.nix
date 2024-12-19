@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.2.0" = {
+    sha256 = "2e54c3c600bc199aad15993771512a94ffa849efea4a7e357a3e753b27fe43b5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/systranything-0.1.2.0-r0-70e8d66ce33c28f25aa2911fe3d6b6f5a7a8964aa4f26046025e70406eab88c2.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-18T07:27:03Z";
+        sha256 = "70e8d66ce33c28f25aa2911fe3d6b6f5a7a8964aa4f26046025e70406eab88c2";
+        };
+      default = "r0";
+      };
+    };
   }

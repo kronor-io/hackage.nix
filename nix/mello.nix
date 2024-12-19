@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.3.0" = {
+    sha256 = "6b79853110aedb610b37005417b69f913f533e6b8638c8ad3c99dc349bfff62b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mello-0.3.0-r0-2c50826c7f6b6c72775ff17c61e0ff9eb0967a0453f9b736693a5cd091dad7cc.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-18T21:52:51Z";
+        sha256 = "2c50826c7f6b6c72775ff17c61e0ff9eb0967a0453f9b736693a5cd091dad7cc";
+        };
+      default = "r0";
+      };
+    };
   }
