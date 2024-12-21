@@ -152,7 +152,13 @@
         revTimestamp = "2024-07-04T20:43:06Z";
         sha256 = "5953dc14c71b6047edab2dc89e922678ff5cbe2e98d16b9e7078150083940be4";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/text-short-0.1.6-r3-41be94ccd3f6646ab69b0b05c5130ea3c7911a4598ab9b9192f21ad25a69163a.nix;
+        revNum = 3;
+        revTimestamp = "2024-12-20T18:17:31Z";
+        sha256 = "41be94ccd3f6646ab69b0b05c5130ea3c7911a4598ab9b9192f21ad25a69163a";
+        };
+      default = "r3";
       };
     };
   }

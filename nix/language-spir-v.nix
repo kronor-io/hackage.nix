@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.1.0.3" = {
+    sha256 = "2afaa5dc9e5a7b5601ba3bf4e55f0b8ee532c668d5e68dd7b86f980a6f532e99";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/language-spir-v-0.1.0.3-r0-c07d92777e2b0e4ac9bd3ef0902e50c046d42edf1a1a98d17e78d039d60d1351.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-20T01:16:39Z";
+        sha256 = "c07d92777e2b0e4ac9bd3ef0902e50c046d42edf1a1a98d17e78d039d60d1351";
+        };
+      default = "r0";
+      };
+    };
   }

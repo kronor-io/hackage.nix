@@ -212,7 +212,13 @@
         revTimestamp = "2024-05-12T20:57:02Z";
         sha256 = "ce39b24139694ee1facfdbf0eed3fbca3444fa3c7bcaa386c65cd4e1b7691a4d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/OneTuple-0.4.2-r1-dd7266f983da2970e5662168add810dabadabb3a4bb9b137181eafc0ac7ea4d4.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-20T18:16:59Z";
+        sha256 = "dd7266f983da2970e5662168add810dabadabb3a4bb9b137181eafc0ac7ea4d4";
+        };
+      default = "r1";
       };
     };
   }

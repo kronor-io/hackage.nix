@@ -116,7 +116,13 @@
         revTimestamp = "2024-04-15T02:16:18Z";
         sha256 = "1b4d13b36cbd4bb1f81493eff589c2d92b8dc7bc91bfce77b3ef68224a72fa0f";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/bench-1.0.13-r1-d6d1e593e607830ec0d6342bacab877ac348175c100ab1a168f6a4e2fdd216da.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-20T04:28:10Z";
+        sha256 = "d6d1e593e607830ec0d6342bacab877ac348175c100ab1a168f6a4e2fdd216da";
+        };
+      default = "r1";
       };
     };
   "1.0.2" = {
