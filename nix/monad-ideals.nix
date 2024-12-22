@@ -20,7 +20,13 @@
         revTimestamp = "2024-07-30T04:49:26Z";
         sha256 = "484d9feda4ea66661269052eb549334ec8d27ede44b4c393a6829832439bb299";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/monad-ideals-0.1.1.0-r1-ecfc141bfb86d8ced35c570b781e34932dd17cd7b3646ee688a51ee69c752f08.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-21T10:58:04Z";
+        sha256 = "ecfc141bfb86d8ced35c570b781e34932dd17cd7b3646ee688a51ee69c752f08";
+        };
+      default = "r1";
       };
     };
   }

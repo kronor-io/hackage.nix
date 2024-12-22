@@ -86,7 +86,25 @@
         revTimestamp = "2024-05-16T13:23:11Z";
         sha256 = "abeba45ceffebfdf8ce338cbdb53c91e61ed1f282402a200c9c6862cde4a1c00";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/coercible-subtypes-0.3.0.1-r2-52dce1cd8ac478556b046fc9bfdf365ce632d344b7e15da0aead0259b197baa8.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-21T11:45:05Z";
+        sha256 = "52dce1cd8ac478556b046fc9bfdf365ce632d344b7e15da0aead0259b197baa8";
+        };
+      default = "r2";
+      };
+    };
+  "1" = {
+    sha256 = "5985c62b27df4ca1c5012b3eef23851b83755fc504943be1183179dcb001b20b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/coercible-subtypes-1-r0-c2fb069194c37ca6f2b5774e61b9b59772597cd1103b901db31e77bf2a05b4a5.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-21T12:08:51Z";
+        sha256 = "c2fb069194c37ca6f2b5774e61b9b59772597cd1103b901db31e77bf2a05b4a5";
+        };
+      default = "r0";
       };
     };
   }
