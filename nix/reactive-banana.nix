@@ -560,7 +560,13 @@
         revTimestamp = "2024-08-26T11:35:42Z";
         sha256 = "d65f52beae22c735da9ab1d89bd57cea499a4cfa83259f1296259ebbb15432da";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/reactive-banana-1.3.2.0-r5-7bd2d98c7e6866ce72b04af8c524d7dccd9b5f56c2e920d5a4dcb84eb773cd37.nix;
+        revNum = 5;
+        revTimestamp = "2024-12-22T22:54:01Z";
+        sha256 = "7bd2d98c7e6866ce72b04af8c524d7dccd9b5f56c2e920d5a4dcb84eb773cd37";
+        };
+      default = "r5";
       };
     };
   }
