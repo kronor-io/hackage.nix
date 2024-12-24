@@ -164,7 +164,13 @@
         revTimestamp = "2024-12-05T09:51:02Z";
         sha256 = "e7b896cd4d62e4bfad03651203f8d446ea4451685eb1918f4693edcc3776185a";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/threadscope-0.2.14.1-r3-dd3c76592312b3d38a5e638e0969688210b57369775f6c9ed3290bd8193b36ef.nix;
+        revNum = 3;
+        revTimestamp = "2024-12-23T10:47:04Z";
+        sha256 = "dd3c76592312b3d38a5e638e0969688210b57369775f6c9ed3290bd8193b36ef";
+        };
+      default = "r3";
       };
     };
   "0.2.2" = {

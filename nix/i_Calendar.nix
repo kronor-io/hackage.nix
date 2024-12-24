@@ -188,7 +188,13 @@
         revTimestamp = "2024-12-22T11:24:06Z";
         sha256 = "ab9ee5a25e94bd6333fa2c47e7984a3becf4dc8658bd7a86defe61e96f0ee3c0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/iCalendar-0.4.1.1-r1-c186815dcb827a4a73b8a63c5a547e6208b634b81d389f70ecccec012a9e6425.nix;
+        revNum = 1;
+        revTimestamp = "2024-12-23T18:24:00Z";
+        sha256 = "c186815dcb827a4a73b8a63c5a547e6208b634b81d389f70ecccec012a9e6425";
+        };
+      default = "r1";
       };
     };
   }
