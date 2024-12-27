@@ -782,7 +782,13 @@
         revTimestamp = "2024-07-04T20:39:28Z";
         sha256 = "2148e2e6ab1f1fd2ecee25067e0ee60da886be89736e8a54d49556407d7113ce";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/scientific-0.3.8.0-r2-ba83a6701dd0110138443757aca4a42786afa94272b73045ef878fd860d1732e.nix;
+        revNum = 2;
+        revTimestamp = "2024-12-26T13:50:23Z";
+        sha256 = "ba83a6701dd0110138443757aca4a42786afa94272b73045ef878fd860d1732e";
+        };
+      default = "r2";
       };
     };
   }
