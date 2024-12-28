@@ -119,4 +119,16 @@
       default = "r0";
       };
     };
+  "1.23.1.0" = {
+    sha256 = "275c86fde39ed9dad0719534d435e0f076c853e6c6dfedf6716190aa22493bd2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haskell-src-exts-simple-1.23.1.0-r0-807b906156a1a2b452587ac85e0529064af5481f9f5ea6ef4497231027d2b6cf.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-27T22:27:03Z";
+        sha256 = "807b906156a1a2b452587ac85e0529064af5481f9f5ea6ef4497231027d2b6cf";
+        };
+      default = "r0";
+      };
+    };
   }
