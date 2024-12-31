@@ -20,7 +20,13 @@
         revTimestamp = "2022-01-26T00:58:39Z";
         sha256 = "2999a62097f1973d87d26f8414a16afbeebf1064b60eea62b4b298269b7f65ef";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/special-values-0.1.0.0-r3-ea855ec644acac84d3a4c9aadae9ba70a11d1d48d00940805dbb81cc95672bbd.nix;
+        revNum = 3;
+        revTimestamp = "2024-12-30T10:25:59Z";
+        sha256 = "ea855ec644acac84d3a4c9aadae9ba70a11d1d48d00940805dbb81cc95672bbd";
+        };
+      default = "r3";
       };
     };
   }
