@@ -83,4 +83,16 @@
       default = "r0";
       };
     };
+  "0.1.4.4" = {
+    sha256 = "eed18ed182a36e2761c6768e982717e503ed5cedb5cebbb887ce7874141fdba3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/quickcheck-string-random-0.1.4.4-r0-22cd180b1a63ac837e9800535246451831ae122161244b5ddeebf9ccef2c8119.nix;
+        revNum = 0;
+        revTimestamp = "2024-12-31T03:16:09Z";
+        sha256 = "22cd180b1a63ac837e9800535246451831ae122161244b5ddeebf9ccef2c8119";
+        };
+      default = "r0";
+      };
+    };
   }
