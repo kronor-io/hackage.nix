@@ -143,4 +143,16 @@
       default = "r0";
       };
     };
+  "1.0.6" = {
+    sha256 = "7af936c6fc05b636b93919d37d237305dc9292f902fa49e3e7d1fe3546edddc1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-handy-1.0.6-r0-7a87422c9936b9a3612d2ee77e846a7b9909ee7f94204dde253e4962b33db981.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-01T12:36:37Z";
+        sha256 = "7a87422c9936b9a3612d2ee77e846a7b9909ee7f94204dde253e4962b33db981";
+        };
+      default = "r0";
+      };
+    };
   }

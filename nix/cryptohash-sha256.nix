@@ -122,7 +122,13 @@
         revTimestamp = "2024-06-26T09:08:36Z";
         sha256 = "acb64f2af52d81b0bb92c266f11d43def726a7a7b74a2c23d219e160b54edec7";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/cryptohash-sha256-0.11.102.1-r6-0e9de2ccce261e7a5b027e842f6f47f50eb0e6059a0de98a5479f75aa8164107.nix;
+        revNum = 6;
+        revTimestamp = "2025-01-01T19:53:11Z";
+        sha256 = "0e9de2ccce261e7a5b027e842f6f47f50eb0e6059a0de98a5479f75aa8164107";
+        };
+      default = "r6";
       };
     };
   "0.11.7.1" = {

@@ -371,6 +371,18 @@
       default = "r0";
       };
     };
+  "4.0.32" = {
+    sha256 = "1de5468c45fa2d7896bdaa6308fa633b3099de0b25a3c8b7e92f32085ba090c4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-webkit2-4.0.32-r0-42356461f28f9ea09fdbbbf166ba3d63638d109b65922610a7a4d89dc6bcc1d1.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-01T12:36:54Z";
+        sha256 = "42356461f28f9ea09fdbbbf166ba3d63638d109b65922610a7a4d89dc6bcc1d1";
+        };
+      default = "r0";
+      };
+    };
   "4.0.4" = {
     sha256 = "3748f8b1d30683822b887527668ac7e87b879d72c2b4d1e2576d51c3dedf0d37";
     revisions = {

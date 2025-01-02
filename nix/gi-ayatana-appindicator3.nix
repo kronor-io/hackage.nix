@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.2" = {
+    sha256 = "3b30735332de154713783cb224719516a9899b2a76536a4f15311e9d7d5e4550";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-ayatana-appindicator3-0.1.2-r0-3f11d6268d4ad594b80c3078d038055ff2fd77b99987ceb03901eb6b3f88e536.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-01T12:36:04Z";
+        sha256 = "3f11d6268d4ad594b80c3078d038055ff2fd77b99987ceb03901eb6b3f88e536";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -98,7 +98,13 @@
         revTimestamp = "2024-06-26T09:24:12Z";
         sha256 = "1a01de5a6e0165aa2aa71d9e66cba1d0093510875ae90d79ddec310d506d6e48";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/cryptohash-md5-0.11.101.0-r6-2e42586d73bdb149bde829e37b6546d84e60d7fb49c93320633b71c25f4dee54.nix;
+        revNum = 6;
+        revTimestamp = "2025-01-01T17:36:48Z";
+        sha256 = "2e42586d73bdb149bde829e37b6546d84e60d7fb49c93320633b71c25f4dee54";
+        };
+      default = "r6";
       };
     };
   "0.11.7.1" = {
