@@ -155,4 +155,16 @@
       default = "r8";
       };
     };
+  "0.4.0.0" = {
+    sha256 = "7d0d6039787d3b6dbaa4647025b5f04f65770f021f1d43e8bfc2bfd033b0901b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/literatex-0.4.0.0-r0-a551c51d9ecb4d4763af19360f8aefa7d76ed88eb01d2db0058837b0f3391abc.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-02T22:49:46Z";
+        sha256 = "a551c51d9ecb4d4763af19360f8aefa7d76ed88eb01d2db0058837b0f3391abc";
+        };
+      default = "r0";
+      };
+    };
   }
