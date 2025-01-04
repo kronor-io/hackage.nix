@@ -434,7 +434,13 @@
         revTimestamp = "2024-05-17T00:57:49Z";
         sha256 = "fc9f489da3d80aaba1bf9cb2f54daa88ca63a499228f6a6096a95d5426d3af93";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/binary-orphans-1.0.5-r1-1217df567aae672d09979480c362d27559d226081b9b9bc4107d4af008da1f5f.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-03T21:31:35Z";
+        sha256 = "1217df567aae672d09979480c362d27559d226081b9b9bc4107d4af008da1f5f";
+        };
+      default = "r1";
       };
     };
   }

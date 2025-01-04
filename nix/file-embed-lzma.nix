@@ -92,7 +92,13 @@
         revTimestamp = "2024-07-03T13:49:27Z";
         sha256 = "247a1f094fd896606086fc5f8d8813737def32f39fdf8c56967d4b082b7dbb5e";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/file-embed-lzma-0.1-r1-408dd2b501af0e3581b8f68f84090f7a9e78166ca9321a4d09b9b541fcf160e0.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-03T11:52:24Z";
+        sha256 = "408dd2b501af0e3581b8f68f84090f7a9e78166ca9321a4d09b9b541fcf160e0";
+        };
+      default = "r1";
       };
     };
   }

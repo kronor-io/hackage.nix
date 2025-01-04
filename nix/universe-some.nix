@@ -80,7 +80,13 @@
         revTimestamp = "2024-05-16T12:49:45Z";
         sha256 = "d04ea73f079a642f355901cfa512208fddb7916323544ea1af99e104a725ceda";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/universe-some-1.2.2-r1-f245b72d714090106bae82eca24c079bfdcf7022dff4d9261273d3aede823b57.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-03T23:03:45Z";
+        sha256 = "f245b72d714090106bae82eca24c079bfdcf7022dff4d9261273d3aede823b57";
+        };
+      default = "r1";
       };
     };
   }

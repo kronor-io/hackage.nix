@@ -86,7 +86,13 @@
         revTimestamp = "2024-05-13T17:44:16Z";
         sha256 = "0fced50725acab02be09853f97d9dcc4880e28d6d9d21b7eaabdc709911fe29a";
         };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/setlocale-1.0.0.10-r6-cb1d03856a09622e5372e58c09a507308b013e50a67e84cf7faeb363300a28a2.nix;
+        revNum = 6;
+        revTimestamp = "2025-01-03T16:40:09Z";
+        sha256 = "cb1d03856a09622e5372e58c09a507308b013e50a67e84cf7faeb363300a28a2";
+        };
+      default = "r6";
       };
     };
   "1.0.0.2" = {
