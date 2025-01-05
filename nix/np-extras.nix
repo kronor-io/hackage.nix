@@ -170,7 +170,13 @@
         revTimestamp = "2024-02-02T12:25:29Z";
         sha256 = "7887f565fb7af6544dadbc3e0846bf9b72c0552cf8d1840467fc0e7d342570d3";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/np-extras-0.3.1.3-r3-f1a13663cd352485f30dd04134793105200f1a9646f13437d6ffff9a8543b842.nix;
+        revNum = 3;
+        revTimestamp = "2025-01-04T17:25:43Z";
+        sha256 = "f1a13663cd352485f30dd04134793105200f1a9646f13437d6ffff9a8543b842";
+        };
+      default = "r3";
       };
     };
   }

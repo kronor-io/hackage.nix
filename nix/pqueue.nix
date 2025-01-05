@@ -272,7 +272,13 @@
         revTimestamp = "2024-05-17T09:13:13Z";
         sha256 = "7dadcc2a66f0f91bea789b450355a5ce9ebdc697af8c817f9e3200e856c8adaa";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/pqueue-1.5.0.0-r3-be237035e3aa1459e2a7cb9a3e19d90d9be3465cb993cbff44c0bd815b54ff3c.nix;
+        revNum = 3;
+        revTimestamp = "2025-01-04T08:05:16Z";
+        sha256 = "be237035e3aa1459e2a7cb9a3e19d90d9be3465cb993cbff44c0bd815b54ff3c";
+        };
+      default = "r3";
       };
     };
   }

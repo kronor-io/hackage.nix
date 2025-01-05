@@ -86,7 +86,13 @@
         revTimestamp = "2024-05-13T17:10:44Z";
         sha256 = "edcc798ed37f3fbab9eec94218fec2bfc4708557230c9b49523ee19c66ba59fc";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/sop-core-0.5.0.2-r5-0bb74cafff423180df3909f5b7ce069131078b132da4b4e292ef4d1601499a4e.nix;
+        revNum = 5;
+        revTimestamp = "2025-01-04T21:20:39Z";
+        sha256 = "0bb74cafff423180df3909f5b7ce069131078b132da4b4e292ef4d1601499a4e";
+        };
+      default = "r5";
       };
     };
   }
