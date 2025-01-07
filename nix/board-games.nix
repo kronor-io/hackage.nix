@@ -140,7 +140,13 @@
         revTimestamp = "2024-02-04T19:30:42Z";
         sha256 = "491333b78de7cd07afce3f6d6f29373c986e76f7efe087830db83343daf7340f";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/board-games-0.4-r2-0c61881d4a4cdee8f7f8ac0c1ac52989bfbc3053654461f062ecff4127a619b7.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-06T11:21:46Z";
+        sha256 = "0c61881d4a4cdee8f7f8ac0c1ac52989bfbc3053654461f062ecff4127a619b7";
+        };
+      default = "r2";
       };
     };
   }

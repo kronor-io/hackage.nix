@@ -38,7 +38,13 @@
         revTimestamp = "2024-10-26T18:25:05Z";
         sha256 = "22e69069071841f79ca959042b26f132b9ee7acbf40d3c841822ccf062583604";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/coinor-clp-0.0.0.2-r2-1247aaf14cf826236923a8c3d2692830a56a9fa1ce00d36da59e57bb8fe536ce.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-06T11:21:47Z";
+        sha256 = "1247aaf14cf826236923a8c3d2692830a56a9fa1ce00d36da59e57bb8fe536ce";
+        };
+      default = "r2";
       };
     };
   }

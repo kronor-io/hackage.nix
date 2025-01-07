@@ -182,7 +182,13 @@
         revTimestamp = "2024-05-21T22:02:11Z";
         sha256 = "58e8fb7ebcaf63e0207fbdd0b4317b36d9bc2dcf3f01e312079d68b6865bb5b6";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/arithmoi-0.13.0.0-r5-6208fba773c73a528ecca84928c8559211e518380913729958a2735afb113ac8.nix;
+        revNum = 5;
+        revTimestamp = "2025-01-06T23:41:35Z";
+        sha256 = "6208fba773c73a528ecca84928c8559211e518380913729958a2735afb113ac8";
+        };
+      default = "r5";
       };
     };
   "0.2.0.0" = {

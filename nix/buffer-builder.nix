@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.2.4.9" = {
+    sha256 = "fef88d07c05299a95628dfba12bc0bbc7531baa9bc6ce04dacfdb304eebd9db9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/buffer-builder-0.2.4.9-r0-22600bcca6b8657865d1dce07cfa791767bdb6241c0cd5cadd6444678bf9a8a7.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-06T04:24:49Z";
+        sha256 = "22600bcca6b8657865d1dce07cfa791767bdb6241c0cd5cadd6444678bf9a8a7";
+        };
+      default = "r0";
+      };
+    };
   }

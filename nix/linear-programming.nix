@@ -32,7 +32,13 @@
         revTimestamp = "2023-12-22T19:46:12Z";
         sha256 = "14623d6c2f1bb3a14856cc5c367ff66b40d167692b3771a2b1f77d436e990920";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/linear-programming-0.0.1-r1-ce2541e27aab7d7f6b02e9986dab85ddcc18c13fd74d8f6ab49f19b6eb301e3f.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-06T11:21:48Z";
+        sha256 = "ce2541e27aab7d7f6b02e9986dab85ddcc18c13fd74d8f6ab49f19b6eb301e3f";
+        };
+      default = "r1";
       };
     };
   }

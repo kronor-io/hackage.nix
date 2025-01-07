@@ -164,7 +164,13 @@
         revTimestamp = "2023-02-15T10:23:45Z";
         sha256 = "6eba7765b8f60e4217bc9355b38c353cf18547d685838b9a3a19f8db23679753";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/synthesizer-alsa-0.5.0.6-r2-db175f9fbbda67c1f35e68811116c1baf486435e4c9f501a340c9ba50e9d7b11.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-06T11:21:52Z";
+        sha256 = "db175f9fbbda67c1f35e68811116c1baf486435e4c9f501a340c9ba50e9d7b11";
+        };
+      default = "r2";
       };
     };
   }
