@@ -146,7 +146,13 @@
         revTimestamp = "2024-11-13T15:22:52Z";
         sha256 = "3f5481422a918eec1c224a990cc69f729c953d574002243565fa1f68d392e081";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/chell-quickcheck-0.2.5.4-r2-cacc152cb279bd61d29d493a64c7dcfd9559d586a21369f7d03334c16ee16115.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-07T08:27:44Z";
+        sha256 = "cacc152cb279bd61d29d493a64c7dcfd9559d586a21369f7d03334c16ee16115";
+        };
+      default = "r2";
       };
     };
   }

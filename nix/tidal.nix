@@ -2612,7 +2612,13 @@
         revTimestamp = "2024-04-15T13:24:34Z";
         sha256 = "26e1bda2e88a4d324fd2c5b07f8f0244700b273d7ccb4e8d7aa69eadeac9e0c2";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tidal-1.9.5-r2-ff12d3c0aa1cee372614ba461d5ce1cea3edcfed759a7b7cf65dcd4fbb346050.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-07T23:01:48Z";
+        sha256 = "ff12d3c0aa1cee372614ba461d5ce1cea3edcfed759a7b7cf65dcd4fbb346050";
+        };
+      default = "r2";
       };
     };
   }
