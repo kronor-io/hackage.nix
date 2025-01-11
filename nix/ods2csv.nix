@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.0.1" = {
+    sha256 = "aa93aeb59a474c03cd1af0719645b2a35b8695ed761bb2cb7e900888edcc38a8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ods2csv-0.1.0.1-r0-8eb18267bb31e581d281700d47bb97c0a66abb3b8020f3ce631c785e5927c565.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-10T20:48:00Z";
+        sha256 = "8eb18267bb31e581d281700d47bb97c0a66abb3b8020f3ce631c785e5927c565";
+        };
+      default = "r0";
+      };
+    };
   }
