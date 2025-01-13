@@ -350,7 +350,13 @@
         revTimestamp = "2024-06-02T23:45:05Z";
         sha256 = "ff06e22c520b540dbf3bede0df723810a9d144ecb92e8d97845465fac86b0fc1";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/monoidal-containers-0.6.5.0-r1-af0a24388d9f7070c4b7e116610a9318865aa9be2632271bb72a209f0dc21de8.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-12T16:34:20Z";
+        sha256 = "af0a24388d9f7070c4b7e116610a9318865aa9be2632271bb72a209f0dc21de8";
+        };
+      default = "r1";
       };
     };
   }
