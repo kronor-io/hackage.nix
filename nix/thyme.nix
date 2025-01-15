@@ -326,7 +326,13 @@
         revTimestamp = "2024-12-18T15:28:55Z";
         sha256 = "66d3faa1591e55d9526a1be59a838f664a62d6990686014d9cc0b56652505fd9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/thyme-0.4.1-r1-e5b4013585633eb0c329dddac7ca8257e794a3745d3c711da0c9b3935f954a51.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-14T17:42:35Z";
+        sha256 = "e5b4013585633eb0c329dddac7ca8257e794a3745d3c711da0c9b3935f954a51";
+        };
+      default = "r1";
       };
     };
   }

@@ -158,7 +158,13 @@
         revTimestamp = "2024-08-29T09:15:44Z";
         sha256 = "9e99beea1800bd6cf94ba84a2547697f19f948ac3e2cd4173d38007d08352e9a";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/io-sim-1.6.0.0-r4-185f069f73af33df17588407948b621b7307286fa4c8757918998082c752b780.nix;
+        revNum = 4;
+        revTimestamp = "2025-01-14T22:56:48Z";
+        sha256 = "185f069f73af33df17588407948b621b7307286fa4c8757918998082c752b780";
+        };
+      default = "r4";
       };
     };
   }

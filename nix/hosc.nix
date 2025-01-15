@@ -338,7 +338,13 @@
         revTimestamp = "2024-12-20T02:29:56Z";
         sha256 = "14ec269ca7f26f3742075e0bf1e73f1368e26805dfc2537f8c80b6969bda6ae0";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hosc-0.21-r1-f6932b213db33cf042a31f8db3a3d3cb1e3aab8478bd9d4feb5183a239cb50bc.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-14T23:22:51Z";
+        sha256 = "f6932b213db33cf042a31f8db3a3d3cb1e3aab8478bd9d4feb5183a239cb50bc";
+        };
+      default = "r1";
       };
     };
   "0.3" = {

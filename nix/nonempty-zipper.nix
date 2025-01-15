@@ -59,4 +59,28 @@
       default = "r0";
       };
     };
+  "1.0.1.0" = {
+    sha256 = "5b67c8a00acec1203bd1f430a57e6d81041c25a79cafdad994252b6cff76ed66";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nonempty-zipper-1.0.1.0-r0-9456e020dd4f7d0bb3b999346d4f09c0e64026287459d5a6eb98cd73833c98ab.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-13T22:01:00Z";
+        sha256 = "9456e020dd4f7d0bb3b999346d4f09c0e64026287459d5a6eb98cd73833c98ab";
+        };
+      default = "r0";
+      };
+    };
+  "1.0.1.1" = {
+    sha256 = "590003b34594f5b92a706315e1ebd902d39f32f79958c4437b38c3ef9440d021";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nonempty-zipper-1.0.1.1-r0-0b919fedc456eabdf8e88fc419659a1243f919af27d5d23b97058f067240d633.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-14T17:50:43Z";
+        sha256 = "0b919fedc456eabdf8e88fc419659a1243f919af27d5d23b97058f067240d633";
+        };
+      default = "r0";
+      };
+    };
   }
