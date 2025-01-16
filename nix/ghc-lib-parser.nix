@@ -1046,7 +1046,13 @@
         revTimestamp = "2024-11-04T11:47:11Z";
         sha256 = "d7113890983244052332b81b55a95c84a709487bceca37a5f60bbc4d812d3894";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/ghc-lib-parser-9.10.1.20240511-r5-24e7eb165757f1961c4bb5ec9efecc3d3dfd535662f023946a21585d00443f4d.nix;
+        revNum = 5;
+        revTimestamp = "2025-01-15T23:21:40Z";
+        sha256 = "24e7eb165757f1961c4bb5ec9efecc3d3dfd535662f023946a21585d00443f4d";
+        };
+      default = "r5";
       };
     };
   "9.10.1.20241103" = {

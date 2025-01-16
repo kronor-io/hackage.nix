@@ -32,7 +32,13 @@
         revTimestamp = "2024-09-01T23:09:24Z";
         sha256 = "0af50f6d2e8479b9a956c9c612ec270ea09df4c78c88c5b1bdd98066f576d73d";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/text-iso8601-0.1.1-r2-e07a625eef969338992bf9bba8e5dc73f07ac65f991ba636b8f1175890d15849.nix;
+        revNum = 2;
+        revTimestamp = "2025-01-15T06:45:24Z";
+        sha256 = "e07a625eef969338992bf9bba8e5dc73f07ac65f991ba636b8f1175890d15849";
+        };
+      default = "r2";
       };
     };
   }
