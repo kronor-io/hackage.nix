@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.4.0.1" = {
+    sha256 = "92ad48c2bee24d91746b5caba9d630f3417621552f989ec24c85936599085137";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/HaskellNet-SSL-0.4.0.1-r0-3f84e05810de71626199372d093266bc36c45946970293556be09202e1300373.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-17T12:48:48Z";
+        sha256 = "3f84e05810de71626199372d093266bc36c45946970293556be09202e1300373";
+        };
+      default = "r0";
+      };
+    };
   }

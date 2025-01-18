@@ -236,7 +236,13 @@
         revTimestamp = "2025-01-13T16:09:34Z";
         sha256 = "135257224d550ce082902c7669bd9ec421ef4c8ddd6cecbd3d6782a6532556f8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/reflex-dom-0.6.3.2-r1-4287cd5642041599ebb7d4a1607e7e91871a30ca77d3c07a0701ffb59dad199a.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-17T02:42:22Z";
+        sha256 = "4287cd5642041599ebb7d4a1607e7e91871a30ca77d3c07a0701ffb59dad199a";
+        };
+      default = "r1";
       };
     };
   }

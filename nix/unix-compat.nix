@@ -554,7 +554,13 @@
         revTimestamp = "2024-10-11T16:49:31Z";
         sha256 = "b23220ab66f6ab2bedeec964152fef48c1f00f33dc911a59dde842d1d8fd2e05";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/unix-compat-0.7.3-r1-e1132808d30ad1adbcf1ba7f06c3dfe712a7ee382b225eb975e0ab8cfe0c21cd.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-17T15:02:57Z";
+        sha256 = "e1132808d30ad1adbcf1ba7f06c3dfe712a7ee382b225eb975e0ab8cfe0c21cd";
+        };
+      default = "r1";
       };
     };
   }
