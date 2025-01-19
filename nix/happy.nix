@@ -665,4 +665,16 @@
       default = "r0";
       };
     };
+  "2.1.4" = {
+    sha256 = "6d71f93efc9e40d1573c6d9ffe2fea644ff2e7005628efca93cb229e5f3a6033";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/happy-2.1.4-r0-c90e0839c29fc08557d743fb8b83f24e1d23e4bc8bddebd75e3d3bb2de0e5749.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-18T16:16:38Z";
+        sha256 = "c90e0839c29fc08557d743fb8b83f24e1d23e4bc8bddebd75e3d3bb2de0e5749";
+        };
+      default = "r0";
+      };
+    };
   }
