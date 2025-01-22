@@ -341,4 +341,16 @@
       default = "r0";
       };
     };
+  "1.3.0.2" = {
+    sha256 = "106c13da5a8d963789f19abb367b0dcae17b0bd260732e6c87307b6fe678cba5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ascii-superset-1.3.0.2-r0-117740401ac4c491cf3558f38834f44f4de7e5fd94d8cf71c78adde300d19b22.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-21T05:59:41Z";
+        sha256 = "117740401ac4c491cf3558f38834f44f4de7e5fd94d8cf71c78adde300d19b22";
+        };
+      default = "r0";
+      };
+    };
   }

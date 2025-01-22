@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.0.0.1" = {
+    sha256 = "d15eb90a938de98f0e183477b6328a364a8b97dafcf57d95d187e16c49d7b234";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cookie-tray-0.0.0.1-r0-cdf3a49521acb93ad3dd8619ebdfe4213a047039ca77ba3b6cd73ad26c6379e4.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-21T00:52:32Z";
+        sha256 = "cdf3a49521acb93ad3dd8619ebdfe4213a047039ca77ba3b6cd73ad26c6379e4";
+        };
+      default = "r0";
+      };
+    };
   }

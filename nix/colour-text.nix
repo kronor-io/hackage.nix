@@ -17,4 +17,16 @@
       default = "r1";
       };
     };
+  "0.0.0.1" = {
+    sha256 = "3dd8a42e70548d9b2ec14bbb73ddf0dd479915c5d3945582436c2994dd422ed4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/colour-text-0.0.0.1-r0-3ecf9d09231bb4dbc80d34dfd4dcddb558ac5e44e3a2b835edae1b198141b1a8.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-21T04:50:59Z";
+        sha256 = "3ecf9d09231bb4dbc80d34dfd4dcddb558ac5e44e3a2b835edae1b198141b1a8";
+        };
+      default = "r0";
+      };
+    };
   }
