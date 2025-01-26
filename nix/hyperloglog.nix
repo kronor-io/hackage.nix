@@ -359,4 +359,16 @@
       default = "r5";
       };
     };
+  "0.5" = {
+    sha256 = "cb36b3d32b5daa5ae088e1b603b3fae2ec5f3218bc3652154ee81c6712c1ef14";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hyperloglog-0.5-r0-acafeb7e1d507aa4a93dba5d19930bf36f0e9932253483f87c90ec1e43dee965.nix;
+        revNum = 0;
+        revTimestamp = "2025-01-25T14:14:30Z";
+        sha256 = "acafeb7e1d507aa4a93dba5d19930bf36f0e9932253483f87c90ec1e43dee965";
+        };
+      default = "r0";
+      };
+    };
   }

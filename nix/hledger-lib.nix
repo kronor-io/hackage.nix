@@ -1430,7 +1430,13 @@
         revTimestamp = "2024-09-09T21:16:31Z";
         sha256 = "c3e0b19d5d11805db48624e38ea35d1714f01a4740788903cc3ce35bc90c5d26";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hledger-lib-1.40-r1-a7d00ad7304e062521c45b28c907dd1bdee96eda0dafd13aabb47c55a20cff48.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-25T15:41:54Z";
+        sha256 = "a7d00ad7304e062521c45b28c907dd1bdee96eda0dafd13aabb47c55a20cff48";
+        };
+      default = "r1";
       };
     };
   "1.41" = {

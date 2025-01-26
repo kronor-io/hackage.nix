@@ -62,7 +62,13 @@
         revTimestamp = "2023-06-22T15:46:02Z";
         sha256 = "8f66d2e4625909c4ad515b2e925af8534b9bfda9a963984857f4e51226c4331c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/warp-systemd-0.3.0.0-r1-0e7abf6b1df4af48a189a65763a98971aac6845aa84b065aa05adaf2ea6bdc0d.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-25T13:43:03Z";
+        sha256 = "0e7abf6b1df4af48a189a65763a98971aac6845aa84b065aa05adaf2ea6bdc0d";
+        };
+      default = "r1";
       };
     };
   }
