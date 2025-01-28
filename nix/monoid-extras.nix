@@ -536,7 +536,13 @@
         revTimestamp = "2024-08-08T23:09:42Z";
         sha256 = "12cc5d3fb70e2ad021bec163683903b07f1203b487b7851703347e69cbdebb9a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/monoid-extras-0.6.3-r1-0ea63d8dd2963c22f34a8feb9ad99ebad95c7fd244d8625953327f616caa35b5.nix;
+        revNum = 1;
+        revTimestamp = "2025-01-27T12:13:00Z";
+        sha256 = "0ea63d8dd2963c22f34a8feb9ad99ebad95c7fd244d8625953327f616caa35b5";
+        };
+      default = "r1";
       };
     };
   }
