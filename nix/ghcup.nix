@@ -260,7 +260,13 @@
         revTimestamp = "2025-01-09T14:07:37Z";
         sha256 = "f9bd0e659c907f2ef3093da4c461dc7a6d7818ef30bf5304d3c461ee5cb89ad1";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/ghcup-0.1.40.0-r3-f12128a02142ed1590281ad61ff24d16bd0cc60b236fd7cb9abaa48f4bfa0d75.nix;
+        revNum = 3;
+        revTimestamp = "2025-01-28T07:59:38Z";
+        sha256 = "f12128a02142ed1590281ad61ff24d16bd0cc60b236fd7cb9abaa48f4bfa0d75";
+        };
+      default = "r3";
       };
     };
   }
