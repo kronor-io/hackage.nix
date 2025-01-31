@@ -584,7 +584,13 @@
         revTimestamp = "2024-05-20T18:57:40Z";
         sha256 = "0ee816bb105ce37560142692d9d9cc328bf6cf027661166394f0375df302d62f";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/diagrams-core-1.5.1.1-r3-512ca4b348beb595797d664f7a411d530e96423116a73b95c5b556235f3eeb71.nix;
+        revNum = 3;
+        revTimestamp = "2025-01-30T17:12:26Z";
+        sha256 = "512ca4b348beb595797d664f7a411d530e96423116a73b95c5b556235f3eeb71";
+        };
+      default = "r3";
       };
     };
   }
