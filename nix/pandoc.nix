@@ -3152,7 +3152,13 @@
         revTimestamp = "2025-01-12T22:37:42Z";
         sha256 = "ac9f26442c3e9c592f95c68b34b41a312a67e7fc670c405c9e2d47985e54b250";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/pandoc-3.6.2-r1-aa81cf3764e4d653ab23c6f4e4c81cb45551695ebd3826f0f935952cefd11646.nix;
+        revNum = 1;
+        revTimestamp = "2025-02-02T00:55:04Z";
+        sha256 = "aa81cf3764e4d653ab23c6f4e4c81cb45551695ebd3826f0f935952cefd11646";
+        };
+      default = "r1";
       };
     };
   }
