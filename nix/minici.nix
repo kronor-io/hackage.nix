@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.4" = {
+    sha256 = "d543aa97d04ea12e082a25e4c4fb62b4439cd31201793026a16f5615a27a16f0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/minici-0.1.4-r0-1657ad9f875fb31c1f1d9dbbe72b5168977821d83822d36b57acc7ef77128453.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-04T21:41:11Z";
+        sha256 = "1657ad9f875fb31c1f1d9dbbe72b5168977821d83822d36b57acc7ef77128453";
+        };
+      default = "r0";
+      };
+    };
   }

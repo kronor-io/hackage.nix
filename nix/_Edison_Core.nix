@@ -269,4 +269,16 @@
       default = "r0";
       };
     };
+  "1.3.3.2" = {
+    sha256 = "4ff9477102e7888756561d356621caba6386c81414dfdf7e80a2d95ebfc1f6b4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/EdisonCore-1.3.3.2-r0-2d9ed0e1ba9339d1d9eb70a10bafc10299f993fd5c47e83f9de80eca039c3a89.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-04T22:21:03Z";
+        sha256 = "2d9ed0e1ba9339d1d9eb70a10bafc10299f993fd5c47e83f9de80eca039c3a89";
+        };
+      default = "r0";
+      };
+    };
   }

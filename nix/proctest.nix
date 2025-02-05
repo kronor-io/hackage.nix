@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.1.3.1" = {
+    sha256 = "fe50131c3b12e5a520a6a5821294e3a779502378917409ab072748552860707b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/proctest-0.1.3.1-r0-c42e577fa58a449fc11f3431214e9bd24028ec236de21bcd4c1570339e93b815.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-04T15:25:22Z";
+        sha256 = "c42e577fa58a449fc11f3431214e9bd24028ec236de21bcd4c1570339e93b815";
+        };
+      default = "r0";
+      };
+    };
   }
