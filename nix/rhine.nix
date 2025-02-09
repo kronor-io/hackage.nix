@@ -332,7 +332,13 @@
         revTimestamp = "2024-11-12T19:29:44Z";
         sha256 = "e6d30e95261536120b91c9385babff271ef2d9aae1498a5289b5acd30a157c9a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/rhine-1.5-r1-15a2b2affbc0d73bd7af1783d7993201b644379233faf24b12d94a27fb72470f.nix;
+        revNum = 1;
+        revTimestamp = "2025-02-08T17:46:55Z";
+        sha256 = "15a2b2affbc0d73bd7af1783d7993201b644379233faf24b12d94a27fb72470f";
+        };
+      default = "r1";
       };
     };
   }
