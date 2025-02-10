@@ -116,7 +116,13 @@
         revTimestamp = "2024-03-07T01:16:36Z";
         sha256 = "dbb9381c4f491b838214289c59d465eff99f6b569334a98ccf836548970e0f49";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/configurator-pg-0.2.10-r1-20a0307d5b0080e6ce571706a2a391c44cc0d12c9372fad0015067ecfdc5bfec.nix;
+        revNum = 1;
+        revTimestamp = "2025-02-09T17:45:19Z";
+        sha256 = "20a0307d5b0080e6ce571706a2a391c44cc0d12c9372fad0015067ecfdc5bfec";
+        };
+      default = "r1";
       };
     };
   "0.2.2" = {
