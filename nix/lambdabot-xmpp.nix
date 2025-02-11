@@ -71,4 +71,16 @@
       default = "r0";
       };
     };
+  "0.1.0.6" = {
+    sha256 = "86b314dd2700cbc2322b6de6a50612bff1d7f86e76c9fb938469409e88dc0fa6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/lambdabot-xmpp-0.1.0.6-r0-f0e1be4c217e5a1c699baef127e69e403e47072bd426f70067eae74168cc24fa.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-10T01:01:14Z";
+        sha256 = "f0e1be4c217e5a1c699baef127e69e403e47072bd426f70067eae74168cc24fa";
+        };
+      default = "r0";
+      };
+    };
   }

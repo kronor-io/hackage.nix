@@ -44,7 +44,13 @@
         revTimestamp = "2023-12-20T15:26:29Z";
         sha256 = "300e0493813d19fa3ad9760b7565709b17a90e97a1f1ec765edefd2a4504dabb";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/libphonenumber-0.1.3.0-r1-4ba994791928c8cf0925af34ee2043eba3501bdab762ee787f2f1dcda6da2b90.nix;
+        revNum = 1;
+        revTimestamp = "2025-02-10T12:19:23Z";
+        sha256 = "4ba994791928c8cf0925af34ee2043eba3501bdab762ee787f2f1dcda6da2b90";
+        };
+      default = "r1";
       };
     };
   }
