@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.2.1.2" = {
+    sha256 = "57a0d479a8121db27d7f7d43b8f00dda697ba6707d9e207c074a719de1d4d291";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/network-unexceptional-0.2.1.2-r0-9246f31a772ebd68c6693407e0f3c483b0a0cae751f98e2b2bf531164fdf29a9.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-11T19:27:00Z";
+        sha256 = "9246f31a772ebd68c6693407e0f3c483b0a0cae751f98e2b2bf531164fdf29a9";
+        };
+      default = "r0";
+      };
+    };
   }
