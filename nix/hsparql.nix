@@ -287,4 +287,16 @@
       default = "r0";
       };
     };
+  "0.3.9" = {
+    sha256 = "f8a57b7eb2d8a0e24c01ca84e02770ffe4703c0a982f73785d8e34ed4a23b37d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hsparql-0.3.9-r0-e3e58b360d52fe5cbbe24b0cb69a2534a2ab319ef923ca5dfc7bb0ed103e0944.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-12T21:56:36Z";
+        sha256 = "e3e58b360d52fe5cbbe24b0cb69a2534a2ab319ef923ca5dfc7bb0ed103e0944";
+        };
+      default = "r0";
+      };
+    };
   }
