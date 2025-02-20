@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.3.0.2" = {
+    sha256 = "7432f66a81ed1aed05f7517404fcf4f97bfc65d67aac9fbc416cbd06914c067d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/aeson-jsonpath-0.3.0.2-r0-765111f324a33a61ae95d0fd91ae7f6bbf01893d1717781e160ec87986f438a3.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-19T11:21:07Z";
+        sha256 = "765111f324a33a61ae95d0fd91ae7f6bbf01893d1717781e160ec87986f438a3";
+        };
+      default = "r0";
+      };
+    };
   }

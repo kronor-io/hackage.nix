@@ -92,7 +92,13 @@
         revTimestamp = "2024-09-11T16:52:50Z";
         sha256 = "7c5dea934ed5a8fc7f43587352db090385ecbce429ae52096881e69f2890d720";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/texrunner-0.0.2-r1-3fbffe843dc6ae85daac0849e0f1b80040a44078e46deee9b55a8e40c911cb2d.nix;
+        revNum = 1;
+        revTimestamp = "2025-02-19T12:58:41Z";
+        sha256 = "3fbffe843dc6ae85daac0849e0f1b80040a44078e46deee9b55a8e40c911cb2d";
+        };
+      default = "r1";
       };
     };
   }

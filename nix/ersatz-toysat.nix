@@ -50,7 +50,13 @@
         revTimestamp = "2022-08-22T15:18:06Z";
         sha256 = "706f1ed1745e25a61a2225892b0bbfc50ee8729fd85a365c7f53e8b884fd5f46";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/ersatz-toysat-0.2.2.0-r3-9be79583884e33a6ef7df65a1fc2a44a055c77446640bb8b56d139c4e350f46a.nix;
+        revNum = 3;
+        revTimestamp = "2025-02-19T14:58:54Z";
+        sha256 = "9be79583884e33a6ef7df65a1fc2a44a055c77446640bb8b56d139c4e350f46a";
+        };
+      default = "r3";
       };
     };
   }
