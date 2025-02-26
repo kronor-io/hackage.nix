@@ -86,7 +86,13 @@
         revTimestamp = "2024-05-31T05:07:05Z";
         sha256 = "4ebb5e4bdf0ca5bf9ebad90dc7c042abfd7f58a3e3b7758179ed24dc7bbbba14";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/io-classes-mtl-0.1.2.0-r2-75da803b889c884b1243c1eb1891a752a5e111c0e572ddd044337241e536cf7f.nix;
+        revNum = 2;
+        revTimestamp = "2025-02-25T02:11:32Z";
+        sha256 = "75da803b889c884b1243c1eb1891a752a5e111c0e572ddd044337241e536cf7f";
+        };
+      default = "r2";
       };
     };
   }
