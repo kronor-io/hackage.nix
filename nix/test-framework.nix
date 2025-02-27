@@ -803,4 +803,16 @@
       default = "r12";
       };
     };
+  "0.8.2.1" = {
+    sha256 = "70b651f03ccaeb8ad3723eb87cebc43b5960eefeb4a2dab1d6fe0c8b86fbcefb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/test-framework-0.8.2.1-r0-e9d3d94431860182363423af813f89a82f1054d338b5b14e0562aeb82a34414a.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-26T19:51:49Z";
+        sha256 = "e9d3d94431860182363423af813f89a82f1054d338b5b14e0562aeb82a34414a";
+        };
+      default = "r0";
+      };
+    };
   }

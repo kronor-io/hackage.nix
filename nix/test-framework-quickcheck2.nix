@@ -365,4 +365,16 @@
       default = "r4";
       };
     };
+  "0.3.0.6" = {
+    sha256 = "3676b1e60c7a139062c0ae5d637bfc97637b7314f907a9c0f44aa1aa13161cb4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/test-framework-quickcheck2-0.3.0.6-r0-e90531a58c73ace9884ec47ace3059918c415b9ef16979c2c06a9ce4cc108e13.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-26T19:51:36Z";
+        sha256 = "e90531a58c73ace9884ec47ace3059918c415b9ef16979c2c06a9ce4cc108e13";
+        };
+      default = "r0";
+      };
+    };
   }
