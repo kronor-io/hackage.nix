@@ -26,7 +26,13 @@
         revTimestamp = "2024-11-22T13:32:05Z";
         sha256 = "30fea5a44ed6226c646638ff5a44c1877a282742d39023ea03c5f00fb97387bf";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/rawlock-0.1.1.0-r2-35efc5ceb564db262b11dac8175ad40b4d6879f0574572627d01f76e36704c5c.nix;
+        revNum = 2;
+        revTimestamp = "2025-02-27T05:01:34Z";
+        sha256 = "35efc5ceb564db262b11dac8175ad40b4d6879f0574572627d01f76e36704c5c";
+        };
+      default = "r2";
       };
     };
   }

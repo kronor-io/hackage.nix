@@ -311,6 +311,18 @@
       default = "r0";
       };
     };
+  "0.6.10" = {
+    sha256 = "761d7276754a7126506c43ec21044c09722bd3494fd01b652e749502c38cbda4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/code-conjure-0.6.10-r0-3db374e24325321f9c3aa1e379d0422581ce2db7aab8d5bc38a631cd3fee60e5.nix;
+        revNum = 0;
+        revTimestamp = "2025-02-27T09:25:42Z";
+        sha256 = "3db374e24325321f9c3aa1e379d0422581ce2db7aab8d5bc38a631cd3fee60e5";
+        };
+      default = "r0";
+      };
+    };
   "0.6.2" = {
     sha256 = "d658f833acec76fe66416e3c68b82a9bf3d2bb78b70ea2f2d3bf7772ec3f5e73";
     revisions = {
