@@ -68,7 +68,13 @@
         revTimestamp = "2024-06-10T20:40:29Z";
         sha256 = "b742093be1c557ae500572cfc065a05fd553c0a67f15420dfacdc44c2522c9b9";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/binary-serialise-cbor-0.2.2.0-r3-88d94e6d861c46c0a785c49c5cfa0df7e416bb2c91cb52de391380932e2e4796.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-01T00:25:37Z";
+        sha256 = "88d94e6d861c46c0a785c49c5cfa0df7e416bb2c91cb52de391380932e2e4796";
+        };
+      default = "r3";
       };
     };
   }

@@ -20,7 +20,13 @@
         revTimestamp = "2025-01-17T17:50:36Z";
         sha256 = "41aa6bd3738cdceeb6e9c04ff6bca920a5d075ffaf782328ba03b99491575921";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/probability-polynomial-1.0.0.1-r1-884dd0cb30f826ce7067f2d612e3ceb0d63a369c0b972b3f0ccf8f89fe825b81.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-01T15:07:51Z";
+        sha256 = "884dd0cb30f826ce7067f2d612e3ceb0d63a369c0b972b3f0ccf8f89fe825b81";
+        };
+      default = "r1";
       };
     };
   }

@@ -80,7 +80,13 @@
         revTimestamp = "2024-03-12T04:23:48Z";
         sha256 = "4bd3d74e530c3d75252a2b47e2965dc8e0bf1d18a0f8e339d02a6976483e75ab";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/toml-reader-0.2.1.0-r5-54554782d63ac8d5224e1e1b66065823b8dcffd235e8541dc7ce5408afa3c327.nix;
+        revNum = 5;
+        revTimestamp = "2025-03-01T23:21:35Z";
+        sha256 = "54554782d63ac8d5224e1e1b66065823b8dcffd235e8541dc7ce5408afa3c327";
+        };
+      default = "r5";
       };
     };
   }

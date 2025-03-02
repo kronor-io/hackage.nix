@@ -683,4 +683,16 @@
       default = "r0";
       };
     };
+  "0.8" = {
+    sha256 = "b1c1127ff57b6f844d0b30cea54a62c01ca146a49ed4953485be1af389a94bd8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/containers-0.8-r0-ddd5d7ee86afe3a61853c83514be167849e3e6a7f2c19190beedff2968e3be82.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-01T13:03:33Z";
+        sha256 = "ddd5d7ee86afe3a61853c83514be167849e3e6a7f2c19190beedff2968e3be82";
+        };
+      default = "r0";
+      };
+    };
   }

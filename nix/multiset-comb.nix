@@ -104,7 +104,13 @@
         revTimestamp = "2023-02-27T22:56:07Z";
         sha256 = "aa047f8abd0a0cca0e434bcd73bed78f0c52d493800ef329d0bbd8b0a4e7f653";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/multiset-comb-0.2.4.2-r1-81ef3fdc853c763c2b0d5dbbee5929895aa6d2b749dbc16366333bc953115dac.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-01T22:13:12Z";
+        sha256 = "81ef3fdc853c763c2b0d5dbbee5929895aa6d2b749dbc16366333bc953115dac";
+        };
+      default = "r1";
       };
     };
   }

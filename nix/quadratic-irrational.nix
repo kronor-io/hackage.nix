@@ -122,7 +122,13 @@
         revTimestamp = "2023-09-27T20:31:32Z";
         sha256 = "deabf55f0f7f1100e9b4fba62454c8ff019debacd4b9f9ea766c31eba595cee4";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/quadratic-irrational-0.1.1-r3-423f3a904da433b9af5d9acc9aed0d54e468e02e90d48fcc219c8f03ad144778.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-01T17:04:20Z";
+        sha256 = "423f3a904da433b9af5d9acc9aed0d54e468e02e90d48fcc219c8f03ad144778";
+        };
+      default = "r3";
       };
     };
   }
