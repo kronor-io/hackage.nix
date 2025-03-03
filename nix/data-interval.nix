@@ -350,7 +350,13 @@
         revTimestamp = "2024-07-04T20:59:46Z";
         sha256 = "a3bbe77211cb8c0386df87c060d9800e3052c2431d9f8cab23c393289835f4ac";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/data-interval-2.1.2-r2-9accdea65f3a4a0af1afd783cb591bff64581fca867509c99790c308a0c1279d.nix;
+        revNum = 2;
+        revTimestamp = "2025-03-02T01:51:28Z";
+        sha256 = "9accdea65f3a4a0af1afd783cb591bff64581fca867509c99790c308a0c1279d";
+        };
+      default = "r2";
       };
     };
   }

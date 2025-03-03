@@ -26,7 +26,13 @@
         revTimestamp = "2024-07-10T15:22:23Z";
         sha256 = "70391f217b4c0cd2bcd3e3f848d5724649a2323afb20a63ba09a40dd4ceb28f0";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/queues-1.0.0-r4-d95cc28bc10324537f8d8147693e745fd67f1019c9f394909f5b29f48dbb57a5.nix;
+        revNum = 4;
+        revTimestamp = "2025-03-02T12:30:10Z";
+        sha256 = "d95cc28bc10324537f8d8147693e745fd67f1019c9f394909f5b29f48dbb57a5";
+        };
+      default = "r4";
       };
     };
   }

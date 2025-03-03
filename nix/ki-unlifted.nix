@@ -50,7 +50,13 @@
         revTimestamp = "2025-01-07T18:09:36Z";
         sha256 = "f74c8584c603360f575b77f8c878208bbc2722e237450c7207f06761fb6bb16c";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/ki-unlifted-1.0.0.2-r3-e08b1893ccd521a97723718a9e28737d4278388888cf83f6e52a30027067ce70.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-02T12:42:52Z";
+        sha256 = "e08b1893ccd521a97723718a9e28737d4278388888cf83f6e52a30027067ce70";
+        };
+      default = "r3";
       };
     };
   }

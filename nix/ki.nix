@@ -152,7 +152,13 @@
         revTimestamp = "2025-01-07T18:09:21Z";
         sha256 = "5f64ebe074b4565fa94ac69d8ccced3b9d6803de672326fefa54d64076ac4f32";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ki-1.0.1.2-r2-6f9f5aa6add1e3fac54b19853e4355780b5f2243f1ab390f8bd362c0ae51a3a5.nix;
+        revNum = 2;
+        revTimestamp = "2025-03-02T12:42:43Z";
+        sha256 = "6f9f5aa6add1e3fac54b19853e4355780b5f2243f1ab390f8bd362c0ae51a3a5";
+        };
+      default = "r2";
       };
     };
   }

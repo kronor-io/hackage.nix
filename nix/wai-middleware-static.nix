@@ -458,7 +458,13 @@
         revTimestamp = "2024-12-28T16:33:06Z";
         sha256 = "f0be2668d28210062afcbd5e2c90e57d5a49180eac12678b5aa811230357c883";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wai-middleware-static-0.9.3-r1-7928b6ecc6dc03ff720d478b1eb4f58434c5dca418aa16e386593c46cc709f32.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-02T14:34:40Z";
+        sha256 = "7928b6ecc6dc03ff720d478b1eb4f58434c5dca418aa16e386593c46cc709f32";
+        };
+      default = "r1";
       };
     };
   }

@@ -32,7 +32,13 @@
         revTimestamp = "2025-01-07T18:00:46Z";
         sha256 = "62e42e15238df965460930fc145912a77a4a9aa9073e88a3859cdaeee7b01393";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/list-shuffle-1.0.0.1-r3-5c7fbccf4163ca02fe53ba29c5adf64cb274c2fdc9a182dd10b9a7b28a966842.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-02T15:15:50Z";
+        sha256 = "5c7fbccf4163ca02fe53ba29c5adf64cb274c2fdc9a182dd10b9a7b28a966842";
+        };
+      default = "r3";
       };
     };
   }

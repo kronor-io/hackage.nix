@@ -482,7 +482,13 @@
         revTimestamp = "2024-12-06T00:37:12Z";
         sha256 = "6b3743921b36ea277ace81d24d8a109aa0a17e5b578ade6f1400a40470d948e5";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/deriving-compat-0.6.7-r1-b4edb909e6ecc7e0c88dda5f7f25579ed682ab3a97388e9a9e1976aa9ca0b772.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-02T13:43:39Z";
+        sha256 = "b4edb909e6ecc7e0c88dda5f7f25579ed682ab3a97388e9a9e1976aa9ca0b772";
+        };
+      default = "r1";
       };
     };
   }

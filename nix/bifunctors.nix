@@ -902,7 +902,13 @@
         revTimestamp = "2024-12-05T12:12:45Z";
         sha256 = "ffd926ed71d6a046b7d5d92980d92269d7198e6b4768ffd33d120b44b88c2bbe";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/bifunctors-5.6.2-r2-115a621c4eaaabb07834f9e4dd3371e21f39d034305062f4bd5cd72c2f8880d2.nix;
+        revNum = 2;
+        revTimestamp = "2025-03-02T14:07:33Z";
+        sha256 = "115a621c4eaaabb07834f9e4dd3371e21f39d034305062f4bd5cd72c2f8880d2";
+        };
+      default = "r2";
       };
     };
   }
