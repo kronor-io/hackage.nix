@@ -473,4 +473,16 @@
       default = "r3";
       };
     };
+  "0.9.1" = {
+    sha256 = "489abc68ef1bcaa94ae6519c61208b4f77397d3cbf9ac5608bac02b980d59972";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gl-0.9.1-r0-f53e9174aaee89fcc1542f17bd79375f70029d7b3ca43e09a223241e9187c15b.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-03T11:20:21Z";
+        sha256 = "f53e9174aaee89fcc1542f17bd79375f70029d7b3ca43e09a223241e9187c15b";
+        };
+      default = "r0";
+      };
+    };
   }

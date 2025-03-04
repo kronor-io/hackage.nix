@@ -281,4 +281,16 @@
       default = "r0";
       };
     };
+  "2.3.3.0" = {
+    sha256 = "bb5a2c7b4d14401785bc902162f7116bec9570b2dfd970d9c398660c443541a6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/consumers-2.3.3.0-r0-49916db5fa98a83379cea42923e86dfa992e589c62efb4156362a61b4c1a1d7d.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-03T13:43:28Z";
+        sha256 = "49916db5fa98a83379cea42923e86dfa992e589c62efb4156362a61b4c1a1d7d";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -836,7 +836,13 @@
         revTimestamp = "2024-05-04T15:43:57Z";
         sha256 = "52f1ac209f9f8f7f1eaa3195a0e5592b45067c2362312e718414733b32ae9fe9";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/kan-extensions-5.2.6-r1-e0b972f900a3c04c0f36d7e221e6b04343a5a1f00ce3aababff7932e173f0833.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-03T11:34:50Z";
+        sha256 = "e0b972f900a3c04c0f36d7e221e6b04343a5a1f00ce3aababff7932e173f0833";
+        };
+      default = "r1";
       };
     };
   }
