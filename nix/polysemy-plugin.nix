@@ -404,7 +404,13 @@
         revTimestamp = "2025-02-17T20:27:59Z";
         sha256 = "ca1ce798912b778d5850cd6691ffc89ef85a3a072f0395d33b5d94d8b9bf237c";
         };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/polysemy-plugin-0.4.5.2-r5-dcd4390c6cf24c079be53be99a31251b3ce7a981fcec214b7eaa443c2d4d4e81.nix;
+        revNum = 5;
+        revTimestamp = "2025-03-04T18:20:24Z";
+        sha256 = "dcd4390c6cf24c079be53be99a31251b3ce7a981fcec214b7eaa443c2d4d4e81";
+        };
+      default = "r5";
       };
     };
   }

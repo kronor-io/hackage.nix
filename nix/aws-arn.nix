@@ -110,7 +110,13 @@
         revTimestamp = "2025-01-16T03:16:46Z";
         sha256 = "7aefb8525dfbfef8f6f9dc2eab0de46369243a37cac027ceee94392a7b5b7bb8";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/aws-arn-0.3.3.0-r1-471792bdcc5d4ac0cfa3aa8db692542363329e5220414aaa7f6522f2996d5b7a.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-04T07:47:19Z";
+        sha256 = "471792bdcc5d4ac0cfa3aa8db692542363329e5220414aaa7f6522f2996d5b7a";
+        };
+      default = "r1";
       };
     };
   }
