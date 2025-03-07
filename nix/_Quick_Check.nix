@@ -764,7 +764,13 @@
         revTimestamp = "2024-05-27T14:54:43Z";
         sha256 = "ff732606dd8b3f76e3cb87a26516583d183729bf540085228c82adf037aca8bf";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/QuickCheck-2.15.0.1-r1-0cfd337bb9e6fbf09255bd24bb498a156f1d9bcd465396ac8657b25034b9ee31.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-06T18:12:25Z";
+        sha256 = "0cfd337bb9e6fbf09255bd24bb498a156f1d9bcd465396ac8657b25034b9ee31";
+        };
+      default = "r1";
       };
     };
   "2.2" = {

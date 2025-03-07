@@ -296,7 +296,13 @@
         revTimestamp = "2025-03-06T00:06:19Z";
         sha256 = "e84a9d091f7fae088fe8e5a327af6241262f6599e4cc3f2603ab8db1e339e00d";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lifx-lan-0.8.4-r1-93162dc18309a5e1040d1a37152d2cec34ba0dee2ad6c68b9264edc0653b845a.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-06T12:04:16Z";
+        sha256 = "93162dc18309a5e1040d1a37152d2cec34ba0dee2ad6c68b9264edc0653b845a";
+        };
+      default = "r1";
       };
     };
   }
