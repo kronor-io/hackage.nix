@@ -212,7 +212,13 @@
         revTimestamp = "2024-01-08T09:21:12Z";
         sha256 = "c969c44f0f49ca8c098771a715b4c921671cebaeba78d437e26c8bf28ed0ba32";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/bits-extra-0.0.2.3-r4-f3e679c6a81d92fa11f21ae2c08ab59eaac91ddf0890bb99bbd6a49fcd617a2d.nix;
+        revNum = 4;
+        revTimestamp = "2025-03-08T03:40:36Z";
+        sha256 = "f3e679c6a81d92fa11f21ae2c08ab59eaac91ddf0890bb99bbd6a49fcd617a2d";
+        };
+      default = "r4";
       };
     };
   }
