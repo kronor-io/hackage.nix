@@ -23,4 +23,16 @@
       default = "r0";
       };
     };
+  "0.1.1.1" = {
+    sha256 = "43da33aef500c10e3597c6e01ec2181e50cf3527031a36f12d70942d541f2e99";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/inline-python-0.1.1.1-r0-891cd24dd815454e2cfc009f010defa8cc9e1cfad63110e1144129534604b3fa.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-10T15:03:53Z";
+        sha256 = "891cd24dd815454e2cfc009f010defa8cc9e1cfad63110e1144129534604b3fa";
+        };
+      default = "r0";
+      };
+    };
   }

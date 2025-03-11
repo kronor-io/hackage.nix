@@ -107,4 +107,16 @@
       default = "r0";
       };
     };
+  "0.1.5.2" = {
+    sha256 = "8eca60fef3a456c61804a3908d0a8767e09759c1bd42595c632d178307020621";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/zre-0.1.5.2-r0-8c0b53f0a7caa5e1b62bd12e070226278c42773388e9c577ad102a096c54ffd2.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-10T16:24:31Z";
+        sha256 = "8c0b53f0a7caa5e1b62bd12e070226278c42773388e9c577ad102a096c54ffd2";
+        };
+      default = "r0";
+      };
+    };
   }

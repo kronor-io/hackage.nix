@@ -176,7 +176,13 @@
         revTimestamp = "2024-12-19T13:20:09Z";
         sha256 = "bce32124886e2ef8836e02aed4e9c77e7a403827de10e0d6193a3cedbed73bf3";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/palette-0.3.0.4-r1-a4eff0c516dbfbb01806e3d807aa6bdd6e7036c9b08f68ac3021557aa32f1912.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-10T12:25:58Z";
+        sha256 = "a4eff0c516dbfbb01806e3d807aa6bdd6e7036c9b08f68ac3021557aa32f1912";
+        };
+      default = "r1";
       };
     };
   }
