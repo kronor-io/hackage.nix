@@ -530,7 +530,13 @@
         revTimestamp = "2024-08-03T07:35:14Z";
         sha256 = "057df10379aec708cafafdf1c918b86a373d36113964b1a7bc26ec1ed4dee02c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/cassava-0.5.3.2-r1-b2e52282af6ca7b42bdd0fb427079b908a2b2e4b350b77df19cdb45ee4fe7876.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-11T12:43:09Z";
+        sha256 = "b2e52282af6ca7b42bdd0fb427079b908a2b2e4b350b77df19cdb45ee4fe7876";
+        };
+      default = "r1";
       };
     };
   }

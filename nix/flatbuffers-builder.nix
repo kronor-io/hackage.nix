@@ -8,7 +8,13 @@
         revTimestamp = "2025-03-10T16:03:41Z";
         sha256 = "223f9f9b92761e53aa95334a27ade2c79e779e45d320e81e145c15451223da4f";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/flatbuffers-builder-1.0.0.0-r1-224c768ed6c01279a93f10800d6342659da1b838b1eed0bdd887b3304598e1df.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-11T15:55:51Z";
+        sha256 = "224c768ed6c01279a93f10800d6342659da1b838b1eed0bdd887b3304598e1df";
+        };
+      default = "r1";
       };
     };
   }

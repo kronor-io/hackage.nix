@@ -104,7 +104,13 @@
         revTimestamp = "2024-06-12T15:45:07Z";
         sha256 = "7d598b0c89dac9e170b488a7a50b322fcae06342fbd2da18cb8a7f93a0b44e68";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/recover-rtti-0.5.0-r1-f5145507c7091da1ffe619a88551823087912ee78ffe42eea2404c4b1bbf69d4.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-11T11:11:32Z";
+        sha256 = "f5145507c7091da1ffe619a88551823087912ee78ffe42eea2404c4b1bbf69d4";
+        };
+      default = "r1";
       };
     };
   }
