@@ -239,4 +239,16 @@
       default = "r0";
       };
     };
+  "0.9.0.0" = {
+    sha256 = "3aae7b0a4ce12ab6ca75a2f5942307ba9fa0ebea0f4a28861df9b418e4bd3294";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/opt-env-conf-0.9.0.0-r0-21d89d24f0f83f6e01ddcbfa688d228e9ddb8489d69a11af1945050605851a2c.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-12T20:21:27Z";
+        sha256 = "21d89d24f0f83f6e01ddcbfa688d228e9ddb8489d69a11af1945050605851a2c";
+        };
+      default = "r0";
+      };
+    };
   }
