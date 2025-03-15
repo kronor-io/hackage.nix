@@ -92,7 +92,13 @@
         revTimestamp = "2023-04-13T14:34:37Z";
         sha256 = "8452ad4c72e5acd2450ec0cfd33b08d9dab102b57fa18accf67e1fd8af7bf4cc";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/broadcast-chan-conduit-0.2.1.2-r3-d975f4005c2ad1425d90b0a62dd49e3223fe0630440cf4e95d52365d638f69ff.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-14T21:18:50Z";
+        sha256 = "d975f4005c2ad1425d90b0a62dd49e3223fe0630440cf4e95d52365d638f69ff";
+        };
+      default = "r3";
       };
     };
   }
