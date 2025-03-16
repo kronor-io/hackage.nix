@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "0.2.0.2" = {
+    sha256 = "4e0895cf36c2e321a216d7ecac3a15600f06caa4dcde75296f55fcbaf32c1dab";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/parser-regex-0.2.0.2-r0-cb9bb26a1c30e11f657aca10baa9441625e3dc58d614d11a171668cbf59f66af.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-15T02:41:34Z";
+        sha256 = "cb9bb26a1c30e11f657aca10baa9441625e3dc58d614d11a171668cbf59f66af";
+        };
+      default = "r0";
+      };
+    };
   }
