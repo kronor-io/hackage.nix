@@ -20,7 +20,13 @@
         revTimestamp = "2024-03-04T23:13:06Z";
         sha256 = "00e6c1298cbf824da224458de6d9c0d40f7847d05905f1a7d680b757f52d0c6a";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/hs-opentelemetry-instrumentation-auto-0.1.0.0-r3-ddc7ec968c13bc455133db406529bd82da6827bdab5f685b489af30016062bfa.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-17T20:50:10Z";
+        sha256 = "ddc7ec968c13bc455133db406529bd82da6827bdab5f685b489af30016062bfa";
+        };
+      default = "r3";
       };
     };
   "0.1.0.1" = {
@@ -32,7 +38,13 @@
         revTimestamp = "2024-03-31T20:40:59Z";
         sha256 = "a9b79fed8c11d90b719c3a3c403e525e55d29c3a4f262341c847147a57a7c18c";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hs-opentelemetry-instrumentation-auto-0.1.0.1-r1-fc49c1d55b401ae308676df0f9d8d85a9a7247511637ab5a19d967c2d3354a5d.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-17T20:50:56Z";
+        sha256 = "fc49c1d55b401ae308676df0f9d8d85a9a7247511637ab5a19d967c2d3354a5d";
+        };
+      default = "r1";
       };
     };
   }

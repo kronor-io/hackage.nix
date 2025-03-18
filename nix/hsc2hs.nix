@@ -80,7 +80,13 @@
         revTimestamp = "2024-10-25T06:49:18Z";
         sha256 = "276325277350cd2c2c88916ed3ae5cd35b2b4f494ec594fbd9534081eb7fb759";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/hsc2hs-0.68.10-r4-725ef6da03d3d6e332db4de0a35bee45d72e4d31decc5ec7f153e6837af5f03e.nix;
+        revNum = 4;
+        revTimestamp = "2025-03-17T14:11:32Z";
+        sha256 = "725ef6da03d3d6e332db4de0a35bee45d72e4d31decc5ec7f153e6837af5f03e";
+        };
+      default = "r4";
       };
     };
   "0.68.2" = {

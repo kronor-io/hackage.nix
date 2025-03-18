@@ -26,7 +26,13 @@
         revTimestamp = "2025-03-16T14:05:55Z";
         sha256 = "49dad791584efa8e0a8525433bc46e944d0e39f060f3331f2cb1b6fec430fd0a";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/bearlibterminal-0.1.0.1-r2-777f77843a713f11e5fc754d123172da9177f91af7a73d4c8e812b301dd19c1f.nix;
+        revNum = 2;
+        revTimestamp = "2025-03-17T17:38:39Z";
+        sha256 = "777f77843a713f11e5fc754d123172da9177f91af7a73d4c8e812b301dd19c1f";
+        };
+      default = "r2";
       };
     };
   }

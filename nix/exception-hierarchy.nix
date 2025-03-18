@@ -83,6 +83,18 @@
       default = "r0";
       };
     };
+  "0.1.0.13" = {
+    sha256 = "defe96f92c40e919c5ad926226c860815ca618effa2c037ab3b49a26d09deba2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/exception-hierarchy-0.1.0.13-r0-4ea6d9e77d19af497fe0271d1fd83cd911c9848daa6068ae20d00d559243c5fd.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-17T04:41:16Z";
+        sha256 = "4ea6d9e77d19af497fe0271d1fd83cd911c9848daa6068ae20d00d559243c5fd";
+        };
+      default = "r0";
+      };
+    };
   "0.1.0.2" = {
     sha256 = "318813f55454563fe78aafd58e4f619e5b097c8c83478975a7f7b2f15b603feb";
     revisions = {
