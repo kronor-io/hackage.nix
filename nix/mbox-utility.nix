@@ -62,7 +62,13 @@
         revTimestamp = "2023-07-17T10:58:59Z";
         sha256 = "e1fc90547f8a360e1e945ef2607c3467f4373355c496bf64cdc0391236b5b6a0";
         };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/mbox-utility-0.0.3.1-r3-3bb672d5d33c2c5266b672a575839e339e457ff0fb184c63051639c047ed5583.nix;
+        revNum = 3;
+        revTimestamp = "2025-03-20T11:03:28Z";
+        sha256 = "3bb672d5d33c2c5266b672a575839e339e457ff0fb184c63051639c047ed5583";
+        };
+      default = "r3";
       };
     };
   }
