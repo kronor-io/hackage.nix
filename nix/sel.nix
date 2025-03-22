@@ -20,7 +20,13 @@
         revTimestamp = "2024-10-09T11:41:18Z";
         sha256 = "c6ce915b7953ba663a262ed0ffec9d159fe42a240f1f788d81102594fe4319cf";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sel-0.0.2.0-r1-92499c9f2dad02115094b05925fa5018581fb198f482ecc6064bce368baee31d.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-21T09:37:21Z";
+        sha256 = "92499c9f2dad02115094b05925fa5018581fb198f482ecc6064bce368baee31d";
+        };
+      default = "r1";
       };
     };
   }

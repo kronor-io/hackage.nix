@@ -131,6 +131,18 @@
       default = "r0";
       };
     };
+  "4.0.0" = {
+    sha256 = "d012fa081cdfbe85e5486b7d012ec355b0010b7cf11445e75af8903ee24b7f97";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/greenclip-4.0.0-r0-158d04c8ccaaf101fb0f92174527b37ac958d57d3a9e5f075db6caf5c43a19e4.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-21T08:24:33Z";
+        sha256 = "158d04c8ccaaf101fb0f92174527b37ac958d57d3a9e5f075db6caf5c43a19e4";
+        };
+      default = "r0";
+      };
+    };
   "4.1.0" = {
     sha256 = "c41a4b6f17d250ec9bfe811d233701490d4efefd9cca3534a52e02379673a2fc";
     revisions = {
@@ -151,6 +163,30 @@
         revNum = 0;
         revTimestamp = "2024-04-09T19:38:46Z";
         sha256 = "bdae140f1666153da3d121083a0f7bdf71736a77bf787c99766d9f00e78aefd7";
+        };
+      default = "r0";
+      };
+    };
+  "4.3.0" = {
+    sha256 = "ff930a9ec1bc2c26190663c4d55b6423f9e357ecf46e9372e2c6b0754a1e7c24";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/greenclip-4.3.0-r0-06c1b67d9eb0f4e381ef37a930d2cf00d3a8373016223f26442bff909a3c854a.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-21T08:26:23Z";
+        sha256 = "06c1b67d9eb0f4e381ef37a930d2cf00d3a8373016223f26442bff909a3c854a";
+        };
+      default = "r0";
+      };
+    };
+  "4.3.1" = {
+    sha256 = "1b399c9a4a160f8df044fe1aead6c6132cfa8bf0af9b602f4e5133283e2b8698";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/greenclip-4.3.1-r0-2b0046542b6a238628b637ff8d4e0127111751b8102347a53c79ac6d243d4482.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-21T09:00:23Z";
+        sha256 = "2b0046542b6a238628b637ff8d4e0127111751b8102347a53c79ac6d243d4482";
         };
       default = "r0";
       };
