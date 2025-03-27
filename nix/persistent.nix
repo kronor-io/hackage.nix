@@ -3140,7 +3140,13 @@
         revTimestamp = "2025-03-17T18:01:13Z";
         sha256 = "933224099f398c5e5dd0eb0ba2de2bff246325d64114f08591069655a5c901e4";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/persistent-2.15.0.0-r1-25da4f66a5057307a09db1781cbc8ffea4ba010956956bb232d9b9d06971d218.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-26T14:26:44Z";
+        sha256 = "25da4f66a5057307a09db1781cbc8ffea4ba010956956bb232d9b9d06971d218";
+        };
+      default = "r1";
       };
     };
   "2.15.0.1" = {

@@ -308,7 +308,13 @@
         revTimestamp = "2024-08-30T02:29:39Z";
         sha256 = "665b1c2641f75f8e457e9f0d11ba12ea36409781b611c71dee3a4a80ea1bbb49";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/servant-client-core-0.20.2-r1-081852f4dd306b596897ef45970ef048e584094739f43262f315d1459b02408c.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-26T14:57:35Z";
+        sha256 = "081852f4dd306b596897ef45970ef048e584094739f43262f315d1459b02408c";
+        };
+      default = "r1";
       };
     };
   }
