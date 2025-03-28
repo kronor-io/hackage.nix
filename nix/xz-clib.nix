@@ -35,4 +35,16 @@
       default = "r0";
       };
     };
+  "5.8.0.1" = {
+    sha256 = "f43ac4d5150ffaa99a2b4cb568ed295ea5a9daa2cf86cb99e76a46f9a6a38737";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/xz-clib-5.8.0.1-r0-1aa6d74b92fbe900f8117dab73937470455d3e0ac595156ce95349996f05cf88.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-27T11:49:01Z";
+        sha256 = "1aa6d74b92fbe900f8117dab73937470455d3e0ac595156ce95349996f05cf88";
+        };
+      default = "r0";
+      };
+    };
   }
