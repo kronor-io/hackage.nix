@@ -173,4 +173,16 @@
       default = "r2";
       };
     };
+  "1.5" = {
+    sha256 = "5481029a6e50aabc1ff5798e98cc3668b0885bae8d0b4a20ddcf4cef1500f58f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/diagrams-pgf-1.5-r0-be212de91400fae3d9203d9d969fa3f5791c7f8831d4e4d87345634ca12a7f76.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-28T20:28:32Z";
+        sha256 = "be212de91400fae3d9203d9d969fa3f5791c7f8831d4e4d87345634ca12a7f76";
+        };
+      default = "r0";
+      };
+    };
   }

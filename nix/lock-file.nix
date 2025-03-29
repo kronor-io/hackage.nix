@@ -80,7 +80,13 @@
         revTimestamp = "2018-04-15T15:55:35Z";
         sha256 = "3ad84b5e454145e1d928063b56abb96db24a99a21b493989520e58fa0ab37b00";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/lock-file-0.7.0.0-r1-095e87b30dcf1eee5c4dd025e87dca81059baec88857188b394c2b2cdbd81e8a.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-28T13:26:03Z";
+        sha256 = "095e87b30dcf1eee5c4dd025e87dca81059baec88857188b394c2b2cdbd81e8a";
+        };
+      default = "r1";
       };
     };
   }

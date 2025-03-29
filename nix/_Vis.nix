@@ -44,7 +44,13 @@
         revTimestamp = "2024-05-09T01:13:08Z";
         sha256 = "7d88c75db3844a293d04f5f2d0a71bb9cd5cbeca7449cb742fd511275dc87018";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/Vis-1.0.0-r1-b574d18ca313c5c14776b0a960ea0848c9f838e8d2632d95c4cedb3abb6384d2.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-28T19:55:05Z";
+        sha256 = "b574d18ca313c5c14776b0a960ea0848c9f838e8d2632d95c4cedb3abb6384d2";
+        };
+      default = "r1";
       };
     };
   }
