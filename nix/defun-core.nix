@@ -11,4 +11,16 @@
       default = "r0";
       };
     };
+  "0.1.0.1" = {
+    sha256 = "0210bc8f2f51ad916b40b5dc90d043e8304d102333d4405f981d2e21d416c07b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/defun-core-0.1.0.1-r0-38557b4a7e95d5e2ee5e9bf8edf7f65d7d82d77e21121741acefc7ea6376ab8f.nix;
+        revNum = 0;
+        revTimestamp = "2025-03-31T09:55:48Z";
+        sha256 = "38557b4a7e95d5e2ee5e9bf8edf7f65d7d82d77e21121741acefc7ea6376ab8f";
+        };
+      default = "r0";
+      };
+    };
   }

@@ -68,7 +68,13 @@
         revTimestamp = "2024-03-02T09:41:52Z";
         sha256 = "828d60cd3e19f5f9a7117e5b3fdb1a3f33651a57b18568df0178a5c5c2c79486";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/verset-0.0.1.9-r1-413192af83661581b76215a1b7114e4ba9fe9ddbcd1b859641028d840cc2b405.nix;
+        revNum = 1;
+        revTimestamp = "2025-03-31T08:17:29Z";
+        sha256 = "413192af83661581b76215a1b7114e4ba9fe9ddbcd1b859641028d840cc2b405";
+        };
+      default = "r1";
       };
     };
   }
