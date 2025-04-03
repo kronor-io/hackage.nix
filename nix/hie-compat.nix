@@ -104,7 +104,13 @@
         revTimestamp = "2024-07-01T07:28:07Z";
         sha256 = "74a8585a90e3c06667134939cd170cff24067d5a988e14829785af0dfa6bd10f";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hie-compat-0.3.1.2-r2-c3a05ec29b7b11d222fb80b60165a81b5ece93ff6e2b34ad3ffaeb243fff925e.nix;
+        revNum = 2;
+        revTimestamp = "2025-04-02T08:39:32Z";
+        sha256 = "c3a05ec29b7b11d222fb80b60165a81b5ece93ff6e2b34ad3ffaeb243fff925e";
+        };
+      default = "r2";
       };
     };
   }
