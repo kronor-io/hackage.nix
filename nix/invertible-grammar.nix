@@ -182,7 +182,13 @@
         revTimestamp = "2024-09-10T21:03:43Z";
         sha256 = "de1bba3d8c99f61aa6de5d85e8b1cb848790af997fbbff3f17eb2a0fb1ebb413";
         };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/invertible-grammar-0.1.3.5-r2-8fa8758a04db51eb7492a5aeb3284c58c38523ca634655dda3e83e9dcb85c1f0.nix;
+        revNum = 2;
+        revTimestamp = "2025-04-03T22:38:32Z";
+        sha256 = "8fa8758a04db51eb7492a5aeb3284c58c38523ca634655dda3e83e9dcb85c1f0";
+        };
+      default = "r2";
       };
     };
   }
