@@ -110,7 +110,13 @@
         revTimestamp = "2022-06-01T14:56:06Z";
         sha256 = "773839bf656cd39cc8050aaf5d96c1512d622c543318d9ddd7fceecd0b753647";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/free-vector-spaces-0.1.5.2-r1-e7d29510add4612172754c9efe43da8db4cee5b72078fe7948d5c2eee23e0cac.nix;
+        revNum = 1;
+        revTimestamp = "2025-04-05T11:23:37Z";
+        sha256 = "e7d29510add4612172754c9efe43da8db4cee5b72078fe7948d5c2eee23e0cac";
+        };
+      default = "r1";
       };
     };
   }
