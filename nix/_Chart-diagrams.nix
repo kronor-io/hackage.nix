@@ -422,7 +422,13 @@
         revTimestamp = "2025-02-23T09:25:28Z";
         sha256 = "926eee815fb9768fdeacc4b01fe577b382bd98ca59065efd287f4f12496302b4";
         };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/Chart-diagrams-1.9.5.1-r4-c656a7d07b3ab29ead980cfaf5b14e947c61c4a853cd165232d282de24b07752.nix;
+        revNum = 4;
+        revTimestamp = "2025-04-06T11:16:20Z";
+        sha256 = "c656a7d07b3ab29ead980cfaf5b14e947c61c4a853cd165232d282de24b07752";
+        };
+      default = "r4";
       };
     };
   }

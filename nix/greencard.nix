@@ -44,7 +44,13 @@
         revTimestamp = "2009-04-19T21:42:04Z";
         sha256 = "8a742d9a8a42c6dbc1cbd59e579bdc95638908a49618b0056a9ef7a8b1016a80";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/greencard-3.0.3-r1-90afcff72cf2d1ecb42816067cb6f639d1b90a0f857b21a4d649181acce94ee5.nix;
+        revNum = 1;
+        revTimestamp = "2025-04-06T15:07:06Z";
+        sha256 = "90afcff72cf2d1ecb42816067cb6f639d1b90a0f857b21a4d649181acce94ee5";
+        };
+      default = "r1";
       };
     };
   "3.0.4" = {
