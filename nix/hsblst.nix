@@ -50,7 +50,13 @@
         revTimestamp = "2024-12-14T14:49:14Z";
         sha256 = "10bd7f150c68e1661e7c276a61669ff7501292ec5e2654eba391d66540d5482a";
         };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hsblst-0.0.4-r1-5e069ce486b1a14ac305c6b4f6971ec671dbbd1283cd77848f265f34d3a397b3.nix;
+        revNum = 1;
+        revTimestamp = "2025-04-07T18:50:30Z";
+        sha256 = "5e069ce486b1a14ac305c6b4f6971ec671dbbd1283cd77848f265f34d3a397b3";
+        };
+      default = "r1";
       };
     };
   }
