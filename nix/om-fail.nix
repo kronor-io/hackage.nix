@@ -47,4 +47,16 @@
       default = "r0";
       };
     };
+  "0.1.0.6" = {
+    sha256 = "2704dabc562dd35575ba26ea0f18dfdac621b555d6ee1cdb3a296f9ec41cabff";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/om-fail-0.1.0.6-r0-992afbfc3a761b8a52761ae423c86764bad029d233c482d30da679e91f6106ee.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-10T23:55:28Z";
+        sha256 = "992afbfc3a761b8a52761ae423c86764bad029d233c482d30da679e91f6106ee";
+        };
+      default = "r0";
+      };
+    };
   }

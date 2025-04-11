@@ -407,4 +407,16 @@
       default = "r0";
       };
     };
+  "0.4.0.1" = {
+    sha256 = "223cfd93f497ad9edbbea4cdb4ac5b286a100ab7819dbf4e5640567db0a87975";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/uri-bytestring-0.4.0.1-r0-fe6839f0946f4164e2f8e1b6e3cd4f047042ad569c1521dbfb66f6f2c148b574.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-10T16:35:16Z";
+        sha256 = "fe6839f0946f4164e2f8e1b6e3cd4f047042ad569c1521dbfb66f6f2c148b574";
+        };
+      default = "r0";
+      };
+    };
   }
