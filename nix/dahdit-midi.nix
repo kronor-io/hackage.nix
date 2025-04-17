@@ -83,4 +83,16 @@
       default = "r0";
       };
     };
+  "0.8.0" = {
+    sha256 = "8f2f91f1206383e341256f4bdc78479678ecb73501e9e17d03e21924fd9378ab";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dahdit-midi-0.8.0-r0-87b322c04e349421ad31748f7a0c0f29ccd71c38eff9d4f72ef5e1ad54877e10.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-16T22:12:21Z";
+        sha256 = "87b322c04e349421ad31748f7a0c0f29ccd71c38eff9d4f72ef5e1ad54877e10";
+        };
+      default = "r0";
+      };
+    };
   }
