@@ -71,4 +71,16 @@
       default = "r2";
       };
     };
+  "1.2.1" = {
+    sha256 = "4038703c20fc9fd80126c757eb19627978c383cac0ad0fab16646deb002b9bf4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mvc-updates-1.2.1-r0-9524eee7e12ae5308075fb51cf10b20365f2deceabdbc2ea9ca07a9b596d61da.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-19T15:54:20Z";
+        sha256 = "9524eee7e12ae5308075fb51cf10b20365f2deceabdbc2ea9ca07a9b596d61da";
+        };
+      default = "r0";
+      };
+    };
   }
