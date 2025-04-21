@@ -251,4 +251,16 @@
       default = "r0";
       };
     };
+  "0.7.2.1" = {
+    sha256 = "de72bb30af6fd962b624d53f6ac897557005fe124cf478b615a2df4fd7423e48";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/grammatical-parsers-0.7.2.1-r0-b5802ecc1984633cd470cdac83e0a823e22709337a9765084291b0f35675d64d.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-20T00:03:51Z";
+        sha256 = "b5802ecc1984633cd470cdac83e0a823e22709337a9765084291b0f35675d64d";
+        };
+      default = "r0";
+      };
+    };
   }
