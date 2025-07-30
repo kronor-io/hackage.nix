@@ -21,7 +21,7 @@
       synopsis = "Use htmx with lucid";
       description = "Please see the README on GitHub at <https://github.com/JonathanLorimer/htmx#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."htmx" or (errorHandler.buildDepError "htmx"))
           (hsPkgs."lucid" or (errorHandler.buildDepError "lucid"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Library for symbolic integration of mathematical expressions.";
       description = "Symtegration is a library providing symbolic integration of mathematical expressions.\n\nFor example,\n\n>>> import Symtegration\n>>> toHaskell <$> integrate \"x\" (4 * \"x\" ** 3 + 1)\nJust \"x + x ** 4\"\n\nSee the \"Symtegration\" module for the main interface.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "examples" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."symtegration" or (errorHandler.buildDepError "symtegration"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -56,12 +56,12 @@
             (hsPkgs."symtegration" or (errorHandler.buildDepError "symtegration"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

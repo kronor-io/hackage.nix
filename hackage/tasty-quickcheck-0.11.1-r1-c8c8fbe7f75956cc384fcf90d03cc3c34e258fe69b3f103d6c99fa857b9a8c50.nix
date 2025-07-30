@@ -21,7 +21,7 @@
       synopsis = "QuickCheck support for the Tasty test framework.";
       description = "QuickCheck support for the Tasty test framework.\n";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

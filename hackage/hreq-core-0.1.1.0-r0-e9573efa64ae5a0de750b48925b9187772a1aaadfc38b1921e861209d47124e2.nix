@@ -22,11 +22,11 @@
       description = "Core functionality for Hreq. A type dependent highlevel HTTP client library inspired by servant-client.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -43,18 +43,18 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."hreq-core" or (errorHandler.buildDepError "hreq-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

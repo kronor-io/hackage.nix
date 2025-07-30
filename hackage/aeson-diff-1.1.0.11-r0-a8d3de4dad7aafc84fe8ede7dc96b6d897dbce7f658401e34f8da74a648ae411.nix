@@ -22,10 +22,10 @@
       description = "\nThis is a small library for working with changes to JSON documents. It\nincludes a library and two command-line executables in the style of the\ndiff(1) and patch(1) commands available on many systems.\n";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "json-diff" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."aeson-diff" or (errorHandler.buildDepError "aeson-diff"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "json-patch" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -57,10 +57,10 @@
             (hsPkgs."aeson-diff" or (errorHandler.buildDepError "aeson-diff"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "properties" = {
           depends = [
@@ -70,9 +70,9 @@
             (hsPkgs."aeson-diff" or (errorHandler.buildDepError "aeson-diff"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "examples" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -82,23 +82,23 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hlint-check" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hlint" or (errorHandler.buildDepError "hlint"))
-            ];
+          ];
           buildable = false;
-          };
         };
       };
-    }
+    };
+  }

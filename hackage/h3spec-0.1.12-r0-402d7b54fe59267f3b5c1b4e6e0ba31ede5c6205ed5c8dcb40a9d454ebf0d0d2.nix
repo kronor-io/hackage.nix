@@ -21,7 +21,7 @@
       synopsis = "QUIC";
       description = "Test tool for error cases of QUIC and HTTP/3";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "h3spec" = {
@@ -35,9 +35,9 @@
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

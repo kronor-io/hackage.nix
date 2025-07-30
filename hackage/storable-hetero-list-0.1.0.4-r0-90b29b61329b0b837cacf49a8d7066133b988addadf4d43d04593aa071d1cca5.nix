@@ -21,16 +21,16 @@
       synopsis = "about Storable and Hetero list";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/storable-hetero-list#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."hetero-parameter-list" or (errorHandler.buildDepError "hetero-parameter-list"))
           (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "storable-hetero-list-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."hetero-parameter-list" or (errorHandler.buildDepError "hetero-parameter-list"))
             (hsPkgs."storable-hetero-list" or (errorHandler.buildDepError "storable-hetero-list"))
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2021-09-09T05:13:30Z";
         sha256 = "23629246a11bdb77f7c40ca08f160410be96dc07180b4512db2969df28dc368f";
-        };
+      };
       r1 = {
         nix = import ../hackage/2captcha-0.1.0.0-r1-75aa91abd594b3ff93ece19c8b3144ce26dd8ae9fe2bad7eb4dc5a2f8dc47112.nix;
         revNum = 1;
         revTimestamp = "2022-09-24T05:49:24Z";
         sha256 = "75aa91abd594b3ff93ece19c8b3144ce26dd8ae9fe2bad7eb4dc5a2f8dc47112";
-        };
+      };
       r2 = {
         nix = import ../hackage/2captcha-0.1.0.0-r2-dbf873dc9ab6d59669d0616d93a72dfc123566e7646072099dab879d880a0aaf.nix;
         revNum = 2;
         revTimestamp = "2022-09-24T05:49:45Z";
         sha256 = "dbf873dc9ab6d59669d0616d93a72dfc123566e7646072099dab879d880a0aaf";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

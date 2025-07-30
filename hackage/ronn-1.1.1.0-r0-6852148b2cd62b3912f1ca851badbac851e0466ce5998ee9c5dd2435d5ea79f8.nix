@@ -21,15 +21,15 @@
       synopsis = "Describe and render Ronn documentation";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."hspec-golden" or (errorHandler.buildDepError "hspec-golden"))
             (hsPkgs."ronn" or (errorHandler.buildDepError "ronn"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

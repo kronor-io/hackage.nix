@@ -14,7 +14,7 @@
       identifier = {
         name = "distributed-process-supervisor";
         version = "0.2.3";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Tim Watson 2012 - 2013";
       maintainer = "The Distributed Haskell team";
@@ -24,7 +24,7 @@
       synopsis = "Supervisors for The Cloud Haskell Application Platform";
       description = "A part of the Cloud Haskell framework\n\nThis package implements a process which supervises a set of other processes, referred to as its children.\nThese child processes can be either workers (i.e., processes that do something useful in your application)\nor other supervisors. In this way, supervisors may be used to build a hierarchical process structure\ncalled a supervision tree, which provides a convenient structure for building fault tolerant software.\n\nFor detailed information see \"Control.Distributed.Process.Supervisor\"";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "SupervisorTests" = {
           depends = [
@@ -64,9 +64,9 @@
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "NonThreadedSupervisorTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -87,9 +87,9 @@
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

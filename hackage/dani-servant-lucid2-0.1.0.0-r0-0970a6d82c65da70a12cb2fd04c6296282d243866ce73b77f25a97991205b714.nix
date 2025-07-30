@@ -21,7 +21,7 @@
       synopsis = "Servant support for lucid2";
       description = "Servant support for lucid2.\n\n'HTML' content type backed by the `ToHtml` typeclass.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."http-media" or (errorHandler.buildDepError "http-media"))
           (hsPkgs."lucid2" or (errorHandler.buildDepError "lucid2"))
           (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "server" = {
           depends = [
@@ -40,10 +40,10 @@
             (hsPkgs."lucid2" or (errorHandler.buildDepError "lucid2"))
             (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."dani-servant-lucid2" or (errorHandler.buildDepError "dani-servant-lucid2"))
             (hsPkgs."dani-servant-lucid2".components.sublibs.server or (errorHandler.buildDepError "dani-servant-lucid2:server"))
             (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

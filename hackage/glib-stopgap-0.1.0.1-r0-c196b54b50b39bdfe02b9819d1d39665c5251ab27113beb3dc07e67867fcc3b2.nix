@@ -21,7 +21,7 @@
       synopsis = "Stopgap package of binding for GLib";
       description = "Please see the README on GitHub at <https://github.com/githubuser/glib-stopgap#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,13 +29,13 @@
           (hsPkgs."c-enum" or (errorHandler.buildDepError "c-enum"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."glib-2.0" or (errorHandler.pkgConfDepError "glib-2.0"))
           (pkgconfPkgs."gobject-2.0" or (errorHandler.pkgConfDepError "gobject-2.0"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "glib-stopgap-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."glib-stopgap" or (errorHandler.buildDepError "glib-stopgap"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

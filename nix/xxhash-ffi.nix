@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2017-08-22T21:20:55Z";
         sha256 = "475e39e9c5d1d30249c3d8f2f96fe45686cd611e362de9945411e5e4552eb76f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.1" = {
     sha256 = "7dce104b68382a0d332a090abf80df0b3c641ee578ff2d52944be1c1cda7a8a0";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2017-08-22T21:46:30Z";
         sha256 = "6b937d65090d5cdabe586fc1d03ee5a674f8c3d13cfed868e3422a90ede1501e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "fc2e63ea54531e2888a9ddd6816cb113bd5fd0e01192156e9f1459d88af92e6b";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-08-31T09:26:34Z";
         sha256 = "0b4c4fc2730dcfd5216be19a4a00bac172bcd522b18777dab23fda954feedf96";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3" = {
     sha256 = "996c41261fac8fdd9ce6ffd2aa4d97b10e67e520fcfba5bd538b8287bcf50a33";
     revisions = {
@@ -43,14 +43,14 @@
         revNum = 0;
         revTimestamp = "2024-03-28T21:49:54Z";
         sha256 = "f3377d04b42b29667f53eca52a4991cde37920da81c0974d86f740fa64c1209e";
-        };
+      };
       r1 = {
         nix = import ../hackage/xxhash-ffi-0.3-r1-3fe4acaa60c58af35de491c8bd9a24f9e6ead495f5736fb17d70384b693eac1e.nix;
         revNum = 1;
         revTimestamp = "2024-07-04T20:38:50Z";
         sha256 = "3fe4acaa60c58af35de491c8bd9a24f9e6ead495f5736fb17d70384b693eac1e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

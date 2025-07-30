@@ -21,7 +21,7 @@
       synopsis = "Additional golden test helpers for the tasty-golden package";
       description = "A library providing additional golden test helpers for the\n@tasty-golden@ package.  These helpers are useful for testing\nthe output of functions that return @String@s, @Show@, @ToJSON@ or @ToYAML@\ninstances.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,8 +37,8 @@
           (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

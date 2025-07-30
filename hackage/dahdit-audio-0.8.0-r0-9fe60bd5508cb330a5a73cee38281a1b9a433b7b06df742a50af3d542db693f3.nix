@@ -21,7 +21,7 @@
       synopsis = "Audio file parsing/printing with dahdit";
       description = "Please see the README on GitHub at <https://github.com/ejconlon/dahdit#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -48,9 +48,9 @@
           (hsPkgs."regex-tdfa" or (errorHandler.buildDepError "regex-tdfa"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "dahdit-audio-test" = {
           depends = [
@@ -81,9 +81,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Elegant UCI chess engine";
       description = "Please see the README on GitHub at <https://github.com/albertprz/turncoat#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unbounded-delays" or (errorHandler.buildDepError "unbounded-delays"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "turncoat" = {
           depends = [
@@ -66,10 +66,10 @@
             (hsPkgs."turncoat" or (errorHandler.buildDepError "turncoat"))
             (hsPkgs."unbounded-delays" or (errorHandler.buildDepError "unbounded-delays"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -92,12 +92,12 @@
             (hsPkgs."turncoat" or (errorHandler.buildDepError "turncoat"))
             (hsPkgs."unbounded-delays" or (errorHandler.buildDepError "unbounded-delays"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

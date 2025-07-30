@@ -21,16 +21,16 @@
       synopsis = "Filters a list based on a fuzzy string search";
       description = "Fuzzily is a library that filters a list based on a fuzzy string search.\nUses 'TextualMonoid' to be able to run on different types of strings.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
           (hsPkgs."protolude" or (errorHandler.buildDepError "protolude"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "fuzzily-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."fuzzily" or (errorHandler.buildDepError "fuzzily"))
             (hsPkgs."protolude" or (errorHandler.buildDepError "protolude"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

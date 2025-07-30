@@ -21,16 +21,16 @@
       synopsis = "Yosys RTL Intermediate Language";
       description = "Definition and prettyprinter.\nSee https://yosyshq.readthedocs.io/projects/yosys/en/latest/\nfor RTL text representation documentation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yosys-rtl" or (errorHandler.buildDepError "yosys-rtl"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

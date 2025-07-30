@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2006-11-02T14:22:14Z";
         sha256 = "1790fc660646a817d5e18fa24e8423ec86cdb11181ec3b4195f0ce6c074d2fdc";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.1-r1-3e47d354135e93619a46a438fbd1ecd82674e3966108a4cda4ba1cb9b864742b.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T22:15:38Z";
         sha256 = "3e47d354135e93619a46a438fbd1ecd82674e3966108a4cda4ba1cb9b864742b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.1.0.0" = {
     sha256 = "232d1bf9091553bcbb480185ad8e498027df34cefd209497f2a331a53b6d08ae";
     revisions = {
@@ -25,16 +25,16 @@
         revNum = 0;
         revTimestamp = "2007-11-03T15:34:29Z";
         sha256 = "47246ff97feb9a04a1aeccde746f09b83c8003438e29b58451cc8b22e324857e";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.1.0.0-r1-35b9ff02c74a3a079fd845020bda42a511d53c2eea6654552e00915d28afc93e.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T22:22:07Z";
         sha256 = "35b9ff02c74a3a079fd845020bda42a511d53c2eea6654552e00915d28afc93e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.10.0.0" = {
     sha256 = "369130c8875dcd9c42e63cc4cf7bb7616e64bb3dbcf9868d016ff7c15f0be625";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2020-09-20T19:29:50Z";
         sha256 = "47ef780984642709625cbc82383649d3d172d60cdeccbdf237d6500955fce258";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.10.1.0" = {
     sha256 = "7b5d67015f7546206b9531ad31bc2ab00206da62bd9d09ed25b76a3fe00387c6";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2020-11-04T23:17:54Z";
         sha256 = "c66743d7435a10af5b9e8856a04333b212cf09aba064228997288557c01754df";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.10.1.1" = {
     sha256 = "2ec3dcdb1b964fa2cf47671ab3fbb3d5b3846e9b94a60495e726867072567458";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2021-06-28T13:15:24Z";
         sha256 = "e23a0c857a03c5c5d1a6174ee922b1a97fe495fa0383c3831eb9b8a1474884fe";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.11.0.0" = {
     sha256 = "d53165e91fa389d69559a2fe0ec88125077ccd379923fa5082563a75bd043b9d";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2021-01-10T19:41:55Z";
         sha256 = "065bdb9f5cd8d20e972070cf8a153ea15be44e6fb48a540e4049966f3be1a8fa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.11.1.0" = {
     sha256 = "3327a076ccc32ccc2fc09aa364ec7cf71a89ec7b35d8ee22f12723c546773aa3";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2021-02-14T19:30:20Z";
         sha256 = "f503acb4ea2e7da6433549d5ff7d0851da54f226df032b40ae51559c7914d62f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.12.0.0" = {
     sha256 = "366274d236026694b3a2d3d758c3ade20338574f1acf7538499ff71db4111319";
     revisions = {
@@ -103,10 +103,10 @@
         revNum = 0;
         revTimestamp = "2021-03-14T08:46:29Z";
         sha256 = "85442e78a089c9dcb51f1632194523afb5a4bf14678455c64fa1717893fe3a9a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.12.0.1" = {
     sha256 = "e2ec4ae8f5279e0fe9de13d5620d762d553891ecc33df43a3131f574256f3bda";
     revisions = {
@@ -115,10 +115,10 @@
         revNum = 0;
         revTimestamp = "2021-06-28T09:52:11Z";
         sha256 = "0a804073f14f0979018f17f1eb67c162c1a978f0c64f61b665f918e6e840dd73";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.13.0.0" = {
     sha256 = "42a5d6c8387cfffcc094694abe4ee719210ab24d52b2019fd99b247ddad09c44";
     revisions = {
@@ -127,10 +127,10 @@
         revNum = 0;
         revTimestamp = "2021-09-08T20:23:23Z";
         sha256 = "289c911e7a014c655fdf04cf5ca544f1d5b07e01da3db52d1cf1bdf42c2c5502";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.13.1.0" = {
     sha256 = "6cdfaa643697f273e57e8bb54147b9f19c2ce236805ae5300eed11b5668506a9";
     revisions = {
@@ -139,10 +139,10 @@
         revNum = 0;
         revTimestamp = "2021-11-07T10:55:11Z";
         sha256 = "0a85797a25397ee5431374b3fc12ee4b9dfdf19c10587233863d8e143c0e96eb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.13.2.0" = {
     sha256 = "c4b1bbd79d66e16bf9b3d39ffba62a255d29b10c41f05fb36647b7b1c1c2b0be";
     revisions = {
@@ -151,10 +151,10 @@
         revNum = 0;
         revTimestamp = "2021-11-21T21:07:33Z";
         sha256 = "e7a114a9ba9562617d7181b3c892fe2af1a755a91bcdc054c7f113738754ff55";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.13.2.1" = {
     sha256 = "102d5fe7338e213d2fd4807d53c601ffce61abe11861f3a45a82037cf5f9c4ba";
     revisions = {
@@ -163,10 +163,10 @@
         revNum = 0;
         revTimestamp = "2022-06-18T13:59:36Z";
         sha256 = "7c4c20294cd30dfb0e958a44af2909e87831b0c398a4403da748b55ed664f356";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.13.3.0" = {
     sha256 = "c4cfde8ab8f1812612f4e80b6ef1f11050963a21c982fbcfccbb1bf21ba1d5ef";
     revisions = {
@@ -175,16 +175,16 @@
         revNum = 0;
         revTimestamp = "2022-07-29T15:44:32Z";
         sha256 = "9bb5ea9694e82e76fd7bd51dcabec4790fcd9bca76c40555300afef02fe83f21";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.13.3.0-r1-910e2778cb75b345bc38d9361f10969bde0beef061cde70e1889e4005ef3ef1e.nix;
         revNum = 1;
         revTimestamp = "2023-12-16T15:55:13Z";
         sha256 = "910e2778cb75b345bc38d9361f10969bde0beef061cde70e1889e4005ef3ef1e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.13.4.0" = {
     sha256 = "514630b74e501917c2b9db8af79f6ef0957904066f6525a25dcdb2924ab7a8da";
     revisions = {
@@ -193,16 +193,16 @@
         revNum = 0;
         revTimestamp = "2022-10-10T20:51:37Z";
         sha256 = "9b8a82743985f8a95c03b2bc64be33ad1cd603e2493cb8b48d3cb923556dbb61";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.13.4.0-r1-6a1299d051c514aa5ac7b77ef5f86be6c0aa6940b00302c6dc246192c7a97d99.nix;
         revNum = 1;
         revTimestamp = "2023-12-04T07:33:07Z";
         sha256 = "6a1299d051c514aa5ac7b77ef5f86be6c0aa6940b00302c6dc246192c7a97d99";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.14.0.0" = {
     sha256 = "4f9dcddb58f071216163650f9dd034a56bef4a0a73e47c9fd1b01155e12a66e5";
     revisions = {
@@ -211,10 +211,10 @@
         revNum = 0;
         revTimestamp = "2024-01-13T23:14:39Z";
         sha256 = "e34af84fec733b5c0c8f052ec39499785e719e2fbbe308983adf26c82ea3704d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.14.1.0" = {
     sha256 = "9ef703217f6d80ef2427a07072d978911abbc83ed80d3de9b2a6dc7977ea5803";
     revisions = {
@@ -223,10 +223,34 @@
         revNum = 0;
         revTimestamp = "2024-11-12T20:10:08Z";
         sha256 = "983e8882ad5663fc3b738044dbebfe42fd4e37f7f3d7c7e0b085702c9ece6d9f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
+  "2.14.2.0" = {
+    sha256 = "9264476b14f56149d136f9a643608525b219801e236f11642d3f64e12f21b562";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Win32-2.14.2.0-r0-e034d359cd0b6f15e7c0a9865950aa0e79a7ffeb8012a011b1c61947ab6c0150.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-31T06:32:36Z";
+        sha256 = "e034d359cd0b6f15e7c0a9865950aa0e79a7ffeb8012a011b1c61947ab6c0150";
+      };
+      default = "r0";
+    };
+  };
+  "2.14.2.1" = {
+    sha256 = "69d15a9fb4ef718353aaf8700a64c5885743d4f34a94f7da273fa12584df0315";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Win32-2.14.2.1-r0-7c68fc9d937c6e4c590472e9dd06d7e336338e01a5f2918ee9cf75c28871badd.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-23T19:51:45Z";
+        sha256 = "7c68fc9d937c6e4c590472e9dd06d7e336338e01a5f2918ee9cf75c28871badd";
+      };
+      default = "r0";
+    };
+  };
   "2.2.0.0" = {
     sha256 = "f0596468944701a4ce70a45c62926a2a33484fff13e234176bfa383da22428ec";
     revisions = {
@@ -235,16 +259,16 @@
         revNum = 0;
         revTimestamp = "2008-11-16T22:14:46Z";
         sha256 = "b2fb536a0110a42983880e32fcbf8594af45e55588d1c2c20c92b214c96fb764";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.2.0.0-r1-430dd32b73224d211feb6943fd054b87393fe38a7db776b957a91ec39aad329e.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T23:29:05Z";
         sha256 = "430dd32b73224d211feb6943fd054b87393fe38a7db776b957a91ec39aad329e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.2.0.1" = {
     sha256 = "7413f68c82043b33458f2080c877ac48446fa1f24f4c69571529a14849fb2f7b";
     revisions = {
@@ -253,16 +277,16 @@
         revNum = 0;
         revTimestamp = "2009-12-15T16:46:12Z";
         sha256 = "09f47b3a30b25de9f156edea1a355f077423407b94ad0cd283d89b70395fff4e";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.2.0.1-r1-c18f6c5ace8fe18ed32d0c11de4517f0c396cf13c01e03da29f11a80867d4ca9.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T23:28:30Z";
         sha256 = "c18f6c5ace8fe18ed32d0c11de4517f0c396cf13c01e03da29f11a80867d4ca9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.2.0.2" = {
     sha256 = "320af1dee693e41a60f91b40101ab8c4379d78bdf6c22ac2b5c433ff8a980215";
     revisions = {
@@ -271,16 +295,16 @@
         revNum = 0;
         revTimestamp = "2010-04-22T12:11:13Z";
         sha256 = "5d3f0e576bd847d02d21519e2c0f2e90e34fce3ecee6bbbaed1107fd21ccd04b";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.2.0.2-r1-3319e286f89b2bcfe4255a45f70e509cf5d91b4ba1184e2209047aa9287cfe36.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T23:27:57Z";
         sha256 = "3319e286f89b2bcfe4255a45f70e509cf5d91b4ba1184e2209047aa9287cfe36";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.2.1.0" = {
     sha256 = "24480fa717b38c6fc76c8b48dbbd74a50c56ad1b7d2cbd086ede109d698c5022";
     revisions = {
@@ -289,16 +313,16 @@
         revNum = 0;
         revTimestamp = "2011-08-25T12:27:19Z";
         sha256 = "fe0c55c5982478047f969f072a4b6eae03a3bc4a5efdf6fed55b2e8d8199d8ab";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.2.1.0-r1-ebdeb8b3c3b424af923330607165bc37814037b8717b9a1468d1de7675d01938.nix;
         revNum = 1;
         revTimestamp = "2022-06-28T23:27:34Z";
         sha256 = "ebdeb8b3c3b424af923330607165bc37814037b8717b9a1468d1de7675d01938";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.2.2.0" = {
     sha256 = "803242e1eda48d4163617f5b48332db2c54b61c8794c2c10692fb1b07a7e6937";
     revisions = {
@@ -307,16 +331,16 @@
         revNum = 0;
         revTimestamp = "2012-02-03T00:26:31Z";
         sha256 = "10ed55dd31315f386910c121c1d1d442df83bd2ee92090a753cd65300735a8ca";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.2.2.0-r1-ec2078e97ea5cc6a90d150fd877f7460369f08af16d16c553e3ecedef8ed5ae6.nix;
         revNum = 1;
         revTimestamp = "2022-06-29T21:55:45Z";
         sha256 = "ec2078e97ea5cc6a90d150fd877f7460369f08af16d16c553e3ecedef8ed5ae6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.3.0.0" = {
     sha256 = "f92d157a96fb76b04c09bb412dfc7cddafbb11a6aa9e85f0b28d012517773584";
     revisions = {
@@ -325,10 +349,10 @@
         revNum = 0;
         revTimestamp = "2014-02-04T20:59:57Z";
         sha256 = "61b6b05242d9692db8098149e4fa22c3bee6d564a977a8f39c02230632ba32b7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.3.0.1" = {
     sha256 = "e10367eb1f1c8dd4f0d057faea082d046f98c3b434ae894ee9f2d972493da271";
     revisions = {
@@ -337,10 +361,10 @@
         revNum = 0;
         revTimestamp = "2014-02-05T00:34:24Z";
         sha256 = "039e99423ecb0240f55194cfcadd2b9530a93ed647f8902962ef2eb032b4044e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.3.0.2" = {
     sha256 = "517f03e4fb03de4e073c92cc1b2d35de24b08f3ef7428d8eac2ca4e541b95068";
     revisions = {
@@ -349,10 +373,10 @@
         revNum = 0;
         revTimestamp = "2014-03-11T05:19:35Z";
         sha256 = "0f9a816c7d7ce06dd2c489d11b400631d9dbb4c620964f822d7bd6caeb37e81e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.3.1.0" = {
     sha256 = "685a695e9ec86efb06d3a2effb3e18f916c8696e71ca4811cb53befa04323ff9";
     revisions = {
@@ -361,10 +385,10 @@
         revNum = 0;
         revTimestamp = "2015-07-29T15:10:50Z";
         sha256 = "0e8545c17389e6a85b1e79d752b9e4ab243ede2f7d131e5410377a239f1f48ae";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.3.1.1" = {
     sha256 = "5c57f6ca9e13bb9e945bfe25b85390451fff589ae5e1e2522fc939a144c7a588";
     revisions = {
@@ -373,10 +397,10 @@
         revNum = 0;
         revTimestamp = "2016-05-05T12:44:27Z";
         sha256 = "c5517b608fe3d79835c3b4747540965a622ab6074a3cf65588901d3691d22e87";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.4.0.0" = {
     sha256 = "e99e020ddd510f3b7012e15346284288a4535c88b369fafa91584e0d9a86cecb";
     revisions = {
@@ -385,10 +409,10 @@
         revNum = 0;
         revTimestamp = "2016-11-05T14:25:10Z";
         sha256 = "45513da1f75dde2a8229a923525d9d1e35770d09f77314cb9e3527bb4c7c1222";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.5.0.0" = {
     sha256 = "45d7fd5f251ba418d649100cfea9d924b7ef42a8c35df5bb373fd6dd687d2694";
     revisions = {
@@ -397,10 +421,10 @@
         revNum = 0;
         revTimestamp = "2017-01-07T21:43:54Z";
         sha256 = "6ca6cc0adadfcb635df3913376842161c5b2fa9c7ab5bc0552907802edd9d9fa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.5.1.0" = {
     sha256 = "84e1b1ee7e435ad4237d2f625114f205141988b964f42259b5e294066f31ca52";
     revisions = {
@@ -409,10 +433,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T06:12:58Z";
         sha256 = "0b7ab1facd764384d0329af9cfaa0ceb0765bb6e92d30ce24f5fee448c877bbc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.5.2.0" = {
     sha256 = "98da2c6bb0f6a0eb2129ad24114fe7ab14a09aa2bfe6b4c26e186bd18dc94e83";
     revisions = {
@@ -421,16 +445,16 @@
         revNum = 0;
         revTimestamp = "2017-03-07T22:14:02Z";
         sha256 = "aba68b371c5e1a82a09100770ccac837ec40dc8640f64c9c8f4b187f4d080e68";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.5.2.0-r1-bdd6e544b08231d3ea8fc18545d8c1cd0e366201cc77d87339c0c3992ebf0d5f.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:13:46Z";
         sha256 = "bdd6e544b08231d3ea8fc18545d8c1cd0e366201cc77d87339c0c3992ebf0d5f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.5.3.0" = {
     sha256 = "fd66d7feafc7863cbd0726c8dbf605a007804e009fe4e5b5ebdf4f4727257c31";
     revisions = {
@@ -439,16 +463,16 @@
         revNum = 0;
         revTimestamp = "2017-03-18T09:48:35Z";
         sha256 = "bd6cd2e80da4a9f830af18440d4e6c0de6fe1f598caa058eb4095065e0307f64";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.5.3.0-r1-7fd75a110be285f44df2e419a66dcdf6e79d19a37578b46a56cf5c44005479d0.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:23Z";
         sha256 = "7fd75a110be285f44df2e419a66dcdf6e79d19a37578b46a56cf5c44005479d0";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.5.4.0" = {
     sha256 = "f10cb5c05899a59ee75bf2f2ef07a85a95754d1d0071588caf34889e2224a849";
     revisions = {
@@ -457,16 +481,16 @@
         revNum = 0;
         revTimestamp = "2017-04-03T21:55:55Z";
         sha256 = "cf10bd417385041c7cd444286033f02eaa93e09a8a556756533cfbee96df7a4a";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.5.4.0-r1-8cb14c7e454e8fa98f5a0173173166007484080ec7c96b24b3ba0328d78939b1.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:27Z";
         sha256 = "8cb14c7e454e8fa98f5a0173173166007484080ec7c96b24b3ba0328d78939b1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.5.4.1" = {
     sha256 = "cc183e9e545ad04fe8e509eb9447e9d11b160b2027482230cee8cdc141fd3d64";
     revisions = {
@@ -475,16 +499,16 @@
         revNum = 0;
         revTimestamp = "2017-04-03T23:20:48Z";
         sha256 = "2e061aafa9514d82bb936a70b5d43139bf6ec8291924291c12be786c2d5f4e97";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.5.4.1-r1-e623a1058bd8134ec14d62759f76cac52eee3576711cb2c4981f398f1ec44b85.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:27Z";
         sha256 = "e623a1058bd8134ec14d62759f76cac52eee3576711cb2c4981f398f1ec44b85";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.6.0.0" = {
     sha256 = "d45897c6fe110027261979f1edea6f7612135deaeee7cb02008625f4385499eb";
     revisions = {
@@ -493,16 +517,16 @@
         revNum = 0;
         revTimestamp = "2017-09-23T14:42:49Z";
         sha256 = "ea52a4a86c05b6c1a8ee260b03cb72e26d80027dc9a7031dbc543cb443078838";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.6.0.0-r1-bb86a3d17c3b46aee9996e1170b1aa9150bf866c91d29bf6d00940cacd1dde73.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:29Z";
         sha256 = "bb86a3d17c3b46aee9996e1170b1aa9150bf866c91d29bf6d00940cacd1dde73";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.6.1.0" = {
     sha256 = "eba445ba0717e96f239c984890f67172e7bfe72a23f32f37fe265b6cadfd9ce3";
     revisions = {
@@ -511,16 +535,16 @@
         revNum = 0;
         revTimestamp = "2017-10-28T14:30:07Z";
         sha256 = "763c5ee4c70bcdcdf89413ac7dc7b8f69fce2095956b166204a4619bdfc93813";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.6.1.0-r1-760efdf1f072144935cc01c321d4cfd63267d46cd7b3daf07fe3f5edc46c46c5.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:30Z";
         sha256 = "760efdf1f072144935cc01c321d4cfd63267d46cd7b3daf07fe3f5edc46c46c5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.6.2.0" = {
     sha256 = "59beaea7016b85eab3d43311b24fce9a9d1a4c7f3f809b114a9779bea31fd765";
     revisions = {
@@ -529,16 +553,16 @@
         revNum = 0;
         revTimestamp = "2017-12-16T09:27:30Z";
         sha256 = "ee9868bde66ce24b8022f3a1f809d5ae2f92aceecb31b9ec8e7d7620ce1077c9";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.6.2.0-r1-515518df0728294c99822c65b04be10a242933f40240b125c23469f45c8b11da.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:30Z";
         sha256 = "515518df0728294c99822c65b04be10a242933f40240b125c23469f45c8b11da";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.6.2.1" = {
     sha256 = "580c32524962422c3a0c2f685b0f574f963429a25149e9392462637dcea99c0e";
     revisions = {
@@ -547,10 +571,10 @@
         revNum = 0;
         revTimestamp = "2021-09-08T21:09:49Z";
         sha256 = "cae17a51506ebac3400399ddd0118876280a11bb3f7126d639bcf2248acf3e41";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.7.0.0" = {
     sha256 = "11ba1120d4e8d6e3ba8ad1cf53fa8c9b00134612de3f30f7e3772120ba600395";
     revisions = {
@@ -559,16 +583,16 @@
         revNum = 0;
         revTimestamp = "2018-03-03T10:34:00Z";
         sha256 = "1644a9198c21f38031cbcc1410ebd407209e3acd36d5403d49f36200403979b7";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.7.0.0-r1-d442538f4d1116fac99ae49e40c04e76137c9b413941c57adad07968a6be6f23.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:30Z";
         sha256 = "d442538f4d1116fac99ae49e40c04e76137c9b413941c57adad07968a6be6f23";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.8.0.0" = {
     sha256 = "a4369a282ac74e788a233a2997d30e0ea6d468c24bfbd3f13aa498fe85bbfb5e";
     revisions = {
@@ -577,16 +601,16 @@
         revNum = 0;
         revTimestamp = "2018-05-04T16:10:03Z";
         sha256 = "866c64932bf3d717c23781701076f14760956362761c81a6d81ec4d13a3ff857";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.8.0.0-r1-4b513161c05b77d3d5cb593d1f7e61f462bc1b858edfe8b6f393b28afa17b336.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:31Z";
         sha256 = "4b513161c05b77d3d5cb593d1f7e61f462bc1b858edfe8b6f393b28afa17b336";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.8.1.0" = {
     sha256 = "fbd6d8102452246a3081025d210188a5069bad496d896218966bd2f510c5a324";
     revisions = {
@@ -595,16 +619,16 @@
         revNum = 0;
         revTimestamp = "2018-11-14T06:34:12Z";
         sha256 = "bcebc7872bdc9355f407710266c939c3a3929635ac0d20c604e053c372291f9b";
-        };
+      };
       r1 = {
         nix = import ../hackage/Win32-2.8.1.0-r1-5bafa7156c3fc02a1e7e2913a241a537a5a081104803541500de84afbbffc69f.nix;
         revNum = 1;
         revTimestamp = "2018-11-28T15:14:31Z";
         sha256 = "5bafa7156c3fc02a1e7e2913a241a537a5a081104803541500de84afbbffc69f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.8.2.0" = {
     sha256 = "b5f00ded88146f316905aa5e891b9822af27fd4e197f58708505f8d6adaf21fa";
     revisions = {
@@ -613,10 +637,10 @@
         revNum = 0;
         revTimestamp = "2018-11-28T10:19:58Z";
         sha256 = "ed1d177b8e25395e9b901fa27fc1be99c07fd00312b2ce5f73147669f3eca7d8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.8.3.0" = {
     sha256 = "593fbbfef98546a224e4652aa0423b0374da8c109cd4e48f16e16b17c21f5c63";
     revisions = {
@@ -625,10 +649,10 @@
         revNum = 0;
         revTimestamp = "2019-02-16T15:16:23Z";
         sha256 = "58fa6f52e8a0d455a74bb19445c177f2cc79a0975cae5fd96e2334bd38a516d4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.8.4.0" = {
     sha256 = "af3ff1beb1bb4581653a129ab7fae4953a028e3e8c8977c814e789fd3a8fd050";
     revisions = {
@@ -637,10 +661,10 @@
         revNum = 0;
         revTimestamp = "2019-10-23T20:42:19Z";
         sha256 = "0e037a9215b60634bf8aff45f6368832d1c3005f5bb16c361f016aa779552d45";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.8.5.0" = {
     sha256 = "51edb1fe8f13625c64bead4348335fec51dcc71beafc0e8b2e9ea0cb7f5a6bc3";
     revisions = {
@@ -649,10 +673,10 @@
         revNum = 0;
         revTimestamp = "2019-12-31T12:01:40Z";
         sha256 = "50c11fce7ec29c750f199eec0bc97d42e9b8ca80abfbe068c0f474a3727b60ae";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.9.0.0" = {
     sha256 = "376884529afe486f97b7058180f42fb2c9e14459bf1e157cd429445c230e3bd5";
     revisions = {
@@ -661,8 +685,8 @@
         revNum = 0;
         revTimestamp = "2020-07-26T12:37:02Z";
         sha256 = "62e35c265cc4f1ab12db69b5e3b36958dcd03bc30d714e92dfe74706acab28bd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

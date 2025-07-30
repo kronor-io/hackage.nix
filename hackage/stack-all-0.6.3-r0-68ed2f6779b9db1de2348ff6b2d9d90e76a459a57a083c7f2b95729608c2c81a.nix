@@ -21,7 +21,7 @@
       synopsis = "CLI tool for building over Stackage major versions";
       description = "Stack-all is a tool for stack building of a Haskell project\nacross multiple Stackage major LTS versions.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "stack-all" = {
@@ -39,9 +39,9 @@
             (hsPkgs."simple-cmd-args" or (errorHandler.buildDepError "simple-cmd-args"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ] ++ (pkgs.lib).optional (flags.aeson1) (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"));
+          ] ++ pkgs.lib.optional (flags.aeson1) (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

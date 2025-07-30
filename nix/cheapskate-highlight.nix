@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-03-14T23:36:48Z";
         sha256 = "a706fed25d71e2f76006b66817e1d7681451aed8eb01e7225ad4bd71e7ffda5d";
-        };
+      };
       r1 = {
         nix = import ../hackage/cheapskate-highlight-0.1.0.0-r1-44d20a4d33819f5dfdf43287d1d50c0c502d177332e726bb304902871bee13b1.nix;
         revNum = 1;
         revTimestamp = "2017-08-06T15:08:07Z";
         sha256 = "44d20a4d33819f5dfdf43287d1d50c0c502d177332e726bb304902871bee13b1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

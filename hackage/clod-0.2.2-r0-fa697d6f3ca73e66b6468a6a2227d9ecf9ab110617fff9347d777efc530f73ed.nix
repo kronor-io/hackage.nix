@@ -21,7 +21,7 @@
       synopsis = "Project file manager for Claude AI integrations";
       description = "Clod (Claude Loader) is a utility for preparing and uploading files to Claude AI's\nProject Knowledge feature. It tracks file changes, respects .gitignore and .clodignore\npatterns, and optimizes filenames for Claude's UI.\n\nKey features:\n\n* Process all files on first run, only modified files on subsequent runs\n* Respect .gitignore and .clodignore patterns\n* Handle binary vs. text files automatically\n* Use system temporary directories for staging files\n* Create optimized filenames for Claude's UI\n* Generate a path manifest for mapping optimized names back to original paths\n* Color-coded, user-friendly terminal interface\n* Path-restricted file access to prevent unauthorized operations\n\nClod is particularly useful for reducing AI development costs while working with\nClaude. By handling file selection, staging, and tracking efficiently, it can cut\nAPI costs by 50% or more. This makes powerful AI tools accessible to students,\nbootstrappers, and developers on tight budgets, leveling the playing field between\nthe wealthiest and the scrappiest.\n\nClod implements a capability-based security model to ensure safe AI interactions\nwith the file system, and uses checksum-based file tracking with XXH3 hashes\nfor detecting modified or renamed files. It uses libmagic for robust, content-based\nfile type detection.\n\nMETA NOTE: This project represents a milestone in human-AI collaboration, with Claude\n(the AI assistant from Anthropic) writing 99.9% of the code based on guidance from Fuzz\nLeonard. The result demonstrates how powerful AI tools are best created through\ncollaborative approaches where humans and AI systems leverage their respective strengths.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."magic" or (errorHandler.buildDepError "magic"))
           (hsPkgs."file-embed" or (errorHandler.buildDepError "file-embed"))
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "clod" = {
           depends = [
@@ -62,18 +62,18 @@
             (hsPkgs."clod" or (errorHandler.buildDepError "clod"))
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "magictest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."magic" or (errorHandler.buildDepError "magic"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "clod-test" = {
           depends = [
@@ -94,9 +94,9 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

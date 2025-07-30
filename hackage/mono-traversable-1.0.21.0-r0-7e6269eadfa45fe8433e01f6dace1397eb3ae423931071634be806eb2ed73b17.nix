@@ -21,7 +21,7 @@
       synopsis = "Type classes for mapping, folding, and traversing monomorphic containers";
       description = "Please see the README at <https://www.stackage.org/package/mono-traversable>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -53,13 +53,13 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "all" = {
           depends = [
@@ -72,9 +72,9 @@
             (hsPkgs."mwc-random" or (errorHandler.buildDepError "mwc-random"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

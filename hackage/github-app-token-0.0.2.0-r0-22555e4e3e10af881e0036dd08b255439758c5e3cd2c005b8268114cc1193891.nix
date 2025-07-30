@@ -21,7 +21,7 @@
       synopsis = "Generate an installation access token for a GitHub App";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "readme" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
             (hsPkgs."markdown-unlit" or (errorHandler.buildDepError "markdown-unlit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -65,9 +65,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

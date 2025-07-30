@@ -21,7 +21,7 @@
       synopsis = "Parser, pretty-printer, and more for the Modula-2 programming language";
       description = "The library and the executable supports two versions of the Modula-2 programming language: as described by the\norginal language report and as standardized by the ISO.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."grammatical-parsers" or (errorHandler.buildDepError "grammatical-parsers"))
           (hsPkgs."deep-transformations" or (errorHandler.buildDepError "deep-transformations"))
           (hsPkgs."language-oberon" or (errorHandler.buildDepError "language-oberon"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "parse" = {
           depends = [
@@ -56,10 +56,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."language-oberon" or (errorHandler.buildDepError "language-oberon"))
             (hsPkgs."language-Modula2" or (errorHandler.buildDepError "language-Modula2"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "examples" = {
           depends = [
@@ -75,9 +75,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."language-oberon" or (errorHandler.buildDepError "language-oberon"))
             (hsPkgs."language-Modula2" or (errorHandler.buildDepError "language-Modula2"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

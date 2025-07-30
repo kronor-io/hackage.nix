@@ -21,7 +21,7 @@
       synopsis = "Brillo picture data types and rendering functions.";
       description = "Brillo picture data types and rendering functions.\nThese functions don't do any window management.\nIf you want Brillo to setup your window as well,\nthen use the plain @brillo@ package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."OpenGL" or (errorHandler.buildDepError "OpenGL"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

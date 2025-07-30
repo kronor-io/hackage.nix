@@ -22,13 +22,13 @@
       description = "relocant documentation is at https://github.com/supki/relocant";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -45,18 +45,18 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "relocant" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."relocant" or (errorHandler.buildDepError "relocant"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."relocant" or (errorHandler.buildDepError "relocant"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

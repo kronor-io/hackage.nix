@@ -21,14 +21,14 @@
       synopsis = "Core definitions for weave";
       description = "The four variants of @Weave@, a control structure for defining\n/breadth-first unfolds/ compositionally.\n.\nSee <https://hackage.haskell.org/package/weave weave> for more information.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."some" or (errorHandler.buildDepError "some"))
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

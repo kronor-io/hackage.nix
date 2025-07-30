@@ -22,10 +22,10 @@
       description = "The Nekos.best API Wrapper in Haskell is a powerful and flexible tool designed to interact seamlessly with the Nekos.best API,\na popular service for fetching adorable and charming neko-themed images, gifs";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."http-client-tls" or (errorHandler.buildDepError "http-client-tls"))
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

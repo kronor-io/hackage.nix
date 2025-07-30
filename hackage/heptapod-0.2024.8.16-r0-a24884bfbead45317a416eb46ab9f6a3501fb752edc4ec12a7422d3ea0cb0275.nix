@@ -21,7 +21,7 @@
       synopsis = "Generate UUIDv7 values.";
       description = "Heptapod generates UUIDv7 values.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."entropy" or (errorHandler.buildDepError "entropy"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."uuid-types" or (errorHandler.buildDepError "uuid-types"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

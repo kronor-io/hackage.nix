@@ -14,7 +14,7 @@
       identifier = {
         name = "sandwich-contexts-kubernetes";
         version = "0.1.0.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Tom McLaughlin";
       maintainer = "tom@codedown.io";
@@ -24,7 +24,7 @@
       synopsis = "Sandwich test contexts for Kubernetes";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -59,9 +59,9 @@
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "sandwich-contexts-kubernetes-test" = {
           depends = [
@@ -75,9 +75,9 @@
             (hsPkgs."string-interpolate" or (errorHandler.buildDepError "string-interpolate"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

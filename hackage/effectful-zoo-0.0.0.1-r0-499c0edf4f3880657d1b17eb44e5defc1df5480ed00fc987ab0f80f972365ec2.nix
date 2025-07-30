@@ -21,15 +21,15 @@
       synopsis = "Effectful effects for testing";
       description = "See https://hackage.haskell.org/package/effectful-zoo/docs/effectful-zoo.html";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "core" = {
           depends = [
             (hsPkgs."effectful" or (errorHandler.buildDepError "effectful"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "datalog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -39,9 +39,9 @@
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hedgehog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -59,9 +59,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "log" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -70,10 +70,10 @@
             (hsPkgs."effectful-zoo".components.sublibs.core or (errorHandler.buildDepError "effectful-zoo:core"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "effectful-zoo-test" = {
           depends = [
@@ -83,9 +83,9 @@
             (hsPkgs."effectful-zoo".components.sublibs.log or (errorHandler.buildDepError "effectful-zoo:log"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

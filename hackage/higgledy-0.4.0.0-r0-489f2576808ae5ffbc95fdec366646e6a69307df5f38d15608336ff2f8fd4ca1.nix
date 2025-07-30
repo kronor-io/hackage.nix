@@ -22,11 +22,11 @@
       description = "Use the generic representation of an ADT to get a higher-kinded data-style interface automatically.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."generic-lens-core" or (errorHandler.buildDepError "generic-lens-core"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."named" or (errorHandler.buildDepError "named"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -49,9 +49,9 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -60,9 +60,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "readme" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -70,12 +70,12 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."higgledy" or (errorHandler.buildDepError "higgledy"))
             (hsPkgs."named" or (errorHandler.buildDepError "named"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.markdown-unlit.components.exes.markdown-unlit or (pkgs.buildPackages.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
-            ];
+            (hsPkgs.pkgsBuildBuild.markdown-unlit.components.exes.markdown-unlit or (pkgs.pkgsBuildBuild.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

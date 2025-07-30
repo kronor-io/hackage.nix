@@ -21,7 +21,7 @@
       synopsis = "Stream data to or from LMDB databases using the streamly library.";
       description = "Please see the README on GitHub at <https://github.com/shlok/streamly-lmdb#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,10 +35,10 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."streamly" or (errorHandler.buildDepError "streamly"))
           (hsPkgs."streamly-core" or (errorHandler.buildDepError "streamly-core"))
-          ];
+        ];
         libs = [ (pkgs."lmdb" or (errorHandler.sysDepError "lmdb")) ];
         buildable = true;
-        };
+      };
       tests = {
         "streamly-lmdb-test" = {
           depends = [
@@ -60,10 +60,10 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           libs = [ (pkgs."lmdb" or (errorHandler.sysDepError "lmdb")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

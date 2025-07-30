@@ -21,7 +21,7 @@
       synopsis = "A package with basic parsing utilities for several Bioinformatic data formats.";
       description = "Contains utilities to parse and write Eigenstrat, Fasta, FreqSum, VCF, Plink and other file formats used in population genetics analyses.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."pipes-zlib" or (errorHandler.buildDepError "pipes-zlib"))
           (hsPkgs."streaming-commons" or (errorHandler.buildDepError "streaming-commons"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "sequenceFormatTests" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."pipes-zlib" or (errorHandler.buildDepError "pipes-zlib"))
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

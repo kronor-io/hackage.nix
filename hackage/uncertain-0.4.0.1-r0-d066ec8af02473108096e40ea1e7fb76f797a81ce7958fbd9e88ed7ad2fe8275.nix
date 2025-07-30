@@ -21,7 +21,7 @@
       synopsis = "Manipulating numbers with inherent experimental/measurement uncertainty";
       description = "Provides tools to manipulate numbers with inherent experimental/measurement\nuncertainty, and propagates them through functions based on principles from\nstatistics.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,8 +33,8 @@
           (hsPkgs."mwc-random" or (errorHandler.buildDepError "mwc-random"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

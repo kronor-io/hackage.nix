@@ -21,7 +21,7 @@
       synopsis = "Bindings for secp256k1";
       description = "Sign and verify signatures using the secp256k1 library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,12 +34,12 @@
           (hsPkgs."memory" or (errorHandler.buildDepError "memory"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."libsecp256k1" or (errorHandler.pkgConfDepError "libsecp256k1"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."monad-par" or (errorHandler.buildDepError "monad-par"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

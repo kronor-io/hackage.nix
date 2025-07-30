@@ -21,7 +21,7 @@
       synopsis = "A package for simple, fast radiocarbon calibration";
       description = "Radiocarbon calibration with the intercept method optimised for fast calibration of many dates.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."MonadRandom" or (errorHandler.buildDepError "MonadRandom"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."file-embed" or (errorHandler.buildDepError "file-embed"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "currycarbon" = {
           depends = [
@@ -43,10 +43,10 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

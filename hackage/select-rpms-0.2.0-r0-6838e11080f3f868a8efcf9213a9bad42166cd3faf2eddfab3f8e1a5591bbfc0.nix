@@ -21,7 +21,7 @@
       synopsis = "Select a subset of RPM packages";
       description = "A library for selecting a subset of RPM (sub)packages.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,8 +35,8 @@
           (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
           (hsPkgs."simple-cmd-args" or (errorHandler.buildDepError "simple-cmd-args"))
           (hsPkgs."simple-prompt" or (errorHandler.buildDepError "simple-prompt"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

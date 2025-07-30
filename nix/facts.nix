@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-06-16T10:52:33Z";
         sha256 = "a6bc113b6a1b91cd028abab09f9e609c748abc13185b2478ef9d8d1acd58840d";
-        };
+      };
       r1 = {
         nix = import ../hackage/facts-0.0.1.0-r1-97fe2f20dd9da98b19d42946d9431d9d45ccc2c8836fdacbdce6d348f7b8660f.nix;
         revNum = 1;
         revTimestamp = "2018-09-25T17:21:25Z";
         sha256 = "97fe2f20dd9da98b19d42946d9431d9d45ccc2c8836fdacbdce6d348f7b8660f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

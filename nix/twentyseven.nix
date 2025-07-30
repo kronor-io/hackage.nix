@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-03-16T17:40:35Z";
         sha256 = "bd1ba5e04b717c5b95a236c72af08ce7614bec1c727515578e21efe0119700b1";
-        };
+      };
       r1 = {
         nix = import ../hackage/twentyseven-0.0.0-r1-32b1d53bc3a5a56998f35452cbcdc9d00db7e4848e50ebd8fec2607d2243f147.nix;
         revNum = 1;
         revTimestamp = "2016-05-17T16:01:52Z";
         sha256 = "32b1d53bc3a5a56998f35452cbcdc9d00db7e4848e50ebd8fec2607d2243f147";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

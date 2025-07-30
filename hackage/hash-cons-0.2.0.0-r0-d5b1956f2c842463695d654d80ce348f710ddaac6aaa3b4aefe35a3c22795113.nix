@@ -21,15 +21,15 @@
       synopsis = "Opportunistic hash-consing data structure";
       description = "Provides a pure interface for hash-consing values.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

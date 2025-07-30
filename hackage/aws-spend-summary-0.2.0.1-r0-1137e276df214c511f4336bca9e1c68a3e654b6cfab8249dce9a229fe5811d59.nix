@@ -21,7 +21,7 @@
       synopsis = "Extract recent daily AWS costs";
       description = "Please see the README on GitHub at <https://github.com/danielrolls/aws-spend-summary>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."timelens" or (errorHandler.buildDepError "timelens"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "aws-spend-summary" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aws-spend-summary" or (errorHandler.buildDepError "aws-spend-summary"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

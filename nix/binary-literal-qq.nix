@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2012-09-24T23:23:07Z";
         sha256 = "3c6dadba88a4b19c5f0d40c646bbf27fa190ae6fb88a3feb207e4030a2c19f30";
-        };
+      };
       r1 = {
         nix = import ../hackage/binary-literal-qq-1.0-r1-61a53a601a913dd5fe5d52bc552f965d62d448ecea220dc1acb4884b67f54667.nix;
         revNum = 1;
         revTimestamp = "2016-01-11T10:09:35Z";
         sha256 = "61a53a601a913dd5fe5d52bc552f965d62d448ecea220dc1acb4884b67f54667";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

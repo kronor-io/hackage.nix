@@ -21,7 +21,7 @@
       synopsis = "[Deprecated] A Better way of modeling web resources.";
       description = "Notice: This package is deprecated because I no longer\nmaintain it. If you would like to take it over I\nam happy to entertain requests.\nAllows users of the Scotty web framework to model\nresources more like the HTTP standard models them.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

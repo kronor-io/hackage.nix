@@ -21,7 +21,7 @@
       synopsis = "higher-order effects done right";
       description = "This library is the battery-included version of the [heftia](https://hackage.haskell.org/package/heftia) package,\nproviding interpreters for standard effects.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."free" or (errorHandler.buildDepError "free"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "Teletype" = {
           depends = [
@@ -46,9 +46,9 @@
             (hsPkgs."data-effects" or (errorHandler.buildDepError "data-effects"))
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "KeyedEffects" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -56,9 +56,9 @@
             (hsPkgs."data-effects" or (errorHandler.buildDepError "data-effects"))
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Logging" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -70,9 +70,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."loglevel" or (errorHandler.buildDepError "loglevel"))
             (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Continuation" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -80,9 +80,9 @@
             (hsPkgs."data-effects" or (errorHandler.buildDepError "data-effects"))
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Continuation2" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -91,9 +91,9 @@
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
             (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Writer" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -101,9 +101,9 @@
             (hsPkgs."data-effects" or (errorHandler.buildDepError "data-effects"))
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SemanticsZoo" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -111,10 +111,10 @@
             (hsPkgs."data-effects" or (errorHandler.buildDepError "data-effects"))
             (hsPkgs."heftia" or (errorHandler.buildDepError "heftia"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -125,12 +125,12 @@
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

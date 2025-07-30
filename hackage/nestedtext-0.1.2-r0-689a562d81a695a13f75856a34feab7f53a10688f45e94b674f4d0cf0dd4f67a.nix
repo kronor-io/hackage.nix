@@ -21,7 +21,7 @@
       synopsis = "NestedText: A Human Friendly Data Format";
       description = "Haskell implementation of [NestedText](https://nestedtext.org/) 3.7\nparser and serializer.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."generic-data" or (errorHandler.buildDepError "generic-data"))
           (hsPkgs."pipes-parse" or (errorHandler.buildDepError "pipes-parse"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "nested-text-test" = {
           depends = [
@@ -62,12 +62,12 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

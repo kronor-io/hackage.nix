@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2008-03-10T06:22:16Z";
         sha256 = "a85b98f5de7a834d954480bf4366c0bc76e24f482a6efa8649805f482bf14620";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "3.0.1.1" = {
     sha256 = "cf458242f51dba721f56d20baa8eb63e70196601b0a554d68f6913fd58f60813";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2009-01-18T03:00:17Z";
         sha256 = "8ae13876ac8c618fe039ea10d5e32c50a6c670ef0f43e04d13ec7acebdec094b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "3.0.2" = {
     sha256 = "f8d9ee96f639d488a0ec28cffca533799b4045489286610ffc69269dce7030e8";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2009-04-19T00:52:22Z";
         sha256 = "195c48367076c787bc992f915c06fc8e2b3e4625d9d40a703a5b897c4dcc8f3b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "3.0.3" = {
     sha256 = "b544fef0ac41c1c7b30555bd2285717e257dabe7d2981641c941f3ea948b72a2";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2009-04-19T21:42:04Z";
         sha256 = "8a742d9a8a42c6dbc1cbd59e579bdc95638908a49618b0056a9ef7a8b1016a80";
-        };
+      };
       r1 = {
         nix = import ../hackage/greencard-3.0.3-r1-90afcff72cf2d1ecb42816067cb6f639d1b90a0f857b21a4d649181acce94ee5.nix;
         revNum = 1;
         revTimestamp = "2025-04-06T15:07:06Z";
         sha256 = "90afcff72cf2d1ecb42816067cb6f639d1b90a0f857b21a4d649181acce94ee5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "3.0.4" = {
     sha256 = "27d69fdb778af4284e800b17c34abd74dd466af08bbef7b15b6fee4ba5657d09";
     revisions = {
@@ -61,16 +61,16 @@
         revNum = 0;
         revTimestamp = "2013-07-29T20:05:01Z";
         sha256 = "bd1c4fa69da9553db295324f81c94dcaf16ca17962bd1a7a01f226505fd2e60a";
-        };
+      };
       r1 = {
         nix = import ../hackage/greencard-3.0.4-r1-9429e1e6ffa4f8fa58e650772b980a2efd98b4298ef5bd5bf17ed778f4c46d99.nix;
         revNum = 1;
         revTimestamp = "2025-04-05T18:53:50Z";
         sha256 = "9429e1e6ffa4f8fa58e650772b980a2efd98b4298ef5bd5bf17ed778f4c46d99";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "3.0.4.1" = {
     sha256 = "a3e71f4c350a3fa3e7726225cf3e6302107c1dd3b2c2c91c199fb5ed17de23cf";
     revisions = {
@@ -79,16 +79,16 @@
         revNum = 0;
         revTimestamp = "2013-08-03T09:03:56Z";
         sha256 = "8597ec4836f418550516ae022530cef53bc5e9daabeec0afa5345b9a6df78a41";
-        };
+      };
       r1 = {
         nix = import ../hackage/greencard-3.0.4.1-r1-eb474a27b08814a60bdb482e9a7fd328c5fae6ab78ed037b87d4403045926fae.nix;
         revNum = 1;
         revTimestamp = "2025-04-05T18:54:04Z";
         sha256 = "eb474a27b08814a60bdb482e9a7fd328c5fae6ab78ed037b87d4403045926fae";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "3.0.4.2" = {
     sha256 = "be6423983f12b4e24bc3293102844b10ba83433d394a8b9d24b9688dabb989ee";
     revisions = {
@@ -97,14 +97,14 @@
         revNum = 0;
         revTimestamp = "2014-05-03T19:00:46Z";
         sha256 = "50967245d12ff8ed11ad1eb9201480b41dbab8dbd8e5a9e6c345ac907a044716";
-        };
+      };
       r1 = {
         nix = import ../hackage/greencard-3.0.4.2-r1-f7d2ce59bff1e62c6932e80eadc0b6447089e590129d98b35f58839da1bc98e9.nix;
         revNum = 1;
         revTimestamp = "2025-04-05T18:57:32Z";
         sha256 = "f7d2ce59bff1e62c6932e80eadc0b6447089e590129d98b35f58839da1bc98e9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

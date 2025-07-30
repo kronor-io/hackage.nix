@@ -21,7 +21,7 @@
       synopsis = "A library for working with .cabal files";
       description = "This library provides tools for reading and manipulating the .cabal file\nformat.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,11 +39,11 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          ];
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

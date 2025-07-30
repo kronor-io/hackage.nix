@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:30:01Z";
         sha256 = "45584ea691e34c94318008cf419f43b351ad6f3f87afcb525d58570865f1b6a3";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "0b0e654df7bf54672ff8b34feff48208a07ec8215c69f7665946f4b3386a762d";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:27:57Z";
         sha256 = "6680e1ff58f907b138bc60f52459ba76c8f631026b14bba5f51cd6da2092f2dc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "6393b6bba50fa34e05b2ad421bc0495d876ceddbb1699444bda9ae30c3c15a61";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:52:55Z";
         sha256 = "fa376b198ac8217df8e0244f86477c15eeefef52cf442d1153370006d1ba0aac";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "008cceaf26e8fd7e818fb330ac3eb842e50e4c1aa4839716bf139462dea933fd";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:00Z";
         sha256 = "17198fe5c23c0e68f6507d3c3246fe8c4952e8400d955af1de52bc515b383ec4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "421ed3b13053e905c7346265d24ff0023116829a8571829b9fd30b5bfed9ec2f";
     revisions = {
@@ -55,8 +55,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:36:41Z";
         sha256 = "3a027a3a800db7441dff8e6524dc505125441e84d261ae8c3de588c931ca7982";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "5a9cd6f0f6841e54a34e3e4d148ae246dd3c5cd9c7a07d4423e82bae7d467b44";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-servicemanagement-1.0.0-r0-e6b4b89c408992535d0d86a33989081be556a9d8870076253911ac54d0b6dc53.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:06Z";
+        sha256 = "e6b4b89c408992535d0d86a33989081be556a9d8870076253911ac54d0b6dc53";
+      };
+      default = "r0";
+    };
+  };
+}

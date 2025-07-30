@@ -21,7 +21,7 @@
       synopsis = "SPDX license expression language, Extras";
       description = "Cabal provides SPDX types. This package provides some extras.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."puresat" or (errorHandler.buildDepError "puresat"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -41,10 +41,10 @@
             (hsPkgs."spdx" or (errorHandler.buildDepError "spdx"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."spdx" or (errorHandler.buildDepError "spdx"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

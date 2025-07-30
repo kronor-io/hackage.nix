@@ -7,8 +7,20 @@
         revNum = 0;
         revTimestamp = "2025-03-22T20:43:49Z";
         sha256 = "65e8c5d749a6480ce5245fd20f3b3773f4c43a254d64ba6bade6c6e218e30eeb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.8.0" = {
+    sha256 = "f4df10aee337377ec4e12cce91c1b95ce2d034951338f928934b8ccec4255b48";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ogma-language-lustre-1.8.0-r0-d54428cc2870abf2987c6405eb05175ad879c4b315a24f485ba44714249f8c78.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-13T23:10:17Z";
+        sha256 = "d54428cc2870abf2987c6405eb05175ad879c4b315a24f485ba44714249f8c78";
+      };
+      default = "r0";
+    };
+  };
+}

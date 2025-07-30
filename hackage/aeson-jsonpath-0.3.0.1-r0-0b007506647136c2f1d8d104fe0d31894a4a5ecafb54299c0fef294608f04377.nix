@@ -21,7 +21,7 @@
       synopsis = "Parse and run JSONPath queries on Aeson documents";
       description = "RFC 9535 compliant JSONPath parsing and querying\npackage. JSONPath is similar to XPath for querying\nXML documents.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

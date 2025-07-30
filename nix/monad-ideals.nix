@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-05-01T14:24:23Z";
         sha256 = "66014efc4bd1dbd57c4034e14261047d71d85ec41febd9836ae0f3002b884095";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "ae7dd3b84fedd7db399808f9915894b05977ec9111bde25ada431e39d3588f13";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2024-07-30T04:49:26Z";
         sha256 = "484d9feda4ea66661269052eb549334ec8d27ede44b4c393a6829832439bb299";
-        };
+      };
       r1 = {
         nix = import ../hackage/monad-ideals-0.1.1.0-r1-ecfc141bfb86d8ced35c570b781e34932dd17cd7b3646ee688a51ee69c752f08.nix;
         revNum = 1;
         revTimestamp = "2024-12-21T10:58:04Z";
         sha256 = "ecfc141bfb86d8ced35c570b781e34932dd17cd7b3646ee688a51ee69c752f08";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

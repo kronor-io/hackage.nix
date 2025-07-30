@@ -21,7 +21,7 @@
       synopsis = "Sharing code for serialization between binary and cereal";
       description = "Sharing code for serialization between binary and cereal.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

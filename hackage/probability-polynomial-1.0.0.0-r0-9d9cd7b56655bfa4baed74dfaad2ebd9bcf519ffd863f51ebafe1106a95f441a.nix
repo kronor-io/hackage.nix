@@ -21,7 +21,7 @@
       synopsis = "Probability distributions via piecewise polynomials";
       description = "Package for manipulating finite probability distributions.\n\nBoth discrete, continuous and mixed probability distributions are supported.\nContinuous probability distributions are represented\nin terms of piecewise polynomials.\n\nAlso includes an implementation of polynomials in one variable.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."exact-combinatorics" or (errorHandler.buildDepError "exact-combinatorics"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -40,13 +40,13 @@
             (hsPkgs."probability-polynomial" or (errorHandler.buildDepError "probability-polynomial"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "probability-polynomial-benchmark" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."probability-polynomial" or (errorHandler.buildDepError "probability-polynomial"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

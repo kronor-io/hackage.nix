@@ -22,11 +22,11 @@
       description = "If you use Yaya in your own code and have tests written using\nQuickCheck, then this library will help you with generating trees,\nverifying type class instances, etc.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -34,18 +34,18 @@
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."yaya" or (errorHandler.buildDepError "yaya"))
           (hsPkgs."splitmix" or (errorHandler.buildDepError "splitmix"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."yaya-quickcheck" or (errorHandler.buildDepError "yaya-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,20 +21,20 @@
       synopsis = "Existential type that can be constrained";
       description = "This library provides utilities for working with existential types and type-level constraints.\nIt allows you to enforce multiple constraints on polymorphic types and containers complementing the package some.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "constrained-some-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."constrained-some" or (errorHandler.buildDepError "constrained-some"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

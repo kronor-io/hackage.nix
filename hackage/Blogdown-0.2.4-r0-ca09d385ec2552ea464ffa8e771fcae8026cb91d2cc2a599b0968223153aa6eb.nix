@@ -22,11 +22,11 @@
       description = "A library and executable that implement a modified, extended version of Markdown designed for writing blog posts.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.MissingH or (pkgs.buildPackages.MissingH or (errorHandler.setupDepError "MissingH")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.MissingH or (pkgs.pkgsBuildBuild.MissingH or (errorHandler.setupDepError "MissingH")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."MissingH" or (errorHandler.buildDepError "MissingH"))
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "Blogdown" = {
           depends = [
@@ -46,10 +46,10 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."MissingH" or (errorHandler.buildDepError "MissingH"))
             (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "Test" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."MissingH" or (errorHandler.buildDepError "MissingH"))
             (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "Benchmark" = {
           depends = [
@@ -71,9 +71,9 @@
             (hsPkgs."MissingH" or (errorHandler.buildDepError "MissingH"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

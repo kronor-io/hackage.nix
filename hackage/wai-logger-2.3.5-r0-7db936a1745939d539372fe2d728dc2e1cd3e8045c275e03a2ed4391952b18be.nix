@@ -22,11 +22,11 @@
       description = "A logging system for WAI";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -37,18 +37,18 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."wai-logger" or (errorHandler.buildDepError "wai-logger"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

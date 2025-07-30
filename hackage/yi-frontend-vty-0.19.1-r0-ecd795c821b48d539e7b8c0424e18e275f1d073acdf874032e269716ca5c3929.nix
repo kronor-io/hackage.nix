@@ -21,7 +21,7 @@
       synopsis = "Vty frontend for Yi editor";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,13 +36,13 @@
           (hsPkgs."yi-core" or (errorHandler.buildDepError "yi-core"))
           (hsPkgs."yi-language" or (errorHandler.buildDepError "yi-language"))
           (hsPkgs."yi-rope" or (errorHandler.buildDepError "yi-rope"))
-          ] ++ (if flags.old-vty
+        ] ++ (if flags.old-vty
           then [ (hsPkgs."vty" or (errorHandler.buildDepError "vty")) ]
           else [
             (hsPkgs."vty" or (errorHandler.buildDepError "vty"))
             (hsPkgs."vty-crossplatform" or (errorHandler.buildDepError "vty-crossplatform"))
-            ]);
+          ]);
         buildable = true;
-        };
       };
-    }
+    };
+  }

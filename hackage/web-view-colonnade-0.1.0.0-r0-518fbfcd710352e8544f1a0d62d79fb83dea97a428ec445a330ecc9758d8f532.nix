@@ -21,7 +21,7 @@
       synopsis = "Build HTML tables using web-view and colonnade.";
       description = "Build HTML tables using web-view and colonnade. This module provides\nfunctionality similar to @lucid-colonnade@ and @blaze-colonnade@ but for the\nweb-view library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "web-view-colonnade-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
             (hsPkgs."web-view-colonnade" or (errorHandler.buildDepError "web-view-colonnade"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

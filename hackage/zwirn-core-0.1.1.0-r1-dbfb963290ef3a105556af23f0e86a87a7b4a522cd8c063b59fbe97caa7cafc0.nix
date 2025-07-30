@@ -21,7 +21,7 @@
       synopsis = "library for manipulating functions of time.";
       description = "zwirn-core provides the semantics for the zwirn live coding language.\nIt is inspired by TidalCycles and implements some of the same API for manipulating functions of time.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."hosc" or (errorHandler.buildDepError "hosc"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -45,19 +45,19 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."zwirn-core" or (errorHandler.buildDepError "zwirn-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "zwirn-benchmarks" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."zwirn-core" or (errorHandler.buildDepError "zwirn-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

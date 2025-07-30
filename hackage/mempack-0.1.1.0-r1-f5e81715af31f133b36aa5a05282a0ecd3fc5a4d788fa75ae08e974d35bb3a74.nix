@@ -21,7 +21,7 @@
       synopsis = "Short description";
       description = "Please see the README on GitHub at <https://github.com/lehins/mempack#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -30,9 +30,9 @@
           (hsPkgs."FailT" or (errorHandler.buildDepError "FailT"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "9.4")) (hsPkgs."data-array-byte" or (errorHandler.buildDepError "data-array-byte"))) ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "9.0")) (hsPkgs."integer-gmp" or (errorHandler.buildDepError "integer-gmp"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "9.4")) (hsPkgs."data-array-byte" or (errorHandler.buildDepError "data-array-byte"))) ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "9.0")) (hsPkgs."integer-gmp" or (errorHandler.buildDepError "integer-gmp"));
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -45,10 +45,10 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "9.4")) (hsPkgs."data-array-byte" or (errorHandler.buildDepError "data-array-byte"));
+          ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "9.4")) (hsPkgs."data-array-byte" or (errorHandler.buildDepError "data-array-byte"));
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."serialise" or (errorHandler.buildDepError "serialise"))
             (hsPkgs."store" or (errorHandler.buildDepError "store"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

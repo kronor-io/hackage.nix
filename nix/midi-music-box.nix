@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-05-23T18:44:18Z";
         sha256 = "4eb8336d36453946009de5553d60a881f0ffc7233aec4ee6a1081063df4e85f0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "1e830c1f871cbf8f5b478c5923d52f76457b15eda2d64a4bf9e6c2016ed47de9";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-04-24T09:13:13Z";
         sha256 = "b9a72bf94f436f5447081539e2b33dea70fd39b40e66a93cf4ef9d6600ba7eb8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.2" = {
     sha256 = "cd766d216a6ff6318bc50f891be1ec8efefae06dcfc34ee3afe007b7dc2e0313";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-03-25T10:20:59Z";
         sha256 = "1f2626d802f344639363445200ba73ec14f79de08fa081d6676ef93499f8358a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.3" = {
     sha256 = "e698cefeee56bc3561376a6dfab990e0a48388938d80fb3410ed017f6b4ae141";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2017-03-25T16:55:02Z";
         sha256 = "1cbb6d769d6a79a154a389b29b12dbdf6a41c676ba999754ca08a24ad8b38581";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.4" = {
     sha256 = "373c67bf3135499331ec00748dd003a26155f4c567ab06105c92d9e5d6d81651";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2017-06-12T14:55:07Z";
         sha256 = "d358cdd28736957b5ea66329cfe1ea9552f86ef51612278dc12317feee499c18";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.5" = {
     sha256 = "0fd022f733f7b4be77b4ea6f3ff567ee8cf4d473b8cbcd518978aa30aa9afafd";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2018-09-01T07:31:13Z";
         sha256 = "e7dbb6721be49aff60ab481ffc221dcda1d922da0d2d11dd5feb5032762cce38";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1" = {
     sha256 = "5f4d5c4a2969b0eaecf49c78eda3ff1e802b24ff78955ad1ba43662dd228e0ac";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2019-06-02T15:33:35Z";
         sha256 = "5e5db97bad87fe8309188306a1135e034a4003dd27a92a452ca9028f5c4c4467";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "eb1f5d5627a795140e19dbebaba1396f8f97517bdde31d2372876a6d78442296";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2019-07-06T07:16:24Z";
         sha256 = "2a12364e74366ea309e09f3b3a29fce6eb8106ded4d17d8cf51834eb4068f60d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.2" = {
     sha256 = "8986462f9075f97dd2da2a885d3063d4a303f51f1377dba5f396026f74e4d266";
     revisions = {
@@ -103,38 +103,50 @@
         revNum = 0;
         revTimestamp = "2021-11-14T16:52:12Z";
         sha256 = "583cc137197ff7aa9dc0618550f604129c87253896413cbd2ba3e23735c9ff47";
-        };
+      };
       r1 = {
         nix = import ../hackage/midi-music-box-0.0.1.2-r1-67b1dae73c6928245c9573f3ea4d4cc49b11fae106d9d85a642fbc0951870afd.nix;
         revNum = 1;
         revTimestamp = "2021-11-14T16:57:04Z";
         sha256 = "67b1dae73c6928245c9573f3ea4d4cc49b11fae106d9d85a642fbc0951870afd";
-        };
+      };
       r2 = {
         nix = import ../hackage/midi-music-box-0.0.1.2-r2-f5c4de0bb951829a692d93d8ee0172e291047517ea8583b6dd2391d7e22ca9f0.nix;
         revNum = 2;
         revTimestamp = "2022-02-04T12:16:31Z";
         sha256 = "f5c4de0bb951829a692d93d8ee0172e291047517ea8583b6dd2391d7e22ca9f0";
-        };
+      };
       r3 = {
         nix = import ../hackage/midi-music-box-0.0.1.2-r3-13e52a3727ed867e8ccdeffdd677d90895f2972422f0e750644d04ae2fae017a.nix;
         revNum = 3;
         revTimestamp = "2023-05-24T23:03:02Z";
         sha256 = "13e52a3727ed867e8ccdeffdd677d90895f2972422f0e750644d04ae2fae017a";
-        };
+      };
       r4 = {
         nix = import ../hackage/midi-music-box-0.0.1.2-r4-0c36f54f96f7b61c06b43d2071ebb7493cd54dc3a3e084de49368a82c668efd2.nix;
         revNum = 4;
         revTimestamp = "2024-10-26T18:12:35Z";
         sha256 = "0c36f54f96f7b61c06b43d2071ebb7493cd54dc3a3e084de49368a82c668efd2";
-        };
+      };
       r5 = {
         nix = import ../hackage/midi-music-box-0.0.1.2-r5-1ff049d9577590b729a83cf0f6c583d572720bed101cf932e8af95d351630d48.nix;
         revNum = 5;
         revTimestamp = "2025-02-15T09:33:31Z";
         sha256 = "1ff049d9577590b729a83cf0f6c583d572720bed101cf932e8af95d351630d48";
-        };
-      default = "r5";
       };
+      r6 = {
+        nix = import ../hackage/midi-music-box-0.0.1.2-r6-9cbbbdcb89b15c7ae6f4b3551f23a9fd35fe19179a87ce7b974c71c06b1a002d.nix;
+        revNum = 6;
+        revTimestamp = "2025-05-19T07:25:21Z";
+        sha256 = "9cbbbdcb89b15c7ae6f4b3551f23a9fd35fe19179a87ce7b974c71c06b1a002d";
+      };
+      r7 = {
+        nix = import ../hackage/midi-music-box-0.0.1.2-r7-17c012c83cf8445f7c5be3277fbf40e55e5405fa1505b92e6426b2c26da3b60b.nix;
+        revNum = 7;
+        revTimestamp = "2025-06-04T09:47:11Z";
+        sha256 = "17c012c83cf8445f7c5be3277fbf40e55e5405fa1505b92e6426b2c26da3b60b";
+      };
+      default = "r7";
     };
-  }
+  };
+}

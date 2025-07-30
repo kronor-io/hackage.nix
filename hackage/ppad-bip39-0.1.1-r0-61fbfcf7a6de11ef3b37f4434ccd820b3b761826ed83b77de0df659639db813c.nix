@@ -21,7 +21,7 @@
       synopsis = "BIP39 mnemonic codes.";
       description = "[BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)\nmnemonic codes for deterministic key generation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "bip39-tests" = {
           depends = [
@@ -51,10 +51,10 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bip39-bench" = {
           depends = [
@@ -64,9 +64,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."ppad-bip39" or (errorHandler.buildDepError "ppad-bip39"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

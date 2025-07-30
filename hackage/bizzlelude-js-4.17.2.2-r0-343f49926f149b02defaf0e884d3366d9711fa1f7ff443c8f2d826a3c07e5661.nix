@@ -21,7 +21,7 @@
       synopsis = "A lousy Prelude replacement by a lousy dude";
       description = "A lousy Prelude replacement by a lousy dude.  Imports common things while trying to avoid importing things that could cause naming conflicts.  Favors `Text` over `String`.  Wants using `IO` to be painful.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."regexpr" or (errorHandler.buildDepError "regexpr"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

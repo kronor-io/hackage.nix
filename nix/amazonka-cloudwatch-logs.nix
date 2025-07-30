@@ -7,22 +7,22 @@
         revNum = 0;
         revTimestamp = "2014-11-22T12:50:52Z";
         sha256 = "74f9bdd5fea4479b51c3df0c8413d6877b42f690fbedc5736c87d3e6a7d9f1c0";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.0-r1-e088fec3b48bf062b95afdd88a44c0180e886daca553a5e3edda83351d077d73.nix;
         revNum = 1;
         revTimestamp = "2023-07-04T01:12:40Z";
         sha256 = "e088fec3b48bf062b95afdd88a44c0180e886daca553a5e3edda83351d077d73";
-        };
+      };
       r2 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.0-r2-14341f532e9d2a9c560f8fd7644aeb470052c46719cb5dab0a4162efac3e351a.nix;
         revNum = 2;
         revTimestamp = "2024-05-13T07:43:22Z";
         sha256 = "14341f532e9d2a9c560f8fd7644aeb470052c46719cb5dab0a4162efac3e351a";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.0.1" = {
     sha256 = "19a401116969803607e744abdec8536a3461f9a7a95923395d1fd44ebed3470d";
     revisions = {
@@ -31,16 +31,16 @@
         revNum = 0;
         revTimestamp = "2014-11-23T19:14:27Z";
         sha256 = "1c272eb14e777bb2c9f544f39da2093b8e5f1f82504068678fcf08c322f8d535";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.1-r1-23b5cd56d8f53dc2ca606628d06f7267465cd33cacecdd7d8fd0b9dfb502ab3c.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:22Z";
         sha256 = "23b5cd56d8f53dc2ca606628d06f7267465cd33cacecdd7d8fd0b9dfb502ab3c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.2" = {
     sha256 = "c7b238febb1bbf278436cf5df51b5564484551a6de6859f7bc79809329feeb40";
     revisions = {
@@ -49,16 +49,16 @@
         revNum = 0;
         revTimestamp = "2014-11-25T12:28:11Z";
         sha256 = "ad03011775f0478b0bafa472691f772d6e503ab8f75f7b9aa44e784877f7be52";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.2-r1-cd73b48ccc4e067028beda8465db65d7aa5499f8ad779b2cac19878e9d254bba.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:22Z";
         sha256 = "cd73b48ccc4e067028beda8465db65d7aa5499f8ad779b2cac19878e9d254bba";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.3" = {
     sha256 = "ca3eb3afd22b2302f7a552dfb78391f05fde60ac526bf75d124d29fd23032f0e";
     revisions = {
@@ -67,16 +67,16 @@
         revNum = 0;
         revTimestamp = "2014-11-25T20:35:03Z";
         sha256 = "43e909b7a500d9641b7ad33d796789cae592f7c440e823fa34e61d517797263e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.3-r1-0fc8b627dde6e2d6f7cfdb065e5c96234996fc0d43effddf14123126ef6e21ff.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "0fc8b627dde6e2d6f7cfdb065e5c96234996fc0d43effddf14123126ef6e21ff";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.4" = {
     sha256 = "3f2db5d22d44f6d2a6817f1fcf5dad6346166efe949e45e74565b0eff4077bd7";
     revisions = {
@@ -85,16 +85,16 @@
         revNum = 0;
         revTimestamp = "2014-11-26T17:38:15Z";
         sha256 = "aa26ebd7cd6365f2efb134f54f99fba4246c20360f57d029dac9087a1666c42e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.4-r1-482b42c6c7ebadbf3ef37ff8fdf3aa2f87cd15c77887a741f8643d4639c9dcce.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "482b42c6c7ebadbf3ef37ff8fdf3aa2f87cd15c77887a741f8643d4639c9dcce";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.5" = {
     sha256 = "ef2af678358f31bc490ad080622d8ba528b64420dd4134358c50633cc3c01bfe";
     revisions = {
@@ -103,16 +103,16 @@
         revNum = 0;
         revTimestamp = "2014-11-27T19:09:53Z";
         sha256 = "b3d001e6cdf6b3779a3c63d911fb70c7d6dc619aa9c29c06aef53877350f96fe";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.5-r1-d4520b962b6e444598d1d0d5f153008a70c5d12a940bb1d7373307deb5f22f41.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "d4520b962b6e444598d1d0d5f153008a70c5d12a940bb1d7373307deb5f22f41";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.6" = {
     sha256 = "24bb1cd86c74f36c6c5be64a34318a473d60da1c3fd10f1045b026d4783ca69d";
     revisions = {
@@ -121,16 +121,16 @@
         revNum = 0;
         revTimestamp = "2014-11-28T12:06:42Z";
         sha256 = "065cb0c648a42c6083114d42f3b6e9f4e7ab2f9b4dbafb2699a132da56fbb4e6";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.6-r1-5904c95fa5d4249575c171b45a8fc459ea2400d7ebc234474fccf64860bdf7da.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "5904c95fa5d4249575c171b45a8fc459ea2400d7ebc234474fccf64860bdf7da";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.7" = {
     sha256 = "7551a0d2620c244c04703ad2c4ef7cbe65f4b548ceac0bee6fbfe957b0c7c365";
     revisions = {
@@ -139,16 +139,16 @@
         revNum = 0;
         revTimestamp = "2014-12-02T10:04:14Z";
         sha256 = "3a81bd32f35a21968822883cd48bce990f6c27983ce48ea995417813450218a7";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.7-r1-2f30d5a481b22474aecc4858ebc960891af13f914b3f87b1f4dce8a2e4505d77.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "2f30d5a481b22474aecc4858ebc960891af13f914b3f87b1f4dce8a2e4505d77";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.8" = {
     sha256 = "ede3be85babca41a23433db875e0ce4da8ce03d808c531406ed868028f1d2f2c";
     revisions = {
@@ -157,16 +157,16 @@
         revNum = 0;
         revTimestamp = "2014-12-09T21:16:48Z";
         sha256 = "184c7b6cab11ec6ec3a239108bd3beade71d4854b67a8dc545264d6063b12340";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.0.8-r1-79d1d68a2266ae9aac3a10ef935e810a02d4287ca29f929036bb164db971a3ed.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:23Z";
         sha256 = "79d1d68a2266ae9aac3a10ef935e810a02d4287ca29f929036bb164db971a3ed";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0" = {
     sha256 = "69f9ebe5c31ce641ea66c692719dc4880e7017475d998b7ab2542da3d25ff899";
     revisions = {
@@ -175,16 +175,16 @@
         revNum = 0;
         revTimestamp = "2014-12-17T20:12:15Z";
         sha256 = "e429c1a6dcd8c0fafede1fae9faece97ac110baa88e4f9a9c21207f510dc2475";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.1.0-r1-247ed31d7307f0f25a8f4c93faa3fe0f1f5cee438543457a81b6dc40fc1de958.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:24Z";
         sha256 = "247ed31d7307f0f25a8f4c93faa3fe0f1f5cee438543457a81b6dc40fc1de958";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "ffd7235d6aff69fea02903bd43c4bd6e3cba2191e1190d4698fa4934d5b4d706";
     revisions = {
@@ -193,16 +193,16 @@
         revNum = 0;
         revTimestamp = "2014-12-22T15:07:43Z";
         sha256 = "9415ec9a66893cd562bb0354089672f3777d83e7aa9f509c87eabdf29be6c6a8";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.1.1-r1-5c34ad805e7cf42d126e544fd80b8c1ec57aebd1e785181b7891716ce0d2fed8.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:24Z";
         sha256 = "5c34ad805e7cf42d126e544fd80b8c1ec57aebd1e785181b7891716ce0d2fed8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.2" = {
     sha256 = "3ce06424e8f8e72c9c8dd8f51f7c9a86b4a5d0f4280262f55e6d89d3004fa829";
     revisions = {
@@ -211,16 +211,16 @@
         revNum = 0;
         revTimestamp = "2014-12-28T22:27:10Z";
         sha256 = "4c5c11490cf989be1e916619518d570a709b79398a6bd77603b6d7c3f39ab614";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.1.2-r1-8a52b14eb68e5c74aba2c0b81ea4fcdccc8aceb20f9a96e333bac4106e83f375.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:24Z";
         sha256 = "8a52b14eb68e5c74aba2c0b81ea4fcdccc8aceb20f9a96e333bac4106e83f375";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.3" = {
     sha256 = "9272c9540a769cc0fa40543d59f3a2e4f4cae7cf57873fe28c6e60231a52ae85";
     revisions = {
@@ -229,16 +229,16 @@
         revNum = 0;
         revTimestamp = "2015-01-04T04:33:19Z";
         sha256 = "e4e8247b8ce5535d17e6627e128f0ae0bfd2a0430c9e9080816d22323fa4ba09";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.1.3-r1-ac604e96be09cf8c904489cf632cd15cdaa7bdfc606629df877e857b0805712d.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:24Z";
         sha256 = "ac604e96be09cf8c904489cf632cd15cdaa7bdfc606629df877e857b0805712d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.4" = {
     sha256 = "f79acecccc31ecfca76a996a301a9f7582da19ae53288018903e3ab795a88da1";
     revisions = {
@@ -247,16 +247,16 @@
         revNum = 0;
         revTimestamp = "2015-01-06T20:53:55Z";
         sha256 = "43bcaf9b8e681de13db398f935db46c3a998fafe34fef5ab5e0aa4e3137d4a07";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.1.4-r1-6bde36448fb1ddfa1b0cc9a3cc7e36446355219748e87dfea40df908c8f1ac27.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "6bde36448fb1ddfa1b0cc9a3cc7e36446355219748e87dfea40df908c8f1ac27";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0" = {
     sha256 = "35c57949a40031a6a4b772775599cf67fb6ed451d5ea1ae72bfc5008b0f2e980";
     revisions = {
@@ -265,16 +265,16 @@
         revNum = 0;
         revTimestamp = "2015-01-10T02:03:10Z";
         sha256 = "71d44652f6bbe00a1e894acdbee0da582651743e0fa7922b2ab89bbe19e03bc6";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.2.0-r1-7069f6aed8156300b965104da7ecffcaec6223971631a3f6cc85ac748e35122c.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "7069f6aed8156300b965104da7ecffcaec6223971631a3f6cc85ac748e35122c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.1" = {
     sha256 = "abb071cf0c3658186b8d50f614c9c12920522720106b2dd6e68c31ba15d420e3";
     revisions = {
@@ -283,16 +283,16 @@
         revNum = 0;
         revTimestamp = "2015-01-19T10:36:53Z";
         sha256 = "767db7bb0b670c21657682179fed0b1e67f0f311063f80ec6dfeb17a6845eb74";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.2.1-r1-9b8d4e4ef8c28cd6ca1bc2ac5c135fd8fb77dab053020b675b4946283a3456bb.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "9b8d4e4ef8c28cd6ca1bc2ac5c135fd8fb77dab053020b675b4946283a3456bb";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.2" = {
     sha256 = "61f8e6c0db63692ee823e6e38e378ec0b6d30540fc309973012395288cdb3993";
     revisions = {
@@ -301,16 +301,16 @@
         revNum = 0;
         revTimestamp = "2015-01-21T20:11:48Z";
         sha256 = "64e06c95a1c57a53ba8eba06632a6366f0252023cbd0b8b6ccc1449b9723e84c";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.2.2-r1-dc2fb96abf37e1b2deec59dde2b5777c8ab2bfb2c2dde2f0ebc9ddbfaefdc46b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "dc2fb96abf37e1b2deec59dde2b5777c8ab2bfb2c2dde2f0ebc9ddbfaefdc46b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.3" = {
     sha256 = "f487c8fea3b7f1469e350d0224ee8cbd086838e45ac6a3f5790a5470f2fd729a";
     revisions = {
@@ -319,16 +319,16 @@
         revNum = 0;
         revTimestamp = "2015-01-29T11:05:08Z";
         sha256 = "9bbce87ea0f2f263cbb700aa71ce4ba96049e087c66b433be87747ecb3868b16";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.2.3-r1-a68a7ef13d684cd0d40e4315b6a642a2a9e99a7009af8f351751dc0b81a562d9.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "a68a7ef13d684cd0d40e4315b6a642a2a9e99a7009af8f351751dc0b81a562d9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.0" = {
     sha256 = "07071d73e07fe89b72f9eb22177f4e10773970e75894d818f25852fa5bc61403";
     revisions = {
@@ -337,16 +337,16 @@
         revNum = 0;
         revTimestamp = "2015-02-10T05:27:34Z";
         sha256 = "fc93b6339eaaebfa6c1eb4bdba21fe69bda6f0aac19462b827de3b0c3a945cbc";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.0-r1-49f00e43459e1530f218747d84363b679f0569525be542cff6b287a61699a92e.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:25Z";
         sha256 = "49f00e43459e1530f218747d84363b679f0569525be542cff6b287a61699a92e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.1" = {
     sha256 = "4daec9554de7929547dd69b8196118569a302f9e617ad1c75692b3a9bd122a66";
     revisions = {
@@ -355,16 +355,16 @@
         revNum = 0;
         revTimestamp = "2015-02-27T10:02:58Z";
         sha256 = "083f60acd03200be8bf1b77b29bd08959308570d49b70f5d1d6f65a44ed1e3f3";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.1-r1-e814c76d4768cf47a6168c83350adfa78a777093e9dedf5338c93c78fccab91f.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:26Z";
         sha256 = "e814c76d4768cf47a6168c83350adfa78a777093e9dedf5338c93c78fccab91f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.2" = {
     sha256 = "2d0961292f8c878f62a1f0c761cb11fea397a94cbc5c7b153e5c57c5c2ed20fb";
     revisions = {
@@ -373,16 +373,16 @@
         revNum = 0;
         revTimestamp = "2015-03-05T12:25:31Z";
         sha256 = "7b93c8940240665063d8b564acf95d9ddd6c30653822ee654b07da5b42a30b7b";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.2-r1-22f3d925c9a9be94e435d7bc8c8e09bd70f2f475bc3bbce219dd8ed2110d26d3.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:26Z";
         sha256 = "22f3d925c9a9be94e435d7bc8c8e09bd70f2f475bc3bbce219dd8ed2110d26d3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.3" = {
     sha256 = "b6f8a74571d3b46023eaaef2127a8cd24ea7959545a788afed0f72af1bffa83a";
     revisions = {
@@ -391,16 +391,16 @@
         revNum = 0;
         revTimestamp = "2015-03-24T15:16:57Z";
         sha256 = "4b1c1e19a8d91a6b098c95fd966fd5087cde36a93e6ed4366054856bff0f5094";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.3-r1-c256c46c851c60db216abb415bcbb080cdaf18c48b081bea7e15a7b545a68781.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:26Z";
         sha256 = "c256c46c851c60db216abb415bcbb080cdaf18c48b081bea7e15a7b545a68781";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.4" = {
     sha256 = "b6da2bf7252fcb6a1991b0f06eef5dce08895b041d4e068d5ab9217aa6eab9f3";
     revisions = {
@@ -409,16 +409,16 @@
         revNum = 0;
         revTimestamp = "2015-04-14T09:04:36Z";
         sha256 = "e15e59d9758e2ef7d6f20a6dc6181c2c5fa20f1df0473465451c7636bc28751d";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.4-r1-3b40dcc1a95c42778c6627d5c9e9345c8afac01026ee1f186186bc0a9aa5470b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:26Z";
         sha256 = "3b40dcc1a95c42778c6627d5c9e9345c8afac01026ee1f186186bc0a9aa5470b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.5" = {
     sha256 = "51abbffa196eb7d006df53c76e89c2d6737188622c89c8dd91f0a316ee419a2c";
     revisions = {
@@ -427,16 +427,16 @@
         revNum = 0;
         revTimestamp = "2015-06-02T13:04:24Z";
         sha256 = "9e8b9c70760d06d1206928e8aeb10d4a19a9c9eb3ee561367173b1893f8f1109";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.5-r1-366189850e2d5be635272b34b28b9fb6884b1dc793653297e2f0113e1c50222f.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:27Z";
         sha256 = "366189850e2d5be635272b34b28b9fb6884b1dc793653297e2f0113e1c50222f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.6" = {
     sha256 = "6b63a9aeb3e731755bd2c9d0ab567a051afb34f0612aed892ecc54eca2f3b797";
     revisions = {
@@ -445,16 +445,16 @@
         revNum = 0;
         revTimestamp = "2015-06-05T15:31:20Z";
         sha256 = "b1f9bf7bbf32acb83b9eeffc90593d43a7c6ca9fd6038c6a2e460004cf3110a3";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-0.3.6-r1-a952f5506b96156ba8fcbbb90cc2ed7f59b228fe494ee21c6a60ff607ef979fb.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:26Z";
         sha256 = "a952f5506b96156ba8fcbbb90cc2ed7f59b228fe494ee21c6a60ff607ef979fb";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0" = {
     sha256 = "917a8c1f9cd9138396794d57a399e1e698b1a1f1b64581b886efd540e93b7ff3";
     revisions = {
@@ -463,16 +463,16 @@
         revNum = 0;
         revTimestamp = "2015-08-16T14:19:23Z";
         sha256 = "64749943366d9138bdaf89cb93a398e2de0fb5b2af6d12eaaa48b9140641afed";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.0.0-r1-4dad2a2ee9036694c455dbf592a2cce18074e5b2e53f51a076f5d5e8433f8f42.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:27Z";
         sha256 = "4dad2a2ee9036694c455dbf592a2cce18074e5b2e53f51a076f5d5e8433f8f42";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.1" = {
     sha256 = "c8d16042fb42fe562a754467d3f3be13ab1dc7c862d5dd6467864fd9cdc5b551";
     revisions = {
@@ -481,16 +481,16 @@
         revNum = 0;
         revTimestamp = "2015-08-18T09:24:00Z";
         sha256 = "59332e4be062fdcf063c9e51fd8fba7ad0362656177ed481a5ed26ec765e1b32";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.0.1-r1-6ea3967804078efe4f60509f321b7a78b16334f822ef12fb986640f822abf50b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:27Z";
         sha256 = "6ea3967804078efe4f60509f321b7a78b16334f822ef12fb986640f822abf50b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1.0" = {
     sha256 = "8c3c9553f43f1312881f22da35a34ad404101f3b790d2734590abd4ce5dbcfb7";
     revisions = {
@@ -499,16 +499,16 @@
         revNum = 0;
         revTimestamp = "2015-08-21T10:33:19Z";
         sha256 = "a1d184e5c6fbb6c7a25690aeb96989ac250b88340fa37ea2ed7a941ff516ef76";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.1.0-r1-58963f8603d3b3de2ef411bbad68e7d468e2caf1e942e594c4858c5ff2e1ee87.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:27Z";
         sha256 = "58963f8603d3b3de2ef411bbad68e7d468e2caf1e942e594c4858c5ff2e1ee87";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.2.0" = {
     sha256 = "9f3b1702b9f7bb1c8cc7566909568268a2f13e7b4684a406452712d314e62671";
     revisions = {
@@ -517,16 +517,16 @@
         revNum = 0;
         revTimestamp = "2015-08-27T18:34:37Z";
         sha256 = "1c32d43d8c9aba0138c380b2bfe8ba7fba5900f9b8a5a659b455f15cd0dc71f6";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.2.0-r1-e96a88fc4beffd2e89fde1999580f43787c343a5b39ba0f8e0042fc21856f18b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "e96a88fc4beffd2e89fde1999580f43787c343a5b39ba0f8e0042fc21856f18b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.2.0.1" = {
     sha256 = "3b794ef9cb79daf5018a7cc850a348eb08407067f4b72c6accbd03b3be6997ca";
     revisions = {
@@ -535,16 +535,16 @@
         revNum = 0;
         revTimestamp = "2015-08-28T15:33:32Z";
         sha256 = "bbe1a177b5e5d369517240d81c2c39dc64b3d26a794178722ab78841ad3d805b";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.2.0.1-r1-179ae219df52a1b2712a256ef4e894e826b886bbc2b593422b3f7263624bc46a.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "179ae219df52a1b2712a256ef4e894e826b886bbc2b593422b3f7263624bc46a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.2.0.2" = {
     sha256 = "3fd0122d4e24ccb3413da041ef85e7eb07af7614e43946fb28b93404951ddc39";
     revisions = {
@@ -553,16 +553,16 @@
         revNum = 0;
         revTimestamp = "2015-08-29T08:52:04Z";
         sha256 = "b72f1a671c2c7430681fabba20164ce4955df15412140051d9cbd0cb42975977";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.2.0.2-r1-1aac68f5994c5a98fb611f34df7a44cdcc680d9342344e00527bc3333c703e06.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "1aac68f5994c5a98fb611f34df7a44cdcc680d9342344e00527bc3333c703e06";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.0" = {
     sha256 = "7a8245c5983d9353b31d8f6668942dcdad7cbafe04561049156eb2b6bfebdfc5";
     revisions = {
@@ -571,16 +571,16 @@
         revNum = 0;
         revTimestamp = "2015-09-03T13:55:55Z";
         sha256 = "8777c47edba25e6eebe6a5d1b7e1e9d1e89e887b702edcb9df06d7780a7240f4";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.0-r1-e0f7e6f01d21806a98294fd68d8d37514f0b92abfc62d91891955c1aca76f24d.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "e0f7e6f01d21806a98294fd68d8d37514f0b92abfc62d91891955c1aca76f24d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.1" = {
     sha256 = "b1cf34823f75b2d62f420e5fb7dbd5ffbc63aa8887ca06f5a5dd6397b01ff27d";
     revisions = {
@@ -589,16 +589,16 @@
         revNum = 0;
         revTimestamp = "2015-09-09T11:38:15Z";
         sha256 = "284efc9bd6c3681392243836d22c28b144a5305af716ed2de19ddb02c38e33ba";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.1-r1-db266e45174b6747908c94c357e6b3618a9502e8310e500dc7ad999271a0c31f.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "db266e45174b6747908c94c357e6b3618a9502e8310e500dc7ad999271a0c31f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.2" = {
     sha256 = "2f4df966c2f6c64bb535601835edd70fbe3d255b29199938f9ac0dcbe5b7b481";
     revisions = {
@@ -607,16 +607,16 @@
         revNum = 0;
         revTimestamp = "2015-09-18T09:03:23Z";
         sha256 = "5607e797fa1e2baff3d860bf53524523edb7db6838eb2928a7f9304667c2ecb1";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.2-r1-4e31bb9004211a5c286386410bfdf081ee2bd6e1bae82ea81aa71ba73d3bc867.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:28Z";
         sha256 = "4e31bb9004211a5c286386410bfdf081ee2bd6e1bae82ea81aa71ba73d3bc867";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.3" = {
     sha256 = "a32d2001f407abd28f7acc40caf8b52cfd27904b0734b6b18d81535e88f95c24";
     revisions = {
@@ -625,16 +625,16 @@
         revNum = 0;
         revTimestamp = "2015-10-09T11:07:21Z";
         sha256 = "30053f81b1045548ec474cddba799709cff402f360a9ba481fd9bf495ddf9df3";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.3-r1-67c123dbf0859b2120995c2513bd7146bfa644ff3ed774942ab11b8d1fffa405.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:29Z";
         sha256 = "67c123dbf0859b2120995c2513bd7146bfa644ff3ed774942ab11b8d1fffa405";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.3.1" = {
     sha256 = "c368fdeb5196f880c168bc611f4e2dbd5a7287d1c1001a71d5f132280faacb65";
     revisions = {
@@ -643,16 +643,16 @@
         revNum = 0;
         revTimestamp = "2015-10-09T17:43:21Z";
         sha256 = "9429d7bb0d614455a4dc386484ba58f278a96074fa2866c933cba48cd557446c";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.3.1-r1-7452cbc2da4e6e70db564a1d3a30289b696783ad54740b14ea8d46daf69a5f0e.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:29Z";
         sha256 = "7452cbc2da4e6e70db564a1d3a30289b696783ad54740b14ea8d46daf69a5f0e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.4" = {
     sha256 = "87b7eb2e77f459a428e295f9a940aa1ff720ea8163b39d4abc0da09921855d46";
     revisions = {
@@ -661,16 +661,16 @@
         revNum = 0;
         revTimestamp = "2015-10-25T19:43:34Z";
         sha256 = "62d6e870aa5ab097b150bd8860059558982ec8e017f39cf420f06f2b06583337";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.4-r1-d5af885a37248dfeeac0a1f52263d939c013541ff8c86ccaf48bf23130694932.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:29Z";
         sha256 = "d5af885a37248dfeeac0a1f52263d939c013541ff8c86ccaf48bf23130694932";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.5" = {
     sha256 = "56068fc2720966da3042a6ec03049e9ad97ed1ee8ab047a870fbef135577601a";
     revisions = {
@@ -679,16 +679,16 @@
         revNum = 0;
         revTimestamp = "2015-10-28T05:48:55Z";
         sha256 = "f2758d7abd64d3bb2f07804aa9e22a9a5ff1c033a19c3515ea0e282e58b73706";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.5-r1-dd18651d915e804d303dd3ffba0b4003cd731237e8fb9b86dee242c7600d7ed9.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:29Z";
         sha256 = "dd18651d915e804d303dd3ffba0b4003cd731237e8fb9b86dee242c7600d7ed9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.6" = {
     sha256 = "cd616e54162460bd887c2e141baacf6c28628d5397f1da4ee21c33abebbc6c31";
     revisions = {
@@ -697,16 +697,16 @@
         revNum = 0;
         revTimestamp = "2015-11-21T11:24:16Z";
         sha256 = "ad84b6dde9d87f30465132f3042ee524979fd2f8f2ad6c7ba9ca5d34162771fd";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.6-r1-5a02134893efeb9f928fb920cf751bc1413b4c4664bcfdbc838ef1237eb241c7.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:30Z";
         sha256 = "5a02134893efeb9f928fb920cf751bc1413b4c4664bcfdbc838ef1237eb241c7";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.3.7" = {
     sha256 = "479dab55226364dc4f109e5189906ee782d7d8d114ab2754278b22b15bf28025";
     revisions = {
@@ -715,16 +715,16 @@
         revNum = 0;
         revTimestamp = "2015-12-19T06:42:29Z";
         sha256 = "dd65c926bbdc14935d42163ac03acc2c3a7b401e7b0d0cfe0e26f8e7fd79eae7";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.3.7-r1-a63521149fbfe30bb3b3ea7fd2510291c3aececfcc75b1949970c5b0bb6f4b90.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:30Z";
         sha256 = "a63521149fbfe30bb3b3ea7fd2510291c3aececfcc75b1949970c5b0bb6f4b90";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.0" = {
     sha256 = "bf66e0c1a2c2fb87ec3afa981b567b7cbb39a92227dc05b4e89e813c08500f4f";
     revisions = {
@@ -733,16 +733,16 @@
         revNum = 0;
         revTimestamp = "2016-03-21T07:25:27Z";
         sha256 = "e93dd36fd28f86fde615d4bb7e5e68782db64e88197fbcbb3be140ec618dc3db";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.0-r1-3a7144b23f43b39dccba95089e2181f86fa4009af6d44e89590a4a707ddeecb5.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:30Z";
         sha256 = "3a7144b23f43b39dccba95089e2181f86fa4009af6d44e89590a4a707ddeecb5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.1" = {
     sha256 = "3a914e342372cba504f6f8db0e94160a95464fa31f977635b5e461001ee3dd83";
     revisions = {
@@ -751,16 +751,16 @@
         revNum = 0;
         revTimestamp = "2016-05-09T19:14:23Z";
         sha256 = "66851e19f97d7abc664798a20bcd15074f6ae27746f71800980a0c64354e9fb9";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.1-r1-9ea94530780cf6ad7086826ae98bedf44351b90f1a228facc1de0cf27910471d.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:30Z";
         sha256 = "9ea94530780cf6ad7086826ae98bedf44351b90f1a228facc1de0cf27910471d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.2" = {
     sha256 = "03b004949c2c96879afcd97ef8f4b4b06fba8d0a958c8974ad8af5c73807b871";
     revisions = {
@@ -769,16 +769,16 @@
         revNum = 0;
         revTimestamp = "2016-06-03T09:08:31Z";
         sha256 = "bf2d70c43c4d3d6e7038af3778512092d7e408adb6a0b54db6e33aeb3755613e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.2-r1-a82a441b0f6de84df618745f623a8aeb32b8e4a2009aa6e957e966cd3f9d4b3b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:30Z";
         sha256 = "a82a441b0f6de84df618745f623a8aeb32b8e4a2009aa6e957e966cd3f9d4b3b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.3" = {
     sha256 = "de201710b2d594519b1c9d8b20fab92e1a0f4e777e5c05ed1bd32c91ae260161";
     revisions = {
@@ -787,16 +787,16 @@
         revNum = 0;
         revTimestamp = "2016-06-10T05:18:30Z";
         sha256 = "a3540e2757055c574e9ef29557b8a6d8f999829d2e8b9bba09f3e2191b97371d";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.3-r1-edcbb21b96eb1149505f87be5b2bc4fa5e0070f7212311881a5532e82e490f96.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "edcbb21b96eb1149505f87be5b2bc4fa5e0070f7212311881a5532e82e490f96";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.4" = {
     sha256 = "4c29612100b88bd6d9e611f20e555ed69939e66e9e1502561ae345095ba23060";
     revisions = {
@@ -805,16 +805,16 @@
         revNum = 0;
         revTimestamp = "2016-10-23T08:51:18Z";
         sha256 = "951f1241500404a4c45b1e2931b6fdfe273d282c931ec05ed418834b17b6d8d0";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.4-r1-5af52e29f57304a1e4aba33844e52dc1df7273586f1762a6b7da78ccf6dc449c.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "5af52e29f57304a1e4aba33844e52dc1df7273586f1762a6b7da78ccf6dc449c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.4.5" = {
     sha256 = "10cffb3ce3f6ee216b740b78d56a3689b7f1d4e0e367c92afac8f4d412799032";
     revisions = {
@@ -823,16 +823,16 @@
         revNum = 0;
         revTimestamp = "2016-12-04T15:32:15Z";
         sha256 = "81a87cab4a9d5b178d9ce929df817683169256b0fa61a58d13bcdec003e53526";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.4.5-r1-06db3d94e4c42befc2a4cab59e5869b59f11638cc428b93e6f36873d9a357d80.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "06db3d94e4c42befc2a4cab59e5869b59f11638cc428b93e6f36873d9a357d80";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.5.0" = {
     sha256 = "d9ca3dd12e6482a4fe851c41fdfad3bb49c8cab58b483436770c48de17051016";
     revisions = {
@@ -841,16 +841,16 @@
         revNum = 0;
         revTimestamp = "2017-11-15T08:19:56Z";
         sha256 = "7ada215e1f249d92b86562ea1b6e620c7af34b21f30b8e9f27cfbb6ebc9cf991";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.5.0-r1-d61be92aa5be12ed804a0e1b9af4eb46ebeb39bccd1074140817a2d7c1286dab.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "d61be92aa5be12ed804a0e1b9af4eb46ebeb39bccd1074140817a2d7c1286dab";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.6.0" = {
     sha256 = "80e4e74af0fb29f5ecc04f4d956ba0e9950f7936c858c1ff84461b62ca87ee7d";
     revisions = {
@@ -859,16 +859,16 @@
         revNum = 0;
         revTimestamp = "2018-05-16T14:42:07Z";
         sha256 = "83bb9e170ce53f63c79bf0d48a20231d4ef1e5c467f282df80d68ced87fdd09b";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.6.0-r1-502f8c2f16bf5e8700096c63990af31d9c589a656c7395938a292a02274a1a37.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "502f8c2f16bf5e8700096c63990af31d9c589a656c7395938a292a02274a1a37";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.6.1" = {
     sha256 = "61dfdebb7c99d7d2875cd5ddba10000923c14a0d8a22e233ed3bbe617aa4d490";
     revisions = {
@@ -877,16 +877,16 @@
         revNum = 0;
         revTimestamp = "2019-02-06T07:51:10Z";
         sha256 = "d91e3a088d4ff55044cdd8e32a58f7967e1157c039da58deebca5d0b1dbd94a0";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-1.6.1-r1-2fda3511c18494b682215735582a650552172bf7bb9d2897b28f54f005e01397.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:31Z";
         sha256 = "2fda3511c18494b682215735582a650552172bf7bb9d2897b28f54f005e01397";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "2.0" = {
     sha256 = "02adef581e424ced696bd72f2f51c7354bd2eb2e73ed8f844520353ed1dffc3e";
     revisions = {
@@ -895,14 +895,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:07:43Z";
         sha256 = "9093d11b5c0d99feebadf828d3aeb3dd03e41b832e7cca600b5867865cfc90cc";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-cloudwatch-logs-2.0-r1-5618c6bd14a6f0f7151150dbfee7592eaba0d027216187a1571fa4a53b5b65a6.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:43:32Z";
         sha256 = "5618c6bd14a6f0f7151150dbfee7592eaba0d027216187a1571fa4a53b5b65a6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

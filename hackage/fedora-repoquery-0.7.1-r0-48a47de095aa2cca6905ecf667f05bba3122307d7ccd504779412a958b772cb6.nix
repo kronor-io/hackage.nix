@@ -21,7 +21,7 @@
       synopsis = "Fedora release repos package query tool";
       description = "A CLI tool for repoquerying Fedora and Centos Stream release packages:\nby default it displays their version and repo location\nand optionally the repo compose timestamps";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "fedora-repoquery" = {
@@ -42,21 +42,21 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."xdg-basedir" or (errorHandler.buildDepError "xdg-basedir"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.fedora-repoquery.components.exes.fedora-repoquery or (pkgs.buildPackages.fedora-repoquery or (errorHandler.buildToolDepError "fedora-repoquery:fedora-repoquery")))
-            ];
+            (hsPkgs.pkgsBuildBuild.fedora-repoquery.components.exes.fedora-repoquery or (pkgs.pkgsBuildBuild.fedora-repoquery or (errorHandler.buildToolDepError "fedora-repoquery:fedora-repoquery")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

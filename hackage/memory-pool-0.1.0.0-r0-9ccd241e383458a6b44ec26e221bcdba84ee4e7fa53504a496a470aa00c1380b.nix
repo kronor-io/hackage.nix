@@ -21,16 +21,16 @@
       synopsis = "Short description";
       description = "Lock-free threadsafe pinned memory pool manager";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."pvar" or (errorHandler.buildDepError "pvar"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -45,10 +45,10 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."memory-pool" or (errorHandler.buildDepError "memory-pool"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

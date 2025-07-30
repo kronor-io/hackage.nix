@@ -22,13 +22,13 @@
       description = "AES128 with crypto-api instances and a trampoline between Vincent Hanquez's C-based and x86 NI-based AES.  Patches welcome to add additional high-performance backends (ARM?)";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.template-haskell or (pkgs.buildPackages.template-haskell or (errorHandler.setupDepError "template-haskell")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.template-haskell or (pkgs.pkgsBuildBuild.template-haskell or (errorHandler.setupDepError "template-haskell")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."crypto-api" or (errorHandler.buildDepError "crypto-api"))
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."cereal" or (errorHandler.buildDepError "cereal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -50,9 +50,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
             (hsPkgs."cereal" or (errorHandler.buildDepError "cereal"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

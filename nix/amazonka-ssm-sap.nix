@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:48:09Z";
         sha256 = "3f829d420103c6f32c66e73ebcd1cff6286e39a241a9e68c0fc82c98656895d8";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-ssm-sap-2.0-r1-6bd83d3e8ded450d24ac806dca2a3ba234196c1143439c3f7da34a2ab7e0ee5a.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:54:48Z";
         sha256 = "6bd83d3e8ded450d24ac806dca2a3ba234196c1143439c3f7da34a2ab7e0ee5a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

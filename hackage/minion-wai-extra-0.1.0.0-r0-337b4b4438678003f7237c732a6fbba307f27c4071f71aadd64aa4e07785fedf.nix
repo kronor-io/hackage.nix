@@ -21,7 +21,7 @@
       synopsis = "Minion wrappers for wai-extra";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,26 +37,26 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
           (hsPkgs."wai-extra" or (errorHandler.buildDepError "wai-extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "minion-wai-extra-server-event-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."minion-wai-extra" or (errorHandler.buildDepError "minion-wai-extra"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "minion-wai-extra-multipart-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."minion-wai-extra" or (errorHandler.buildDepError "minion-wai-extra"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

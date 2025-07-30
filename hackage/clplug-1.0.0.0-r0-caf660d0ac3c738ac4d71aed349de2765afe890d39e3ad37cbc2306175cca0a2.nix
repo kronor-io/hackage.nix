@@ -21,7 +21,7 @@
       synopsis = "Easily add functionality to your lightning node";
       description = "For more information see the documentation about plugins from the core lightning project https://docs.corelightning.org/docs/plugins";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "clplug-test" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

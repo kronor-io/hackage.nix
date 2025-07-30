@@ -22,10 +22,10 @@
       description = "";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,18 +42,18 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "shebanger" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."shebanger" or (errorHandler.buildDepError "shebanger"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -62,18 +62,18 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."shebanger" or (errorHandler.buildDepError "shebanger"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "shebanger-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."shebanger" or (errorHandler.buildDepError "shebanger"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

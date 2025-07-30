@@ -21,7 +21,7 @@
       synopsis = "PostGIS extention driver based on postgresql-simple package";
       description = "Please see the README on GitHub at <https://github.com/igor720/postgis-trivial#README.md>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."postgresql-simple" or (errorHandler.buildDepError "postgresql-simple"))
           (hsPkgs."storable-record" or (errorHandler.buildDepError "storable-record"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "job-tests" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."postgresql-simple" or (errorHandler.buildDepError "postgresql-simple"))
             (hsPkgs."storable-record" or (errorHandler.buildDepError "storable-record"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

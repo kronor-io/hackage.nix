@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2019-01-22T21:35:09Z";
         sha256 = "b64ce7477eedc192e173567695182143949a5544d79c7ea6e11265478d705251";
-        };
+      };
       r1 = {
         nix = import ../hackage/tokenizer-streaming-0.1.0.0-r1-b92eccf6d29c78a111e4a983a9a33e839fe9f7c3544af35171a4d15a3c4bbcfb.nix;
         revNum = 1;
         revTimestamp = "2019-01-22T21:35:56Z";
         sha256 = "b92eccf6d29c78a111e4a983a9a33e839fe9f7c3544af35171a4d15a3c4bbcfb";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "8a32cd9c17316b7c4ea606d72759d32fc1e096f9c3c5b1c57c2efc83fc728456";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2019-01-22T21:41:50Z";
         sha256 = "6a4354d90d1fe708a0ed6dc4fea28396916ad7faeba58f4d1c1072b116caccaf";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

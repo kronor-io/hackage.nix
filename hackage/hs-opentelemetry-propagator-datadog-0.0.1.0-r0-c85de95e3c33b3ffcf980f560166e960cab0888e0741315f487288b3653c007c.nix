@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-propagator-datadog";
         version = "0.0.1.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "";
       maintainer = "kazuki.okamoto@herp.co.jp";
@@ -24,7 +24,7 @@
       synopsis = "Datadog Propagator for OpenTelemetry";
       description = "This package provides a Datadog style propagator for hs-opentelemetry suite.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -48,13 +48,13 @@
             (hsPkgs."pretty-hex" or (errorHandler.buildDepError "pretty-hex"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "header-codec" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

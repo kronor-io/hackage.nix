@@ -21,7 +21,7 @@
       synopsis = "Efficiently hash (large) Haskell values";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,12 +42,12 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.cpphs.components.exes.cpphs or (pkgs.buildPackages.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.cpphs.components.exes.cpphs or (pkgs.pkgsBuildBuild.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "large-hashable-test" = {
           depends = [
@@ -67,13 +67,13 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."inspection-testing" or (errorHandler.buildDepError "inspection-testing"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.cpphs.components.exes.cpphs or (pkgs.buildPackages.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
-            ];
+            (hsPkgs.pkgsBuildBuild.cpphs.components.exes.cpphs or (pkgs.pkgsBuildBuild.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "large-hashable-benchmark" = {
           depends = [
@@ -90,12 +90,12 @@
             (hsPkgs."byteable" or (errorHandler.buildDepError "byteable"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."bytes" or (errorHandler.buildDepError "bytes"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.cpphs.components.exes.cpphs or (pkgs.buildPackages.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
-            ];
+            (hsPkgs.pkgsBuildBuild.cpphs.components.exes.cpphs or (pkgs.pkgsBuildBuild.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

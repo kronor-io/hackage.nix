@@ -21,7 +21,7 @@
       synopsis = "Some extensions to the hw-kafka-client library";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,8 +42,8 @@
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."yesod-core" or (errorHandler.buildDepError "yesod-core"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

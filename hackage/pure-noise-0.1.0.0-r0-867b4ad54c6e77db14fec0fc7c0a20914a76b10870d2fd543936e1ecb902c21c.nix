@@ -21,15 +21,15 @@
       synopsis = "Performant, modern noise generation for Haskell with minimal dependencies. Based on FastNoiseLite.";
       description = "Please see the README on GitHub at <https://github.com/jtnuttall/pure-noise#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "pure-noise-test" = {
           depends = [
@@ -40,10 +40,10 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "pure-noise-bench" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

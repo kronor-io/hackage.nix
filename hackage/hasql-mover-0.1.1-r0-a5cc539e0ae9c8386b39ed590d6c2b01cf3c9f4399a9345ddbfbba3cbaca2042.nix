@@ -21,7 +21,7 @@
       synopsis = "Hasql migrations library";
       description = "A SQL renovator and removalist; a library for performing SQL migrations using\nHasql, including an easy CLI for viewing and running migrations. Migrations are\ndeclared in-code as quasi-quoted SQL, and chained together in a type-level\nlist of migrations.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Concurrent PostgreSQL data consumers";
       description = "Library for setting up concurrent consumers of data\nstored inside PostgreSQL database in a simple,\ndeclarative manner.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "consumers-example" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."hpqtypes-extras" or (errorHandler.buildDepError "hpqtypes-extras"))
             (hsPkgs."log-base" or (errorHandler.buildDepError "log-base"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "consumers-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -73,9 +73,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

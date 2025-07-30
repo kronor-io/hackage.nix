@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2020-12-06T01:23:18Z";
         sha256 = "2268a47c46105f24d16dc17c584567bcfc58904c4802d611e6941debdd426f42";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "7b879f7ecf4ccb5a7c5b23a01ff1f6534940a920a9b0b6cd093efc8c65119734";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2020-12-06T22:57:12Z";
         sha256 = "75ba79ee16db897b69ea86228264c02fe5845a41ccc7af0258684eb731cca789";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2.0" = {
     sha256 = "8fb51ea6ee502236c3f5e6ca2af8f43fc43a5f7e6ab2a630ef80364492a22ff8";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2020-12-06T23:07:00Z";
         sha256 = "82e4ae4c99da444ae687f0d84107c27cae5caecc6f534008edea22f9c8c6ef60";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.3.0" = {
     sha256 = "afa93fd026cefbdc6886a2d48c2f792805b1127bc87294d4d3d31a0f9f2f678d";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2020-12-09T01:47:19Z";
         sha256 = "979bef41db4861d41beea9bfdb364f57548e94a8533f82222ffb62c55715b5f5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.4.0" = {
     sha256 = "e04d3ca157f901adce7c55adcb1816933366762715846e0625fe7b9ba8d8ab0c";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2022-05-21T20:48:49Z";
         sha256 = "8031f826ba4f860899a9d36ebfcecaa76d7470d992e720c7fd729306476e6c91";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.5.0" = {
     sha256 = "ab04cb21da9602f55744f641bac46da4b88553ed57693bb62911365b977ac6b6";
     revisions = {
@@ -67,14 +67,14 @@
         revNum = 0;
         revTimestamp = "2022-05-21T22:00:02Z";
         sha256 = "7fb889ea841769df1a83d62cd583313fd80c994afe220a5d5b33c1382a4877e1";
-        };
+      };
       r1 = {
         nix = import ../hackage/grow-vector-0.1.5.0-r1-febd5bb28cbfad1de68407824753fd855fcb598feb238ca4abc26554d9337d67.nix;
         revNum = 1;
         revTimestamp = "2023-02-11T08:41:11Z";
         sha256 = "febd5bb28cbfad1de68407824753fd855fcb598feb238ca4abc26554d9337d67";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

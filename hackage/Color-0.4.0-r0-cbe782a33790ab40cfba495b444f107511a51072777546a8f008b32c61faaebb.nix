@@ -21,7 +21,7 @@
       synopsis = "Color spaces and conversions between them";
       description = "Please see the README on GitHub at <https://github.com/lehins/Color#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -46,13 +46,13 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."massiv" or (errorHandler.buildDepError "massiv"))
             (hsPkgs."massiv-test" or (errorHandler.buildDepError "massiv-test"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "conversion" = {
           depends = [
@@ -62,18 +62,18 @@
             (hsPkgs."colour" or (errorHandler.buildDepError "colour"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ycbcr" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."Color" or (errorHandler.buildDepError "Color"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

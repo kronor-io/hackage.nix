@@ -21,7 +21,7 @@
       synopsis = "Fine-grained library for constructing and manipulating lattices";
       description = "In mathematics, a lattice is a partially ordered set in which every two\nelements @x@ and @y@ have a unique supremum (also called a least upper bound, join, or @x /\\\\ y@)\nand a unique infimum (also called a greatest lower bound, meet, or @x \\\\/ y@).\n\nThis package provide type-classes for different lattice types, as well\nas a class for the partial order.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -36,15 +36,15 @@
           (hsPkgs."universe-base" or (errorHandler.buildDepError "universe-base"))
           (hsPkgs."universe-reverse-instances" or (errorHandler.buildDepError "universe-reverse-instances"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "9.6")) (hsPkgs."foldable1-classes-compat" or (errorHandler.buildDepError "foldable1-classes-compat"))) ++ (pkgs.lib).optionals (!(compiler.isGhc && (compiler.version).ge "9.2")) (if compiler.isGhc && (compiler.version).ge "9.0"
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "9.6")) (hsPkgs."foldable1-classes-compat" or (errorHandler.buildDepError "foldable1-classes-compat"))) ++ pkgs.lib.optionals (!(compiler.isGhc && compiler.version.ge "9.2")) (if compiler.isGhc && compiler.version.ge "9.0"
           then [
             (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-            ]
+          ]
           else [
             (hsPkgs."OneTuple" or (errorHandler.buildDepError "OneTuple"))
-            ]);
+          ]);
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -59,9 +59,9 @@
             (hsPkgs."universe-base" or (errorHandler.buildDepError "universe-base"))
             (hsPkgs."universe-reverse-instances" or (errorHandler.buildDepError "universe-reverse-instances"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+          ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

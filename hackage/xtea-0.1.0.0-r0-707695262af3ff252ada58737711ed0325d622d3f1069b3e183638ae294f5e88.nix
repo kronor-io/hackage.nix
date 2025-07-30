@@ -21,16 +21,16 @@
       synopsis = "XTEA (eXtended Tiny Encryption Algorithm).";
       description = "Haskell implementation of the\n[XTEA (eXtended Tiny Encryption Algorithm)](https://en.wikipedia.org/wiki/XTEA)\nblock cipher.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "xtea-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."xtea" or (errorHandler.buildDepError "xtea"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Test monadic programs using state machine based models";
       description = "See README at <https://github.com/stevana/quickcheck-state-machine#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
           (hsPkgs."quickcheck-state-machine".components.sublibs.no-vendored-treediff or (errorHandler.buildDepError "quickcheck-state-machine:no-vendored-treediff"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "no-vendored-treediff" = {
           depends = [
@@ -63,10 +63,10 @@
             (hsPkgs."sop-core" or (errorHandler.buildDepError "sop-core"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -111,9 +111,9 @@
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

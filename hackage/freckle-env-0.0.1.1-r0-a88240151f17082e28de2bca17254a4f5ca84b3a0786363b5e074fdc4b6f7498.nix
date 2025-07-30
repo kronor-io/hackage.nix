@@ -21,7 +21,7 @@
       synopsis = "Some extension to the envparse library";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,17 +33,17 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

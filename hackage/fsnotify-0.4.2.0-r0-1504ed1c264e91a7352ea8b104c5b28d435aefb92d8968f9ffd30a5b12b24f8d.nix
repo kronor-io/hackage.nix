@@ -21,7 +21,7 @@
       synopsis = "Cross platform library for file change notification.";
       description = "Cross platform library for file creation, modification, and deletion notification. This library builds upon existing libraries for platform-specific Windows, Mac, and Linux filesystem event notification.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = (((([
@@ -36,9 +36,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
-          ] ++ (pkgs.lib).optional (system.isLinux) (hsPkgs."unix" or (errorHandler.buildDepError "unix"))) ++ (pkgs.lib).optional (system.isLinux && (compiler.isGhc && (compiler.version).ge "9.10")) (hsPkgs."hinotify" or (errorHandler.buildDepError "hinotify"))) ++ (pkgs.lib).optional (system.isLinux && (compiler.isGhc && (compiler.version).lt "9.10")) (hsPkgs."hinotify" or (errorHandler.buildDepError "hinotify"))) ++ (pkgs.lib).optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))) ++ (pkgs.lib).optional (system.isOsx) (hsPkgs."hfsevents" or (errorHandler.buildDepError "hfsevents"));
+        ] ++ pkgs.lib.optional (system.isLinux) (hsPkgs."unix" or (errorHandler.buildDepError "unix"))) ++ pkgs.lib.optional (system.isLinux && (compiler.isGhc && compiler.version.ge "9.10")) (hsPkgs."hinotify" or (errorHandler.buildDepError "hinotify"))) ++ pkgs.lib.optional (system.isLinux && (compiler.isGhc && compiler.version.lt "9.10")) (hsPkgs."hinotify" or (errorHandler.buildDepError "hinotify"))) ++ pkgs.lib.optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))) ++ pkgs.lib.optional (system.isOsx) (hsPkgs."hfsevents" or (errorHandler.buildDepError "hfsevents"));
         buildable = true;
-        };
+      };
       exes = {
         "example" = {
           depends = [
@@ -55,10 +55,10 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -76,16 +76,16 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ] ++ (if system.isWindows
+          ] ++ (if system.isWindows
             then [
               (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))
               (hsPkgs."sandwich" or (errorHandler.buildDepError "sandwich"))
-              ]
+            ]
             else [
               (hsPkgs."sandwich" or (errorHandler.buildDepError "sandwich"))
-              ]);
+            ]);
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

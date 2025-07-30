@@ -21,7 +21,7 @@
       synopsis = "HATEOAS extension for servant";
       description = "Create Resource-Representations for your types and make your API HATEOAS-compliant. Generic Resource-construction where possible, manual where ypu want.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,17 +30,17 @@
           (hsPkgs."http-media" or (errorHandler.buildDepError "http-media"))
           (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "servant-hateoas-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."servant-hateoas" or (errorHandler.buildDepError "servant-hateoas"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

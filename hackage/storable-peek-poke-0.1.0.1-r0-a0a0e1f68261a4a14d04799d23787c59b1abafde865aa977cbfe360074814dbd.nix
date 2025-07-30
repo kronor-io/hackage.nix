@@ -21,24 +21,24 @@
       synopsis = "class Sizable, Peek and Poke";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/storable-peek-poke#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "storable-peek-poke-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

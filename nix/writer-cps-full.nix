@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-01-19T17:15:44Z";
         sha256 = "8f2b44a4ea6d59d5f693b0ec73336a0b815e058d9b8a42916a90d6e82a53275b";
-        };
+      };
       r1 = {
         nix = import ../hackage/writer-cps-full-0.1.0.0-r1-c1184180631618add72cebf1020fc265afeec56d27978df5f8654e333bfcf107.nix;
         revNum = 1;
         revTimestamp = "2019-03-07T14:19:16Z";
         sha256 = "c1184180631618add72cebf1020fc265afeec56d27978df5f8654e333bfcf107";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

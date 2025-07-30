@@ -21,7 +21,7 @@
       synopsis = "Symbolic Model Checking for Dynamic Epistemic Logic";
       description = "See README.md for references and documentation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,31 +39,31 @@
           (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ] ++ (pkgs.lib).optional (flags.with-cudd) (hsPkgs."cudd" or (errorHandler.buildDepError "cudd"));
+        ] ++ pkgs.lib.optional (flags.with-cudd) (hsPkgs."cudd" or (errorHandler.buildDepError "cudd"));
         build-tools = [
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-          ];
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+          (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "smcdel" = {
-          depends = (pkgs.lib).optionals (flags.cli) [
+          depends = pkgs.lib.optionals (flags.cli) [
             (hsPkgs."ansi-terminal" or (errorHandler.buildDepError "ansi-terminal"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.cli then true else false;
-          };
+        };
         "smcdel-web" = {
-          depends = (pkgs.lib).optionals (flags.web) [
+          depends = pkgs.lib.optionals (flags.web) [
             (hsPkgs."HasCacBDD" or (errorHandler.buildDepError "HasCacBDD"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
@@ -74,30 +74,30 @@
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.web then true else false;
-          };
         };
+      };
       tests = {
         "CUDD" = {
-          depends = (pkgs.lib).optionals (flags.with-cudd) [
+          depends = pkgs.lib.optionals (flags.with-cudd) [
             (hsPkgs."HasCacBDD" or (errorHandler.buildDepError "HasCacBDD"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.with-cudd then true else false;
-          };
+        };
         "examples" = {
           depends = [
             (hsPkgs."HasCacBDD" or (errorHandler.buildDepError "HasCacBDD"))
@@ -105,13 +105,13 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "k" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -119,54 +119,54 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "translations" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "web" = {
-          depends = (pkgs.lib).optionals (flags.web) [
+          depends = pkgs.lib.optionals (flags.web) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."sandwich" or (errorHandler.buildDepError "sandwich"))
             (hsPkgs."sandwich-webdriver" or (errorHandler.buildDepError "sandwich-webdriver"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."webdriver" or (errorHandler.buildDepError "webdriver"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.web then true else false;
-          };
         };
+      };
       benchmarks = {
         "bench-diningcrypto" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "bench-muddychildren" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -178,28 +178,28 @@
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "bench-sumandproduct" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "sizes-diningcryptographers" = {
-          depends = (pkgs.lib).optionals (flags.with-cudd) [
+          depends = pkgs.lib.optionals (flags.with-cudd) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."cassava" or (errorHandler.buildDepError "cassava"))
@@ -209,15 +209,15 @@
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.with-cudd then true else false;
-          };
+        };
         "sizes-muddychildren" = {
-          depends = (pkgs.lib).optionals (flags.with-cudd) [
+          depends = pkgs.lib.optionals (flags.with-cudd) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."cassava" or (errorHandler.buildDepError "cassava"))
@@ -227,15 +227,15 @@
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.with-cudd then true else false;
-          };
+        };
         "sizes-sumandproduct" = {
-          depends = (pkgs.lib).optionals (flags.with-cudd) [
+          depends = pkgs.lib.optionals (flags.with-cudd) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."cassava" or (errorHandler.buildDepError "cassava"))
@@ -245,13 +245,13 @@
             (hsPkgs."smcdel" or (errorHandler.buildDepError "smcdel"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = if flags.with-cudd then true else false;
-          };
         };
       };
-    }
+    };
+  }

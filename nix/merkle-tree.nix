@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-12-11T13:03:12Z";
         sha256 = "e152184baf78ec278ff92667d555a7e5f8ecbe72e1a2091646fb0e16dc808d32";
-        };
+      };
       r1 = {
         nix = import ../hackage/merkle-tree-0.1.0-r1-bf99897ae89289f95cc5ed0ff648c99aa6b3d1fdfba37ba2b0d3ff8ad3c97ac5.nix;
         revNum = 1;
         revTimestamp = "2017-12-11T13:07:01Z";
         sha256 = "bf99897ae89289f95cc5ed0ff648c99aa6b3d1fdfba37ba2b0d3ff8ad3c97ac5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "215a62476230374b8bbf2f7a0a3e88345a18cf9c6f672ef7d422c3f6bd5ba2aa";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2018-11-21T17:18:48Z";
         sha256 = "a5b80e4a88161a76582dda3d3da610f3d6ab2601e33939677f33ad179016722a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

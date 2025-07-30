@@ -21,13 +21,13 @@
       synopsis = "Manipulates network blocks in CIDR notation";
       description = "= WARNING\n\nThis package is no longer maintained on Hackage. Please obtain it\nfrom [the hath\nhomepage](https://michael.orlitzky.com/code/hath.xhtml)\ninstead. I am unable to delete my Hackage account or any of my\npackages; any further activity on Hackage should be considered\nmalicious.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "hath" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

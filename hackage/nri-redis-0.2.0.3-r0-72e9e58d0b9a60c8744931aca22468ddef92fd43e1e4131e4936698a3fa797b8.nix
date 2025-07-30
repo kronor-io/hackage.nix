@@ -21,7 +21,7 @@
       synopsis = "An intuitive hedis wrapper library.";
       description = "Please see the README at <https://github.com/NoRedInk/haskell-libraries/tree/trunk/nri-redis#readme>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,9 +46,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -73,9 +73,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

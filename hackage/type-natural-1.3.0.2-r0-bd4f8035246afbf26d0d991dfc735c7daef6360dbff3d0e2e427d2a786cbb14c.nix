@@ -21,7 +21,7 @@
       synopsis = "Type-level natural and proofs of their properties.";
       description = "Type-level natural numbers and proofs of their properties.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,11 +33,11 @@
           (hsPkgs."ghc-typelits-natnormalise" or (errorHandler.buildDepError "ghc-typelits-natnormalise"))
           (hsPkgs."integer-logarithms" or (errorHandler.buildDepError "integer-logarithms"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ] ++ [
+        ] ++ [
           (hsPkgs."ghc-typelits-presburger" or (errorHandler.buildDepError "ghc-typelits-presburger"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "type-natural-test" = {
           depends = [
@@ -52,12 +52,12 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."type-natural" or (errorHandler.buildDepError "type-natural"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

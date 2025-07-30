@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/githubuser/wordify#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."conduit" or (errorHandler.buildDepError "conduit"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "wordify-exe" = {
           depends = [
@@ -61,10 +61,10 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."wordify" or (errorHandler.buildDepError "wordify"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "wordify-test" = {
           depends = [
@@ -89,9 +89,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."wordify" or (errorHandler.buildDepError "wordify"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

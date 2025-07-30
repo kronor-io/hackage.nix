@@ -14,7 +14,7 @@
       identifier = {
         name = "gpu-vulkan-middle-khr-surface";
         version = "0.1.0.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "(c) 2025 Yoshikuni Jujo";
       maintainer = "yoshikuni.jujo@gmail.com";
@@ -24,7 +24,7 @@
       synopsis = "medium wrapper for VK_KHR_surface extension of the Vulkan API";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan-middle-khr-surface#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."gpu-vulkan-middle" or (errorHandler.buildDepError "gpu-vulkan-middle"))
           (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-middle-khr-surface-test" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."gpu-vulkan-middle-khr-surface" or (errorHandler.buildDepError "gpu-vulkan-middle-khr-surface"))
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

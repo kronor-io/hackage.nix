@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-04-29T09:48:01Z";
         sha256 = "398c02c3fcbf124480df342d15c7b4a3740c123264083e15faf38823e598f220";
-        };
+      };
       r1 = {
         nix = import ../hackage/treap-0.0.0.0-r1-1f562fdf2835c13fc7f9b9313e779fd46a6b8ce0f2aa0dd0532f26eb81f892ba.nix;
         revNum = 1;
         revTimestamp = "2021-08-02T13:16:20Z";
         sha256 = "1f562fdf2835c13fc7f9b9313e779fd46a6b8ce0f2aa0dd0532f26eb81f892ba";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -22,11 +22,11 @@
       description = "gtk-mac-integration helps integrate Gtk applications with the native Mac\ndesktop and make it feel more like a Mac application.\nhttp://sourceforge.net/apps/trac/gtk-osx/wiki/Integrate";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.gtk2hs-buildtools or (pkgs.buildPackages.gtk2hs-buildtools or (errorHandler.setupDepError "gtk2hs-buildtools")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.gtk2hs-buildtools or (pkgs.pkgsBuildBuild.gtk2hs-buildtools or (errorHandler.setupDepError "gtk2hs-buildtools")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,11 +36,11 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."glib" or (errorHandler.buildDepError "glib"))
           (hsPkgs."gtk" or (errorHandler.buildDepError "gtk"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."gtk-mac-integration-gtk2" or (errorHandler.pkgConfDepError "gtk-mac-integration-gtk2"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

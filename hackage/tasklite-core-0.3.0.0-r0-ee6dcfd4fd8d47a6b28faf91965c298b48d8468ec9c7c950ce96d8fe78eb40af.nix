@@ -21,7 +21,7 @@
       synopsis = "CLI task / todo list manager with SQLite backend";
       description = "TaskLite is a CLI task / todo list manager with a SQLite backend.\nIt is designed to be simple and easy to use,\nwhile still providing a powerful interface for managing tasks.\nIt's heavily inspired by Taskwarrior and stems from my personal frustration\nwith some of its design decisions.\nCheck out https://tasklite.org/differences_taskwarrior\nfor a full comparison.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -71,9 +71,9 @@
           (hsPkgs."wai-extra" or (errorHandler.buildDepError "wai-extra"))
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tasklite-test" = {
           depends = [
@@ -87,19 +87,19 @@
             (hsPkgs."tasklite-core" or (errorHandler.buildDepError "tasklite-core"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "tasklite-bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."protolude" or (errorHandler.buildDepError "protolude"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

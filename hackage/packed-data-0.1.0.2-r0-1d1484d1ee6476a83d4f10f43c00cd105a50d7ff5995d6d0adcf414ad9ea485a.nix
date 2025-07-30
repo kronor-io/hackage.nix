@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Build, traverse and deserialise packed data in Haskell";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,18 +32,18 @@
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "examples" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."packed-data" or (errorHandler.buildDepError "packed-data"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "packed-test" = {
           depends = [
@@ -52,10 +52,10 @@
             (hsPkgs."bytestring-strict-builder" or (errorHandler.buildDepError "bytestring-strict-builder"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."packed-data" or (errorHandler.buildDepError "packed-data"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "ast-bench" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."packed-data" or (errorHandler.buildDepError "packed-data"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bigjson-bench" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -75,9 +75,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."packed-data" or (errorHandler.buildDepError "packed-data"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "report" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -86,9 +86,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tree-bench" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -105,9 +105,9 @@
             (hsPkgs."packed-data" or (errorHandler.buildDepError "packed-data"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

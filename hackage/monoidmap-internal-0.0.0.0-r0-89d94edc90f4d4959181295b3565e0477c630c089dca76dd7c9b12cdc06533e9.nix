@@ -21,7 +21,7 @@
       synopsis = "Internal support for monoidmap.";
       description = "Internal support for the monoidmap package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."groups" or (errorHandler.buildDepError "groups"))
           (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
           (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "monoidmap-test" = {
           depends = [
@@ -50,13 +50,13 @@
             (hsPkgs."quickcheck-quid" or (errorHandler.buildDepError "quickcheck-quid"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."monoidmap-internal" or (errorHandler.buildDepError "monoidmap-internal"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "monoidmap-benchmark" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."monoidmap-internal" or (errorHandler.buildDepError "monoidmap-internal"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

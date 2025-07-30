@@ -21,7 +21,7 @@
       synopsis = "Support for parsing and rendering YAML documents with marks.";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "readme" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."markdown-unlit" or (errorHandler.buildDepError "markdown-unlit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yaml-marked" or (errorHandler.buildDepError "yaml-marked"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -67,9 +67,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."yaml-marked" or (errorHandler.buildDepError "yaml-marked"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

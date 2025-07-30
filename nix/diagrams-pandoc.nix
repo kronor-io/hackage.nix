@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-07-24T16:40:33Z";
         sha256 = "e3f2234288142af4cafe3a3bb42758da3a3fb5c2ec98dc75660747db23e2ac22";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2" = {
     sha256 = "03bc32e95873000bae33d837319367febc2efad073671677afa3fdd59d246459";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2015-10-10T00:10:31Z";
         sha256 = "3310675ce47d264dd8e1e77eba0fe0cb3bdbf41335fce59df2fe971ac6f67a14";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3" = {
     sha256 = "7bc3593aa45454aff222f0e23abe2e4277af6cdf96e484a7e967c16e9a48a510";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2016-02-23T14:48:51Z";
         sha256 = "09d40e5e8aaf3ca79c1ba126e31d79f195e49c283fa65d6345e2130cf933d31f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.1" = {
     sha256 = "b527db76a20697c790262c76fc155311ab5492463067ede8c96675fd14ef43b0";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2020-06-13T10:49:20Z";
         sha256 = "8fea546f8c364564b7df83c90f431414660fe536ada77cef0d06bd05804af1b9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.1.1" = {
     sha256 = "7bbb5d297cfb21963da2cf467a73fb054dfe4149a59fefed2816bda1c79a1d49";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2023-07-10T19:04:25Z";
         sha256 = "ba6d0402cc241fad097d3b545ff0e0513a624c03f435121a1e4ca35d0d5d1824";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4" = {
     sha256 = "84f9188e3c5726464ccbb5aeb9dc03bd7829bef0d7f3302001e6a229c3048e98";
     revisions = {
@@ -67,8 +67,20 @@
         revNum = 0;
         revTimestamp = "2024-02-29T18:33:02Z";
         sha256 = "c23c18f6a46d63bb558258829444fef23e0c21bf26ee88d320b28f410ca320a5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.4.1" = {
+    sha256 = "b90382e25e9e40095575ca121900531006f7a348a4111eabe7c68efb8f2134be";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/diagrams-pandoc-0.4.1-r0-01b1dfcdaa22599edc932a00769dbee7c8e810206bb6f0bf724afa0527859492.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-30T15:29:20Z";
+        sha256 = "01b1dfcdaa22599edc932a00769dbee7c8e810206bb6f0bf724afa0527859492";
+      };
+      default = "r0";
+    };
+  };
+}

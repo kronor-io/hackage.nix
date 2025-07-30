@@ -21,7 +21,7 @@
       synopsis = "Sequences and measured sequences";
       description = "Sequences and measured sequences with logarithmic time index, split, append.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."samsort" or (errorHandler.buildDepError "samsort"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "seqn-test" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

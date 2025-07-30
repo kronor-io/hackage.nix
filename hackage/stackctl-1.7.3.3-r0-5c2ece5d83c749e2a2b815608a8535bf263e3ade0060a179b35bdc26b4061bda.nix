@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see <https://github.com/freckle/stackctl#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -67,18 +67,18 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "stackctl" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."stackctl" or (errorHandler.buildDepError "stackctl"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -105,9 +105,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

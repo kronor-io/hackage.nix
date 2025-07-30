@@ -21,7 +21,7 @@
       synopsis = "Lenses for Pandoc";
       description = "Lenses and other API for the Pandoc data type";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."skylighting-core" or (errorHandler.buildDepError "skylighting-core"))
           (hsPkgs."texmath" or (errorHandler.buildDepError "texmath"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,16 +21,16 @@
       synopsis = "Generate Ruby clients from Servant APIs.";
       description = "Lackey generates Ruby clients from Servant APIs.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."servant-foreign" or (errorHandler.buildDepError "servant-foreign"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "lackey-test-suite" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

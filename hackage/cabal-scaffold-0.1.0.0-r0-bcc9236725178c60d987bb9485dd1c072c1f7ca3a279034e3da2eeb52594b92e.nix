@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/konn/cabal-scaffold#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -63,17 +63,17 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cabal-scaffold" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."cabal-scaffold" or (errorHandler.buildDepError "cabal-scaffold"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

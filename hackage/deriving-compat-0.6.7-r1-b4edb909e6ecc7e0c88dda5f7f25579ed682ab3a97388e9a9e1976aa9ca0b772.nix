@@ -21,7 +21,7 @@
       synopsis = "Backports of GHC deriving extensions";
       description = "@deriving-compat@ provides Template Haskell functions that\nmimic @deriving@ extensions that were introduced or modified\nin recent versions of GHC. Currently, the following\ntypeclasses/extensions are covered:\n\n* Deriving @Bounded@\n\n* Deriving @Enum@\n\n* Deriving @Ix@\n\n* Deriving @Eq@\n\n* Deriving @Ord@\n\n* Deriving @Read@\n\n* Deriving @Show@\n\n* @DeriveFoldable@\n\n* @DeriveFunctor@\n\n* @DeriveTraversable@\n\n* @GeneralizedNewtypeDeriving@ (with GHC 8.2 or later)\n\n* @DerivingVia@ (with GHC 8.2 or later)\n\nSee the \"Data.Deriving\" module for a full list of backported changes.\n\nIn addition, @deriving-compat@ also provides some additional\n@deriving@ functionality that has not yet been merged into\nupstream GHC. Aside from the GHC @deriving@ extensions\nmentioned above, @deriving-compat@ also permits deriving\ninstances of classes in the @Data.Functor.Classes@ module,\ncovering the @Eq1@, @Eq2@, @Ord1@, @Ord2@, @Read1@,\n@Read2@, @Show1@, and @Show2@ classes. This extra\nfunctionality is outside of the main scope of\n@deriving-compat@, as it does not backport extensions that\nexist in today's GHC. Nevertheless, the underlying Template\nHaskell machinery needed to derive @Eq@ and friends\nextends very naturally to @Eq1@ and friends, so this extra\nfunctionality is included in @deriving-compat@ as a\nconvenience.\n\nNote that some recent GHC typeclasses/extensions are not covered by this package:\n\n* @DeriveDataTypeable@\n\n* @DeriveGeneric@, which was introducted in GHC 7.2 for deriving\n@Generic@ instances, and modified in GHC 7.6 to allow derivation\nof @Generic1@ instances. Use @Generics.Deriving.TH@ from\n@<http://hackage.haskell.org/package/generic-deriving generic-deriving>@\nto derive @Generic(1)@ using Template Haskell.\n\n* @DeriveLift@, which was introduced in GHC 8.0 for deriving\n@Lift@ instances. Use @Language.Haskell.TH.Lift@ from\n@<http://hackage.haskell.org/package/th-lift th-lift>@\nto derive @Lift@ using Template Haskell.\n\n* The @Bifunctor@ typeclass, which was introduced in GHC 7.10,\nas well as the @Bifoldable@ and @Bitraversable@ typeclasses, which\nwere introduced in GHC 8.2. Use @Data.Bifunctor.TH@ from\n@<http://hackage.haskell.org/package/bifunctors bifunctors>@\nto derive these typeclasses using Template Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."th-abstraction" or (errorHandler.buildDepError "th-abstraction"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."transformers-compat" or (errorHandler.buildDepError "transformers-compat"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -49,12 +49,12 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."transformers-compat" or (errorHandler.buildDepError "transformers-compat"))
             (hsPkgs."void" or (errorHandler.buildDepError "void"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

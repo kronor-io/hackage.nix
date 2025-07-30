@@ -21,7 +21,7 @@
       synopsis = "IP2Location.io Haskell package for IP geolocation and domain WHOIS.";
       description = "IP2Location.io Haskell SDK allows user to query for an enriched data set based on IP address and provides WHOIS lookup api that helps users to obtain domain information.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,8 +35,8 @@
           (hsPkgs."split" or (errorHandler.buildDepError "split"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

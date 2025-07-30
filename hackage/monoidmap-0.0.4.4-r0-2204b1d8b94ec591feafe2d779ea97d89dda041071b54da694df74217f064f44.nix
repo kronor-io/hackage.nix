@@ -21,7 +21,7 @@
       synopsis = "Monoidal map type";
       description = "Monoidal map type with support for semigroup and monoid subclasses.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
           (hsPkgs."monoidmap-internal" or (errorHandler.buildDepError "monoidmap-internal"))
           (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

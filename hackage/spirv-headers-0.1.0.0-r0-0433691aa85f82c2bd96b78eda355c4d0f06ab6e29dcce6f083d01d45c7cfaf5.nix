@@ -21,7 +21,7 @@
       synopsis = "Types and generator for SPIR-V JSON spec.";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "gen-spirv-enum" = {
           depends = [
@@ -43,19 +43,19 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."spirv-headers" or (errorHandler.buildDepError "spirv-headers"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = if flags.lib-only then false else true;
-          };
         };
+      };
       tests = {
         "spirv-headers-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."shower" or (errorHandler.buildDepError "shower"))
             (hsPkgs."spirv-headers" or (errorHandler.buildDepError "spirv-headers"))
-            ];
+          ];
           buildable = if flags.lib-only then false else true;
-          };
         };
       };
-    }
+    };
+  }

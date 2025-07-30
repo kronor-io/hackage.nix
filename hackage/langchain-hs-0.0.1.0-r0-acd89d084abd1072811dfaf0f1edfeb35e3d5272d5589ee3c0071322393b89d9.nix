@@ -21,7 +21,7 @@
       synopsis = "Haskell implementation of Langchain";
       description = "Build LLM-powered applications in Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."pdf-toolbox-document" or (errorHandler.buildDepError "pdf-toolbox-document"))
           (hsPkgs."scalpel" or (errorHandler.buildDepError "scalpel"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "langchain-hs-test" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

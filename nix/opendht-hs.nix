@@ -7,8 +7,20 @@
         revNum = 0;
         revTimestamp = "2025-03-22T18:01:15Z";
         sha256 = "87ba912127806b49c68de20a8f274dd2b1f795969b195c0f831230c5c733e1b1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.1.1.1" = {
+    sha256 = "b477a5d3867d9eab3a6aa21d7e7c59db7b9dadbff90e0fb4d8e572cc45bff2e3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/opendht-hs-0.1.1.1-r0-1ba4ee5047758f8585cb7fb28a5270c63a4bd63ac42b042fdafa2de4b94f4ed6.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-02T00:42:38Z";
+        sha256 = "1ba4ee5047758f8585cb7fb28a5270c63a4bd63ac42b042fdafa2de4b94f4ed6";
+      };
+      default = "r0";
+    };
+  };
+}

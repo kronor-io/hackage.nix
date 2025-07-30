@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2018-02-23T14:22:55Z";
         sha256 = "612a45df02ae8d03ed07daf9a1491adae55ad3ebf32c475cb39c89dee4aae844";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0" = {
     sha256 = "64e399738858a56ab49a730f5f4c33098ebc3b1539573b9f55f566a91f73bc34";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2018-10-01T12:36:54Z";
         sha256 = "ac70ed14a5fdbf311a144e44fb2678a0250c7d283365e1bc4569c82ac9750f32";
-        };
+      };
       r1 = {
         nix = import ../hackage/aeson-options-0.1.0-r1-2d0c25afbb2d038bd5b57de8d042e319ea1a5ec7d7b92810d8a0cf0777882b6a.nix;
         revNum = 1;
         revTimestamp = "2019-01-11T06:02:37Z";
         sha256 = "2d0c25afbb2d038bd5b57de8d042e319ea1a5ec7d7b92810d8a0cf0777882b6a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

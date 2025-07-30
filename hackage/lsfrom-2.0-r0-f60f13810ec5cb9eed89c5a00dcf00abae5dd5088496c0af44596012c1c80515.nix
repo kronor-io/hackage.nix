@@ -21,7 +21,7 @@
       synopsis = "List directory files starting from a specific name";
       description = "`lsfrom` lists the entries of a directory starting from\na particular file in locale collation order, which\ncan be useful for continuing a shell command or script\nafter a failure on an entry.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "lsfrom" = {
@@ -33,10 +33,10 @@
             (hsPkgs."setlocale" or (errorHandler.buildDepError "setlocale"))
             (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
             (hsPkgs."simple-cmd-args" or (errorHandler.buildDepError "simple-cmd-args"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -44,12 +44,12 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.lsfrom.components.exes.lsfrom or (pkgs.buildPackages.lsfrom or (errorHandler.buildToolDepError "lsfrom:lsfrom")))
-            ];
+            (hsPkgs.pkgsBuildBuild.lsfrom.components.exes.lsfrom or (pkgs.pkgsBuildBuild.lsfrom or (errorHandler.buildToolDepError "lsfrom:lsfrom")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

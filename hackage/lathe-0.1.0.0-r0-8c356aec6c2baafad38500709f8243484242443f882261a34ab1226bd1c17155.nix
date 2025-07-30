@@ -21,7 +21,7 @@
       synopsis = "Pure incremental byte parser.";
       description = "Pure incremental byte parser,\npolymorphic on the error type and supporting incremental output.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "properties" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

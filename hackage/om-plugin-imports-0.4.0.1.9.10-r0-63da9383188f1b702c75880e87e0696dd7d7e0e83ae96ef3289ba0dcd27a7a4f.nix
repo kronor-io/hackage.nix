@@ -21,7 +21,7 @@
       synopsis = "Plugin-based explicit import generation.";
       description = "See the README at https://github.com/owensmurray/om-plugin-imports/tree/master/#om-plugin-imports";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
           (hsPkgs."safe" or (errorHandler.buildDepError "safe"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

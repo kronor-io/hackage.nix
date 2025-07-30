@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings to libsystemd-journal";
       description = "Use this package to write to and read from journald. This is the\nlogging system that is part of systemd, which you may be familiar\nwith accessing via the command line using the journalctl command.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,11 +39,11 @@
           (hsPkgs."hsyslog" or (errorHandler.buildDepError "hsyslog"))
           (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
           (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."libsystemd" or (errorHandler.pkgConfDepError "libsystemd"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

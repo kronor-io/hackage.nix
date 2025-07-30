@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-04-28T10:33:22Z";
         sha256 = "a106ca64ef3b8a1049f5f7f8ee7e6bbf7828d9dda7d9a5e19386c2085d0709f0";
-        };
+      };
       r1 = {
         nix = import ../hackage/zeromq4-clone-pattern-0.1.0.0-r1-4a51efb2fa94f3cf61515f352ec1c580efb54d852649b5875cb4186af1cc5007.nix;
         revNum = 1;
         revTimestamp = "2018-04-28T21:32:56Z";
         sha256 = "4a51efb2fa94f3cf61515f352ec1c580efb54d852649b5875cb4186af1cc5007";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

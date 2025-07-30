@@ -21,7 +21,7 @@
       synopsis = "JSON serialization for core types";
       description = "Aeson instances for core types, required for remote store protocol";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
           (hsPkgs."deriving-aeson" or (errorHandler.buildDepError "deriving-aeson"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "json" = {
           depends = [
@@ -45,12 +45,12 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

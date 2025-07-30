@@ -13,7 +13,7 @@
       ci = false;
       devel = false;
       debug = false;
-      };
+    };
     package = {
       specVersion = "3.0";
       identifier = { name = "hevm"; version = "0.54.2"; };
@@ -26,7 +26,7 @@
       synopsis = "Symbolic EVM Evaluator";
       description = "Symbolic EVM semantics in Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -75,14 +75,14 @@
           (hsPkgs."split" or (errorHandler.buildDepError "split"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-          ];
+        ];
         libs = [
           (pkgs."secp256k1" or (errorHandler.sysDepError "secp256k1"))
           (pkgs."ff" or (errorHandler.sysDepError "ff"))
           (pkgs."gmp" or (errorHandler.sysDepError "gmp"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "test-utils" = {
           depends = [
@@ -114,10 +114,10 @@
             (hsPkgs."witch" or (errorHandler.buildDepError "witch"))
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "hevm" = {
           depends = [
@@ -134,10 +134,10 @@
             (hsPkgs."witch" or (errorHandler.buildDepError "witch"))
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -175,9 +175,9 @@
             (hsPkgs."data-dword" or (errorHandler.buildDepError "data-dword"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."regex" or (errorHandler.buildDepError "regex"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "rpc-tests" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -209,9 +209,9 @@
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
             (hsPkgs."hevm".components.sublibs.test-utils or (errorHandler.buildDepError "hevm:test-utils"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ethereum-tests" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -243,10 +243,10 @@
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
             (hsPkgs."hevm".components.sublibs.test-utils or (errorHandler.buildDepError "hevm:test-utils"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -261,9 +261,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

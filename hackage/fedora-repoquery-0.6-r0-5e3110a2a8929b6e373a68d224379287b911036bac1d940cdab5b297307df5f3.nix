@@ -21,7 +21,7 @@
       synopsis = "Fedora repoquery tool";
       description = "A CLI tool for repoquerying Fedora packages:\nby default it displays their version and repo location\nwith compose timestamp";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "fdrq" = {
@@ -42,21 +42,21 @@
             (hsPkgs."simple-cmd-args" or (errorHandler.buildDepError "simple-cmd-args"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."xdg-basedir" or (errorHandler.buildDepError "xdg-basedir"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.fedora-repoquery.components.exes.fdrq or (pkgs.buildPackages.fdrq or (errorHandler.buildToolDepError "fedora-repoquery:fdrq")))
-            ];
+            (hsPkgs.pkgsBuildBuild.fedora-repoquery.components.exes.fdrq or (pkgs.pkgsBuildBuild.fdrq or (errorHandler.buildToolDepError "fedora-repoquery:fdrq")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

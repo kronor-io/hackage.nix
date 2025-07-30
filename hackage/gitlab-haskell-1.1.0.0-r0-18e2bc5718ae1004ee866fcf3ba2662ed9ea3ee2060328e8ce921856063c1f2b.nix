@@ -21,7 +21,7 @@
       synopsis = "A Haskell library for the GitLab web API";
       description = "This library lifts the GitLab REST API into Haskell: <https://docs.gitlab.com/ee/api/>\n\nThe library also features a reactive event driven API for writing Gitlab file hook applications.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-gitlab-haskell" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Extra tools for Nginx Haskell module";
       description = "Extra tools for\n<https://github.com/lyokha/nginx-haskell-module Nginx Haskell module>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
           (hsPkgs."ngx-export" or (errorHandler.buildDepError "ngx-export"))
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

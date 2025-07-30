@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2020-01-19T06:12:36Z";
         sha256 = "cc8ba0fb0a4387d1b0973cd95f1017b810c813913bc1d4066b92f1b1452d8574";
-        };
+      };
       r1 = {
         nix = import ../hackage/sitemap-gen-0.1.0.0-r1-0ad7deb58fb3a04950c1363e417c4cfb0c1af79d719165ff7359f28d20b03f72.nix;
         revNum = 1;
         revTimestamp = "2022-08-17T22:43:00Z";
         sha256 = "0ad7deb58fb3a04950c1363e417c4cfb0c1af79d719165ff7359f28d20b03f72";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

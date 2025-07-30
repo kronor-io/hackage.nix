@@ -21,14 +21,14 @@
       synopsis = "Strict variants of mutable data types from base.";
       description = "Strict (WHNF) variants of @Chan@, @IORef@ and @MVar@ for proactive\nprevention of space leaks.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

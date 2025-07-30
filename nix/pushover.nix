@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-03-04T11:48:12Z";
         sha256 = "edf912eaa093412b8e5045e6ec4f9fefbc3c8645cefd87b03da1ad7beaf00bbf";
-        };
+      };
       r1 = {
         nix = import ../hackage/pushover-0.1.0.0-r1-09e57c3ea9c946cb28b928d874a9984ea23f167c7ab136c01078b9f5952dc90d.nix;
         revNum = 1;
         revTimestamp = "2017-03-04T11:54:28Z";
         sha256 = "09e57c3ea9c946cb28b928d874a9984ea23f167c7ab136c01078b9f5952dc90d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "8c3168b78d79384eeabfa83ba810314c1c81adcd70a491c76ad9af016646262a";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-03-04T12:56:18Z";
         sha256 = "393a11b24e38db1c0be71b0cc5874ad5b05a390a95ec6317c74b330d7c49748d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

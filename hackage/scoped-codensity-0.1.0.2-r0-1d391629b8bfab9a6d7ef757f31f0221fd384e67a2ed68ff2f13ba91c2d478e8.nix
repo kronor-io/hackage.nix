@@ -21,7 +21,7 @@
       synopsis = "CPS resource allocation but as a Monad and completely safe";
       description = "This implements a Monad just like `Codensity` from the `kan-extensions` package, but it uses a skolem trap just like the `ST s` monad to track resources allocated in the monad.\nThe package wraps around different \"scoped\" resources that cannot escape a `scoped` block and are safely deallocated when the block is left.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "scoped-codensity-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."scoped-codensity" or (errorHandler.buildDepError "scoped-codensity"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-10-28T03:43:46Z";
         sha256 = "f21c039b307e053e69f56fb9e4ae8d4057d5b58f7c91440b060fbe3b9211cb2a";
-        };
+      };
       r1 = {
         nix = import ../hackage/reg-alloc-0.1.0.0-r1-8d668d174da483c044a5adc5e01ec4f002d0feab7fd66e2ecb52acc6cad3f1b7.nix;
         revNum = 1;
         revTimestamp = "2020-03-04T16:46:23Z";
         sha256 = "8d668d174da483c044a5adc5e01ec4f002d0feab7fd66e2ecb52acc6cad3f1b7";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

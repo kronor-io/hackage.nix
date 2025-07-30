@@ -21,16 +21,16 @@
       synopsis = "QuasiQuoter for byte sequence";
       description = "QuasiQuoter for byte sequence and FromBytes typeclass.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "qq-bytes-test" = {
           depends = [
@@ -41,12 +41,12 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

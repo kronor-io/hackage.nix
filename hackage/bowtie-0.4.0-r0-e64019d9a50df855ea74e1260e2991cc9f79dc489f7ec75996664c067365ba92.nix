@@ -21,7 +21,7 @@
       synopsis = "Tying knots in polynomial functors";
       description = "Please see the README on GitHub at <https://github.com/ejconlon/bowtie#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
           (hsPkgs."some" or (errorHandler.buildDepError "some"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

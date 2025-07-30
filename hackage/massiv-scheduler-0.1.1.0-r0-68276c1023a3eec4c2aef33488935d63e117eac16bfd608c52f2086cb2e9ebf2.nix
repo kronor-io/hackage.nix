@@ -22,11 +22,11 @@
       description = "A work stealing scheduler that is used by [massiv](https://www.stackage.org/package/massiv) array librarry, but can be useful for any other library or application that fits such model of computation.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -47,18 +47,18 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."massiv-scheduler" or (errorHandler.buildDepError "massiv-scheduler"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-10-11T08:34:25Z";
         sha256 = "345133a70966b5813fb9520da070bf4557b0eabc598258b78eb8df990e97f75a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.1" = {
     sha256 = "c2a178fc657e326eea84ec3634163659f4c633b7431683b19571bca5f87c0899";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2024-10-14T22:44:26Z";
         sha256 = "a06298cb3622848d1e04ccffda62e3878d1d12891f6f7abe7a03ea559ef05742";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.1.0.2" = {
+    sha256 = "35dfdd11ce8d3d7d014fac6156a89cba31c601e030876926259abf8c970dc2ed";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/harpie-numhask-0.1.0.2-r0-b8da2360c7f55de31e904c0d2208ec113cb362abc61ef778ffd49ecb021780bd.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-08T04:16:20Z";
+        sha256 = "b8da2360c7f55de31e904c0d2208ec113cb362abc61ef778ffd49ecb021780bd";
+      };
+      default = "r0";
+    };
+  };
+}

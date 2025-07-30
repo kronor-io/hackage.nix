@@ -21,7 +21,7 @@
       synopsis = "Minimalist CI framework to run checks on local machine";
       description = "Runs defined jobs, for example to build and test a project, for each git\ncommit in a given set and reports results. The jobs are configured in\na simple YAML file and can produce artifacts to be used in other steps.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "minici" = {
@@ -43,9 +43,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

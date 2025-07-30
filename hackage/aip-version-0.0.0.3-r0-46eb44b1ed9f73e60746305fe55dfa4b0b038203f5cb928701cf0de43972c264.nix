@@ -21,7 +21,7 @@
       synopsis = "Version of AIP documents";
       description = "<<https://logo.systemf.com.au/systemf-450x450.jpg>>\n\nA standalone executable to report the version of each AIP document";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "aip-version" = {
@@ -34,9 +34,9 @@
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."wreq" or (errorHandler.buildDepError "wreq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

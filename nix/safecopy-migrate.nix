@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-07-02T10:09:36Z";
         sha256 = "0b299f23a0dcc669b844f155dea99c3af483cf6b592bf1861010067ce23a6df0";
-        };
+      };
       r1 = {
         nix = import ../hackage/safecopy-migrate-0.1.0.0-r1-78aa667889ada98f1f8022ea7b6dc1e5396d15de64b40c66a66977632fccc0f4.nix;
         revNum = 1;
         revTimestamp = "2018-08-21T20:18:46Z";
         sha256 = "78aa667889ada98f1f8022ea7b6dc1e5396d15de64b40c66a66977632fccc0f4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0" = {
     sha256 = "4a7c7923930ae68de6aec725dc547ceb448c3e1901324eead0cf848dcefb6193";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2018-08-19T22:48:01Z";
         sha256 = "70c7c31695a6c035bdee610c128eebfda6b002b8fe53995db6ff3b266bfa1b07";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

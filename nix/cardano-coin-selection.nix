@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2020-04-30T10:29:42Z";
         sha256 = "3d965d9b01ef6f61b31e34ccf18aedb44611b9e3a56a4e094e3027e15c7e7ac5";
-        };
+      };
       r1 = {
         nix = import ../hackage/cardano-coin-selection-1.0.0-r1-810e0984b5bd369aa3ef235a37cc10ed3fde959645a7dce940ca5a8cb00eb5b1.nix;
         revNum = 1;
         revTimestamp = "2020-05-06T09:21:02Z";
         sha256 = "810e0984b5bd369aa3ef235a37cc10ed3fde959645a7dce940ca5a8cb00eb5b1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.1" = {
     sha256 = "4a6230041f9e274e97da0a5a3516fc3c9f1d5668b0141e24de046ff04a9b76db";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2020-05-13T13:22:03Z";
         sha256 = "d429ea2b7c64442b42655cb7a6ed228a6fb94e940245ba29c16010ad67420591";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

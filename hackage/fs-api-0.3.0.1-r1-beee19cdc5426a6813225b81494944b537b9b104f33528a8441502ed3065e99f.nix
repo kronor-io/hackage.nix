@@ -21,7 +21,7 @@
       synopsis = "Abstract interface for the file system";
       description = "Abstract interface for the file system.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,14 +36,14 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."safe-wild-cards" or (errorHandler.buildDepError "safe-wild-cards"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ] ++ (if system.isWindows
+        ] ++ (if system.isWindows
           then [ (hsPkgs."Win32" or (errorHandler.buildDepError "Win32")) ]
           else [
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."unix-bytestring" or (errorHandler.buildDepError "unix-bytestring"))
-            ]);
+          ]);
         buildable = true;
-        };
+      };
       tests = {
         "fs-api-test" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

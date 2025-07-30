@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2018-04-13T20:47:34Z";
         sha256 = "1e360a46ab96252512eb75c684432ecb1e6f192e0c296859ae55519fffa37126";
-        };
+      };
       r1 = {
         nix = import ../hackage/micro-recursion-schemes-5.0.2.1-r1-0c971024b82044a5be7cc04018507b738402f9bea2d2b775cf17969cc75dce37.nix;
         revNum = 1;
         revTimestamp = "2019-05-03T17:58:39Z";
         sha256 = "0c971024b82044a5be7cc04018507b738402f9bea2d2b775cf17969cc75dce37";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "5.0.2.2" = {
     sha256 = "3bddd1f22638f7e34563876e711e38351b8f36e50b45f3e5553068a2b25c5e9e";
     revisions = {
@@ -25,14 +25,14 @@
         revNum = 0;
         revTimestamp = "2018-05-14T02:36:34Z";
         sha256 = "4d617a277d2a86e6bbb27a68b969fa98ab261bac8fa69f04ebd0f028a3d143a4";
-        };
+      };
       r1 = {
         nix = import ../hackage/micro-recursion-schemes-5.0.2.2-r1-3e7e4e3aa4b1bb1f6b72add2804602db1460dae541dc1c59d1b741477879be7d.nix;
         revNum = 1;
         revTimestamp = "2019-05-03T17:58:40Z";
         sha256 = "3e7e4e3aa4b1bb1f6b72add2804602db1460dae541dc1c59d1b741477879be7d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

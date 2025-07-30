@@ -21,15 +21,15 @@
       synopsis = "Targeted generators for QuickCheck";
       description = "Combinators to write QuickCheck generators using classical search algorithms guided by an objective function";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "targeted-examples" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."targeted-quickcheck" or (errorHandler.buildDepError "targeted-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

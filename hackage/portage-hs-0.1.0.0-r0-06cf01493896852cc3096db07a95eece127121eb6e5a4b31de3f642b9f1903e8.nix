@@ -21,7 +21,7 @@
       synopsis = "Data structures and functions for interacting with the Portage package manager";
       description = "Currently, this includes:\n\n* data structures for package atoms\n* parsers for atoms, emerge output, and CONTENTS files\n* functions for running emerge\n* lots of tests";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,19 +35,19 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."parsable" or (errorHandler.buildDepError "parsable"))
           (hsPkgs."portage-hs".components.sublibs.portage-hs-internal or (errorHandler.buildDepError "portage-hs:portage-hs-internal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "portage-hs-internal" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
             (hsPkgs."parsable" or (errorHandler.buildDepError "parsable"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "portage-hs-test" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ] ++ (pkgs.lib).optional (flags.gentoo-tests) (hsPkgs."pretty-simple" or (errorHandler.buildDepError "pretty-simple"));
+          ] ++ pkgs.lib.optional (flags.gentoo-tests) (hsPkgs."pretty-simple" or (errorHandler.buildDepError "pretty-simple"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

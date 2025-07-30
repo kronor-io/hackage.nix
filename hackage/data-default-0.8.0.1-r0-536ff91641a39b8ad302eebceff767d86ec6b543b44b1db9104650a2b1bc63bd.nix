@@ -21,15 +21,15 @@
       synopsis = "A class for types with a default value";
       description = "This module defines a class for types with a default value. Instances are\nprovided for @()@, 'Data.Set.Set', 'Data.Map.Map', 'Int', 'Integer',\n'Float', 'Double', and many others.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -37,9 +37,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

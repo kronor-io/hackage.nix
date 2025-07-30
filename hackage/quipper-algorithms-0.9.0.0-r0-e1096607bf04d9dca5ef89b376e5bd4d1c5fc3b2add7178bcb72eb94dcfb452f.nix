@@ -22,12 +22,12 @@
       description = "This package provides seven algorithms that have been implemented in\nQuipper. They are:\nBF - Boolean formula algorithm,\nBWT - Binary welded tree algorithm,\nCL - Class number algorithm,\nGSE - Ground state estimation algorithm,\nQLS - Quantum linear systems algorithm,\nTF - Triangle finding algorithm,\nUSV - Unique shortest vector algorithm.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.superdoc or (pkgs.buildPackages.superdoc or (errorHandler.setupDepError "superdoc")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.quipper-cabal or (pkgs.buildPackages.quipper-cabal or (errorHandler.setupDepError "quipper-cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.superdoc or (pkgs.pkgsBuildBuild.superdoc or (errorHandler.setupDepError "superdoc")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.quipper-cabal or (pkgs.pkgsBuildBuild.quipper-cabal or (errorHandler.setupDepError "quipper-cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -46,59 +46,59 @@
           (hsPkgs."quipper-utils" or (errorHandler.buildDepError "quipper-utils"))
           (hsPkgs."quipper-language" or (errorHandler.buildDepError "quipper-language"))
           (hsPkgs."quipper-libraries" or (errorHandler.buildDepError "quipper-libraries"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "bf" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bwt" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "cl" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "gse" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "qls" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tf" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "usv" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."quipper-algorithms" or (errorHandler.buildDepError "quipper-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

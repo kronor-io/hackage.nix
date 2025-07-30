@@ -22,21 +22,21 @@
       description = "github-backup is a simple tool you run in a git repository you cloned from\nGithub. It backs up everything Github knows about the repository, including\nother forks, issues, comments, milestones, pull requests, and watchers.\nAlso includes gitriddance, which can be used to close all open issues and\npull requests.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.hslogger or (pkgs.buildPackages.hslogger or (errorHandler.setupDepError "hslogger")))
-        (hsPkgs.buildPackages.MissingH or (pkgs.buildPackages.MissingH or (errorHandler.setupDepError "MissingH")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.unix-compat or (pkgs.buildPackages.unix-compat or (errorHandler.setupDepError "unix-compat")))
-        (hsPkgs.buildPackages.unix or (pkgs.buildPackages.unix or (errorHandler.setupDepError "unix")))
-        (hsPkgs.buildPackages.exceptions or (pkgs.buildPackages.exceptions or (errorHandler.setupDepError "exceptions")))
-        (hsPkgs.buildPackages.bytestring or (pkgs.buildPackages.bytestring or (errorHandler.setupDepError "bytestring")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.IfElse or (pkgs.buildPackages.IfElse or (errorHandler.setupDepError "IfElse")))
-        (hsPkgs.buildPackages.mtl or (pkgs.buildPackages.mtl or (errorHandler.setupDepError "mtl")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.hslogger or (pkgs.pkgsBuildBuild.hslogger or (errorHandler.setupDepError "hslogger")))
+        (hsPkgs.pkgsBuildBuild.MissingH or (pkgs.pkgsBuildBuild.MissingH or (errorHandler.setupDepError "MissingH")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.unix-compat or (pkgs.pkgsBuildBuild.unix-compat or (errorHandler.setupDepError "unix-compat")))
+        (hsPkgs.pkgsBuildBuild.unix or (pkgs.pkgsBuildBuild.unix or (errorHandler.setupDepError "unix")))
+        (hsPkgs.pkgsBuildBuild.exceptions or (pkgs.pkgsBuildBuild.exceptions or (errorHandler.setupDepError "exceptions")))
+        (hsPkgs.pkgsBuildBuild.bytestring or (pkgs.pkgsBuildBuild.bytestring or (errorHandler.setupDepError "bytestring")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.IfElse or (pkgs.pkgsBuildBuild.IfElse or (errorHandler.setupDepError "IfElse")))
+        (hsPkgs.pkgsBuildBuild.mtl or (pkgs.pkgsBuildBuild.mtl or (errorHandler.setupDepError "mtl")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       exes = {
         "github-backup" = {
@@ -62,22 +62,22 @@
             (hsPkgs."github" or (errorHandler.buildDepError "github"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
-            ] ++ (if !system.isWindows
+          ] ++ (if !system.isWindows
             then [ (hsPkgs."unix" or (errorHandler.buildDepError "unix")) ]
             else [
               (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))
               (hsPkgs."setenv" or (errorHandler.buildDepError "setenv"))
-              ])) ++ (if flags.network-uri
+            ])) ++ (if flags.network-uri
             then [
               (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
-              ]
+            ]
             else [
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
-              ]);
+            ]);
           buildable = true;
-          };
+        };
         "gitriddance" = {
           depends = ([
             (hsPkgs."github" or (errorHandler.buildDepError "github"))
@@ -98,22 +98,22 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ] ++ (if !system.isWindows
+          ] ++ (if !system.isWindows
             then [ (hsPkgs."unix" or (errorHandler.buildDepError "unix")) ]
             else [
               (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))
               (hsPkgs."setenv" or (errorHandler.buildDepError "setenv"))
-              ])) ++ (if flags.network-uri
+            ])) ++ (if flags.network-uri
             then [
               (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
-              ]
+            ]
             else [
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
-              ]);
+            ]);
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

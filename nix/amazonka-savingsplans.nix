@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:46:27Z";
         sha256 = "5e05ea18c4b61606ab0ab7778a6b37ca2a8593865e0f08567ed66401e4647c26";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-savingsplans-2.0-r1-50e7932ecc35b3dad39183903b73f21adf03db702773cba369691df3c7a1e6e8.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:53:34Z";
         sha256 = "50e7932ecc35b3dad39183903b73f21adf03db702773cba369691df3c7a1e6e8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

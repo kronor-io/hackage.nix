@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-hspec";
         version = "0.0.1.2";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/hspec#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,8 +33,8 @@
           (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2021-11-18T19:35:58Z";
         sha256 = "dc49e40d90f6533385c8c4187e8e0702c8bc8dcf8121796df317aa1d5ebf4596";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "091ce6bbc40ce11e3816e337b1e31b7aa803a308f59f93def0d2a780377e1567";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2021-11-18T19:43:06Z";
         sha256 = "797e23a634b7a84551aef8307434c4ea1fccb3bf1c09411a96924874213e30e0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "542847f21a597d6111981ca8a2243048c3b285deca77a5ef986d3a0fe829bf56";
     revisions = {
@@ -31,16 +31,16 @@
         revNum = 0;
         revTimestamp = "2022-12-11T03:05:42Z";
         sha256 = "9e4428ba939ae1f154c83f975937165fae4dc62fe351fe02897274d37ccaf0be";
-        };
+      };
       r1 = {
         nix = import ../hackage/monoid-map-0.2.0.0-r1-092d32676a6a6c96b771f2431916c562842fb13a90c60f543fc9522e2c8b1cf2.nix;
         revNum = 1;
         revTimestamp = "2023-07-07T20:20:05Z";
         sha256 = "092d32676a6a6c96b771f2431916c562842fb13a90c60f543fc9522e2c8b1cf2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.1" = {
     sha256 = "83905dd8432734ab13a1019bec38e33f5bb77f8f463b2fac84adb83bf71c2216";
     revisions = {
@@ -49,8 +49,8 @@
         revNum = 0;
         revTimestamp = "2025-01-14T01:37:07Z";
         sha256 = "18104b5b80a90138e147a4e622712fa0b7fa0a3bb32d7e19513d00c88763e0c0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

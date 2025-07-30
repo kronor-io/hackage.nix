@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings for ollama.";
       description = "Ollama client for Haskell";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ollama-haskell-test" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

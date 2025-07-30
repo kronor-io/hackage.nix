@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-10-24T11:02:11Z";
         sha256 = "700b2fd2667190e3ac4c1da7bb2e2a101c64e0ed3ee32dcf5c494ecd3a712986";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0" = {
     sha256 = "2edc3a34cb428be4be4bec367f718f047936a80ece335a9b841d82ada7c3cc1f";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-06-21T04:19:35Z";
         sha256 = "6d92d16e5d11b9f54861c51bc0a2fb5323fc3e57a98fcce597ffd4349f2cc1c5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "a9a9b267bef13f1dcfebd49a2d049a125c5774eba6774e1c8384570e80404f8b";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:31:43Z";
         sha256 = "40ea1e55ec6b774d4538cf84cbe68aab0d7c11ae6876eeeec2c55f08ca8d3677";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "425ead26d5096dc3fff0333971b79e7cd4b2ee49b52efdb1609a5ca557b29005";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:47:00Z";
         sha256 = "b1529e4f5c74a27608bf96b706e84067f561bc7397a0e5580fe19c0292563788";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "32e812a1d9fd447b23b6dfb3e6f93db64f62fef7ccf6c5001f769c2eb26c67eb";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:54:54Z";
         sha256 = "7998457a99f99a12ca09714a50caf0af341f15aa182553c7e795d23a24e96239";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "8e1a12e70c162d61e62e0fc59c9abc870af06b419cc183c98804bba762ad28ee";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:20:50Z";
         sha256 = "ff3d5f92aec323e7cb38c0c004acd709df03624624e7702b2a753c6680833224";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "92f634f5793a54f6c3db6452c7dc80c14d076cac34f319ad5e7ef60d2d83553d";
     revisions = {
@@ -79,8 +79,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:39:23Z";
         sha256 = "faa134f61e9622c7cc69c98ef6955592befccd06481c640ae258f9c6861992d0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "518bfb3fef866128eb0aef79055bb12694c5ab9be6a0f7fd94b5f3f143e9eefd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-youtube-1.0.0-r0-8c42b619ef6b8e205d94c60d8575d574da01f8bfd4c5ec7218c0c90082075bcc.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:44Z";
+        sha256 = "8c42b619ef6b8e205d94c60d8575d574da01f8bfd4c5ec7218c0c90082075bcc";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -21,12 +21,12 @@
       synopsis = "Mutable counters that can be modified with atomic operatinos";
       description = "This package defines Counter type that can be safely modified\nconcurrently from multiple threads. The type supports only few\noperations, namely read, write, cas (compare and swap), add,\nsubtract and a few bitwise ones like or, and xor.\n\nMost common use case is having a shared counter that multiple\nthreads increment. Another potential use case is lightweight locks.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -36,10 +36,10 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

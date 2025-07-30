@@ -21,7 +21,7 @@
       synopsis = "Small utility for Amazon Elastic Container Service";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."freckle-http" or (errorHandler.buildDepError "freckle-http"))
           (hsPkgs."freckle-prelude" or (errorHandler.buildDepError "freckle-prelude"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

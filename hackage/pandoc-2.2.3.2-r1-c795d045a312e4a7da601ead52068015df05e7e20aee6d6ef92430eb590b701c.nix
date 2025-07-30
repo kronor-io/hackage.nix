@@ -22,10 +22,10 @@
       description = "Pandoc is a Haskell library for converting from one markup\nformat to another, and a command-line tool that uses\nthis library. It can read several dialects of Markdown and\n(subsets of) HTML, reStructuredText, LaTeX, DocBook, JATS,\nMediaWiki markup, TWiki markup, TikiWiki markup, Creole 1.0,\nHaddock markup, OPML, Emacs Org-Mode, Emacs Muse, txt2tags,\nVimwiki, Word Docx, ODT, EPUB, FictionBook2, and Textile,\nand it can write Markdown, reStructuredText, XHTML, HTML 5,\nLaTeX, ConTeXt, DocBook, JATS, OPML, TEI, OpenDocument,\nODT, Word docx, RTF, MediaWiki, DokuWiki, ZimWiki, Textile,\ngroff man, groff ms, plain text, Emacs Org-Mode, AsciiDoc,\nHaddock markup, EPUB (v2 and v3), FictionBook2, InDesign\nICML, Muse, LaTeX beamer slides, PowerPoint, and several\nkinds of HTML/JavaScript slide shows (S5, Slidy, Slideous,\nDZSlides, reveal.js).\n\nIn contrast to most existing tools for converting Markdown\nto HTML, pandoc has a modular design: it consists of a set of\nreaders, which parse text in a given format and produce a\nnative representation of the document, and a set of writers,\nwhich convert this native representation into a target\nformat. Thus, adding an input or output format requires\nonly adding a reader or writer.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = ((([
@@ -78,23 +78,23 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."case-insensitive" or (errorHandler.buildDepError "case-insensitive"))
           (hsPkgs."HsYAML" or (errorHandler.buildDepError "HsYAML"))
-          ] ++ (pkgs.lib).optionals (compiler.isGhc && (compiler.version).lt "8.0") [
+        ] ++ pkgs.lib.optionals (compiler.isGhc && compiler.version.lt "8.0") [
           (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
           (hsPkgs."basement" or (errorHandler.buildDepError "basement"))
           (hsPkgs."foundation" or (errorHandler.buildDepError "foundation"))
-          ]) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"))) ++ (pkgs.lib).optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"))) ++ (pkgs.lib).optional (flags.embed_data_files) (hsPkgs."file-embed" or (errorHandler.buildDepError "file-embed"));
+        ]) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"))) ++ pkgs.lib.optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"))) ++ pkgs.lib.optional (flags.embed_data_files) (hsPkgs."file-embed" or (errorHandler.buildDepError "file-embed"));
         buildable = true;
-        };
+      };
       exes = {
         "pandoc" = {
           depends = ([
             (hsPkgs."pandoc" or (errorHandler.buildDepError "pandoc"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
           buildable = true;
-          };
+        };
         "trypandoc" = {
-          depends = ((pkgs.lib).optionals (flags.trypandoc) [
+          depends = (pkgs.lib.optionals (flags.trypandoc) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
             (hsPkgs."pandoc" or (errorHandler.buildDepError "pandoc"))
@@ -102,10 +102,10 @@
             (hsPkgs."wai-extra" or (errorHandler.buildDepError "wai-extra"))
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
           buildable = if flags.trypandoc then true else false;
-          };
         };
+      };
       tests = {
         "test-pandoc" = {
           depends = ([
@@ -132,10 +132,10 @@
             (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
             (hsPkgs."xml" or (errorHandler.buildDepError "xml"))
             (hsPkgs."Glob" or (errorHandler.buildDepError "Glob"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "weigh-pandoc" = {
           depends = ([
@@ -144,9 +144,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."weigh" or (errorHandler.buildDepError "weigh"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
           buildable = true;
-          };
+        };
         "benchmark-pandoc" = {
           depends = ([
             (hsPkgs."pandoc" or (errorHandler.buildDepError "pandoc"))
@@ -156,9 +156,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.4") (hsPkgs."base-compat" or (errorHandler.buildDepError "base-compat"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

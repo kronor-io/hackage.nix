@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2017-11-08T22:04:46Z";
         sha256 = "67173791cc764deb3b86814e1f1990b7afb8eb1a564b5d86cf2534a6c600598a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "33b48fc2789b85c87ae2f24469d044bfc1549171138363554fbb7d0159267046";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2019-03-16T02:15:24Z";
         sha256 = "805b991cda74e2a4683e40db4619495abf656fa26b6bb2ecdcb79077b15254a3";
-        };
+      };
       r1 = {
         nix = import ../hackage/liboath-hs-0.0.1.1-r1-c46c9209b1ec08c7557020d399e7c864fe99fe53e9d67ebf20250662bbd57566.nix;
         revNum = 1;
         revTimestamp = "2020-10-26T14:18:11Z";
         sha256 = "c46c9209b1ec08c7557020d399e7c864fe99fe53e9d67ebf20250662bbd57566";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.1.2" = {
     sha256 = "318f36795e1c2419749f448aa662e40302ae4c64a169e1dd581e2a81a6fe9623";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2020-10-26T14:34:00Z";
         sha256 = "dca44a1fc57d7f7cadbed081421280df2b618f869607641c5b536c039bb090dc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

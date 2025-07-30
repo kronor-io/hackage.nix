@@ -21,11 +21,11 @@
       synopsis = "Combinators for unicode or ASCII box drawing characters";
       description = "Draw and intersect border characters for text-based drawings";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

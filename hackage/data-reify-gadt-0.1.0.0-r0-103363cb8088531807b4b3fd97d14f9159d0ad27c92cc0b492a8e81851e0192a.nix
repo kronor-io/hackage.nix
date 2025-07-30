@@ -21,7 +21,7 @@
       synopsis = "Data.Reify for GADTs";
       description = "Please see the README on GitHub at <https://github.com/Arthi-chaud/data-reify-gadt#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "example-ast" = {
           depends = [
@@ -40,10 +40,10 @@
             (hsPkgs."data-reify-gadt" or (errorHandler.buildDepError "data-reify-gadt"))
             (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

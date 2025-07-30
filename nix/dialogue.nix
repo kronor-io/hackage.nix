@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2022-02-13T16:45:37Z";
         sha256 = "2f755b2a9fa38e21937332f6b1789ff26262081e322f912ae2ae80bb3043e194";
-        };
+      };
       r1 = {
         nix = import ../hackage/dialogue-0.1.0-r1-a6c1056b02a836436a3bab7b77ca2328358131e443ef4e3dd2d2b68eec4982bc.nix;
         revNum = 1;
         revTimestamp = "2023-10-12T10:46:41Z";
         sha256 = "a6c1056b02a836436a3bab7b77ca2328358131e443ef4e3dd2d2b68eec4982bc";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

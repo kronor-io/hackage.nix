@@ -21,7 +21,7 @@
       synopsis = "Embed a directory of static files in your Servant server";
       description = "Please see <https://github.com/cdepillabout/servant-static-th#readme README.md>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "servant-static-th-example" = {
           depends = [
@@ -49,10 +49,10 @@
             (hsPkgs."servant-static-th" or (errorHandler.buildDepError "servant-static-th"))
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = if flags.buildexample then true else false;
-          };
         };
+      };
       tests = {
         "servant-static-th-test" = {
           depends = [
@@ -71,9 +71,9 @@
             (hsPkgs."servant-static-th" or (errorHandler.buildDepError "servant-static-th"))
             (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

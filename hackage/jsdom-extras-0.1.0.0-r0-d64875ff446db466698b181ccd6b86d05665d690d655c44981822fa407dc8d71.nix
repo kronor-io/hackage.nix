@@ -21,7 +21,7 @@
       synopsis = "Convenience utilities for JSDOM";
       description = "Commonly used javascript functions";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."jsaddle-dom" or (errorHandler.buildDepError "jsaddle-dom"))
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

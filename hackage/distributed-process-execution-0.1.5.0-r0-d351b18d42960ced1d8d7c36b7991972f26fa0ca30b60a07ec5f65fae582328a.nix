@@ -14,7 +14,7 @@
       identifier = {
         name = "distributed-process-execution";
         version = "0.1.5.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Tim Watson 2012 - 2013";
       maintainer = "The Distributed Haskell team";
@@ -24,7 +24,7 @@
       synopsis = "Execution Framework for The Cloud Haskell Application Platform";
       description = "The Execution Framework provides tools for load regulation, workload shedding and remote hand-off.\nThe currently implementation provides only a subset of the plumbing required, comprising tools\nfor event management, mailbox buffering and message routing.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ExchangeTests" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "MailboxTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -69,9 +69,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

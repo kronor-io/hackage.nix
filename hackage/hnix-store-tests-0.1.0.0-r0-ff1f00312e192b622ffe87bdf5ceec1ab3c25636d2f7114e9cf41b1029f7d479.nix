@@ -21,7 +21,7 @@
       synopsis = "Test utilities and instances";
       description = "This package contains Arbitrary instances for core\ntypes, roundtrip property tests, utility functions\nand a harness for running tests that require nix-store\nwith nix-daemon.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "props" = {
           depends = [
@@ -51,12 +51,12 @@
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,16 +21,16 @@
       synopsis = "The list like structure whose length or range of length can be specified";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/ranged-list#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"))
           (hsPkgs."typecheck-plugin-nat-simple" or (errorHandler.buildDepError "typecheck-plugin-nat-simple"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ranged-list-doctest" = {
           depends = [
@@ -39,18 +39,18 @@
             (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"))
             (hsPkgs."ranged-list" or (errorHandler.buildDepError "ranged-list"))
             (hsPkgs."typecheck-plugin-nat-simple" or (errorHandler.buildDepError "typecheck-plugin-nat-simple"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ranged-list-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"))
             (hsPkgs."ranged-list" or (errorHandler.buildDepError "ranged-list"))
             (hsPkgs."typecheck-plugin-nat-simple" or (errorHandler.buildDepError "typecheck-plugin-nat-simple"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

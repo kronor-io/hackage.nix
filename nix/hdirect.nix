@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2010-02-14T21:10:16Z";
         sha256 = "02bd0c14bac41ac2b7de082c4dae9b8c204548af87d43842af1eedb9e7ccfe9c";
-        };
+      };
       r1 = {
         nix = import ../hackage/hdirect-0.21.0-r1-961c54137bbcc034596545ed45751771c5068b55e09fedd7dccb4e44bbfe05a6.nix;
         revNum = 1;
         revTimestamp = "2018-08-29T09:25:56Z";
         sha256 = "961c54137bbcc034596545ed45751771c5068b55e09fedd7dccb4e44bbfe05a6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

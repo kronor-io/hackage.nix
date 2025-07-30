@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings to the C reference implementation of Tox";
       description = "Haskell bindings to the C reference implementation of Tox.\n\nSee <https://github.com/TokTok/c-toxcore>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,10 +31,10 @@
           (hsPkgs."msgpack-binary" or (errorHandler.buildDepError "msgpack-binary"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."quickcheck-instances" or (errorHandler.buildDepError "quickcheck-instances"))
-          ];
+        ];
         libs = [ (pkgs."toxcore" or (errorHandler.sysDepError "toxcore")) ];
         buildable = true;
-        };
+      };
       exes = {
         "groupbot" = {
           depends = [
@@ -44,11 +44,11 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."toxcore-c" or (errorHandler.buildDepError "toxcore-c"))
-            ];
+          ];
           libs = [ (pkgs."toxcore" or (errorHandler.sysDepError "toxcore")) ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "testsuite" = {
           depends = [
@@ -62,9 +62,9 @@
             (hsPkgs."saltine" or (errorHandler.buildDepError "saltine"))
             (hsPkgs."toxcore-c" or (errorHandler.buildDepError "toxcore-c"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

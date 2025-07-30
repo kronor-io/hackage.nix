@@ -21,7 +21,7 @@
       synopsis = "dynamic core for csound-expression library";
       description = "Basic bare bone library to generate Csound code";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -49,8 +49,8 @@
           (hsPkgs."pretty-show" or (errorHandler.buildDepError "pretty-show"))
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."safe" or (errorHandler.buildDepError "safe"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

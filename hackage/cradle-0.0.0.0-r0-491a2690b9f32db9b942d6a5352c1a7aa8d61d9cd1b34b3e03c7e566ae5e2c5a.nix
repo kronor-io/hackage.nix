@@ -21,7 +21,7 @@
       synopsis = "A simpler process library";
       description = "This library provides an intuitive, simple, and composable interface for\nrunning system processes. Think of it as a higher-level `process`.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "readme" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -61,9 +61,9 @@
             (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

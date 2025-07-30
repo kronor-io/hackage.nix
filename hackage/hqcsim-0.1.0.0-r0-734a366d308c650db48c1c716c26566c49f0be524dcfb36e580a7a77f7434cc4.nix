@@ -21,16 +21,16 @@
       synopsis = "A library for simulating quantum circuits.";
       description = "A library used for simulating quantum circuits, based on the \"A tutorial quantum interpreter in 150 lines of Lisp\" from https://www.stylewarning.com/posts/quantum-interpreter/";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."hmatrix" or (errorHandler.buildDepError "hmatrix"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hqcsim-exe" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."hmatrix" or (errorHandler.buildDepError "hmatrix"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."hqcsim" or (errorHandler.buildDepError "hqcsim"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

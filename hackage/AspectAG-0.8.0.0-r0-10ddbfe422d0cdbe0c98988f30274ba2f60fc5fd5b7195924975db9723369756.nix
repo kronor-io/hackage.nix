@@ -21,7 +21,7 @@
       synopsis = "First-class Attribute Grammars implemented using type-level programming.";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."poly-rec" or (errorHandler.buildDepError "poly-rec"))
           (hsPkgs."requirements" or (errorHandler.buildDepError "requirements"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "AspectAG2-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."AspectAG" or (errorHandler.buildDepError "AspectAG"))
             (hsPkgs."poly-rec" or (errorHandler.buildDepError "poly-rec"))
             (hsPkgs."requirements" or (errorHandler.buildDepError "requirements"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

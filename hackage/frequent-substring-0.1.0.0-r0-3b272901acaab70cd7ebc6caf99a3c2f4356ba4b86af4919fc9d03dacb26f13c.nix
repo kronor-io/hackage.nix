@@ -21,7 +21,7 @@
       synopsis = "Identifies and replaces frequent subsequences in long strings";
       description = "Please see the README on GitHub at <https://github.com/mherzl/frequent-substring#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-replace" or (errorHandler.buildDepError "text-replace"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "frequent-substring-exe" = {
           depends = [
@@ -46,10 +46,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-replace" or (errorHandler.buildDepError "text-replace"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "frequent-substring-test" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-replace" or (errorHandler.buildDepError "text-replace"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

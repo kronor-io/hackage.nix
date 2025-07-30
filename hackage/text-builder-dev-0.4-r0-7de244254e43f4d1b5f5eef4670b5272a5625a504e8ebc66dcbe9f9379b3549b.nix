@@ -21,7 +21,7 @@
       synopsis = "Edge of developments for \"text-builder\"";
       description = "This is a development version of \"[text-builder](https://hackage.haskell.org/package/text-builder)\".\nAll experimentation and feature development happens here.\nThe API can change drastically.\nFor a more stable API use \"text-builder\".\n\nThe packages are compatible, because they both operate on the type defined in \"[text-builder-core](https://hackage.haskell.org/package/text-builder-core)\".";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."text-builder-core" or (errorHandler.buildDepError "text-builder-core"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-builder-dev" or (errorHandler.buildDepError "text-builder-dev"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

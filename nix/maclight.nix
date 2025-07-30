@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-06-04T20:35:01Z";
         sha256 = "535b4f9e944ca31a931689b6d0ce079e7f0994ec594a4ebe9155a6ef5f7f4d0d";
-        };
+      };
       r1 = {
         nix = import ../hackage/maclight-0.1.0.0-r1-d2c7a23f6855d632dc8d35e0d516d097ad646c0d717ac070809e0966baf0206c.nix;
         revNum = 1;
         revTimestamp = "2019-01-19T12:09:55Z";
         sha256 = "d2c7a23f6855d632dc8d35e0d516d097ad646c0d717ac070809e0966baf0206c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -21,16 +21,16 @@
       synopsis = "Native FFT and IFFT for vector";
       description = "Native Fast Fourier Transform and Inverse Fast Fourier Transform for vector, with minimal dependencies.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-fft" or (errorHandler.buildDepError "vector-fft"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

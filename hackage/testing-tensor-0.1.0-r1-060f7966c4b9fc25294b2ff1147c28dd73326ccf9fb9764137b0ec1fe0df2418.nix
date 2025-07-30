@@ -21,7 +21,7 @@
       synopsis = "Pure implementation of tensors, for use in tests.";
       description = "This is a pure Haskell implementation of tensors, emphasizing\nsimplicity over all else. It is intended to be used as a model\nin tests.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."vec" or (errorHandler.buildDepError "vec"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "testing-tensor-test" = {
           depends = [
@@ -46,17 +46,17 @@
             (hsPkgs."fin" or (errorHandler.buildDepError "fin"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."vec" or (errorHandler.buildDepError "vec"))
-            ] ++ (pkgs.lib).optionals (flags.test-fft) [
+          ] ++ pkgs.lib.optionals (flags.test-fft) [
             (hsPkgs."array" or (errorHandler.buildDepError "array"))
             (hsPkgs."carray" or (errorHandler.buildDepError "carray"))
             (hsPkgs."fft" or (errorHandler.buildDepError "fft"))
-            ];
-          libs = (pkgs.lib).optionals (flags.test-cudnn) [
+          ];
+          libs = pkgs.lib.optionals (flags.test-cudnn) [
             (pkgs."cudart" or (errorHandler.sysDepError "cudart"))
             (pkgs."cudnn" or (errorHandler.sysDepError "cudnn"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

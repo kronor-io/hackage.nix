@@ -21,12 +21,12 @@
       synopsis = "A stable adaptive mergesort implementation";
       description = "A stable adaptive mergesort implementation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "samsort-test" = {
           depends = [
@@ -36,9 +36,9 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

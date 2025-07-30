@@ -21,7 +21,7 @@
       synopsis = "Cloud Haskell Async API";
       description = "This package provides a higher-level interface over Processes, in which an Async a is a\nconcurrent, possibly distributed Process that will eventually deliver a value of type a.\nThe package provides ways to create Async computations, wait for their results, and cancel them.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "AsyncTests" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

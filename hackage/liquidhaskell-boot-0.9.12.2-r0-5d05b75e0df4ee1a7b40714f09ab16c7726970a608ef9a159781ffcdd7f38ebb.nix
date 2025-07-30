@@ -21,7 +21,7 @@
       synopsis = "Liquid Types for Haskell";
       description = "This package provides a plugin to verify Haskell programs.\nBut most likely you should be using the [liquidhaskell package](https://hackage.haskell.org/package/liquidhaskell)\ninstead, which rexports this plugin together with necessary\nspecifications for definitions in the boot libraries.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -64,9 +64,9 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."free" or (errorHandler.buildDepError "free"))
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "wiredin-tests" = {
           depends = [
@@ -79,9 +79,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ghc-api-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -92,9 +92,9 @@
             (hsPkgs."tasty-ant-xml" or (errorHandler.buildDepError "tasty-ant-xml"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "liquidhaskell-parser" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -107,9 +107,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-ant-xml" or (errorHandler.buildDepError "tasty-ant-xml"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

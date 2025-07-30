@@ -7,22 +7,22 @@
         revNum = 0;
         revTimestamp = "2018-06-06T07:25:02Z";
         sha256 = "1de53c583ca52137078b3dffd5612c27b5ce96b81eba919e63d04496e3d7781a";
-        };
+      };
       r1 = {
         nix = import ../hackage/hall-symbols-0.1.0.2-r1-2200147c38d09e2feffcb55ba6c40d5c514cfe427b5ded5d74ff6bc1fdbc7b38.nix;
         revNum = 1;
         revTimestamp = "2020-07-21T08:11:25Z";
         sha256 = "2200147c38d09e2feffcb55ba6c40d5c514cfe427b5ded5d74ff6bc1fdbc7b38";
-        };
+      };
       r2 = {
         nix = import ../hackage/hall-symbols-0.1.0.2-r2-7479108d0c49ed138b9d5eba0a869ba70ff82565f3a6b2003b1961dc536ee1c9.nix;
         revNum = 2;
         revTimestamp = "2020-07-21T08:14:05Z";
         sha256 = "7479108d0c49ed138b9d5eba0a869ba70ff82565f3a6b2003b1961dc536ee1c9";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.1.0.3" = {
     sha256 = "8810227b075b84f1a874b1bb829686a0e04cd26f483119ebe891d12da01fa077";
     revisions = {
@@ -31,28 +31,28 @@
         revNum = 0;
         revTimestamp = "2020-07-20T00:58:27Z";
         sha256 = "ffa76ff2e47f57bc8fb36c25ec17e165d3a9bd770beb33781aa78d4db18412cd";
-        };
+      };
       r1 = {
         nix = import ../hackage/hall-symbols-0.1.0.3-r1-b9aee067c4686d5fafc1a52082217474511587ae5322c45691f66fd60a5d7894.nix;
         revNum = 1;
         revTimestamp = "2020-07-21T08:11:08Z";
         sha256 = "b9aee067c4686d5fafc1a52082217474511587ae5322c45691f66fd60a5d7894";
-        };
+      };
       r2 = {
         nix = import ../hackage/hall-symbols-0.1.0.3-r2-448ba3bd256ccbb933a0d3a9c3c7131201e02df0fe7c7a9858653b3a29e86448.nix;
         revNum = 2;
         revTimestamp = "2020-07-21T08:13:34Z";
         sha256 = "448ba3bd256ccbb933a0d3a9c3c7131201e02df0fe7c7a9858653b3a29e86448";
-        };
+      };
       r3 = {
         nix = import ../hackage/hall-symbols-0.1.0.3-r3-3354ec4a2279ea02060e3ca533959a2714549b8236f4c68eb67e520f81f39f9f.nix;
         revNum = 3;
         revTimestamp = "2020-07-22T06:57:07Z";
         sha256 = "3354ec4a2279ea02060e3ca533959a2714549b8236f4c68eb67e520f81f39f9f";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.1.0.4" = {
     sha256 = "e690b1b0266fe3f9171f879bb30ac462bbcc16fb58837c9edd84257672dc5724";
     revisions = {
@@ -61,28 +61,28 @@
         revNum = 0;
         revTimestamp = "2020-07-20T12:44:36Z";
         sha256 = "2e2458c84c0bdd034089d6b87d5e5068f49c54886d58e437451a7e1db6e84ca1";
-        };
+      };
       r1 = {
         nix = import ../hackage/hall-symbols-0.1.0.4-r1-deb65d71bcf0c3734803d8b1b54b731d500dc3ad05cfe7a3d918d6ccf771f3b7.nix;
         revNum = 1;
         revTimestamp = "2020-07-21T08:10:51Z";
         sha256 = "deb65d71bcf0c3734803d8b1b54b731d500dc3ad05cfe7a3d918d6ccf771f3b7";
-        };
+      };
       r2 = {
         nix = import ../hackage/hall-symbols-0.1.0.4-r2-357a73ea4d3ea757e833b141d7e841a42f09d985d39e0088fb33bd539fefe337.nix;
         revNum = 2;
         revTimestamp = "2020-07-21T08:13:13Z";
         sha256 = "357a73ea4d3ea757e833b141d7e841a42f09d985d39e0088fb33bd539fefe337";
-        };
+      };
       r3 = {
         nix = import ../hackage/hall-symbols-0.1.0.4-r3-efac9dc5365638260fbf2d282d610b44bba2c432514b84bc46fc7ea2f2c57182.nix;
         revNum = 3;
         revTimestamp = "2020-07-22T06:56:46Z";
         sha256 = "efac9dc5365638260fbf2d282d610b44bba2c432514b84bc46fc7ea2f2c57182";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.1.0.5" = {
     sha256 = "d610d2e3ed0f0781de8907e80346b31239ceeb8f3075f4e5b78b0558c0e43281";
     revisions = {
@@ -91,22 +91,22 @@
         revNum = 0;
         revTimestamp = "2020-07-21T00:56:09Z";
         sha256 = "025a77583e3da3dcca6ade43a5f335f748ff6f1eaa716e46af37b1cdce882e0d";
-        };
+      };
       r1 = {
         nix = import ../hackage/hall-symbols-0.1.0.5-r1-89754dc4b45c103a7a46700d992edaf8e669701d25113426ea4dea4377f08775.nix;
         revNum = 1;
         revTimestamp = "2020-07-21T08:10:06Z";
         sha256 = "89754dc4b45c103a7a46700d992edaf8e669701d25113426ea4dea4377f08775";
-        };
+      };
       r2 = {
         nix = import ../hackage/hall-symbols-0.1.0.5-r2-d1fc1628863285b9f46fd163a62411cb0907378a4b55958a880e10e92863ec40.nix;
         revNum = 2;
         revTimestamp = "2020-07-21T08:12:56Z";
         sha256 = "d1fc1628863285b9f46fd163a62411cb0907378a4b55958a880e10e92863ec40";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.1.0.6" = {
     sha256 = "8ab7ebbd081b1e41314cc56f8901b4c42070f532bbc41f408e36535e39e4c0bd";
     revisions = {
@@ -115,8 +115,8 @@
         revNum = 0;
         revTimestamp = "2020-07-21T07:27:29Z";
         sha256 = "2b494a4af8e6a8ead693039bc2abb5050a431050ad6ae35f1d3a6f708cf47a30";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

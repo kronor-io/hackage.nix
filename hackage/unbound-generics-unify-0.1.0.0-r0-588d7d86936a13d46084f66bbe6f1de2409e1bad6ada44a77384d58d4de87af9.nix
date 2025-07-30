@@ -21,7 +21,7 @@
       synopsis = "Unification based on unbound-generics";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."unbound-generics" or (errorHandler.buildDepError "unbound-generics"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

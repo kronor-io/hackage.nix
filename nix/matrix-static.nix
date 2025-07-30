@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2018-08-29T06:24:10Z";
         sha256 = "219d8c5c4eeb0000db2577dec5d55d8973ad4c24234919d9b991af68a6243607";
-        };
+      };
       r1 = {
         nix = import ../hackage/matrix-static-0.1-r1-461411ddd3cf563cd9423c40fb5311b979863460de5732670d14bab04272234e.nix;
         revNum = 1;
         revTimestamp = "2018-10-16T15:41:19Z";
         sha256 = "461411ddd3cf563cd9423c40fb5311b979863460de5732670d14bab04272234e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "2c2d81636f269c8a8201bad92efb489b9c8a1569b789886a4be1bfbff9bf026c";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2018-10-15T15:55:15Z";
         sha256 = "d1349a443c7f4e17fb4b51a5f85e05a6b68ccfe46405f0c39efd1002f5dcca83";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2" = {
     sha256 = "07e46233ba35c0f8fcb14af7863cfd728895b603a2196495e89a7069d89f9b3c";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2018-10-16T15:32:52Z";
         sha256 = "721257a7f9e6534286cd4e1f6d01c08350708c58563f2e98a36fb0abe54b37b9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.1" = {
     sha256 = "36f4106836350932425e985472b54d913d679496c3758b7efa00a3a0d57006cb";
     revisions = {
@@ -49,10 +49,10 @@
         revNum = 0;
         revTimestamp = "2019-11-01T00:17:42Z";
         sha256 = "701aa9a7ece8a70eab1c1ab35f302ef94ee896e966db8e7a06fe305aab6552f3";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3" = {
     sha256 = "bb2a25faf407554a50707d7a65918f0d0c182ef3b06a730408145123b98cfb3c";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2020-02-18T03:47:13Z";
         sha256 = "8a6b7954b5dfb0939253ac3e15e1a539c8300525560e8b5360f82448caa483ba";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

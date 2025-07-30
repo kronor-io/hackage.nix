@@ -21,15 +21,15 @@
       synopsis = "Serialize compilation of modules with TH code modifing shared state";
       description = "Recent GHC versions with option @-j\\<N>@ where @N@ greater than 1 can\nbuild modules concurrently. Usually it is cool thing, because build time\ndrops, but there is a drawback in form of problems with TH code\nmaintaining a shared state.\n\nI encountered such issue while running tests for\n<https://hackage.haskell.org/package/trace-embrace trace-embrace>\npackage. Package TH code has a shared state (immutable configuration\nfile loaded once), which is not supposed to change after loading, but\ntests require to cover all cases\\/branches and achieving this in the\nscope of a single cabal test-suit leads to inconsistencies.\n\nSpreading tests among multiple test suits cause code duplication and\nlooks less elegant.\n\nCompilation of conflicting modules can be serialized with\n<https://hackage.haskell.org/package/th-lock/docs/Language-Haskell-TH-Lock.html#v:ensureSerialCompilationVerbose ensureSerialCompilationVerbose>.\n\n> {-# LANGUAGE TemplateHaskell #-}\n> module ModuleA where\n>\n> import Language.Haskell.TH.Lock\n>\n> ensureSerialCompilationVerbose\n\n________________________________________________________________________\n\n> {-# LANGUAGE TemplateHaskell #-}\n> module ModuleB where\n>\n> import Language.Haskell.TH.Lock\n>\n> ensureSerialCompilationVerbose";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."th-lock" or (errorHandler.buildDepError "th-lock"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

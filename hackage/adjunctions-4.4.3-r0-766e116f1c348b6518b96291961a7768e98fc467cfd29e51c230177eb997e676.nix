@@ -21,7 +21,7 @@
       synopsis = "Adjunctions and representable functors";
       description = "Adjunctions and representable functors.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."transformers-compat" or (errorHandler.buildDepError "transformers-compat"))
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -50,12 +50,12 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributive" or (errorHandler.buildDepError "distributive"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

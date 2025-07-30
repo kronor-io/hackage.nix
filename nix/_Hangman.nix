@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-08-16T11:52:09Z";
         sha256 = "a02c604c548d8a13fb018240907be3b7a1238c20e2bca78a4d37e33a39cbe822";
-        };
+      };
       r1 = {
         nix = import ../hackage/Hangman-0.1.0.0-r1-001a10b5e54971341acc23271a48f0ef3d7bc764e380b9292580f259aab3c3c9.nix;
         revNum = 1;
         revTimestamp = "2015-08-16T12:01:37Z";
         sha256 = "001a10b5e54971341acc23271a48f0ef3d7bc764e380b9292580f259aab3c3c9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "e6a41d14634addb6c0adaa61674d88ae93e632a41b8e41c8094f05c48bfdd0d3";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2015-08-17T13:20:46Z";
         sha256 = "eb6621a7b3d1c2032d11cf26d3f2c80bdf23f48a58360385a640b970c93f580b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.2" = {
     sha256 = "b057343ce4b95177c01f3eec7a0c6c83190e2c0758d93bcaea437e70a1e88307";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2015-08-18T10:55:43Z";
         sha256 = "2962b6181995242cb83135cc6d9d63891780fccdc1dd3c76428c0db6f72c52fb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.10.0.0" = {
     sha256 = "5082c36532affe285471bbab48205a7b96e6cacfb666c6c4f0fc4711ff67c34c";
     revisions = {
@@ -49,8 +49,8 @@
         revNum = 0;
         revTimestamp = "2024-07-21T05:14:08Z";
         sha256 = "a441d316b73c452438b723ad8dad9238f0a72a05ea78c39c2665e56cc30cca3a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

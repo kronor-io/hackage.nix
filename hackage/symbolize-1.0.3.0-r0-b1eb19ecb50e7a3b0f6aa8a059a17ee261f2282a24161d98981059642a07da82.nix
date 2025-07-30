@@ -21,7 +21,7 @@
       synopsis = "Efficient global Symbol table, with Garbage Collection.";
       description = "Symbols, also known as Atoms or Interned Strings, are a common technique\nto reduce memory usage and improve performance when using many small strings:\n\nA Symbol represents a string (any `Textual`, so String, Text, ShortText, ByteString, ShortByteString, etc.)\n\nJust like `ShortText`, `ShortByteString` and `ByteArray`, a `Symbol` has an optimized memory representation,\ndirectly wrapping a primitive `ByteArray#`.\n\nFurthermore, a global symbol table keeps track of which values currently exist, ensuring we always deduplicate symbols.\nThis therefore allows us to:\n\n- Check for equality between symbols in constant-time (using pointer equality)\n- Calculate the hash in constant-time (using `StableName`)\n- Keep the memory footprint of repeatedly-seen strings low.\n\nThis is very useful if you're frequently comparing strings\nand the same strings might come up many times.\nIt also makes Symbol a great candidate for a key in e.g. a `HashMap` or `HashSet`.\n\nThe global symbol table is implemented using weak pointers,\nwhich means that unused symbols will be garbage collected.\nAs such, you do not need to be concerned about memory leaks\n(as is the case with many other symbol table implementations).\n\nPlease see the full README below or on GitHub at <https://github.com/Qqwy/haskell-symbolize#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."text-short" or (errorHandler.buildDepError "text-short"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-hashtables" or (errorHandler.buildDepError "vector-hashtables"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "symbolize-doctest" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."text-short" or (errorHandler.buildDepError "text-short"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-hashtables" or (errorHandler.buildDepError "vector-hashtables"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "symbolize-test" = {
           depends = [
             (hsPkgs."async" or (errorHandler.buildDepError "async"))
@@ -75,13 +75,13 @@
             (hsPkgs."text-short" or (errorHandler.buildDepError "text-short"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-hashtables" or (errorHandler.buildDepError "vector-hashtables"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "symbolize-bench" = {
           depends = [
@@ -97,9 +97,9 @@
             (hsPkgs."text-short" or (errorHandler.buildDepError "text-short"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-hashtables" or (errorHandler.buildDepError "vector-hashtables"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

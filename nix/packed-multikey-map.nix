@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-09-29T00:02:16Z";
         sha256 = "26fd190cfde12ee8be41751a611746fc7b70b9b8c8c32a0af22def4d1ec1c115";
-        };
+      };
       r1 = {
         nix = import ../hackage/packed-multikey-map-0.1.0.0-r1-36f72813b008900db758a2e083136e8d25fd0aa9629214e8184e00f570e8cbfc.nix;
         revNum = 1;
         revTimestamp = "2019-07-12T09:54:38Z";
         sha256 = "36f72813b008900db758a2e083136e8d25fd0aa9629214e8184e00f570e8cbfc";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

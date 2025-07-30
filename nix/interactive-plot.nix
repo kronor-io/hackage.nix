@@ -7,8 +7,8 @@
         revNum = 0;
         revTimestamp = "2019-09-09T21:31:16Z";
         sha256 = "27273b3baad63c369fc4e592126d7e7c5583dc8a9d7c3c716dd307bc038b2061";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

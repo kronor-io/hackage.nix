@@ -21,25 +21,25 @@
       synopsis = "Formatting of doubles.";
       description = "This package provides support for number formatting styles, especially styles involving significant figure calculations.\n\n== Usage\n\n>>> import Data.FormatN\n>>> comma (Just 3) 1234\n1,230";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

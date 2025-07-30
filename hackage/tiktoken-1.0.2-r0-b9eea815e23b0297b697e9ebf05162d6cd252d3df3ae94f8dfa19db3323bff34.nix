@@ -21,7 +21,7 @@
       synopsis = "Haskell implementation of tiktoken";
       description = "This packages only implements tokenization.  In other words,\ngiven an existing encoding (`cl100k_base`) you can tokenize\nan input.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."raw-strings-qq" or (errorHandler.buildDepError "raw-strings-qq"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tasty" = {
           depends = [
@@ -50,10 +50,10 @@
             (hsPkgs."tasty-silver" or (errorHandler.buildDepError "tasty-silver"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."tiktoken" or (errorHandler.buildDepError "tiktoken"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmark" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."tiktoken" or (errorHandler.buildDepError "tiktoken"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

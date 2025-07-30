@@ -21,7 +21,7 @@
       synopsis = "A basic framework for effect systems based on effects represented by GADTs.";
       description = "This library provides core definitions of [data-effects](https://hackage.haskell.org/package/data-effects).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."kan-extensions" or (errorHandler.buildDepError "kan-extensions"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -42,12 +42,12 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

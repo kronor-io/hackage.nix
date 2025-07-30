@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-yesod";
         version = "0.1.1.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "Yesod middleware for providing OpenTelemetry instrumentation";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/yesod#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,8 +38,8 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
           (hsPkgs."yesod-core" or (errorHandler.buildDepError "yesod-core"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

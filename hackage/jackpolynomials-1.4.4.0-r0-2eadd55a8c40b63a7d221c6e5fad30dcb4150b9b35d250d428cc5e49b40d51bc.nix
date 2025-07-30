@@ -21,7 +21,7 @@
       synopsis = "Jack, zonal, Schur, and Hall-Littlewood polynomials";
       description = "This library can compute Jack polynomials, zonal polynomials, Schur polynomials, skew Schur polynomials, Hall-Littlewood polynomials, skew Hall-Littlewood polynomials, flagged Schur polynomials, skew flagged Schur polynomials, factorial Schur polynomials, and skew factorial Schur polynomials. It also provides some utilities for symmetric polynomials.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
           (hsPkgs."matrix" or (errorHandler.buildDepError "matrix"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."numeric-prelude" or (errorHandler.buildDepError "numeric-prelude"))
             (hsPkgs."matrix" or (errorHandler.buildDepError "matrix"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."miniterion" or (errorHandler.buildDepError "miniterion"))
             (hsPkgs."jackpolynomials" or (errorHandler.buildDepError "jackpolynomials"))
             (hsPkgs."hspray" or (errorHandler.buildDepError "hspray"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

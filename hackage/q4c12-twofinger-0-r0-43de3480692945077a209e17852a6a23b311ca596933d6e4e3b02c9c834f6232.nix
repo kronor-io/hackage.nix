@@ -22,11 +22,11 @@
       description = "";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
           (hsPkgs."streams" or (errorHandler.buildDepError "streams"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.2") (hsPkgs."bifunctors" or (errorHandler.buildDepError "bifunctors"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.2") (hsPkgs."bifunctors" or (errorHandler.buildDepError "bifunctors"));
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."q4c12-twofinger" or (errorHandler.buildDepError "q4c12-twofinger"))
             (hsPkgs."streams" or (errorHandler.buildDepError "streams"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

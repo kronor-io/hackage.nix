@@ -21,17 +21,17 @@
       synopsis = "A partial Cabal replacement";
       description = "A portable subset of the Cabal functionality.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "mcabal" = {
-          depends = (pkgs.lib).optionals (compiler.isGhc && true) [
+          depends = pkgs.lib.optionals (compiler.isGhc && true) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ] ++ (pkgs.lib).optional (compiler.isMhs && true) (hsPkgs."base" or (errorHandler.buildDepError "base"));
+          ] ++ pkgs.lib.optional (compiler.isMhs && true) (hsPkgs."base" or (errorHandler.buildDepError "base"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

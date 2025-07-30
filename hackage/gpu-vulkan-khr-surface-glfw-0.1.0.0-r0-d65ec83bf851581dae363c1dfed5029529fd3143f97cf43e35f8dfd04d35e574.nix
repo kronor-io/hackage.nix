@@ -14,7 +14,7 @@
       identifier = {
         name = "gpu-vulkan-khr-surface-glfw";
         version = "0.1.0.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Copyright (c) 2023 Yoshikuni Jujo";
       maintainer = "yoshikuni.jujo@gmail.com";
@@ -24,7 +24,7 @@
       synopsis = "GLFW surface for Vulkan";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan-khr-surface-glfw#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."gpu-vulkan-middle-khr-surface-glfw" or (errorHandler.buildDepError "gpu-vulkan-middle-khr-surface-glfw"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-khr-surface-glfw-test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."gpu-vulkan-middle-khr-surface-glfw" or (errorHandler.buildDepError "gpu-vulkan-middle-khr-surface-glfw"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

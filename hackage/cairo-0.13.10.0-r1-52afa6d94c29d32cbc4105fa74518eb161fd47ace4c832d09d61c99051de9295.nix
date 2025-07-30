@@ -22,11 +22,11 @@
       description = "Cairo is a library to render high quality vector graphics. There\nexist various backends that allows rendering to Gtk windows, PDF,\nPS, PNG and SVG documents, amongst others.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.gtk2hs-buildtools or (pkgs.buildPackages.gtk2hs-buildtools or (errorHandler.setupDepError "gtk2hs-buildtools")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.gtk2hs-buildtools or (pkgs.pkgsBuildBuild.gtk2hs-buildtools or (errorHandler.setupDepError "gtk2hs-buildtools")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,11 +36,11 @@
           (hsPkgs."array" or (errorHandler.buildDepError "array"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         pkgconfig = (([
           (pkgconfPkgs."cairo" or (errorHandler.pkgConfDepError "cairo"))
-          ] ++ (pkgs.lib).optional (flags.cairo_pdf) (pkgconfPkgs."cairo-pdf" or (errorHandler.pkgConfDepError "cairo-pdf"))) ++ (pkgs.lib).optional (flags.cairo_ps) (pkgconfPkgs."cairo-ps" or (errorHandler.pkgConfDepError "cairo-ps"))) ++ (pkgs.lib).optional (flags.cairo_svg) (pkgconfPkgs."cairo-svg" or (errorHandler.pkgConfDepError "cairo-svg"));
+        ] ++ pkgs.lib.optional (flags.cairo_pdf) (pkgconfPkgs."cairo-pdf" or (errorHandler.pkgConfDepError "cairo-pdf"))) ++ pkgs.lib.optional (flags.cairo_ps) (pkgconfPkgs."cairo-ps" or (errorHandler.pkgConfDepError "cairo-ps"))) ++ pkgs.lib.optional (flags.cairo_svg) (pkgconfPkgs."cairo-svg" or (errorHandler.pkgConfDepError "cairo-svg"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

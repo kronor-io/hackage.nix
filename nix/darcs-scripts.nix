@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2012-02-10T11:15:36Z";
         sha256 = "877c22c395f381080a9133e9773dd5fdec952c1a5078601a6929bc30fbba0942";
-        };
+      };
       r1 = {
         nix = import ../hackage/darcs-scripts-0.1-r1-35e1f6bc1fe9bad27cc79509cf011101351b99c10d1c0cc7a1d93b4aa6b69d61.nix;
         revNum = 1;
         revTimestamp = "2015-04-08T13:55:02Z";
         sha256 = "35e1f6bc1fe9bad27cc79509cf011101351b99c10d1c0cc7a1d93b4aa6b69d61";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "6acde756a7a679e845b58a42fa88bb85a6943e04725ec7a2c785d984340afa19";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2015-04-08T14:06:37Z";
         sha256 = "1df963b80e422202bcb4263df21c12f97e2435e5f163192b580b61a68d82e4c0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

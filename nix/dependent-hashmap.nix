@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2020-03-02T11:48:01Z";
         sha256 = "d3e25a1be42d27412c043c3c541f4c7744735f8f76cf26aeb4ad9af33cb1bb85";
-        };
+      };
       r1 = {
         nix = import ../hackage/dependent-hashmap-0.1.0.0-r1-0e6b33f43c9f12f22eca5c501cb347bcec5f8d68ed08443aa6d3ca09cc43bf2b.nix;
         revNum = 1;
         revTimestamp = "2020-03-02T19:48:02Z";
         sha256 = "0e6b33f43c9f12f22eca5c501cb347bcec5f8d68ed08443aa6d3ca09cc43bf2b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "f4b2460922dbc36c2f3750b6a8fe0bcf27b7f6f30f20035d95bb832bc9544e92";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2020-03-02T22:19:39Z";
         sha256 = "6d1c20bd79f32d8daebd3cc741f884cc3d093118e3b876eb957defd4c594a966";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

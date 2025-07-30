@@ -21,7 +21,7 @@
       synopsis = "Parsing of aeson's Value with attoparsec";
       description = "Parsing of aeson's Value with attoparsec, originally from aeson.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,8 +35,8 @@
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

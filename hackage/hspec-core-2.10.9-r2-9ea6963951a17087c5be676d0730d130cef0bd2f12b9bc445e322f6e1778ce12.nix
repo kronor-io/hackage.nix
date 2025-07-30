@@ -21,7 +21,7 @@
       synopsis = "A Testing Framework for Haskell";
       description = "This package exposes internal types and functions that can be used to extend Hspec's functionality.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."tf-random" or (errorHandler.buildDepError "tf-random"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "8.4.1") (hsPkgs."stm" or (errorHandler.buildDepError "stm"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "8.4.1") (hsPkgs."stm" or (errorHandler.buildDepError "stm"));
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -72,12 +72,12 @@
             (hsPkgs."tf-random" or (errorHandler.buildDepError "tf-random"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "8.4.1") (hsPkgs."stm" or (errorHandler.buildDepError "stm"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "8.4.1") (hsPkgs."stm" or (errorHandler.buildDepError "stm"));
           build-tools = [
-            (hsPkgs.buildPackages.hspec-meta.components.exes.hspec-meta-discover or (pkgs.buildPackages.hspec-meta-discover or (errorHandler.buildToolDepError "hspec-meta:hspec-meta-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-meta.components.exes.hspec-meta-discover or (pkgs.pkgsBuildBuild.hspec-meta-discover or (errorHandler.buildToolDepError "hspec-meta:hspec-meta-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

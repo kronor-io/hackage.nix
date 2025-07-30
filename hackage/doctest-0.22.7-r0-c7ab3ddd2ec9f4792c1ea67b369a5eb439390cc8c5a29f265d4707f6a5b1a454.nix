@@ -21,7 +21,7 @@
       synopsis = "Test interactive Haskell examples";
       description = "`doctest` is a tool that checks [examples](https://www.haskell.org/haddock/doc/html/ch03s08.html#idm140354810775744)\nand [properties](https://www.haskell.org/haddock/doc/html/ch03s08.html#idm140354810771856)\nin Haddock comments.\nIt is similar in spirit to the [popular Python module with the same name](https://docs.python.org/3/library/doctest.html).\n\nDocumentation is at <https://github.com/sol/doctest#readme>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,25 +38,25 @@
           (hsPkgs."syb" or (errorHandler.buildDepError "syb"))
           (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cabal-doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = if flags.cabal-doctest then true else false;
-          };
+        };
         "doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -80,12 +80,12 @@
             (hsPkgs."syb" or (errorHandler.buildDepError "syb"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

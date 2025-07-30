@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:37:46Z";
         sha256 = "c77f448ed5b224a990dee4be7daa679514015accc6ed14f0ee4201048ae030ac";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-iotfleetwise-2.0-r1-a72592126a3acd8c54a9b79bd6bccba1f1d3065cb2d6e0ca7b88cc19093a690a.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:49:31Z";
         sha256 = "a72592126a3acd8c54a9b79bd6bccba1f1d3065cb2d6e0ca7b88cc19093a690a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

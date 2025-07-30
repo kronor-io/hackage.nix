@@ -21,7 +21,7 @@
       synopsis = "Linear programming over exponent pairs";
       description = "Package implements an algorithm to minimize rational objective function over the set of exponent pairs";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -46,19 +46,19 @@
             (hsPkgs."exp-pairs" or (errorHandler.buildDepError "exp-pairs"))
             (hsPkgs."matrix" or (errorHandler.buildDepError "matrix"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "matrix-bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."exp-pairs" or (errorHandler.buildDepError "exp-pairs"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "optimize-sum" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -66,9 +66,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
             (hsPkgs."raw-strings-qq" or (errorHandler.buildDepError "raw-strings-qq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

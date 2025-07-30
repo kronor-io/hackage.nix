@@ -21,7 +21,7 @@
       synopsis = "You can use template.hs to create a new Haskell GitHub repository.";
       description = "You can use template.hs to create a new GitHub repository. The repository will\nhave Haskell, VS Code devcontainers, and various GitHub actions ready to use.";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "initialise-library" = {
@@ -43,10 +43,10 @@
             (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
             (hsPkgs."http-conduit" or (errorHandler.buildDepError "http-conduit"))
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "initialise" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."templatise".components.sublibs.initialise-library or (errorHandler.buildDepError "templatise:initialise-library"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "initialise-test" = {
           depends = [
@@ -81,9 +81,9 @@
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

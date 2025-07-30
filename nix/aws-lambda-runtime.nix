@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2018-12-04T11:13:52Z";
         sha256 = "9fa5054b28db0ad426291d4291d2e5e73add07696240d0acf8c6fba6a8c81285";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "0878c972d92c2026d09c15c50ff291eb24c016afee1b58635969f9131fc5f8fb";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2020-01-08T09:46:45Z";
         sha256 = "353b0c9176f24cfb4b321d2e86292cf8b83219d9e1e886781b9a5067e8dcbe4b";
-        };
+      };
       r1 = {
         nix = import ../hackage/aws-lambda-runtime-0.0.0.1-r1-5eda8c7f265242b5651fe4db888c99137bc106cdc742fd03118f750a5132ae3e.nix;
         revNum = 1;
         revTimestamp = "2021-03-18T13:13:26Z";
         sha256 = "5eda8c7f265242b5651fe4db888c99137bc106cdc742fd03118f750a5132ae3e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

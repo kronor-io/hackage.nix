@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-12-28T20:31:47Z";
         sha256 = "238562b891b775cbad9be2409276c33b196eacc2d02fe2a878c752a86c588ed6";
-        };
+      };
       r1 = {
         nix = import ../hackage/chr-data-0.1.0.0-r1-8468ec907b26fb726c3976ae2c5c4d49d601a5111fe8472f12744dad3e67f0f3.nix;
         revNum = 1;
         revTimestamp = "2017-12-31T11:16:03Z";
         sha256 = "8468ec907b26fb726c3976ae2c5c4d49d601a5111fe8472f12744dad3e67f0f3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "4ddb43f6244eeb01890ac9da1e096bce7de2b8c256e56d63466112cab5691671";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2018-08-18T19:50:12Z";
         sha256 = "8421c98d9a7ad8250cae0dcd6bfe51347e452275de3947500daf4688c433093b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

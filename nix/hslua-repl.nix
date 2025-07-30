@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2023-03-16T21:37:40Z";
         sha256 = "4bd567c71b76eb96067c46e335d03e18ffbf30add8e20439acf89fb19f48cf73";
-        };
+      };
       r1 = {
         nix = import ../hackage/hslua-repl-0.1.0-r1-95d2fc10c2f8295250646c8deefc8901ff4723860079d63b95527279161fbbe4.nix;
         revNum = 1;
         revTimestamp = "2023-03-17T08:00:44Z";
         sha256 = "95d2fc10c2f8295250646c8deefc8901ff4723860079d63b95527279161fbbe4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "f086b35e211975c3874185d84994d624fd542bd8860f5ed867e9067c0345f6ce";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2023-03-17T17:24:08Z";
         sha256 = "fc88c009353e7f248cf6553c75e55ee116ce2374f219c760e056be6ae4185cab";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2" = {
     sha256 = "8244cd3ab875d922b59c77c5cf818997d3eaec492dda4a91d70914a03711c602";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2024-01-18T17:28:03Z";
         sha256 = "718781147963f02b4523e711f935fcae73895505d1b73e85ff17b5fb9cd3ad1a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

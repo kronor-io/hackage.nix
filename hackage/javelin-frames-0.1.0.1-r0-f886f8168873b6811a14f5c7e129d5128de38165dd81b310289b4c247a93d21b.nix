@@ -21,7 +21,7 @@
       synopsis = "Type-safe data frames based on higher-kinded types.";
       description = "This package implements data frames, a data structure\nwhere record types defined by the user can be transformed\ninto records of columns. See [\"Data.Frame.Tutorial\"] for a user guide.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."these" or (errorHandler.buildDepError "these"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "javelin-frames-test" = {
           depends = [
@@ -44,10 +44,10 @@
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench-frames" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."javelin-frames" or (errorHandler.buildDepError "javelin-frames"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

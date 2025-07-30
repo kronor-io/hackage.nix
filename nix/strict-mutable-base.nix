@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2024-09-02T04:20:15Z";
         sha256 = "fb6518f44185c9fca503dfe6c15437d448fd6c1cc72e2b87caacd2718e3885a5";
-        };
+      };
       r1 = {
         nix = import ../hackage/strict-mutable-base-1.0.0.0-r1-b897986711ce4a4d6f1a1d438d259e48085b4557bca1d1a4865aa54c01a810db.nix;
         revNum = 1;
         revTimestamp = "2024-09-02T04:20:56Z";
         sha256 = "b897986711ce4a4d6f1a1d438d259e48085b4557bca1d1a4865aa54c01a810db";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1.0.0" = {
     sha256 = "ffe3d127d84a3931a67005f4388de4d8f908c8ed57feb3e7797d6eb0d13e90ff";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2024-09-04T04:30:30Z";
         sha256 = "b1c039f6b179aedb420a90cbe15d3c3e78fbaaa7146ed02700b84c6018ee734f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "A library for writing predicates and transformations over predicates in Haskell";
       description = "This package provides ways to write predicates such that they compose nicely and are easy to debug.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."pretty-simple" or (errorHandler.buildDepError "pretty-simple"))
           (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-04-27T21:12:43Z";
         sha256 = "db0b8938663e91e631f8ce79571d14522db7af03f58245fffba769995bb90fb5";
-        };
+      };
       r1 = {
         nix = import ../hackage/wai-middleware-static-embedded-0.1.0.0-r1-036b7823a5e69452d1fe1e270ef3d4988063caa5bb00b6dfc356e1c21b7433e3.nix;
         revNum = 1;
         revTimestamp = "2017-04-30T16:57:16Z";
         sha256 = "036b7823a5e69452d1fe1e270ef3d4988063caa5bb00b6dfc356e1c21b7433e3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

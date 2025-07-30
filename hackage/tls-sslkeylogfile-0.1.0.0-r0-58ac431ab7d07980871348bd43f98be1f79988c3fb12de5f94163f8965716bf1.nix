@@ -21,7 +21,7 @@
       synopsis = "SSLKEYLOGFILE support for Haskell";
       description = "See README at <https://github.com/MercuryTechnologies/tls-sslkeylogfile#readme>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
           (hsPkgs."http-client-tls" or (errorHandler.buildDepError "http-client-tls"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "keylogfile-demo" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."http-client-tls" or (errorHandler.buildDepError "http-client-tls"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."tls-sslkeylogfile" or (errorHandler.buildDepError "tls-sslkeylogfile"))
-            ];
+          ];
           buildable = if !flags.examples then false else true;
-          };
         };
       };
-    }
+    };
+  }

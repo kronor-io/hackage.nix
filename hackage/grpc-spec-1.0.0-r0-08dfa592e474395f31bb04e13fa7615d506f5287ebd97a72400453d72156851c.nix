@@ -21,7 +21,7 @@
       synopsis = "Implementation of the pure part of the gRPC spec";
       description = "This is an implementation of the pure part of the core gRPC\nspec at <https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-HTTP2.md>.\nThis is by no means a full gRPC implementation, but can be\nused as the basis for one; see @grapesy@ for a full\nimplementation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -49,9 +49,9 @@
           (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ] ++ (pkgs.lib).optional (flags.snappy) (hsPkgs."snappy-c" or (errorHandler.buildDepError "snappy-c"));
+        ] ++ pkgs.lib.optional (flags.snappy) (hsPkgs."snappy-c" or (errorHandler.buildDepError "snappy-c"));
         buildable = true;
-        };
+      };
       tests = {
         "test-grpc-spec" = {
           depends = [
@@ -73,9 +73,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tree-diff" or (errorHandler.buildDepError "tree-diff"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

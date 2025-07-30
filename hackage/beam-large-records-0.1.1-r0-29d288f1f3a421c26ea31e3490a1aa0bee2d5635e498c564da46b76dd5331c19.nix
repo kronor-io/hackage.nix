@@ -21,7 +21,7 @@
       synopsis = "Integration of large-records with beam-core.";
       description = "This package provides the necessary instances that make\nit possible to use records defined with large-records as\nbeam database tables or beam databases.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."microlens" or (errorHandler.buildDepError "microlens"))
           (hsPkgs."sop-core" or (errorHandler.buildDepError "sop-core"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-beam-large-records" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

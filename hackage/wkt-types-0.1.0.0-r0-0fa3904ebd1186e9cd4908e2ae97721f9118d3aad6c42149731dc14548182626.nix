@@ -21,7 +21,7 @@
       synopsis = "A library for working with .wkt files.";
       description = "Please see the README on GitHub at <https://github.com/gtollini/wkt-types#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "wkt-types-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."wkt-types" or (errorHandler.buildDepError "wkt-types"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

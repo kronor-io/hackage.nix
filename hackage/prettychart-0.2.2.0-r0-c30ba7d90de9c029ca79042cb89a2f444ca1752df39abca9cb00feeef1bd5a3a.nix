@@ -21,7 +21,7 @@
       synopsis = "Pretty print charts from ghci.";
       description = "Serve and print charts from ghci, with automatic formatting.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,17 +37,17 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."web-rep" or (errorHandler.buildDepError "web-rep"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Safely evaluate pure Haskell expressions";
       description = "Mueval is a Haskell interpreter. It uses the GHC API to evaluate arbitrary Haskell expressions. Importantly, mueval takes many precautions to defang and avoid \\\"evil\\\" code.  It uses resource limits, whitelisted modules and Safe Haskell, special Show instances for IO, threads, processes, and changes of directory to sandbox the Haskell code. . It is, in short, intended to be a standalone version of Lambdabot's famous evaluation functionality. For examples and explanations, please see the README file. . Mueval is POSIX-only.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."show" or (errorHandler.buildDepError "show"))
           (hsPkgs."simple-reflect" or (errorHandler.buildDepError "simple-reflect"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "mueval" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."show" or (errorHandler.buildDepError "show"))
             (hsPkgs."simple-reflect" or (errorHandler.buildDepError "simple-reflect"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "mueval-test" = {
           depends = [
@@ -79,9 +79,9 @@
             (hsPkgs."show" or (errorHandler.buildDepError "show"))
             (hsPkgs."simple-reflect" or (errorHandler.buildDepError "simple-reflect"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

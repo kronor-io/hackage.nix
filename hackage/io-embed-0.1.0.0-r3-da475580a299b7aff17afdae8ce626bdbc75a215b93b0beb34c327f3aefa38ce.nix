@@ -21,7 +21,7 @@
       synopsis = "Use Template Haskell to embed the result of an IO computation.";
       description = "Please see the README on GitHub at <https://github.com/gtollini/io-embed#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "io-embed-test" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."io-embed" or (errorHandler.buildDepError "io-embed"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

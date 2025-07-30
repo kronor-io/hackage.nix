@@ -21,7 +21,7 @@
       synopsis = "Low-level Haskell bindings to the BearLibTerminal graphics library.";
       description = "A Haskell wrapper for a graphics library for making roguelike-style games, with a terminal-like window facilitating flexible textual output and\nuncomplicated input processing. For more information and a design overview, please see the original documentation here: http://foo.wyrd.name/en:bearlibterminal.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,13 +29,13 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         libs = [
           (pkgs."stdc++" or (errorHandler.sysDepError "stdc++"))
           (pkgs."BearLibTerminal" or (errorHandler.sysDepError "BearLibTerminal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "omni" = {
           depends = [
@@ -50,9 +50,9 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."word8" or (errorHandler.buildDepError "word8"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

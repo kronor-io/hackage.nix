@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-09-06T02:35:13Z";
         sha256 = "d97c5086074ac15967e416570d6caab07f9b2950ee004f54e64f57a42177c56c";
-        };
+      };
       r1 = {
         nix = import ../hackage/io-throttle-0.1.0-r1-c3903532515f76e374229ea572d11f7ab02a560062425f33649399c5ac61a16e.nix;
         revNum = 1;
         revTimestamp = "2014-09-06T02:45:41Z";
         sha256 = "c3903532515f76e374229ea572d11f7ab02a560062425f33649399c5ac61a16e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

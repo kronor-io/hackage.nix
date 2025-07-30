@@ -21,7 +21,7 @@
       synopsis = "Some extensions to the annotated-exception library";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."monad-logger-aeson" or (errorHandler.buildDepError "monad-logger-aeson"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Facilities for storing a Haskell value, using delta types.";
       description = "This package provides facilities for storing Haskell values\nin persistent storage as opposed to in volatile memory.\n\n* \"Data.Store\" — store values outside of volatile memory (RAM).\n\n* \"Data.DBVar\" — mutable variable that mirrors its value in a 'Store'.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -43,12 +43,12 @@
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
             (hsPkgs."io-sim" or (errorHandler.buildDepError "io-sim"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

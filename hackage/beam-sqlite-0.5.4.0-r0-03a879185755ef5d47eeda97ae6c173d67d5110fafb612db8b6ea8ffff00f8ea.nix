@@ -21,7 +21,7 @@
       synopsis = "Beam driver for SQLite";
       description = "Beam driver for the <https://sqlite.org/ SQLite> embedded database.\nSee <https://haskell-beam.github.io/beam/user-guide/backends/beam-sqlite/ here>\nfor more information";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
           (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "beam-sqlite-tests" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

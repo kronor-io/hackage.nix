@@ -21,7 +21,7 @@
       synopsis = "Toy dependency injection framework";
       description = "Toy dependency injection framework that wires things at runtime.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,18 +32,18 @@
           (hsPkgs."multicurryable" or (errorHandler.buildDepError "multicurryable"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."sop-core" or (errorHandler.buildDepError "sop-core"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cauldron-example-wiring" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "app-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -66,9 +66,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tests-managed" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -78,9 +78,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

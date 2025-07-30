@@ -21,7 +21,7 @@
       synopsis = "Bidirectional TOML serialization";
       description = "Implementation of bidirectional TOML serialization. Simple codecs look like this:\n\n@\n__data__ User = User\n\\    { userName :: Text\n\\    , userAge  :: Int\n\\    }\n\\\n\\userCodec :: TomlCodec User\n\\userCodec = User\n\\    \\<$\\> Toml.text \"name\" .= userName\n\\    \\<*\\> Toml.int  \"age\"  .= userAge\n@\n\nThe following blog post has more details about library design:\n\n* [tomland: Bidirectional TOML serialization](https://kowainik.github.io/posts/2019-01-14-tomland)";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."validation-selective" or (errorHandler.buildDepError "validation-selective"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "readme" = {
           depends = [
@@ -47,14 +47,14 @@
             (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.markdown-unlit.components.exes.markdown-unlit or (pkgs.buildPackages.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
-            ];
+            (hsPkgs.pkgsBuildBuild.markdown-unlit.components.exes.markdown-unlit or (pkgs.pkgsBuildBuild.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
+          ];
           buildable = if !flags.build-readme || system.isWindows
             then false
             else true;
-          };
+        };
         "play-tomland" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -65,12 +65,12 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
-          buildable = if !flags.build-play-tomland || compiler.isGhc && (compiler.version).lt "8.6"
+          ];
+          buildable = if !flags.build-play-tomland || compiler.isGhc && compiler.version.lt "8.6"
             then false
             else true;
-          };
         };
+      };
       tests = {
         "tomland-test" = {
           depends = [
@@ -88,9 +88,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

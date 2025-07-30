@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2020-02-29T16:02:31Z";
         sha256 = "2c489c5c8b0ace0d3ac408863e463e93a58df1b39dc734c411dcda4959445540";
-        };
+      };
       r1 = {
         nix = import ../hackage/nonlinear-optimization-backprop-0.2.4-r1-ac14a0dd442ebd98a2743b5c744248bbcc84ac86af8020df1bbf1f86012603d8.nix;
         revNum = 1;
         revTimestamp = "2022-08-20T14:40:29Z";
         sha256 = "ac14a0dd442ebd98a2743b5c744248bbcc84ac86af8020df1bbf1f86012603d8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-08-09T15:10:50Z";
         sha256 = "62f3c9c5b8284cc9eba4924cc3ae2c82bd067f29503804ca06562caefccdecaf";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "9abcaf0cbbb5e523d4ceeadff677844c5af668a5374a78ee5a004101fea90d70";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2016-08-10T11:22:17Z";
         sha256 = "48e88724e74c4043962f07a791bcdf367fd9ad5a7192730e716fa9be86901810";
-        };
+      };
       r1 = {
         nix = import ../hackage/credentials-cli-0.0.1.1-r1-b64b55d3e9904385ed1f18bcf5e60baa7d8e06aeec6f29c8b9b1a9fc62a2f219.nix;
         revNum = 1;
         revTimestamp = "2016-08-10T16:58:22Z";
         sha256 = "b64b55d3e9904385ed1f18bcf5e60baa7d8e06aeec6f29c8b9b1a9fc62a2f219";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.2" = {
     sha256 = "d194b8252baec919de4e0f66578db47b28a3cec82bc4ddb68006b5054e627980";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2017-04-28T17:06:26Z";
         sha256 = "5a6d460dc47c4ba51ca204daead304521fdbba295adfbbf31855ab6cbce6f7fc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

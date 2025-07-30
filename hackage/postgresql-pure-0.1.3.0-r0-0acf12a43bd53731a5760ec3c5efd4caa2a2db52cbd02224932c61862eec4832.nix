@@ -22,11 +22,11 @@
       description = "pure Haskell PostgreSQL driver";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -53,13 +53,13 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-          ] ++ (if flags.pure-md5
+        ] ++ (if flags.pure-md5
           then [ (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5")) ]
           else [
             (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-            ]);
+          ]);
         buildable = true;
-        };
+      };
       tests = {
         "doctest" = {
           depends = [
@@ -87,15 +87,15 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ]);
+            ]);
           buildable = true;
-          };
+        };
         "hdbc-postgresql" = {
           depends = [
             (hsPkgs."HDBC" or (errorHandler.buildDepError "HDBC"))
@@ -124,15 +124,15 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ]);
+            ]);
           buildable = true;
-          };
+        };
         "original" = {
           depends = [
             (hsPkgs."HDBC" or (errorHandler.buildDepError "HDBC"))
@@ -161,15 +161,15 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ]);
+            ]);
           buildable = true;
-          };
+        };
         "relational-record" = {
           depends = [
             (hsPkgs."HDBC" or (errorHandler.buildDepError "HDBC"))
@@ -204,16 +204,16 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ]);
+            ]);
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "requests-per-second" = {
           depends = ([
@@ -246,15 +246,15 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ])) ++ (pkgs.lib).optional (!system.isWindows && (compiler.isGhc && (compiler.version).lt "8.8.0")) (hsPkgs."postgres-wire" or (errorHandler.buildDepError "postgres-wire"));
+            ])) ++ pkgs.lib.optional (!system.isWindows && (compiler.isGhc && compiler.version.lt "8.8.0")) (hsPkgs."postgres-wire" or (errorHandler.buildDepError "postgres-wire"));
           buildable = true;
-          };
+        };
         "requests-per-second-constant" = {
           depends = (([
             (hsPkgs."HDBC" or (errorHandler.buildDepError "HDBC"))
@@ -290,15 +290,15 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ] ++ (if flags.pure-md5
+          ] ++ (if flags.pure-md5
             then [
               (hsPkgs."pureMD5" or (errorHandler.buildDepError "pureMD5"))
-              ]
+            ]
             else [
               (hsPkgs."cryptohash-md5" or (errorHandler.buildDepError "cryptohash-md5"))
-              ])) ++ (pkgs.lib).optional (!system.isWindows && (compiler.isGhc && (compiler.version).lt "8.8.0")) (hsPkgs."postgres-wire" or (errorHandler.buildDepError "postgres-wire"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.8.0") (hsPkgs."postgresql-typed" or (errorHandler.buildDepError "postgresql-typed"));
+            ])) ++ pkgs.lib.optional (!system.isWindows && (compiler.isGhc && compiler.version.lt "8.8.0")) (hsPkgs."postgres-wire" or (errorHandler.buildDepError "postgres-wire"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.8.0") (hsPkgs."postgresql-typed" or (errorHandler.buildDepError "postgresql-typed"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -22,11 +22,11 @@
       description = "@influxdb@ is a Haskell client library for InfluxDB.\n\nSee \"Database.InfluxDB\" for a quick start guide.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -48,9 +48,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "influx-random-points" = {
           depends = [
@@ -67,9 +67,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = if !flags.examples then false else true;
-          };
+        };
         "influx-write-udp" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -78,10 +78,10 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = if !flags.examples then false else true;
-          };
         };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -89,9 +89,9 @@
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."influxdb" or (errorHandler.buildDepError "influxdb"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "regressions" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -101,9 +101,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."raw-strings-qq" or (errorHandler.buildDepError "raw-strings-qq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

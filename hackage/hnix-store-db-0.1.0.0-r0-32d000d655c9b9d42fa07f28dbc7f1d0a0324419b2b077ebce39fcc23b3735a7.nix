@@ -21,7 +21,7 @@
       synopsis = "Nix store database support";
       description = "Implementation of the Nix store database";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."fast-logger" or (errorHandler.buildDepError "fast-logger"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "db-readme" = {
           depends = [
@@ -52,28 +52,28 @@
             (hsPkgs."esqueleto" or (errorHandler.buildDepError "esqueleto"))
             (hsPkgs."hnix-store-core" or (errorHandler.buildDepError "hnix-store-core"))
             (hsPkgs."hnix-store-db" or (errorHandler.buildDepError "hnix-store-db"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.markdown-unlit.components.exes.markdown-unlit or (pkgs.buildPackages.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
-            ];
+            (hsPkgs.pkgsBuildBuild.markdown-unlit.components.exes.markdown-unlit or (pkgs.pkgsBuildBuild.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
+          ];
           buildable = if !flags.build-readme then false else true;
-          };
+        };
         "db-bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hnix-store-db" or (errorHandler.buildDepError "hnix-store-db"))
-            ];
+          ];
           buildable = if !flags.build-bench then false else true;
-          };
         };
+      };
       tests = {
         "db" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hnix-store-db" or (errorHandler.buildDepError "hnix-store-db"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

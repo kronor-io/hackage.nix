@@ -21,7 +21,7 @@
       synopsis = "Calculate various string metrics efficiently";
       description = "Calculate various string metrics efficiently.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -41,10 +41,10 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-metrics" or (errorHandler.buildDepError "text-metrics"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench-speed" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-metrics" or (errorHandler.buildDepError "text-metrics"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bench-memory" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -63,9 +63,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-metrics" or (errorHandler.buildDepError "text-metrics"))
             (hsPkgs."weigh" or (errorHandler.buildDepError "weigh"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

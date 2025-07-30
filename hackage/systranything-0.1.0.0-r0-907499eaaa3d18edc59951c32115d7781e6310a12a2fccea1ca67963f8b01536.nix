@@ -21,7 +21,7 @@
       synopsis = "Let you put anything in the system tray";
       description = "`systranything` creates a system tray menu based on a YAML file. The YAML\ncontains the specification of the menu items with shell commands to execute\nwhen the items are clicked.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "systranything" = {
@@ -40,9 +40,9 @@
             (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

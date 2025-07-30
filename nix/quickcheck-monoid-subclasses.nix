@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2022-12-29T07:49:19Z";
         sha256 = "816a68c404c2e89f12ee53d33a82a8f0375912b2480b1df5233adcc4f7ece3c1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "9ee255ce0adef3584515eeb4d58a2c003e8e8ba273d402c18c09eda08bfa32f4";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2022-12-29T13:20:13Z";
         sha256 = "0618f08e8b7125aad55941fa6f45d88d2d69f3e63a44b90658e3b3343a6209fb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.0" = {
     sha256 = "550385cc93717ec17f30c4bf6b5966f08419e58c499d993d685b9c1a748204a7";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2023-03-06T02:22:54Z";
         sha256 = "16a9751c67dc02b235b455168ead52b6db2a1a37e554fa574966aa4c25a3c29d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "fc6f4954546b829155527ca25e502d28f54d33a968922ae553866dbb280a220c";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2023-03-18T08:08:38Z";
         sha256 = "e32dc9b7c7df6eeb1bf4050fc3f00b1f7e1ef572d24263dc3aa44408e2269db0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.0" = {
     sha256 = "89ce0b4529ba358892fceaefab69340a42bb3d77924a3b9b0f8810ad2dd6ccf4";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2023-04-02T14:38:50Z";
         sha256 = "ffb8db6aa749f6f418b742e35cff8370d35125303f3bc5d95e3873916f5699cd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.1" = {
     sha256 = "d51f898ba4ca6672f2bf7c2d52c8c8f7eb46825bafaee50d2eec32d25e8f223a";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2023-12-23T06:09:51Z";
         sha256 = "ee2716721b1cb63d90e2dedbd81912f6fba40487f1d1082311e2213fa0982588";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.2" = {
     sha256 = "632eba916c98ac2b67a8a60e7ffc526ea5fc21d3ac21ef76e93bc04924f55dad";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2024-04-11T06:40:27Z";
         sha256 = "6b46bfe0b901acd16a121b8a5d11f1310072d32a350afdb444979a33fedf1783";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.3" = {
     sha256 = "e1bcc095d8a3681a15b39fa61cab87cd93ca1fd94849bf3b62c0999cdc48f17c";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2024-04-24T05:22:35Z";
         sha256 = "401b857a9054b8a5d7d5259bcd41ea54a1598402d5db0e235093f9dc3e96eb18";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.4" = {
     sha256 = "05613675551fa13080c8569fe79af745a33d3657b3ce824bdfe7958aa898bed9";
     revisions = {
@@ -103,10 +103,10 @@
         revNum = 0;
         revTimestamp = "2024-05-19T04:36:29Z";
         sha256 = "4c2e3a2b5ae7018c9f24a3a891dd381e0b92bea176fd98072fc6e3cfe03f6b24";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.5" = {
     sha256 = "340e6799e1e7d839a25aef39342ba2a80379ec6e5047466058826db593a9d942";
     revisions = {
@@ -115,8 +115,20 @@
         revNum = 0;
         revTimestamp = "2025-01-17T08:05:39Z";
         sha256 = "be2d6d539637abdba49e053bf8178dccc603437bd903218c2195f74b2ae84735";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.3.0.6" = {
+    sha256 = "bb328e1d26f64affbe75d0f8ad136d8f639bbf46afc766103b9642fe277bf60d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/quickcheck-monoid-subclasses-0.3.0.6-r0-ae1dbbfe0a9b54040bca5dcf6d8d966220ab845490b1ddfdbd3fb493211eb131.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-21T02:53:35Z";
+        sha256 = "ae1dbbfe0a9b54040bca5dcf6d8d966220ab845490b1ddfdbd3fb493211eb131";
+      };
+      default = "r0";
+    };
+  };
+}

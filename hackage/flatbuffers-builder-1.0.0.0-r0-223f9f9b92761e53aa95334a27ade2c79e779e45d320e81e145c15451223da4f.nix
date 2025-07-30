@@ -21,7 +21,7 @@
       synopsis = "Flatbuffers encoding based on a syntax tree";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."run-st" or (errorHandler.buildDepError "run-st"))
           (hsPkgs."array-builder" or (errorHandler.buildDepError "array-builder"))
           (hsPkgs."byteslice" or (errorHandler.buildDepError "byteslice"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."array-builder" or (errorHandler.buildDepError "array-builder"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

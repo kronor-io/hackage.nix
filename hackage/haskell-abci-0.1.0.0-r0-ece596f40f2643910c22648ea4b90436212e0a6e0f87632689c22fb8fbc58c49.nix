@@ -22,11 +22,11 @@
       description = "Haskell library for writing Application BlockChain Interface (ABCI) servers. Licensed under BSD 3-clause (see LICENSE).";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.proto-lens-protoc or (pkgs.buildPackages.proto-lens-protoc or (errorHandler.setupDepError "proto-lens-protoc")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.proto-lens-protoc or (pkgs.pkgsBuildBuild.proto-lens-protoc or (errorHandler.setupDepError "proto-lens-protoc")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."conduit-combinators" or (errorHandler.buildDepError "conduit-combinators"))
           (hsPkgs."network-conduit" or (errorHandler.buildDepError "network-conduit"))
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "haskell-abci-counter" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."haskell-abci" or (errorHandler.buildDepError "haskell-abci"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

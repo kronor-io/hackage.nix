@@ -21,7 +21,7 @@
       synopsis = "Test functions for the parsable package";
       description = "Provides QuickCheck generators and HUnit assertions for testing\nthe round-trip assurances of types with both Parsable and Printable\ninstances.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
           (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
           (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

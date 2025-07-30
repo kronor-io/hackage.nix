@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-04-27T06:53:45Z";
         sha256 = "f7ceda8d2251a7d86f685d66eb22bc30d5cddf3458793d3b26b031b27b2a1816";
-        };
+      };
       r1 = {
         nix = import ../hackage/solar-0.1.0.0-r1-499ba03876cb045b5b8314285eedde11dd29d4bbf981c81bf908c69e99418764.nix;
         revNum = 1;
         revTimestamp = "2019-04-27T06:55:48Z";
         sha256 = "499ba03876cb045b5b8314285eedde11dd29d4bbf981c81bf908c69e99418764";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

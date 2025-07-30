@@ -21,7 +21,7 @@
       synopsis = "Haskell library for Language Server Protocol clients";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -50,9 +50,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -67,9 +67,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."lsp-client" or (errorHandler.buildDepError "lsp-client"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

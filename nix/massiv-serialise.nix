@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2021-01-02T23:09:35Z";
         sha256 = "e107b0827db564f6856f3b6f5c791e447a7bdfca228283165f074600965565c6";
-        };
+      };
       r1 = {
         nix = import ../hackage/massiv-serialise-0.1.0.0-r1-a02a34e449d27e8cfc42c0133fc4375964a0e12c9fc721b0354cb6ef5c01848c.nix;
         revNum = 1;
         revTimestamp = "2021-07-21T00:49:57Z";
         sha256 = "a02a34e449d27e8cfc42c0133fc4375964a0e12c9fc721b0354cb6ef5c01848c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0.0" = {
     sha256 = "cd3fa8fa624cb57269d9f029f7bec4eb92b6bc6cf0d9c94f56ef5552b05b50a1";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2021-08-01T19:14:09Z";
         sha256 = "2a809a4c3295cb6e615d2576b9e957f2fd5c54714ef1671fb4e87cde84d18a25";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.1" = {
     sha256 = "60fac37c600ccff0570810e34980fcad433150018f71e5c04d0e6a295d9db17e";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2021-10-11T17:36:20Z";
         sha256 = "a26918b5ec8cf556c20af9b9af98b469fa82b36bd32dd0d2f4ca9b3fd9927cea";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.2" = {
     sha256 = "d5ff3fe15e0e3fb47e6b18d7b99471af036177f6c9257370c4819a31a5b6098c";
     revisions = {
@@ -49,8 +49,8 @@
         revNum = 0;
         revTimestamp = "2021-11-25T19:45:51Z";
         sha256 = "f94255952a28518cf2b5ba2041a0ff0c4974788ad74121e0ba84d8fafd1da96d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

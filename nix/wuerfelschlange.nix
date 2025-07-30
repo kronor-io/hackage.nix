@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2021-12-05T11:29:31Z";
         sha256 = "7df8583b67d54ce0ebc4feffb1cc3caf2eccbb57c42a03b7121eb6a0a0ead6db";
-        };
+      };
       r1 = {
         nix = import ../hackage/wuerfelschlange-0.1-r1-5db5ab9846eb6bd393964732da16c5da53ea5c1e86da592b1852dae86217f09d.nix;
         revNum = 1;
         revTimestamp = "2023-09-30T09:58:06Z";
         sha256 = "5db5ab9846eb6bd393964732da16c5da53ea5c1e86da592b1852dae86217f09d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

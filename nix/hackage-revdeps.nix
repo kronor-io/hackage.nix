@@ -7,14 +7,38 @@
         revNum = 0;
         revTimestamp = "2024-12-08T18:44:28Z";
         sha256 = "0f4ad82d1585e4e1f28fa7fef477b74cabdbad6e433baf9679ffcf039fe5e650";
-        };
+      };
       r1 = {
         nix = import ../hackage/hackage-revdeps-0.1-r1-03a6d11e4911e0fae017802866ac2a8d865d2d9a4e767cc6e628a0c92dd519f4.nix;
         revNum = 1;
         revTimestamp = "2025-03-01T15:55:54Z";
         sha256 = "03a6d11e4911e0fae017802866ac2a8d865d2d9a4e767cc6e628a0c92dd519f4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+  "0.1.1" = {
+    sha256 = "f2105b6d9f337294946e7b89aee9da656d08f8775b107a610a62ff66c5657332";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hackage-revdeps-0.1.1-r0-79a4dddcb72f080e9c54349c26f258afa1dfe39439eb480d3a3004bb32a41298.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-05T20:09:46Z";
+        sha256 = "79a4dddcb72f080e9c54349c26f258afa1dfe39439eb480d3a3004bb32a41298";
+      };
+      r1 = {
+        nix = import ../hackage/hackage-revdeps-0.1.1-r1-8bb0aa858ab143bf5eb6dbe0579dc678f6f76e24ced3fb23c644e84f0f83141d.nix;
+        revNum = 1;
+        revTimestamp = "2025-06-04T06:06:51Z";
+        sha256 = "8bb0aa858ab143bf5eb6dbe0579dc678f6f76e24ced3fb23c644e84f0f83141d";
+      };
+      r2 = {
+        nix = import ../hackage/hackage-revdeps-0.1.1-r2-d26ec07c2dd2bbb27d36e37d473ada373b0d2c4ee47c74a922ec1c499efdaa91.nix;
+        revNum = 2;
+        revTimestamp = "2025-07-23T20:01:35Z";
+        sha256 = "d26ec07c2dd2bbb27d36e37d473ada373b0d2c4ee47c74a922ec1c499efdaa91";
+      };
+      default = "r2";
+    };
+  };
+}

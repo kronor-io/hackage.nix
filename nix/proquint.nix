@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2023-04-05T08:06:01Z";
         sha256 = "c9ee6d3723c5ef76c4edbae527a08e15e6ca6bcfe42c304bf27f9a75c8de7ad6";
-        };
+      };
       r1 = {
         nix = import ../hackage/proquint-0.1.0.0-r1-861a05c4c1d21b17400d348dd1df4ad91b576b2a3c5ddc7181899fc9ae1c7adc.nix;
         revNum = 1;
         revTimestamp = "2024-08-29T14:24:34Z";
         sha256 = "861a05c4c1d21b17400d348dd1df4ad91b576b2a3c5ddc7181899fc9ae1c7adc";
-        };
+      };
       r2 = {
         nix = import ../hackage/proquint-0.1.0.0-r2-4d40b1c0dee34bdfc3ad051f3b260a77b8304afc2f5b336cce233a733e130cae.nix;
         revNum = 2;
         revTimestamp = "2024-10-17T07:25:36Z";
         sha256 = "4d40b1c0dee34bdfc3ad051f3b260a77b8304afc2f5b336cce233a733e130cae";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

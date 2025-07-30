@@ -21,7 +21,7 @@
       synopsis = "QuickCheck support for monoidmap.";
       description = "QuickCheck support for the monoidmap package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
           (hsPkgs."monoidmap" or (errorHandler.buildDepError "monoidmap"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

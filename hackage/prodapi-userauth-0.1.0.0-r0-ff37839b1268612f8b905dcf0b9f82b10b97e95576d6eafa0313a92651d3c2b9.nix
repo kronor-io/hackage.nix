@@ -21,7 +21,7 @@
       synopsis = "a base lib for performing user-authentication in prodapi services";
       description = "implements basic bricks for password, oauth2 authentification of user identities";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,8 +42,8 @@
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

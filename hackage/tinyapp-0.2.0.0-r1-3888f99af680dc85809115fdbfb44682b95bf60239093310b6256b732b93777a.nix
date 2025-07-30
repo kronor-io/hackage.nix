@@ -21,7 +21,7 @@
       synopsis = "Library to build tiny apps in Haskell";
       description = "Library to build tiny apps in Haskell such a REPLs or text-based applications that reacts to keystrokes";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,17 +29,17 @@
           (hsPkgs."brick" or (errorHandler.buildDepError "brick"))
           (hsPkgs."vty" or (errorHandler.buildDepError "vty"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tinyapp-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tinyapp" or (errorHandler.buildDepError "tinyapp"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

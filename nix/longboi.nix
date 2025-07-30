@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-01-16T19:17:38Z";
         sha256 = "bd43cb8fa8b293604c9ccbb5b51f05e368a334bddcc3959dc0cf5ea5f4102f2d";
-        };
+      };
       r1 = {
         nix = import ../hackage/longboi-1.0.0-r1-67d9ed5d8db219557d5b390e94d3499748b10102ad47ac1ee1861dc9682e3222.nix;
         revNum = 1;
         revTimestamp = "2023-10-17T00:43:48Z";
         sha256 = "67d9ed5d8db219557d5b390e94d3499748b10102ad47ac1ee1861dc9682e3222";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -22,16 +22,16 @@
       description = "ghc-mod is a backend program to enrich Haskell programming in editors. It\nstrives to offer most of the features one has come to expect from modern IDEs\nin any editor.\nghc-mod provides a library for other haskell programs to use as well as a\nstandalone program for easy editor integration. All of the fundamental\nfunctionality of the frontend program can be accessed through the library\nhowever many implementation details are hidden and if you want to\nsignificantly extend ghc-mod you should submit these changes upstream instead\nof implementing them on top of the library.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.containers or (pkgs.buildPackages.containers or (errorHandler.setupDepError "containers")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.template-haskell or (pkgs.buildPackages.template-haskell or (errorHandler.setupDepError "template-haskell")))
-        (hsPkgs.buildPackages.transformers or (pkgs.buildPackages.transformers or (errorHandler.setupDepError "transformers")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.containers or (pkgs.pkgsBuildBuild.containers or (errorHandler.setupDepError "containers")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.template-haskell or (pkgs.pkgsBuildBuild.template-haskell or (errorHandler.setupDepError "template-haskell")))
+        (hsPkgs.pkgsBuildBuild.transformers or (pkgs.pkgsBuildBuild.transformers or (errorHandler.setupDepError "transformers")))
+      ];
+    };
     components = {
       "library" = {
         depends = ([
@@ -68,9 +68,9 @@
           (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
           (hsPkgs."cabal-helper" or (errorHandler.buildDepError "cabal-helper"))
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "8.0") (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "7.8") (hsPkgs."convertible" or (errorHandler.buildDepError "convertible"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "8.0") (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "7.8") (hsPkgs."convertible" or (errorHandler.buildDepError "convertible"));
         buildable = true;
-        };
+      };
       exes = {
         "ghc-mod" = {
           depends = [
@@ -86,9 +86,9 @@
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
             (hsPkgs."ghc-mod" or (errorHandler.buildDepError "ghc-mod"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ghc-modi" = {
           depends = [
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
@@ -100,18 +100,18 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ghc-mod" or (errorHandler.buildDepError "ghc-mod"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = ([
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
@@ -129,20 +129,20 @@
             (hsPkgs."cabal-helper" or (errorHandler.buildDepError "cabal-helper"))
             (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
             (hsPkgs."ghc-mod" or (errorHandler.buildDepError "ghc-mod"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "7.8") (hsPkgs."convertible" or (errorHandler.buildDepError "convertible"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "8.0") (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "7.8") (hsPkgs."convertible" or (errorHandler.buildDepError "convertible"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "8.0") (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"));
           buildable = true;
-          };
+        };
         "shelltest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.shelltest.components.exes.shelltest or (pkgs.buildPackages.shelltest or (errorHandler.buildToolDepError "shelltest:shelltest")))
-            ];
+            (hsPkgs.pkgsBuildBuild.shelltest.components.exes.shelltest or (pkgs.pkgsBuildBuild.shelltest or (errorHandler.buildToolDepError "shelltest:shelltest")))
+          ];
           buildable = if !flags.shelltest then false else true;
-          };
         };
+      };
       benchmarks = {
         "criterion" = {
           depends = [
@@ -152,9 +152,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."ghc-mod" or (errorHandler.buildDepError "ghc-mod"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

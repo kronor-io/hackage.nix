@@ -21,7 +21,7 @@
       synopsis = "A reference counting library to alias linear resources";
       description = "A reference counting library to alias linear resources.\nGet started by importing @'Data.Linear.Alias'@!";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,18 +29,18 @@
           (hsPkgs."linear-base" or (errorHandler.buildDepError "linear-base"))
           (hsPkgs."atomic-counter" or (errorHandler.buildDepError "atomic-counter"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "reference-counting-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."reference-counting" or (errorHandler.buildDepError "reference-counting"))
             (hsPkgs."linear-base" or (errorHandler.buildDepError "linear-base"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -14,7 +14,7 @@
       identifier = {
         name = "typed-session-state-algorithm";
         version = "0.4.2.1";
-        };
+      };
       license = "MIT";
       copyright = "";
       maintainer = "shangdizhixia1993@163.com";
@@ -24,7 +24,7 @@
       synopsis = "Automatically generate status for typed-session.";
       description = "Consider the communication process as a state machine, and this lib will generate the required states.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,18 +34,18 @@
           (hsPkgs."megaparsec" or (errorHandler.buildDepError "megaparsec"))
           (hsPkgs."parser-combinators" or (errorHandler.buildDepError "parser-combinators"))
           (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "typed-session-state-algorithm-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."typed-session-state-algorithm" or (errorHandler.buildDepError "typed-session-state-algorithm"))
             (hsPkgs."raw-strings-qq" or (errorHandler.buildDepError "raw-strings-qq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

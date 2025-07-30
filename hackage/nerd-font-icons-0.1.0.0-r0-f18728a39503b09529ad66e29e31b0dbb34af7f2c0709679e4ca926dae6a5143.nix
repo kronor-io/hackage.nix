@@ -21,11 +21,11 @@
       synopsis = "Nerd Font Icons for use in haskell";
       description = "The \\`Graphics.Icons.NerdFont\\` module simplifies using Nerd Fonts Icons in\nyour Haskell source code by providing constants for the icon code points.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

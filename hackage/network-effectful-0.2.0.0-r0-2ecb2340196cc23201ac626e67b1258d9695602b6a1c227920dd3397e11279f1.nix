@@ -21,7 +21,7 @@
       synopsis = "Adaptation of the network library for the effectful ecosystem.";
       description = "Adaptation of the @<https://hackage.haskell.org/package/network network>@ library for the @<https://hackage.haskell.org/package/effectful effectful>@ ecosystem.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."effectful-core" or (errorHandler.buildDepError "effectful-core"))
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

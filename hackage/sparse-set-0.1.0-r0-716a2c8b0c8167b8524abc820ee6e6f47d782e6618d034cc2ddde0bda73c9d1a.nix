@@ -21,7 +21,7 @@
       synopsis = "Sparse set data structure";
       description = "A sparse set is a data structure that allows for efficient\ninsertion, deletion, and membership testing of elements in a set.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,27 +29,27 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."sparse-vector" or (errorHandler.buildDepError "sparse-vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sparse-set" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."sparse-set" or (errorHandler.buildDepError "sparse-set"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "sparse-set-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."sparse-set" or (errorHandler.buildDepError "sparse-set"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "sparse-set-bench" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

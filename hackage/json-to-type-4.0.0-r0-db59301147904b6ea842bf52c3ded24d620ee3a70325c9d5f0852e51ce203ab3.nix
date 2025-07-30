@@ -21,7 +21,7 @@
       synopsis = "Automatic type declaration for JSON input data";
       description = "Generates datatype declarations with Aeson''s ''Data.Aeson.FromJSON''\n.\ninstances from a set of example @.json@ files.\n.\n.\nTo get started you need to install the package,\n.\nand run @json-to-type@ binary on an input @.json@ file.\n.\nThat will generate a new Aeson-based JSON parser.\n.\n.\n> $ json-to-type input.json -o JSONTypes.hs\n.\n.\nFeel free to tweak the by changing types of the fields\n.\n— any field type that is instance of ''Data.Aeson.FromJSON'' should work.\n.\n.\nYou may immediately test the parser by calling it as a script:\n.\n.\n> $ runghc JSONTypes.hs input.json\n.\n.\nOne can now use multiple input files to generate better type description.\n.\n.\nNow with Elm code generation support!\n.\n(If you want your favourite programming language supported too —\n.\nname your price and mail the author.)\n.\n.\nSee introduction on <https://github.com/mgajda/json-to-type> for details.'\n.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -45,9 +45,9 @@
           (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "json-to-type" = {
           depends = [
@@ -71,10 +71,10 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "json-to-type-examples" = {
           depends = [
@@ -99,9 +99,9 @@
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "json-to-type-gen-test" = {
           depends = [
             (hsPkgs."GenericPretty" or (errorHandler.buildDepError "GenericPretty"))
@@ -126,9 +126,9 @@
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "json-to-type-qc-test" = {
           depends = [
             (hsPkgs."GenericPretty" or (errorHandler.buildDepError "GenericPretty"))
@@ -151,9 +151,9 @@
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

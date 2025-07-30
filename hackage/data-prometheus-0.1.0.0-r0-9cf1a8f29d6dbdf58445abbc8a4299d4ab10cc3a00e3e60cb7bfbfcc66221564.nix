@@ -21,7 +21,7 @@
       synopsis = "Prometheus metrics text format";
       description = "Pure Prometheus metrics text data parser and builder";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "data-prometheus-exe" = {
           depends = [
@@ -43,10 +43,10 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."wreq" or (errorHandler.buildDepError "wreq"))
             (hsPkgs."data-prometheus" or (errorHandler.buildDepError "data-prometheus"))
-            ];
+          ];
           buildable = if flags.buildexecutable then true else false;
-          };
         };
+      };
       tests = {
         "data-prometheus-tests" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."raw-strings-qq" or (errorHandler.buildDepError "raw-strings-qq"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -22,10 +22,10 @@
       description = "This provides two similar concepts Pages and Posts. Both allow\nyou to create page content by editting pages in the browser. A Post\nis simply a page which is displayed in the blog.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -60,11 +60,11 @@
           (hsPkgs."web-routes" or (errorHandler.buildDepError "web-routes"))
           (hsPkgs."web-routes-happstack" or (errorHandler.buildDepError "web-routes-happstack"))
           (hsPkgs."web-routes-th" or (errorHandler.buildDepError "web-routes-th"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.hsx2hs.components.exes.hsx2hs or (pkgs.buildPackages.hsx2hs or (errorHandler.buildToolDepError "hsx2hs:hsx2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.hsx2hs.components.exes.hsx2hs or (pkgs.pkgsBuildBuild.hsx2hs or (errorHandler.buildToolDepError "hsx2hs:hsx2hs")))
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

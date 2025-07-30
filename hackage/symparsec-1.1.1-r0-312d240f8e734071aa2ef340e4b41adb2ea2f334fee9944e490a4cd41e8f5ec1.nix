@@ -21,7 +21,7 @@
       synopsis = "Type level string parser combinators";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."defun-core" or (errorHandler.buildDepError "defun-core"))
           (hsPkgs."singleraeh" or (errorHandler.buildDepError "singleraeh"))
           (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."symparsec" or (errorHandler.buildDepError "symparsec"))
             (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
             (hsPkgs."type-spec" or (errorHandler.buildDepError "type-spec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

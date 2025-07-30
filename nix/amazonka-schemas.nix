@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:46:35Z";
         sha256 = "cd327641f00f7e8b9996a4c17df699b467e6ec539c28266c39e50530c80d2f36";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-schemas-2.0-r1-867a57a666f03a724ee9e53b47f86eaca352e6023b565c81601f070d3c1947b9.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:53:35Z";
         sha256 = "867a57a666f03a724ee9e53b47f86eaca352e6023b565c81601f070d3c1947b9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

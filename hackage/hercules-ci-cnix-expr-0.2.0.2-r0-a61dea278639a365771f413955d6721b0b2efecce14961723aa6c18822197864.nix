@@ -22,11 +22,11 @@
       description = "";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-pkg-config-version-hook or (pkgs.buildPackages.cabal-pkg-config-version-hook or (errorHandler.setupDepError "cabal-pkg-config-version-hook")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-pkg-config-version-hook or (pkgs.pkgsBuildBuild.cabal-pkg-config-version-hook or (errorHandler.setupDepError "cabal-pkg-config-version-hook")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,24 +42,24 @@
           (hsPkgs."protolude" or (errorHandler.buildDepError "protolude"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         libs = [
           (pkgs."stdc++" or (errorHandler.sysDepError "stdc++"))
           (pkgs."boost_context" or (errorHandler.sysDepError "boost_context"))
-          ];
+        ];
         pkgconfig = if flags.nix-2_4
           then [
             (pkgconfPkgs."nix-store" or (errorHandler.pkgConfDepError "nix-store"))
             (pkgconfPkgs."nix-expr" or (errorHandler.pkgConfDepError "nix-expr"))
             (pkgconfPkgs."nix-main" or (errorHandler.pkgConfDepError "nix-main"))
-            ]
+          ]
           else [
             (pkgconfPkgs."nix-store" or (errorHandler.pkgConfDepError "nix-store"))
             (pkgconfPkgs."nix-expr" or (errorHandler.pkgConfDepError "nix-expr"))
             (pkgconfPkgs."nix-main" or (errorHandler.pkgConfDepError "nix-main"))
             (pkgconfPkgs."bdw-gc" or (errorHandler.pkgConfDepError "bdw-gc"))
-            ];
+          ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

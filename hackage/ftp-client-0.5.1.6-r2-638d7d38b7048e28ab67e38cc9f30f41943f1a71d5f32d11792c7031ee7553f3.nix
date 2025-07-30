@@ -21,7 +21,7 @@
       synopsis = "Transfer files with FTP and FTPS";
       description = "ftp-client is a library for communicating with an FTP server. It works over both a clear channel or TLS.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ftp-client-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."ftp-client" or (errorHandler.buildDepError "ftp-client"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

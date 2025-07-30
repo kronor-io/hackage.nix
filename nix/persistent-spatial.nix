@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-01-26T03:47:38Z";
         sha256 = "dfbb12e2824f6125af97bf1650f1f4284861753f16b7a0e52247071b6015b104";
-        };
+      };
       r1 = {
         nix = import ../hackage/persistent-spatial-0.1.0.0-r1-e83f66122044bf123f2a096154b33395ae8b1c724d6387766a1669b3c6140da3.nix;
         revNum = 1;
         revTimestamp = "2019-01-29T19:50:07Z";
         sha256 = "e83f66122044bf123f2a096154b33395ae8b1c724d6387766a1669b3c6140da3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

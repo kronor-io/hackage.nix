@@ -7,22 +7,22 @@
         revNum = 0;
         revTimestamp = "2016-02-17T18:03:47Z";
         sha256 = "c402f427118bbf15414f2187eb1f7bb98160c48668af497711d5844a3466a29f";
-        };
+      };
       r1 = {
         nix = import ../hackage/lol-apps-0.0.0.1-r1-60383b773f8b931df96fac94a014194fcbc8f7f31025471e49e39ffc2b991907.nix;
         revNum = 1;
         revTimestamp = "2016-02-17T18:05:59Z";
         sha256 = "60383b773f8b931df96fac94a014194fcbc8f7f31025471e49e39ffc2b991907";
-        };
+      };
       r2 = {
         nix = import ../hackage/lol-apps-0.0.0.1-r2-0b6c201fff6fbe7f10bb5777ae8cefad4668865e5a30b260961453ad49eabb8f.nix;
         revNum = 2;
         revTimestamp = "2016-03-02T04:07:39Z";
         sha256 = "0b6c201fff6fbe7f10bb5777ae8cefad4668865e5a30b260961453ad49eabb8f";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.1.0.0" = {
     sha256 = "af6feda5287a1b7f913d1ff0ebbbab6fda440ac5b22036334b08dbe3fcc6a3ad";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2016-06-10T03:39:31Z";
         sha256 = "24f769b60995ac8d0823e3a306ab32213a4da2ffd009a594c46df689b5fd0e3f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "75b0d6d53161d25e77286ab0cbf43487112f6b6d944ff77d11ace6e7ef83af7e";
     revisions = {
@@ -43,22 +43,22 @@
         revNum = 0;
         revTimestamp = "2016-06-29T23:06:16Z";
         sha256 = "eb869fc06a6de8e4d6d0f0267aea8a79d7ca109bdc868677ed7f10e0a48f7b4e";
-        };
+      };
       r1 = {
         nix = import ../hackage/lol-apps-0.1.1.0-r1-e1702ed1e686be02987a823b31f6c15f2147dbbd1b53df0c9c9beb70c0017a9b.nix;
         revNum = 1;
         revTimestamp = "2016-08-13T19:56:52Z";
         sha256 = "e1702ed1e686be02987a823b31f6c15f2147dbbd1b53df0c9c9beb70c0017a9b";
-        };
+      };
       r2 = {
         nix = import ../hackage/lol-apps-0.1.1.0-r2-5d9f33a4442eff096507ba9917c86de5cd01ee1fe55f4837c69301ccaa7f4c69.nix;
         revNum = 2;
         revTimestamp = "2016-08-14T13:22:07Z";
         sha256 = "5d9f33a4442eff096507ba9917c86de5cd01ee1fe55f4837c69301ccaa7f4c69";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.2.0.0" = {
     sha256 = "b27834f2716bf4543fd0398550dde070a8441cad00386a0c7ccfb4f47ec566f9";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2017-02-21T16:38:24Z";
         sha256 = "4de5ff8485c32b2141abdbe19ce468f915bb02b60b8cfeb73e8df4fbd8a8bffb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.1" = {
     sha256 = "6e281ad6cf779f246d54fad216807722fd1b471453f88a256a6c2445691ec160";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2017-02-23T20:58:29Z";
         sha256 = "74f1600a5d8db1eca035a5e2a26051f510e70ce646bc3fa3568f9f681641957f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.2" = {
     sha256 = "d082ac8f4112884878a5f8f0ce8d994b1c5dc8d62bba8f55a437b03f1f2e1c88";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2017-02-24T07:09:24Z";
         sha256 = "e81a0789cbd0d9477ad011809ae0554eced525f6eba538f16018780329a012da";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.0" = {
     sha256 = "af2081f5d491969814aee273dfa0fc94c13349b1093cc0e29fe882587ec9d097";
     revisions = {
@@ -103,8 +103,8 @@
         revNum = 0;
         revTimestamp = "2020-02-19T19:47:35Z";
         sha256 = "911653fe54aa7158357b95cdfd68389cbf6f6e9ed524e81904a7dd6876a2ab70";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

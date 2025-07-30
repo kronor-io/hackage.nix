@@ -21,7 +21,7 @@
       synopsis = "QUIC";
       description = "Library for QUIC: A UDP-Based Multiplexed and Secure Transport";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -48,9 +48,9 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
           (hsPkgs."unix-time" or (errorHandler.buildDepError "unix-time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "quic-server" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."tls-session-manager" or (errorHandler.buildDepError "tls-session-manager"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
+        };
         "quic-client" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -78,10 +78,10 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."unix-time" or (errorHandler.buildDepError "unix-time"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -97,12 +97,12 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."unix-time" or (errorHandler.buildDepError "unix-time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

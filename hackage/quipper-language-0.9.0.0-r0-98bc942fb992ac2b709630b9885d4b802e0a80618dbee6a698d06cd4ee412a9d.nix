@@ -22,10 +22,10 @@
       description = "Quipper is an embedded functional programming language for quantum\ncomputation. The quipper-language package provides the Quipper\nlanguage. You might also want quipper-libraries to get the Quipper\nlibraries, quipper-tools to get some standalone tools, and\nquipper-algorithms to get a collection of pre-implemented quantum\nalgorithms.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.superdoc or (pkgs.buildPackages.superdoc or (errorHandler.setupDepError "superdoc")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.superdoc or (pkgs.pkgsBuildBuild.superdoc or (errorHandler.setupDepError "superdoc")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,41 +36,41 @@
           (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
           (hsPkgs."quipper-utils" or (errorHandler.buildDepError "quipper-utils"))
           (hsPkgs."fail" or (errorHandler.buildDepError "fail"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "quipper" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."quipper-language" or (errorHandler.buildDepError "quipper-language"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "quipperi" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."quipper-language" or (errorHandler.buildDepError "quipper-language"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "quipperdoc" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."quipper-language" or (errorHandler.buildDepError "quipper-language"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "quipper-pp" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

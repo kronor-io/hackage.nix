@@ -21,7 +21,7 @@
       synopsis = "FFunctor: functors on (the usual) Functors";
       description = "@FFunctor@ is a type class for endofunctors on the category of @Functor@s.\n\n@FMonad@ is a type class for monads in the category of @Functor@s.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."kan-extensions" or (errorHandler.buildDepError "kan-extensions"))
           (hsPkgs."free-applicative-t" or (errorHandler.buildDepError "free-applicative-t"))
           (hsPkgs."day-comonoid" or (errorHandler.buildDepError "day-comonoid"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "functor-monad-examples" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."kan-extensions" or (errorHandler.buildDepError "kan-extensions"))
             (hsPkgs."comonad" or (errorHandler.buildDepError "comonad"))
             (hsPkgs."functor-monad" or (errorHandler.buildDepError "functor-monad"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2023-09-17T21:36:10Z";
         sha256 = "a3aaa2bac03e50fd2c9837ed45df037c1dfd94c5fe66ebab479932c27cf82606";
-        };
+      };
       r1 = {
         nix = import ../hackage/LPFP-core-1.1.1-r1-1f0aac0efd125abb6d1470071793ab5818aed29d2db431868e39b8ab8a69b6ff.nix;
         revNum = 1;
         revTimestamp = "2024-11-06T19:25:57Z";
         sha256 = "1f0aac0efd125abb6d1470071793ab5818aed29d2db431868e39b8ab8a69b6ff";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1.5" = {
     sha256 = "3b87703016434c1bea2d1a4613cb9a1d45762ef6a61a44811c19f09d5669eee3";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2025-01-08T17:40:11Z";
         sha256 = "de8eaa8535b48375f7536d2ea9f5da2ecf5f3e6e0c4e9de318663e1582a1a47e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

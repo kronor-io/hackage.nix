@@ -21,7 +21,7 @@
       synopsis = "Hybrid Public Key Encryption";
       description = "Hybrid Public Key Encryption defined in RFC9180";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."crypton" or (errorHandler.buildDepError "crypton"))
           (hsPkgs."memory" or (errorHandler.buildDepError "memory"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -42,12 +42,12 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."hpke" or (errorHandler.buildDepError "hpke"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

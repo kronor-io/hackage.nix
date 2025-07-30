@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-03-29T22:32:02Z";
         sha256 = "87134e111e3346991b772b4960c40b5e8f657b1437952e1f7488cdccda8aabb5";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.10.0-r1-b087642669e60c4f1062d53ddfd2bcb88f759553cc6aca44ca9826b815558000.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:01Z";
         sha256 = "b087642669e60c4f1062d53ddfd2bcb88f759553cc6aca44ca9826b815558000";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.10.0.1" = {
     sha256 = "5bf46760e6db104c57f915322b32744f7604323281f5c7dd20185f905fb51996";
     revisions = {
@@ -25,16 +25,16 @@
         revNum = 0;
         revTimestamp = "2015-05-30T06:01:20Z";
         sha256 = "6f4e01d9d5dc01db56e1dc9e2380d7d8d17488ab810dd94aea1966ea60aa6200";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.10.0.1-r1-4e7e155d7ea22c825f440c2ff6182598502575d2119298efc7871c7b7b89c914.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:01Z";
         sha256 = "4e7e155d7ea22c825f440c2ff6182598502575d2119298efc7871c7b7b89c914";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.11.0" = {
     sha256 = "849a1c327cb8b40194d13a15c3a325e7b37f67fb9becf2c0c28f1a4bd2b5eea9";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2021-02-23T23:53:53Z";
         sha256 = "36667422f548a95294efe108b70e400d0e90ba3772209ff8bc40d19f31ef1afe";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.11.0-r1-77d0546b2f281d347e2f0624b612464e00b99499b145b3a128b34d65509e5957.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:01Z";
         sha256 = "77d0546b2f281d347e2f0624b612464e00b99499b145b3a128b34d65509e5957";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.11.1" = {
     sha256 = "05e84d090ccc38dde80e0f22c0b9f84a2edaa365a1196743ebb2430f541f6c77";
     revisions = {
@@ -61,10 +61,10 @@
         revNum = 0;
         revTimestamp = "2021-02-25T00:47:37Z";
         sha256 = "a33cffbd2a7c1fa76f9e6be0b68ff88c103e3568f0d0a508ca48f49b2a616a31";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.11.2" = {
     sha256 = "1b5b9cab3a096f7bd4573434824c167f664c5b2b410a76e83e79520ac21bddd3";
     revisions = {
@@ -73,16 +73,16 @@
         revNum = 0;
         revTimestamp = "2022-05-26T04:25:44Z";
         sha256 = "3edda1f7b54f42eab922183cd2a6f6f34c42fc12790bb8a14aa5291a5d0f6f93";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.11.2-r1-b2e11811b703b63682076ae326bd856fd47caf7db881e9e5b896a6342bceb51f.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "b2e11811b703b63682076ae326bd856fd47caf7db881e9e5b896a6342bceb51f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.11.2.2" = {
     sha256 = "6c96406f830c712f44146f455f0f41769022166acd3e43a4314506df0e28fe49";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2024-08-28T23:40:53Z";
         sha256 = "2eb9eae455b8db582d2706b23ed7eb2bbd1b48b064ec4c1988c2b7e95fcfb638";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.12.0" = {
     sha256 = "10cd67a6148ad748f2d4c4b15311ff66f402354f1ecebe23b72e8d97100e3700";
     revisions = {
@@ -103,10 +103,10 @@
         revNum = 0;
         revTimestamp = "2024-11-21T02:53:00Z";
         sha256 = "00ac875b0acd4a68f38fb76f06e4dd487e5ecc93873e6efaa20c8b88e542360a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.12.0.1" = {
     sha256 = "1a97f461c0989a54e89780564e822a92c2d21473b8c16c4bab2202c9590dfb08";
     revisions = {
@@ -115,10 +115,10 @@
         revNum = 0;
         revTimestamp = "2024-11-27T02:40:59Z";
         sha256 = "6afd602fd335889f828aa6a49ba6df7a18bc7a9b9c957beb827e5a8d5f628f9c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.12.0.2" = {
     sha256 = "a7a4db6b24fafdd4aafb46fa85989895657b7d8ba8000fd447f6818a25b9fb08";
     revisions = {
@@ -127,10 +127,10 @@
         revNum = 0;
         revTimestamp = "2025-02-12T00:53:38Z";
         sha256 = "15556a82f387bae6b0e66c95209b42e8e3ab18097978a36e691bfebdc50cd13d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "2d65113f1645eb8b32ca102d1d987f173fa3b217c910f6b9c29422c385d0bd0b";
     revisions = {
@@ -139,16 +139,16 @@
         revNum = 0;
         revTimestamp = "2011-07-12T10:15:30Z";
         sha256 = "fe9f75a0756657421756e58e0a3698c2bb961c45c6c1946f13c5b775672d8c94";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.5.0-r1-efcf30fd5a03fe1d9263e81c6f216ee248bfb19f223116bfce377dfa0d54183c.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "efcf30fd5a03fe1d9263e81c6f216ee248bfb19f223116bfce377dfa0d54183c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.6.0" = {
     sha256 = "e8febd0e0691ed29bd8f349d729993a219f2948d143649206abfabea8782983e";
     revisions = {
@@ -157,16 +157,16 @@
         revNum = 0;
         revTimestamp = "2012-02-17T17:31:11Z";
         sha256 = "419fa52c239aceda2cee57c86e0849e75e8d822b006898acaeef9235a2c82cef";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.6.0-r1-4559cd6a954079ca17553a78b20b3a460d932c633f66e3f52865c5b3a16ffd13.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "4559cd6a954079ca17553a78b20b3a460d932c633f66e3f52865c5b3a16ffd13";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.7.0" = {
     sha256 = "baefc6df5c3b277ab249c93a993fd295aa2f4f93837733b76ad53862866d6b64";
     revisions = {
@@ -175,16 +175,16 @@
         revNum = 0;
         revTimestamp = "2012-03-19T07:00:47Z";
         sha256 = "898705051dcb18173b77e1899718e04ebac72a67e6d608990c7d5fb2cf2def8f";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.7.0-r1-099788163bd2c3fe92b39108000108f06028cb85590be83538874aac72800eaf.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "099788163bd2c3fe92b39108000108f06028cb85590be83538874aac72800eaf";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.8.0" = {
     sha256 = "1b893a7db29ce85e46765c6604d825bd3ec437c1646279dbaa3a0afb2616d03b";
     revisions = {
@@ -193,16 +193,16 @@
         revNum = 0;
         revTimestamp = "2012-07-11T00:23:46Z";
         sha256 = "6854f291b1ed7018edeb31f85799de34a8ddf70398b3c66e6beff72967a1c07a";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.8.0-r1-bc4b482c73c7a70b0fd5ba7c49a2e270e362998edc6531d2e8e0264181e62567.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "bc4b482c73c7a70b0fd5ba7c49a2e270e362998edc6531d2e8e0264181e62567";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.8.1" = {
     sha256 = "17d27f279a7f4a2b8e1a19f86676aabfb65b8b58f046ee20edfe591b711fba99";
     revisions = {
@@ -211,16 +211,16 @@
         revNum = 0;
         revTimestamp = "2014-05-27T22:11:50Z";
         sha256 = "3eca1c3dbd98195691a6cff7d14c49f6f529e090514f7b642e39b2fc4368cfef";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.8.1-r1-64a5d334ad94cd664801a530983a44d09dec9371d5fa7733039a2497d9f850e9.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:02Z";
         sha256 = "64a5d334ad94cd664801a530983a44d09dec9371d5fa7733039a2497d9f850e9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.9.0" = {
     sha256 = "711e883934206faf63b1b4783d334d376888dfe25c517c3ba79dcacb2ebbb639";
     revisions = {
@@ -229,14 +229,14 @@
         revNum = 0;
         revTimestamp = "2014-06-03T04:05:41Z";
         sha256 = "29313564d622758b2fce6bd97008db48ca64805b8e8944b180989639d283758c";
-        };
+      };
       r1 = {
         nix = import ../hackage/unification-fd-0.9.0-r1-a2c6aa0e1ee5470929f8e4c72cc5842954262cc0d03c44b61b3b4d7b6ee76ddd.nix;
         revNum = 1;
         revTimestamp = "2023-08-11T18:12:03Z";
         sha256 = "a2c6aa0e1ee5470929f8e4c72cc5842954262cc0d03c44b61b3b4d7b6ee76ddd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

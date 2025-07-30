@@ -21,7 +21,7 @@
       synopsis = "A type-safe and friendly ECS for Haskell ";
       description = "A type-safe and friendly ECS for Haskell ";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,36 +29,36 @@
           (hsPkgs."async" or (errorHandler.buildDepError "async"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "ecs" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aztecs" or (errorHandler.buildDepError "aztecs"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "aztecs-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aztecs" or (errorHandler.buildDepError "aztecs"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "aztecs-bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aztecs" or (errorHandler.buildDepError "aztecs"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

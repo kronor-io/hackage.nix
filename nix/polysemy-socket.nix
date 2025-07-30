@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2021-07-18T09:22:27Z";
         sha256 = "94159413a9dd119a0fb13386ae54aa3599b2b549c6fc7e304ece23afd046454b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.2.0" = {
     sha256 = "defc9aaa326d53bd6b4120008e4c5437f6d05d84be2d7ac38bec8834bad2c510";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2021-07-30T06:56:00Z";
         sha256 = "cb491686ee4283ebfa60d12e2231655d00f6e51a662d4479938ce5ec82bf5829";
-        };
+      };
       r1 = {
         nix = import ../hackage/polysemy-socket-0.0.2.0-r1-c4d21c9eee5bab7bd696abb4cc645233b6bf479500dd3fdc53bff67b2fa59d17.nix;
         revNum = 1;
         revTimestamp = "2021-08-06T19:51:04Z";
         sha256 = "c4d21c9eee5bab7bd696abb4cc645233b6bf479500dd3fdc53bff67b2fa59d17";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Symbolic evaluation as a library";
       description = "Grisette is a reusable symbolic evaluation library for Haskell. By\ntranslating programs into constraints, Grisette can help the development of\nprogram reasoning tools, including verification, synthesis, and more.\n\nThe \"Grisette\" module exports all the core APIs for building a symbolic\nevaluation tool. A high-level overview of the module structures are available\nthere.\n\nA detailed introduction to Grisette is available at \"Grisette.Core\". More\nlifted libraries are provided in @Grisette.Lib.*@ modules.\n\nThe \"Grisette.Unified\" module offers an experimental unified interface for\nsymbolic and concrete evaluation. This module should be imported qualified.\n\nFor more details, please checkout the README and\n[tutorials](https://github.com/lsrcz/grisette/tree/main/tutorials).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -48,9 +48,9 @@
           (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctest" = {
           depends = [
@@ -80,9 +80,9 @@
             (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
@@ -113,9 +113,9 @@
             (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

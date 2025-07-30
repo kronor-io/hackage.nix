@@ -21,7 +21,7 @@
       synopsis = "Mock library for test in Haskell.";
       description = "mockcat is a flexible and powerful mock library.\n\nIt provides the following main features.\n\n- Mock generation of monadic typeclasses\n\n- Generation of stub functions independent of typeclasses\n\n- Verification of stub functions\n\nStub functions can return not only values of monadic types, but also pure types.\n\nFor more please see the README on GitHub at <https://github.com/pujoheadsoft/mockcat#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "mockcat-test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

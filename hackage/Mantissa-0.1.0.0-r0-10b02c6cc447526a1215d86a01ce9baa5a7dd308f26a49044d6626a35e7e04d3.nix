@@ -21,21 +21,21 @@
       synopsis = "Reals in the interval [0,1), as machine words";
       description = "Please see the README on GitHub at <https://github.com/jcranch/Mantissa#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "Mantissa-test" = {
           depends = [
             (hsPkgs."Mantissa" or (errorHandler.buildDepError "Mantissa"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

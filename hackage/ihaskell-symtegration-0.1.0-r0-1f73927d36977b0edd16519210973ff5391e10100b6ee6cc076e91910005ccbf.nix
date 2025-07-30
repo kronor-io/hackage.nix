@@ -21,7 +21,7 @@
       synopsis = "IHaskell extension for making the use of Symtegration more seamless.";
       description = "IHaskell extension for making the use of Symtegration more seamless.\nSee the [README](https://github.com/symtegration/ihaskell) on GitHub for more information.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."ihaskell" or (errorHandler.buildDepError "ihaskell"))
           (hsPkgs."symtegration" or (errorHandler.buildDepError "symtegration"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -41,12 +41,12 @@
             (hsPkgs."ihaskell-symtegration" or (errorHandler.buildDepError "ihaskell-symtegration"))
             (hsPkgs."symtegration" or (errorHandler.buildDepError "symtegration"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

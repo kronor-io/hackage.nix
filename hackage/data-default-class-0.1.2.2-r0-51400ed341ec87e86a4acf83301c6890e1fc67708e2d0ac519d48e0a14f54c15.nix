@@ -21,13 +21,13 @@
       synopsis = "A class for types with a default value";
       description = "This module defines a class for types with a default value.\nIt also defines 'Default' instances for the types 'Int', 'Int8',\n'Int16', 'Int32', 'Int64', 'Word', 'Word8', 'Word16', 'Word32', 'Word64',\n'Integer', 'Float', 'Double', 'Ratio', 'Complex', 'CShort', 'CUShort',\n'CInt', 'CUInt', 'CLong', 'CULong', 'CLLong', 'CULLong', 'CPtrdiff',\n'CSize', 'CSigAtomic', 'CIntPtr', 'CUIntPtr', 'CIntMax', 'CUIntMax',\n'CClock', 'CTime', 'CUSeconds', 'CSUSeconds', 'CFloat', 'CDouble', '(->)',\n'IO', 'Maybe', '()', '[]', 'Ordering', 'Any', 'All', 'Last', 'First', 'Sum',\n'Product', 'Endo', 'Dual', and tuples.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && ((compiler.version).ge "7.4" && (compiler.version).lt "7.5")) (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && (compiler.version.ge "7.4" && compiler.version.lt "7.5")) (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

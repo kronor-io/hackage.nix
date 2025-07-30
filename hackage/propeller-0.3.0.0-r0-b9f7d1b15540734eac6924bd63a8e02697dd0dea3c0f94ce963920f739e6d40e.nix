@@ -21,24 +21,24 @@
       synopsis = "A Propagator Library";
       description = "Please see the README on GitHub at <https://github.com/typedbyte/propeller#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unification" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."propeller" or (errorHandler.buildDepError "propeller"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2023-01-03T11:58:30Z";
         sha256 = "dc3cdb253259d8fab8c3b8388c9a66181e8858b0b7a4ef97ebc667224a989884";
-        };
+      };
       r1 = {
         nix = import ../hackage/comfort-glpk-0.0-r1-f7b02fe994437efb6acb1f4f2b9d227b3977d74b6a6881ff43472b8b7cdda789.nix;
         revNum = 1;
         revTimestamp = "2023-01-07T20:33:50Z";
         sha256 = "f7b02fe994437efb6acb1f4f2b9d227b3977d74b6a6881ff43472b8b7cdda789";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.0.1" = {
     sha256 = "b0646a6bfbfcc8f8159e53a0dba33b356e8ba12cc72f5e5a5bfcf57e061fb300";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2023-03-01T16:35:03Z";
         sha256 = "afc11e1306b702bf1646fd53b30c7299aaa01cf8e82194ab4bf38cbcdb8561a3";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1" = {
     sha256 = "afef6768776fa9dd3188033d18e08e1087991d9a68aade0be874b887f0b2c6a2";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2023-04-28T14:19:54Z";
         sha256 = "8190224cd7317f3163b0c1603071ab54e86ea643a0cc0094ef1d3fa7782127d0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1" = {
     sha256 = "a15f063d2b4c178c942154d1e4226d5b7f86b97c46653df9137577b59e346918";
     revisions = {
@@ -49,26 +49,26 @@
         revNum = 0;
         revTimestamp = "2023-05-11T11:09:19Z";
         sha256 = "26e4452e21d364df04124061ab1bc53e5f7c122e9093ae98237d3d31b72d2f8c";
-        };
+      };
       r1 = {
         nix = import ../hackage/comfort-glpk-0.1-r1-b8c2b8256d6e3c87309f310543973b907442c2256ab66ae8f1d34d64f489a441.nix;
         revNum = 1;
         revTimestamp = "2023-12-26T20:24:44Z";
         sha256 = "b8c2b8256d6e3c87309f310543973b907442c2256ab66ae8f1d34d64f489a441";
-        };
+      };
       r2 = {
         nix = import ../hackage/comfort-glpk-0.1-r2-f0283980d001f5edf63fafade17dc87baf48f9191bbf538c5b6880d5e558743e.nix;
         revNum = 2;
         revTimestamp = "2024-10-26T18:25:06Z";
         sha256 = "f0283980d001f5edf63fafade17dc87baf48f9191bbf538c5b6880d5e558743e";
-        };
+      };
       r3 = {
         nix = import ../hackage/comfort-glpk-0.1-r3-dccaa8bac9e8d9d8657a6631e3c3e7c8f97874e5c88fdf9bc3f6998204583995.nix;
         revNum = 3;
         revTimestamp = "2025-01-06T11:21:48Z";
         sha256 = "dccaa8bac9e8d9d8657a6631e3c3e7c8f97874e5c88fdf9bc3f6998204583995";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
-  }
+  };
+}

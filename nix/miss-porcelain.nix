@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-12-30T20:48:11Z";
         sha256 = "ae100d806d8a72b6a63e3062d8999a194543fb7b4602b1335e54eaf0f5f7c345";
-        };
+      };
       r1 = {
         nix = import ../hackage/miss-porcelain-0-r1-147bfb55736d52c19c2d98bbae4288f556d2a87777712203c7f9f5b22985c886.nix;
         revNum = 1;
         revTimestamp = "2020-01-21T16:58:15Z";
         sha256 = "147bfb55736d52c19c2d98bbae4288f556d2a87777712203c7f9f5b22985c886";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

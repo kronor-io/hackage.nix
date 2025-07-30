@@ -21,7 +21,7 @@
       synopsis = "Functional programming language for teaching discrete math.";
       description = "Disco is a simple functional programming language for use in\nteaching discrete math.  Its syntax is designed to be close\nto standard mathematical practice.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -59,9 +59,9 @@
           (hsPkgs."boxes" or (errorHandler.buildDepError "boxes"))
           (hsPkgs."edit-distance" or (errorHandler.buildDepError "edit-distance"))
           (hsPkgs."infinite-list" or (errorHandler.buildDepError "infinite-list"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "disco" = {
           depends = [
@@ -78,10 +78,10 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."oeis2" or (errorHandler.buildDepError "oeis2"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "disco-tests" = {
           depends = [
@@ -93,24 +93,24 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."disco" or (errorHandler.buildDepError "disco"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.disco.components.exes.disco or (pkgs.buildPackages.disco or (errorHandler.buildToolDepError "disco:disco")))
-            ];
+            (hsPkgs.pkgsBuildBuild.disco.components.exes.disco or (pkgs.pkgsBuildBuild.disco or (errorHandler.buildToolDepError "disco:disco")))
+          ];
           buildable = true;
-          };
+        };
         "disco-examples" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.disco.components.exes.disco or (pkgs.buildPackages.disco or (errorHandler.buildToolDepError "disco:disco")))
-            ];
+            (hsPkgs.pkgsBuildBuild.disco.components.exes.disco or (pkgs.pkgsBuildBuild.disco or (errorHandler.buildToolDepError "disco:disco")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

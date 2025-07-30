@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-01-15T19:25:08Z";
         sha256 = "e0034ca1c2cc242331f09127daa691d312966cd2e64c62f8a04faf8c98df845b";
-        };
+      };
       r1 = {
         nix = import ../hackage/uuid-aeson-0.1.0.0-r1-5fe65c563ef474292cf59cda8e36416dd75a60a05fc1fb8be43a0bd2eba1d814.nix;
         revNum = 1;
         revTimestamp = "2017-01-01T17:52:50Z";
         sha256 = "5fe65c563ef474292cf59cda8e36416dd75a60a05fc1fb8be43a0bd2eba1d814";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

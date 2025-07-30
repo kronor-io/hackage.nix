@@ -7,28 +7,28 @@
         revNum = 0;
         revTimestamp = "2023-05-01T21:26:41Z";
         sha256 = "2263777736888098bc8a07b4ca9445ddc09533d0680ca854cb9b3d0afb688dfd";
-        };
+      };
       r1 = {
         nix = import ../hackage/tasty-bench-fit-0.1-r1-d47c61a78c5fca32a41f8bbbd3443320eaa84cfd82ac0d8592dee486f10692c3.nix;
         revNum = 1;
         revTimestamp = "2023-09-27T20:46:19Z";
         sha256 = "d47c61a78c5fca32a41f8bbbd3443320eaa84cfd82ac0d8592dee486f10692c3";
-        };
+      };
       r2 = {
         nix = import ../hackage/tasty-bench-fit-0.1-r2-407a41cd5d01f78a81cbc036ebf9becbd697f9a623dca7a442101f0a3f4be7ac.nix;
         revNum = 2;
         revTimestamp = "2023-09-27T22:23:36Z";
         sha256 = "407a41cd5d01f78a81cbc036ebf9becbd697f9a623dca7a442101f0a3f4be7ac";
-        };
+      };
       r3 = {
         nix = import ../hackage/tasty-bench-fit-0.1-r3-7577c597abad1ab33e5ae18ec978d4b4cfa34d6f3c87b5640f9701d46f34edc7.nix;
         revNum = 3;
         revTimestamp = "2024-07-06T11:59:03Z";
         sha256 = "7577c597abad1ab33e5ae18ec978d4b4cfa34d6f3c87b5640f9701d46f34edc7";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.1.1" = {
     sha256 = "3b26a892b3080be7d0298862a85d3fb116cabf6e3508ad912354cb7247162ef4";
     revisions = {
@@ -37,14 +37,14 @@
         revNum = 0;
         revTimestamp = "2024-07-08T23:19:44Z";
         sha256 = "f9f231d793590d5a1a3b1c455004712c7468b6c6953aa129c4961e38dd8a2f9a";
-        };
+      };
       r1 = {
         nix = import ../hackage/tasty-bench-fit-0.1.1-r1-aa300865236c5d6ef65bef09033a92484f0a91c3902bc29d0e6d02aa3626c4bd.nix;
         revNum = 1;
         revTimestamp = "2025-03-01T14:15:12Z";
         sha256 = "aa300865236c5d6ef65bef09033a92484f0a91c3902bc29d0e6d02aa3626c4bd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

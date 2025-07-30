@@ -21,7 +21,7 @@
       synopsis = "Synchronize with the Haskell security advisory database";
       description = "Synchronize with the Haskell security advisory database.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."wreq" or (errorHandler.buildDepError "wreq"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hsec-sync" = {
           depends = [
@@ -51,10 +51,10 @@
             (hsPkgs."hsec-sync" or (errorHandler.buildDepError "hsec-sync"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -68,9 +68,9 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

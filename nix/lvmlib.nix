@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2012-11-08T11:38:27Z";
         sha256 = "589131feaf8c9ea7a2904d218fdad36ef1d69f577b39016bc90b93066a5a1483";
-        };
+      };
       r1 = {
         nix = import ../hackage/lvmlib-1.0-r1-1c54a8471d28fe183cd136acff999ada251363ef60de58bb8b904eb277fe4ffd.nix;
         revNum = 1;
         revTimestamp = "2017-04-27T19:30:04Z";
         sha256 = "1c54a8471d28fe183cd136acff999ada251363ef60de58bb8b904eb277fe4ffd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1" = {
     sha256 = "6f99e1ed437d45ecdbb019185d24bc920f7965f279f3b1cec268d51350c622d3";
     revisions = {
@@ -25,20 +25,20 @@
         revNum = 0;
         revTimestamp = "2014-09-02T10:00:56Z";
         sha256 = "89876e802e0eaa476cd72cccc18dbc3ee5cfdad34d36f8754b575c8aa47f11d7";
-        };
+      };
       r1 = {
         nix = import ../hackage/lvmlib-1.1-r1-93202794dad7345f097bd54b57352256cba8998251865d2909d9576d0bc20f2e.nix;
         revNum = 1;
         revTimestamp = "2017-04-27T18:48:04Z";
         sha256 = "93202794dad7345f097bd54b57352256cba8998251865d2909d9576d0bc20f2e";
-        };
+      };
       r2 = {
         nix = import ../hackage/lvmlib-1.1-r2-d54fea453cf26b38624597cb07d10ead37898009a6340fe9eb4e3ea206a4c8ff.nix;
         revNum = 2;
         revTimestamp = "2024-09-16T12:20:25Z";
         sha256 = "d54fea453cf26b38624597cb07d10ead37898009a6340fe9eb4e3ea206a4c8ff";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

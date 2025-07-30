@@ -21,7 +21,7 @@
       synopsis = "A package with tools for processing DNA sequencing data";
       description = "The tools in this package process sequencing Data, in particular from ancient DNA sequencing libraries. Key tool in this package is pileupCaller, a tool to randomly sample genotypes from sequencing data.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."pipes" or (errorHandler.buildDepError "pipes"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "pileupCaller" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "vcf2eigenstrat" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -66,9 +66,9 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."pipes" or (errorHandler.buildDepError "pipes"))
             (hsPkgs."pipes-safe" or (errorHandler.buildDepError "pipes-safe"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "genoStats" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -82,10 +82,10 @@
             (hsPkgs."pipes" or (errorHandler.buildDepError "pipes"))
             (hsPkgs."pipes-group" or (errorHandler.buildDepError "pipes-group"))
             (hsPkgs."pipes-safe" or (errorHandler.buildDepError "pipes-safe"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "sequenceToolsTests" = {
           depends = [
@@ -96,9 +96,9 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."pipes" or (errorHandler.buildDepError "pipes"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

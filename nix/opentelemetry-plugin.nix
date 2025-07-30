@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2023-10-03T21:52:10Z";
         sha256 = "0f3c22ada7eccd09e348fd6454c1e4b8b93d45056212094c910bb89f3aa0c927";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0" = {
     sha256 = "a057c8fe78c5d98b1d587ee914bc59f4a6b025f1a3f09600b4800cbeee7c6ed2";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2024-05-20T20:10:10Z";
         sha256 = "4516b92832c456ce11ede4d29322d83c0eaa207f5cb5f85c1f2807b6889bd8fb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.1" = {
     sha256 = "6ff1cb44e9e0dfdae2cec9f4f4ddb283ebb5ea144b88824227e0e808fc5fe6ea";
     revisions = {
@@ -31,8 +31,20 @@
         revNum = 0;
         revTimestamp = "2024-10-16T17:40:14Z";
         sha256 = "b7091a54175f9c1ac0b926730a043395829daa944b462a257e5ba5c372151d35";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.1.2" = {
+    sha256 = "c8f10f1276db2920e0dd1e2bf71547a981bc15ee079328e4609b6239c93a958a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/opentelemetry-plugin-1.1.2-r0-922bd0c3e0bca12d00e66f55575fb92849484a53f5ed98c1139915cbf5d81ba3.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-05T19:10:52Z";
+        sha256 = "922bd0c3e0bca12d00e66f55575fb92849484a53f5ed98c1139915cbf5d81ba3";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/morphismtech/distributors#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:12:45Z";
         sha256 = "ed622c6970ca5986e8091cc2796a747e85aeb38f8cd8c70b06d7442a0e4cee1e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-forecastquery-2.0-r1-0af185de57d94a663d822c085072a897700676be1e4c1ddc92b654112917d416.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:48:43Z";
         sha256 = "0af185de57d94a663d822c085072a897700676be1e4c1ddc92b654112917d416";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Native Haskell implementation of the gRPC framework";
       description = "This is a fully compliant and feature complete native Haskell\nimplementation of gRPC, Google's RPC framework.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -57,9 +57,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
           (hsPkgs."http2" or (errorHandler.buildDepError "http2"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-record-dot" = {
           depends = [
@@ -73,11 +73,11 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."record-hasfield" or (errorHandler.buildDepError "record-hasfield"))
-            ];
-          buildable = if compiler.isGhc && (compiler.version).lt "9.2"
+          ];
+          buildable = if compiler.isGhc && compiler.version.lt "9.2"
             then false
             else true;
-          };
+        };
         "test-grapesy" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -105,9 +105,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-stress" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -129,9 +129,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           buildable = if !flags.build-stress-test then false else true;
-          };
+        };
         "grapesy-interop" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -145,10 +145,10 @@
             (hsPkgs."ansi-terminal" or (errorHandler.buildDepError "ansi-terminal"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."proto-lens-runtime" or (errorHandler.buildDepError "proto-lens-runtime"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "grapesy-kvstore" = {
           depends = [
@@ -166,9 +166,9 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."proto-lens-runtime" or (errorHandler.buildDepError "proto-lens-runtime"))
             (hsPkgs."splitmix" or (errorHandler.buildDepError "splitmix"))
-            ] ++ (pkgs.lib).optional (flags.strace) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
+          ] ++ pkgs.lib.optional (flags.strace) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

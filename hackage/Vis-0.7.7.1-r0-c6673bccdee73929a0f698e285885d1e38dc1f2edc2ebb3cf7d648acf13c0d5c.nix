@@ -21,7 +21,7 @@
       synopsis = "Painless 3D graphics, no affiliation with gloss";
       description = "This package is a fork of Greg Horn's not-gloss package.\nThe dependencies have been changed so that it builds with recent ghc versions.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."linear" or (errorHandler.buildDepError "linear"))
           (hsPkgs."vector-binary-instances" or (errorHandler.buildDepError "vector-binary-instances"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

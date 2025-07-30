@@ -21,7 +21,7 @@
       synopsis = "Jack, zonal, Schur and skew Schur polynomials";
       description = "This library can compute Jack polynomials, zonal polynomials, Schur and skew Schur polynomials. It also provides some utilities for symmetric polynomials.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
           (hsPkgs."matrix" or (errorHandler.buildDepError "matrix"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -52,10 +52,10 @@
             (hsPkgs."combinat" or (errorHandler.buildDepError "combinat"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."numeric-prelude" or (errorHandler.buildDepError "numeric-prelude"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."miniterion" or (errorHandler.buildDepError "miniterion"))
             (hsPkgs."jackpolynomials" or (errorHandler.buildDepError "jackpolynomials"))
             (hsPkgs."hspray" or (errorHandler.buildDepError "hspray"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

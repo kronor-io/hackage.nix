@@ -21,7 +21,7 @@
       synopsis = "Batteries-included Structured Logging library";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "readme" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."markdown-unlit" or (errorHandler.buildDepError "markdown-unlit"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."Blammo" or (errorHandler.buildDepError "Blammo"))
@@ -69,9 +69,9 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

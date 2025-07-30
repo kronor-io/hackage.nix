@@ -21,12 +21,12 @@
       synopsis = "a library to build and work with heterogeneous, type level indexed rose trees";
       description = "This library implements a heterogeneous rose-tree (HTree) that is indexed by a type-level rosetree (TyTree).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "htree-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."quickcheck-instances" or (errorHandler.buildDepError "quickcheck-instances"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

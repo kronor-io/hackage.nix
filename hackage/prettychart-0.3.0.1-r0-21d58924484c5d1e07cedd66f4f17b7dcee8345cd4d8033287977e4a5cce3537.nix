@@ -21,7 +21,7 @@
       synopsis = "Pretty print charts from ghci.";
       description = "Serve and print charts from ghci or from an svg file, with automatic formatting.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."web-rep" or (errorHandler.buildDepError "web-rep"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "prettychart-watch" = {
           depends = [
@@ -52,18 +52,18 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."prettychart" or (errorHandler.buildDepError "prettychart"))
             (hsPkgs."web-rep" or (errorHandler.buildDepError "web-rep"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

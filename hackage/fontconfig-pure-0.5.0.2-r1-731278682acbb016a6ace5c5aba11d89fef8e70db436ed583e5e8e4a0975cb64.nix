@@ -21,7 +21,7 @@
       synopsis = "Queries your system (Linux/BSD/etc) font database.";
       description = "Resolves font descriptions to font libraries, including ones installed on your freedesktop (Linux or BSD system). With Haskell Stylist integration for CSS syntax!";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,21 +39,21 @@
           (hsPkgs."stylist-traits" or (errorHandler.buildDepError "stylist-traits"))
           (hsPkgs."css-syntax" or (errorHandler.buildDepError "css-syntax"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."fontconfig" or (errorHandler.pkgConfDepError "fontconfig"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "fontconfig-pure" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."fontconfig-pure" or (errorHandler.buildDepError "fontconfig-pure"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "fontconfig-pure-test" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."css-syntax" or (errorHandler.buildDepError "css-syntax"))
             (hsPkgs."stylist-traits" or (errorHandler.buildDepError "stylist-traits"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2013-06-23T03:16:49Z";
         sha256 = "1ff12ce25ca23d58abef59c9a688974f460aa9c012dfcd63c1e0e80b3a211a5f";
-        };
+      };
       r1 = {
         nix = import ../hackage/language-ecmascript-analysis-0.9-r1-5fafd7ffe271f00fe33acdb4a18ef28a43a157836495144a0e113fd2bbf8f468.nix;
         revNum = 1;
         revTimestamp = "2015-01-02T20:52:34Z";
         sha256 = "5fafd7ffe271f00fe33acdb4a18ef28a43a157836495144a0e113fd2bbf8f468";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.9.1" = {
     sha256 = "36f95a57347dfaa7d1b05a80469ba5be031870b1ea1c2694a61d124d791cec13";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2015-03-04T23:43:07Z";
         sha256 = "55182100bacca0228912ac56ee2a7953eb172d3856f5bfc236848cc2635a41bd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.9.2" = {
     sha256 = "afb477f63477edd7cd21c817dc2e7f7addede510eff60df07d76daeddf8ba691";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2016-01-31T21:25:10Z";
         sha256 = "991ce654aa91d973076fea30d1f1b9393b914e2b783d8216500575b2c89e4654";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

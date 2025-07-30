@@ -21,7 +21,7 @@
       synopsis = "Minion openapi3 support";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,8 +42,8 @@
           (hsPkgs."openapi3" or (errorHandler.buildDepError "openapi3"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

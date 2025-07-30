@@ -21,7 +21,7 @@
       synopsis = "Astronomical Observations (FITS, ASDF, WCS, etc)";
       description = "Work with astronomical observations from modern telescopes";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -66,12 +66,12 @@
             (hsPkgs."telescope" or (errorHandler.buildDepError "telescope"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.skeletest.components.exes.skeletest-preprocessor or (pkgs.buildPackages.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
-            ];
+            (hsPkgs.pkgsBuildBuild.skeletest.components.exes.skeletest-preprocessor or (pkgs.pkgsBuildBuild.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

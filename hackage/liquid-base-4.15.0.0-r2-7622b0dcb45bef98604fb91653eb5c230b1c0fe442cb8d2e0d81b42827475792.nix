@@ -22,19 +22,19 @@
       description = "Superseded by liquidhaskell >= 0.9.2.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.liquidhaskell or (pkgs.buildPackages.liquidhaskell or (errorHandler.setupDepError "liquidhaskell")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.liquidhaskell or (pkgs.pkgsBuildBuild.liquidhaskell or (errorHandler.setupDepError "liquidhaskell")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."liquid-ghc-prim" or (errorHandler.buildDepError "liquid-ghc-prim"))
           (hsPkgs."liquidhaskell" or (errorHandler.buildDepError "liquidhaskell"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9") (hsPkgs."integer-gmp" or (errorHandler.buildDepError "integer-gmp"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9") (hsPkgs."integer-gmp" or (errorHandler.buildDepError "integer-gmp"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

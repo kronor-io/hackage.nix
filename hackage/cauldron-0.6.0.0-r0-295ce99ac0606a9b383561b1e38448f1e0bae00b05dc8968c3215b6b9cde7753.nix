@@ -21,7 +21,7 @@
       synopsis = "Dependency injection library";
       description = "Dependency injection library that wires things at runtime.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,18 +30,18 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cauldron-example-wiring" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "codec-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -66,9 +66,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "app-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -79,9 +79,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tests-managed" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -92,9 +92,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tests-args" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -105,9 +105,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."algebraic-graphs" or (errorHandler.buildDepError "algebraic-graphs"))
             (hsPkgs."cauldron" or (errorHandler.buildDepError "cauldron"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

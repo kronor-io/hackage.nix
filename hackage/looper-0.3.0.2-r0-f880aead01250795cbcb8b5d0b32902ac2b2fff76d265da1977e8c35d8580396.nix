@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Configure and run recurring jobs indefinitely";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "looper-test" = {
           depends = [
@@ -42,12 +42,12 @@
             (hsPkgs."opt-env-conf-test" or (errorHandler.buildDepError "opt-env-conf-test"))
             (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.sydtest-discover.components.exes.sydtest-discover or (pkgs.buildPackages.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.sydtest-discover.components.exes.sydtest-discover or (pkgs.pkgsBuildBuild.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Polysemy wrapper around the Blockfrost client";
       description = "Polysemy wrapper around the Blockfrost client.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."blockfrost-api" or (errorHandler.buildDepError "blockfrost-api"))
           (hsPkgs."blockfrost-client" or (errorHandler.buildDepError "blockfrost-client"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "polysemy-blockfrost-test" = {
           depends = [
@@ -41,12 +41,12 @@
             (hsPkgs."polysemy" or (errorHandler.buildDepError "polysemy"))
             (hsPkgs."polysemy-plugin" or (errorHandler.buildDepError "polysemy-plugin"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

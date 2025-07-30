@@ -21,7 +21,7 @@
       synopsis = "Import to snelstart.";
       description = "Import to snelstart from various formats such as sepa direct debit or n26 bank format. Converts the format to ING csv. Has a server for an easy UI and a cli for quick conversions.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
           (hsPkgs."base64" or (errorHandler.buildDepError "base64"))
           (hsPkgs."shakespeare" or (errorHandler.buildDepError "shakespeare"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "snelstart-import" = {
           depends = [
@@ -62,10 +62,10 @@
             (hsPkgs."base64" or (errorHandler.buildDepError "base64"))
             (hsPkgs."shakespeare" or (errorHandler.buildDepError "shakespeare"))
             (hsPkgs."snelstart-import" or (errorHandler.buildDepError "snelstart-import"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -88,9 +88,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."snelstart-import" or (errorHandler.buildDepError "snelstart-import"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

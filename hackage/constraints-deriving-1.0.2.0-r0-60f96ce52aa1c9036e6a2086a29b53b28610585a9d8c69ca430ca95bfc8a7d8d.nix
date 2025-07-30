@@ -22,27 +22,27 @@
       description = "The library provides a plugin to derive class instances programmatically. Please see the README on GitHub at <https://github.com/achirkin/constraints-deriving#readme>";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
-          ] ++ (pkgs.lib).optional (flags.constraints) (hsPkgs."constraints" or (errorHandler.buildDepError "constraints"));
+        ] ++ pkgs.lib.optional (flags.constraints) (hsPkgs."constraints" or (errorHandler.buildDepError "constraints"));
         buildable = true;
-        };
+      };
       exes = {
         "deriving-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."constraints-deriving" or (errorHandler.buildDepError "constraints-deriving"))
-            ];
+          ];
           buildable = if flags.examples then true else false;
-          };
         };
+      };
       tests = {
         "functional-tests" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."ghc-paths" or (errorHandler.buildDepError "ghc-paths"))
             (hsPkgs."path" or (errorHandler.buildDepError "path"))
             (hsPkgs."path-io" or (errorHandler.buildDepError "path-io"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

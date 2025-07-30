@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2011-03-23T21:24:48Z";
         sha256 = "7c298c33e325696a900466f0f2d0467eb6867186b6dab4407db541c9da151d7d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "225f38411c05521159350b7f81472d1f6f702ad12ada2b797b20ea5caa4759cc";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2011-03-25T06:38:25Z";
         sha256 = "37592731a8d3e11cf3e0bde4024b49692745a2d43def1b5b0ef993e3c5e45ead";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.1" = {
     sha256 = "1adfd187407fbb4bf8a9ded8cd5ee8c068304919e3d0330d5724eec98f5732cf";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2011-11-17T22:07:06Z";
         sha256 = "3186f323676010b9e3674f3ab4998024b09a70cfe890688c7b390b1c0cfe619e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.2" = {
     sha256 = "0565df326a87c6ea67f8fb638e01acb0562cabd16a67fc6f9ea9cd191de8cd91";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2012-08-30T03:32:54Z";
         sha256 = "2931b03c5fdab2dac8d7eadb3be2f4ef8906666e43f1f1db65a06efd57ea701b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.3" = {
     sha256 = "02e342b8341fdf85a7bbb7180b9f5276f3b9423935ff1af2ff55a3f2da21c74b";
     revisions = {
@@ -55,8 +55,20 @@
         revNum = 0;
         revTimestamp = "2025-02-19T17:40:09Z";
         sha256 = "1b9c3bd291dfef75c056d4406791fa962c46033ce8c21d326377caa88ed8b5b7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.2.0.4" = {
+    sha256 = "e6aca06ba532c6ab9a24b57efd18b6b76bf92b9e019755b975064344c2aa59d5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/snappy-0.2.0.4-r0-4b03cb6ea9a6f0baf5649646d623b5b123a6747098c959867c9d43ac18b9e8f7.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-07T01:16:26Z";
+        sha256 = "4b03cb6ea9a6f0baf5649646d623b5b123a6747098c959867c9d43ac18b9e8f7";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Helpers to connect to SSL/TLS mail servers with HaskellNet";
       description = "This package ties together the HaskellNet and connection\npackages to make it easy to open IMAP and SMTP connections\nover SSL.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,16 +30,16 @@
           (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-          ] ++ (if flags.network-bsd
+        ] ++ (if flags.network-bsd
           then [
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."network-bsd" or (errorHandler.buildDepError "network-bsd"))
-            ]
+          ]
           else [
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
-            ]);
+          ]);
         buildable = true;
-        };
+      };
       exes = {
         "HaskellNet-SSL-example" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."HaskellNet-SSL" or (errorHandler.buildDepError "HaskellNet-SSL"))
             (hsPkgs."HaskellNet" or (errorHandler.buildDepError "HaskellNet"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

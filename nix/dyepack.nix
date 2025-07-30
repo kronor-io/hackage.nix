@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-08-25T20:37:26Z";
         sha256 = "33644af36438675ed2405f5194fa487a698ebd711faeffa3007a8e9940d8c8dc";
-        };
+      };
       r1 = {
         nix = import ../hackage/dyepack-0.1.0.0-r1-7893ab1dfaaa293625ba4b7f389c3ad613ee969f69daaef0134a6497c4585b77.nix;
         revNum = 1;
         revTimestamp = "2021-12-06T14:00:07Z";
         sha256 = "7893ab1dfaaa293625ba4b7f389c3ad613ee969f69daaef0134a6497c4585b77";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

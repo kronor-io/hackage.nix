@@ -21,7 +21,7 @@
       synopsis = "Template Haskell utilities for the data-effects library.";
       description = "TemplateHaskell functions for deriving effect invocation\nfunctions, [HFunctor](https://hackage.haskell.org/package/data-effects-core-0.1.0.0/docs/Data-Effect-HFunctor.html#t:HFunctor)\ninstances, and more from the definition of effects\nwith [data-effects](https://hackage.haskell.org/package/data-effects)-based GADT representations.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
           (hsPkgs."infinite-list" or (errorHandler.buildDepError "infinite-list"))
           (hsPkgs."formatting" or (errorHandler.buildDepError "formatting"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "Example" = {
           depends = [
@@ -51,12 +51,12 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
             (hsPkgs."infinite-list" or (errorHandler.buildDepError "infinite-list"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

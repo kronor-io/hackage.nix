@@ -21,7 +21,7 @@
       synopsis = "Type-safe and efficient choreographies with location-set polymorphism.";
       description = "MultiChor is a library for functional choreographic programming in Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "testExamples" = {
           depends = [
@@ -52,7 +52,7 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."MultiChor" or (errorHandler.buildDepError "MultiChor"))
-            ] ++ (pkgs.lib).optionals (flags.test) [
+          ] ++ pkgs.lib.optionals (flags.test) [
             (hsPkgs."async" or (errorHandler.buildDepError "async"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
             (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
@@ -64,9 +64,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = if flags.test then true else false;
-          };
         };
       };
-    }
+    };
+  }

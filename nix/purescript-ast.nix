@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2021-03-01T18:10:35Z";
         sha256 = "7a11d9d5395c5ec65b6ccf4dbf6cad5a99096f403acb45fcbb108ca6f3929e05";
-        };
+      };
       r1 = {
         nix = import ../hackage/purescript-ast-0.1.0.0-r1-30ba11641f36edf98026cb9c352dc2ea59ed6dbf4cb24a34106f9c13342ad0d7.nix;
         revNum = 1;
         revTimestamp = "2021-11-19T00:09:42Z";
         sha256 = "30ba11641f36edf98026cb9c352dc2ea59ed6dbf4cb24a34106f9c13342ad0d7";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1.0" = {
     sha256 = "a2f5403f9663d57957f2ae1692e52bdff0dd677876f93c1ae9bbf7b0ef9af38b";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2021-04-18T15:54:06Z";
         sha256 = "b05114c491e2ce1ac816ee811d3978976c41645b627173d0554ea8adb2da2a39";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

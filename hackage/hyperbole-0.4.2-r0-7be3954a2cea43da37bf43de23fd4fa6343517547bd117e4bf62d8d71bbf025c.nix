@@ -21,7 +21,7 @@
       synopsis = "Interactive HTML apps using type-safe serverside Haskell";
       description = "Interactive serverside web framework Inspired by HTMX, Elm, and Phoenix LiveView";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -45,9 +45,9 @@
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
           (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
           (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -74,9 +74,9 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
             (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

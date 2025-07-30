@@ -21,11 +21,11 @@
       synopsis = "Minimal essentials";
       description = "Everyday essentials: data structures, lenses, transformers, and parsing.\n\nUncompromisingly light on dependencies.\n\nEasily navigable code base, keeping indirection and clutter to a minimum.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

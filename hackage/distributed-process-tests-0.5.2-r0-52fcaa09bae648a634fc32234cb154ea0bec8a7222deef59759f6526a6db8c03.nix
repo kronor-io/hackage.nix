@@ -21,7 +21,7 @@
       synopsis = "Tests and test support tools for distributed-process.";
       description = "Tests and test suite for Cloud Haskell libraries, specifically the core distributed-process library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
           (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "TestCHInMemory" = {
           depends = [
@@ -47,64 +47,64 @@
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestCHInTCP" = {
-          depends = (pkgs.lib).optionals (flags.tcp) [
+          depends = pkgs.lib.optionals (flags.tcp) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = if flags.tcp then true else false;
-          };
+        };
         "TestClosure" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestStats" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestMxInMemory" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestTracingInMemory" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestMxInTCP" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

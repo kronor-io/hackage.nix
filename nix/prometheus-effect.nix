@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-10-02T08:58:54Z";
         sha256 = "6bab8f4341715b994e923b62ffbe52df6b0fc8a186fbd1069c28e37f4a7ee73e";
-        };
+      };
       r1 = {
         nix = import ../hackage/prometheus-effect-1.0.0-r1-ae46c10724d970ca715e88b736f637b1818a58ba563d35a29739bee3e26ab306.nix;
         revNum = 1;
         revTimestamp = "2017-10-02T16:12:00Z";
         sha256 = "ae46c10724d970ca715e88b736f637b1818a58ba563d35a29739bee3e26ab306";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1.0" = {
     sha256 = "2a7489e0a25a5befe49ca95360bae63936c0e81adcccf31e9f4f103fb3974ac1";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-11-08T17:36:15Z";
         sha256 = "9c7386da0ade7c12057dfd876c13405063122750631a501aaebbf9a0a677d357";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

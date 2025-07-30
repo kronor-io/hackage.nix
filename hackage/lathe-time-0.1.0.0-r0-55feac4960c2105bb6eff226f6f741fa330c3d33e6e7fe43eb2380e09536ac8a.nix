@@ -21,7 +21,7 @@
       synopsis = "lathe + time";
       description = "Optional time dependency for the lathe package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."lathe" or (errorHandler.buildDepError "lathe"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "properties" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."lathe" or (errorHandler.buildDepError "lathe"))
             (hsPkgs."lathe-time" or (errorHandler.buildDepError "lathe-time"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

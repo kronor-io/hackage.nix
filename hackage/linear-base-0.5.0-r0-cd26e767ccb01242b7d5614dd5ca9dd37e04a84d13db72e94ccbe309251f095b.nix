@@ -21,7 +21,7 @@
       synopsis = "Standard library for linear types.";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "examples" = {
           depends = [
@@ -47,10 +47,10 @@
             (hsPkgs."storable-tuple" or (errorHandler.buildDepError "storable-tuple"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."mmorph" or (errorHandler.buildDepError "mmorph"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."linear-generics" or (errorHandler.buildDepError "linear-generics"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-examples" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -76,10 +76,10 @@
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."linear-base".components.sublibs.examples or (errorHandler.buildDepError "linear-base:examples"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -96,9 +96,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."MonadRandom" or (errorHandler.buildDepError "MonadRandom"))
             (hsPkgs."linear-base".components.sublibs.examples or (errorHandler.buildDepError "linear-base:examples"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

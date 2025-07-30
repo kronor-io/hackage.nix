@@ -21,7 +21,7 @@
       synopsis = "Tools for working with the Haskell security advisory database";
       description = "Tools for working with the Haskell security advisory database.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -49,9 +49,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."toml-parser" or (errorHandler.buildDepError "toml-parser"))
           (hsPkgs."validation-selective" or (errorHandler.buildDepError "validation-selective"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hsec-tools" = {
           depends = [
@@ -65,10 +65,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."validation-selective" or (errorHandler.buildDepError "validation-selective"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -85,9 +85,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

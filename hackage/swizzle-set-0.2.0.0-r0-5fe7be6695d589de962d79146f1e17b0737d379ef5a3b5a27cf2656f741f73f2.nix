@@ -21,24 +21,24 @@
       synopsis = "Swizzle set functions";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/swizzle-set#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "swizzle-set-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."swizzle-set" or (errorHandler.buildDepError "swizzle-set"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

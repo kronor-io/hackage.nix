@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:43:03Z";
         sha256 = "7523fcfd2af5b2894513c2f6c22631dd097bf5ce4fad98f762e67f1f34b8326a";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-outposts-2.0-r1-e421ee615d1ed2d2d7626e1c54b70b329f90af365badb69e82fdc91f3df5c11f.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:51:22Z";
         sha256 = "e421ee615d1ed2d2d7626e1c54b70b329f90af365badb69e82fdc91f3df5c11f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

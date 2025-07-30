@@ -21,7 +21,7 @@
       synopsis = "Various tools for reversing and using assets from Golden Time: Vivid Memories.";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."symparsec" or (errorHandler.buildDepError "symparsec"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "gtvm-hs" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."symparsec" or (errorHandler.buildDepError "symparsec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

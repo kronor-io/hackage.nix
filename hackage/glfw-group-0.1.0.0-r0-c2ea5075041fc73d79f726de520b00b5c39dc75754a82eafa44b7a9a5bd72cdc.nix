@@ -21,7 +21,7 @@
       synopsis = "GLFW package with window groups destroyed together";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/glfw-group#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "glfw-group-exe" = {
           depends = [
@@ -42,10 +42,10 @@
             (hsPkgs."glfw-group" or (errorHandler.buildDepError "glfw-group"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "glfw-group-test" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."glfw-group" or (errorHandler.buildDepError "glfw-group"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

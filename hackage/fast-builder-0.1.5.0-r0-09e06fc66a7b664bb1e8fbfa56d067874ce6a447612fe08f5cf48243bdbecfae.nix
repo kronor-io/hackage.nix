@@ -21,16 +21,16 @@
       synopsis = "Fast ByteString Builder";
       description = "An efficient implementation of ByteString builder. It should be faster than\nthe standard implementation in most cases.\n\nIn many benchmarks, the performance improvement is 2x-10x.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "prop" = {
           depends = [
@@ -40,10 +40,10 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "aeson" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "vector" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -68,9 +68,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "map" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -79,9 +79,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

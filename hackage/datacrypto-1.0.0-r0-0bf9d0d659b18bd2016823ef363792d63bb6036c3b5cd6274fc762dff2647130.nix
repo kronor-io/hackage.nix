@@ -21,11 +21,11 @@
       synopsis = "Encryption library";
       description = "Block cipher encryption library";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2007-04-09T19:46:08Z";
         sha256 = "1024de3e7e5ca03686f2128898a68073fbf8d1d83218483351b1a7dc88d557d0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.7.1" = {
     sha256 = "71d080cfce3f9b820127abfa7895ea1fccf9d7812c79fe51767445e77a962c4e";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2009-01-12T16:29:59Z";
         sha256 = "4b6869123f2f7be527b1e774768d890b385d943a84b9a666e8d6724002e8612c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.8.1" = {
     sha256 = "db9ad16785c81d58b793433ec62b7b2c4f00cb3287b19c53c64b4c724f310ee1";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2010-02-26T01:44:34Z";
         sha256 = "43c8795ee0a1e4003c299eba88441437693f1d7f2c6e8fe35ea3d63f4ef488bc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.8.2" = {
     sha256 = "780bc5388838482857083746eeeb3bfd3d498e82722d29d834fb1b1427533025";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2012-03-31T16:59:29Z";
         sha256 = "eb829afcf64fe521bb5dd7c2b9a74a1eecea533d065d63b4c0966c8cf105fec9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.8.3" = {
     sha256 = "499261d57532d01083e8a2f47edc71062490635975f391ae3a35e42c4b966420";
     revisions = {
@@ -55,14 +55,14 @@
         revNum = 0;
         revTimestamp = "2013-10-28T21:01:55Z";
         sha256 = "55c4c12a199f7bceb1e9a9219ff1b1ed841dd442882b39b69194a7840523e022";
-        };
+      };
       r1 = {
         nix = import ../hackage/hsql-mysql-1.8.3-r1-e1bbb71ecb6e310acf23a93e4a5e0121c8bd332e7a81dfa5bfe27ae94cbf14ab.nix;
         revNum = 1;
         revTimestamp = "2014-12-08T13:41:26Z";
         sha256 = "e1bbb71ecb6e310acf23a93e4a5e0121c8bd332e7a81dfa5bfe27ae94cbf14ab";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

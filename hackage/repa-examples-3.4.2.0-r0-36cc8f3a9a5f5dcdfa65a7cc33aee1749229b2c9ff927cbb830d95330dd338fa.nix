@@ -21,7 +21,7 @@
       synopsis = "Examples using the Repa array library.";
       description = "Examples using the Repa array library.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "repa-canny" = {
@@ -31,9 +31,9 @@
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-mmult" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -41,9 +41,9 @@
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-laplace" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -51,36 +51,36 @@
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-fft2d" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-fft2d-highpass" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-fft3d-highpass" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-blur" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -88,35 +88,35 @@
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-sobel" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-volume" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."repa-algorithms" or (errorHandler.buildDepError "repa-algorithms"))
             (hsPkgs."repa-io" or (errorHandler.buildDepError "repa-io"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "repa-unit-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."repa" or (errorHandler.buildDepError "repa"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

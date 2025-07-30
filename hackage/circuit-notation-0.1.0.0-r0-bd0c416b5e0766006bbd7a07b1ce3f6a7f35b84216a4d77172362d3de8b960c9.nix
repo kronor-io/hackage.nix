@@ -21,7 +21,7 @@
       synopsis = "A source plugin for manipulating circuits in clash with a arrow notation";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,18 +38,18 @@
           (hsPkgs."syb" or (errorHandler.buildDepError "syb"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "library-testsuite" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."circuit-notation" or (errorHandler.buildDepError "circuit-notation"))
             (hsPkgs."clash-prelude" or (errorHandler.buildDepError "clash-prelude"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

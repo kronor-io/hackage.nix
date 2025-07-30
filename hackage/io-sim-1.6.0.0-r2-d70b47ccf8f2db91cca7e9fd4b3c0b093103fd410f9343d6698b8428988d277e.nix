@@ -21,7 +21,7 @@
       synopsis = "A pure simulator for monadic concurrency with STM.";
       description = "A pure simulator monad with support of concurrency (base & async style), stm,\nsynchronous and asynchronous exceptions, timeouts & delays, dynamic traces,\npartial order reduction, and more.\n\n= Documentation\nhttps://intput-output-hk.github.io/io-sim/io-sim";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."quiet" or (errorHandler.buildDepError "quiet"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
           (hsPkgs."parallel" or (errorHandler.buildDepError "parallel"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
             (hsPkgs."io-sim" or (errorHandler.buildDepError "io-sim"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

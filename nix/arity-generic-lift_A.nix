@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-12-31T17:03:04Z";
         sha256 = "40be27b56af59a5f884c1fc5dea1d756dd294707680a811132e174ec27c117b3";
-        };
+      };
       r1 = {
         nix = import ../hackage/arity-generic-liftA-0.1.0.0-r1-a921290710c2a2a84113f8c1f97fcdfa68fd318640b8256570b2ada31ba15d35.nix;
         revNum = 1;
         revTimestamp = "2018-12-31T19:00:57Z";
         sha256 = "a921290710c2a2a84113f8c1f97fcdfa68fd318640b8256570b2ada31ba15d35";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

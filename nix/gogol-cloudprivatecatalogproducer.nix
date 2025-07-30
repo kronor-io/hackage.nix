@@ -7,8 +7,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:36:30Z";
         sha256 = "5e5311a74e1c587216f233fced2a93f2b191dab9a50e0df8d66588006cbb2f28";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "43b638c8405c798056fb9dcccbe04e3e57a47e3467b33e68754f941d6b0e4e8b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-cloudprivatecatalogproducer-1.0.0-r0-b9f19646d049142c8891b8d3bbf59e6ce63ecd355c03f62eb25feef0cd780710.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:07:19Z";
+        sha256 = "b9f19646d049142c8891b8d3bbf59e6ce63ecd355c03f62eb25feef0cd780710";
+      };
+      default = "r0";
+    };
+  };
+}

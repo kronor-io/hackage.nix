@@ -21,7 +21,7 @@
       synopsis = "The solver component of cabal-install";
       description = "The solver component used in the cabal-install command-line program.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ] ++ (pkgs.lib).optional (flags.debug-tracetree) (hsPkgs."tracetree" or (errorHandler.buildDepError "tracetree"));
+        ] ++ pkgs.lib.optional (flags.debug-tracetree) (hsPkgs."tracetree" or (errorHandler.buildDepError "tracetree"));
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

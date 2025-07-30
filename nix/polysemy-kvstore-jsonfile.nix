@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2020-10-30T19:20:38Z";
         sha256 = "f618366fb476f5a0ec7d68236c7dc0746a19015b5641644d3c92c01ea0d9b8da";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "832b27643c861a3c7271fd117357af1f4fc82150971c990568e46b6732dc2baa";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2021-07-18T10:16:40Z";
         sha256 = "6b097ac0ba4ea3a9826c67c9e297e82ea359e788cc33f815de4f8fd177a4c02b";
-        };
+      };
       r1 = {
         nix = import ../hackage/polysemy-kvstore-jsonfile-0.1.1.0-r1-4576fdc28d899fc47101d4fadb8e217f109b76d582f008e6839628960f45d3a3.nix;
         revNum = 1;
         revTimestamp = "2021-08-06T19:46:37Z";
         sha256 = "4576fdc28d899fc47101d4fadb8e217f109b76d582f008e6839628960f45d3a3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

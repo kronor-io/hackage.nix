@@ -21,7 +21,7 @@
       synopsis = "...";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

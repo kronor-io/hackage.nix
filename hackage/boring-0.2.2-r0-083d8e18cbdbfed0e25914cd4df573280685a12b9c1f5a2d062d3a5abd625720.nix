@@ -21,14 +21,14 @@
       synopsis = "Boring and Absurd types";
       description = "* @Boring@ types are isomorphic to @()@.\n\n* @Absurd@ types are isomorphic to @Void@.\n\nSee [What does () mean in Haskell -answer by Conor McBride](https://stackoverflow.com/questions/33112439/what-does-mean-in-haskell/33115522#33115522)";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "7.6") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))) ++ (pkgs.lib).optional (flags.tagged) (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "7.6") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))) ++ pkgs.lib.optional (flags.tagged) (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

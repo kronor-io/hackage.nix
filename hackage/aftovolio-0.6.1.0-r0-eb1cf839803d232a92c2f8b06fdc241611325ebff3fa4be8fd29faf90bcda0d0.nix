@@ -21,7 +21,7 @@
       synopsis = "An AFTOVolio implementation for creating texts with special phonetic / prosodic properties.";
       description = "It is another project that is based on the similar ideas as [phonetic-languages-simplified-examples-array package](https://hackage.haskell.org/package/phonetic-languages-simplified-examples-array). It combines general functionality with an example of complete one for Ukrainian language with extended documentation, mostly in the README.md file. ";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."quantizer" or (errorHandler.buildDepError "quantizer"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."lists-flines" or (errorHandler.buildDepError "lists-flines"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "aftovolioUkr" = {
           depends = [
@@ -59,17 +59,17 @@
             (hsPkgs."quantizer" or (errorHandler.buildDepError "quantizer"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."lists-flines" or (errorHandler.buildDepError "lists-flines"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "unconcatUkr2" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."mmsyn2-array" or (errorHandler.buildDepError "mmsyn2-array"))
             (hsPkgs."intermediate-structures" or (errorHandler.buildDepError "intermediate-structures"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

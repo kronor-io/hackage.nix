@@ -21,7 +21,7 @@
       synopsis = "Simple, type-safe and testable HTTP client";
       description = "An HTTP client designed to be productive, easy to use, easy to test, flexible and safe!\n\nIt was designed with the following objectives in mind:\n\n- HTTP requests and responses should be modelled by a simple, immutable Haskell Record.\n- Actual HTTP calls should be made via an abstraction layer (`MonadDormouseClient`) so testing and mocking is painless.\n- Illegal requests should be unrepresentable, such as HTTP GET requests with a content body.\n- It should be possible to enforce a protocol (e.g. https) at the type level.\n- It should be possible to handle large request and response bodies via constant memory streaming.\n\nPlease see https://dormouse.io for full documentation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,9 +43,9 @@
           (hsPkgs."streamly-core" or (errorHandler.buildDepError "streamly-core"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "dormouse-client-test" = {
           depends = [
@@ -73,9 +73,9 @@
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

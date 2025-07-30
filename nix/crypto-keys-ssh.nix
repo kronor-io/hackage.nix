@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-12-02T03:37:28Z";
         sha256 = "a02bab83a082d13a8153523977db7d479672d4140d12efd369bbf9b9dd4d299d";
-        };
+      };
       r1 = {
         nix = import ../hackage/crypto-keys-ssh-0.1.0.0-r1-03fdb74bca4a9924ebcf09126ed4fd663776302a44116755adbb3d02323a45fd.nix;
         revNum = 1;
         revTimestamp = "2023-09-12T11:00:37Z";
         sha256 = "03fdb74bca4a9924ebcf09126ed4fd663776302a44116755adbb3d02323a45fd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

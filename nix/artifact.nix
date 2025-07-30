@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-11-15T03:22:39Z";
         sha256 = "56c541b2752364dfda6efe4d140701a0763282dd6b8c8ba5de863a91ebc4d7df";
-        };
+      };
       r1 = {
         nix = import ../hackage/artifact-0.0.0.0-r1-a47962d51a45c390e060794442b7be75ada80fcbc9067efc9a007d473ae81526.nix;
         revNum = 1;
         revTimestamp = "2018-11-15T04:44:19Z";
         sha256 = "a47962d51a45c390e060794442b7be75ada80fcbc9067efc9a007d473ae81526";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

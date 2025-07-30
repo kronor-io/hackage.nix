@@ -21,7 +21,7 @@
       synopsis = "A sequence of semigroups, for composing stuff in multiple spatial directions.";
       description = "Some types are composable in multiple “directions”, either in\na literal sense (<http://hackage.haskell.org/package/diagrams diagrams>\ncan be stacked vertically, as well as layed out side-by-side)\nor in an abstraction (matrices etc.). This package offers a whole\nsequence of semigroup-classes, numbered by type-literals, as\na unified interface for composition of such types. It also has\na bunch of standardised operators for writing out the compositions\nin a snug way.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."call-stack" or (errorHandler.buildDepError "call-stack"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

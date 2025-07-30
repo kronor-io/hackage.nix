@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-09-25T03:32:45Z";
         sha256 = "13c350c0b460709673d07be76040488f2679e0e3aace1bd54b5a77fa21f475bf";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.1" = {
     sha256 = "44d2062e34cc1b3c48d0690ac6edc96b8f9e1fed04587051ebec8267f9573f42";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2020-05-29T01:14:19Z";
         sha256 = "216adc1a1c361ae6d53b281f1b54376853fdd9591aab264a3756b1941d9765df";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0" = {
     sha256 = "6557bee9e3d4c1e99796762a2e06488abcd4da1a848d930acc8a79c51155c263";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2020-08-12T18:52:03Z";
         sha256 = "272435efde22857886e5fe39c409fb768df27ed349e8f65457b74e7041ba8311";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.1" = {
     sha256 = "3f49828ee0320ef36ff345f17b94485ffa9425e16ee88d9568af9f6cb4b4aa74";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2022-05-13T18:04:34Z";
         sha256 = "355ffdbe182de72e9b5d64f8115384381e209b91c04d2971fcee5624fadfd03f";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-jsonrpc-1.1.1-r1-c0bf856c1c8fae49709ff738161ae3fed6acb90ce81239212d8732a37b2e7504.nix;
         revNum = 1;
         revTimestamp = "2023-04-13T15:45:00Z";
         sha256 = "c0bf856c1c8fae49709ff738161ae3fed6acb90ce81239212d8732a37b2e7504";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.2.0" = {
     sha256 = "0a9e66df9302a7e903bf28fdadca8fc74c62d08bab2e51214eae5d4fbbd522f1";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2024-09-28T17:03:24Z";
         sha256 = "595a37f4966ce4580813efa889d26165061225778b8ab91b4a88bc3575cbd1bb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

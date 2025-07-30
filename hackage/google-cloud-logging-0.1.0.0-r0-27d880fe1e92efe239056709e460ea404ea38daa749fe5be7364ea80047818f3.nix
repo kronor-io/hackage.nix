@@ -21,16 +21,16 @@
       synopsis = "GCP Client for Haskell";
       description = "GCP Logging client for Haskell";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."google-cloud-common" or (errorHandler.buildDepError "google-cloud-common"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "google-cloud-logging-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."google-cloud-common" or (errorHandler.buildDepError "google-cloud-common"))
             (hsPkgs."google-cloud-logging" or (errorHandler.buildDepError "google-cloud-logging"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

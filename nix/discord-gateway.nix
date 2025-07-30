@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-06-17T20:31:46Z";
         sha256 = "1d776053e485a651250646e395d4ecfae68f60ed34221219604a7b96d5423856";
-        };
+      };
       r1 = {
         nix = import ../hackage/discord-gateway-0.2.2-r1-85a6479594ea864e56bee8498ca5859d9bbd7300f0f8ff81dc50cc470438842b.nix;
         revNum = 1;
         revTimestamp = "2018-10-20T18:41:09Z";
         sha256 = "85a6479594ea864e56bee8498ca5859d9bbd7300f0f8ff81dc50cc470438842b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

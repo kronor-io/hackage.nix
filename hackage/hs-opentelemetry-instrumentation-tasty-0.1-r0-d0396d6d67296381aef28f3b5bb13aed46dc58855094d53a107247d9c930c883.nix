@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-tasty";
         version = "0.1";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "me@michaelpj.com";
@@ -24,7 +24,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/tasty#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

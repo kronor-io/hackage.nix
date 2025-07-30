@@ -21,7 +21,7 @@
       synopsis = "Polysemy effects for concurrency";
       description = "See https://hackage.haskell.org/package/polysemy-conc/docs/Polysemy-Conc.html";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."stm-chans" or (errorHandler.buildDepError "stm-chans"))
           (hsPkgs."torsor" or (errorHandler.buildDepError "torsor"))
           (hsPkgs."unagi-chan" or (errorHandler.buildDepError "unagi-chan"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "polysemy-conc-test" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."torsor" or (errorHandler.buildDepError "torsor"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-09-19T10:19:47Z";
         sha256 = "90bf018a8dcb6ecae86ebcf3917a82f8f3fc920839027ff6251a08bc5269cc5d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.2" = {
     sha256 = "b4aeeea50fec52e594b2d3c05aca3a112b2095d1e5238ced065cecf2d89bbd16";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2017-01-31T14:12:00Z";
         sha256 = "c26790e44d586efb4723b390e45e8884496ecabc8ded86f2dc10085eab98023b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.3" = {
     sha256 = "6d99f2b57644661d76ecf917f0b3574c0a51c8884b41a9629525747f9bad51f8";
     revisions = {
@@ -31,8 +31,20 @@
         revNum = 0;
         revTimestamp = "2023-01-17T20:06:14Z";
         sha256 = "da964ea2bd5794d094652129c841f6537a73cf3ebb2e7d7d790ce08e07a15fb4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0.4" = {
+    sha256 = "8de01f469a6857f70249a21430dc4cfb79c61705142860d080f3b31fd306abd4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/vector-split-1.0.0.4-r0-15c7b0b6a34690a2804ab4b88f2bc1f1598fd23b475acfeca52afe281a354032.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-16T09:12:21Z";
+        sha256 = "15c7b0b6a34690a2804ab4b88f2bc1f1598fd23b475acfeca52afe281a354032";
+      };
+      default = "r0";
+    };
+  };
+}

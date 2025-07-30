@@ -21,7 +21,7 @@
       synopsis = "A git wrapper with a streamlined UX";
       description = "A git wrapper with a streamlined UX.\n\nTo install the @mit@ command-line tool, run the following:\n\n@\ncabal install mit-3qvpPyAi6mH\n@\n\nThis package's library component does not follow the Package Versioning Policy.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,17 +39,17 @@
           (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
           (hsPkgs."unconditional-jump" or (errorHandler.buildDepError "unconditional-jump"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "mit" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."mit-3qvpPyAi6mH" or (errorHandler.buildDepError "mit-3qvpPyAi6mH"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

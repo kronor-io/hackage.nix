@@ -21,7 +21,7 @@
       synopsis = "Handle flaky Tasty-based tests";
       description = "Handle flaky Tasty-based tests, with configuration retry policies.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."retry" or (errorHandler.buildDepError "retry"))
           (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tasty-flaky-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-flaky" or (errorHandler.buildDepError "tasty-flaky"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

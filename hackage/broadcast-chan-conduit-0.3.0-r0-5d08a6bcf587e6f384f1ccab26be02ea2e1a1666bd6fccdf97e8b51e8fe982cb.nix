@@ -21,13 +21,13 @@
       synopsis = "Conduit-based parallel streaming code for broadcast-chan";
       description = "__WARNING: As of 0.3.0 this package is deprecated, use the sublibrary of\nbroadcast-chan directly!__";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."broadcast-chan".components.sublibs.conduit or (errorHandler.buildDepError "broadcast-chan:conduit"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

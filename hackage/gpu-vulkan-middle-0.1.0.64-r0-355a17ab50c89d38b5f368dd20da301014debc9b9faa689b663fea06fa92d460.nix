@@ -21,7 +21,7 @@
       synopsis = "Medium wrapper for Vulkan API";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan-middle#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,9 +46,9 @@
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
           (hsPkgs."union-color" or (errorHandler.buildDepError "union-color"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-middle-test" = {
           depends = [
@@ -74,9 +74,9 @@
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
             (hsPkgs."union-color" or (errorHandler.buildDepError "union-color"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

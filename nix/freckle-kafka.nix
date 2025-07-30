@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-07-25T22:33:09Z";
         sha256 = "8a86a315a4a742117b7cb0b7b33ed6444172d0ba200ac6437815a4b0e1cfc2e7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "48d0d015079252a285801251b12d0c693bb0e545fb9f4dbe9dab3cdbbb2ad5c5";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2024-08-09T20:00:23Z";
         sha256 = "378cade9dfbd02bab5edb82faf5ee164dbff9b4ed32aff498767171f15b49707";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.2" = {
     sha256 = "1d0b05e64845e309dea3ec193652b3549102e7029eb82fa51444e6ae0db55ebc";
     revisions = {
@@ -31,8 +31,20 @@
         revNum = 0;
         revTimestamp = "2024-12-20T17:22:34Z";
         sha256 = "1d6e961f4214074846e757fd8b94b9a88d85813d6344603d1db2ce9f8daa77b1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.0.0.3" = {
+    sha256 = "cb26ed90ad34535dde1766a414f5cb14f8f385d031b2c161a2976599ca1c2250";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/freckle-kafka-0.0.0.3-r0-f9aa316323e46917b2438d06fae24a7769d44b616f10644071b56c924858acab.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-14T16:20:57Z";
+        sha256 = "f9aa316323e46917b2438d06fae24a7769d44b616f10644071b56c924858acab";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings for the llama.cpp llama-server";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

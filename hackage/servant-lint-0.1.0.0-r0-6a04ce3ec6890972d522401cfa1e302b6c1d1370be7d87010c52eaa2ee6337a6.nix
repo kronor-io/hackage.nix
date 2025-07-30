@@ -21,7 +21,7 @@
       synopsis = "Lint Servant Routes";
       description = "Lint Servant Routes and reject bad routes, overlaps, and more";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "servant-lint-test" = {
           depends = [
@@ -46,9 +46,9 @@
             (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
             (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

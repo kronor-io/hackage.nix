@@ -13,7 +13,7 @@
       eventlog = false;
       development = false;
       no-executable = false;
-      };
+    };
     package = {
       specVersion = "1.18";
       identifier = { name = "ats-pkg"; version = "2.10.0.20"; };
@@ -27,11 +27,11 @@
       description = "A collection of scripts to simplify building ATS projects.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cli-setup or (pkgs.buildPackages.cli-setup or (errorHandler.setupDepError "cli-setup")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cli-setup or (pkgs.pkgsBuildBuild.cli-setup or (errorHandler.setupDepError "cli-setup")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -65,12 +65,12 @@
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
           (hsPkgs."dependency" or (errorHandler.buildDepError "dependency"))
           (hsPkgs."filemanip" or (errorHandler.buildDepError "filemanip"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "atspkg" = {
-          depends = (pkgs.lib).optionals (!flags.no-executable) [
+          depends = pkgs.lib.optionals (!flags.no-executable) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ats-pkg" or (errorHandler.buildDepError "ats-pkg"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
@@ -82,9 +82,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."parallel-io" or (errorHandler.buildDepError "parallel-io"))
             (hsPkgs."shake" or (errorHandler.buildDepError "shake"))
-            ];
+          ];
           buildable = if flags.no-executable then false else true;
-          };
         };
       };
-    }
+    };
+  }

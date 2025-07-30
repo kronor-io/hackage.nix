@@ -21,7 +21,7 @@
       synopsis = "A testing companion package for opt-env-conf";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,19 +32,19 @@
           (hsPkgs."safe-coloured-text" or (errorHandler.buildDepError "safe-coloured-text"))
           (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "opt-env-conf-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."opt-env-conf" or (errorHandler.buildDepError "opt-env-conf"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "opt-env-conf-test" = {
           depends = [
@@ -63,12 +63,12 @@
             (hsPkgs."safe-coloured-text" or (errorHandler.buildDepError "safe-coloured-text"))
             (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.sydtest-discover.components.exes.sydtest-discover or (pkgs.buildPackages.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.sydtest-discover.components.exes.sydtest-discover or (pkgs.pkgsBuildBuild.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

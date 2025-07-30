@@ -21,7 +21,7 @@
       synopsis = "High-level SQLite client.";
       description = "High-level SQLite client.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -54,9 +54,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -79,10 +79,10 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -99,9 +99,9 @@
             (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
             (hsPkgs."sq" or (errorHandler.buildDepError "sq"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

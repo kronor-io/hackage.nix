@@ -21,7 +21,7 @@
       synopsis = "Utility functions commonly used while solving Advent of Code puzzles";
       description = "A collection of miscellaneous utility functions, including but not limited to pathfinding, grid enumeration, coordinate/range operations and extrapolation functions.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

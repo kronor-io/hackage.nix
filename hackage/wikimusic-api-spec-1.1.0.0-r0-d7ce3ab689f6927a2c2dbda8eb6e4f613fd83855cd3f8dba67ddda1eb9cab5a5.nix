@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://gitlab.com/jjba-projects/wikimusic-api-spec>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,8 +43,8 @@
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."wikimusic-model-hs" or (errorHandler.buildDepError "wikimusic-model-hs"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

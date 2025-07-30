@@ -21,14 +21,14 @@
       synopsis = "Unconditional jumps";
       description = "Unconditional jumps.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."int-supply" or (errorHandler.buildDepError "int-supply"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Servant bindings to Pinecone";
       description = "This package provides comprehensive and type-safe bindings\nto Pinecone, providing both a Servant interface and\nnon-Servant interface for convenience.\n\nRead the @README@ below for a fully worked usage example.\n\nOtherwise, browse the \"Pinecone\" module, which is the\nintended package entrypoint.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,19 +38,19 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "pinecone-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."pinecone" or (errorHandler.buildDepError "pinecone"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tasty" = {
           depends = [
@@ -60,9 +60,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

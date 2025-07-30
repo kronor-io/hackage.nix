@@ -21,7 +21,7 @@
       synopsis = "Parsable and Printable classes";
       description = "Provides the Parsable and Printable classes, which form a round-trip\nequivalence between a data type and a String. Useful for types that\nare generated directly from a String and need their internal\nrepresentation to be converted back to a String.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Reading/Writing OPB/WBO files used in pseudo boolean competition";
       description = "Reading\\/Writing OPB\\/WBO files used in pseudo boolean competition";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."integer-logarithms" or (errorHandler.buildDepError "integer-logarithms"))
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "TestPBFile" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

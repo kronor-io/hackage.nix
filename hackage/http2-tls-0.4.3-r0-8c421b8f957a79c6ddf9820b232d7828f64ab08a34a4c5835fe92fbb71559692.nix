@@ -21,7 +21,7 @@
       synopsis = "Library for HTTP/2 over TLS";
       description = "Using the HTTP/2 library over TLS";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."time-manager" or (errorHandler.buildDepError "time-manager"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
           (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "h2-client" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."http2" or (errorHandler.buildDepError "http2"))
             (hsPkgs."http2-tls" or (errorHandler.buildDepError "http2-tls"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
+        };
         "h2-server" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -66,9 +66,9 @@
             (hsPkgs."http2-tls" or (errorHandler.buildDepError "http2-tls"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."tls-session-manager" or (errorHandler.buildDepError "tls-session-manager"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
         };
       };
-    }
+    };
+  }

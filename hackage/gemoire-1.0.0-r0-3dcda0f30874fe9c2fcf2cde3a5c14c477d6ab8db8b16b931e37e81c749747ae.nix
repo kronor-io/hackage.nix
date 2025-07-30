@@ -21,7 +21,7 @@
       synopsis = "yet another static gemlog generator + converter";
       description = "gemoire is just another take on a static gemlog generator with feeds trying\nto be flexible just enough, plus a small HTML and Markdown converter, configured\nand served using Haskell. See the README.md for usage examples and Hackage for a\ndetailed documentation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."gemoire" or (errorHandler.buildDepError "gemoire"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

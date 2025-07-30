@@ -22,12 +22,12 @@
       description = "Make sure to read the README before installing!";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+      ];
+    };
     components = {
       exes = {
         "animascii" = {
@@ -42,10 +42,10 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."ansi-terminal-game" or (errorHandler.buildDepError "ansi-terminal-game"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

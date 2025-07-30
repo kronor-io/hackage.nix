@@ -21,7 +21,7 @@
       synopsis = "Effectful effects for testing";
       description = "See https://hackage.haskell.org/package/effectful-zoo/docs/effectful-zoo.html";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "core" = {
@@ -40,9 +40,9 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "amazonka" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -59,9 +59,9 @@
             (hsPkgs."resourcet-effectful" or (errorHandler.buildDepError "resourcet-effectful"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "blockfrost" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -72,9 +72,9 @@
             (hsPkgs."effectful-zoo".components.sublibs.core or (errorHandler.buildDepError "effectful-zoo:core"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "rds-data" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -91,9 +91,9 @@
             (hsPkgs."microlens" or (errorHandler.buildDepError "microlens"))
             (hsPkgs."rds-data".components.sublibs.codecs or (errorHandler.buildDepError "rds-data:codecs"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "rds-data-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -116,9 +116,9 @@
             (hsPkgs."rds-data".components.sublibs.codecs or (errorHandler.buildDepError "rds-data:codecs"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hedgehog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -145,18 +145,18 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hunit" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "testcontainers-localstack" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -173,10 +173,10 @@
             (hsPkgs."testcontainers" or (errorHandler.buildDepError "testcontainers"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "effectful-zoo-test" = {
           depends = [
@@ -186,12 +186,12 @@
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-discover" or (errorHandler.buildDepError "tasty-discover"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

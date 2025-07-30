@@ -21,22 +21,22 @@
       synopsis = "Portable POSIX-compatibility layer.";
       description = "This package provides portable implementations of parts\nof the unix package. This package re-exports the unix\npackage when available. When it isn't available,\nportable implementations are used.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
-          ] ++ (if system.isWindows
+        ] ++ (if system.isWindows
           then [
             (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ]
+          ]
           else [ (hsPkgs."unix" or (errorHandler.buildDepError "unix")) ]);
-        libs = (pkgs.lib).optional (system.isWindows) (pkgs."msvcrt" or (errorHandler.sysDepError "msvcrt"));
+        libs = pkgs.lib.optional (system.isWindows) (pkgs."msvcrt" or (errorHandler.sysDepError "msvcrt"));
         buildable = true;
-        };
+      };
       tests = {
         "unix-compat-testsuite" = {
           depends = [
@@ -48,12 +48,12 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ] ++ (pkgs.lib).optionals (system.isWindows) [
+          ] ++ pkgs.lib.optionals (system.isWindows) [
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

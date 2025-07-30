@@ -21,7 +21,7 @@
       synopsis = "Extensible records library";
       description = "Provides extensible records types built on top of the quantification library";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."quantification" or (errorHandler.buildDepError "quantification"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

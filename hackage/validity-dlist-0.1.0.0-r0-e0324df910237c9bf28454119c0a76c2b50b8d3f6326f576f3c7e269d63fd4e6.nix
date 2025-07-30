@@ -21,15 +21,15 @@
       synopsis = "Validity instances for containers";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."dlist" or (errorHandler.buildDepError "dlist"))
           (hsPkgs."validity" or (errorHandler.buildDepError "validity"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

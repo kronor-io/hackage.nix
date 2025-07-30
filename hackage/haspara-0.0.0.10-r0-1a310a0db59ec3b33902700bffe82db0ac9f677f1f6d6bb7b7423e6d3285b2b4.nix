@@ -21,7 +21,7 @@
       synopsis = "A library providing definitions to work with monetary values.";
       description = "Please see the README on GitHub at <https://github.com/telostat/haspara#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,18 +39,18 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "haspara-doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."haspara" or (errorHandler.buildDepError "haspara"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "haspara-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -59,9 +59,9 @@
             (hsPkgs."haspara" or (errorHandler.buildDepError "haspara"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

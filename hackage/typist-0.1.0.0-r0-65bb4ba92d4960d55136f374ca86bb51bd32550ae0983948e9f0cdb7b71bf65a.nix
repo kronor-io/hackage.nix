@@ -21,16 +21,16 @@
       synopsis = "Typelevel printf";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "typist-test" = {
           depends = [
@@ -39,10 +39,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "typist-bench" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."text-show" or (errorHandler.buildDepError "text-show"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

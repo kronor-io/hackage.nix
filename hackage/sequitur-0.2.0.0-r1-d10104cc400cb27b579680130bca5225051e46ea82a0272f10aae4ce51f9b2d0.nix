@@ -21,7 +21,7 @@
       synopsis = "Grammar-based compression algorithms SEQUITUR";
       description = "Please see the README on GitHub at <https://github.com/msakai/haskell-sequitur#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."hashtables" or (errorHandler.buildDepError "hashtables"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sequitur-demo" = {
           depends = [
@@ -42,10 +42,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."sequitur" or (errorHandler.buildDepError "sequitur"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = if flags.build-example-programs then true else false;
-          };
         };
+      };
       tests = {
         "sequitur-test" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."sequitur" or (errorHandler.buildDepError "sequitur"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "sequitur-bench" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."sequitur" or (errorHandler.buildDepError "sequitur"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

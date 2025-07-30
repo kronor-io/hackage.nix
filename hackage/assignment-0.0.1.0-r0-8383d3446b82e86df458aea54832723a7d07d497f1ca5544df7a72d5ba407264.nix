@@ -21,15 +21,15 @@
       synopsis = "A solution to the assignment problem";
       description = "A solution to the assignment problem.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."array" or (errorHandler.buildDepError "array"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -37,27 +37,27 @@
             (hsPkgs."assignment" or (errorHandler.buildDepError "assignment"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench-speed" = {
           depends = [
             (hsPkgs."assignment" or (errorHandler.buildDepError "assignment"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bench-memory" = {
           depends = [
             (hsPkgs."assignment" or (errorHandler.buildDepError "assignment"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."weigh" or (errorHandler.buildDepError "weigh"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

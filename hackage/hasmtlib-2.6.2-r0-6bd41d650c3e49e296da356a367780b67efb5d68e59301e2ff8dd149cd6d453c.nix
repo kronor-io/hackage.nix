@@ -21,7 +21,7 @@
       synopsis = "A monad for interfacing with external SMT solvers";
       description = "Hasmtlib is a library for generating SMTLib2-problems using a monad.\nIt takes care of encoding your problem, marshaling the data to an external solver and parsing and interpreting the result into Haskell types.\nIt is highly inspired by ekmett/ersatz which does the same for QSAT.\nCommunication with external solvers is handled by tweag/smtlib-backends.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,8 +43,8 @@
           (hsPkgs."bitvec" or (errorHandler.buildDepError "bitvec"))
           (hsPkgs."finite-typelits" or (errorHandler.buildDepError "finite-typelits"))
           (hsPkgs."vector-sized" or (errorHandler.buildDepError "vector-sized"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

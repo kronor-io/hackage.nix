@@ -21,7 +21,7 @@
       synopsis = "Compatibility package for time";
       description = "This packages tries to compat as much of @time@ features as possible.\n\n/TODO:/\n\n* Difference type @ParseTime@ and @FormatTime@ instances are missing.\n\n* Formatting varies depending on underlying @time@ version\n\n* @dayFractionToTimeOfDay@ on extreme values";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "instances" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."time-compat" or (errorHandler.buildDepError "time-compat"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "main" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -59,14 +59,14 @@
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."time-compat" or (errorHandler.buildDepError "time-compat"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ] ++ (pkgs.lib).optionals (!(compiler.isGhc && (compiler.version).ge "8.0")) [
+          ] ++ pkgs.lib.optionals (!(compiler.isGhc && compiler.version.ge "8.0")) [
             (hsPkgs."fail" or (errorHandler.buildDepError "fail"))
             (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
-            ];
-          buildable = if !(compiler.isGhc && (compiler.version).ge "7.4")
+          ];
+          buildable = if !(compiler.isGhc && compiler.version.ge "7.4")
             then false
             else true;
-          };
         };
       };
-    }
+    };
+  }

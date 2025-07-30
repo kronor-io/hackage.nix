@@ -21,7 +21,7 @@
       synopsis = "A variation of yesod-test that follows hspec idioms more closely";
       description = "Please see the README on GitHub for more information";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -53,9 +53,9 @@
           (hsPkgs."xml-types" or (errorHandler.buildDepError "xml-types"))
           (hsPkgs."yesod-core" or (errorHandler.buildDepError "yesod-core"))
           (hsPkgs."yesod-test" or (errorHandler.buildDepError "yesod-test"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -77,9 +77,9 @@
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."cookie" or (errorHandler.buildDepError "cookie"))
             (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

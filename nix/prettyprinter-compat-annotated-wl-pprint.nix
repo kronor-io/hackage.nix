@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2017-05-20T16:21:52Z";
         sha256 = "d949ef2d7df1a5094b260f0461b10b1e5044a118fbe96fd9291a2cd9c23f0f86";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1" = {
     sha256 = "2c259bac999d75b071a077f218a433c070783e9f40b67796e31a776fefbaf57e";
     revisions = {
@@ -19,28 +19,28 @@
         revNum = 0;
         revTimestamp = "2017-05-30T08:14:18Z";
         sha256 = "e14c62734676f88ae65534d3efb9753e3e80de9ba037821d7f100f9c670f880e";
-        };
+      };
       r1 = {
         nix = import ../hackage/prettyprinter-compat-annotated-wl-pprint-1-r1-3df48094a6dbf6f038cf8612c2c0aa32fb92c12674bf420f0e0398982fde219f.nix;
         revNum = 1;
         revTimestamp = "2017-05-31T07:36:09Z";
         sha256 = "3df48094a6dbf6f038cf8612c2c0aa32fb92c12674bf420f0e0398982fde219f";
-        };
+      };
       r2 = {
         nix = import ../hackage/prettyprinter-compat-annotated-wl-pprint-1-r2-23f0ef88d465950956d1cd3f404719255d302870e90fd45fd07ca3be3464ab9c.nix;
         revNum = 2;
         revTimestamp = "2017-06-08T06:49:46Z";
         sha256 = "23f0ef88d465950956d1cd3f404719255d302870e90fd45fd07ca3be3464ab9c";
-        };
+      };
       r3 = {
         nix = import ../hackage/prettyprinter-compat-annotated-wl-pprint-1-r3-fced1c528e575244e22003ad920bf1d7f4d4ddfe5305737b19d25d605a3cf16f.nix;
         revNum = 3;
         revTimestamp = "2018-02-19T09:14:45Z";
         sha256 = "fced1c528e575244e22003ad920bf1d7f4d4ddfe5305737b19d25d605a3cf16f";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "1.1" = {
     sha256 = "76c9266a980a70f9646726ff3a01b001c433728a732d17c2819546bcf8fe935e";
     revisions = {
@@ -49,8 +49,8 @@
         revNum = 0;
         revTimestamp = "2020-12-27T09:10:50Z";
         sha256 = "701dd271a4cd463ab3df69f6a8b8a6170d0cf9dab538a81fe64464328ab6a9e9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

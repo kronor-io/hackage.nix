@@ -22,10 +22,10 @@
       description = "This library implements an experimental variant of the Async Rattus\nprogramming language that features extensions for implementing GUIs.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -37,26 +37,26 @@
           (hsPkgs."simple-affine-space" or (errorHandler.buildDepError "simple-affine-space"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ill-typed" = {
           depends = [
             (hsPkgs."WidgetRattus" or (errorHandler.buildDepError "WidgetRattus"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "well-typed" = {
           depends = [
             (hsPkgs."WidgetRattus" or (errorHandler.buildDepError "WidgetRattus"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

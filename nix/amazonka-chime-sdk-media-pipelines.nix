@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:06:32Z";
         sha256 = "11339ac9cf7b930425f8e8b463de7568a4cb561e3b5668bbeac243906db66711";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-chime-sdk-media-pipelines-2.0-r1-17021d8467132dd44977c26df24b7486895e73407a1d6bd7f7b8ca6b8b4a3ada.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:40:30Z";
         sha256 = "17021d8467132dd44977c26df24b7486895e73407a1d6bd7f7b8ca6b8b4a3ada";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

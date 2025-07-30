@@ -21,7 +21,7 @@
       synopsis = "Lazy Probabilistic Programming Library";
       description = "LazyPPL is a Haskell library for Bayesian probabilistic programming. It supports lazy use of probability, which is useful for specifying non-parametric models, and we provide new Metropolis-Hastings algorithms to allow this. For illustrations, see <https://lazyppl-team.github.io/>. The Gaussian Process module uses hmatrix, which requires a separate lapack installation (or -dev or -devel).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

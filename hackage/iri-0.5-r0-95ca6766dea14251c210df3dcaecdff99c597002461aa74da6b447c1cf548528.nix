@@ -21,7 +21,7 @@
       synopsis = "RFC-based resource identifier library";
       description = "This library provides a universal data model for representation of URI, URL and IRI.\nIt comes packed with parsing, rendering and serialisation functionality.\nIt is implemented in conformance with the RFC-3986 and RFC-3987 specifications and\nis intended as a standard tool for all tasks related to resource identifiers.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."vector-builder" or (errorHandler.buildDepError "vector-builder"))
           (hsPkgs."vector-instances" or (errorHandler.buildDepError "vector-instances"))
           (hsPkgs."wide-word" or (errorHandler.buildDepError "wide-word"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "punycode" = {
           depends = [
@@ -55,10 +55,10 @@
             (hsPkgs."cereal" or (errorHandler.buildDepError "cereal"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

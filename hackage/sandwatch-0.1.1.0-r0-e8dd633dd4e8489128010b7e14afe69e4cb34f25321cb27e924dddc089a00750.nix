@@ -21,7 +21,7 @@
       synopsis = "record historical command runtimes for later prediction";
       description = "track historical runtimes for this directory and command, predict if there's time for a sandwich on this run";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sandwatch" = {
           depends = [
@@ -50,10 +50,10 @@
             (hsPkgs."sandwatch" or (errorHandler.buildDepError "sandwatch"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "sandwatch-test" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

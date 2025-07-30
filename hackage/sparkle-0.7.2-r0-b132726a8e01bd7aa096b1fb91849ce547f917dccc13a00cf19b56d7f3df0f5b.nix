@@ -22,11 +22,11 @@
       description = "See https://www.stackage.org/package/sparkle.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.inline-java or (pkgs.buildPackages.inline-java or (errorHandler.setupDepError "inline-java")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.inline-java or (pkgs.pkgsBuildBuild.inline-java or (errorHandler.setupDepError "inline-java")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -43,9 +43,9 @@
           (hsPkgs."streaming" or (errorHandler.buildDepError "streaming"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sparkle" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."sparkle" or (errorHandler.buildDepError "sparkle"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

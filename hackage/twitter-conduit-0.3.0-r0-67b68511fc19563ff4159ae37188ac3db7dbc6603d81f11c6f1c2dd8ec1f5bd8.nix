@@ -12,7 +12,7 @@
       network-uri = true;
       lens-aeson = true;
       run-integrated-test = false;
-      };
+    };
     package = {
       specVersion = "1.10";
       identifier = { name = "twitter-conduit"; version = "0.3.0"; };
@@ -26,11 +26,11 @@
       description = "This package provides bindings to Twitter's APIs (see <https://dev.twitter.com/>).\n\nThis package uses the http-conduit package for accessing the Twitter API (see <http://hackage.haskell.org/package/http-conduit>).\nThis package also depends on the twitter-types package (see <http://hackage.haskell.org/package/twitter-types>).\n\nYou can find basic examples in the <https://github.com/himura/twitter-conduit/tree/master/sample> directory.\n\nThis package is under development. If you find something that has not been implemented yet, please send a pull request or open an issue on GitHub.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -55,29 +55,29 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."twitter-types" or (errorHandler.buildDepError "twitter-types"))
           (hsPkgs."twitter-types-lens" or (errorHandler.buildDepError "twitter-types-lens"))
-          ] ++ (if flags.lens-aeson
+        ] ++ (if flags.lens-aeson
           then [
             (hsPkgs."lens-aeson" or (errorHandler.buildDepError "lens-aeson"))
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
-            ]
+          ]
           else [ (hsPkgs."lens" or (errorHandler.buildDepError "lens")) ]);
         buildable = true;
-        };
+      };
       tests = {
         "hlint" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hlint" or (errorHandler.buildDepError "hlint"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec_main" = {
           depends = ([
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -102,18 +102,18 @@
             (hsPkgs."twitter-types" or (errorHandler.buildDepError "twitter-types"))
             (hsPkgs."twitter-types-lens" or (errorHandler.buildDepError "twitter-types-lens"))
             (hsPkgs."twitter-conduit" or (errorHandler.buildDepError "twitter-conduit"))
-            ] ++ (if flags.network-uri
+          ] ++ (if flags.network-uri
             then [
               (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
-              ]
+            ]
             else [
               (hsPkgs."network" or (errorHandler.buildDepError "network"))
-              ])) ++ (pkgs.lib).optional (flags.lens-aeson) (hsPkgs."lens-aeson" or (errorHandler.buildDepError "lens-aeson"));
+            ])) ++ pkgs.lib.optional (flags.lens-aeson) (hsPkgs."lens-aeson" or (errorHandler.buildDepError "lens-aeson"));
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

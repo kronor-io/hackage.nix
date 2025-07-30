@@ -22,16 +22,16 @@
       description = "Please see the README on GitHub at <https://github.com/objectionary/eo-phi-normalizer#readme>";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.PyF or (pkgs.buildPackages.PyF or (errorHandler.setupDepError "PyF")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.bytestring or (pkgs.buildPackages.bytestring or (errorHandler.setupDepError "bytestring")))
-        (hsPkgs.buildPackages.code-page or (pkgs.buildPackages.code-page or (errorHandler.setupDepError "code-page")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.text or (pkgs.buildPackages.text or (errorHandler.setupDepError "text")))
-        (hsPkgs.buildPackages.with-utf8 or (pkgs.buildPackages.with-utf8 or (errorHandler.setupDepError "with-utf8")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.PyF or (pkgs.pkgsBuildBuild.PyF or (errorHandler.setupDepError "PyF")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.bytestring or (pkgs.pkgsBuildBuild.bytestring or (errorHandler.setupDepError "bytestring")))
+        (hsPkgs.pkgsBuildBuild.code-page or (pkgs.pkgsBuildBuild.code-page or (errorHandler.setupDepError "code-page")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.text or (pkgs.pkgsBuildBuild.text or (errorHandler.setupDepError "text")))
+        (hsPkgs.pkgsBuildBuild.with-utf8 or (pkgs.pkgsBuildBuild.with-utf8 or (errorHandler.setupDepError "with-utf8")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -66,14 +66,14 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.BNFC.components.exes.bnfc or (pkgs.buildPackages.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-          ];
+          (hsPkgs.pkgsBuildBuild.BNFC.components.exes.bnfc or (pkgs.pkgsBuildBuild.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+          (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "eo-phi-normalizer" = {
           depends = [
@@ -111,15 +111,15 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.BNFC.components.exes.bnfc or (pkgs.buildPackages.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.BNFC.components.exes.bnfc or (pkgs.pkgsBuildBuild.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -156,14 +156,14 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.BNFC.components.exes.bnfc or (pkgs.buildPackages.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.BNFC.components.exes.bnfc or (pkgs.pkgsBuildBuild.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."PyF" or (errorHandler.buildDepError "PyF"))
@@ -200,14 +200,14 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.BNFC.components.exes.bnfc or (pkgs.buildPackages.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+            (hsPkgs.pkgsBuildBuild.BNFC.components.exes.bnfc or (pkgs.pkgsBuildBuild.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -12,7 +12,7 @@
       io-testsuite = false;
       build-derivation = false;
       build-readme = false;
-      };
+    };
     package = {
       specVersion = "2.2";
       identifier = { name = "hnix-store-remote"; version = "0.7.0.0"; };
@@ -25,7 +25,7 @@
       synopsis = "Remote hnix store";
       description = "Implementation of the nix store using the daemon protocol.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -57,9 +57,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "build-derivation" = {
           depends = [
@@ -68,21 +68,21 @@
             (hsPkgs."hnix-store-remote" or (errorHandler.buildDepError "hnix-store-remote"))
             (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = if !flags.build-derivation then false else true;
-          };
+        };
         "remote-readme" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hnix-store-core" or (errorHandler.buildDepError "hnix-store-core"))
             (hsPkgs."hnix-store-remote" or (errorHandler.buildDepError "hnix-store-remote"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.markdown-unlit.components.exes.markdown-unlit or (pkgs.buildPackages.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
-            ];
+            (hsPkgs.pkgsBuildBuild.markdown-unlit.components.exes.markdown-unlit or (pkgs.pkgsBuildBuild.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
+          ];
           buildable = if !flags.build-readme then false else true;
-          };
         };
+      };
       tests = {
         "remote" = {
           depends = [
@@ -96,12 +96,12 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
+        };
         "remote-io" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -128,11 +128,11 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = if !flags.io-testsuite || system.isOsx
             then false
             else true;
-          };
         };
       };
-    }
+    };
+  }

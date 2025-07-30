@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2011-05-02T21:52:44Z";
         sha256 = "9548967485a6dcd6c64879959baccedccc64e971c7f9a4c661ea8d5faafd1085";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "e63cfb1242c98a31797425ca75d12df151ee04711187525d82105cc535f16619";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2011-05-05T07:56:41Z";
         sha256 = "05f7566cb164c4c8250008810634542b213fd03ff5606105ed941ddd15d5e4b5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.1" = {
     sha256 = "1aeb09b3a1761b387c1786f6aa22a35a6d04c709e08a0103120aee037dfaa496";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2011-05-05T08:03:15Z";
         sha256 = "7052f6094c2073edd1cf6f586987c78bf6b0041e99656aabce6240286f187d3a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.3" = {
     sha256 = "11f24fceb9bf3a9c419ed0b8242e3ef2b743861e4ad47b88216f2647ad43f6e0";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2014-01-30T14:12:11Z";
         sha256 = "9cdcbf03d183931fea410dc3a43ae67f52d2b2936e96641bedd49047f70a9c23";
-        };
+      };
       r1 = {
         nix = import ../hackage/roundtrip-0.2.0.3-r1-10ccf568a027831b465d888e899789b461d83657588fb8727aa9370a567493ce.nix;
         revNum = 1;
         revTimestamp = "2018-10-10T20:52:18Z";
         sha256 = "10ccf568a027831b465d888e899789b461d83657588fb8727aa9370a567493ce";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.5" = {
     sha256 = "caf5b343ba025da9d61190d6a9b55f1c1a02bdb5313ed9489ff969cb9c3f6581";
     revisions = {
@@ -61,16 +61,16 @@
         revNum = 0;
         revTimestamp = "2017-01-21T05:19:54Z";
         sha256 = "7d462c5b27bbe2321403d19ad8f5e79eab71095f74a4be93edad0e1e8d55cdd7";
-        };
+      };
       r1 = {
         nix = import ../hackage/roundtrip-0.2.0.5-r1-7a114fbb5526fcc38759d7194d80f3d2787f108904fb43d54d9666cadf7ab4cf.nix;
         revNum = 1;
         revTimestamp = "2018-10-10T20:53:11Z";
         sha256 = "7a114fbb5526fcc38759d7194d80f3d2787f108904fb43d54d9666cadf7ab4cf";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.6" = {
     sha256 = "f94e300c0fa1c6d2ea655b7dd88a5b9fcd8a2cf10b46576fbe4f6388f58dab7a";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2020-05-04T09:23:19Z";
         sha256 = "76f1d83ac74a0bc5fa4c31083a7d031876ba567ef10e2d949f94acb33c426309";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.7" = {
     sha256 = "72c166cd4db88ccc79d9a7880b4fb177657527df0ce73fe31bed799f676a0a8c";
     revisions = {
@@ -91,8 +91,8 @@
         revNum = 0;
         revTimestamp = "2020-05-05T08:26:42Z";
         sha256 = "a3e8f01e43ebd60cbcc62a506033e2c4ffd6664b15541f5d5eeb1d81695cd6ad";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

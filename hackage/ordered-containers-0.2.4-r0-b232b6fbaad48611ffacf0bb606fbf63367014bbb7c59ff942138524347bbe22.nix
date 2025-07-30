@@ -21,15 +21,15 @@
       synopsis = "Set- and Map-like types that remember the order elements were inserted";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

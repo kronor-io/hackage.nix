@@ -21,7 +21,7 @@
       synopsis = "Integration over convex polytopes";
       description = "Multiple integration over convex polytopes.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."scubature" or (errorHandler.buildDepError "scubature"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vertexenum" or (errorHandler.buildDepError "vertexenum"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."hspray" or (errorHandler.buildDepError "hspray"))
             (hsPkgs."pcubature" or (errorHandler.buildDepError "pcubature"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

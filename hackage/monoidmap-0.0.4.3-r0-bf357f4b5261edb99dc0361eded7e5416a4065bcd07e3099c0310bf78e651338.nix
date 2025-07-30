@@ -21,7 +21,7 @@
       synopsis = "Monoidal map type";
       description = "Monoidal map type with support for semigroup and monoid subclasses.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."groups" or (errorHandler.buildDepError "groups"))
           (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
           (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "monoidmap-examples" = {
           depends = [
@@ -42,10 +42,10 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."monoid-subclasses" or (errorHandler.buildDepError "monoid-subclasses"))
             (hsPkgs."monoidmap" or (errorHandler.buildDepError "monoidmap"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "monoidmap-test" = {
           depends = [
@@ -63,13 +63,13 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."monoidmap" or (errorHandler.buildDepError "monoidmap"))
             (hsPkgs."monoidmap".components.sublibs.monoidmap-examples or (errorHandler.buildDepError "monoidmap:monoidmap-examples"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "monoidmap-benchmark" = {
           depends = [
@@ -80,9 +80,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."monoidmap" or (errorHandler.buildDepError "monoidmap"))
             (hsPkgs."monoidmap".components.sublibs.monoidmap-examples or (errorHandler.buildDepError "monoidmap:monoidmap-examples"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

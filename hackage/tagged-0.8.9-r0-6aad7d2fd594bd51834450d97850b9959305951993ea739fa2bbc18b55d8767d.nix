@@ -21,14 +21,14 @@
       synopsis = "Haskell 98 phantom types to avoid unsafely passing dummy arguments";
       description = "Haskell 98 phantom types to avoid unsafely passing dummy arguments.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ] ++ (pkgs.lib).optional (flags.deepseq) (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))) ++ (pkgs.lib).optional (flags.transformers) (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"));
+        ] ++ pkgs.lib.optional (flags.deepseq) (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))) ++ pkgs.lib.optional (flags.transformers) (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

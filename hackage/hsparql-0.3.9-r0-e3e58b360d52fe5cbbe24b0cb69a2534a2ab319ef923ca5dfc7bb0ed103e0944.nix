@@ -21,7 +21,7 @@
       synopsis = "A SPARQL query generator and DSL, and a client to query a SPARQL server.";
       description = "hsparql includes a DSL to easily create queries, as well as methods to\nsubmit those queries to a SPARQL server, returning the results as simple\nHaskell data structures. Supports SELECT, CONSTRUCT, ASK and UPDATE queries.\nExample queries are included in the tests:\n<https://github.com/robstewart57/hsparql/blob/master/tests/DBPedia.hs>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."http-conduit" or (errorHandler.buildDepError "http-conduit"))
           (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-hsparql" = {
           depends = [
@@ -60,9 +60,9 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
             (hsPkgs."string-qq" or (errorHandler.buildDepError "string-qq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-01-05T21:39:11Z";
         sha256 = "2b7c76febb15854164c8c7079735bedb2692a7756d8b89fef44237b90bcb2e79";
-        };
+      };
       r1 = {
         nix = import ../hackage/numeric-ranges-0.1.0.0-r1-68b2a84c67b84bfe3cc3e7f4f2b0fafcd8e0741d4a3c57359f4437bb8824ea07.nix;
         revNum = 1;
         revTimestamp = "2016-01-06T13:14:39Z";
         sha256 = "68b2a84c67b84bfe3cc3e7f4f2b0fafcd8e0741d4a3c57359f4437bb8824ea07";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

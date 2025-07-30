@@ -21,7 +21,7 @@
       synopsis = "Crucible is a library for language-agnostic symbolic simulation";
       description = "Crucible provides a program representation format based on single-static assignment\n(SSA) form control flow graphs, and a symbolic simulation engine for executing\nprograms expressed in this format.  It also provides support for communicating with\na variety of SAT and SMT solvers, including Z3, CVC4, Yices, STP, and dReal.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -47,9 +47,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."what4" or (errorHandler.buildDepError "what4"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "absint-tests" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "helper-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -78,9 +78,9 @@
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."what4" or (errorHandler.buildDepError "what4"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

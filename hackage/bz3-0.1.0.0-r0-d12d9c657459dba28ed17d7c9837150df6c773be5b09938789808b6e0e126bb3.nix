@@ -21,19 +21,19 @@
       synopsis = "High-level bindings to bz3";
       description = "Streaming compression/decompression in bz3 format via lazy bytestrings";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "bz3-test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

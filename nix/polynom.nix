@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-01-21T03:49:15Z";
         sha256 = "eb730ed0c6fa2622f9cac8b66b61c651e6a8b9ab797228e790785a435e22812b";
-        };
+      };
       r1 = {
         nix = import ../hackage/polynom-0.1.0.0-r1-e36123666bb2de71621730dfaffb5b55c28a854e0d0c5def3289bf8cc8a5d959.nix;
         revNum = 1;
         revTimestamp = "2020-03-13T20:57:39Z";
         sha256 = "e36123666bb2de71621730dfaffb5b55c28a854e0d0c5def3289bf8cc8a5d959";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

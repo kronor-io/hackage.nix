@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2018-08-25T18:26:54Z";
         sha256 = "13e84ad68984e06bf57bbfa9125743078b66a19922d15438a46239f243f1a151";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.1" = {
     sha256 = "c6dfeb71134e590be31aa45bf2c4008bc81f3869cdc8fd4e46c1c0f6e194e492";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2018-08-29T17:01:41Z";
         sha256 = "84d5aeceae03a85df47ad2728d4ce6b544445c98947e0f2a7e280661847ba6a7";
-        };
+      };
       r1 = {
         nix = import ../hackage/Prelude-0.1.0.1-r1-814313f5c796f06cfa6ecebed1fe04269cce5ac6986165cb9c7e5b59ce7ee893.nix;
         revNum = 1;
         revTimestamp = "2019-09-10T09:09:10Z";
         sha256 = "814313f5c796f06cfa6ecebed1fe04269cce5ac6986165cb9c7e5b59ce7ee893";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

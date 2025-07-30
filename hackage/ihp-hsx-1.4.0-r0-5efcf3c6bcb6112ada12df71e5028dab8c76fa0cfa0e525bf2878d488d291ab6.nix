@@ -21,7 +21,7 @@
       synopsis = "JSX-like but for Haskell";
       description = "JSX-like templating syntax for Haskell";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."megaparsec" or (errorHandler.buildDepError "megaparsec"))
           (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ihp-hsx-tests" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."blaze-markup" or (errorHandler.buildDepError "blaze-markup"))
             (hsPkgs."megaparsec" or (errorHandler.buildDepError "megaparsec"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

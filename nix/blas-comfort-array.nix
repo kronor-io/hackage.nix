@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-01-23T11:42:12Z";
         sha256 = "75144420d9da81393ed1670c39adeb3d84d5c24ea0646fd2a9f79a1b1ccf5623";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "eb1d55615389e55c5ada70241c0d61c0eeefdac63bc05998939091af0dc1d3d4";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2019-01-24T13:43:43Z";
         sha256 = "102e6973b255550dad632e6d122565a231a7e41c94ef42d7e4746458d386ef8a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.2" = {
     sha256 = "a1cd40064f00c8d5c0dccb0fccaf8a61bb946f7cbbaf8e1ae008ac7b0b483cd9";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2019-05-24T04:31:13Z";
         sha256 = "a3687a45b95e6017b5b6be66d54cd0335c55634db89c7b9b195c11521ef57e98";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.3" = {
     sha256 = "5f47bd1fb12bb2f5126eca728ba479b2c56136236277ba81284f15209eda0bbc";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2021-08-06T08:16:54Z";
         sha256 = "8b9574b9e1e731bd0c8106a4044c5e2610b7087c486daaaa97eecc5d3b0e7d9d";
-        };
+      };
       r1 = {
         nix = import ../hackage/blas-comfort-array-0.0.0.3-r1-ed3e9d1c6e0db638a5787e107c6fa7b8b38044fe872acef080e01abd4147b4c9.nix;
         revNum = 1;
         revTimestamp = "2023-02-16T11:01:23Z";
         sha256 = "ed3e9d1c6e0db638a5787e107c6fa7b8b38044fe872acef080e01abd4147b4c9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.0.4" = {
     sha256 = "4a1a7309f3f7d89f8d95da9e8614ac71bf3dd55af318c47d550939f5ebbca14e";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2025-04-03T07:07:32Z";
         sha256 = "829122a8f979dc7595733a89342c264bd3bf9897e4c5de265b074ef2419c4438";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

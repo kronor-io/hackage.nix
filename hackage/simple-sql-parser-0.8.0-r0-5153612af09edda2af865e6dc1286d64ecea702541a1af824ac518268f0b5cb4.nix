@@ -21,7 +21,7 @@
       synopsis = "A parser for SQL.";
       description = "A parser for SQL. Parses most SQL:2011\nqueries, non-query DML, DDL, access control and\ntransaction management syntax. Please see the\nhomepage for more information\n<http://jakewheat.github.io/simple-sql-parser/latest>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "Tests" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."hspec-golden" or (errorHandler.buildDepError "hspec-golden"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."pretty-show" or (errorHandler.buildDepError "pretty-show"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SimpleSQLParserTool" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -67,9 +67,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."simple-sql-parser" or (errorHandler.buildDepError "simple-sql-parser"))
             (hsPkgs."pretty-show" or (errorHandler.buildDepError "pretty-show"))
-            ];
+          ];
           buildable = if flags.parserexe then true else false;
-          };
         };
       };
-    }
+    };
+  }

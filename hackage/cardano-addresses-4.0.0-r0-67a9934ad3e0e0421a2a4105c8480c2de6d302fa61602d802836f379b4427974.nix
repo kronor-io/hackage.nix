@@ -21,7 +21,7 @@
       synopsis = "Utils for constructing a command-line on top of cardano-addresses.";
       description = "Please see the README on GitHub at <https://github.com/IntersectMBO/cardano-addresses>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -56,19 +56,19 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cardano-address" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."cardano-addresses" or (errorHandler.buildDepError "cardano-addresses"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -93,13 +93,13 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."with-utf8" or (errorHandler.buildDepError "with-utf8"))
-            ] ++ (pkgs.lib).optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
+          ] ++ pkgs.lib.optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            (hsPkgs.buildPackages.cardano-address.components.exes.cardano-address or (pkgs.buildPackages.cardano-address or (errorHandler.buildToolDepError "cardano-address:cardano-address")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+            (hsPkgs.pkgsBuildBuild.cardano-address.components.exes.cardano-address or (pkgs.pkgsBuildBuild.cardano-address or (errorHandler.buildToolDepError "cardano-address:cardano-address")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -22,18 +22,18 @@
       description = "This package re-exports (for backward compatibility)\nthe haskell-gi generated bindings in the gi-gdkx113 package.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.haskell-gi or (pkgs.buildPackages.haskell-gi or (errorHandler.setupDepError "haskell-gi")))
-        (hsPkgs.buildPackages.gi-gdkx113 or (pkgs.buildPackages.gi-gdkx113 or (errorHandler.setupDepError "gi-gdkx113")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.haskell-gi or (pkgs.pkgsBuildBuild.haskell-gi or (errorHandler.setupDepError "haskell-gi")))
+        (hsPkgs.pkgsBuildBuild.gi-gdkx113 or (pkgs.pkgsBuildBuild.gi-gdkx113 or (errorHandler.setupDepError "gi-gdkx113")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."gi-gdkx113" or (errorHandler.buildDepError "gi-gdkx113"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

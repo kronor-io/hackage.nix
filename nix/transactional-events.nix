@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2008-10-10T13:44:31Z";
         sha256 = "325ebb09bbe3308f9546f4bac50dc267d146a1638b2279a610fbe8882a2d23b1";
-        };
+      };
       r1 = {
         nix = import ../hackage/transactional-events-0.1.0.0-r1-9ae1e516b5cb6219828469b330ff7017a5b943d2791f64f8bffc34ea7f964d83.nix;
         revNum = 1;
         revTimestamp = "2016-04-11T06:36:31Z";
         sha256 = "9ae1e516b5cb6219828469b330ff7017a5b943d2791f64f8bffc34ea7f964d83";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

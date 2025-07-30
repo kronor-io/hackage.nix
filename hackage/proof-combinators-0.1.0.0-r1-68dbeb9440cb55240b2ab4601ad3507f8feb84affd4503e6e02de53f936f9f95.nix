@@ -21,11 +21,11 @@
       synopsis = "Proof Combinators used in Liquid Haskell for Theorem Proving";
       description = "Do not use this package! It is deprecated in favor of [liquid-prelude](https://hackage.haskell.org/package/liquid-prelude)";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

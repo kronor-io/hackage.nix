@@ -21,7 +21,7 @@
       synopsis = "Formats package descriptions.";
       description = "Gild formats package descriptions.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,18 +36,18 @@
           (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cabal-gild" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."cabal-gild" or (errorHandler.buildDepError "cabal-gild"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "cabal-gild-test-suite" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

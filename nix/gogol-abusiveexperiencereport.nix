@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:20:15Z";
         sha256 = "e1fdd0d458d0896c45949b30e45789ad71f27751121c1bd3c95670d659c9e0aa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "6b398ac80b2aa6093b53329dbfe711d8e7626b1ab2ee4c807b6f7929550ee0b0";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:38:26Z";
         sha256 = "00b8f1a50835bf4e89f7cd8d94dab0e2dd79916ce8d75e0fad60565fc64583b8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "0be58de34e91b800d7bd436fca1b985b38845f47e2f6b8437c7818f485e2d140";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-abusiveexperiencereport-1.0.0-r0-599de4e677e32498cbf5d82b6f3990523e26578eb88b4d4d85adca7ab227dae3.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:06:28Z";
+        sha256 = "599de4e677e32498cbf5d82b6f3990523e26578eb88b4d4d85adca7ab227dae3";
+      };
+      default = "r0";
+    };
+  };
+}

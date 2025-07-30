@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-04-15T15:37:48Z";
         sha256 = "6413fb08059ca68f5ed1a6d4812464200cf086f379104e753e256ef60ba343dd";
-        };
+      };
       r1 = {
         nix = import ../hackage/infernu-0.0.0.0-r1-9031a563d3308144acf60b4ee57dc0c45bdf2dca486a56664e005d92efd815b1.nix;
         revNum = 1;
         revTimestamp = "2015-04-15T19:53:38Z";
         sha256 = "9031a563d3308144acf60b4ee57dc0c45bdf2dca486a56664e005d92efd815b1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.0.1" = {
     sha256 = "1697a74440cbd7209317393fae5be1993bcae70b8ec79cf070f6fa7e0bfd8a54";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2015-04-18T22:53:53Z";
         sha256 = "ed29e78d178faa08c0d449e059e7de7cecc8ced64cf31a8263d71859c7885613";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

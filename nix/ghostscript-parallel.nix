@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2023-09-16T09:49:03Z";
         sha256 = "7ff104776977514d83cfa76f67c0e915322f3668a3a72253ab3d1d0c14164e44";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1" = {
     sha256 = "def64baf6acda8ffb25aba2e1fc2baffa7d250eb1c97ecc117305d74a1354aea";
     revisions = {
@@ -19,8 +19,14 @@
         revNum = 0;
         revTimestamp = "2024-01-07T19:13:55Z";
         sha256 = "b6e27030818231b9a4fff2427d5ec4d69c940e69f415af7a9af088bb2394b7e8";
-        };
-      default = "r0";
       };
+      r1 = {
+        nix = import ../hackage/ghostscript-parallel-0.0.1-r1-f9d2b5601dd7f57d6eabf1631ac5a88c5ebcb6d94e90ba091c2c89ea00cca1e9.nix;
+        revNum = 1;
+        revTimestamp = "2025-06-04T09:47:09Z";
+        sha256 = "f9d2b5601dd7f57d6eabf1631ac5a88c5ebcb6d94e90ba091c2c89ea00cca1e9";
+      };
+      default = "r1";
     };
-  }
+  };
+}

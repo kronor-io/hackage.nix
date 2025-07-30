@@ -21,7 +21,7 @@
       synopsis = "Uniformly-random pre-factored numbers (Kalai)";
       description = "@__grfn__@ is a focused library -- an implementation of Adam Kalai's algorithm \nto get uniform pre-factored numbers. \nSee [README](https://github.com/threeeyedgod/grfn#grfn) for more details.        ";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,19 +35,19 @@
           (hsPkgs."async" or (errorHandler.buildDepError "async"))
           (hsPkgs."parallel" or (errorHandler.buildDepError "parallel"))
           (hsPkgs."unamb" or (errorHandler.buildDepError "unamb"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "grfn-exe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."grfn" or (errorHandler.buildDepError "grfn"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "grfn-test" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "grfn-benchmark" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."grfn" or (errorHandler.buildDepError "grfn"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

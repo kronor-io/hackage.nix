@@ -22,23 +22,23 @@
       description = "Fast functions for number theory and combinatorics with a high level of safety guaranteed by [ATS](http://www.ats-lang.org/).";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.ats-pkg or (pkgs.buildPackages.ats-pkg or (errorHandler.setupDepError "ats-pkg")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.ats-pkg or (pkgs.pkgsBuildBuild.ats-pkg or (errorHandler.setupDepError "ats-pkg")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."composition-prelude" or (errorHandler.buildDepError "composition-prelude"))
           (hsPkgs."gmpint" or (errorHandler.buildDepError "gmpint"))
-          ];
+        ];
         libs = [
           (pkgs."numbertheory" or (errorHandler.sysDepError "numbertheory"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "fast-arithmetic-test" = {
           depends = [
@@ -48,10 +48,10 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."arithmoi" or (errorHandler.buildDepError "arithmoi"))
             (hsPkgs."combinat" or (errorHandler.buildDepError "combinat"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "fast-arithmetic-bench" = {
           depends = [
@@ -60,9 +60,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."arithmoi" or (errorHandler.buildDepError "arithmoi"))
             (hsPkgs."combinat" or (errorHandler.buildDepError "combinat"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

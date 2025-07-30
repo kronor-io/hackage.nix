@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2021-03-22T17:35:21Z";
         sha256 = "20da9a33b32a1207d1b554a7eadd080462a5610b67e5e2aafe6b0201508a3f14";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "96e62b91e69466c70ad5ecba807771dfb76f1e92aab8429ddb978284e8468ef2";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2021-09-07T18:09:18Z";
         sha256 = "0e3b7ba4ac979fa46c5137256249dd46ff66c6536224db656c2b46a06f656a23";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.1.0" = {
     sha256 = "b7ec123959c4861929bd16e9768e6ba9890ba00d2677040f7531ae86b9048ab2";
     revisions = {
@@ -31,28 +31,28 @@
         revNum = 0;
         revTimestamp = "2022-07-15T19:36:33Z";
         sha256 = "5a0a659d746c05ab7221d4a20f5476b00c0e1bd94474791a41c4bca90e911c9c";
-        };
+      };
       r1 = {
         nix = import ../hackage/json-query-0.2.1.0-r1-95f6b7785fe4fc0b91b99d8f2b4d42f4e1d0eb82c52ea763f7e688fff1ffaac5.nix;
         revNum = 1;
         revTimestamp = "2023-03-22T17:36:53Z";
         sha256 = "95f6b7785fe4fc0b91b99d8f2b4d42f4e1d0eb82c52ea763f7e688fff1ffaac5";
-        };
+      };
       r2 = {
         nix = import ../hackage/json-query-0.2.1.0-r2-e75e0be5b59455dcd60e1b0f74809c06113f1775dd1d07121700977e75121dde.nix;
         revNum = 2;
         revTimestamp = "2023-06-28T14:34:33Z";
         sha256 = "e75e0be5b59455dcd60e1b0f74809c06113f1775dd1d07121700977e75121dde";
-        };
+      };
       r3 = {
         nix = import ../hackage/json-query-0.2.1.0-r3-d30870f08d981cb329704b64eb7dd168018f57ee6b1bf685209498f364b68693.nix;
         revNum = 3;
         revTimestamp = "2023-06-28T14:39:00Z";
         sha256 = "d30870f08d981cb329704b64eb7dd168018f57ee6b1bf685209498f364b68693";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.2.2.0" = {
     sha256 = "226efd1c530b88940b01b64ff2faf810d98bd24c16663c417f46611467ee19cc";
     revisions = {
@@ -61,16 +61,16 @@
         revNum = 0;
         revTimestamp = "2023-08-09T15:12:33Z";
         sha256 = "1dd88b3377c3762af1259a5663473a6507972a4e44ced399b62867fa64620b4f";
-        };
+      };
       r1 = {
         nix = import ../hackage/json-query-0.2.2.0-r1-91b959e28374c915d0d55978dbd1d4993ee28b9061abb97de58d5ca9a99129c1.nix;
         revNum = 1;
         revTimestamp = "2023-10-12T14:27:36Z";
         sha256 = "91b959e28374c915d0d55978dbd1d4993ee28b9061abb97de58d5ca9a99129c1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.3.0" = {
     sha256 = "cc061b24e5085be36054fb59542466164a04d49bd34f83062813665551a99001";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2024-01-18T21:12:31Z";
         sha256 = "4bd2603ec5f615db05e7a3e7ea7bd36c854964928ede5071f4ad9277dd8c3ba5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.3.1" = {
     sha256 = "b67ebc651c77f76e0ca658a54d657d157b85478249db84a274c5171d0900411a";
     revisions = {
@@ -91,14 +91,26 @@
         revNum = 0;
         revTimestamp = "2024-01-29T16:53:03Z";
         sha256 = "3cd66ed2269b2f54fc9d8af5a0cc53e3e66f02e6a0302a430a8e07dfb85d335d";
-        };
+      };
       r1 = {
         nix = import ../hackage/json-query-0.2.3.1-r1-77ff4cd580bca392f77e668dfee8d95628b0a7c2cd4f211e9af586ecbb87f39a.nix;
         revNum = 1;
         revTimestamp = "2025-01-27T14:46:05Z";
         sha256 = "77ff4cd580bca392f77e668dfee8d95628b0a7c2cd4f211e9af586ecbb87f39a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+  "0.3.0.0" = {
+    sha256 = "386f4596021da893e23a096001b010ac49722b5ad3ac5196d078607209fd36f0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/json-query-0.3.0.0-r0-d5746d2290fa4554b3292ac9f02ba50bd16aa7ad4d24c942088c65d407a789de.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-15T13:14:27Z";
+        sha256 = "d5746d2290fa4554b3292ac9f02ba50bd16aa7ad4d24c942088c65d407a789de";
+      };
+      default = "r0";
+    };
+  };
+}

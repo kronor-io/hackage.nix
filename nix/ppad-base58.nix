@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-12-18T14:37:10Z";
         sha256 = "4ad679ea1929bce70546ec4aaeb8de4fc28013a2a07ce342725277fcf0a4fd36";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "f3884bdb50e86351bc64bdf0d9ecbc0b9831020f49bba018661807e8552b2bf0";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2025-01-06T22:42:43Z";
         sha256 = "210c5900ba5abc84842e7e72e3f4db4b3c11ed65c0d6d7b11b49a642aa7df400";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "8b35d793c3d2769603da281f68594e7401105f5ea1237a294a86e9bac376c0ae";
     revisions = {
@@ -31,8 +31,20 @@
         revNum = 0;
         revTimestamp = "2025-02-18T19:11:09Z";
         sha256 = "a4891a5b75a6667c1ca1bfea518f425a48fdaa45256fecae80189988228bf27c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.2.1" = {
+    sha256 = "7e001d23e2c430a50a894594dcbcb227c925427c97007223803fb4700b4a2469";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-base58-0.2.1-r0-eb1f0aeccbde9c5710b3b0d675fe56e3803610f238d71705254cae3a41fa8532.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-21T10:08:49Z";
+        sha256 = "eb1f0aeccbde9c5710b3b0d675fe56e3803610f238d71705254cae3a41fa8532";
+      };
+      default = "r0";
+    };
+  };
+}

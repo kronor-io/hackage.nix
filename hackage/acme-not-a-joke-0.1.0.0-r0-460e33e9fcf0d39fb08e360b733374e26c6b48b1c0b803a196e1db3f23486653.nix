@@ -21,7 +21,7 @@
       synopsis = "implements ACME clients (rfc-8555)";
       description = "a library to get TLS certificate by communicating to a ACME-provider such as Lets'Encrypt. Hence: no, the acme prefix is not a marker for a joke.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."jose" or (errorHandler.buildDepError "jose"))
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
           (hsPkgs."wreq" or (errorHandler.buildDepError "wreq"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

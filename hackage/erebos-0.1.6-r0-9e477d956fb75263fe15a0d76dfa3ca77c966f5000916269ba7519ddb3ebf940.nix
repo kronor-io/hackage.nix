@@ -21,7 +21,7 @@
       synopsis = "Decentralized messaging and synchronization";
       description = "Library and simple CLI interface implementing the Erebos identity\nmanagement, decentralized messaging and synchronization protocol, along\nwith local storage.\n.\nErebos identity is based on locally stored cryptographic keys, all\ncommunication is end-to-end encrypted. Multiple devices can be attached to\nthe same identity, after which they function interchangeably, without any\none being in any way \"primary\"; messages and other state data are then\nsynchronized automatically whenever the devices are able to connect with\none another.\n.\nSee README for usage of the CLI tool.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -47,13 +47,13 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ] ++ (if system.isWindows
+        ] ++ (if system.isWindows
           then [ (hsPkgs."Win32" or (errorHandler.buildDepError "Win32")) ]
           else [ (hsPkgs."unix" or (errorHandler.buildDepError "unix")) ]);
-        pkgconfig = (pkgs.lib).optional (flags.ice) (pkgconfPkgs."libpjproject" or (errorHandler.pkgConfDepError "libpjproject"));
-        build-tools = (pkgs.lib).optional (flags.ice) (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")));
+        pkgconfig = pkgs.lib.optional (flags.ice) (pkgconfPkgs."libpjproject" or (errorHandler.pkgConfDepError "libpjproject"));
+        build-tools = pkgs.lib.optional (flags.ice) (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")));
         buildable = true;
-        };
+      };
       exes = {
         "erebos" = {
           depends = [
@@ -71,9 +71,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

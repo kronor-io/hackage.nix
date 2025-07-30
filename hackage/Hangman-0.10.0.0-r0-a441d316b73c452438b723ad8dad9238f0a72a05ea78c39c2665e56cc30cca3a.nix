@@ -21,13 +21,13 @@
       synopsis = "The classic game of Hangman";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "Hangman" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

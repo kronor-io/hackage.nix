@@ -21,16 +21,16 @@
       synopsis = "base58 and base58check encoding/decoding.";
       description = "base58 and base58check encoding/decoding on strict bytestrings.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."ppad-sha256" or (errorHandler.buildDepError "ppad-sha256"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "base58-tests" = {
           depends = [
@@ -42,10 +42,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "base58-bench" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."ppad-base58" or (errorHandler.buildDepError "ppad-base58"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

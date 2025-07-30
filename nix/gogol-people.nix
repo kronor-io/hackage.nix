@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-06-21T04:20:05Z";
         sha256 = "269ef2643fe18f943e2ab892584c6b1aec58bb56168064e4874cb71c41d8228b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "adbb0f4b9df631ddca20f269f7a3518aeefbaab8b0ae51e0568a4e1d0e5abc76";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:30:13Z";
         sha256 = "ba5347b3bad72a343ce0cfe9c4a18af118fbd0184312ffee41ae0faaf6b92035";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "18b1c3d8b916acd8e53c618c00f7e6f06dd310840a7a2f242f271635409bd9bb";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:32:05Z";
         sha256 = "be0d4b257da3fd98fe203875ca4430c9b01e3c1c17cf2a401d9a16c4233af814";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "dbe9523e3a7b5d0a2128b56a2f5a948c87c2e9bbf5ae4439d859ce940ace4e48";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:53:06Z";
         sha256 = "7471b55a35a8dc1651ea00f0f4862ca6c36e8d95b6dad336b44ff9e7679db555";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "234a47014b67bd720a07240d2d2ccd7ead6ebb58b2be77f435d2097122f8bbf4";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:21:58Z";
         sha256 = "e4f4ffc8fb80e7ee87b441e24dfb8377235e7cef1ce68a3901a2906ecb949818";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "7290d6024532eaaf06e13ad522583a0566ddacf1d85a1dd37fd3a46b7250ba06";
     revisions = {
@@ -67,8 +67,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:41:01Z";
         sha256 = "a0d97607e641275eb66cb50568b9b296504f0490e816952cd05bb028bd00df02";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "3a4cddb18ff846a34759951c325dc178724a32049f087f867b26cf90f02959e2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-people-1.0.0-r0-21c6716e7dbe4a84e8905f071d310cdc33c80fce5e93e388e8d50e3e694df728.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:08:38Z";
+        sha256 = "21c6716e7dbe4a84e8905f071d310cdc33c80fce5e93e388e8d50e3e694df728";
+      };
+      default = "r0";
+    };
+  };
+}

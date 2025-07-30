@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2023-10-16T06:45:02Z";
         sha256 = "54ffc130854697fe37626b1f99e8127b69de504869a3aecb2ebcd40bfd2034e9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.11.0" = {
     sha256 = "d9d5ac06e70e76b788091d5745a77b7445ca184901b97a0b1b23d1d599a7c0d8";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2024-06-24T06:12:04Z";
         sha256 = "2194222fd172df3ed611e21b9676afeea583e2fa4a5274da91dfca0e33b3700d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.12.0" = {
     sha256 = "d97df68eee9054f58554a836e50af24c361b309216ca6c132d73b3791ed2866f";
     revisions = {
@@ -31,10 +31,22 @@
         revNum = 0;
         revTimestamp = "2025-01-21T14:30:23Z";
         sha256 = "0cb763be33db3764f1d1cd3d75e7708a9672a2a04701cc09a93a7337d4dcab94";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
+  "0.12.1" = {
+    sha256 = "788819e666577bf6831e438eff0e27cb58049d436eb640ba0b28edfbb52aeea7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unleash-client-haskell-core-0.12.1-r0-498775cd9c4199720e422c0ff5844b5c6a001b5a3672236b47229475ee9f28e3.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-02T11:50:59Z";
+        sha256 = "498775cd9c4199720e422c0ff5844b5c6a001b5a3672236b47229475ee9f28e3";
+      };
+      default = "r0";
+    };
+  };
   "0.8.9" = {
     sha256 = "80e09fb389fad39fcc0db561dfcf7d65f7f9449ed3683f7d73522094bf6f014b";
     revisions = {
@@ -43,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2023-09-15T06:58:45Z";
         sha256 = "924481a1a418f09e3fd58fc73ce9b0a204e0e059d0a9a10df8a30f2a0099c4d4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.9.0" = {
     sha256 = "e477c54d3a99015282d7bfc1384cf5dfc0e9fd3f4c67d1289adc48be1c7af73c";
     revisions = {
@@ -55,8 +67,8 @@
         revNum = 0;
         revTimestamp = "2023-10-13T11:56:42Z";
         sha256 = "80357a7a784877c9b7ec29859b8f000cef1f5fe30ce466608c6e74a70147961b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

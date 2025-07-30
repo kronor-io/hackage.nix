@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2016-11-27T17:01:48Z";
         sha256 = "3643eef8b2bf2d7e7c597524a6101599acca42d8d2ba3f6ef675d6cb9deb5266";
-        };
+      };
       r1 = {
         nix = import ../hackage/pvss-0.1-r1-2d6b823ed5c0e8852c2d91c248b09cabf83409fb71bd473ab15c44b30427dd0e.nix;
         revNum = 1;
         revTimestamp = "2016-11-27T18:29:46Z";
         sha256 = "2d6b823ed5c0e8852c2d91c248b09cabf83409fb71bd473ab15c44b30427dd0e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0" = {
     sha256 = "e440145003cac581a43941e82b213011cb0730c524948e9aaec9d3376622028c";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-08-01T10:41:35Z";
         sha256 = "8a35561a8620e299ec8b85705c2721eb0c5866c68c426ba395691560ee02c3e4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

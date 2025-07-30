@@ -21,7 +21,7 @@
       synopsis = "Opinionated prelude library";
       description = "Opinionated prelude library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."resourcet" or (errorHandler.buildDepError "resourcet"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ] ++ (pkgs.lib).optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
+        ] ++ pkgs.lib.optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

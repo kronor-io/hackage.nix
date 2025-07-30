@@ -21,16 +21,16 @@
       synopsis = "Derive Prim and PrimUnaligned";
       description = "This package provides the newtype `GenericPrim` which allows user to derive instances for Prim and PrimUnaligned\nthrough the DerivingVia extension.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."primitive-unaligned" or (errorHandler.buildDepError "primitive-unaligned"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "derive-prim-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."primitive-unaligned" or (errorHandler.buildDepError "primitive-unaligned"))
             (hsPkgs."derive-prim" or (errorHandler.buildDepError "derive-prim"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

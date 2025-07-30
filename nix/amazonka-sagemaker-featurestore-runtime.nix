@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:46:11Z";
         sha256 = "b6b0958903e07cd1ae52dce9a5e7ca9d0eb20c12495411282241a7df657734e5";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-sagemaker-featurestore-runtime-2.0-r1-4598c8e767a5d39e5f55a75de676af1ab96901172296fb22b95b47816b25ddaf.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:53:33Z";
         sha256 = "4598c8e767a5d39e5f55a75de676af1ab96901172296fb22b95b47816b25ddaf";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

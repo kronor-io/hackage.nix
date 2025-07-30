@@ -22,11 +22,11 @@
       description = "Liquid Types for Haskell.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.liquidhaskell-boot or (pkgs.buildPackages.liquidhaskell-boot or (errorHandler.setupDepError "liquidhaskell-boot")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.liquidhaskell-boot or (pkgs.pkgsBuildBuild.liquidhaskell-boot or (errorHandler.setupDepError "liquidhaskell-boot")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,8 +36,8 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."ghc-bignum" or (errorHandler.buildDepError "ghc-bignum"))
           (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

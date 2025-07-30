@@ -18,7 +18,7 @@
       rts = false;
       optimize = true;
       warn-as-error = false;
-      };
+    };
     package = {
       specVersion = "1.24";
       identifier = { name = "darcs"; version = "2.14.0"; };
@@ -32,13 +32,13 @@
       description = "Darcs is a free, open source revision control\nsystem. It is:\n\n* Distributed: Every user has access to the full\ncommand set, removing boundaries between server and\nclient or committer and non-committers.\n\n* Interactive: Darcs is easy to learn and efficient to\nuse because it asks you questions in response to\nsimple commands, giving you choices in your work\nflow. You can choose to record one change in a file,\nwhile ignoring another. As you update from upstream,\nyou can review each patch name, even the full \"diff\"\nfor interesting patches.\n\n* Smart: Originally developed by physicist David\nRoundy, darcs is based on a unique algebra of\npatches.\n\nThis smartness lets you respond to changing demands\nin ways that would otherwise not be possible. Learn\nmore about spontaneous branches with darcs.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+      ];
+    };
     components = {
       "library" = {
         depends = ([
@@ -82,24 +82,24 @@
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."HTTP" or (errorHandler.buildDepError "HTTP"))
-          ] ++ (if system.isWindows
+        ] ++ (if system.isWindows
           then [ (hsPkgs."Win32" or (errorHandler.buildDepError "Win32")) ]
           else [
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ])) ++ (pkgs.lib).optional (flags.terminfo && !system.isWindows) (hsPkgs."terminfo" or (errorHandler.buildDepError "terminfo"));
-        libs = (pkgs.lib).optionals (flags.curl) ((pkgs.lib).optional (!flags.pkgconfig) (pkgs."curl" or (errorHandler.sysDepError "curl")));
-        pkgconfig = (pkgs.lib).optionals (flags.curl) ((pkgs.lib).optional (flags.pkgconfig) (pkgconfPkgs."libcurl" or (errorHandler.pkgConfDepError "libcurl")));
+          ])) ++ pkgs.lib.optional (flags.terminfo && !system.isWindows) (hsPkgs."terminfo" or (errorHandler.buildDepError "terminfo"));
+        libs = pkgs.lib.optionals (flags.curl) (pkgs.lib.optional (!flags.pkgconfig) (pkgs."curl" or (errorHandler.sysDepError "curl")));
+        pkgconfig = pkgs.lib.optionals (flags.curl) (pkgs.lib.optional (flags.pkgconfig) (pkgconfPkgs."libcurl" or (errorHandler.pkgConfDepError "libcurl")));
         buildable = true;
-        };
+      };
       exes = {
         "darcs" = {
           depends = [
             (hsPkgs."darcs" or (errorHandler.buildDepError "darcs"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
-            ];
+          ];
           buildable = if !flags.executable then false else true;
-          };
         };
+      };
       tests = {
         "darcs-test" = {
           depends = [
@@ -122,9 +122,9 @@
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
             (hsPkgs."test-framework-quickcheck2" or (errorHandler.buildDepError "test-framework-quickcheck2"))
             (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
-            ] ++ (pkgs.lib).optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
+          ] ++ pkgs.lib.optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

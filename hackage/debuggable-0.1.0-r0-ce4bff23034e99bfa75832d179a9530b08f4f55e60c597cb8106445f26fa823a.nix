@@ -21,7 +21,7 @@
       synopsis = "Utilities for making your applications more debuggable.";
       description = "This package provides various utilities that can be used to\nmake your application easier to debug. Some of these tools are\nintended for use during actual debugging only (similar to\n@Debug.Trace@, for example). Other tools can be used as a\nregular component in your application, to facilitate debugging\nif and when necessary, but always present in your code.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
           (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "demo" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."debuggable" or (errorHandler.buildDepError "debuggable"))
             (hsPkgs."async" or (errorHandler.buildDepError "async"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

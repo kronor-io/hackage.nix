@@ -21,7 +21,7 @@
       synopsis = "GCP Client for Haskell";
       description = "GCP Compute client for Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."google-cloud-common" or (errorHandler.buildDepError "google-cloud-common"))
           (hsPkgs."http-conduit" or (errorHandler.buildDepError "http-conduit"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "google-cloud-compute-test" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."http-conduit" or (errorHandler.buildDepError "http-conduit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-01-08T06:49:50Z";
         sha256 = "2caa78b22c535fa5230fd4a56bd99dae6f4ff2a752babd73b137957a4efbe391";
-        };
+      };
       r1 = {
         nix = import ../hackage/imprint-0.0.1.0-r1-4071c28da4620e7e2730453fd1e8cd53beeb17c6648762283bd22acddc45818c.nix;
         revNum = 1;
         revTimestamp = "2018-01-21T04:09:10Z";
         sha256 = "4071c28da4620e7e2730453fd1e8cd53beeb17c6648762283bd22acddc45818c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

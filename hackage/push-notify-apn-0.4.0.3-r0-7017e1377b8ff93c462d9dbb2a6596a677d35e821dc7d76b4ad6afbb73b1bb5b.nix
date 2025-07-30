@@ -21,7 +21,7 @@
       synopsis = "Send push notifications to mobile iOS devices";
       description = "push-notify-apn is a library and command line utility that can be used to send\npush notifications to mobile devices running iOS. Push notifications are small\nmessages that can be sent to apps on smart phones and tablets\nwithout the need to keep open a long lived TCP connection per app, dramatically\nreducing the power consumption in standby mode.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,9 +46,9 @@
           (hsPkgs."crypton-x509" or (errorHandler.buildDepError "crypton-x509"))
           (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
           (hsPkgs."crypton-x509-system" or (errorHandler.buildDepError "crypton-x509-system"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sendapn" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "apn-test" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."push-notify-apn" or (errorHandler.buildDepError "push-notify-apn"))
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

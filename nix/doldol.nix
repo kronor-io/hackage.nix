@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-07-21T13:49:23Z";
         sha256 = "5b4b7cfb35130f282ff8cf5c986cdecb22482790ce7fd1807199265576bc2b21";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.1.1" = {
     sha256 = "478b494d55e64b7eae3e1abdaa08d03c81e6d4572d03ead623bacb0427c7a7fa";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2019-07-22T09:00:41Z";
         sha256 = "577bde7dc10a4b6e050d788bf3f1fad783c285be9ae89e82fb0f3e52dd4a799a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.1.2" = {
     sha256 = "6553dcb9fded77f0f0655264a4b071e503690a467b46921679556cef5da43e65";
     revisions = {
@@ -31,14 +31,14 @@
         revNum = 0;
         revTimestamp = "2019-07-22T11:26:56Z";
         sha256 = "fd41735d344418462fcf732defc5661dfee9442e5c34dccfbfc1eca7e6acf1ef";
-        };
+      };
       r1 = {
         nix = import ../hackage/doldol-0.4.1.2-r1-87d0eb164cd533545a74e8cff78821560bae636e622bfb26b7e39bf65d6e8b77.nix;
         revNum = 1;
         revTimestamp = "2019-07-22T11:36:34Z";
         sha256 = "87d0eb164cd533545a74e8cff78821560bae636e622bfb26b7e39bf65d6e8b77";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Refinement types, again";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
           (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

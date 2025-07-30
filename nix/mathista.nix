@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2015-10-11T05:19:16Z";
         sha256 = "9dacc3dc20fde2f31d1a427fa1dc167cbe3fefcfc132e7f840dbf7eb362d43d4";
-        };
+      };
       r1 = {
         nix = import ../hackage/mathista-0.0.1-r1-57641a3bf376ea93c56ab3bb1cf06c41eb1e0fcbec3751d2a3507fe4974e818f.nix;
         revNum = 1;
         revTimestamp = "2015-10-11T05:25:28Z";
         sha256 = "57641a3bf376ea93c56ab3bb1cf06c41eb1e0fcbec3751d2a3507fe4974e818f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

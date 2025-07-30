@@ -1,0 +1,26 @@
+{
+  "0.9.6" = {
+    sha256 = "36a917ced99c770ac635c047b3566b43bafd00256a72cacf2155015e7931275c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crypton-asn1-encoding-0.9.6-r0-13c09629b47b4241850ec619ff0b5aaf0d0b1021814fdd992869efd335e15fde.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-13T10:46:57Z";
+        sha256 = "13c09629b47b4241850ec619ff0b5aaf0d0b1021814fdd992869efd335e15fde";
+      };
+      default = "r0";
+    };
+  };
+  "0.9.7" = {
+    sha256 = "ff65e50ea49edefac4a555139d2d2b7730276473cc996b932ccee9fc75d2fbbd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crypton-asn1-encoding-0.9.7-r0-49b5d27e5cf14e7a28465cc1f7f621072e3f2cea72cc0ea9067a33d368389025.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-20T20:21:37Z";
+        sha256 = "49b5d27e5cf14e7a28465cc1f7f621072e3f2cea72cc0ea9067a33d368389025";
+      };
+      default = "r0";
+    };
+  };
+}

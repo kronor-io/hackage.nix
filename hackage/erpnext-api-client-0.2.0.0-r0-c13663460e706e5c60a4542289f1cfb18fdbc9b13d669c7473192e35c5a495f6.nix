@@ -21,7 +21,7 @@
       synopsis = "Generic API client library for ERPNext";
       description = "This is a Haskell API client for ERPNext. It aims to be a light-weight library based on http-client and user-provided record types.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-hedgehog" or (errorHandler.buildDepError "hspec-hedgehog"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

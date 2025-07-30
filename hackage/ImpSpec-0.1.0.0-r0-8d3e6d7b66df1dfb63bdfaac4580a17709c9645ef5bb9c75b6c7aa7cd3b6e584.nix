@@ -21,7 +21,7 @@
       synopsis = "Imperative approach to testing stateful applications. ImpSpec is build on top of HSpec and QuickCheck";
       description = "Let a little imp help you discover all the bugs in your stateful Haskell program.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,17 +40,17 @@
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ImpSpec" or (errorHandler.buildDepError "ImpSpec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

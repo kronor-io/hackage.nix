@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-wai";
         version = "0.1.1.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "WAI instrumentation middleware for OpenTelemetry";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/wai#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,8 +37,8 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vault" or (errorHandler.buildDepError "vault"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Detect dead code";
       description = "Find declarations.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,18 +43,18 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."toml-reader" or (errorHandler.buildDepError "toml-reader"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "weeder" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."weeder" or (errorHandler.buildDepError "weeder"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "weeder-test" = {
           depends = [
@@ -75,12 +75,12 @@
             (hsPkgs."hspec-expectations" or (errorHandler.buildDepError "hspec-expectations"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

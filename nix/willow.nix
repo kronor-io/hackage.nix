@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2021-04-16T23:54:11Z";
         sha256 = "95ce3922f49562767d33717cc82909874b3402bd4e4d97bb3f23f7cb242a19c3";
-        };
+      };
       r1 = {
         nix = import ../hackage/willow-0.1.0.0-r1-b4d9e62a63b819bcdd6349fe377c7670d7710217e0d785713a867873a75ecb53.nix;
         revNum = 1;
         revTimestamp = "2021-04-17T00:17:18Z";
         sha256 = "b4d9e62a63b819bcdd6349fe377c7670d7710217e0d785713a867873a75ecb53";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

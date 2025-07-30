@@ -21,7 +21,7 @@
       synopsis = "Sparse vector data structures";
       description = "Sparse vector data structures";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,27 +29,27 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "sparse-vector" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."sparse-vector" or (errorHandler.buildDepError "sparse-vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "sparse-vector-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."sparse-vector" or (errorHandler.buildDepError "sparse-vector"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "high-powered optics in a small package";
       description = "fresnel offers (non-indexed) profunctor optics composed with the lowly . operator.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.6") (hsPkgs."foldable1-classes-compat" or (errorHandler.buildDepError "foldable1-classes-compat"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.6") (hsPkgs."foldable1-classes-compat" or (errorHandler.buildDepError "foldable1-classes-compat"));
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."fused-effects" or (errorHandler.buildDepError "fused-effects"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

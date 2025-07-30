@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:43:37Z";
         sha256 = "1c461808024d50129e5347c97e166c01526254baaaa8611b9426700ceacfa07a";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-pinpoint-sms-voice-2.0-r1-74f3996acc128e69a94ef489a350961b24d631257a5f7cdd1214c51329571a89.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:51:25Z";
         sha256 = "74f3996acc128e69a94ef489a350961b24d631257a5f7cdd1214c51329571a89";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

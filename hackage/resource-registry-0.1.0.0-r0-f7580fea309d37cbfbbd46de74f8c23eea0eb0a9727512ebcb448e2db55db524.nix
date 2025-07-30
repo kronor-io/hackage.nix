@@ -21,7 +21,7 @@
       synopsis = "Track allocated resources";
       description = "When the scope of a @bracket@ doesn't enclose all uses of the resource, a\n'ResourceRegistry' can be used instead to capture the lifetime of those\nresources.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
           (hsPkgs."strict-stm" or (errorHandler.buildDepError "strict-stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "resource-registry-test" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tree-diff" or (errorHandler.buildDepError "tree-diff"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

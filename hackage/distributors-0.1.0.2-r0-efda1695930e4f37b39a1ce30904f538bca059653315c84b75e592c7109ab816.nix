@@ -21,7 +21,7 @@
       synopsis = "Unifying Parsers, Printers & Grammars";
       description = "Distributors provides mathematically inspired abstractions for coders to write parsers that can also be inverted to printers.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

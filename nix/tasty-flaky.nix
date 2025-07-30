@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2024-09-25T11:38:17Z";
         sha256 = "350844a5547df6abbc9b7daf7d3bc4337fb20cb5d9f85f760462c3ef813a1701";
-        };
+      };
       r1 = {
         nix = import ../hackage/tasty-flaky-0.1.0.0-r1-91d9a941064964ad07fc0e4e63fcf75f1f3570e4c17a9db011225fcf8100bd4d.nix;
         revNum = 1;
         revTimestamp = "2024-10-22T16:57:54Z";
         sha256 = "91d9a941064964ad07fc0e4e63fcf75f1f3570e4c17a9db011225fcf8100bd4d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1.0" = {
     sha256 = "fe0aec6715c2bf4577d6ea007d70ed52d5a4ec9bdceeb6669841711f6f95ea44";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2024-12-19T15:01:00Z";
         sha256 = "823bab93e8e137786e3fe18ffad0a743e8388de1c465b01984f744c59acc296e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2.0" = {
     sha256 = "ed71a7bcf00b54df7fc008b4ae6cae7a112745f7f5225d25ecf565ea74c5b2df";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2025-02-10T14:25:49Z";
         sha256 = "2f91ab9f55ae0c472474087f98bb54076aca18f8b058343479d24597a3aa181b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Code for using the ip package with yesod";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."persistent" or (errorHandler.buildDepError "persistent"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

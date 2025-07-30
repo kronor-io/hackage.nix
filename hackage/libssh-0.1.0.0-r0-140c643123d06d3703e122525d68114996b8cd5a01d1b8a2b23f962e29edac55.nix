@@ -21,17 +21,17 @@
       synopsis = "libssh bindings";
       description = "libssh bindings";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."libssh" or (errorHandler.pkgConfDepError "libssh"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

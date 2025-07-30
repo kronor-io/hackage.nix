@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2008-01-21T17:38:58Z";
         sha256 = "ee1271046c033d1d76d312d5c7fdadcab6caf7bb119b713a0f75bd00ec3502fa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.2" = {
     sha256 = "7f0ae34b62e67d406811929b676d2cdae5ea7d07438384e49151088e8b2a2069";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2008-03-23T12:24:30Z";
         sha256 = "0e9b8536da31ecd2f8751c293f344e2b4b7e5cfef163e5647f137969e3e601a5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.3" = {
     sha256 = "a8b3b0082290e4f98242db57489e57f369d5b3f40efb695cc02a673f39d96ad2";
     revisions = {
@@ -31,14 +31,14 @@
         revNum = 0;
         revTimestamp = "2008-07-23T19:06:06Z";
         sha256 = "e539beab07d37b9de4698e22da3e8ab6331d04fc9afed071eedd36dbffce6c2f";
-        };
+      };
       r1 = {
         nix = import ../hackage/COrdering-2.3-r1-3b58c6ea7dfc169724c65fe8449e66e9f3fd7354d11d8315daf61d7914807e01.nix;
         revNum = 1;
         revTimestamp = "2024-03-23T19:09:44Z";
         sha256 = "3b58c6ea7dfc169724c65fe8449e66e9f3fd7354d11d8315daf61d7914807e01";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2022-09-28T08:43:14Z";
         sha256 = "61979e2ecb11ecdf4b3f269182cd988335452adb6553b0454f4f9eb0137a219f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "02b11f0a556b3128c86058ea07514d8d8c1e43b914cfceca5705ce89e5732f8e";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2022-10-13T04:53:55Z";
         sha256 = "9e6a7d5d338a91dce88bd091cc492c94800bc83df899d5811398e41508602700";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.1" = {
     sha256 = "807549db1a626e9cf53a5d2076d2fe7c5a9e1e9867aaa606f5d1279eca13ea4e";
     revisions = {
@@ -31,16 +31,16 @@
         revNum = 0;
         revTimestamp = "2022-12-17T21:27:07Z";
         sha256 = "3a986186e2b5dcdaa62cc9c4de181428b606bd3c78ae051005041fbd55b63ed7";
-        };
+      };
       r1 = {
         nix = import ../hackage/unicode-data-scripts-0.2.0.1-r1-556fa6bbb06da46b080f4a5b69cd8b7b8016154e426bf9d74160a7cda7f9d3b8.nix;
         revNum = 1;
         revTimestamp = "2023-01-17T16:16:16Z";
         sha256 = "556fa6bbb06da46b080f4a5b69cd8b7b8016154e426bf9d74160a7cda7f9d3b8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.0" = {
     sha256 = "0b2ce6316c90023ec105b40ebf15c7b8f9e598aaa543df48909730f1090bf3ee";
     revisions = {
@@ -49,10 +49,10 @@
         revNum = 0;
         revTimestamp = "2024-07-02T09:46:19Z";
         sha256 = "1a37564b5336abc14049778f7e5994ed402abb46f99e0f3d5af513d6338e3758";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "feef4dc1536098689a3c55bcbbcbd41babd6f30a57459975fb7e6e0c4f3e6813";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2024-07-03T14:37:32Z";
         sha256 = "35a41928fae96df9f7e1f4795e1f16c86dd0154d2c328daebca042980edb4f3e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

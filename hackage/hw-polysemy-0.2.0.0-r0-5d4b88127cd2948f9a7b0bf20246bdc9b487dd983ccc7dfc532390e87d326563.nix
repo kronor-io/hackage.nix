@@ -21,7 +21,7 @@
       synopsis = "Opinionated polysemy library";
       description = "Opinionated polysemy library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."polysemy-plugin" or (errorHandler.buildDepError "polysemy-plugin"))
           (hsPkgs."hw-polysemy".components.sublibs.core or (errorHandler.buildDepError "hw-polysemy:core"))
           (hsPkgs."hw-polysemy".components.sublibs.hedgehog or (errorHandler.buildDepError "hw-polysemy:hedgehog"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "core" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hedgehog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -69,10 +69,10 @@
             (hsPkgs."polysemy-log" or (errorHandler.buildDepError "polysemy-log"))
             (hsPkgs."polysemy-time" or (errorHandler.buildDepError "polysemy-time"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "hw-polysemy-test" = {
           depends = [
@@ -85,12 +85,12 @@
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

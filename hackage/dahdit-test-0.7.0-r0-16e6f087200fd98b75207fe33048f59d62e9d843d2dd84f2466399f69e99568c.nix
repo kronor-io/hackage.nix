@@ -21,7 +21,7 @@
       synopsis = "Test utils for Dahdit serde";
       description = "Please see the README on GitHub at <https://github.com/ejconlon/dahdit-test#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
           (hsPkgs."prop-unit" or (errorHandler.buildDepError "prop-unit"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "dahdit-test-test" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."prop-unit" or (errorHandler.buildDepError "prop-unit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

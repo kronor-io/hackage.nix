@@ -21,7 +21,7 @@
       synopsis = "Apple array language compiler";
       description = "Compiler for a typed, APL-inspired array language.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,15 +41,15 @@
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
           (hsPkgs."composition-prelude" or (errorHandler.buildDepError "composition-prelude"))
           (hsPkgs."dom-lt" or (errorHandler.buildDepError "dom-lt"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-          (hsPkgs.buildPackages.hsc2hs.components.exes.hsc2hs or (pkgs.buildPackages.hsc2hs or (errorHandler.buildToolDepError "hsc2hs:hsc2hs")))
-          (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+          (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          (hsPkgs.pkgsBuildBuild.hsc2hs.components.exes.hsc2hs or (pkgs.pkgsBuildBuild.hsc2hs or (errorHandler.buildToolDepError "hsc2hs:hsc2hs")))
+          (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "as" = {
           depends = [
@@ -60,10 +60,10 @@
             (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       foreignlibs = {
         "apple" = {
           depends = [
@@ -72,13 +72,13 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."prettyprinter" or (errorHandler.buildDepError "prettyprinter"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
-            ];
+            (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "atc" = {
           depends = [
@@ -86,18 +86,18 @@
             (hsPkgs."apple" or (errorHandler.buildDepError "apple"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "writeo" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."apple".components.sublibs.as or (errorHandler.buildDepError "apple:as"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "arepl" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -116,10 +116,10 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "apple-test" = {
           depends = [
@@ -129,12 +129,12 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."hypergeometric" or (errorHandler.buildDepError "hypergeometric"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.cpphs.components.exes.cpphs or (pkgs.buildPackages.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
-            ];
+            (hsPkgs.pkgsBuildBuild.cpphs.components.exes.cpphs or (pkgs.pkgsBuildBuild.cpphs or (errorHandler.buildToolDepError "cpphs:cpphs")))
+          ];
           buildable = true;
-          };
+        };
         "apple-o" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -146,10 +146,10 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "apple-bench" = {
           depends = [
@@ -160,9 +160,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."erf" or (errorHandler.buildDepError "erf"))
             (hsPkgs."hypergeometric" or (errorHandler.buildDepError "hypergeometric"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

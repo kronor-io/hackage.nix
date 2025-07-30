@@ -21,11 +21,11 @@
       synopsis = "A small compiler for Haskell";
       description = "A compiler for an extended subset of Haskell-2010.\nThe compiler translates to combinators and can compile itself.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "mhs" = {
-          depends = (pkgs.lib).optionals (compiler.isGhc && true) [
+          depends = pkgs.lib.optionals (compiler.isGhc && true) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
@@ -35,9 +35,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ] ++ (pkgs.lib).optional (compiler.isMhs && true) (hsPkgs."base" or (errorHandler.buildDepError "base"));
+          ] ++ pkgs.lib.optional (compiler.isMhs && true) (hsPkgs."base" or (errorHandler.buildDepError "base"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

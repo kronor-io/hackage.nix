@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-11-18T17:12:15Z";
         sha256 = "5a7c86e05153dadc27e1ddc1a8d8e824db2cbc06ff548945bc0e4f846668eb7e";
-        };
+      };
       r1 = {
         nix = import ../hackage/tateti-tateti-0.1.0.0-r1-870ca56fb175e88f393fa461dd9b24aef304fc79b2aea031c7f37580f01638cd.nix;
         revNum = 1;
         revTimestamp = "2015-11-18T17:14:44Z";
         sha256 = "870ca56fb175e88f393fa461dd9b24aef304fc79b2aea031c7f37580f01638cd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "3cd5977a58eb22c2a17f524f918a01b101f0c42981167a7cb59b58e295bf0e58";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2015-11-24T03:04:15Z";
         sha256 = "2341832662d25d30bf981dd50d3c977fc891a50884ca6f625a3f9126a254dba7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

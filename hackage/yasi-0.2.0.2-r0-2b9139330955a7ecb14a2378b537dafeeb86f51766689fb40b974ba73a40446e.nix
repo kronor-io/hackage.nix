@@ -21,7 +21,7 @@
       synopsis = "Yet another string interpolator";
       description = "Yet another string interpolator,\nwith a different set of tradeoffs";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
           (hsPkgs."text-display" or (errorHandler.buildDepError "text-display"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tasty" = {
           depends = [
@@ -45,12 +45,12 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-display" or (errorHandler.buildDepError "text-display"))
             (hsPkgs."yasi" or (errorHandler.buildDepError "yasi"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

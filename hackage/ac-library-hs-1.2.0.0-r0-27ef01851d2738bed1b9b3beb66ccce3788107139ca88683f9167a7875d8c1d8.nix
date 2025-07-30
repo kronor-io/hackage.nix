@@ -21,7 +21,7 @@
       synopsis = "Data structures and algorithms";
       description = "Haskell port of [ac-library](https://github.com/atcoder/ac-library), a library for competitive\nprogramming on [AtCoder](https://atcoder.jp/).\n\n- Functions primarily use half-open interval \\([l, r)\\).\n- The `Extra` module contains additional utilities beyond the original C++ library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
           (hsPkgs."wide-word" or (errorHandler.buildDepError "wide-word"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "example-lazy-segtree" = {
           depends = [
@@ -46,10 +46,10 @@
             (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
             (hsPkgs."wide-word" or (errorHandler.buildDepError "wide-word"))
             (hsPkgs."ac-library-hs" or (errorHandler.buildDepError "ac-library-hs"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "ac-library-hs-test" = {
           depends = [
@@ -74,9 +74,9 @@
             (hsPkgs."tasty-rerun" or (errorHandler.buildDepError "tasty-rerun"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "benchlib-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -96,10 +96,10 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."tasty-rerun" or (errorHandler.buildDepError "tasty-rerun"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "ac-library-hs-benchmark" = {
           depends = [
@@ -117,9 +117,9 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

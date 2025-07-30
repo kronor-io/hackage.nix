@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-08-17T14:44:34Z";
         sha256 = "ca00b06624f293ecf129895ea793c551a388be245466df35e3276d33265b8962";
-        };
+      };
       r1 = {
         nix = import ../hackage/tahoe-directory-0.1.0.0-r1-a9f959d311825b932e7045c5bda3bc97735a98b0c96b0cd2406caaa95c96ed38.nix;
         revNum = 1;
         revTimestamp = "2023-10-10T10:52:09Z";
         sha256 = "a9f959d311825b932e7045c5bda3bc97735a98b0c96b0cd2406caaa95c96ed38";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

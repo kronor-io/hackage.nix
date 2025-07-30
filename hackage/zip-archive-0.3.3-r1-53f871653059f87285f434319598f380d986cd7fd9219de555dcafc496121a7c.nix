@@ -22,10 +22,10 @@
       description = "The zip-archive library provides functions for creating, modifying,\nand extracting files from zip archives.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."digest" or (errorHandler.buildDepError "digest"))
           (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ] ++ (pkgs.lib).optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
+        ] ++ pkgs.lib.optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
         buildable = true;
-        };
+      };
       exes = {
         "zip-archive" = {
           depends = [
@@ -52,10 +52,10 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
-            ];
+          ];
           buildable = if flags.executable then true else false;
-          };
         };
+      };
       tests = {
         "test-zip-archive" = {
           depends = [
@@ -68,10 +68,10 @@
             (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ] ++ (pkgs.lib).optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
-          build-tools = (pkgs.lib).optional (!system.isWindows) (hsPkgs.buildPackages.unzip.components.exes.unzip or (pkgs.buildPackages.unzip or (errorHandler.buildToolDepError "unzip:unzip")));
+          ] ++ pkgs.lib.optional (!system.isWindows) (hsPkgs."unix" or (errorHandler.buildDepError "unix"));
+          build-tools = pkgs.lib.optional (!system.isWindows) (hsPkgs.pkgsBuildBuild.unzip.components.exes.unzip or (pkgs.pkgsBuildBuild.unzip or (errorHandler.buildToolDepError "unzip:unzip")));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

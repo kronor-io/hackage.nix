@@ -21,14 +21,14 @@
       synopsis = "Helpers for integrating libtorch-ffi with Hasktorch.";
       description = "Provide macros and plugins for building libtorch-ffi of hasktorch.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

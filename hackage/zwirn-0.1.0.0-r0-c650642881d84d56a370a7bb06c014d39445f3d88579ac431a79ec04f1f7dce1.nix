@@ -21,7 +21,7 @@
       synopsis = "a live coding language for playing with nested functions of time";
       description = "zwirn is a live coding language for playing with nested functions of time,\nwhich trigger the sending of osc-messages. it's syntax is inspired by TidalCycles'\nmini-notation and it's API for manipulating patterns.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,12 +38,12 @@
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."zwirn-core" or (errorHandler.buildDepError "zwirn-core"))
           (hsPkgs."tidal-link" or (errorHandler.buildDepError "tidal-link"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-          ];
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+          (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

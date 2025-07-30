@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-12-02T18:43:49Z";
         sha256 = "2906e23c7d1adff790312bdda16310e07715d6c94a8f563922104b9caf3c72a4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "97bc544079f0c2f9f6a9b1ada7c7d40aa6ec5b0848e666486bddf9982c2631b5";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2025-03-28T18:07:33Z";
         sha256 = "d9b00a8f671c4e82aaaa82514db379f4dcc3f718a1b6d0378f79315b3714dc0d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.1.0.0" = {
+    sha256 = "7329630f29d5bb626faa3e3e893ab1e3ef1e7d5bb51ba9f4222076a6e0200276";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wled-json-0.1.0.0-r0-741dca1ec5c5c390a3f745b6243f7b7fa7c0a67c42da14b426fb531a1da8bbfb.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-29T10:09:37Z";
+        sha256 = "741dca1ec5c5c390a3f745b6243f7b7fa7c0a67c42da14b426fb531a1da8bbfb";
+      };
+      default = "r0";
+    };
+  };
+}

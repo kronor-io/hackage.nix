@@ -21,7 +21,7 @@
       synopsis = "WAI middleware for logging request and response info through katip.";
       description = "WAI middleware for logging request and response info through katip. Please see the README on GitHub at <https://github.com/Disco-Dave/katip-wai#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "katip-wai-test" = {
           depends = [
@@ -59,12 +59,12 @@
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

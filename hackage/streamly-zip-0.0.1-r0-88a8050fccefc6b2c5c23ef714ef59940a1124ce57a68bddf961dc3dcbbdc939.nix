@@ -21,7 +21,7 @@
       synopsis = "Stream data from zip archives using the streamly library.";
       description = "Please see the README on GitHub at <https://github.com/shlok/streamly-zip#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,10 +30,10 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."streamly" or (errorHandler.buildDepError "streamly"))
           (hsPkgs."streamly-core" or (errorHandler.buildDepError "streamly-core"))
-          ];
+        ];
         libs = [ (pkgs."zip" or (errorHandler.sysDepError "zip")) ];
         buildable = true;
-        };
+      };
       tests = {
         "streamly-zip-test" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           libs = [ (pkgs."zip" or (errorHandler.sysDepError "zip")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

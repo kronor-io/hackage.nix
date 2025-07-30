@@ -21,16 +21,16 @@
       synopsis = "A pure ChaCha20 stream cipher";
       description = "A pure ChaCha20 stream cipher and block function.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "chacha-tests" = {
           depends = [
@@ -41,10 +41,10 @@
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "chacha-bench" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."ppad-base16" or (errorHandler.buildDepError "ppad-base16"))
             (hsPkgs."ppad-chacha" or (errorHandler.buildDepError "ppad-chacha"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,16 +21,16 @@
       synopsis = "Library for generating parsers from ABNF";
       description = "A library for parsing ABNF grammars and generating parsers from ABNF grammars.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "babynf-test" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

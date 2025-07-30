@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:37:08Z";
         sha256 = "e5644f49365989be3ae98745e4c518fd7ca0d041324959899dfdb9ef7d913cfa";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-iot1click-devices-2.0-r1-c1898fa46f503be6b5b1e4de46e63c574a69402da8202ec34b36225371da243e.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:49:26Z";
         sha256 = "c1898fa46f503be6b5b1e4de46e63c574a69402da8202ec34b36225371da243e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

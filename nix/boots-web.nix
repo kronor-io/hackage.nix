@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2019-08-28T13:20:10Z";
         sha256 = "84fa9669e73b66c4a1f3444ba9594497384d2e772ca59975c13032b547be14dd";
-        };
+      };
       r1 = {
         nix = import ../hackage/boots-web-0.2-r1-8e7a1873d459fda10945b7b5d6d57ba34727b4d852d921dc13279524241e08b5.nix;
         revNum = 1;
         revTimestamp = "2019-09-03T08:39:39Z";
         sha256 = "8e7a1873d459fda10945b7b5d6d57ba34727b4d852d921dc13279524241e08b5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.1" = {
     sha256 = "2874fc11816a6a15f097eeecb127c65db4346a7b240dfd49863f2708dfa2feb3";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2019-09-03T08:08:21Z";
         sha256 = "f850e710d186559e31ee0eb0c22b58b57bd82a4a87903d913daaeece27f2abb1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "High-level, byte-based file and directory path manipulations";
       description = "THIS PACKAGE IS DEPRECATED, AND NO LONGER MAINTAINED. Users of\nGHC >= 7.4 should use the native file path handling, which now\nsupports paths containing arbitrary bytes. Users of older GHC\nversions should upgrade to GHC >= 7.4.";
       buildType = "Custom";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "filesystem_path_tests" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."system-filepath" or (errorHandler.buildDepError "system-filepath"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2008-02-01T01:32:27Z";
         sha256 = "d1c6d9ad9f5edc044793738c5ecf32a7f3d5ba07c984d9e790129e20236e1d0f";
-        };
+      };
       r1 = {
         nix = import ../hackage/network-dns-0.1-r1-72c97288bd4077090743291460c6ad307e5e7cf43f7c815073ce0e148d61f928.nix;
         revNum = 1;
         revTimestamp = "2019-02-09T16:27:24Z";
         sha256 = "72c97288bd4077090743291460c6ad307e5e7cf43f7c815073ce0e148d61f928";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "6608ca63bce3f6e0fc03f25fc88724547e4aec8c5b5c5b292936587c75b6d0e4";
     revisions = {
@@ -25,16 +25,16 @@
         revNum = 0;
         revTimestamp = "2008-02-01T21:05:46Z";
         sha256 = "dc15b48e5820e8a6e5417ae9532ff5238b018ca760dec7a70a5a7af276214bf5";
-        };
+      };
       r1 = {
         nix = import ../hackage/network-dns-0.1.1-r1-96a040d150db738042e229b76685dd8f4c810a3535a37a4e9f36107b8f550aed.nix;
         revNum = 1;
         revTimestamp = "2019-02-09T16:27:22Z";
         sha256 = "96a040d150db738042e229b76685dd8f4c810a3535a37a4e9f36107b8f550aed";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.2" = {
     sha256 = "1970a90f29da47520685cc10e9a7d2ec58334051e79de17e40c97b889ce7b1b2";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2008-03-12T19:53:38Z";
         sha256 = "42e1a727575c92aa3ec49b3a3b1ec5ae255c1108afdf9462feb6e8334844a3ce";
-        };
+      };
       r1 = {
         nix = import ../hackage/network-dns-0.1.2-r1-c5affc6b4c148de6040f67d3f49b7255ee9f00a7047458b0579850cebaebdd54.nix;
         revNum = 1;
         revTimestamp = "2019-02-09T16:27:23Z";
         sha256 = "c5affc6b4c148de6040f67d3f49b7255ee9f00a7047458b0579850cebaebdd54";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0" = {
     sha256 = "810c2c4fda6e4f967a7203a791c5d6f21e582350817c702bb9c0d96e3adf2067";
     revisions = {
@@ -61,16 +61,16 @@
         revNum = 0;
         revTimestamp = "2013-12-08T09:53:07Z";
         sha256 = "c6321ae54d5190a93bba9d8f0f4475c53f021edf609369a48f2ac5ebba106474";
-        };
+      };
       r1 = {
         nix = import ../hackage/network-dns-1.0-r1-d7e1e7d2d45e81e8ef5ba387b245e3d3cbfcbcbedb4b9fa6b3f7dec64bc44eaf.nix;
         revNum = 1;
         revTimestamp = "2019-02-09T13:08:17Z";
         sha256 = "d7e1e7d2d45e81e8ef5ba387b245e3d3cbfcbcbedb4b9fa6b3f7dec64bc44eaf";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0.1" = {
     sha256 = "c87e0518318aebf91441f8ccd110493801f844556d7cab0affcdc4655f78e13d";
     revisions = {
@@ -79,16 +79,16 @@
         revNum = 0;
         revTimestamp = "2013-12-08T10:05:00Z";
         sha256 = "818fa7589d343e10fc173e88dbf1fe5e01718a478179055659a92f9b1a53aa79";
-        };
+      };
       r1 = {
         nix = import ../hackage/network-dns-1.0.0.1-r1-ac92f1d549c7412b2abb509146a4f93ca100f5b8369ffe4abf77495c00d2f9b5.nix;
         revNum = 1;
         revTimestamp = "2019-02-09T13:08:16Z";
         sha256 = "ac92f1d549c7412b2abb509146a4f93ca100f5b8369ffe4abf77495c00d2f9b5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.1" = {
     sha256 = "d95bacc080bad9bd285de55b40de87bfcf93289b5ddc498f449695ef47488e7d";
     revisions = {
@@ -97,10 +97,10 @@
         revNum = 0;
         revTimestamp = "2017-12-06T18:09:55Z";
         sha256 = "c28e2dfd09d939baf80b5879048f8a82dc368d502c0cbe82f3687a69a140a21e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0.1" = {
     sha256 = "fa55c79b8003d63dccf4fec7cd06ab5cc32fb23f0498683d9a23c10b1d4ee060";
     revisions = {
@@ -109,10 +109,10 @@
         revNum = 0;
         revTimestamp = "2017-12-06T18:43:21Z";
         sha256 = "2d7d6b8016c4e6252ae12210820b48b35a3981ef72b8bd9c28aac4c17327a709";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0.2" = {
     sha256 = "7428446929efb8f16d047983cf9341e75e9ee94385ec701333bcb1a5457febac";
     revisions = {
@@ -121,8 +121,8 @@
         revNum = 0;
         revTimestamp = "2022-09-17T16:05:25Z";
         sha256 = "eafaa0c9118ff5c3450c3c63414e93319a8a2071a58d85df0604d389c8556f33";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

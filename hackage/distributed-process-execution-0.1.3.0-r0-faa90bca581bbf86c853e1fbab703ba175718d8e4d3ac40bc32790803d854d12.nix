@@ -14,7 +14,7 @@
       identifier = {
         name = "distributed-process-execution";
         version = "0.1.3.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Tim Watson 2012 - 2013";
       maintainer = "The Distributed Haskell team";
@@ -24,7 +24,7 @@
       synopsis = "Execution Framework for The Cloud Haskell Application Platform";
       description = "The Execution Framework provides tools for load regulation, workload shedding and remote hand-off.\nThe currently implementation provides only a subset of the plumbing required, comprising tools\nfor event management, mailbox buffering and message routing.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ExchangeTests" = {
           depends = [
@@ -79,9 +79,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."rematch" or (errorHandler.buildDepError "rematch"))
             (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "MailboxTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -113,9 +113,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."rematch" or (errorHandler.buildDepError "rematch"))
             (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

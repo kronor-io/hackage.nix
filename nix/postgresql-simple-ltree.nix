@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2022-07-22T19:16:43Z";
         sha256 = "32ccd33a1f912d16d42eaeba4051eacc9024e428887b33791343baa3d2a9dbfa";
-        };
+      };
       r1 = {
         nix = import ../hackage/postgresql-simple-ltree-0.0.0.0-r1-4547489ebbbfa5aed8ba7cbb9495732794eda52b13efa8b52358b2b51f7355b3.nix;
         revNum = 1;
         revTimestamp = "2022-07-22T19:22:28Z";
         sha256 = "4547489ebbbfa5aed8ba7cbb9495732794eda52b13efa8b52358b2b51f7355b3";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -21,15 +21,15 @@
       synopsis = "placeholder definitions for TODO and unimplemented";
       description = "placeholder definitions for TODO and unimplemented code";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "placeholder-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."placeholder" or (errorHandler.buildDepError "placeholder"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

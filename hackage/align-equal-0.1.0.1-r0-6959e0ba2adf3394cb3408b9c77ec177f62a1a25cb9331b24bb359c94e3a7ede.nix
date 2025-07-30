@@ -21,7 +21,7 @@
       synopsis = "Aligns text prefixes before '=' for consistent formatting";
       description = "A utility to adjust text lines by padding spaces before '=' based on the longest prefix.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "align-equal" = {
@@ -29,9 +29,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."safe" or (errorHandler.buildDepError "safe"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

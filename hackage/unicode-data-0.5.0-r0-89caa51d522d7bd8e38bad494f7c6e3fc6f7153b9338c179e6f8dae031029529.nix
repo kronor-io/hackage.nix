@@ -21,24 +21,24 @@
       synopsis = "Access Unicode Character Database (UCD)";
       description = "@unicode-data@ provides Haskell APIs to efficiently access the\n<https://www.unicode.org/ucd/ Unicode character database> (UCD).\nPerformance is the primary goal in the design of this package.\n\nThe Haskell data structures are generated programmatically from the UCD files.\nThe latest Unicode version supported by this library is\n@<https://www.unicode.org/versions/Unicode15.0.0/ 15.0.0>@.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.0") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.0") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."unicode-data" or (errorHandler.buildDepError "unicode-data"))
-            ] ++ (pkgs.lib).optional (flags.dev-has-icu) (hsPkgs."icu" or (errorHandler.buildDepError "icu"));
+          ] ++ pkgs.lib.optional (flags.dev-has-icu) (hsPkgs."icu" or (errorHandler.buildDepError "icu"));
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."unicode-data" or (errorHandler.buildDepError "unicode-data"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.0") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.0") (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-vendor-honeycomb";
         version = "0.0.1.2";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "Optional OpenTelemetry integration for Honeycomb";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."uri-bytestring" or (errorHandler.buildDepError "uri-bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -49,12 +49,12 @@
             (hsPkgs."hs-opentelemetry-vendor-honeycomb" or (errorHandler.buildDepError "hs-opentelemetry-vendor-honeycomb"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

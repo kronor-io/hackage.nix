@@ -21,7 +21,7 @@
       synopsis = "Type-safe HTML and CSS with intuitive layouts and composable styles.";
       description = "Type-safe HTML and CSS with intuitive layouts and composable styles. Inspired by Tailwindcss and Elm-UI . See documentation for the @Web.View@ module below";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."string-interpolate" or (errorHandler.buildDepError "string-interpolate"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -54,12 +54,12 @@
             (hsPkgs."string-interpolate" or (errorHandler.buildDepError "string-interpolate"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.skeletest.components.exes.skeletest-preprocessor or (pkgs.buildPackages.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
-            ];
+            (hsPkgs.pkgsBuildBuild.skeletest.components.exes.skeletest-preprocessor or (pkgs.pkgsBuildBuild.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

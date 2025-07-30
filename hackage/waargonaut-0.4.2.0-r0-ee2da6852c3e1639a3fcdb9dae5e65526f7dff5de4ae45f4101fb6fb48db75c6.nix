@@ -22,11 +22,11 @@
       description = "Flexible, precise, and efficient JSON decoding/encoding library.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -61,9 +61,9 @@
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
           (hsPkgs."natural" or (errorHandler.buildDepError "natural"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -77,9 +77,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."waargonaut" or (errorHandler.buildDepError "waargonaut"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "waarg-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -107,9 +107,9 @@
             (hsPkgs."natural" or (errorHandler.buildDepError "natural"))
             (hsPkgs."contravariant" or (errorHandler.buildDepError "contravariant"))
             (hsPkgs."waargonaut" or (errorHandler.buildDepError "waargonaut"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

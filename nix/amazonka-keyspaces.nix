@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:38:39Z";
         sha256 = "16dcf27ccc771cbd930008ea0d7e587c110f7f11f3ee1ffd690793ee0a39862e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-keyspaces-2.0-r1-e4ffb8b49f76643f4c897be51a4015cc3443a3bad1725723cc38fa3823574f3c.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:49:33Z";
         sha256 = "e4ffb8b49f76643f4c897be51a4015cc3443a3bad1725723cc38fa3823574f3c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

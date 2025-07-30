@@ -21,7 +21,7 @@
       synopsis = "A Pagure gitforge query tool";
       description = "A command-line Pagure (gitforge) client for querying\nand listing projects, users, groups, and issues.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "pagure" = {
@@ -39,9 +39,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.0") (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

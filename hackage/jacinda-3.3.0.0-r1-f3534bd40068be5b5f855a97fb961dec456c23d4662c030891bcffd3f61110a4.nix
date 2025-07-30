@@ -21,7 +21,7 @@
       synopsis = "Functional, expression-oriented data processing language";
       description = "APL meets AWK. A command-line tool for summarizing and reporting, powered by Rust's [regex](https://docs.rs/regex/) library.";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "jacinda-lib" = {
@@ -43,14 +43,14 @@
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."lazy-csv" or (errorHandler.buildDepError "lazy-csv"))
-            ];
-          build-tools = (pkgs.lib).optionals (!flags.cross) [
-            (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-            (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-            ];
+          ];
+          build-tools = pkgs.lib.optionals (!flags.cross) [
+            (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+            (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "ja" = {
           depends = [
@@ -59,10 +59,10 @@
             (hsPkgs."jacinda".components.sublibs.jacinda-lib or (errorHandler.buildDepError "jacinda:jacinda-lib"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "jacinda-test" = {
           depends = [
@@ -74,10 +74,10 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "jacinda-bench" = {
           depends = [
@@ -86,9 +86,9 @@
             (hsPkgs."jacinda".components.sublibs.jacinda-lib or (errorHandler.buildDepError "jacinda:jacinda-lib"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

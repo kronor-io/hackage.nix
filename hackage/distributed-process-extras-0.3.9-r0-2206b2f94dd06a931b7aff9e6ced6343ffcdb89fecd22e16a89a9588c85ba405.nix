@@ -21,7 +21,7 @@
       synopsis = "Cloud Haskell Extras";
       description = "Supporting library, providing common types and utilities used by the\nvarious libraries built on top of distributed-process";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."fingertree" or (errorHandler.buildDepError "fingertree"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "InternalQueueTests" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "PrimitivesTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -60,9 +60,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TimerTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -74,9 +74,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "LoggerTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -88,9 +88,9 @@
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

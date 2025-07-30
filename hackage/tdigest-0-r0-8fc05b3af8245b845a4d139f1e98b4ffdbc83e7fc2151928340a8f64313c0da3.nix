@@ -22,11 +22,11 @@
       description = "A new data structure for accurate on-line accumulation of rank-based statistics such as quantiles and trimmed means.\n\nSee original paper: \"Computing extremely accurate quantiles using t-digest\" by Ted Dunning and Otmar Ertl\nfor more details <https://github.com/tdunning/t-digest/blob/master/docs/t-digest-paper/histo.pdf>.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tdigest-tests" = {
           depends = [
@@ -54,9 +54,9 @@
             (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -64,10 +64,10 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "tdigest-simple" = {
           depends = [
@@ -87,9 +87,9 @@
             (hsPkgs."statistics" or (errorHandler.buildDepError "statistics"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-09-18T01:02:30Z";
         sha256 = "4867d3b4864b87b737a09536a219fe19a2e9067dcbffed1444353c369765a82b";
-        };
+      };
       r1 = {
         nix = import ../hackage/wahsp-0.2-r1-145ecbcceca09e635f744466b1d439a6144cd83e3d0c74a2478e4470bbffbacd.nix;
         revNum = 1;
         revTimestamp = "2016-09-18T04:10:49Z";
         sha256 = "145ecbcceca09e635f744466b1d439a6144cd83e3d0c74a2478e4470bbffbacd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

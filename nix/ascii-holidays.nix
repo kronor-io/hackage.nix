@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2019-12-24T04:13:37Z";
         sha256 = "bc2183bcd6d8e317762bf7236e206c79dd143366309662c2ba193f2032cea51f";
-        };
+      };
       r1 = {
         nix = import ../hackage/ascii-holidays-0.1.0.0-r1-91d70c76190a518d114ac8632398c41f4b6ff5d81cac6c8efb5bffccca398f37.nix;
         revNum = 1;
         revTimestamp = "2019-12-24T04:59:54Z";
         sha256 = "91d70c76190a518d114ac8632398c41f4b6ff5d81cac6c8efb5bffccca398f37";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "a047988d4cf7508793c5d69b3f3bed821b51e9b409a740be7b8e37c140f2f482";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2019-12-24T07:47:32Z";
         sha256 = "4108b5e65daba49811629f9c6e75d5fd35741184e59099845e6b8c8497478f26";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

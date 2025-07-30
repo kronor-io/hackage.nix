@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-12-02T09:01:00Z";
         sha256 = "8405906ce1b578212ec5dd16f91d7495f7f912907a1e28e8cd0136ff92086cba";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.2" = {
     sha256 = "aab5fe4a465a328586fe5b25f6a808b90071e976f0570b35a30a537565cc43bc";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2016-10-14T03:25:23Z";
         sha256 = "271ae875c078e7b165e8a97689ad249019379b96b43446ced5511dbccd27f2bf";
-        };
+      };
       r1 = {
         nix = import ../hackage/sump-0.1.0.2-r1-3f62b27edd4d57b9655518b57dd9128cd74aeec100f86e544b8e433f93823bd4.nix;
         revNum = 1;
         revTimestamp = "2017-08-29T22:14:16Z";
         sha256 = "3f62b27edd4d57b9655518b57dd9128cd74aeec100f86e544b8e433f93823bd4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

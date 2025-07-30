@@ -21,7 +21,7 @@
       synopsis = "The Axel programming language.";
       description = "Haskell's semantics, plus Lisp's macros. Meet Axel – a purely functional, extensible, and powerful programming language.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -67,13 +67,13 @@
           (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.hpack.components.exes.hpack or (pkgs.buildPackages.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
-          (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-          ];
+          (hsPkgs.pkgsBuildBuild.hpack.components.exes.hpack or (pkgs.pkgsBuildBuild.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
+          (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "axel" = {
           depends = [
@@ -120,14 +120,14 @@
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hpack.components.exes.hpack or (pkgs.buildPackages.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hpack.components.exes.hpack or (pkgs.pkgsBuildBuild.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "axel-test" = {
           depends = [
@@ -174,13 +174,13 @@
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hpack.components.exes.hpack or (pkgs.buildPackages.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hpack.components.exes.hpack or (pkgs.pkgsBuildBuild.hpack or (errorHandler.buildToolDepError "hpack:hpack")))
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

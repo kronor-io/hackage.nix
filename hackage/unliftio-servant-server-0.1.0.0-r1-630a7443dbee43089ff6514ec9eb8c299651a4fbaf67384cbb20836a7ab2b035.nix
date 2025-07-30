@@ -21,7 +21,7 @@
       synopsis = "Use MonadUnliftIO on servant APIs";
       description = "unliftio-servant-server provides convenience functions for running\nservant APIs whose monads have a 'MonadUnliftIO' instance.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

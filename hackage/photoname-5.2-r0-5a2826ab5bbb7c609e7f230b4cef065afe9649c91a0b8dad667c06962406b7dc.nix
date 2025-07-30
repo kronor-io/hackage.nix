@@ -21,7 +21,7 @@
       synopsis = "Rename photo image files based on EXIF shoot date";
       description = "Command-line utility for renaming/moving photo image files based\non EXIF tags.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "photoname" = {
           depends = [
@@ -51,10 +51,10 @@
             (hsPkgs."hslogger" or (errorHandler.buildDepError "hslogger"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."photoname" or (errorHandler.buildDepError "photoname"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "photoname-tests" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

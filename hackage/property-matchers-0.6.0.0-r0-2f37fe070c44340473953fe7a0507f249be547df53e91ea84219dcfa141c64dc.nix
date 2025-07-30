@@ -21,7 +21,7 @@
       synopsis = "A library for tests, based on transforming and writing properties";
       description = "This package provides ways to write properties for testing such that they compose nicely and are easy to debug.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."semialign" or (errorHandler.buildDepError "semialign"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."these" or (errorHandler.buildDepError "these"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
         buildable = true;
-        };
+      };
       tests = {
         "property-matchers-tests" = {
           depends = [
@@ -51,12 +51,12 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."smallcheck" or (errorHandler.buildDepError "smallcheck"))
             (hsPkgs."property-matchers" or (errorHandler.buildDepError "property-matchers"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

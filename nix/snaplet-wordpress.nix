@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-05-21T20:26:48Z";
         sha256 = "5815e1453c22ceedce2198b7e17f7fb2c7da11ed1a010f93f1e3b4bcd3a016f1";
-        };
+      };
       r1 = {
         nix = import ../hackage/snaplet-wordpress-0.1.1.0-r1-8f051240d573ac31dff7f0185ffffd58fff244ed7d5a77e8ee88095ae1747bd9.nix;
         revNum = 1;
         revTimestamp = "2015-05-21T20:31:00Z";
         sha256 = "8f051240d573ac31dff7f0185ffffd58fff244ed7d5a77e8ee88095ae1747bd9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1.1" = {
     sha256 = "788e324fd5a80c75b6ac173daecae425f89a15ad421585578291e263c4ee10d0";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2015-05-22T02:30:06Z";
         sha256 = "5e5ff66f88f1c8288806fdf350bd7f65dabe9bdde0680efe9dc4010c96a6f956";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.2" = {
     sha256 = "4bddd4774025dbca93e7500769440d7b3deee973fb82860468de6dd032f7b3ee";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2015-05-23T14:45:15Z";
         sha256 = "bbf264116eeb393c878401a929d646b9a4f8a4a9977ef06ee38b622f2af2683e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

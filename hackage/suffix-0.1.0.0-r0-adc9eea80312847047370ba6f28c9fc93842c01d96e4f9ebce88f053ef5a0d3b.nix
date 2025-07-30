@@ -21,7 +21,7 @@
       synopsis = "Suffix arrays and friends";
       description = "Suffix arrays and friends.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "suffix-test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

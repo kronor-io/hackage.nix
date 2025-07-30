@@ -22,24 +22,24 @@
       description = "Haskell bindings for CacBDD, a Binary Decision Diagram (BDD) package with dynamic cache management.\nOriginal C++ code from <http://kailesu.net/CacBDD> and a C wrapper are included.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         libs = [
           (pkgs."stdc++" or (errorHandler.sysDepError "stdc++"))
           (pkgs."CacBDD" or (errorHandler.sysDepError "CacBDD"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."HasCacBDD" or (errorHandler.buildDepError "HasCacBDD"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

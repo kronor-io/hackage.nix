@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-12-28T20:39:13Z";
         sha256 = "05045f3b4cb7a921e486f75ce194e5d4a27068b1f19b8f381e452d5152a63747";
-        };
+      };
       r1 = {
         nix = import ../hackage/chr-parse-0.1.0.0-r1-4c8611b71b037c2d64c97d3e7f3a1c6cda64825a0ea65ffbd6b86b0386f57840.nix;
         revNum = 1;
         revTimestamp = "2017-12-31T11:15:02Z";
         sha256 = "4c8611b71b037c2d64c97d3e7f3a1c6cda64825a0ea65ffbd6b86b0386f57840";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

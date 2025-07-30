@@ -22,10 +22,10 @@
       description = "Documentent Object Model (DOM) functions implemented using jsaddle.\nIt works with both GHCJS and GHC.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,12 +36,12 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."jsaddle" or (errorHandler.buildDepError "jsaddle"))
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
-          ] ++ (pkgs.lib).optionals (compiler.isGhcjs && true) [
+        ] ++ pkgs.lib.optionals (compiler.isGhcjs && true) [
           (hsPkgs."ghcjs-base" or (errorHandler.buildDepError "ghcjs-base"))
           (hsPkgs."ghcjs-prim" or (errorHandler.buildDepError "ghcjs-prim"))
           (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

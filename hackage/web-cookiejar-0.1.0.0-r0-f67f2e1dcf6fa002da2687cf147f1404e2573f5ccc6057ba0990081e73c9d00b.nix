@@ -21,7 +21,7 @@
       synopsis = "Parsing/printing of persistent web cookies";
       description = "A library that provides parsing and printing functions that read and write web\ncookies stored in the Netscape/Mozilla cookie jar file format; also the format\nused by curl.\n\nSee the [README](https://github.com/adetokunbo/web-cookiejar?tab=readme-ov-file#web-cookiejar)\nfor a simple usage example";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."web-cookiejar" or (errorHandler.buildDepError "web-cookiejar"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

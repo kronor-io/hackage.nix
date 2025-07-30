@@ -21,7 +21,7 @@
       synopsis = "Integrate Hedgehog and Hspec!";
       description = "Please see the README on GitHub at <https://github.com/hspec/hspec-hedgehog#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
           (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
           (hsPkgs."splitmix" or (errorHandler.buildDepError "splitmix"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -44,12 +44,12 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
             (hsPkgs."hspec-hedgehog" or (errorHandler.buildDepError "hspec-hedgehog"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2018-02-03T22:16:04Z";
         sha256 = "0b373ca22a3013e4fbfb791f145583fe441f133cd3cfeadace189f8d88bbb0f3";
-        };
+      };
       r1 = {
         nix = import ../hackage/battleship-combinatorics-0.0-r1-6d7e1d8c72ec25e186b7829ad1986cd53025f80f2b4dff98e8ff6bafa53e80cd.nix;
         revNum = 1;
         revTimestamp = "2018-02-16T08:12:49Z";
         sha256 = "6d7e1d8c72ec25e186b7829ad1986cd53025f80f2b4dff98e8ff6bafa53e80cd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.0.1" = {
     sha256 = "adaf881432b4ef85f03a98be6e3148d6c88ad5ec4453d8322006168fd219f903";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2018-02-16T16:34:41Z";
         sha256 = "a4d38d192e721c407f6203c7ba738f2c6e6d8961ff399ec1fe63fd2dd47eb673";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.2" = {
     sha256 = "0f6c00c5b61ede33c6d00e65a8fca26fe546feb9a2d33e96670628dbd31f4aee";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2018-08-31T12:55:41Z";
         sha256 = "ad95ee0c9ca73df50ce924a885a9c015a1469b1736f2c5f19767723b09955a7d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.3" = {
     sha256 = "5b4e6f0b3eec4d59fc5717a2b5abb64c7ba432029dfa09f2b3564c230b2a801f";
     revisions = {
@@ -49,10 +49,10 @@
         revNum = 0;
         revTimestamp = "2021-11-18T10:18:20Z";
         sha256 = "391379d9d26f73744f2d67bdadb051d70f530de6bf97ba0c87cdba423dfabc1a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1" = {
     sha256 = "04de1ee724fd4a8bb3ee56e1a88e456c4b641f687d9a268ba5b3d96430db215f";
     revisions = {
@@ -61,20 +61,26 @@
         revNum = 0;
         revTimestamp = "2021-11-18T10:32:48Z";
         sha256 = "36bfe26a9969bcbbffdb192c5ec658d1249fc84b0a2f6be612bb7ae2aafba664";
-        };
+      };
       r1 = {
         nix = import ../hackage/battleship-combinatorics-0.0.1-r1-84a09eea2340f00991670367006b5f5d0f3a66c9a02eaafd5f1a6e4fbd6f893b.nix;
         revNum = 1;
         revTimestamp = "2023-12-26T20:24:43Z";
         sha256 = "84a09eea2340f00991670367006b5f5d0f3a66c9a02eaafd5f1a6e4fbd6f893b";
-        };
+      };
       r2 = {
         nix = import ../hackage/battleship-combinatorics-0.0.1-r2-1710e48346b52004ba9111b33b662821888c90b3d2ca0bddac8ac5b25bc55f7c.nix;
         revNum = 2;
         revTimestamp = "2024-10-26T15:27:42Z";
         sha256 = "1710e48346b52004ba9111b33b662821888c90b3d2ca0bddac8ac5b25bc55f7c";
-        };
-      default = "r2";
       };
+      r3 = {
+        nix = import ../hackage/battleship-combinatorics-0.0.1-r3-bf76aa16247092758380182138495520e2d71bfed7f3c91c00188f464a9f04e1.nix;
+        revNum = 3;
+        revTimestamp = "2025-05-19T07:24:50Z";
+        sha256 = "bf76aa16247092758380182138495520e2d71bfed7f3c91c00188f464a9f04e1";
+      };
+      default = "r3";
     };
-  }
+  };
+}

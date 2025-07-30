@@ -21,16 +21,16 @@
       synopsis = "Algebraic effects and named handlers in Bluefin.";
       description = "A framework for user-defined effects powered by delimited continuations.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."bluefin" or (errorHandler.buildDepError "bluefin"))
           (hsPkgs."bluefin-internal" or (errorHandler.buildDepError "bluefin-internal"))
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "main-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."bluefin" or (errorHandler.buildDepError "bluefin"))
             (hsPkgs."bluefin-algae" or (errorHandler.buildDepError "bluefin-algae"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "quadratic-counter" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -49,9 +49,9 @@
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."bluefin" or (errorHandler.buildDepError "bluefin"))
             (hsPkgs."bluefin-algae" or (errorHandler.buildDepError "bluefin-algae"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

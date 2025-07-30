@@ -21,7 +21,7 @@
       synopsis = "An efficient PostgreSQL driver with a flexible mapping API";
       description = "Root of the \\\"hasql\\\" ecosystem.\nFor details and tutorials see\n<https://github.com/nikita-volkov/hasql the readme>.\nThe API comes free from all kinds of exceptions. All error-reporting is explicit and is presented using the 'Either' type.\n\nThis library requires to have the \\\"libpq\\\" library installed on the running system.\nIt comes distributed with PostgreSQL.\nTo be able to use the \\\"Pipeline\\\" feature you'll need \\\"libpq\\\" of version >14.\nThis feature does not however put any requirements on the version of the PostgreSQL server.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,9 +46,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "testing-kit" = {
           depends = [
@@ -57,10 +57,10 @@
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tasty" = {
           depends = [
@@ -72,44 +72,44 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "threads-test" = {
           depends = [
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "profiling" = {
           depends = [
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hspec" = {
           depends = [
             (hsPkgs."hasql".components.sublibs.testing-kit or (errorHandler.buildDepError "hasql:testing-kit"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

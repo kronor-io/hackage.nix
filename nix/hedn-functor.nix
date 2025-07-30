@@ -7,26 +7,26 @@
         revNum = 0;
         revTimestamp = "2019-03-16T21:08:01Z";
         sha256 = "4310955544377060febfac3963a688225c7ee79cdff5818cd600272d4961eed7";
-        };
+      };
       r1 = {
         nix = import ../hackage/hedn-functor-0.1.0.0-r1-19bb13c88f157e702a9cda19a1d6e5bc278e81ca4f1551dc40f84e5fe1918a22.nix;
         revNum = 1;
         revTimestamp = "2020-12-19T20:01:38Z";
         sha256 = "19bb13c88f157e702a9cda19a1d6e5bc278e81ca4f1551dc40f84e5fe1918a22";
-        };
+      };
       r2 = {
         nix = import ../hackage/hedn-functor-0.1.0.0-r2-dec7deb8f8c9b096bb042dc05a7bd8592c6302632dc216b55365086aea321ca1.nix;
         revNum = 2;
         revTimestamp = "2022-03-19T16:18:09Z";
         sha256 = "dec7deb8f8c9b096bb042dc05a7bd8592c6302632dc216b55365086aea321ca1";
-        };
+      };
       r3 = {
         nix = import ../hackage/hedn-functor-0.1.0.0-r3-ab06565b5df1bf689860032309d89a687dc5fb91c21085781625a6986908effb.nix;
         revNum = 3;
         revTimestamp = "2024-11-01T10:41:02Z";
         sha256 = "ab06565b5df1bf689860032309d89a687dc5fb91c21085781625a6986908effb";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
-  }
+  };
+}

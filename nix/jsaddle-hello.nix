@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2014-05-05T09:53:05Z";
         sha256 = "ed9843ebd3b6648250d3fbc5223b25649e1ed958297969ee0df6e2c2cb2b31b4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.0.0.0" = {
     sha256 = "941a047559384486151b6a1ec58a4cb5ad8663c636f2de9a70b739f52eeac0ae";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-10-02T23:05:34Z";
         sha256 = "1d33527065331e28ef113cb133dfdf438bd9554e823bee51561b1daaafa96dec";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "2.0.0.1" = {
     sha256 = "f0160cbd10299ff2e0f89f11e9b34aec3fb7c3f5bfe09b7e39ce95192ee49121";
     revisions = {
@@ -31,8 +31,20 @@
         revNum = 0;
         revTimestamp = "2021-06-26T13:27:25Z";
         sha256 = "3d9db4572706441357cda018e56492c1788ba209e5fda23b4c7e623849e8f505";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "2.0.0.2" = {
+    sha256 = "d0b96bb4304530c896373ec3ae9341801bdc41caad639ad6c896045f6c2dac83";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-hello-2.0.0.2-r0-87eb0a99b6672f31efa67a6b1eb71364a2e6ac2c4eda7fbcdadd2d4e9b41f849.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-23T13:01:41Z";
+        sha256 = "87eb0a99b6672f31efa67a6b1eb71364a2e6ac2c4eda7fbcdadd2d4e9b41f849";
+      };
+      default = "r0";
+    };
+  };
+}

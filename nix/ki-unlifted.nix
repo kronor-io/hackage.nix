@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2022-06-30T18:06:36Z";
         sha256 = "5b8968c6fcba53631ea9fc22a86a4ee78561fc9383469739b625da4e02dd5cde";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.1" = {
     sha256 = "8b58ac9d6140285d9c37feefced6e6013cfbaf00ae410e1e56219d88c533cad9";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2022-08-14T21:58:57Z";
         sha256 = "83df34df6175b8453e8598db3d8df704c131e71c6c89286ea8c901facf2f7387";
-        };
+      };
       r1 = {
         nix = import ../hackage/ki-unlifted-1.0.0.1-r1-8712637b44d90583d72db88f1406a809b377e323d678971d85180679a1a9466d.nix;
         revNum = 1;
         revTimestamp = "2023-03-13T18:10:52Z";
         sha256 = "8712637b44d90583d72db88f1406a809b377e323d678971d85180679a1a9466d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0.2" = {
     sha256 = "bb87ed8f82999adeda0015ee26822a2ffcd5886d78d82b1cffcafe6042956485";
     revisions = {
@@ -37,26 +37,26 @@
         revNum = 0;
         revTimestamp = "2023-10-10T23:20:41Z";
         sha256 = "ffb02790cb09c5018edce308c43d63fc685a38d50ebf1b599fb8d4b73bb101fb";
-        };
+      };
       r1 = {
         nix = import ../hackage/ki-unlifted-1.0.0.2-r1-01c21eca550afd3e3b0d660b881167143ba36a25d9cdd89bb2ef845b11f9379b.nix;
         revNum = 1;
         revTimestamp = "2024-06-26T14:35:27Z";
         sha256 = "01c21eca550afd3e3b0d660b881167143ba36a25d9cdd89bb2ef845b11f9379b";
-        };
+      };
       r2 = {
         nix = import ../hackage/ki-unlifted-1.0.0.2-r2-f74c8584c603360f575b77f8c878208bbc2722e237450c7207f06761fb6bb16c.nix;
         revNum = 2;
         revTimestamp = "2025-01-07T18:09:36Z";
         sha256 = "f74c8584c603360f575b77f8c878208bbc2722e237450c7207f06761fb6bb16c";
-        };
+      };
       r3 = {
         nix = import ../hackage/ki-unlifted-1.0.0.2-r3-e08b1893ccd521a97723718a9e28737d4278388888cf83f6e52a30027067ce70.nix;
         revNum = 3;
         revTimestamp = "2025-03-02T12:42:52Z";
         sha256 = "e08b1893ccd521a97723718a9e28737d4278388888cf83f6e52a30027067ce70";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
-  }
+  };
+}

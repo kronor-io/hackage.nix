@@ -21,7 +21,7 @@
       synopsis = "A modern binding to SHA256, HMAC, HKDF, and PBKDF2";
       description = "A modern binding to SHA256, HMAC, HKDF, and PBKDF2 supporting precomputed\nHMAC keys, streaming, backtracking, bitstring inputs, and (de)serialization\nof intermediate states.  Both HKDF and PBKDF2 reuse HMAC key computations\nfor efficiency.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."hash-string" or (errorHandler.buildDepError "hash-string"))
           (hsPkgs."network-byte-order" or (errorHandler.buildDepError "network-byte-order"))
           (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."sha256" or (errorHandler.buildDepError "sha256"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

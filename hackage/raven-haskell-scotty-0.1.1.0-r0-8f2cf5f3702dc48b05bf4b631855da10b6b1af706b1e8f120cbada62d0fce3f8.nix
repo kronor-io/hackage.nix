@@ -21,7 +21,7 @@
       synopsis = "Sentry http interface for Scotty web server.";
       description = "Utilities to log errors in Scotty actions using raven-haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,8 +33,8 @@
           (hsPkgs."scotty" or (errorHandler.buildDepError "scotty"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

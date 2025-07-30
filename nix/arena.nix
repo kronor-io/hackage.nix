@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-03-15T20:28:23Z";
         sha256 = "1ff4a2f170497639ca0e726a72e0cc944d81b9ff816b0f6d733051b16aea5476";
-        };
+      };
       r1 = {
         nix = import ../hackage/arena-0.1-r1-fa9abdbd4a0df1eddd4c061f9e2b0d2ebe5ac7fae0a462d26024c2ba17c00139.nix;
         revNum = 1;
         revTimestamp = "2016-03-15T21:28:00Z";
         sha256 = "fa9abdbd4a0df1eddd4c061f9e2b0d2ebe5ac7fae0a462d26024c2ba17c00139";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

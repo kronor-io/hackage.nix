@@ -21,16 +21,16 @@
       synopsis = "Simple job/task/event scheduler/cronjob";
       description = "In-memory cronjob simple and flexible builder.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unbounded-delays" or (errorHandler.buildDepError "unbounded-delays"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "antikythera-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-core" or (errorHandler.buildDepError "hspec-core"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

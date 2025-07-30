@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings for ffprobe";
       description = "Use ffprobe data in Haskell. Checkout the README on GitHub for an example.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "haskell-ffprobe-test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."haskell-ffprobe" or (errorHandler.buildDepError "haskell-ffprobe"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-expectations" or (errorHandler.buildDepError "hspec-expectations"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

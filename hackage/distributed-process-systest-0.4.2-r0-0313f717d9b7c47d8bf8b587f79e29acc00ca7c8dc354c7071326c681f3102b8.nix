@@ -21,7 +21,7 @@
       synopsis = "Cloud Haskell Test Support";
       description = "Testing Frameworks and Capabilities for programs built on Cloud Haskell";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

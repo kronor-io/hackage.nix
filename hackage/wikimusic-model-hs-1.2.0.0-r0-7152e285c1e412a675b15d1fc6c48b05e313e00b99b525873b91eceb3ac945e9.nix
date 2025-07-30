@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://gitlab.com/jjba-projects/wikimusic-model-hs>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -45,8 +45,8 @@
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."neat-interpolation" or (errorHandler.buildDepError "neat-interpolation"))
           (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

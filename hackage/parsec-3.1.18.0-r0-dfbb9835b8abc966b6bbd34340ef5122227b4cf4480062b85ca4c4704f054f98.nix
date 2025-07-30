@@ -21,7 +21,7 @@
       synopsis = "Monadic parser combinators";
       description = "Parsec is designed from scratch as an industrial-strength parser\nlibrary.  It is simple, safe, well documented (on the package\nhomepage), has extensive libraries, good error messages,\nand is fast.  It is defined as a monad transformer that can be\nstacked on arbitrary monads, and it is also parametric in the\ninput stream type.\n\nThe main entry point is the \"Text.Parsec\" module which provides\ndefaults for parsing 'Char'acter data.\n\nThe \"Text.ParserCombinators.Parsec\" module hierarchy contains\nthe legacy @parsec-2@ API and may be removed at some point in\nthe future.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "parsec-tests" = {
           depends = [
@@ -40,16 +40,16 @@
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+          ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
           buildable = true;
-          };
+        };
         "parsec-issue127" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "parsec-issue171" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -57,18 +57,18 @@
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "parsec-issue175" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

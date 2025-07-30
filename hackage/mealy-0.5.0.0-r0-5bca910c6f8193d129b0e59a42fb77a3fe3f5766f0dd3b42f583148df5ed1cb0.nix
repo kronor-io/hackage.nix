@@ -21,7 +21,7 @@
       synopsis = "Mealy machines for processing time-series and ordered data.";
       description = "@mealy@ reimagines statistics as a [mealy machine](https://en.wikipedia.org/wiki/Mealy_machine) processing data with some form of order such as time-series data. The 'Mealy', with the help of a decay function specifying the relative weights of recent values versus older value, can be treated as a compression or summary of the data stream into 'current state.'\nMealies are highly polymorphic, situated at a busy crossroad of theory and practice, and lend themselves to ergonmic, compact and realistic representations of a wide range of online phenomena.\n\n== Usage\n\n>>> import Mealy\n\n>>> fold ((,) <$> ma 0.9 <*> std 0.9) [1..100]\n(91.00265621044142,9.472822805289121)";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,18 +38,18 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
             (hsPkgs."mealy" or (errorHandler.buildDepError "mealy"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

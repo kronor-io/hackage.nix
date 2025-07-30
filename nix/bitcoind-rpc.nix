@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2020-03-07T18:20:10Z";
         sha256 = "70b82ef4d03f0cf2525862ccbac311df932b4c37c74dd87c37a766683a22ad2d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0.0" = {
     sha256 = "2c27fb7dd1e1ffe8e54d74b08a862c6fa76f4b175b722b66633330b8da2abe78";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2020-11-01T22:03:15Z";
         sha256 = "5dff28038f905199625b04ff8c03a9a45e0f19c09d155a1c2ed22998a983274a";
-        };
+      };
       r1 = {
         nix = import ../hackage/bitcoind-rpc-0.2.0.0-r1-2765ce5b507379b9dc5e37724edaebccc55600752a5d4544fe6b6c3140f5e47d.nix;
         revNum = 1;
         revTimestamp = "2021-01-17T16:44:38Z";
         sha256 = "2765ce5b507379b9dc5e37724edaebccc55600752a5d4544fe6b6c3140f5e47d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

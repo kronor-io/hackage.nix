@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2019-07-03T07:31:36Z";
         sha256 = "86de8ffca6047baf3e9f46fc1576d61899aee2d7a540694b01214baabc26855c";
-        };
+      };
       r1 = {
         nix = import ../hackage/strip-ansi-escape-0.1.0.0-r1-bc7a64e80af194cb5ccfd03435744819792461b86dbf88b9a7458b38131a7cfd.nix;
         revNum = 1;
         revTimestamp = "2019-07-03T07:33:19Z";
         sha256 = "bc7a64e80af194cb5ccfd03435744819792461b86dbf88b9a7458b38131a7cfd";
-        };
+      };
       r2 = {
         nix = import ../hackage/strip-ansi-escape-0.1.0.0-r2-08f2ed93b16086a837ec46eab7ce8d27cf39d47783caaeb818878ea33c2ff75f.nix;
         revNum = 2;
         revTimestamp = "2019-07-06T13:10:16Z";
         sha256 = "08f2ed93b16086a837ec46eab7ce8d27cf39d47783caaeb818878ea33c2ff75f";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

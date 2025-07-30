@@ -21,16 +21,16 @@
       synopsis = "typed session framework";
       description = "Typed session are used to ensure desirable properties in concurrent and distributed systems,\ni.e. absence of communication errors or deadlocks, and protocol conformance.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "typed-session-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."fused-effects" or (errorHandler.buildDepError "fused-effects"))
             (hsPkgs."fused-effects-random" or (errorHandler.buildDepError "fused-effects-random"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

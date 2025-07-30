@@ -21,11 +21,11 @@
       synopsis = "Haskell Utrecht Tools Library";
       description = "Fast Parser Combinators and Pretty Printing Combinators";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "PCRE2 Backend for \"Text.Regex\" (regex-base)";
       description = "This package provides a <http://pcre.org/ PCRE2> backend for the <//hackage.haskell.org/package/regex-base regex-base> API.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,11 +30,11 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."array" or (errorHandler.buildDepError "array"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8")) (hsPkgs."fail" or (errorHandler.buildDepError "fail"));
-        libs = (pkgs.lib).optional (!flags.pkg-config) (pkgs."pcre2-8" or (errorHandler.sysDepError "pcre2-8"));
-        pkgconfig = (pkgs.lib).optional (flags.pkg-config) (pkgconfPkgs."libpcre2-8" or (errorHandler.pkgConfDepError "libpcre2-8"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8")) (hsPkgs."fail" or (errorHandler.buildDepError "fail"));
+        libs = pkgs.lib.optional (!flags.pkg-config) (pkgs."pcre2-8" or (errorHandler.sysDepError "pcre2-8"));
+        pkgconfig = pkgs.lib.optional (flags.pkg-config) (pkgconfPkgs."libpcre2-8" or (errorHandler.pkgConfDepError "libpcre2-8"));
         buildable = true;
-        };
+      };
       tests = {
         "regex-pcre2-test" = {
           depends = [
@@ -43,11 +43,11 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."regex-pcre2" or (errorHandler.buildDepError "regex-pcre2"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ];
-          libs = (pkgs.lib).optional (!flags.pkg-config) (pkgs."pcre2-8" or (errorHandler.sysDepError "pcre2-8"));
-          pkgconfig = (pkgs.lib).optional (flags.pkg-config) (pkgconfPkgs."libpcre2-8" or (errorHandler.pkgConfDepError "libpcre2-8"));
+          ];
+          libs = pkgs.lib.optional (!flags.pkg-config) (pkgs."pcre2-8" or (errorHandler.sysDepError "pcre2-8"));
+          pkgconfig = pkgs.lib.optional (flags.pkg-config) (pkgconfPkgs."libpcre2-8" or (errorHandler.pkgConfDepError "libpcre2-8"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

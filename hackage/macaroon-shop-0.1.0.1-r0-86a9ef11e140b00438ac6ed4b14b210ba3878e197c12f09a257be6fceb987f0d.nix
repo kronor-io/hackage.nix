@@ -21,7 +21,7 @@
       synopsis = "A toolkit for working with macaroons";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."memory" or (errorHandler.buildDepError "memory"))
           (hsPkgs."saltine" or (errorHandler.buildDepError "saltine"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "macaroon-shop-tests" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."macaroon-shop" or (errorHandler.buildDepError "macaroon-shop"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

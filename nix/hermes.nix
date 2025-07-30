@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2015-10-14T08:36:03Z";
         sha256 = "b4ffab0f081328120c39c59f120ce9bc0b3830b7b8ee242fba9e9cc1fa2eb080";
-        };
+      };
       r1 = {
         nix = import ../hackage/hermes-1.3.4.3-r1-c3de8191d5c73ac147bd6172da28bdfddf7d559a98447097e37f0a99a8cb5514.nix;
         revNum = 1;
         revTimestamp = "2015-10-14T08:47:12Z";
         sha256 = "c3de8191d5c73ac147bd6172da28bdfddf7d559a98447097e37f0a99a8cb5514";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

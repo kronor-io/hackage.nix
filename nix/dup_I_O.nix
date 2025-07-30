@@ -7,14 +7,20 @@
         revNum = 0;
         revTimestamp = "2023-08-31T13:16:58Z";
         sha256 = "8779bf845990a9399ae08d90293e34d92a438e7fc49258ea15cddd48bf08d073";
-        };
+      };
       r1 = {
         nix = import ../hackage/dupIO-0.1.0-r1-dffce961863724ac4efb6a3db9625543972a807c76f60d1790126023d480f742.nix;
         revNum = 1;
         revTimestamp = "2024-08-14T10:50:27Z";
         sha256 = "dffce961863724ac4efb6a3db9625543972a807c76f60d1790126023d480f742";
-        };
-      default = "r1";
       };
+      r2 = {
+        nix = import ../hackage/dupIO-0.1.0-r2-f1016fd67b76413f1a45e84879c9b76e925fbf944aaa0b3b321f85effed92964.nix;
+        revNum = 2;
+        revTimestamp = "2025-07-08T15:50:10Z";
+        sha256 = "f1016fd67b76413f1a45e84879c9b76e925fbf944aaa0b3b321f85effed92964";
+      };
+      default = "r2";
     };
-  }
+  };
+}

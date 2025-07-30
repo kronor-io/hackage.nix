@@ -22,11 +22,11 @@
       description = "A DSL for LLVM IR code generation. Heavily inspired by llvm-hs.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.containers or (pkgs.buildPackages.containers or (errorHandler.setupDepError "containers")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.containers or (pkgs.pkgsBuildBuild.containers or (errorHandler.setupDepError "containers")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "llvm-codegen-test" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."neat-interpolation" or (errorHandler.buildDepError "neat-interpolation"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

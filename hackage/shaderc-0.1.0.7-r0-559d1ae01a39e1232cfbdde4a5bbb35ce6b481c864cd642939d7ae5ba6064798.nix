@@ -21,7 +21,7 @@
       synopsis = "A collection of tools and libraries for Vulkan shader compilation";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/shaderc#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,12 +36,12 @@
           (hsPkgs."nowdoc" or (errorHandler.buildDepError "nowdoc"))
           (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."shaderc" or (errorHandler.pkgConfDepError "shaderc"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "shaderc-test" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."shaderc" or (errorHandler.buildDepError "shaderc"))
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

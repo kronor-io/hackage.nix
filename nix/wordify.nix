@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-06-08T14:49:28Z";
         sha256 = "f42ea2b3a63594faaa4dd36a566a0ebcef7a005b592f83c8d7ba96fbc44ae90c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.1" = {
     sha256 = "17c667eee2aed4e1ce5cc1bca37055a0c3dc59ff1555b9f7fc5041e5ba8cf80c";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2025-03-11T23:33:16Z";
         sha256 = "3ab0ec71e12d05ad3e14425087084a082728396853d4c3a722ef4785d52f8aae";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1.0" = {
     sha256 = "8513b26949ae79801188240459c11f0520027966ca7f50581ab35b4187518e1b";
     revisions = {
@@ -31,8 +31,56 @@
         revNum = 0;
         revTimestamp = "2025-03-18T01:12:08Z";
         sha256 = "9901b79dafcbeb83bb14b8b71b52b4378edef7b81a88653190a91a1702881bc2";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.3.0.0" = {
+    sha256 = "bc4a3dd5302cfb2eab8ebff30ec6972a96134c9d57676c8b724772269d589418";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wordify-0.3.0.0-r0-d99027671427b943d92299450547b34e6938f4cdbcf0679adea4f6353d44f0bc.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-19T22:10:28Z";
+        sha256 = "d99027671427b943d92299450547b34e6938f4cdbcf0679adea4f6353d44f0bc";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.0.1" = {
+    sha256 = "f814935dcb421c5099b04d21320a70ef3dd482c07b3774e6b536072b362b5d2d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wordify-0.3.0.1-r0-d64c44de9fcc82274318c07b12327b5f7b8becd71ccf2b9bc0b852d115f3ff23.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-19T22:25:19Z";
+        sha256 = "d64c44de9fcc82274318c07b12327b5f7b8becd71ccf2b9bc0b852d115f3ff23";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.0.0" = {
+    sha256 = "ff97fb56b296a07a37c00b16ebec778060b44dc740930fbce5b99b6c2790a8b5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wordify-0.4.0.0-r0-54cba8e1bbfe8a5e9a97cb92896921deef95695b3d81666052616b6f50287ea5.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-30T12:16:13Z";
+        sha256 = "54cba8e1bbfe8a5e9a97cb92896921deef95695b3d81666052616b6f50287ea5";
+      };
+      default = "r0";
+    };
+  };
+  "0.5.0.0" = {
+    sha256 = "52d302a8d8b42862733ce39ab3300c7b3114b2aa083356bc5922d9c11024e8ab";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wordify-0.5.0.0-r0-f8e583b7f4f5f20d2ae63ae9eea2b4185eaa0a958a02f9187c6dd4577ca0b462.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-01T15:39:39Z";
+        sha256 = "f8e583b7f4f5f20d2ae63ae9eea2b4185eaa0a958a02f9187c6dd4577ca0b462";
+      };
+      default = "r0";
+    };
+  };
+}

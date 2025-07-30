@@ -21,7 +21,7 @@
       synopsis = "Yet another alternative Prelude for Haskell.";
       description = "A Prelude with an intention to simplify the global scope, fix up a few things, add a few things, and be as dev-friendly for everyone as possible.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,18 +30,18 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "antelude-test" = {
           depends = [
             (hsPkgs."antelude" or (errorHandler.buildDepError "antelude"))
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

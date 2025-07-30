@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2020-06-21T13:20:51Z";
         sha256 = "fca4cbcd0681c9089225b2f1f2b338e88686c1ea53082c62f5c62062e9400f83";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "f47f497559902425d4637683d8cdcdf6109833df07324f9f91cd79dafde85862";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2020-06-29T15:49:57Z";
         sha256 = "2dfa9ee5a29e7bb9dd19fa118b247b61d78558eee1e6709a80c6471816b1272a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2" = {
     sha256 = "6e735cb7acd3878d231110c19e929761f43cfe4006a1056be65b828ef51070e1";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2020-11-05T14:33:23Z";
         sha256 = "edcc4c715f4b80da6daf5927872cfdc1c56a575db71fcfd50c354fda1595a5e4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.3" = {
     sha256 = "20182c9f55d2f95d8cabd655b3b79af112e224430d0a7f7e9381130bb0873881";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2021-02-10T12:38:10Z";
         sha256 = "07d9de3b53f468715d0301ab8745f12f8aa83de9c32680d42fc70f40bbd6ae72";
-        };
+      };
       r1 = {
         nix = import ../hackage/goldplate-0.1.3-r1-13f77ec640073f2f2cd7fd6c06db8084813282d4ed8608d8828413edea7919b2.nix;
         revNum = 1;
         revTimestamp = "2021-03-16T18:48:31Z";
         sha256 = "13f77ec640073f2f2cd7fd6c06db8084813282d4ed8608d8828413edea7919b2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0" = {
     sha256 = "41d5b7f8d3573d28d87d9b7b14542088e422eb41b23d87c0ced39b63024a56b8";
     revisions = {
@@ -61,28 +61,28 @@
         revNum = 0;
         revTimestamp = "2021-05-24T11:29:45Z";
         sha256 = "3c604b64b02ef4cfa87178ecc0b883dd438f42f1f5676ff9007429116a818126";
-        };
+      };
       r1 = {
         nix = import ../hackage/goldplate-0.2.0-r1-e04ebe32614db72ae95a83de30d0419754cba347a17916c98c8ae6b6afc89a26.nix;
         revNum = 1;
         revTimestamp = "2021-10-24T09:34:51Z";
         sha256 = "e04ebe32614db72ae95a83de30d0419754cba347a17916c98c8ae6b6afc89a26";
-        };
+      };
       r2 = {
         nix = import ../hackage/goldplate-0.2.0-r2-0b691e2f6e36351106d8ab413191b4128dddd0ebe3525414b388cc43c279d7f2.nix;
         revNum = 2;
         revTimestamp = "2022-02-04T22:54:06Z";
         sha256 = "0b691e2f6e36351106d8ab413191b4128dddd0ebe3525414b388cc43c279d7f2";
-        };
+      };
       r3 = {
         nix = import ../hackage/goldplate-0.2.0-r3-74ff4bc324eb3b3e1e9b91acc9e38ccd803f5186b9418de3b2a2d524b4f72a40.nix;
         revNum = 3;
         revTimestamp = "2022-06-16T09:12:56Z";
         sha256 = "74ff4bc324eb3b3e1e9b91acc9e38ccd803f5186b9418de3b2a2d524b4f72a40";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.2.1.1" = {
     sha256 = "266b99c4ac5de94498525a4c5005f02ab683ae24cfcb46048e609b67cb543ab2";
     revisions = {
@@ -91,46 +91,46 @@
         revNum = 0;
         revTimestamp = "2023-02-26T15:28:21Z";
         sha256 = "8b0701a3db1d6014aafab42b88ad4e7ace4bbe9f876bb22836458ee919b5b2a0";
-        };
+      };
       r1 = {
         nix = import ../hackage/goldplate-0.2.1.1-r1-11547ce99577352e3cb1fc6bcd2670e56b9b728198b47a0b6ea6e0e9d8ce84eb.nix;
         revNum = 1;
         revTimestamp = "2023-05-25T06:24:10Z";
         sha256 = "11547ce99577352e3cb1fc6bcd2670e56b9b728198b47a0b6ea6e0e9d8ce84eb";
-        };
+      };
       r2 = {
         nix = import ../hackage/goldplate-0.2.1.1-r2-5e6afdf6593ae379a235c1d0e814b8e1869522419509710dc9ed3573977f8dbd.nix;
         revNum = 2;
         revTimestamp = "2023-06-29T11:17:43Z";
         sha256 = "5e6afdf6593ae379a235c1d0e814b8e1869522419509710dc9ed3573977f8dbd";
-        };
+      };
       r3 = {
         nix = import ../hackage/goldplate-0.2.1.1-r3-bf5b72910ab6039ccb9d7cbb2d04da200253e4c35693f6beb3e4742c0def639f.nix;
         revNum = 3;
         revTimestamp = "2023-08-03T10:28:09Z";
         sha256 = "bf5b72910ab6039ccb9d7cbb2d04da200253e4c35693f6beb3e4742c0def639f";
-        };
+      };
       r4 = {
         nix = import ../hackage/goldplate-0.2.1.1-r4-a3c4640c14033a21c9eb29fcc02f54ca3e6fbd64c8c38e3189e746a19dcb4e0e.nix;
         revNum = 4;
         revTimestamp = "2023-10-13T07:41:13Z";
         sha256 = "a3c4640c14033a21c9eb29fcc02f54ca3e6fbd64c8c38e3189e746a19dcb4e0e";
-        };
+      };
       r5 = {
         nix = import ../hackage/goldplate-0.2.1.1-r5-3640ebec677888158370f748ab8b7602b4d7426715107950502cafc147a4a5d9.nix;
         revNum = 5;
         revTimestamp = "2023-10-23T06:43:06Z";
         sha256 = "3640ebec677888158370f748ab8b7602b4d7426715107950502cafc147a4a5d9";
-        };
+      };
       r6 = {
         nix = import ../hackage/goldplate-0.2.1.1-r6-2dd1233224db3a42e2b2ed57e859b9fc1dfa8fa49093ed30094a62047be9e294.nix;
         revNum = 6;
         revTimestamp = "2024-07-01T20:13:19Z";
         sha256 = "2dd1233224db3a42e2b2ed57e859b9fc1dfa8fa49093ed30094a62047be9e294";
-        };
-      default = "r6";
       };
+      default = "r6";
     };
+  };
   "0.2.2.0" = {
     sha256 = "d198684f7ba1474c4ac146bbfe8bbbfc7304e85510f8e040613e18aab93ed4ce";
     revisions = {
@@ -139,10 +139,10 @@
         revNum = 0;
         revTimestamp = "2024-09-30T12:57:22Z";
         sha256 = "c4cc4948b04637f77aa75526cea88304c3265c253dc77a8a0cb559ff235e621f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.2.1" = {
     sha256 = "bc0ca0e77916a7d30f6cfdb188b37edb12ded7f1ede9609f19c70efcd519e927";
     revisions = {
@@ -151,14 +151,20 @@
         revNum = 0;
         revTimestamp = "2024-09-30T13:09:13Z";
         sha256 = "0650858c913c22ab5fe3ffb6e7649ee261b67924695b82c4fcda500ffff0944f";
-        };
+      };
       r1 = {
         nix = import ../hackage/goldplate-0.2.2.1-r1-ee452a363e0082a6b683ec2632ac4e1d73c74b9a16adb51459ee010b87140ebe.nix;
         revNum = 1;
         revTimestamp = "2024-12-12T07:39:10Z";
         sha256 = "ee452a363e0082a6b683ec2632ac4e1d73c74b9a16adb51459ee010b87140ebe";
-        };
-      default = "r1";
       };
+      r2 = {
+        nix = import ../hackage/goldplate-0.2.2.1-r2-daf4ec57fe5ee9c9e781d0b80895b61237807f20ef020002607dec53a4369613.nix;
+        revNum = 2;
+        revTimestamp = "2025-07-23T08:03:26Z";
+        sha256 = "daf4ec57fe5ee9c9e781d0b80895b61237807f20ef020002607dec53a4369613";
+      };
+      default = "r2";
     };
-  }
+  };
+}

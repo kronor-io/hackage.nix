@@ -21,7 +21,7 @@
       synopsis = "The core of an IDE";
       description = "A library for building Haskell IDE's on top of the GHC API.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -91,11 +91,11 @@
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ] ++ (if system.isWindows
+        ] ++ (if system.isWindows
           then [ (hsPkgs."Win32" or (errorHandler.buildDepError "Win32")) ]
           else [ (hsPkgs."unix" or (errorHandler.buildDepError "unix")) ]);
         buildable = true;
-        };
+      };
       sublibs = {
         "ghcide-test-utils" = {
           depends = [
@@ -113,15 +113,15 @@
             (hsPkgs."lsp-test" or (errorHandler.buildDepError "lsp-test"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "ghcide-test-preprocessor" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = if !flags.test-exe then false else true;
-          };
+        };
         "ghcide" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -133,9 +133,9 @@
             (hsPkgs."lsp" or (errorHandler.buildDepError "lsp"))
             (hsPkgs."lsp-types" or (errorHandler.buildDepError "lsp-types"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = if !flags.executable then false else true;
-          };
         };
       };
-    }
+    };
+  }

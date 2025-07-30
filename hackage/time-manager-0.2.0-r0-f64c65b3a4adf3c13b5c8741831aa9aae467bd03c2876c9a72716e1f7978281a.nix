@@ -21,7 +21,7 @@
       synopsis = "Scalable timer";
       description = "Scalable timer functions provided by a timer manager\nand thread management functions to prevent thread\nleak by a thread manager.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."auto-update" or (errorHandler.buildDepError "auto-update"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,15 +21,15 @@
       synopsis = "Join text together with commas, and \"and\".";
       description = "Convert a 'Text' object into a visually pleasant URL component.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "and" = {
           depends = [
@@ -38,12 +38,12 @@
             (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

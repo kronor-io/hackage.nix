@@ -21,7 +21,7 @@
       synopsis = "Ideal Monads and coproduct of them";
       description = "Type class to represent ideal monads in terms of the\n\"ideal part\" of ideal monads. See README for more.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,18 +29,18 @@
           (hsPkgs."bifunctor-classes-compat" or (errorHandler.buildDepError "bifunctor-classes-compat"))
           (hsPkgs."comonad" or (errorHandler.buildDepError "comonad"))
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "monad-ideals-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."comonad" or (errorHandler.buildDepError "comonad"))
             (hsPkgs."monad-ideals" or (errorHandler.buildDepError "monad-ideals"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

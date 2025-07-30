@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-08-25T15:38:04Z";
         sha256 = "18475644cfd8bf29d953456869775d52843a5fa9fc5c3cb8f2fc9052bda81f48";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.12.0.0" = {
     sha256 = "8cfdbcbd2fa426c595fb7d29f8a6395dea17476c15d5ae863da2605b1c6ebe00";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2017-02-03T20:57:14Z";
         sha256 = "83cb56baa71a8771d10d5dbebdf0583dd4fb38c8d3334ca9ed2c91e64155b558";
-        };
+      };
       r1 = {
         nix = import ../hackage/Spock-api-0.12.0.0-r1-7fb9f5bacb759e7763ff03fb910b6d7ff3a19436bf70ba7bd0f9e54801541d70.nix;
         revNum = 1;
         revTimestamp = "2017-02-17T11:51:05Z";
         sha256 = "7fb9f5bacb759e7763ff03fb910b6d7ff3a19436bf70ba7bd0f9e54801541d70";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.12.0.1" = {
     sha256 = "c0248f81f0baa81323e6ac810ed3729e374b215f699c4e03f3c13fd6b2c9e555";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2018-06-14T04:46:23Z";
         sha256 = "538040e4a8ec95701b2b30cc20533d8ead8cfe774ccda4302a9cf3cd4bcf43d6";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.14.0.0" = {
     sha256 = "071e1ab3166a00a3496468ebf1c9c74d542e599df98ac197775117fc36c20bf3";
     revisions = {
@@ -49,8 +49,8 @@
         revNum = 0;
         revTimestamp = "2020-12-09T06:57:55Z";
         sha256 = "3ce854d279ce5c344a4e2f2573f8a1827ad577cbccb557ca12ad2fd4bb30773a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

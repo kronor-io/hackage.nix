@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2020-07-24T12:22:29Z";
         sha256 = "9ef79d0c64e146335c4d354b6a9123142ee30b9ac7b7c1974bb6c6fff0e2dc45";
-        };
+      };
       r1 = {
         nix = import ../hackage/gemini-router-0.1.0.0-r1-ffe6ec524756e3c104894750e5de63acbf5983f7f6c85cbc10e49956111465dd.nix;
         revNum = 1;
         revTimestamp = "2020-07-24T12:52:27Z";
         sha256 = "ffe6ec524756e3c104894750e5de63acbf5983f7f6c85cbc10e49956111465dd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1.0" = {
     sha256 = "69cf9d7bd2712ed62cb0bd4d4e0119f8ee568e6a9345f24a036ff608624e58a5";
     revisions = {
@@ -25,22 +25,22 @@
         revNum = 0;
         revTimestamp = "2021-02-22T17:23:33Z";
         sha256 = "dedc9769c08fa2440488b3be50c63d4a6bf7917c817d2391095395661e2d4b92";
-        };
+      };
       r1 = {
         nix = import ../hackage/gemini-router-0.1.1.0-r1-78e053e87443b3f064844be2215bff94ed58d7fc61d0a8188672b6d152ea961e.nix;
         revNum = 1;
         revTimestamp = "2021-03-19T18:33:10Z";
         sha256 = "78e053e87443b3f064844be2215bff94ed58d7fc61d0a8188672b6d152ea961e";
-        };
+      };
       r2 = {
         nix = import ../hackage/gemini-router-0.1.1.0-r2-8a98d30f4f70b75c53d1cd63441200ba19dd8e42838e3118964282242f30df4a.nix;
         revNum = 2;
         revTimestamp = "2023-07-24T09:43:04Z";
         sha256 = "8a98d30f4f70b75c53d1cd63441200ba19dd8e42838e3118964282242f30df4a";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.1.2.0" = {
     sha256 = "529ffb3c0e3d30b238f8cd0e642fa8c70a8fabd0ab11e0e5210c5f1bf4fe6589";
     revisions = {
@@ -49,14 +49,20 @@
         revNum = 0;
         revTimestamp = "2023-07-24T16:39:08Z";
         sha256 = "8e196eac1bbf4fe1f36ab491c975a6693e1b9137c03ee291ddc16325a9a16672";
-        };
+      };
       r1 = {
         nix = import ../hackage/gemini-router-0.1.2.0-r1-e86c849b97a2d7ec7a2089edbdcdf66c35d09232b7c20bac1aaf16d345a19f72.nix;
         revNum = 1;
         revTimestamp = "2024-06-03T09:36:19Z";
         sha256 = "e86c849b97a2d7ec7a2089edbdcdf66c35d09232b7c20bac1aaf16d345a19f72";
-        };
-      default = "r1";
       };
+      r2 = {
+        nix = import ../hackage/gemini-router-0.1.2.0-r2-7a0421a492166256683a963170279b119abbfe3765f03a2d85fde876467c75e8.nix;
+        revNum = 2;
+        revTimestamp = "2025-05-31T17:03:25Z";
+        sha256 = "7a0421a492166256683a963170279b119abbfe3765f03a2d85fde876467c75e8";
+      };
+      default = "r2";
     };
-  }
+  };
+}

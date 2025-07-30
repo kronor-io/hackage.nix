@@ -21,7 +21,7 @@
       synopsis = "Client library for Kubernetes";
       description = "Client library for interacting with a Kubernetes cluster.\n\nThis package contains hand-written code, while @kubernetes-api@ contains code auto-generated from the OpenAPI spec.\n\nIt was forked from the @kubernetes-client@ package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -55,26 +55,26 @@
           (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
           (hsPkgs."uri-bytestring" or (errorHandler.buildDepError "uri-bytestring"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ] ++ (if compiler.isGhc && (compiler.version).ge "9.6"
+        ] ++ (if compiler.isGhc && compiler.version.ge "9.6"
           then [
             (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
             (hsPkgs."crypton-x509" or (errorHandler.buildDepError "crypton-x509"))
             (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
             (hsPkgs."crypton-x509-system" or (errorHandler.buildDepError "crypton-x509-system"))
             (hsPkgs."crypton-x509-validation" or (errorHandler.buildDepError "crypton-x509-validation"))
-            ]
+          ]
           else [
             (hsPkgs."connection" or (errorHandler.buildDepError "connection"))
             (hsPkgs."x509" or (errorHandler.buildDepError "x509"))
             (hsPkgs."x509-store" or (errorHandler.buildDepError "x509-store"))
             (hsPkgs."x509-system" or (errorHandler.buildDepError "x509-system"))
             (hsPkgs."x509-validation" or (errorHandler.buildDepError "x509-validation"))
-            ]);
+          ]);
         build-tools = [
-          (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-          ];
+          (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "example" = {
           depends = [
@@ -109,26 +109,26 @@
             (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
             (hsPkgs."uri-bytestring" or (errorHandler.buildDepError "uri-bytestring"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ] ++ (if compiler.isGhc && (compiler.version).ge "9.6"
+          ] ++ (if compiler.isGhc && compiler.version.ge "9.6"
             then [
               (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
               (hsPkgs."crypton-x509" or (errorHandler.buildDepError "crypton-x509"))
               (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
               (hsPkgs."crypton-x509-system" or (errorHandler.buildDepError "crypton-x509-system"))
               (hsPkgs."crypton-x509-validation" or (errorHandler.buildDepError "crypton-x509-validation"))
-              ]
+            ]
             else [
               (hsPkgs."connection" or (errorHandler.buildDepError "connection"))
               (hsPkgs."x509" or (errorHandler.buildDepError "x509"))
               (hsPkgs."x509-store" or (errorHandler.buildDepError "x509-store"))
               (hsPkgs."x509-system" or (errorHandler.buildDepError "x509-system"))
               (hsPkgs."x509-validation" or (errorHandler.buildDepError "x509-validation"))
-              ]);
+            ]);
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -166,26 +166,26 @@
             (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
             (hsPkgs."uri-bytestring" or (errorHandler.buildDepError "uri-bytestring"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ] ++ (if compiler.isGhc && (compiler.version).ge "9.6"
+          ] ++ (if compiler.isGhc && compiler.version.ge "9.6"
             then [
               (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
               (hsPkgs."crypton-x509" or (errorHandler.buildDepError "crypton-x509"))
               (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
               (hsPkgs."crypton-x509-system" or (errorHandler.buildDepError "crypton-x509-system"))
               (hsPkgs."crypton-x509-validation" or (errorHandler.buildDepError "crypton-x509-validation"))
-              ]
+            ]
             else [
               (hsPkgs."connection" or (errorHandler.buildDepError "connection"))
               (hsPkgs."x509" or (errorHandler.buildDepError "x509"))
               (hsPkgs."x509-store" or (errorHandler.buildDepError "x509-store"))
               (hsPkgs."x509-system" or (errorHandler.buildDepError "x509-system"))
               (hsPkgs."x509-validation" or (errorHandler.buildDepError "x509-validation"))
-              ]);
+            ]);
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Load any image supported by Juicy.Pixels in your brillo application";
       description = "Lets you convert any image supported by Juicy.Pixels in a brillo application\nby converting to brillo' Bitmap representation.\nVersion 0.1.2 just enabled caching (from a frame to the next, and so on)\nof the images you load, so that they are not recomputed for each frame.\nCredits go to Jonathan Daugherty for the patch.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."JuicyPixels" or (errorHandler.buildDepError "JuicyPixels"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "brillo-juicy-viewer" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."JuicyPixels" or (errorHandler.buildDepError "JuicyPixels"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

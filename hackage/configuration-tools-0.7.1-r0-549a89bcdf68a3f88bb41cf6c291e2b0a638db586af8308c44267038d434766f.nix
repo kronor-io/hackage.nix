@@ -22,14 +22,14 @@
       description = "Tools for specifying and parsing configurations\n\nThis package provides a collection of utils on top of the packages\n<http://hackage.haskell.org/package/optparse-applicative optparse-applicative>,\n<http://hackage.haskell.org/package/aeson aeson>, and\n<http://hackage.haskell.org/package/yaml yaml> for configuring libraries and\napplications in a convenient and composable way.\n\nThe main features are\n\n1. configuration management through integration of command line option\n   parsing and configuration files and\n\n2. a @Setup.hs@ file that generates a @PkgInfo@ module for each component\n   of a package that provides information about the package and the build.\n\nDocumentation on how to use this package can be found in the\n<https://github.com/alephcloud/hs-configuration-tools/blob/master/README.md README>\nand in the API documentation of the modules \"Configuration.Utils\" and\n\"Configuration.Utils.Setup\".";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.bytestring or (pkgs.buildPackages.bytestring or (errorHandler.setupDepError "bytestring")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.bytestring or (pkgs.pkgsBuildBuild.bytestring or (errorHandler.setupDepError "bytestring")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -57,7 +57,7 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ] ++ (pkgs.lib).optionals (flags.remote-configs) [
+        ] ++ pkgs.lib.optionals (flags.remote-configs) [
           (hsPkgs."base64-bytestring" or (errorHandler.buildDepError "base64-bytestring"))
           (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
           (hsPkgs."crypton-x509" or (errorHandler.buildDepError "crypton-x509"))
@@ -70,9 +70,9 @@
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
           (hsPkgs."monad-control" or (errorHandler.buildDepError "monad-control"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "example" = {
           depends = [
@@ -81,10 +81,10 @@
             (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
             (hsPkgs."configuration-tools" or (errorHandler.buildDepError "configuration-tools"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "url-example-test" = {
           depends = [
@@ -98,7 +98,7 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ] ++ (pkgs.lib).optionals (flags.remote-configs) [
+          ] ++ pkgs.lib.optionals (flags.remote-configs) [
             (hsPkgs."enclosed-exceptions" or (errorHandler.buildDepError "enclosed-exceptions"))
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
             (hsPkgs."monad-control" or (errorHandler.buildDepError "monad-control"))
@@ -106,18 +106,18 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."warp-tls" or (errorHandler.buildDepError "warp-tls"))
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "trivial" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."base-unicode-symbols" or (errorHandler.buildDepError "base-unicode-symbols"))
             (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
             (hsPkgs."configuration-tools" or (errorHandler.buildDepError "configuration-tools"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

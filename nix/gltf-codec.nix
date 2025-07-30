@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2020-08-23T21:20:22Z";
         sha256 = "ad05d5b6524d90ff631e5472480b544a728695a9ded647e5d607520fe04ae985";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.2" = {
     sha256 = "b0fe8f90645402b3314a847cfcb9c04e9694a0a96abf5d7ba44c081b3f4dee1f";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2021-01-22T22:10:04Z";
         sha256 = "9d8b877cffde7bebdf6d3c584b730d505e5f091eafabcd8a1a91d6eccf124228";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.3" = {
     sha256 = "cb0da5f4bc51b9d35f5be195206f7d8f4ae78bef698795617c3f4d61a7fef34d";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2021-02-13T10:19:13Z";
         sha256 = "42b5ad708c7a0a073c0a35d5ebccc9ba19537085b01f7f3b5fc4304d91ec0b51";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.4" = {
     sha256 = "dd44c5b851b9f36cc3025aeb8e0af0366cc9fdb76e76eb58a500c7fb1a33f0cb";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2022-03-23T11:25:13Z";
         sha256 = "41f3718e93b273ca65fd3072fd02ca59dec1c978a56dc891c62b53821c332326";
-        };
+      };
       r1 = {
         nix = import ../hackage/gltf-codec-0.1.0.4-r1-a2221740fb9bb3b9e826e310fdca63f3078fa750d0e21112c68b467a7c319469.nix;
         revNum = 1;
         revTimestamp = "2023-05-08T20:24:43Z";
         sha256 = "a2221740fb9bb3b9e826e310fdca63f3078fa750d0e21112c68b467a7c319469";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.5" = {
     sha256 = "e7b9c3872130a1e57f2fc59fa523ac3106b166c93e80deef1a6bf469adbdf07c";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2024-11-14T13:43:17Z";
         sha256 = "685df774608724fd46f359a4e24a4071e01a9b901b41b4f9e6e2daddd20c9af2";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Monadic DOT graph builder DSL";
       description = "Small monadic DSL to build Graphviz DOT files.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."text-builder" or (errorHandler.buildDepError "text-builder"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "example" = {
           depends = [
@@ -44,10 +44,10 @@
             (hsPkgs."graphwiz" or (errorHandler.buildDepError "graphwiz"))
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."text-builder" or (errorHandler.buildDepError "text-builder"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -68,12 +68,12 @@
             (hsPkgs."text-builder" or (errorHandler.buildDepError "text-builder"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-autocollect.components.exes.tasty-autocollect or (pkgs.buildPackages.tasty-autocollect or (errorHandler.buildToolDepError "tasty-autocollect:tasty-autocollect")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-autocollect.components.exes.tasty-autocollect or (pkgs.pkgsBuildBuild.tasty-autocollect or (errorHandler.buildToolDepError "tasty-autocollect:tasty-autocollect")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

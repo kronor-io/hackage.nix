@@ -21,7 +21,7 @@
       synopsis = "Visualise an eventlog";
       description = "eventlog2html is a library for visualising eventlogs.\nAt the moment, the intended use is to visualise eventlogs\nwhich have heap profiling events, as a replacement to hp2ps\nand hp2pretty.\neventlog2html creates a static webpage which contains\na collection of different interactive charts for analysing\nheap usage. Trace events are displayed on the chart and\nthe charts can be zoomed, scrolled and filtered to give\na more exploratory feel to heap profile analysis.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -49,9 +49,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."trie-simple" or (errorHandler.buildDepError "trie-simple"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "eventlog2html" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."githash" or (errorHandler.buildDepError "githash"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

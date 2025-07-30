@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:39Z";
         sha256 = "28476d62a87fd867666f9326bc4bb38cd3973cf4807d732f77daf1e622981684";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "d2104be097203cd7ea31912b02d334852462d7d495a24f104f8b877ce92196de";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:37:33Z";
         sha256 = "95f36a29d55be8c0965fb608782fa8a2765e531998101e18d89b376e62459bd0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "382d3a4f449e36818b3e35fc5d21368a9f4f411d0e23594de083d6d7b04ae49d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-serviceconsumermanagement-1.0.0-r0-4ba7bd08c13522d91725690b1262f2b5ff5afcc917bae1571bc06e7760cd62a5.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:04Z";
+        sha256 = "4ba7bd08c13522d91725690b1262f2b5ff5afcc917bae1571bc06e7760cd62a5";
+      };
+      default = "r0";
+    };
+  };
+}

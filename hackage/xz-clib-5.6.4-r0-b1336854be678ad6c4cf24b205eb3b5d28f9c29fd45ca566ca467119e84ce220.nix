@@ -21,6 +21,6 @@
       synopsis = "LZMA/XZ clibs";
       description = "C source code for the LZMA/XZ compression and decompression library";
       buildType = "Configure";
-      };
+    };
     components = { "library" = { buildable = true; }; };
-    }
+  }

@@ -21,7 +21,7 @@
       synopsis = "Adaptation of the log library for the effectful ecosystem.";
       description = "Adaptation of the @<https://hackage.haskell.org/package/log-base log-base>@ library for the @<https://hackage.haskell.org/package/effectful effectful>@ ecosystem.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."log-base" or (errorHandler.buildDepError "log-base"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."log-base" or (errorHandler.buildDepError "log-base"))
             (hsPkgs."log-effectful" or (errorHandler.buildDepError "log-effectful"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

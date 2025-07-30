@@ -21,7 +21,7 @@
       synopsis = "A syntax for reading and writing Crucible control-flow graphs";
       description = "This package provides a syntax for directly constructing Crucible\ncontrol-flow graphs, as well as for observing them.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."what4" or (errorHandler.buildDepError "what4"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "crucible-syntax-tests" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."what4" or (errorHandler.buildDepError "what4"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

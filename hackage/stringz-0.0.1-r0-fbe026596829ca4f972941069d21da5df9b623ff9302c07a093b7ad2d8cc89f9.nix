@@ -21,7 +21,7 @@
       synopsis = "Optics for string-like data types";
       description = "Optics for string-like data types e.g. [Char], Text, ByteString";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

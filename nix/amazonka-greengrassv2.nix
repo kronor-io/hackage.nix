@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:36:20Z";
         sha256 = "796116f1aeae517f95b67747ab56aefdabf67a7ec6d437e364144817b55013c9";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-greengrassv2-2.0-r1-5d4a7b80d5510a7cabae3ed7d39f9fdc1364c7b2d226b9f37dd1dd29247c0b2a.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:48:56Z";
         sha256 = "5d4a7b80d5510a7cabae3ed7d39f9fdc1364c7b2d226b9f37dd1dd29247c0b2a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

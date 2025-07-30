@@ -21,14 +21,14 @@
       synopsis = "Kerberos for Fedora packagers";
       description = "A small library wrapping fkinit for Fedora developers.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."simple-cmd" or (errorHandler.buildDepError "simple-cmd"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

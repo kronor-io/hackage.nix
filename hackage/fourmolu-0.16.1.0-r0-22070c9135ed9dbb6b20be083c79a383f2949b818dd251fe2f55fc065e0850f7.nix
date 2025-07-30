@@ -21,7 +21,7 @@
       synopsis = "A formatter for Haskell source code";
       description = "A formatter for Haskell source code.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,9 +46,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "fourmolu" = {
           depends = [
@@ -66,10 +66,10 @@
             (hsPkgs."terminal-size" or (errorHandler.buildDepError "terminal-size"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."fourmolu" or (errorHandler.buildDepError "fourmolu"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -94,13 +94,13 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."fourmolu" or (errorHandler.buildDepError "fourmolu"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            (hsPkgs.buildPackages.fourmolu.components.exes.fourmolu or (pkgs.buildPackages.fourmolu or (errorHandler.buildToolDepError "fourmolu:fourmolu")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+            (hsPkgs.pkgsBuildBuild.fourmolu.components.exes.fourmolu or (pkgs.pkgsBuildBuild.fourmolu or (errorHandler.buildToolDepError "fourmolu:fourmolu")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

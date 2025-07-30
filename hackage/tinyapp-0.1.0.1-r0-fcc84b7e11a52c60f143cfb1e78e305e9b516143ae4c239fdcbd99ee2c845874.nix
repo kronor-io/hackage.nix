@@ -21,20 +21,20 @@
       synopsis = "Library to build tiny apps in Haskell";
       description = "Library to build tiny apps in Haskell such a REPLs";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
+      };
       tests = {
         "tinyapp-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tinyapp" or (errorHandler.buildDepError "tinyapp"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

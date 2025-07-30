@@ -21,7 +21,7 @@
       synopsis = "Client for Recurly subscription management";
       description = "Auto-generated from OpenAPI specification.\nSee Recurly API documentation at https://recurly.com/developers/api/";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

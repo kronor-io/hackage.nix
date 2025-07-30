@@ -21,7 +21,7 @@
       synopsis = "Composable abstraction over retryable transactions for Hasql";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "conflicts-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."hasql-transaction" or (errorHandler.buildDepError "hasql-transaction"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

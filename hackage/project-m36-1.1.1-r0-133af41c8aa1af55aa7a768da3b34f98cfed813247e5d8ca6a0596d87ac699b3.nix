@@ -21,7 +21,7 @@
       synopsis = "Relational Algebra Engine";
       description = "A relational algebra engine which can be used to persist and query Haskell data types.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = (((([
@@ -85,16 +85,16 @@
           (hsPkgs."convertible" or (errorHandler.buildDepError "convertible"))
           (hsPkgs."fast-builder" or (errorHandler.buildDepError "fast-builder"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-          ] ++ (pkgs.lib).optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ (pkgs.lib).optionals (compiler.isGhc && (compiler.version).ge "8" && flags.haskell-scripting) [
+        ] ++ pkgs.lib.optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ pkgs.lib.optionals (compiler.isGhc && compiler.version.ge "8" && flags.haskell-scripting) [
           (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"))
           (hsPkgs."ghci" or (errorHandler.buildDepError "ghci"))
-          ]) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "8.6") (hsPkgs."deferred-folds" or (errorHandler.buildDepError "deferred-folds"))) ++ (if system.isWindows
+        ]) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "8.6") (hsPkgs."deferred-folds" or (errorHandler.buildDepError "deferred-folds"))) ++ (if system.isWindows
           then [ (hsPkgs."Win32" or (errorHandler.buildDepError "Win32")) ]
           else [
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ])) ++ (pkgs.lib).optional (!flags.stack) (hsPkgs."deferred-folds" or (errorHandler.buildDepError "deferred-folds"));
+          ])) ++ pkgs.lib.optional (!flags.stack) (hsPkgs."deferred-folds" or (errorHandler.buildDepError "deferred-folds"));
         buildable = true;
-        };
+      };
       exes = {
         "tutd" = {
           depends = [
@@ -143,9 +143,9 @@
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
             (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
             (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-            ] ++ (pkgs.lib).optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
+          ] ++ pkgs.lib.optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
           buildable = true;
-          };
+        };
         "sqlegacy" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -192,9 +192,9 @@
             (hsPkgs."modern-uri" or (errorHandler.buildDepError "modern-uri"))
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
             (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
-            ] ++ (pkgs.lib).optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
+          ] ++ pkgs.lib.optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
           buildable = true;
-          };
+        };
         "project-m36-server" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -224,9 +224,9 @@
             (hsPkgs."list-t" or (errorHandler.buildDepError "list-t"))
             (hsPkgs."base64-bytestring" or (errorHandler.buildDepError "base64-bytestring"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ] ++ (pkgs.lib).optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
+          ] ++ pkgs.lib.optional (flags.haskell-scripting) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"));
           buildable = true;
-          };
+        };
         "bigrel" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -266,9 +266,9 @@
             (hsPkgs."MonadRandom" or (errorHandler.buildDepError "MonadRandom"))
             (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
             (hsPkgs."parser-combinators" or (errorHandler.buildDepError "parser-combinators"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-SimpleClient" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -305,9 +305,9 @@
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."MonadRandom" or (errorHandler.buildDepError "MonadRandom"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-OutOfTheTarpit" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -349,9 +349,9 @@
             (hsPkgs."ghc-paths" or (errorHandler.buildDepError "ghc-paths"))
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-Blog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -396,9 +396,9 @@
             (hsPkgs."blaze-html" or (errorHandler.buildDepError "blaze-html"))
             (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-Hair" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -440,9 +440,9 @@
             (hsPkgs."ghc-paths" or (errorHandler.buildDepError "ghc-paths"))
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-Plantfarm" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -457,9 +457,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-CustomTupleable" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -501,9 +501,9 @@
             (hsPkgs."ghc-paths" or (errorHandler.buildDepError "ghc-paths"))
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Example-DerivingCustomTupleable" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -511,11 +511,11 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
-          buildable = if compiler.isGhc && (compiler.version).ge "8.6"
+          ];
+          buildable = if compiler.isGhc && compiler.version.ge "8.6"
             then true
             else false;
-          };
+        };
         "project-m36-websocket-server" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -557,9 +557,9 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."warp-tls" or (errorHandler.buildDepError "warp-tls"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "handles" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -605,10 +605,10 @@
             (hsPkgs."http-conduit" or (errorHandler.buildDepError "http-conduit"))
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test-sql" = {
           depends = [
@@ -660,9 +660,9 @@
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
             (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-tutoriald" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -712,9 +712,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-tutoriald-atomfunctionscript" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -764,9 +764,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-tutoriald-databasecontextfunctionscript" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -816,9 +816,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-relation" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -868,9 +868,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-static-optimizer" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -920,9 +920,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-transactiongraph-persist" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -972,9 +972,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-relation-import-csv" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1024,9 +1024,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-tutoriald-import-tutoriald" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1078,9 +1078,9 @@
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-relation-export-csv" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1130,9 +1130,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-transactiongraph-merge" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1182,9 +1182,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-prettyprinter" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1234,9 +1234,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-server" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1286,9 +1286,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-scripts" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1338,9 +1338,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-websocket-server" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1390,9 +1390,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-isomorphic-schemas" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1442,9 +1442,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-atomable" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1494,9 +1494,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-multiprocess-access" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1546,9 +1546,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-transactiongraph-automerge" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1598,9 +1598,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-tupleable" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1650,9 +1650,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-client-simple" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1702,9 +1702,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-dataframe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1754,10 +1754,10 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "basic-benchmark" = {
           depends = [
@@ -1771,9 +1771,9 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "update-exprs" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1781,9 +1781,9 @@
             (hsPkgs."project-m36" or (errorHandler.buildDepError "project-m36"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."winery" or (errorHandler.buildDepError "winery"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1834,9 +1834,9 @@
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ondiskclient" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -1886,9 +1886,9 @@
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
             (hsPkgs."cryptohash-sha256" or (errorHandler.buildDepError "cryptohash-sha256"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

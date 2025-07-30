@@ -21,7 +21,7 @@
       synopsis = "Haskell Debug Adapter.";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -50,11 +50,11 @@
           (hsPkgs."resourcet" or (errorHandler.buildDepError "resourcet"))
           (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
-        buildable = if compiler.isGhc && (compiler.version).lt "8.10.0"
+        ];
+        buildable = if compiler.isGhc && compiler.version.lt "8.10.0"
           then false
           else true;
-        };
+      };
       exes = {
         "haskell-debug-adapter" = {
           depends = [
@@ -84,12 +84,12 @@
             (hsPkgs."resourcet" or (errorHandler.buildDepError "resourcet"))
             (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
-          buildable = if compiler.isGhc && (compiler.version).lt "8.10.0"
+          ];
+          buildable = if compiler.isGhc && compiler.version.lt "8.10.0"
             then false
             else true;
-          };
         };
+      };
       tests = {
         "haskell-debug-adapter-test" = {
           depends = [
@@ -120,11 +120,11 @@
             (hsPkgs."resourcet" or (errorHandler.buildDepError "resourcet"))
             (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
-          buildable = if compiler.isGhc && (compiler.version).lt "8.10.0"
+          ];
+          buildable = if compiler.isGhc && compiler.version.lt "8.10.0"
             then false
             else true;
-          };
         };
       };
-    }
+    };
+  }

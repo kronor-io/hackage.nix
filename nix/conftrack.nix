@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2024-07-25T23:00:21Z";
         sha256 = "f6fbee04b546ec70f36b97fde82439968024160ffcb6c1bd141207c88d497b27";
-        };
+      };
       r1 = {
         nix = import ../hackage/conftrack-0.0.1-r1-b937c53e3928c11b1a3c6300e7adaee1799aaed525a56739a5a174a1e81ba073.nix;
         revNum = 1;
         revTimestamp = "2024-07-25T23:04:53Z";
         sha256 = "b937c53e3928c11b1a3c6300e7adaee1799aaed525a56739a5a174a1e81ba073";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

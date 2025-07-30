@@ -21,7 +21,7 @@
       synopsis = "Parse flatbuffers";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."byte-order" or (errorHandler.buildDepError "byte-order"))
           (hsPkgs."byteslice" or (errorHandler.buildDepError "byteslice"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."array-builder" or (errorHandler.buildDepError "array-builder"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

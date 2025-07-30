@@ -21,7 +21,7 @@
       synopsis = "A general library to work with Symbolic Regression expression trees.";
       description = "A Symbolic Regression Tree data structure to work with mathematical expressions with support to first order derivative and simplification;";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -50,10 +50,10 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ];
+        ];
         libs = [ (pkgs."nlopt" or (errorHandler.sysDepError "nlopt")) ];
         buildable = true;
-        };
+      };
       exes = {
         "eggp" = {
           depends = [
@@ -84,9 +84,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "reggression" = {
           depends = [
             (hsPkgs."ansi-terminal" or (errorHandler.buildDepError "ansi-terminal"))
@@ -119,9 +119,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "srsimplify" = {
           depends = [
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
@@ -151,9 +151,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "srtools" = {
           depends = [
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
@@ -183,9 +183,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "symregg" = {
           depends = [
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
@@ -215,9 +215,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tinygp" = {
           depends = [
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
@@ -247,10 +247,10 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "srtree-test" = {
           depends = [
@@ -282,9 +282,9 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

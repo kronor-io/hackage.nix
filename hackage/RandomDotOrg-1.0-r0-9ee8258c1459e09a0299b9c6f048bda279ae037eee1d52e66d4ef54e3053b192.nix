@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings to the RANDOM.ORG Core API";
       description = "Haskell bindings to the <https://www.random.org/ RANDOM.ORG> Core API\n(Release 4). The API provides access to a true random number generator (TRNG)\nbased on atmospheric noise.\n\nNB: The use of the API's services is subject to the terms and conditions of\nRandomness and Integrity Services Limited.\n\nAn example of use of the library is provided in the @example@ directory.\n\nThis package and its repository have no connection with Randomness and\nIntegrity Services Limited or its affilates or the RANDOM.ORG domain.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."uuid-types" or (errorHandler.buildDepError "uuid-types"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "RandomDotOrg-example" = {
           depends = [
@@ -64,9 +64,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."uuid-types" or (errorHandler.buildDepError "uuid-types"))
-            ];
+          ];
           buildable = if !flags.example then false else true;
-          };
         };
       };
-    }
+    };
+  }

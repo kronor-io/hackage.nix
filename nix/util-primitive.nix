@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-08-20T18:02:25Z";
         sha256 = "3da02a3b8b301950a0d4489abc3827a822c62649af26b744f745fa210984e428";
-        };
+      };
       r1 = {
         nix = import ../hackage/util-primitive-0.1.0.0-r1-39d207232828f265de5d4ef4d9028c732853f3edb205027a41e5bd8319ba8f72.nix;
         revNum = 1;
         revTimestamp = "2020-04-10T04:58:29Z";
         sha256 = "39d207232828f265de5d4ef4d9028c732853f3edb205027a41e5bd8319ba8f72";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

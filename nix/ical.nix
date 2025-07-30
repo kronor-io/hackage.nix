@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-11-24T09:46:26Z";
         sha256 = "ffe16b2ee1cf9edbd134aab8d7d54425d3e672d31e25540f4685e10aec8bdc42";
-        };
+      };
       r1 = {
         nix = import ../hackage/ical-0.0.0-r1-b0e8e95f4da241fd5b16901beb4b06077f14243cd8c3176b5796d90cc075020f.nix;
         revNum = 1;
         revTimestamp = "2017-12-19T23:33:32Z";
         sha256 = "b0e8e95f4da241fd5b16901beb4b06077f14243cd8c3176b5796d90cc075020f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.1" = {
     sha256 = "f5e45df4249aa90a87080ef6714d77d8e961c5ba50e6813062379fcdaea7d882";
     revisions = {
@@ -25,14 +25,14 @@
         revNum = 0;
         revTimestamp = "2015-11-24T10:18:52Z";
         sha256 = "e7cf9f7343b9eb10ad46a3e83467a0c5c08aeecca3d3e261d8ca9e3b99cb3a43";
-        };
+      };
       r1 = {
         nix = import ../hackage/ical-0.0.1-r1-2973b595381ff5a7830350985425450759abd17a782156679bc1311d4b1db06b.nix;
         revNum = 1;
         revTimestamp = "2018-06-12T04:34:48Z";
         sha256 = "2973b595381ff5a7830350985425450759abd17a782156679bc1311d4b1db06b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

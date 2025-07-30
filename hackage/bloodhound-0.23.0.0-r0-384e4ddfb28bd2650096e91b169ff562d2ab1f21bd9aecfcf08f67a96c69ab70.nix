@@ -21,7 +21,7 @@
       synopsis = "Elasticsearch client library for Haskell";
       description = "Elasticsearch made awesome for Haskell hackers";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."versions" or (errorHandler.buildDepError "versions"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "bloodhound-tests" = {
           depends = [
@@ -75,9 +75,9 @@
             (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."versions" or (errorHandler.buildDepError "versions"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -85,9 +85,9 @@
             (hsPkgs."bloodhound" or (errorHandler.buildDepError "bloodhound"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,26 +7,26 @@
         revNum = 0;
         revTimestamp = "2018-09-17T00:54:37Z";
         sha256 = "6c6d4ef1a918242ab32d3fb9d7510bd056a1371465631ae5bd41d7f3d16b9fe1";
-        };
+      };
       r1 = {
         nix = import ../hackage/f-ree-hack-cheats-free-v-bucks-generator-0.2-r1-63dc66c3c0a90f316cca18b8f0450609d021224a4f8579dfa41df33ddbf7fe9a.nix;
         revNum = 1;
         revTimestamp = "2018-09-17T00:59:59Z";
         sha256 = "63dc66c3c0a90f316cca18b8f0450609d021224a4f8579dfa41df33ddbf7fe9a";
-        };
+      };
       r2 = {
         nix = import ../hackage/f-ree-hack-cheats-free-v-bucks-generator-0.2-r2-60a665ca1e434b264c92ebb63f9674ed520354291feff771a7820792dc3ced8b.nix;
         revNum = 2;
         revTimestamp = "2018-09-17T01:09:13Z";
         sha256 = "60a665ca1e434b264c92ebb63f9674ed520354291feff771a7820792dc3ced8b";
-        };
+      };
       r3 = {
         nix = import ../hackage/f-ree-hack-cheats-free-v-bucks-generator-0.2-r3-d53043343ca3dab00f7120b1ec0530d1321ed915d5d789c1cc4cd2d956435237.nix;
         revNum = 3;
         revTimestamp = "2018-09-17T01:41:31Z";
         sha256 = "d53043343ca3dab00f7120b1ec0530d1321ed915d5d789c1cc4cd2d956435237";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
-  }
+  };
+}

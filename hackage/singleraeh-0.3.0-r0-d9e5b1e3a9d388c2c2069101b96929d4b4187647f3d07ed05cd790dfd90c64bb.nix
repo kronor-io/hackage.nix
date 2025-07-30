@@ -21,14 +21,14 @@
       synopsis = "raehik's singletons";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."singletons" or (errorHandler.buildDepError "singletons"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

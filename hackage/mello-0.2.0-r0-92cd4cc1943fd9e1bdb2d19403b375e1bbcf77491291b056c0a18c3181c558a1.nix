@@ -21,7 +21,7 @@
       synopsis = "No-fuss syntax with s-expressions";
       description = "Please see the README on GitHub at <https://github.com/ejconlon/mello#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "mello-test" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
             (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

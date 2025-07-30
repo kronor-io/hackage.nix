@@ -21,7 +21,7 @@
       synopsis = "A cffi-based python binding for X";
       description = "A cffi-based python binding for X, comparable to xpyb";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."either" or (errorHandler.buildDepError "either"))
           (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "xcffibgen" = {
           depends = [
@@ -56,10 +56,10 @@
             (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "PyHelpersTests" = {
           depends = [
@@ -68,9 +68,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "GeneratorTests.hs" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -80,9 +80,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

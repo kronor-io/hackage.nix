@@ -21,7 +21,7 @@
       synopsis = "An enumerators for compressing and decompressing streams";
       description = "An enumerators for compressing and decompressing streams";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,15 +29,15 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."iteratee" or (errorHandler.buildDepError "iteratee"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ];
+        ];
         libs = [
           (pkgs."z" or (errorHandler.sysDepError "z"))
           (pkgs."bz2" or (errorHandler.sysDepError "bz2"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

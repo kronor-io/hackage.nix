@@ -21,7 +21,7 @@
       synopsis = "A framework of algebraic classes";
       description = "One algebraic classes framework to rule them all.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,8 +33,8 @@
           (hsPkgs."distributive" or (errorHandler.buildDepError "distributive"))
           (hsPkgs."adjunctions" or (errorHandler.buildDepError "adjunctions"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

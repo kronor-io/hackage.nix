@@ -21,7 +21,7 @@
       synopsis = "Perform refactorings specified by the refact library.";
       description = "Perform refactorings specified by the refact library. It is primarily used with HLint's --refactor flag.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = (((([
@@ -40,9 +40,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
           (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.8" && (compiler.isGhc && (compiler.version).lt "9.9")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.6" && (compiler.isGhc && (compiler.version).lt "9.7")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.4" && (compiler.isGhc && (compiler.version).lt "9.5")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.2" && (compiler.isGhc && (compiler.version).lt "9.3")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.10") (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.8" && (compiler.isGhc && compiler.version.lt "9.9")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.6" && (compiler.isGhc && compiler.version.lt "9.7")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.4" && (compiler.isGhc && compiler.version.lt "9.5")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.2" && (compiler.isGhc && compiler.version.lt "9.3")) (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.10") (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"));
         buildable = true;
-        };
+      };
       exes = {
         "refactor" = {
           depends = [
@@ -64,10 +64,10 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.10") (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.10") (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"));
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -92,9 +92,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
             (hsPkgs."unix-compat" or (errorHandler.buildDepError "unix-compat"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.10") (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.10") (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

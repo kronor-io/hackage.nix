@@ -21,34 +21,34 @@
       synopsis = "try hackage";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/yj-sandbox#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "yj-sandbox-exe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."yj-sandbox" or (errorHandler.buildDepError "yj-sandbox"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "yj-sandbox-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."yj-sandbox" or (errorHandler.buildDepError "yj-sandbox"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,16 +21,16 @@
       synopsis = "Derive Storable instances with GHC.Generics";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/storable-generic#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "storable-generic-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."storable-generic" or (errorHandler.buildDepError "storable-generic"))
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

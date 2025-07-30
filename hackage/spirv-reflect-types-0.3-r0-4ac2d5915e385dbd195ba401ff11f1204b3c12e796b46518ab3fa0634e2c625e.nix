@@ -21,7 +21,7 @@
       synopsis = "Data types from spirv-reflect tool.";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."spirv-enum" or (errorHandler.buildDepError "spirv-enum"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

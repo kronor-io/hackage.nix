@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:57Z";
         sha256 = "5a4ccdacdf40d51d75bd6f169056df61b4398500363063ce7578bc16cef64128";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "fd7db779c1d5bfd8784c34ba9f4e5a9cd132d2be5f2f592b64b05e3d9c67b95b";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:38:04Z";
         sha256 = "57c29b2751849a5d53858139e2a573f489b31f8af67dc26f32328635b2b3c5c5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "cfcb31f7412fc9cd056d2cb015e6dd9002217ca5332231ef1e91f7fc708160e0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-bigtableadmin-1.0.0-r0-b788ba39135b56ac416dde88938f5546a933ca890f0a6335b085479a8c2c6ef8.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:07:02Z";
+        sha256 = "b788ba39135b56ac416dde88938f5546a933ca890f0a6335b085479a8c2c6ef8";
+      };
+      default = "r0";
+    };
+  };
+}

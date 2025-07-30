@@ -21,7 +21,7 @@
       synopsis = "Schnorr signatures, ECDSA, and ECDH on the elliptic curve\nsecp256k1";
       description = "Pure BIP0340-style Schnorr signatures, deterministic RFC6979 ECDSA, and\nECDH shared secret computation on the elliptic curve secp256k1.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."ppad-hmac-drbg" or (errorHandler.buildDepError "ppad-hmac-drbg"))
           (hsPkgs."ppad-sha256" or (errorHandler.buildDepError "ppad-sha256"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "secp256k1-tests" = {
           depends = [
@@ -46,10 +46,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "secp256k1-bench" = {
           depends = [
@@ -59,9 +59,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."ppad-secp256k1" or (errorHandler.buildDepError "ppad-secp256k1"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "secp256k1-weigh" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -70,9 +70,9 @@
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."ppad-secp256k1" or (errorHandler.buildDepError "ppad-secp256k1"))
             (hsPkgs."weigh" or (errorHandler.buildDepError "weigh"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

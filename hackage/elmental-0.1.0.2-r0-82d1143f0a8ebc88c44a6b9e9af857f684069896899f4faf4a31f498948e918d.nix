@@ -21,7 +21,7 @@
       synopsis = "Generate Elm datatype definitions, encoders and decoders from Haskell datatypes.";
       description = "Elmental is a code generator that takes in Haskell type definitions and generates Elm datatypes, along with Aeson-compatible encoders and decoders.\nIt emphasizes flexibility, support for a large number of Haskell types, and integration into existing Elm codebases.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."kind-generics" or (errorHandler.buildDepError "kind-generics"))
           (hsPkgs."neat-interpolation" or (errorHandler.buildDepError "neat-interpolation"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "generate-test-app-code" = {
           depends = [
@@ -42,10 +42,10 @@
             (hsPkgs."elmental" or (errorHandler.buildDepError "elmental"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."kind-generics-th" or (errorHandler.buildDepError "kind-generics-th"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "elmental-test" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."hspec-golden" or (errorHandler.buildDepError "hspec-golden"))
             (hsPkgs."pretty-show" or (errorHandler.buildDepError "pretty-show"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

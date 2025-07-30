@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2014-11-11T21:03:50Z";
         sha256 = "91018c4101c9eda01bf68cac0f76a295a502d891e1c81e66eb108f01261f752b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.2.1" = {
     sha256 = "46b3087b72152e3ad50309b0e581d88d5bdc63b16ac6dc9f4e52807e05d921f4";
     revisions = {
@@ -19,22 +19,22 @@
         revNum = 0;
         revTimestamp = "2015-04-13T18:47:21Z";
         sha256 = "cc5464e54a0ce3dd63a697dfdd11827dc2b9f36f646c83985b1fb7df49d91ece";
-        };
+      };
       r1 = {
         nix = import ../hackage/TBit-0.4.2.1-r1-7ef28bbf60151f505c5e8e634529f7a33a7823ff0db33db3ed5e618904c10854.nix;
         revNum = 1;
         revTimestamp = "2015-04-16T16:55:59Z";
         sha256 = "7ef28bbf60151f505c5e8e634529f7a33a7823ff0db33db3ed5e618904c10854";
-        };
+      };
       r2 = {
         nix = import ../hackage/TBit-0.4.2.1-r2-d5cea5e84e8a1f60869086a60e7b5e668d66f28c1b95c7b4afc5ade058eb08e4.nix;
         revNum = 2;
         revTimestamp = "2015-04-16T17:21:28Z";
         sha256 = "d5cea5e84e8a1f60869086a60e7b5e668d66f28c1b95c7b4afc5ade058eb08e4";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.4.2.2" = {
     sha256 = "aa4e9fa4a698bd98a206e22daac8b248f34f403036ad09235c45c4d357a33bba";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2015-04-20T20:02:08Z";
         sha256 = "f43d209f62977edc7cfdd3e0db5eeaeedfed31c63bf89ace4eea7411f4676e17";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.2.3" = {
     sha256 = "3a73b3904666d571790c1b5127cb6e028fc26608a99e0b6f78d3aac185e7c1af";
     revisions = {
@@ -55,8 +55,8 @@
         revNum = 0;
         revTimestamp = "2015-04-20T20:03:58Z";
         sha256 = "1fb861be4a186033c568c7a488f0a7d079483189408aa58100a872e09e0561c8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

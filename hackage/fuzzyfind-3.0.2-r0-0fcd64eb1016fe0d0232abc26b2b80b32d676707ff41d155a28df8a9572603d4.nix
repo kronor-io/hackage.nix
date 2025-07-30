@@ -21,7 +21,7 @@
       synopsis = "Fuzzy text matching";
       description = "A package that provides an API for fuzzy text search in Haskell, using a modified version of the Smith-Waterman algorithm. The search is intended to behave similarly to the excellent fzf tool by Junegunn Choi.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."massiv" or (errorHandler.buildDepError "massiv"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "bench" = {
           depends = [
@@ -39,10 +39,10 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
             (hsPkgs."fuzzyfind" or (errorHandler.buildDepError "fuzzyfind"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -51,12 +51,12 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."fuzzyfind" or (errorHandler.buildDepError "fuzzyfind"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Vertex enumeration";
       description = "Vertex enumeration of convex polytopes given by linear inequalities.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."monad-logger" or (errorHandler.buildDepError "monad-logger"))
           (hsPkgs."vector-space" or (errorHandler.buildDepError "vector-space"))
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."vertexenum" or (errorHandler.buildDepError "vertexenum"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "A 2019 fork of an ncurses mp3 player written in Haskell";
       description = "An mp3 player with a curses frontend.  Playlists are populated by\npassing file and directory names on the command line.  'h' displays\nhelp.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "hmp3" = {
@@ -40,10 +40,10 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ];
+          ];
           libs = [ (pkgs."ncursesw" or (errorHandler.sysDepError "ncursesw")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

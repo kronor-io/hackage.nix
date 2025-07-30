@@ -21,11 +21,11 @@
       synopsis = "Gruvbox colors for use in Haskell";
       description = "See README.md at https://github.com/ccntrq/gruvbox-colors-hs";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

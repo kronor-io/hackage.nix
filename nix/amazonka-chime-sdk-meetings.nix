@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:06:36Z";
         sha256 = "f8ce5cd0ca053428de915e3a542aebeb218217da0aebc0c3dcdd26828c90d8ed";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-chime-sdk-meetings-2.0-r1-e566d63e139a435b9273a142fcb004bb4223a61103b205a0c4d6e3ccab46e989.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:42:05Z";
         sha256 = "e566d63e139a435b9273a142fcb004bb4223a61103b205a0c4d6e3ccab46e989";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

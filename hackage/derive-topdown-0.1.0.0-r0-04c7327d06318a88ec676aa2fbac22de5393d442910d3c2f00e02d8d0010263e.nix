@@ -21,7 +21,7 @@
       synopsis = "Derive type class instances";
       description = "This package will make it easier to derive class instance for complex composited data types by using Template Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,9 +34,9 @@
           (hsPkgs."th-abstraction" or (errorHandler.buildDepError "th-abstraction"))
           (hsPkgs."th-expand-syns" or (errorHandler.buildDepError "th-expand-syns"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "derive-topdown-test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."th-abstraction" or (errorHandler.buildDepError "th-abstraction"))
             (hsPkgs."th-expand-syns" or (errorHandler.buildDepError "th-expand-syns"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

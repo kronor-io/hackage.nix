@@ -21,7 +21,7 @@
       synopsis = "Commandline tool to deal with IPv6 address text representations";
       description = "Commandline tool to validate, canonize and generate IPv6 address text representations";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "ip6addr" = {
@@ -30,9 +30,9 @@
             (hsPkgs."IPv6Addr" or (errorHandler.buildDepError "IPv6Addr"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

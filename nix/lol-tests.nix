@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-02-19T02:43:39Z";
         sha256 = "e9609a4b8218427c114f7356d733d13a89fe66688405c8874f5a0c4ed8f19afe";
-        };
+      };
       r1 = {
         nix = import ../hackage/lol-tests-0.0.0.1-r1-39058c9844930c138aed3e9135879c07de330ae36259e5799c0cdf96fc9ca9d2.nix;
         revNum = 1;
         revTimestamp = "2017-02-23T20:24:42Z";
         sha256 = "39058c9844930c138aed3e9135879c07de330ae36259e5799c0cdf96fc9ca9d2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

@@ -12,7 +12,7 @@
       containers = true;
       distributive = true;
       indexed-traversable = true;
-      };
+    };
     package = {
       specVersion = "1.10";
       identifier = { name = "comonad"; version = "5.0.9"; };
@@ -25,7 +25,7 @@
       synopsis = "Comonads";
       description = "Comonads.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = (([
@@ -33,8 +33,8 @@
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."transformers-compat" or (errorHandler.buildDepError "transformers-compat"))
-          ] ++ (pkgs.lib).optional (flags.containers) (hsPkgs."containers" or (errorHandler.buildDepError "containers"))) ++ (pkgs.lib).optional (flags.distributive) (hsPkgs."distributive" or (errorHandler.buildDepError "distributive"))) ++ (pkgs.lib).optional (flags.indexed-traversable) (hsPkgs."indexed-traversable" or (errorHandler.buildDepError "indexed-traversable"));
+        ] ++ pkgs.lib.optional (flags.containers) (hsPkgs."containers" or (errorHandler.buildDepError "containers"))) ++ pkgs.lib.optional (flags.distributive) (hsPkgs."distributive" or (errorHandler.buildDepError "distributive"))) ++ pkgs.lib.optional (flags.indexed-traversable) (hsPkgs."indexed-traversable" or (errorHandler.buildDepError "indexed-traversable"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

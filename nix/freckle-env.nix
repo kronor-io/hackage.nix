@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-07-25T20:58:33Z";
         sha256 = "7ef34d6f1814f181a413d11e832b19020d20d51a26d4c5355e916d633f366a1f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "76dc5fbf0be27a6e57087bd0d25feba72ab3e1339a873960b9f7914ff66775ef";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2024-08-09T19:34:51Z";
         sha256 = "a88240151f17082e28de2bca17254a4f5ca84b3a0786363b5e074fdc4b6f7498";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.0.1.2" = {
+    sha256 = "82ee10c465e2bc2a0147e530795d7abea9295ab0da9fa310901042f927b83980";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/freckle-env-0.0.1.2-r0-2c165492b4b923bbeea9b63102c4b329167cecc75bafd3ccfe0bc01ca873ad96.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T00:36:29Z";
+        sha256 = "2c165492b4b923bbeea9b63102c4b329167cecc75bafd3ccfe0bc01ca873ad96";
+      };
+      default = "r0";
+    };
+  };
+}

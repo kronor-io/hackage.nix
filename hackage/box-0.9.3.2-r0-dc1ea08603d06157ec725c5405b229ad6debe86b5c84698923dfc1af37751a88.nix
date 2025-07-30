@@ -21,7 +21,7 @@
       synopsis = "A profunctor effect system?";
       description = "This might be a profunctor effect system, but is unlike all the others, so it's hard to say for sure.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,17 +39,17 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

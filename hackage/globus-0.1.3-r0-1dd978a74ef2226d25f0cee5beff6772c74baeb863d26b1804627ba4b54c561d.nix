@@ -21,7 +21,7 @@
       synopsis = "Globus Data Transfer";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."req" or (errorHandler.buildDepError "req"))
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

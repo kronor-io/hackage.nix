@@ -21,7 +21,7 @@
       synopsis = "Networked stream transducers";
       description = "Networked stream transducers\n\nRúnar Bjarnason's talk on machines can be downloaded from:\n<http://web.archive.org/web/20161029161813/https://dl.dropboxusercontent.com/u/4588997/Machines.pdf>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."transformers-compat" or (errorHandler.buildDepError "transformers-compat"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."void" or (errorHandler.buildDepError "void"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."pipes" or (errorHandler.buildDepError "pipes"))
             (hsPkgs."streaming" or (errorHandler.buildDepError "streaming"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Simple and easy network connection API";
       description = "Simple network library for all your connection needs.\n\nFeatures: Really simple to use, SSL/TLS, SOCKS.\n\nThis library provides a very simple api to create sockets\nto a destination with the choice of SSL/TLS, and SOCKS.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."socks" or (errorHandler.buildDepError "socks"))
           (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
           (hsPkgs."crypton-x509-system" or (errorHandler.buildDepError "crypton-x509-system"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

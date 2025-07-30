@@ -21,16 +21,16 @@
       synopsis = "Codegen Haskell types to other languages";
       description = "This package provides a way to generate code for other languages from Haskell types.\nIt's target language agnostic and based on type classes.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."relude" or (errorHandler.buildDepError "relude"))
           (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."string-conversions" or (errorHandler.buildDepError "string-conversions"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

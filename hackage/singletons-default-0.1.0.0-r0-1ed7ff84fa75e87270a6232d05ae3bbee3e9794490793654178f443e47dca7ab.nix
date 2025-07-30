@@ -21,7 +21,7 @@
       synopsis = "An optional type with type level default";
       description = "Please see the README on GitHub at <https://github.com/morphismtech/singletons-default#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
           (hsPkgs."singletons" or (errorHandler.buildDepError "singletons"))
           (hsPkgs."singletons-base" or (errorHandler.buildDepError "singletons-base"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

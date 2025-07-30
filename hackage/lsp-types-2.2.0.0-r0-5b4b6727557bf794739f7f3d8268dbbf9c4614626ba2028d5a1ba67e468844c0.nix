@@ -21,7 +21,7 @@
       synopsis = "Haskell library for the Microsoft Language Server Protocol, data types";
       description = "An implementation of the types to allow language implementors to\nsupport the Language Server Protocol for their specific language.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -46,11 +46,11 @@
           (hsPkgs."some" or (errorHandler.buildDepError "some"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ] ++ [
+        ] ++ [
           (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-          ]) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.6") (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"));
+        ]) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.6") (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"));
         buildable = true;
-        };
+      };
       sublibs = {
         "metamodel" = {
           depends = [
@@ -60,9 +60,9 @@
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "lsp-types-quickcheck" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -72,10 +72,10 @@
             (hsPkgs."quickcheck-instances" or (errorHandler.buildDepError "quickcheck-instances"))
             (hsPkgs."generic-arbitrary" or (errorHandler.buildDepError "generic-arbitrary"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "generator" = {
           depends = [
@@ -89,10 +89,10 @@
             (hsPkgs."regex" or (errorHandler.buildDepError "regex"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "lsp-types-test" = {
           depends = [
@@ -107,12 +107,12 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."quickcheck-instances" or (errorHandler.buildDepError "quickcheck-instances"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

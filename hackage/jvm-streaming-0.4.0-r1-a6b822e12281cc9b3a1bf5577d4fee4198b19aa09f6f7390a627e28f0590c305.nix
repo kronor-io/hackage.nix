@@ -22,12 +22,12 @@
       description = "The hackage package has been superseded by the github repository which builds with Bazel. Please see https://github.com/tweag/inline-java/tree/master/jvm-streaming#readme";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.inline-java or (pkgs.buildPackages.inline-java or (errorHandler.setupDepError "inline-java")))
-        (hsPkgs.buildPackages.jvm-batching or (pkgs.buildPackages.jvm-batching or (errorHandler.setupDepError "jvm-batching")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.inline-java or (pkgs.pkgsBuildBuild.inline-java or (errorHandler.setupDepError "inline-java")))
+        (hsPkgs.pkgsBuildBuild.jvm-batching or (pkgs.pkgsBuildBuild.jvm-batching or (errorHandler.setupDepError "jvm-batching")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."singletons" or (errorHandler.buildDepError "singletons"))
           (hsPkgs."streaming" or (errorHandler.buildDepError "streaming"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."jvm-streaming" or (errorHandler.buildDepError "jvm-streaming"))
             (hsPkgs."streaming" or (errorHandler.buildDepError "streaming"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "micro-benchmarks" = {
           depends = [
@@ -69,9 +69,9 @@
             (hsPkgs."streaming" or (errorHandler.buildDepError "streaming"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,25 +21,25 @@
       synopsis = "a simple and fast 64-bit hash function";
       description = "Haskell port of ChibiHash, a simple and fast 64-bit hash function.\n\nFeatures:\n\n* Fast 64-bit hashing\n* Suitable for hash tables and hash-based data structures\n\nFor more information, see the article \"ChibiHash: A small, fast 64-bit hash function\"\nat https://nrk.neocities.org/articles/chibihash";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "ChibiHash-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ChibiHash" or (errorHandler.buildDepError "ChibiHash"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "ChibiHash-test" = {
           depends = [
@@ -47,9 +47,9 @@
             (hsPkgs."ChibiHash" or (errorHandler.buildDepError "ChibiHash"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

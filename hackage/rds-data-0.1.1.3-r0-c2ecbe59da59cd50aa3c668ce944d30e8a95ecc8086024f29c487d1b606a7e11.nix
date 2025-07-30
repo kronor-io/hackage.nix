@@ -21,7 +21,7 @@
       synopsis = "Codecs for use with AWS rds-data";
       description = "Codecs for use with AWS rds-data.";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "codecs" = {
@@ -44,9 +44,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "polysemy" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -71,9 +71,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "testlib" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -104,10 +104,10 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "rds-data" = {
           depends = [
@@ -140,10 +140,10 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "rds-data-test" = {
           depends = [
@@ -163,12 +163,12 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
+        };
         "rds-data-integration" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -203,12 +203,12 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."ulid" or (errorHandler.buildDepError "ulid"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

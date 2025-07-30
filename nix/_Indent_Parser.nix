@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2007-10-08T04:44:14Z";
         sha256 = "be990a072693cf2bd74ede2b8f1ec95393e0203c705a140b0253823d1c228701";
-        };
+      };
       r1 = {
         nix = import ../hackage/IndentParser-0.1-r1-99557d3b7e720167e16ff7615b00ef48216e93ec9606be4bf042f51fba8f6dfe.nix;
         revNum = 1;
         revTimestamp = "2017-05-17T22:33:59Z";
         sha256 = "99557d3b7e720167e16ff7615b00ef48216e93ec9606be4bf042f51fba8f6dfe";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2" = {
     sha256 = "529635953f554291a05ac7f29844448277e5c38470b96b4509e588ce502d9456";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2007-10-17T13:39:02Z";
         sha256 = "60b10f50f99a8c8bb7e604e884984eedbd51493f5c7d65eb4906132569950fa5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.1" = {
     sha256 = "520c9d235ff0afb9ce771bf1b596a5096c46e2204eb1be299670032b5a453351";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2007-10-19T10:45:09Z";
         sha256 = "aeb06227b0dd0eaad61b5c7dd3dd2a20bdedee1e24d9b63a53d6e1bee94a1ac5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

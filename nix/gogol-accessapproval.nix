@@ -7,8 +7,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:40:10Z";
         sha256 = "f5ab357d8101f3097c9bf0792f11694c16d9935fab01047e9884d87421cbf468";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "12f95927913bc2f8cda5fc88e69681a59784d8e001e3152a15bff297275fc833";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-accessapproval-1.0.0-r0-e32dbb2277c48ecd81d6d2278eca6316134238832a34fe3334f5e0f322b6ba8e.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:06:29Z";
+        sha256 = "e32dbb2277c48ecd81d6d2278eca6316134238832a34fe3334f5e0f322b6ba8e";
+      };
+      default = "r0";
+    };
+  };
+}

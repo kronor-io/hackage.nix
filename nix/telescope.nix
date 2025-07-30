@@ -7,8 +7,32 @@
         revNum = 0;
         revTimestamp = "2024-10-31T17:33:41Z";
         sha256 = "5c6544204d2b5fd2e3daadf9eb355f4cfa5093941a6c3a3c7407142901030114";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.3.0" = {
+    sha256 = "39745bae0c1902ed92e5b8e1f0f02a92d3505af66820503f5a48511518750e1a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/telescope-0.3.0-r0-710f547e4bbf3b7e8f0e61b4746951e973d8aa9de88baaec1f74a68f992c398d.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-29T17:59:22Z";
+        sha256 = "710f547e4bbf3b7e8f0e61b4746951e973d8aa9de88baaec1f74a68f992c398d";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.0" = {
+    sha256 = "27e54b9f5d674ee42e94d22ec2c9af1cb8a6896667c4728b6b6672fa19d2748d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/telescope-0.4.0-r0-252b106adfaaef1a28ad0522bca8cc52326a119d45aa7df4d5d0b4af9f09ee1e.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-27T16:26:03Z";
+        sha256 = "252b106adfaaef1a28ad0522bca8cc52326a119d45aa7df4d5d0b4af9f09ee1e";
+      };
+      default = "r0";
+    };
+  };
+}

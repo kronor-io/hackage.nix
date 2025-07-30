@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-07-13T00:36:57Z";
         sha256 = "8748292227444591a9e5f04c3a810395b24fb1522ebb26654e426ac69ac66f31";
-        };
+      };
       r1 = {
         nix = import ../hackage/definitive-reactive-1.0-r1-8c3c6afcc4ce7569ede32c8006d1d66fb10448321159f875d1dec03419bd7797.nix;
         revNum = 1;
         revTimestamp = "2014-07-13T20:25:51Z";
         sha256 = "8c3c6afcc4ce7569ede32c8006d1d66fb10448321159f875d1dec03419bd7797";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

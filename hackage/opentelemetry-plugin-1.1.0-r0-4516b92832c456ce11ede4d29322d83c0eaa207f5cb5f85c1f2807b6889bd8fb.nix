@@ -21,7 +21,7 @@
       synopsis = "GHC plugin for open telemetry";
       description = "This package provides a GHC plugin that exports each module's build times to an open telemetry collector.  See the included `README` below for more details.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,8 +38,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://gitlab.com/jjba-projects/wikimusic-api>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -73,18 +73,18 @@
           (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
           (hsPkgs."wikimusic-model-hs" or (errorHandler.buildDepError "wikimusic-model-hs"))
           (hsPkgs."wikimusic-api-spec" or (errorHandler.buildDepError "wikimusic-api-spec"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "wikimusic-api-exe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."wikimusic-api" or (errorHandler.buildDepError "wikimusic-api"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -92,9 +92,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

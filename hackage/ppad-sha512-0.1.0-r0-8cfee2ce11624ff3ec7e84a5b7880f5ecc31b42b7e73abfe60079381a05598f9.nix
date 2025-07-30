@@ -21,15 +21,15 @@
       synopsis = "The SHA-512 and HMAC-SHA512 algorithms";
       description = "A pure implementation of SHA-512 and HMAC-SHA512 on strict and lazy\nByteStrings, as specified by RFC's 6234 and 2104.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "sha512-tests" = {
           depends = [
@@ -39,10 +39,10 @@
             (hsPkgs."ppad-sha512" or (errorHandler.buildDepError "ppad-sha512"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "sha512-bench" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."ppad-sha512" or (errorHandler.buildDepError "ppad-sha512"))
             (hsPkgs."SHA" or (errorHandler.buildDepError "SHA"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

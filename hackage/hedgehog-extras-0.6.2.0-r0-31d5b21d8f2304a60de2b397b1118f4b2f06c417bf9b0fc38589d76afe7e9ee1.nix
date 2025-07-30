@@ -21,7 +21,7 @@
       synopsis = "Supplemental library for hedgehog";
       description = "Supplemental library for hedgehog.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -55,9 +55,9 @@
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ] ++ (pkgs.lib).optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
+        ] ++ pkgs.lib.optional (system.isWindows) (hsPkgs."Win32" or (errorHandler.buildDepError "Win32"));
         buildable = true;
-        };
+      };
       tests = {
         "hedgehog-extras-test" = {
           depends = [
@@ -67,12 +67,12 @@
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

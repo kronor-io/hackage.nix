@@ -21,17 +21,17 @@
       synopsis = "Portable regex library for Perl 5 compatible regular expressions";
       description = "A small, efficient and portable regex library for Perl 5 compatible regular expressions.\n\nThe PCRE library is a set of functions that implement regular\nexpression pattern matching using the same syntax and semantics as Perl 5.\n\nIf installation fails with missing pcre/pkg-config, try installing\nthe @libpcre3-dev@ package (linux) or running @brew install pcre pkg-config@ (macOS).\n";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
-        libs = (pkgs.lib).optional (!flags.use-pkg-config) (pkgs."pcre" or (errorHandler.sysDepError "pcre"));
-        pkgconfig = (pkgs.lib).optional (flags.use-pkg-config) (pkgconfPkgs."libpcre" or (errorHandler.pkgConfDepError "libpcre"));
+        ];
+        libs = pkgs.lib.optional (!flags.use-pkg-config) (pkgs."pcre" or (errorHandler.sysDepError "pcre"));
+        pkgconfig = pkgs.lib.optional (flags.use-pkg-config) (pkgconfPkgs."libpcre" or (errorHandler.pkgConfDepError "libpcre"));
         buildable = true;
-        };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."pcre-light" or (errorHandler.buildDepError "pcre-light"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

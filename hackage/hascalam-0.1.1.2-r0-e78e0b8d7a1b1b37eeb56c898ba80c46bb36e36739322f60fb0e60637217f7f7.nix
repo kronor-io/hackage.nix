@@ -21,11 +21,11 @@
       synopsis = "Haskell to and from Scalameta";
       description = "Use a script to convert from Scalameta\nSource string to mirroring Haskell\nclasses, types and instances. Use the\nShow instances to convert from mirrored\nHaskell types to Scalameta string.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

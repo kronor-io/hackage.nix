@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2015-11-28T20:18:19Z";
         sha256 = "5f17fa44e865b0e40c79bdb9afef7cb113f74cd76aa0a34bd2202ddea61e6ca6";
-        };
+      };
       r1 = {
         nix = import ../hackage/mdapi-1-r1-23b50bbb40d56c56dd89e5d0d36b62c7c31e9c0046362a56dfcab3c81a753139.nix;
         revNum = 1;
         revTimestamp = "2015-11-28T20:24:37Z";
         sha256 = "23b50bbb40d56c56dd89e5d0d36b62c7c31e9c0046362a56dfcab3c81a753139";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

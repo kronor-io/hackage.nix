@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-conduit";
         version = "0.1.0.1";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/conduit#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."conduit" or (errorHandler.buildDepError "conduit"))
           (hsPkgs."hs-opentelemetry-api" or (errorHandler.buildDepError "hs-opentelemetry-api"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

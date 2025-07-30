@@ -21,7 +21,7 @@
       synopsis = "Library for Fedora release versions";
       description = "This library provides the Branch and Release data types\nand various associated metadata functions for\nFedora releases (Fedora and EPEL) needed for\npackaging development and building.\nIt caches current release data from Fedora Bodhi.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,8 +31,8 @@
           (hsPkgs."cached-json-file" or (errorHandler.buildDepError "cached-json-file"))
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
           (hsPkgs."safe" or (errorHandler.buildDepError "safe"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

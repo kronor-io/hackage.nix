@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-08-06T15:50:38Z";
         sha256 = "cb0ea00ef15f6d1077cb312c4199336bd8e0f92f69326a42c41eb233b4afd2d6";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "a717a8ba375c2f098d814bba93941dce960904c3767eff8d11cf501a840c372f";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2015-08-07T00:14:57Z";
         sha256 = "3ce285ae0a9ed0d6800cde84bcacc66d49334603910b25e76740c07391a6774b";
-        };
+      };
       r1 = {
         nix = import ../hackage/formattable-0.1.1-r1-042c0fca77d5609d2d9d68e8f586c72c34309ab89d9763847071dcf2eb051218.nix;
         revNum = 1;
         revTimestamp = "2025-02-25T15:52:18Z";
         sha256 = "042c0fca77d5609d2d9d68e8f586c72c34309ab89d9763847071dcf2eb051218";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

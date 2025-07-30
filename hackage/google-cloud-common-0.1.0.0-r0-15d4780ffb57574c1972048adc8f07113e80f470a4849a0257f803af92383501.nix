@@ -21,7 +21,7 @@
       synopsis = "GCP Client for Haskell";
       description = "A common module for all GCP Client packages.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "google-cloud-common-test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

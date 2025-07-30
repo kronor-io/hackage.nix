@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2023-05-11T10:41:51Z";
         sha256 = "f7b40c5de902cf223fe1389106f0b26f508c648a86b943c6fc4e145138d65396";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "dd5566518752cc0a4ea003e0d85815c121428e6825bae72d6108c81d5b2f8854";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2023-12-06T12:27:20Z";
         sha256 = "a8ed8288816b2e9f8058a53fca0c6f658f19cfba7acc398b8ac210f1a95af875";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1" = {
     sha256 = "7fec8518d72c23586304ee18a9efd1b1f5e8ae128ee0e7158a8f03022026d538";
     revisions = {
@@ -31,14 +31,14 @@
         revNum = 0;
         revTimestamp = "2023-12-22T19:46:12Z";
         sha256 = "14623d6c2f1bb3a14856cc5c367ff66b40d167692b3771a2b1f77d436e990920";
-        };
+      };
       r1 = {
         nix = import ../hackage/linear-programming-0.0.1-r1-ce2541e27aab7d7f6b02e9986dab85ddcc18c13fd74d8f6ab49f19b6eb301e3f.nix;
         revNum = 1;
         revTimestamp = "2025-01-06T11:21:48Z";
         sha256 = "ce2541e27aab7d7f6b02e9986dab85ddcc18c13fd74d8f6ab49f19b6eb301e3f";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

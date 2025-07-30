@@ -21,7 +21,7 @@
       synopsis = "A small wrapper around dmenu";
       description = "hdmenu is a small wrapper around dmenu that can 1. Display commands in order of usage and, optionally, apply a frequency decay every time an item is selected. 2. Specify extra files to consider, which will be opened by a program of your choice (e.g., xdg-open). 3. Open certain executables inside of your terminal.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
           (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hdmenu" = {
           depends = [
@@ -62,10 +62,10 @@
             (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -87,9 +87,9 @@
             (hsPkgs."tomland" or (errorHandler.buildDepError "tomland"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

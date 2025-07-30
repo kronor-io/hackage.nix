@@ -21,7 +21,7 @@
       synopsis = "Minion conduit support";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,18 +33,18 @@
           (hsPkgs."minion" or (errorHandler.buildDepError "minion"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "minion-conduit-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."minion-conduit" or (errorHandler.buildDepError "minion-conduit"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Tunable sorting for responsive robustness and beyond";
       description = "A tunable tensor-based structure for sorting algorithms \nalong with various sample configurations. Birthed from an \nexploration of robustness in algorithms for sorting \nintegers, inspired by \n[Beyond Efficiency](https://www.cs.unm.edu/~ackley/be-201301131528.pdf) \nby David H. Ackley and \n[Beyond Efficiency by Dave Ackley](https://futureofcoding.org/episodes/070) \nby Future of Coding.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,19 +29,19 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."random-shuffle" or (errorHandler.buildDepError "random-shuffle"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "tensort" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tensort" or (errorHandler.buildDepError "tensort"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tensort-test" = {
           depends = [
@@ -49,9 +49,9 @@
             (hsPkgs."tensort" or (errorHandler.buildDepError "tensort"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

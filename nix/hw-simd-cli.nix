@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2021-03-17T16:17:32Z";
         sha256 = "20e2de7489a1cfd1bfea45d29ccd459cdb6ad6f508a095eb50e8463a2c455040";
-        };
+      };
       r1 = {
         nix = import ../hackage/hw-simd-cli-0.0.0.1-r1-2b2cdf00a2bb475ad0f485aa4c2953b74cbb2d33fa913cba348ee742ce6758b6.nix;
         revNum = 1;
         revTimestamp = "2021-09-18T07:13:22Z";
         sha256 = "2b2cdf00a2bb475ad0f485aa4c2953b74cbb2d33fa913cba348ee742ce6758b6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

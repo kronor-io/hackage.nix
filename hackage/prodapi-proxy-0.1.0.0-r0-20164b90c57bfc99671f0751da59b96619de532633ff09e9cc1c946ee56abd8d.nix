@@ -21,7 +21,7 @@
       synopsis = "write an HTTP proxy with prodapi counters";
       description = "a library to write loadbalancers compatible with prodapi discovery and healthchecks";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,8 +42,8 @@
           (hsPkgs."random-shuffle" or (errorHandler.buildDepError "random-shuffle"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
           (hsPkgs."warp-tls" or (errorHandler.buildDepError "warp-tls"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

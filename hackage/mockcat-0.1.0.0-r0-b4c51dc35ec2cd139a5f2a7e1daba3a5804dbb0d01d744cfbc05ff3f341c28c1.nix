@@ -21,16 +21,16 @@
       synopsis = "Simple mock function library for test in Haskell.";
       description = "mockcat is simple mock library for test in Haskell.\n\nmockcat provides so-called stubbing and verification functions.\n\nStub functions can return values of Pure Types as well as value of Monadic Types.\n\nExample:\n\n@\nf \\<- createStubFn $ \"expected arg\" |\\> \"return value\"\nprint $ f \"expected arg\" -- \"return value\"\n@\n\nFor more please see the README on GitHub at <https://github.com/pujoheadsoft/mockcat#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "mockcat-test" = {
           depends = [
@@ -39,9 +39,9 @@
             (hsPkgs."mockcat" or (errorHandler.buildDepError "mockcat"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

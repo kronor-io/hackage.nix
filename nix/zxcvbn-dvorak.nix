@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-09-12T19:05:18Z";
         sha256 = "4cda9a490d36ee6178f8113f97a8e07a820b29d17531c54206a74108a1fa2388";
-        };
+      };
       r1 = {
         nix = import ../hackage/zxcvbn-dvorak-0.1.0.0-r1-07b3a32c2fb073c5448d60327bf46e177d20971145a001e1088c13aad880a6a6.nix;
         revNum = 1;
         revTimestamp = "2019-10-14T16:15:19Z";
         sha256 = "07b3a32c2fb073c5448d60327bf46e177d20971145a001e1088c13aad880a6a6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

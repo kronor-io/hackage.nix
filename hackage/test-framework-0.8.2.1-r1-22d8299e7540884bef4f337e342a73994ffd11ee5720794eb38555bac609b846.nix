@@ -21,7 +21,7 @@
       synopsis = "Framework for running and organising tests, with HUnit and QuickCheck support";
       description = "Allows tests such as QuickCheck properties and HUnit test cases to be assembled into test groups, run in\nparallel (but reported in deterministic order, to aid diff interpretation) and filtered and controlled by\ncommand line options. All of this comes with colored test output, progress reporting and test statistics output.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."xml" or (errorHandler.buildDepError "xml"))
           (hsPkgs."hostname" or (errorHandler.buildDepError "hostname"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-framework-tests" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
             (hsPkgs."utf8-string" or (errorHandler.buildDepError "utf8-string"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

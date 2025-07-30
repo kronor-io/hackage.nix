@@ -21,7 +21,7 @@
       synopsis = "Type-level default fields for aeson Generic FromJSON parser";
       description = "Define default values for missing FromJSON object fields within field type declaration. \n\nIt becomes handy e.g. for parsing yaml configuration files. The default values are mostly defined\ndirectly at the type level so that the user doesn't have to write manual FromJSON instance.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "aeson-default-field-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

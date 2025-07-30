@@ -21,7 +21,7 @@
       synopsis = "Adaptation of the wreq library for the effectful ecosystem.";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,17 +30,17 @@
           (hsPkgs."effectful-core" or (errorHandler.buildDepError "effectful-core"))
           (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
           (hsPkgs."wreq" or (errorHandler.buildDepError "wreq"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "wreq-effectful-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."wreq-effectful" or (errorHandler.buildDepError "wreq-effectful"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Config for TLS Encrypted Client Hello";
       description = "Config types for TLS Encrypted Client Hello to glue DNS and TLS";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
           (hsPkgs."network-byte-order" or (errorHandler.buildDepError "network-byte-order"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "ech-gen" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."base64-bytestring" or (errorHandler.buildDepError "base64-bytestring"))
             (hsPkgs."ech-config" or (errorHandler.buildDepError "ech-config"))
             (hsPkgs."hpke" or (errorHandler.buildDepError "hpke"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
         };
       };
-    }
+    };
+  }

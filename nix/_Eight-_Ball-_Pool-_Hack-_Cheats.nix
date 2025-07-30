@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2018-02-22T22:19:29Z";
         sha256 = "56074db56d458b11a344bf4954d0c71444179f916d4d93f12c96e69f8226b306";
-        };
+      };
       r1 = {
         nix = import ../hackage/Eight-Ball-Pool-Hack-Cheats-1.0.1-r1-ae55f9bc191b21390a67d519a0c9dd60291746cb795639d9f2b51d8bbb3d2f53.nix;
         revNum = 1;
         revTimestamp = "2018-02-22T22:21:40Z";
         sha256 = "ae55f9bc191b21390a67d519a0c9dd60291746cb795639d9f2b51d8bbb3d2f53";
-        };
+      };
       r2 = {
         nix = import ../hackage/Eight-Ball-Pool-Hack-Cheats-1.0.1-r2-bfbaae2c043a9668ff45b70c7e50882ab8b3a49a473feefa70521f750bc3b38d.nix;
         revNum = 2;
         revTimestamp = "2018-02-22T22:59:51Z";
         sha256 = "bfbaae2c043a9668ff45b70c7e50882ab8b3a49a473feefa70521f750bc3b38d";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

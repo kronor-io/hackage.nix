@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:40:01Z";
         sha256 = "52feb22d8e7c7d47b5346a817ac3f030adc611786a2dd112c3dba671dd33d32a";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-location-2.0-r1-d2ae2e81ba2d6d7fb604e2d91793562dd6a36ab19bb92724449c52449f3ec15c.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:50:16Z";
         sha256 = "d2ae2e81ba2d6d7fb604e2d91793562dd6a36ab19bb92724449c52449f3ec15c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

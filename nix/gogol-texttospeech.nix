@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:21:01Z";
         sha256 = "1f9b0196ceb3b5c9db00b6ee82713b00456d0156ec8e9dbd2ba7e3054d9564f1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "93ba649278e9cbf68a792579dc20f2108cc22207a2dd21dc4a8f1e3082c34959";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:39:26Z";
         sha256 = "edf94cedd09b647415d611c08fe22833271e8ba1ba577443347b3281ee3dd1ae";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "756009121085ff7e7ba81b6ddadab8e86360530d55394a2b019936b612215435";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-texttospeech-1.0.0-r0-819526ff1170aa0d4fd13454cf056643b52101d8b31eecadfa59853bcaf4ee8a.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:29Z";
+        sha256 = "819526ff1170aa0d4fd13454cf056643b52101d8b31eecadfa59853bcaf4ee8a";
+      };
+      default = "r0";
+    };
+  };
+}

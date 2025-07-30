@@ -21,14 +21,14 @@
       synopsis = "low-level binding to libpq: pkg-config based provider";
       description = "This is a binding to libpq: the C application\nprogrammer's interface to PostgreSQL. libpq is a\nset of library functions that allow client\nprograms to pass queries to the PostgreSQL\nbackend server and to receive the results of\nthese queries.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         pkgconfig = [
           (pkgconfPkgs."libpq" or (errorHandler.pkgConfDepError "libpq"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

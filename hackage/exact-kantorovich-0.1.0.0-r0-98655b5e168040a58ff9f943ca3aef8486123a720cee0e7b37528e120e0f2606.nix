@@ -21,7 +21,7 @@
       synopsis = "Exact Kantorovich distance between finite probability measures.";
       description = "This small package allows to compute the exact Kantorovich distance between two finite probability measures. This assumes that the probability masses are rational numbers and that the distance function takes rational values only.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."monad-logger" or (errorHandler.buildDepError "monad-logger"))
           (hsPkgs."matrix" or (errorHandler.buildDepError "matrix"))
           (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."exact-kantorovich" or (errorHandler.buildDepError "exact-kantorovich"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

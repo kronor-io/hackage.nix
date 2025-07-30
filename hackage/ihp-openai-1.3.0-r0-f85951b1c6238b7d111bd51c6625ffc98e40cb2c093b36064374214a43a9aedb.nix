@@ -21,7 +21,7 @@
       synopsis = "Call GPT4 from your Haskell apps";
       description = "Streaming functions to access the OpenAI APIs, with Retry and Function Calling";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."HsOpenSSL" or (errorHandler.buildDepError "HsOpenSSL"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."ihp-openai" or (errorHandler.buildDepError "ihp-openai"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

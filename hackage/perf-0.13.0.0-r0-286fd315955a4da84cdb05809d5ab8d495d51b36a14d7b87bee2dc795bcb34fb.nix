@@ -21,7 +21,7 @@
       synopsis = "Performance methods and monad.";
       description = "A set of tools to measure performance of Haskell programs.\nSee the Perf module and readme for an example and full API documentation.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "perf-explore" = {
           depends = [
@@ -51,18 +51,18 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."perf" or (errorHandler.buildDepError "perf"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "perf-bench" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."perf" or (errorHandler.buildDepError "perf"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

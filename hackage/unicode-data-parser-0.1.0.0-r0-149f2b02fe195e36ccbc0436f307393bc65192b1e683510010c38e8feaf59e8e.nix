@@ -21,14 +21,14 @@
       synopsis = "Parsers for Unicode Character Database (UCD) files";
       description = "This package provides simple\n[ByteString](https://hackage.haskell.org/package/bytestring/docs/Data-ByteString.html#t:ByteString)\nparsers for the [Unicode character database](https://www.unicode.org/ucd/) (UCD).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

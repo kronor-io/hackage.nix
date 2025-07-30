@@ -21,7 +21,7 @@
       synopsis = "Tree Edit Distance to determine the similarity between two trees";
       description = "Dynamic Programming algorithm by Zhang Shasha to calculate the Tree Edit Distance";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."intmap-graph" or (errorHandler.buildDepError "intmap-graph"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "tree-edit-distance-exe" = {
           depends = [
@@ -44,10 +44,10 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."tree-edit-distance" or (errorHandler.buildDepError "tree-edit-distance"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tree-edit-distance-test" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."tree-edit-distance" or (errorHandler.buildDepError "tree-edit-distance"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

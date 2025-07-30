@@ -21,7 +21,7 @@
       synopsis = "Tribial tools";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/tools-yj#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."mono-traversable" or (errorHandler.buildDepError "mono-traversable"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tools-yj-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."tools-yj" or (errorHandler.buildDepError "tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

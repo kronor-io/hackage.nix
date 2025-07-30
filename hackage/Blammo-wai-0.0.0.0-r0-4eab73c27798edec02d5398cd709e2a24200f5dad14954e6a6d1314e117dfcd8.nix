@@ -21,7 +21,7 @@
       synopsis = "Using Blammo with WAI";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "readme" = {
           depends = [
@@ -51,9 +51,9 @@
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."yesod-core" or (errorHandler.buildDepError "yesod-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Type classes for concurrency with STM, ST and timing";
       description = "IO Monad class hierarchy compatible with:\n\n  * [io-sim](https://hackage.haskell.org/package/io-sim),\n  * [base](https://hackage.haskell.org/package/base),\n  * [async](https://hackage.haskell.org/package/async),\n  * [stm](https://hackage.haskell.org/package/stm),\n  * [exceptions](https://hackage.haskell.org/package/exceptions) &\n  * [time](https://hackage.haskell.org/package/time)\n\npackages.\n\n= Documentation\nhttps://input-output-hk.github.io/io-sim";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.10") (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.10") (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"));
         buildable = true;
-        };
+      };
       sublibs = {
         "strict-stm" = {
           depends = [
@@ -43,16 +43,16 @@
             (hsPkgs."array" or (errorHandler.buildDepError "array"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "strict-mvar" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "si-timers" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -62,9 +62,9 @@
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "mtl" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -72,19 +72,19 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."io-classes" or (errorHandler.buildDepError "io-classes"))
             (hsPkgs."io-classes".components.sublibs.si-timers or (errorHandler.buildDepError "io-classes:si-timers"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "testlib" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."io-classes".components.sublibs.strict-mvar or (errorHandler.buildDepError "io-classes:strict-mvar"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test-strict-mvar" = {
           depends = [
@@ -93,9 +93,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."io-classes".components.sublibs.testlib or (errorHandler.buildDepError "io-classes:testlib"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-si-timers" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -103,9 +103,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."io-classes".components.sublibs.si-timers or (errorHandler.buildDepError "io-classes:si-timers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

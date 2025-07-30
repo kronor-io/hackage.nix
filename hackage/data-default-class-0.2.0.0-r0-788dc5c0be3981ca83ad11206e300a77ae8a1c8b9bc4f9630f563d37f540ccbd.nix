@@ -21,13 +21,13 @@
       synopsis = "A class for types with a default value (compatibility shim)";
       description = "This module re-exports the 'Default' class from \"Data.Default\", for\ncompatibility with older code.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

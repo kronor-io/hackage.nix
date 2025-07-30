@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:39:12Z";
         sha256 = "6ee492d376169c7e28d06b32321f073016cafca25394569356624cc162deea1f";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-kinesis-video-signaling-2.0-r1-42d7da867898ce73b7c7b61af475a6fdf364c9d820e21b1ff5a94e6698f1263e.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:49:49Z";
         sha256 = "42d7da867898ce73b7c7b61af475a6fdf364c9d820e21b1ff5a94e6698f1263e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

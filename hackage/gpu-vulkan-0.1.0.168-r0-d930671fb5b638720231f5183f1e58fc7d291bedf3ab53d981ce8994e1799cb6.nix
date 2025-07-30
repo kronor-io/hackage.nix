@@ -21,7 +21,7 @@
       synopsis = "Vulkan library";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."tools-yj" or (errorHandler.buildDepError "tools-yj"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-test" = {
           depends = [
@@ -70,9 +70,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."tools-yj" or (errorHandler.buildDepError "tools-yj"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

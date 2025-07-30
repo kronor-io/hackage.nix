@@ -21,7 +21,7 @@
       synopsis = "An efficient and versatile typed range library.";
       description = "The range library alows the use of performant and versatile ranges in your code.\nIt supports bounded and unbounded ranges, ranges in a nested manner (like library\nversions), an efficient algebra of range computation and even a simplified interface\nfor ranges for the common cases. This library is far more efficient than using the\ndefault Data.List functions to approximate range behaviour. Performance is the major\nvalue offering of this library.\n\nIf this is your first time using this library it is highly recommended that you start\nwith \"Data.Range.Typed\"; it contains the basics of this library that meet most use\ncases.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."free" or (errorHandler.buildDepError "free"))
           (hsPkgs."optics-core" or (errorHandler.buildDepError "optics-core"))
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."free" or (errorHandler.buildDepError "free"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."typed-range" or (errorHandler.buildDepError "typed-range"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

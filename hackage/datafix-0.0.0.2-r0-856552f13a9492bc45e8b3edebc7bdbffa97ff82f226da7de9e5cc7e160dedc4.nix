@@ -22,11 +22,11 @@
       description = "Fixing data-flow problems in expression trees.\nThis should be useful if you want to write optimizations\nfor your favorite programming language.\nSee the Tutorial module for an introduction. After that,\nyou might want to take a look at the `examples/` folder\nin the [repository](https://github.com/sgraf812/datafix/tree/master/examples).";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-toolkit or (pkgs.buildPackages.cabal-toolkit or (errorHandler.setupDepError "cabal-toolkit")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-toolkit or (pkgs.pkgsBuildBuild.cabal-toolkit or (errorHandler.setupDepError "cabal-toolkit")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"))
-          ] ++ (pkgs.lib).optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"));
+        ] ++ pkgs.lib.optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"));
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = ([
@@ -58,9 +58,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."turtle" or (errorHandler.buildDepError "turtle"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ] ++ (pkgs.lib).optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))) ++ (pkgs.lib).optional (flags.no-lattices) (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"));
+          ] ++ pkgs.lib.optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))) ++ pkgs.lib.optional (flags.no-lattices) (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"));
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -68,10 +68,10 @@
             (hsPkgs."Glob" or (errorHandler.buildDepError "Glob"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."datafix" or (errorHandler.buildDepError "datafix"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = ([
@@ -90,9 +90,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."turtle" or (errorHandler.buildDepError "turtle"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ] ++ (pkgs.lib).optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))) ++ (pkgs.lib).optional (flags.no-lattices) (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"));
+          ] ++ pkgs.lib.optional (!flags.no-lattices) (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))) ++ pkgs.lib.optional (flags.no-lattices) (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -22,11 +22,11 @@
       description = "Nominal-flavoured implementation of data in a context of local names, following the ideas in <https://link.springer.com/article/10.1007/s001650200016 a new approach to abstract syntax with variable binding> (see also <http://www.gabbay.org.uk/papers.html#newaas-jv author's pdfs>).\n__The recommended landing page is \"Language.Nominal\", so please go there first.__ See also: a tutorial in \"Language.Nominal.Examples.Tutorial\"; a short development of untyped lambda-calculus in \"Language.Nominal.Examples.UntypedLambda\"; an example development of System F in \"Language.Nominal.Examples.SystemF\"; and an example development of an EUTxO-style blockchain in \"Language.Nominal.Examples.IdealisedEUTxO\".";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."syb" or (errorHandler.buildDepError "syb"))
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."TypeCompose" or (errorHandler.buildDepError "TypeCompose"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "nom-test" = {
           depends = [
@@ -52,12 +52,12 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."nom" or (errorHandler.buildDepError "nom"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
+        };
         "nom-doctest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -65,9 +65,9 @@
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."nom" or (errorHandler.buildDepError "nom"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "A lightweight golden test runner";
       description = "Language-agnostic golden test runner for command-line applications.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,18 +39,18 @@
           (hsPkgs."regex-pcre-builtin" or (errorHandler.buildDepError "regex-pcre-builtin"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "goldplate" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."goldplate" or (errorHandler.buildDepError "goldplate"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -59,12 +59,12 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."goldplate" or (errorHandler.buildDepError "goldplate"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.goldplate.components.exes.goldplate or (pkgs.buildPackages.goldplate or (errorHandler.buildToolDepError "goldplate:goldplate")))
-            ];
+            (hsPkgs.pkgsBuildBuild.goldplate.components.exes.goldplate or (pkgs.pkgsBuildBuild.goldplate or (errorHandler.buildToolDepError "goldplate:goldplate")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

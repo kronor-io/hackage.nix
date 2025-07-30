@@ -21,7 +21,7 @@
       synopsis = "VK_KHR_surface extension of the Vulkan API";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan-khr-surface#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."hetero-parameter-list" or (errorHandler.buildDepError "hetero-parameter-list"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-khr-surface-test" = {
           depends = [
@@ -46,9 +46,9 @@
             (hsPkgs."hetero-parameter-list" or (errorHandler.buildDepError "hetero-parameter-list"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

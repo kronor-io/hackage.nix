@@ -21,7 +21,7 @@
       synopsis = "Parse PostgreSQL DDL and DML: Haskell bindings for libpg_query";
       description = "pg-query offers Haskell bindings for @<https://github.com/pganalyze/libpg_query libpg_query>@, which makes use of the actual PostgreSQL server source to parse SQL queries and return the internal PostgreSQL parse tree.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,13 +33,13 @@
           (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
-          ];
+        ];
         libs = [ (pkgs."pg_query" or (errorHandler.sysDepError "pg_query")) ];
         build-tools = [
-          (hsPkgs.buildPackages.proto-lens-protoc.components.exes.proto-lens-protoc or (pkgs.buildPackages.proto-lens-protoc or (errorHandler.buildToolDepError "proto-lens-protoc:proto-lens-protoc")))
-          ];
+          (hsPkgs.pkgsBuildBuild.proto-lens-protoc.components.exes.proto-lens-protoc or (pkgs.pkgsBuildBuild.proto-lens-protoc or (errorHandler.buildToolDepError "proto-lens-protoc:proto-lens-protoc")))
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "pg-query-test" = {
           depends = [
@@ -55,13 +55,13 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            (hsPkgs.buildPackages.proto-lens-protoc.components.exes.proto-lens-protoc or (pkgs.buildPackages.proto-lens-protoc or (errorHandler.buildToolDepError "proto-lens-protoc:proto-lens-protoc")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+            (hsPkgs.pkgsBuildBuild.proto-lens-protoc.components.exes.proto-lens-protoc or (pkgs.pkgsBuildBuild.proto-lens-protoc or (errorHandler.buildToolDepError "proto-lens-protoc:proto-lens-protoc")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2022-06-08T09:31:33Z";
         sha256 = "ca5318d60376040d914f974c40db3134b42c6e604e12fe3b4bff4cdb4a3db1be";
-        };
+      };
       r1 = {
         nix = import ../hackage/posable-1.0.0.0-r1-2d4a8076491fcc7693350672561d5d7528c847bcd7e4d888e9aea91b847101d8.nix;
         revNum = 1;
         revTimestamp = "2022-06-14T14:02:09Z";
         sha256 = "2d4a8076491fcc7693350672561d5d7528c847bcd7e4d888e9aea91b847101d8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0.1" = {
     sha256 = "c47456d47fdd257b27dd250b1cdf0f534f53e0fa73706a234c229d2ebb87961e";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2022-06-16T13:46:53Z";
         sha256 = "7471a9904c219cbd872c729de3ae20e61bc46787b10e3e8d5754305e75c3a0fa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "A markup parser.";
       description = "A markup parser and printer, from and to strict bytestrings, optimised for speed.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,17 +35,17 @@
           (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
           (hsPkgs."these" or (errorHandler.buildDepError "these"))
           (hsPkgs."tree-diff" or (errorHandler.buildDepError "tree-diff"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "markup-parse-diff" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -55,9 +55,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tree-diff" or (errorHandler.buildDepError "tree-diff"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

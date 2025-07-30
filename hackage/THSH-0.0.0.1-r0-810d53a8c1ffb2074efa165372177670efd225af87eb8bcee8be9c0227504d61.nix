@@ -21,7 +21,7 @@
       synopsis = "A \"noDSL\" approach to mixing shell scripting with Haskell programs using Template Haskell";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "thsh" = {
           depends = [
@@ -50,10 +50,10 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."PyF" or (errorHandler.buildDepError "PyF"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "THSH-test" = {
           depends = [
@@ -63,9 +63,9 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."PyF" or (errorHandler.buildDepError "PyF"))
             (hsPkgs."THSH" or (errorHandler.buildDepError "THSH"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

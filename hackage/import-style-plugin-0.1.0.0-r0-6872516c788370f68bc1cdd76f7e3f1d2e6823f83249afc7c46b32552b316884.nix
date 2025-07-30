@@ -21,7 +21,7 @@
       synopsis = "Helps maintain consistency of imports";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2016-08-23T05:16:58Z";
         sha256 = "75a42d99200176fb3f0b8043ea9f60418e4ab8e654d7ed8935c796faa19eb4c4";
-        };
+      };
       r1 = {
         nix = import ../hackage/lol-typing-1.20160822-r1-66fc867da364d50ad2808e9b6ec0e6e55ea415691e66e0d6094880ddf768f3ba.nix;
         revNum = 1;
         revTimestamp = "2016-08-23T21:24:22Z";
         sha256 = "66fc867da364d50ad2808e9b6ec0e6e55ea415691e66e0d6094880ddf768f3ba";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

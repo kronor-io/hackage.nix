@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-02-08T20:00:50Z";
         sha256 = "c2aa14a4e0d6dda88ab1a6def9de36acea463c5f187d93c9ef729abf7d201212";
-        };
+      };
       r1 = {
         nix = import ../hackage/boring-game-0.1.0.0-r1-3a2aaa5cca7ccb83b4efc1bfdc5bbe350e7d489ec79104457fad91b2e71e38d0.nix;
         revNum = 1;
         revTimestamp = "2017-02-08T20:39:45Z";
         sha256 = "3a2aaa5cca7ccb83b4efc1bfdc5bbe350e7d489ec79104457fad91b2e71e38d0";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "51cc6d7b7cdda9ca35021c7005d75773119bdb3331f5fb40c750c9e231392b81";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-02-09T13:59:11Z";
         sha256 = "75696d04f15fbf4f186e69b118abbe61e3e233b31e4fc1b584a87ee97d336eb5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

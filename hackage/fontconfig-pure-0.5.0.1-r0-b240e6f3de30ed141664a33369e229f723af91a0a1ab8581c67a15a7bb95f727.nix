@@ -21,7 +21,7 @@
       synopsis = "Resolves font descriptions to font libraries, including ones installed on your freedesktop (Linux or BSD system).";
       description = "Resolves font descriptions to font libraries, including ones installed on your freedesktop (Linux or BSD system).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,21 +39,21 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."stylist-traits" or (errorHandler.buildDepError "stylist-traits"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."fontconfig" or (errorHandler.pkgConfDepError "fontconfig"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "fontconfig-pure" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."fontconfig-pure" or (errorHandler.buildDepError "fontconfig-pure"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "fontconfig-pure-test" = {
           depends = [
@@ -66,9 +66,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."css-syntax" or (errorHandler.buildDepError "css-syntax"))
             (hsPkgs."stylist-traits" or (errorHandler.buildDepError "stylist-traits"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

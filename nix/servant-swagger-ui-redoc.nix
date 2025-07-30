@@ -7,22 +7,22 @@
         revNum = 0;
         revTimestamp = "2018-04-11T11:22:20Z";
         sha256 = "22f22c1263107614498e69d91081e76e427a496702c476a28be89323ffb33f5d";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.0.1.21.2-r1-4340bede5ed5d5311e18d762f80da1b391e3b1ae9e0e93e251e1f07bd96e9486.nix;
         revNum = 1;
         revTimestamp = "2018-06-19T15:47:25Z";
         sha256 = "4340bede5ed5d5311e18d762f80da1b391e3b1ae9e0e93e251e1f07bd96e9486";
-        };
+      };
       r2 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.0.1.21.2-r2-08de4712ce33e92db87537ebe75e8a2e7691264139a3738a4d662b94079ca62a.nix;
         revNum = 2;
         revTimestamp = "2018-08-06T15:18:56Z";
         sha256 = "08de4712ce33e92db87537ebe75e8a2e7691264139a3738a4d662b94079ca62a";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.3.2.1.22.2" = {
     sha256 = "e09919e7518f8f5b00868eac0c4f80212b5a4950d2c10112696f52446e369934";
     revisions = {
@@ -31,22 +31,22 @@
         revNum = 0;
         revTimestamp = "2018-10-17T07:34:51Z";
         sha256 = "80a14327cae6f8ed5e4bbb057b7031d36059a271b9aeac9089c607ad3319e3fd";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.2.1.22.2-r1-35b287bd557161b9f1e5c07bccd6f542c6163e5dfd29ee2220cd24587e701f0c.nix;
         revNum = 1;
         revTimestamp = "2018-11-13T23:49:50Z";
         sha256 = "35b287bd557161b9f1e5c07bccd6f542c6163e5dfd29ee2220cd24587e701f0c";
-        };
+      };
       r2 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.2.1.22.2-r2-ce540a1e1d111652f753c14cdae53a3abd6943c6e5883e05a9a4f20dc9650a98.nix;
         revNum = 2;
         revTimestamp = "2019-02-27T21:51:19Z";
         sha256 = "ce540a1e1d111652f753c14cdae53a3abd6943c6e5883e05a9a4f20dc9650a98";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
+  };
   "0.3.3.1.22.2" = {
     sha256 = "a1c666b32ea8a819bb3ffb70b603bb798ce26539efa5a3afa53f42190b247062";
     revisions = {
@@ -55,16 +55,16 @@
         revNum = 0;
         revTimestamp = "2019-05-30T09:54:37Z";
         sha256 = "51e179d5968a3519c435eccfac7537529003c1b14de09cb6362c55824ed041da";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.3.1.22.2-r1-0ec57a29f5582284e2562b96679048bca6a09e5fd9f079aa5ed8d22c5d4223e2.nix;
         revNum = 1;
         revTimestamp = "2019-09-16T07:33:10Z";
         sha256 = "0ec57a29f5582284e2562b96679048bca6a09e5fd9f079aa5ed8d22c5d4223e2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.3.3.1.22.3" = {
     sha256 = "fbdf5282db9851d2d752842a3748348f7d21d372f1e99083723b090703ccf32f";
     revisions = {
@@ -73,28 +73,28 @@
         revNum = 0;
         revTimestamp = "2019-10-10T11:57:34Z";
         sha256 = "49d30cbff0960999a31bc2fe944a005890a42a6ffb97434905c66ee3f9352674";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.3.1.22.3-r1-3b3596ad86de12cb064a02de29465ecb30b80f4706d71ef1adbdac17c9753cda.nix;
         revNum = 1;
         revTimestamp = "2020-01-09T10:42:08Z";
         sha256 = "3b3596ad86de12cb064a02de29465ecb30b80f4706d71ef1adbdac17c9753cda";
-        };
+      };
       r2 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.3.1.22.3-r2-8691a3c50056bbe9be7246f8b7173528e51ffe96fdcf8226658186830673bba4.nix;
         revNum = 2;
         revTimestamp = "2020-01-23T22:00:17Z";
         sha256 = "8691a3c50056bbe9be7246f8b7173528e51ffe96fdcf8226658186830673bba4";
-        };
+      };
       r3 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.3.1.22.3-r3-c3d9d26f66d6e45fe00e401134ffda25a640aeaf9bf469f2964be65cff435fb3.nix;
         revNum = 3;
         revTimestamp = "2020-11-05T08:37:53Z";
         sha256 = "c3d9d26f66d6e45fe00e401134ffda25a640aeaf9bf469f2964be65cff435fb3";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "0.3.4.1.22.3" = {
     sha256 = "0ef8ffe87952fcebe22fb659a50f8bcb38f4caeaf7b38d1b99ad41e7ced7c252";
     revisions = {
@@ -103,44 +103,62 @@
         revNum = 0;
         revTimestamp = "2021-04-18T11:46:36Z";
         sha256 = "c19967101d9205b1a936fad254f22f02c471953c10b1137364a4589e121f0562";
-        };
+      };
       r1 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r1-538695996d0f925d2b7ac378c25eaff0cef6ca973afbdefb41db6b0ad133d0f0.nix;
         revNum = 1;
         revTimestamp = "2021-07-01T11:45:35Z";
         sha256 = "538695996d0f925d2b7ac378c25eaff0cef6ca973afbdefb41db6b0ad133d0f0";
-        };
+      };
       r2 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r2-c82418fbdfac5733e7d0c4f3187a61680b27765ab5508a4152d4fce5c82ea85d.nix;
         revNum = 2;
         revTimestamp = "2022-02-04T23:45:15Z";
         sha256 = "c82418fbdfac5733e7d0c4f3187a61680b27765ab5508a4152d4fce5c82ea85d";
-        };
+      };
       r3 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r3-48128fc2a10e2bd5681f64b74a1ff2b3f5165f003f6eb3b9c8769cf678d551c7.nix;
         revNum = 3;
         revTimestamp = "2022-02-23T09:53:59Z";
         sha256 = "48128fc2a10e2bd5681f64b74a1ff2b3f5165f003f6eb3b9c8769cf678d551c7";
-        };
+      };
       r4 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r4-454e713f239e9f9ca976a60a4b01b7891035a8b1da775d5a8744c8cd7375579f.nix;
         revNum = 4;
         revTimestamp = "2022-03-21T14:22:30Z";
         sha256 = "454e713f239e9f9ca976a60a4b01b7891035a8b1da775d5a8744c8cd7375579f";
-        };
+      };
       r5 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r5-e27f9a3e848c1e367fd6c65c08aa8b9bdeaca4310ec228de2356245448f4bacb.nix;
         revNum = 5;
         revTimestamp = "2023-06-25T15:14:56Z";
         sha256 = "e27f9a3e848c1e367fd6c65c08aa8b9bdeaca4310ec228de2356245448f4bacb";
-        };
+      };
       r6 = {
         nix = import ../hackage/servant-swagger-ui-redoc-0.3.4.1.22.3-r6-fa177b48b150c90603067c6b103639183d4650e5bfd0b39ea2ed9baaab4140dc.nix;
         revNum = 6;
         revTimestamp = "2023-10-03T07:13:37Z";
         sha256 = "fa177b48b150c90603067c6b103639183d4650e5bfd0b39ea2ed9baaab4140dc";
-        };
-      default = "r6";
       };
+      default = "r6";
     };
-  }
+  };
+  "0.3.5" = {
+    sha256 = "dc0eeb5d831e7ce0747e5f1eb088a3e7d4a0eb24612d7cefebcc4b6e6b287b73";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-swagger-ui-redoc-0.3.5-r0-4d4ef613a363cf12f8bd47b4b46e150a297b18858eb2408b97ec93f1f60a74b0.nix;
+        revNum = 0;
+        revTimestamp = "2025-04-27T20:59:03Z";
+        sha256 = "4d4ef613a363cf12f8bd47b4b46e150a297b18858eb2408b97ec93f1f60a74b0";
+      };
+      r1 = {
+        nix = import ../hackage/servant-swagger-ui-redoc-0.3.5-r1-550add86a577c0b3f519ff4effca7c58e78ce4d94463f67b327d6fd97b2b88cc.nix;
+        revNum = 1;
+        revTimestamp = "2025-05-17T01:05:08Z";
+        sha256 = "550add86a577c0b3f519ff4effca7c58e78ce4d94463f67b327d6fd97b2b88cc";
+      };
+      default = "r1";
+    };
+  };
+}

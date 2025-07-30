@@ -21,7 +21,7 @@
       synopsis = "Interactive HTML apps using type-safe serverside Haskell";
       description = "Interactive HTML applications using type-safe serverside Haskell. Inspired by HTMX, Elm, and Phoenix LiveView";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,9 +43,9 @@
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
           (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
           (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "examples" = {
           depends = [
@@ -69,10 +69,10 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
             (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -96,12 +96,12 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."web-view" or (errorHandler.buildDepError "web-view"))
             (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.sydtest-discover.components.exes.sydtest-discover or (pkgs.buildPackages.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.sydtest-discover.components.exes.sydtest-discover or (pkgs.pkgsBuildBuild.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

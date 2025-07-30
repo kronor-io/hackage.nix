@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-10-27T16:32:29Z";
         sha256 = "c258f8f73d802b7843e8b874a401eda762dfa5837f4ee3399768595297cf07e4";
-        };
+      };
       r1 = {
         nix = import ../hackage/STLinkUSB-0.1.0-r1-6bdc1642f00a3a413dec2db3c71ae36896ccdcbbad5aeda2e903fcaa43f884d4.nix;
         revNum = 1;
         revTimestamp = "2017-11-03T12:31:21Z";
         sha256 = "6bdc1642f00a3a413dec2db3c71ae36896ccdcbbad5aeda2e903fcaa43f884d4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "1a7499e69f4ad7593589f1c089cb1354560a322e6d288748824d37ba64ee0cac";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-11-03T13:53:05Z";
         sha256 = "7eb6bd707a61f8a4040f2f37df3c03fb418f1eeb7a466150aab40bab3dbc303c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

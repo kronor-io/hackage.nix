@@ -21,15 +21,15 @@
       synopsis = "Orphan instances for binrep";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."binrep" or (errorHandler.buildDepError "binrep"))
           (hsPkgs."strongweak" or (errorHandler.buildDepError "strongweak"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

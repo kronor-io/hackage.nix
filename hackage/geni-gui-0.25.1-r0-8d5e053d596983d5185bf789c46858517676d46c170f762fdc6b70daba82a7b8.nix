@@ -22,14 +22,14 @@
       description = "";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-macosx or (pkgs.buildPackages.cabal-macosx or (errorHandler.setupDepError "cabal-macosx")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-macosx or (pkgs.pkgsBuildBuild.cabal-macosx or (errorHandler.setupDepError "cabal-macosx")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -50,18 +50,18 @@
           (hsPkgs."wxcore" or (errorHandler.buildDepError "wxcore"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."graphviz" or (errorHandler.buildDepError "graphviz"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "geni-gui" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."GenI" or (errorHandler.buildDepError "GenI"))
             (hsPkgs."geni-gui" or (errorHandler.buildDepError "geni-gui"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Terrestrial coordinate systems and geodetic calculations.";
       description = "Precise geographical coordinates (latitude & longitude), with conversion between\ndifferent reference frames and projections.\n\nCertain distinguished reference frames and grids are given distinct\ntypes so that coordinates expressed within them cannot be confused with\ncoordinates in other frames.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."array" or (errorHandler.buildDepError "array"))
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
           (hsPkgs."Stream" or (errorHandler.buildDepError "Stream"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "GeodeticTest" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."checkers" or (errorHandler.buildDepError "checkers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

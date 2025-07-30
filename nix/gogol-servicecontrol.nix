@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:29:02Z";
         sha256 = "15fd7ff58eac87fc798efdfe3d21b0cb6efe87deb675d0575c892f066f7088dd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "0f94288509755891bb1195911a1cb367b1a9304ff1acb30d6713c5d776fb3c27";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:16:08Z";
         sha256 = "5756db45ffb8690b56e4a4d213e4ea5610219a62fe0606eb7aedd7bd182a5e78";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "1106d5acd4cde052d935b68ec6361bece34edf49d777ae470b0066255249dc51";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:46:40Z";
         sha256 = "08798d2ceb72af16350f61b4fcf45c1834ceb54416d9d2d4d3f2aa618b2ce2c3";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "361ab7a18977dfc1bed81509376a96498a6dc1feb1e7cc8e7e977e699129be23";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:12Z";
         sha256 = "ffd55490d3a218d97694daf2a3b0902c538b5f1137cc2c9bbd009a3c9c67321f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "a16934ad7500c38b007e72b1ddbb3bf94802b6bd51e0b0f652779b6ec2936e07";
     revisions = {
@@ -55,8 +55,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:37:03Z";
         sha256 = "1ed3ba375aebf3f64e27a391766ac5616c50bede809e9799cd7d22ee73c41bc1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "a32cf6405c62741cef0cb51a5b25974fa2fdb71ed0671044c9ca6b6b7051897f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-servicecontrol-1.0.0-r0-cfc475e7d467df2531f34f86ea5c625910487bfe4dfbb61f52845a38026d2e9d.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:05Z";
+        sha256 = "cfc475e7d467df2531f34f86ea5c625910487bfe4dfbb61f52845a38026d2e9d";
+      };
+      default = "r0";
+    };
+  };
+}

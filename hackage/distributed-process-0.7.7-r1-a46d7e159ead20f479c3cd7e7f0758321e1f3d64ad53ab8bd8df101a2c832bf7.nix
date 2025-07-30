@@ -21,7 +21,7 @@
       synopsis = "Cloud Haskell: Erlang-style concurrency in Haskell";
       description = "This is an implementation of Cloud Haskell, as described in\n/Towards Haskell in the Cloud/ by Jeff Epstein, Andrew Black,\nand Simon Peyton Jones\n(<https://simon.peytonjones.org/haskell-cloud/>),\nalthough some of the details are different. The precise message\npassing semantics are based on /A unified semantics for future Erlang/\nby Hans Svensson, Lars-&#xc5;ke Fredlund and Clara Benac Earle.\n\nYou will probably also want to install a Cloud Haskell backend such\nas distributed-process-simplelocalnet.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ] ++ (pkgs.lib).optional (flags.th) (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"));
+        ] ++ pkgs.lib.optional (flags.th) (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"));
         buildable = true;
-        };
+      };
       benchmarks = {
         "distributed-process-throughput" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "distributed-process-latency" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -63,9 +63,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "distributed-process-channels" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -73,9 +73,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "distributed-process-spawns" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -83,9 +83,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "distributed-process-ring" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -93,9 +93,9 @@
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

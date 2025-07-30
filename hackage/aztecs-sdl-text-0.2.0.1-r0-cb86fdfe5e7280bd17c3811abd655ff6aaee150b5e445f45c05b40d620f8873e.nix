@@ -21,7 +21,7 @@
       synopsis = "A type-safe and friendly Entity-Component-System (ECS) for Haskell";
       description = "The Entity-Component-System (ECS) pattern is commonly used in video game develop to represent world objects.\nECS follows the principal of composition over inheritence. Each type of\nobject (e.g. sword, monster, etc), in the game has a unique EntityId. Each\nentity has various Components associated with it (material, weight, damage, etc).\nSystems act on entities which have the required Components.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,12 +36,12 @@
           (hsPkgs."sdl2-ttf" or (errorHandler.buildDepError "sdl2-ttf"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."linear" or (errorHandler.buildDepError "linear"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "text" = {
-          depends = (pkgs.lib).optionals (flags.examples) [
+          depends = pkgs.lib.optionals (flags.examples) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."aztecs" or (errorHandler.buildDepError "aztecs"))
             (hsPkgs."aztecs-sdl" or (errorHandler.buildDepError "aztecs-sdl"))
@@ -49,9 +49,9 @@
             (hsPkgs."aztecs-asset" or (errorHandler.buildDepError "aztecs-asset"))
             (hsPkgs."aztecs-transform" or (errorHandler.buildDepError "aztecs-transform"))
             (hsPkgs."sdl2" or (errorHandler.buildDepError "sdl2"))
-            ];
+          ];
           buildable = if flags.examples then true else false;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Ogma: Runtime Monitor translator: CSV Frontend";
       description = "Ogma is a tool to facilitate the integration of safe runtime monitors into\nother systems. Ogma extends\n<https://github.com/Copilot-Language/copilot Copilot>, a high-level runtime\nverification framework that generates hard real-time C99 code.\n\nThis library contains a frontend to read specs from CSV files.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."ogma-spec" or (errorHandler.buildDepError "ogma-spec"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

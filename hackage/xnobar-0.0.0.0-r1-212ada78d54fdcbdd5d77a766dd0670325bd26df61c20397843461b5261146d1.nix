@@ -21,7 +21,7 @@
       synopsis = "Text-based notification server for XMobar";
       description = "Text-based notification server for XMobar. It also exposes just the back-end, to be used as a library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."xmobar" or (errorHandler.buildDepError "xmobar"))
           (hsPkgs."xnobar".components.sublibs.Server or (errorHandler.buildDepError "xnobar:Server"))
           (hsPkgs."xnobar".components.sublibs.Scroller or (errorHandler.buildDepError "xnobar:Scroller"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "Server" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."xnobar".components.sublibs.Notification or (errorHandler.buildDepError "xnobar:Notification"))
             (hsPkgs."xnobar".components.sublibs.Positive32 or (errorHandler.buildDepError "xnobar:Positive32"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Notification" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -52,9 +52,9 @@
             (hsPkgs."dbus" or (errorHandler.buildDepError "dbus"))
             (hsPkgs."flow" or (errorHandler.buildDepError "flow"))
             (hsPkgs."xnobar".components.sublibs.Positive32 or (errorHandler.buildDepError "xnobar:Positive32"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Scroller" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -68,14 +68,14 @@
             (hsPkgs."xnobar".components.sublibs.Notification or (errorHandler.buildDepError "xnobar:Notification"))
             (hsPkgs."xnobar".components.sublibs.Positive32 or (errorHandler.buildDepError "xnobar:Positive32"))
             (hsPkgs."xnobar".components.sublibs.Server or (errorHandler.buildDepError "xnobar:Server"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Positive32" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "Test" = {
           depends = [
@@ -85,9 +85,9 @@
             (hsPkgs."xnobar".components.sublibs.Notification or (errorHandler.buildDepError "xnobar:Notification"))
             (hsPkgs."xnobar".components.sublibs.Positive32 or (errorHandler.buildDepError "xnobar:Positive32"))
             (hsPkgs."xnobar".components.sublibs.Scroller or (errorHandler.buildDepError "xnobar:Scroller"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

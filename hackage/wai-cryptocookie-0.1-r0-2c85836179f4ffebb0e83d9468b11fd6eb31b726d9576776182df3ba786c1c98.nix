@@ -21,7 +21,7 @@
       synopsis = "Encrypted cookies for WAI";
       description = "Encrypted cookies for WAI";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."wai-cryptocookie" or (errorHandler.buildDepError "wai-cryptocookie"))
             (hsPkgs."wai-extra" or (errorHandler.buildDepError "wai-extra"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://codeberg.org/jjba23/wikimusic-ssr>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -67,18 +67,18 @@
           (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
           (hsPkgs."http-client-tls" or (errorHandler.buildDepError "http-client-tls"))
           (hsPkgs."base16-bytestring" or (errorHandler.buildDepError "base16-bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "wikimusic-ssr-exe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."relude" or (errorHandler.buildDepError "relude"))
             (hsPkgs."wikimusic-ssr" or (errorHandler.buildDepError "wikimusic-ssr"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

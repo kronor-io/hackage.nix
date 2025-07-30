@@ -21,7 +21,7 @@
       synopsis = "Data type for SPIR-V";
       description = "Please see the README on GitHub at <https://github.com/githubuser/language-spir-v#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,12 +30,12 @@
           (hsPkgs."c-enum" or (errorHandler.buildDepError "c-enum"))
           (hsPkgs."nowdoc" or (errorHandler.buildDepError "nowdoc"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."shaderc" or (errorHandler.pkgConfDepError "shaderc"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "language-spir-v-test" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."language-spir-v" or (errorHandler.buildDepError "language-spir-v"))
             (hsPkgs."nowdoc" or (errorHandler.buildDepError "nowdoc"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -22,11 +22,11 @@
       description = "This works with Ruby 2.2+. Everything you need should be in Foreign.Ruby.Safe.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -39,12 +39,12 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."scientific" or (errorHandler.buildDepError "scientific"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."ruby" or (errorHandler.pkgConfDepError "ruby"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-roundtrip" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."attoparsec" or (errorHandler.buildDepError "attoparsec"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

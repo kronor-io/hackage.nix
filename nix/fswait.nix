@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2017-06-18T06:43:34Z";
         sha256 = "047d72135817c58e6c75536a0bde720031a2bfcfff0a25ab11adddcdcd96190d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0" = {
     sha256 = "63ad571377432fd478e6da8d7fea193afd50c8bd8135325ec241f4dc355716c7";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2017-06-28T23:09:01Z";
         sha256 = "475f144f870fa228f21d14099bea8d7e5b62adc525aa995e1f2635fea3224788";
-        };
+      };
       r1 = {
         nix = import ../hackage/fswait-1.1.0-r1-a7f6616dbe7d24a0e45dee930d9dc8da89b41836545555221941225b2cad7fc1.nix;
         revNum = 1;
         revTimestamp = "2023-12-04T16:37:00Z";
         sha256 = "a7f6616dbe7d24a0e45dee930d9dc8da89b41836545555221941225b2cad7fc1";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

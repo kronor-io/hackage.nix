@@ -7,28 +7,28 @@
         revNum = 0;
         revTimestamp = "2017-10-10T10:10:31Z";
         sha256 = "e4c3b279c34035dcadfe7f4b5332fa3dfa5fe1f608b4362efc524bb32381a3e2";
-        };
+      };
       r1 = {
         nix = import ../hackage/cryptoids-types-0.0.0-r1-1ed7d7318bec87477677a44e7a0c2e3e26e7a96a8323d627bd44c3abb3712244.nix;
         revNum = 1;
         revTimestamp = "2018-02-20T17:58:27Z";
         sha256 = "1ed7d7318bec87477677a44e7a0c2e3e26e7a96a8323d627bd44c3abb3712244";
-        };
+      };
       r2 = {
         nix = import ../hackage/cryptoids-types-0.0.0-r2-0f8a0884a580f824fc4f13c15eaadf3ea7458e42fcf9785a962705beb06cee37.nix;
         revNum = 2;
         revTimestamp = "2018-08-02T11:23:52Z";
         sha256 = "0f8a0884a580f824fc4f13c15eaadf3ea7458e42fcf9785a962705beb06cee37";
-        };
+      };
       r3 = {
         nix = import ../hackage/cryptoids-types-0.0.0-r3-782306c0f141935ff0aa0fc606704131ed90474de74d911db0efe101a07f0eed.nix;
         revNum = 3;
         revTimestamp = "2018-11-13T17:57:49Z";
         sha256 = "782306c0f141935ff0aa0fc606704131ed90474de74d911db0efe101a07f0eed";
-        };
-      default = "r3";
       };
+      default = "r3";
     };
+  };
   "1.0.0" = {
     sha256 = "0e0ee66a85bd1f609f476659f7f2d720d0eee3e583c2d81e7f1036dfa0481b36";
     revisions = {
@@ -37,20 +37,32 @@
         revNum = 0;
         revTimestamp = "2018-12-17T12:34:58Z";
         sha256 = "79f890be77afa8b5b2229ab4c6de163cb70246adfc3d5b5e6d422e687f3069bb";
-        };
+      };
       r1 = {
         nix = import ../hackage/cryptoids-types-1.0.0-r1-ebe1d24393639a0fa66daff8b3b3155f32233488af7d7ab305f1d5a87e77c63b.nix;
         revNum = 1;
         revTimestamp = "2018-12-17T15:53:53Z";
         sha256 = "ebe1d24393639a0fa66daff8b3b3155f32233488af7d7ab305f1d5a87e77c63b";
-        };
+      };
       r2 = {
         nix = import ../hackage/cryptoids-types-1.0.0-r2-96a74b33a32ebeebf5bee08e2a205e5c1585b4b46b8bac086ca7fde49aec5f5b.nix;
         revNum = 2;
         revTimestamp = "2019-05-10T11:49:26Z";
         sha256 = "96a74b33a32ebeebf5bee08e2a205e5c1585b4b46b8bac086ca7fde49aec5f5b";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+  "1.0.0.1" = {
+    sha256 = "17e1b1ab9cb1603e69ea73da29b2ef1949772c0a28dd22524da6b745e0aa0e17";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cryptoids-types-1.0.0.1-r0-f24826559339784d419f1452fd3b74655baea61cce4f39785ca164c9ce9e336f.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-15T07:59:45Z";
+        sha256 = "f24826559339784d419f1452fd3b74655baea61cce4f39785ca164c9ce9e336f";
+      };
+      default = "r0";
+    };
+  };
+}

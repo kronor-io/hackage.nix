@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-06-22T07:23:17Z";
         sha256 = "985588e0b2a400b65af107139ff8234cfb33e025e638912eb846e565400038ff";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.1" = {
     sha256 = "767d2b44e957a09683f106e78f6f559f43f98dd88bc2053c71efd5f9bba0b927";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2016-06-23T07:37:18Z";
         sha256 = "d11079e4be2f559145989fa393758a9dc0eb5d8e00f46c51b99ce5028816a48f";
-        };
+      };
       r1 = {
         nix = import ../hackage/HPhone-0.0.1.1-r1-7a1f8fcd862807860fe7369674d2e0a44dc8eb6850e756f17024a92da185470c.nix;
         revNum = 1;
         revTimestamp = "2016-06-23T09:32:57Z";
         sha256 = "7a1f8fcd862807860fe7369674d2e0a44dc8eb6850e756f17024a92da185470c";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.0.1.2" = {
     sha256 = "b59b05042042e7bc440077494faf79684a47b963f023da18c9003d95a2880f39";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2016-06-23T09:53:43Z";
         sha256 = "e2ffccb76dcceb691246e4db1420d0735369788305a3a40f90a20e94d6106ea9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

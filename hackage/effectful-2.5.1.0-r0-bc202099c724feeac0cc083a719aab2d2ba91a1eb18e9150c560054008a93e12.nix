@@ -21,7 +21,7 @@
       synopsis = "An easy to use, performant extensible effects library.";
       description = "An easy to use, performant extensible effects library with seamless\nintegration with the existing Haskell ecosystem.\n.\nThis is the \"batteries-included\" variant. See the\n@<https://hackage.haskell.org/package/effectful-core effectful-core>@ package\nif you need a more limited dependency footprint or want to browse\ndocumentation of core modules.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -53,10 +53,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -67,11 +67,11 @@
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ] ++ (pkgs.lib).optionals (flags.benchmark-foreign-libraries) (((([
+          ] ++ pkgs.lib.optionals (flags.benchmark-foreign-libraries) (((([
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.9") (hsPkgs."cleff" or (errorHandler.buildDepError "cleff"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.9") (hsPkgs."freer-simple" or (errorHandler.buildDepError "freer-simple"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.11") (hsPkgs."fused-effects" or (errorHandler.buildDepError "fused-effects"))) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.11") (hsPkgs."polysemy" or (errorHandler.buildDepError "polysemy")));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.9") (hsPkgs."cleff" or (errorHandler.buildDepError "cleff"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.9") (hsPkgs."freer-simple" or (errorHandler.buildDepError "freer-simple"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.11") (hsPkgs."fused-effects" or (errorHandler.buildDepError "fused-effects"))) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.11") (hsPkgs."polysemy" or (errorHandler.buildDepError "polysemy")));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

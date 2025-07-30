@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://codeberg.org/jjba23/wikimusic-api>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -70,18 +70,18 @@
           (hsPkgs."beam-sqlite" or (errorHandler.buildDepError "beam-sqlite"))
           (hsPkgs."sqlite-simple" or (errorHandler.buildDepError "sqlite-simple"))
           (hsPkgs."yggdrasil-schema" or (errorHandler.buildDepError "yggdrasil-schema"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "wikimusic-api-exe" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."wikimusic-api" or (errorHandler.buildDepError "wikimusic-api"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "wikimusic-api-spec" = {
           depends = [
@@ -113,9 +113,9 @@
             (hsPkgs."wikimusic-model-hs" or (errorHandler.buildDepError "wikimusic-model-hs"))
             (hsPkgs."wikimusic-api-spec" or (errorHandler.buildDepError "wikimusic-api-spec"))
             (hsPkgs."yggdrasil-schema" or (errorHandler.buildDepError "yggdrasil-schema"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

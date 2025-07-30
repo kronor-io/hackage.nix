@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2014-10-10T08:04:21Z";
         sha256 = "dea0f52607d532ba0009bd1932f6c655a56615f68355162bad5e41936d114442";
-        };
+      };
       r1 = {
         nix = import ../hackage/scholdoc-types-0.1.3-r1-18fb578a18988a8361d57025dac5b25c083b4cf044e75ff0a982bd3399bd368d.nix;
         revNum = 1;
         revTimestamp = "2014-10-22T03:44:38Z";
         sha256 = "18fb578a18988a8361d57025dac5b25c083b4cf044e75ff0a982bd3399bd368d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.3.1" = {
     sha256 = "59ad496dc91ddca4e0eddf2be0c146e7ac8190a84df318bfecf570a3742c6308";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2015-02-04T02:05:39Z";
         sha256 = "c911b4baba3ae0b7e72e02c693bb36ffce05e2a4458da63127d8ad45eb067f4d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

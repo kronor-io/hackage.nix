@@ -22,10 +22,10 @@
       description = "The filestore library provides an abstract interface for a versioning\nfile store, and modules that instantiate this interface.  Currently\nGit, Darcs, and Mercurial modules are provided, and other VCSs\nor databases could be added.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."split" or (errorHandler.buildDepError "split"))
           (hsPkgs."Diff" or (errorHandler.buildDepError "Diff"))
           (hsPkgs."old-locale" or (errorHandler.buildDepError "old-locale"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-filestore" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filestore" or (errorHandler.buildDepError "filestore"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Python interpreter embedded into haskell.";
       description = "This package embeds python interpreter into haskell program and\nallows to write python snippets as quasiquotes. Values could be\neasily transferred between python and haskell. It's possible to\ncall haskell from python as well.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,12 +38,12 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."python3-embed" or (errorHandler.pkgConfDepError "python3-embed"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "test" = {
           depends = [
@@ -56,10 +56,10 @@
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "inline-python-tests" = {
           depends = [
@@ -67,19 +67,19 @@
             (hsPkgs."inline-python" or (errorHandler.buildDepError "inline-python"))
             (hsPkgs."inline-python".components.sublibs.test or (errorHandler.buildDepError "inline-python:test"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "inline-python-tests1" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."inline-python" or (errorHandler.buildDepError "inline-python"))
             (hsPkgs."inline-python".components.sublibs.test or (errorHandler.buildDepError "inline-python:test"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "pysmall" = {
           depends = [
@@ -87,18 +87,18 @@
             (hsPkgs."inline-python" or (errorHandler.buildDepError "inline-python"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "pysmall1" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."inline-python" or (errorHandler.buildDepError "inline-python"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:20:45Z";
         sha256 = "40cb25fd4979b6bc732d6fe70c55fa62148886a72c645a6681ea9f70a9ea6d92";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "4baf366c907c9d3b12a18b049da2643ac74191846b92a411dc8c3e9d08d0831f";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:39:06Z";
         sha256 = "6f688ad5b398fa3eec9951d62cdd0393beb91d3c02979144b07a7a9578e3d9b0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "0cc46ac92a51397b15dea335d5ae98d35c2aa5d007327eb66090b9832634ed0f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-streetviewpublish-1.0.0-r0-c85b9d23db74fef6125eff60ce730f728a1bc2179e9b5a32ab60f9df4d2b1ecc.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:25Z";
+        sha256 = "c85b9d23db74fef6125eff60ce730f728a1bc2179e9b5a32ab60f9df4d2b1ecc";
+      };
+      default = "r0";
+    };
+  };
+}

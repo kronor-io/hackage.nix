@@ -22,11 +22,11 @@
       description = "Please see the README on GitHub at <https://github.com/polysemy-research/polysemy#readme>";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,9 +42,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."type-errors" or (errorHandler.buildDepError "type-errors"))
           (hsPkgs."unagi-chan" or (errorHandler.buildDepError "unagi-chan"))
-          ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "8.2.2") (hsPkgs."unsupported-ghc-version" or (errorHandler.buildDepError "unsupported-ghc-version"));
+        ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "8.2.2") (hsPkgs."unsupported-ghc-version" or (errorHandler.buildDepError "unsupported-ghc-version"));
         buildable = true;
-        };
+      };
       tests = {
         "polysemy-test" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."type-errors" or (errorHandler.buildDepError "type-errors"))
             (hsPkgs."unagi-chan" or (errorHandler.buildDepError "unagi-chan"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

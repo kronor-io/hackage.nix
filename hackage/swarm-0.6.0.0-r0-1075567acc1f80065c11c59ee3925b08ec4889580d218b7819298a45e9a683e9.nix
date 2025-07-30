@@ -21,7 +21,7 @@
       synopsis = "2D resource gathering game with programmable robots";
       description = "Swarm is a 2D programming and resource gathering\ngame. Program your robots to explore the world and\ncollect resources, which in turn allows you to\nbuild upgraded robots that can run more\ninteresting and complex programs. See the\n<https://github.com/swarm-game/swarm/blob/main/README.md README>\nfor more information and instructions on how to\nplay or contribute!\n\n== Module organization\nFor developers getting oriented, Swarm's modules are organized into\nsublibraries.  Roughly in order from inner to outer, they are:\n\n* swarm-util: miscellaneous utilities\n* swarm-lang: parsing, typechecking, etc. for the Swarm language\n* swarm-scenario: scenario descriptions, parsing, & processing\n* swarm-engine: game simulation\n* swarm-doc: generating documentation\n* swarm-tui: textual user interface\n* swarm-web: web interface\n* swarm: the swarm executable\n\n<<docs/image/sublibrary-graph.svg>>\n\nSee the [Swarm module guide](https://github.com/swarm-game/swarm/wiki/Module-guide)\nfor a more in-depth guide to the codebase.";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "swarm-lang" = {
@@ -55,9 +55,9 @@
             (hsPkgs."witch" or (errorHandler.buildDepError "witch"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-topography" = {
           depends = [
             (hsPkgs."AhoCorasick" or (errorHandler.buildDepError "AhoCorasick"))
@@ -77,9 +77,9 @@
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-scenario" = {
           depends = [
             (hsPkgs."JuicyPixels" or (errorHandler.buildDepError "JuicyPixels"))
@@ -117,9 +117,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-lang or (errorHandler.buildDepError "swarm:swarm-lang"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-engine" = {
           depends = [
             (hsPkgs."AhoCorasick" or (errorHandler.buildDepError "AhoCorasick"))
@@ -161,9 +161,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-web" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -191,9 +191,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-tui or (errorHandler.buildDepError "swarm:swarm-tui"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-tournament" = {
           depends = [
             (hsPkgs."SHA" or (errorHandler.buildDepError "SHA"))
@@ -228,9 +228,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-lang or (errorHandler.buildDepError "swarm:swarm-lang"))
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-util" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -255,9 +255,9 @@
             (hsPkgs."witch" or (errorHandler.buildDepError "witch"))
             (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-doc" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -281,9 +281,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-lang or (errorHandler.buildDepError "swarm:swarm-lang"))
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-tui" = {
           depends = [
             (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
@@ -325,10 +325,10 @@
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       exes = {
         "swarm" = {
           depends = [
@@ -347,27 +347,27 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vty" or (errorHandler.buildDepError "vty"))
             (hsPkgs."vty-crossplatform" or (errorHandler.buildDepError "vty-crossplatform"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-scene" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-docs" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."swarm".components.sublibs.swarm-doc or (errorHandler.buildDepError "swarm:swarm-doc"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-host-tournament" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -378,10 +378,10 @@
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."swarm".components.sublibs.swarm-engine or (errorHandler.buildDepError "swarm:swarm-engine"))
             (hsPkgs."swarm".components.sublibs.swarm-tournament or (errorHandler.buildDepError "swarm:swarm-tournament"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "swarm-unit" = {
           depends = [
@@ -410,9 +410,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-tui or (errorHandler.buildDepError "swarm:swarm-tui"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "swarm-integration" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -433,9 +433,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-tui or (errorHandler.buildDepError "swarm:swarm-tui"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "tournament-host" = {
           depends = [
             (hsPkgs."SHA" or (errorHandler.buildDepError "SHA"))
@@ -449,9 +449,9 @@
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
             (hsPkgs."swarm".components.sublibs.swarm-engine or (errorHandler.buildDepError "swarm:swarm-engine"))
             (hsPkgs."swarm".components.sublibs.swarm-tournament or (errorHandler.buildDepError "swarm:swarm-tournament"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "standalone-topography" = {
           depends = [
             (hsPkgs."JuicyPixels" or (errorHandler.buildDepError "JuicyPixels"))
@@ -465,10 +465,10 @@
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmark" = {
           depends = [
@@ -484,9 +484,9 @@
             (hsPkgs."swarm".components.sublibs.swarm-scenario or (errorHandler.buildDepError "swarm:swarm-scenario"))
             (hsPkgs."swarm".components.sublibs.swarm-topography or (errorHandler.buildDepError "swarm:swarm-topography"))
             (hsPkgs."swarm".components.sublibs.swarm-util or (errorHandler.buildDepError "swarm:swarm-util"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

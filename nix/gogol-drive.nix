@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-10-24T10:51:19Z";
         sha256 = "bff99c01fe26fbaae5d7fbf81811d78735dcb3f1515fca1c3455c0510b0ad53c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0" = {
     sha256 = "7cccab1d269aa3ee5d6276ff78c86f29974f85418148a15a13d195ac7fd29ca3";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-06-21T04:19:49Z";
         sha256 = "92807a9ebfdf5b621898fe77f9a7a2814569fbd1ed21915a633d388b998c1e15";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "6e46b5ba960ef8481fdcaba84ef006169ff075d63fc6e4dc6cd84e0805e6d46c";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:29:08Z";
         sha256 = "66ff7254c471b973551eaff663c002816bab9ddcdb11586561c1b19a8e50eb83";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "dc68e0331e441b6b9488fbc29b5864b9955dc3978c7092340870191a8f86cc6c";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:20:45Z";
         sha256 = "2b19a28bf642d502dbe43f3ff148d292ec2330fc0aaec76ec4b64e5b46456684";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "9fae145cf1bf4be57b9f53aba11b26f82b1ae36b4d3e2bf61d2af009f91a65d0";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:46:49Z";
         sha256 = "b8f8c38ff4fcba6403218c5f8829e02c2e1f727d9261837b0dcb0e1cd3eee302";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "fe59d2373db7c03f02a975c8e0cd1c6f8bf7e295e60516ab2f3e309bb16d56cc";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:48Z";
         sha256 = "a59cde7f1f756c3043f8b93a370dcc41ef647215d2a194d76c84eb8723dc104b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "34fb88589953c26e0438cfa6e2d7649f4aed0b6d67ac86040530a1681d646d61";
     revisions = {
@@ -79,8 +79,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:37:49Z";
         sha256 = "1b1a15da699a09cbfe42e1bf297f6439c8f32403efcca417667d384ca1cb3c9d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "892c51ddd0c8b3b66f8817ae490219edf49d292f7a0989bfec72d606951c8e2a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-drive-1.0.0-r0-024e9dafb9d19607231ea64410d422e1ec5a4e8a8248b83704dd7d983d8aed4f.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:07:57Z";
+        sha256 = "024e9dafb9d19607231ea64410d422e1ec5a4e8a8248b83704dd7d983d8aed4f";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-11-06T17:10:23Z";
         sha256 = "2c91f3d38472137127da8496c1f439d72f4a7b4088c05dc5a3cf9571936c8415";
-        };
+      };
       r1 = {
         nix = import ../hackage/fixed-vector-cborg-1.0.0.0-r1-f6a933d76bb82534a2d5cd064c102f1e470f19e56701dc295ffffa970c420966.nix;
         revNum = 1;
         revTimestamp = "2018-10-06T14:48:18Z";
         sha256 = "f6a933d76bb82534a2d5cd064c102f1e470f19e56701dc295ffffa970c420966";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.0.1" = {
     sha256 = "0832b78e0b0dd3850404efe510ccd34ac013ca30d6c0eb53d2ac79989267bd54";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2018-10-06T15:06:37Z";
         sha256 = "ccacb5274576f6eb9bc1f5a822dc05e2e2b7348177d7a44cbadbf81e53bf2178";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.0.2" = {
     sha256 = "0dd40b2e36c79cc279df65b13b585dde8ff762979b1f15e87119d609dceced66";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2021-11-13T17:29:38Z";
         sha256 = "cc38f7fe4170f3af40e7bfdc113dca440ad6f838b02fbd4021f342397a12480d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

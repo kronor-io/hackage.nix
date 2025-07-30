@@ -21,7 +21,7 @@
       synopsis = "Ogma: Runtime Monitor translator: XML Frontend";
       description = "Ogma is a tool to facilitate the integration of safe runtime monitors into\nother systems. Ogma extends\n<https://github.com/Copilot-Language/copilot Copilot>, a high-level runtime\nverification framework that generates hard real-time C99 code.\n\nThis library contains a frontend to read specifications from XML files.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,8 +32,8 @@
           (hsPkgs."hxt-xpath" or (errorHandler.buildDepError "hxt-xpath"))
           (hsPkgs."pretty" or (errorHandler.buildDepError "pretty"))
           (hsPkgs."ogma-spec" or (errorHandler.buildDepError "ogma-spec"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

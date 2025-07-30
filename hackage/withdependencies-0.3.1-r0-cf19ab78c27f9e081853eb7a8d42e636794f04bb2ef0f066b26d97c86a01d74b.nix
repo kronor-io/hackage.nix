@@ -21,7 +21,7 @@
       synopsis = "Run computations that depend on one or more elements in a stream.";
       description = "Run computations that depend on one or more elements in a stream. It lets you model dependencies as an applicative functor.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."conduit" or (errorHandler.buildDepError "conduit"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."profunctors" or (errorHandler.buildDepError "profunctors"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."conduit" or (errorHandler.buildDepError "conduit"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

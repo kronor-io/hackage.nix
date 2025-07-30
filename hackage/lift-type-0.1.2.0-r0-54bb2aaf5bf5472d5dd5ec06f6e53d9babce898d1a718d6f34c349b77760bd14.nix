@@ -21,15 +21,15 @@
       synopsis = "Lift a type from a Typeable constraint to a Template Haskell type";
       description = "Lift your types from a Typeable constraint to a Template Haskell type";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "lift-type-test" = {
           depends = [
@@ -38,9 +38,9 @@
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."ghc-prim" or (errorHandler.buildDepError "ghc-prim"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

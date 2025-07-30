@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings for PyTorch";
       description = "This package provides Haskell bindings to libtorch, the C++ library underlying PyTorch, specifically designed for the Hasktorch ecosystem.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,25 +36,25 @@
           (hsPkgs."sysinfo" or (errorHandler.buildDepError "sysinfo"))
           (hsPkgs."async" or (errorHandler.buildDepError "async"))
           (hsPkgs."libtorch-ffi-helper" or (errorHandler.buildDepError "libtorch-ffi-helper"))
-          ];
+        ];
         libs = (([
           (pkgs."c10" or (errorHandler.sysDepError "c10"))
           (pkgs."torch" or (errorHandler.sysDepError "torch"))
           (pkgs."torch_cpu" or (errorHandler.sysDepError "torch_cpu"))
-          ] ++ (if system.isOsx
+        ] ++ (if system.isOsx
           then [ (pkgs."c++" or (errorHandler.sysDepError "c++")) ]
           else [
             (pkgs."stdc++" or (errorHandler.sysDepError "stdc++"))
-            ])) ++ (pkgs.lib).optional (flags.cuda) (pkgs."torch_cuda" or (errorHandler.sysDepError "torch_cuda"))) ++ (pkgs.lib).optionals (flags.rocm) [
+          ])) ++ pkgs.lib.optional (flags.cuda) (pkgs."torch_cuda" or (errorHandler.sysDepError "torch_cuda"))) ++ pkgs.lib.optionals (flags.rocm) [
           (pkgs."c10_hip" or (errorHandler.sysDepError "c10_hip"))
           (pkgs."torch_hip" or (errorHandler.sysDepError "torch_hip"))
           (pkgs."sqlite3" or (errorHandler.sysDepError "sqlite3"))
           (pkgs."tinfo" or (errorHandler.sysDepError "tinfo"))
           (pkgs."bz2" or (errorHandler.sysDepError "bz2"))
           (pkgs."z" or (errorHandler.sysDepError "z"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -62,9 +62,9 @@
             (hsPkgs."libtorch-ffi" or (errorHandler.buildDepError "libtorch-ffi"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

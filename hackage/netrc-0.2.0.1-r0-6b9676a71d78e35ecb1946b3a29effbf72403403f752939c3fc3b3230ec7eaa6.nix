@@ -21,7 +21,7 @@
       synopsis = "Parser for .netrc files";
       description = "This package provides a parser and a printer for so-called @.netrc@ files.\n\nSee <http://linux.die.net/man/5/netrc netrc(5)> manual page for more\ninformation about @.netrc@ files.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-netrc" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

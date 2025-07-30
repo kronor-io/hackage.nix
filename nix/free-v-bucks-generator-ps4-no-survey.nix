@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-09-17T01:30:21Z";
         sha256 = "1aa32ce25954784a16c3797493c3cb09a30037eae21de050158b7c8de6c66659";
-        };
+      };
       r1 = {
         nix = import ../hackage/free-v-bucks-generator-ps4-no-survey-0.2-r1-900f24dfee48e30fe701fcc6751339f2e1c7c8513ace6ef025312c134b83b663.nix;
         revNum = 1;
         revTimestamp = "2018-09-17T01:39:09Z";
         sha256 = "900f24dfee48e30fe701fcc6751339f2e1c7c8513ace6ef025312c134b83b663";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

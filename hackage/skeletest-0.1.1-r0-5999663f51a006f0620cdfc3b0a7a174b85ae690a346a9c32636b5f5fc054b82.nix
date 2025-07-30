@@ -21,7 +21,7 @@
       synopsis = "Batteries-included, opinionated test framework";
       description = "Batteries-included, opinionated test framework. See README.md for more details.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "skeletest-preprocessor" = {
           depends = [
@@ -54,10 +54,10 @@
             (hsPkgs."skeletest" or (errorHandler.buildDepError "skeletest"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "skeletest-tests" = {
           depends = [
@@ -70,12 +70,12 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.skeletest.components.exes.skeletest-preprocessor or (pkgs.buildPackages.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
-            ];
+            (hsPkgs.pkgsBuildBuild.skeletest.components.exes.skeletest-preprocessor or (pkgs.pkgsBuildBuild.skeletest-preprocessor or (errorHandler.buildToolDepError "skeletest:skeletest-preprocessor")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

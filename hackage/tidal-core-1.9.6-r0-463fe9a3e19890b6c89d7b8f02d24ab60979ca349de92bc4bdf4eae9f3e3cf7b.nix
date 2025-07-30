@@ -21,7 +21,7 @@
       synopsis = "Core pattern library for TidalCycles, a pattern language for improvised music";
       description = "Tidal is a domain specific language for live coding patterns. This is a pre-release ahead of version 1.10, which will become a dependency of the main tidal package, with the same version number.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."tidal-core" or (errorHandler.buildDepError "tidal-core"))
             (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

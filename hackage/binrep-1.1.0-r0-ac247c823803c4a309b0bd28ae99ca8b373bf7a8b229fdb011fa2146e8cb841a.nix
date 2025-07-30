@@ -21,7 +21,7 @@
       synopsis = "Encode precise binary representations directly in types";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,9 +41,9 @@
           (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
           (hsPkgs."type-level-bytestrings" or (errorHandler.buildDepError "type-level-bytestrings"))
           (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
-          ] ++ (pkgs.lib).optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
+        ] ++ pkgs.lib.optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -68,13 +68,13 @@
             (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
             (hsPkgs."type-level-bytestrings" or (errorHandler.buildDepError "type-level-bytestrings"))
             (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
-            ] ++ (pkgs.lib).optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
+          ] ++ pkgs.lib.optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "bench" = {
           depends = [
@@ -96,9 +96,9 @@
             (hsPkgs."text-builder-linear" or (errorHandler.buildDepError "text-builder-linear"))
             (hsPkgs."type-level-bytestrings" or (errorHandler.buildDepError "type-level-bytestrings"))
             (hsPkgs."type-level-show" or (errorHandler.buildDepError "type-level-show"))
-            ] ++ (pkgs.lib).optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
+          ] ++ pkgs.lib.optional (flags.icu) (hsPkgs."text-icu" or (errorHandler.buildDepError "text-icu"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

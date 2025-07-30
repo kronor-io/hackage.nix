@@ -22,10 +22,10 @@
       description = "Please see the README on Github at <https://github.com/deech/fltkhs-themes#readme>";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."load-font" or (errorHandler.buildDepError "load-font"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
-        libs = (pkgs.lib).optional (system.isLinux) (pkgs."fontconfig" or (errorHandler.sysDepError "fontconfig"));
+        ];
+        libs = pkgs.lib.optional (system.isLinux) (pkgs."fontconfig" or (errorHandler.sysDepError "fontconfig"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

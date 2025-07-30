@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-04-17T08:25:08Z";
         sha256 = "c3d8a6d4035e74350ce9722911cb0ad07cae8993f68f67df922b01595f588fc3";
-        };
+      };
       r1 = {
         nix = import ../hackage/acme-this-0.1.0.0-r1-58d6b008362c3178d58da18d0935f8aa966d03053d4d6abd9ab343efd3af3ff6.nix;
         revNum = 1;
         revTimestamp = "2019-04-17T08:39:22Z";
         sha256 = "58d6b008362c3178d58da18d0935f8aa966d03053d4d6abd9ab343efd3af3ff6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

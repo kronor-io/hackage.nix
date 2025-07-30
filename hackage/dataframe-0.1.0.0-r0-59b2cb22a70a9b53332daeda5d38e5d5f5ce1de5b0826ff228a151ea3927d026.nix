@@ -21,7 +21,7 @@
       synopsis = "An intuitive, dynamically-typed DataFrame library.";
       description = "An intuitive, dynamically-typed DataFrame library for exploratory data analysis.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "dataframe" = {
           depends = [
@@ -55,10 +55,10 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -70,10 +70,10 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."dataframe" or (errorHandler.buildDepError "dataframe"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "dataframe-benchmark" = {
           depends = [
@@ -83,9 +83,9 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."dataframe" or (errorHandler.buildDepError "dataframe"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:40:22Z";
         sha256 = "f4607f8ffe2deb5fdbda470f3ac158f9a4e535f1b6d43d76239fc3e1b364929e";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-m2-2.0-r1-4fbd8965f7a715f74be09514d0fbdbb2aa408e469d680661a7b8a59ee0791c57.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:50:17Z";
         sha256 = "4fbd8965f7a715f74be09514d0fbdbb2aa408e469d680661a7b8a59ee0791c57";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

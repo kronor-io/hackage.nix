@@ -14,7 +14,7 @@
       internalchecks = false;
       bench = true;
       llvm = false;
-      };
+    };
     package = {
       specVersion = "1.10";
       identifier = { name = "vector-algorithms"; version = "0.9.1.0"; };
@@ -27,7 +27,7 @@
       synopsis = "Efficient algorithms for vector arrays";
       description = "Efficient algorithms for sorting vector arrays. At some stage\nother vector algorithms may be added.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "7.8")) (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "7.8")) (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"));
         buildable = true;
-        };
+      };
       tests = {
         "properties" = {
           depends = [
@@ -48,10 +48,10 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "simple-bench" = {
           depends = [
@@ -59,9 +59,9 @@
             (hsPkgs."mwc-random" or (errorHandler.buildDepError "mwc-random"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
             (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-            ];
+          ];
           buildable = if !flags.bench then false else true;
-          };
         };
       };
-    }
+    };
+  }

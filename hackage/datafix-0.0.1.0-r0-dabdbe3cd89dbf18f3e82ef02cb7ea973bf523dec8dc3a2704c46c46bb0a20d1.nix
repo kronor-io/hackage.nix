@@ -22,12 +22,12 @@
       description = "Fixing data-flow problems in expression trees.\nThis should be useful if you want to write optimizations\nfor your favorite programming language.\nSee the Tutorial module for an introduction. After that,\nyou might want to take a look at the `examples/` folder\nin the [repository](https://github.com/sgraf812/datafix/tree/master/examples).";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        (hsPkgs.buildPackages.cabal-toolkit or (pkgs.buildPackages.cabal-toolkit or (errorHandler.setupDepError "cabal-toolkit")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+        (hsPkgs.pkgsBuildBuild.cabal-toolkit or (pkgs.pkgsBuildBuild.cabal-toolkit or (errorHandler.setupDepError "cabal-toolkit")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -38,19 +38,19 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."pomaps" or (errorHandler.buildDepError "pomaps"))
           (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "firstfollow-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
             (hsPkgs."datafix" or (errorHandler.buildDepError "datafix"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -71,19 +71,19 @@
             (hsPkgs."turtle" or (errorHandler.buildDepError "turtle"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."datafix" or (errorHandler.buildDepError "datafix"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
@@ -103,9 +103,9 @@
             (hsPkgs."turtle" or (errorHandler.buildDepError "turtle"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."lattices" or (errorHandler.buildDepError "lattices"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

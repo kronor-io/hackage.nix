@@ -22,11 +22,11 @@
       description = "Hasktorch is a library for tensors and neural networks in Haskell. It is an independent open source community project which leverages the core C++ libraries shared by PyTorch.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -69,9 +69,9 @@
           (hsPkgs."megaparsec" or (errorHandler.buildDepError "megaparsec"))
           (hsPkgs."half" or (errorHandler.buildDepError "half"))
           (hsPkgs."constraints" or (errorHandler.buildDepError "constraints"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -96,9 +96,9 @@
             (hsPkgs."lens-family-core" or (errorHandler.buildDepError "lens-family-core"))
             (hsPkgs."data-default-class" or (errorHandler.buildDepError "data-default-class"))
             (hsPkgs."half" or (errorHandler.buildDepError "half"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "doctests" = {
           depends = [
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
@@ -121,12 +121,12 @@
             (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
             (hsPkgs."inline-c" or (errorHandler.buildDepError "inline-c"))
             (hsPkgs."hasktorch" or (errorHandler.buildDepError "hasktorch"))
-            ];
+          ];
           buildable = if system.isOsx || flags.disable-doctest
             then false
             else true;
-          };
         };
+      };
       benchmarks = {
         "runtime" = {
           depends = [
@@ -141,9 +141,9 @@
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."hasktorch" or (errorHandler.buildDepError "hasktorch"))
             (hsPkgs."libtorch-ffi" or (errorHandler.buildDepError "libtorch-ffi"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "alloc" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -156,9 +156,9 @@
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."hasktorch" or (errorHandler.buildDepError "hasktorch"))
             (hsPkgs."libtorch-ffi" or (errorHandler.buildDepError "libtorch-ffi"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

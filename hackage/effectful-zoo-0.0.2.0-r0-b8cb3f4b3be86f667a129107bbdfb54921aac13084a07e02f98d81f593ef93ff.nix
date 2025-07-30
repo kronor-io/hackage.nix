@@ -21,7 +21,7 @@
       synopsis = "Effectful effects for testing";
       description = "See https://hackage.haskell.org/package/effectful-zoo/docs/effectful-zoo.html";
       buildType = "Simple";
-      };
+    };
     components = {
       sublibs = {
         "core" = {
@@ -36,9 +36,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "amazonka" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -55,9 +55,9 @@
             (hsPkgs."resourcet-effectful" or (errorHandler.buildDepError "resourcet-effectful"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "blockfrost" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -68,9 +68,9 @@
             (hsPkgs."effectful-zoo".components.sublibs.core or (errorHandler.buildDepError "effectful-zoo:core"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "rds-data" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -87,9 +87,9 @@
             (hsPkgs."microlens" or (errorHandler.buildDepError "microlens"))
             (hsPkgs."rds-data".components.sublibs.codecs or (errorHandler.buildDepError "rds-data:codecs"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hedgehog" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -106,19 +106,19 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hunit" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "effectful-zoo-test" = {
           depends = [
@@ -127,9 +127,9 @@
             (hsPkgs."effectful-zoo".components.sublibs.hedgehog or (errorHandler.buildDepError "effectful-zoo:hedgehog"))
             (hsPkgs."hw-prelude" or (errorHandler.buildDepError "hw-prelude"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

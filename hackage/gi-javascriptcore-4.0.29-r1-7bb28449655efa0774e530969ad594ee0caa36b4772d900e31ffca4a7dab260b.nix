@@ -22,19 +22,19 @@
       description = "This package re-exports (for backward compatibility)\nthe haskell-gi generated bindings in the gi-javascriptcore4 package.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.haskell-gi or (pkgs.buildPackages.haskell-gi or (errorHandler.setupDepError "haskell-gi")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.gi-javascriptcore4 or (pkgs.buildPackages.gi-javascriptcore4 or (errorHandler.setupDepError "gi-javascriptcore4")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.haskell-gi or (pkgs.pkgsBuildBuild.haskell-gi or (errorHandler.setupDepError "haskell-gi")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.gi-javascriptcore4 or (pkgs.pkgsBuildBuild.gi-javascriptcore4 or (errorHandler.setupDepError "gi-javascriptcore4")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."gi-javascriptcore4" or (errorHandler.buildDepError "gi-javascriptcore4"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

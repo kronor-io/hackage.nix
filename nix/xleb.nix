@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-10-19T00:58:33Z";
         sha256 = "8f056c9251ac0206f7cf2e61d38f15102aa377d7eb8bc77f76b97f6255d690a3";
-        };
+      };
       r1 = {
         nix = import ../hackage/xleb-0.1.0-r1-e24c1158d17287410004a94432639c8263b873a9591bd51f8e1bcebd5040a808.nix;
         revNum = 1;
         revTimestamp = "2017-10-19T01:03:35Z";
         sha256 = "e24c1158d17287410004a94432639c8263b873a9591bd51f8e1bcebd5040a808";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

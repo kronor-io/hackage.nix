@@ -7,8 +7,8 @@
         revNum = 0;
         revTimestamp = "2020-07-04T19:10:34Z";
         sha256 = "8ddf4218011c587fef3cf878daf50f5bdb8a1b668835395531aae2ec2c382476";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

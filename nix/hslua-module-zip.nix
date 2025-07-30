@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2022-10-20T12:35:28Z";
         sha256 = "05017e6a0f3fb45073e0f42f4ccd4a6b0d3ba77bde1d3e74e21e50fd13f59b33";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0" = {
     sha256 = "b0dabee06c2ff8ec4a616bb23126710f98d237988bbc62198945b061dfb86372";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2023-03-13T12:06:24Z";
         sha256 = "96e9c1fcdcc133abdf60ee1035e43cc906abc69d802587b7fa3af7791478273d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.1" = {
     sha256 = "7dc1f027575db20cbdfcb974eb33051c7440288f6704332d5a3a160658ccee32";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2024-01-18T17:35:35Z";
         sha256 = "02c6ed70b7f06b0b8091c3a7af493a0b9f73c5f832aeabea0d759f3c18196565";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.2" = {
     sha256 = "e3ef9989f07ac711db743a71f9d903c1e47d956b2c1d65eb0be3af5ca6dc4dbc";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2024-05-05T15:24:44Z";
         sha256 = "bd40b0b4aa2fb809504ddfbaa4d9ac5295c88a1cb935acf4d71998e6d95d01c6";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.3" = {
     sha256 = "d84f70c3b395a1e7a01d44d276a57d7eabfeb847c217501f8d98ffe0b82c9abb";
     revisions = {
@@ -55,14 +55,26 @@
         revNum = 0;
         revTimestamp = "2024-05-05T19:11:49Z";
         sha256 = "289db7bb7e28dffb4b67827023cee157952fc61c7caf5d1c443ca8dba809435b";
-        };
+      };
       r1 = {
         nix = import ../hackage/hslua-module-zip-1.1.3-r1-c31bc4cb3d7e63a85e030b4c8938fcf35e8f49c20dad50067a9c40ce3c2481d6.nix;
         revNum = 1;
         revTimestamp = "2024-08-31T20:11:55Z";
         sha256 = "c31bc4cb3d7e63a85e030b4c8938fcf35e8f49c20dad50067a9c40ce3c2481d6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+  "1.1.4" = {
+    sha256 = "5e53f4f43271d9e9f34417c20f3730ba4e32d21b6befc2cf3cfc928a7ccd42c6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hslua-module-zip-1.1.4-r0-1100921f06b2e12e6e8e83ad3ad5473ddef66bd24946e4e88f8068d8b3eaef51.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-23T10:14:33Z";
+        sha256 = "1100921f06b2e12e6e8e83ad3ad5473ddef66bd24946e4e88f8068d8b3eaef51";
+      };
+      default = "r0";
+    };
+  };
+}

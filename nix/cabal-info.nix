@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-02-06T17:40:48Z";
         sha256 = "0bdef35f941a737c828ee873eb5708f0fc5b1cf52cc519aad424610ed891983b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.1" = {
     sha256 = "9484ab621cf0b502edea1430966919005cf323b30ad83c8aac8912930072c4bd";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2017-05-14T04:24:37Z";
         sha256 = "98b6673015de8f9a92b5654000138c53e46aba48ecb8ba85608fd930def2cc2a";
-        };
+      };
       r1 = {
         nix = import ../hackage/cabal-info-0.2.1-r1-73be1dbed4dd565e383ac1707bafdb25f231902758c4d312fbb3731d4698bcb2.nix;
         revNum = 1;
         revTimestamp = "2022-05-25T06:47:40Z";
         sha256 = "73be1dbed4dd565e383ac1707bafdb25f231902758c4d312fbb3731d4698bcb2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

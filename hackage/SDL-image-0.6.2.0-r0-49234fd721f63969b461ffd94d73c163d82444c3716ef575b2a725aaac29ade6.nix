@@ -22,18 +22,18 @@
       description = "SDL_image is an image file loading library.\nIt loads images as SDL surfaces, and supports the\nfollowing formats: BMP, GIF, JPEG, LBM, PCX, PNG,\nPNM, TGA, TIFF, XCF, XPM, XV.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."SDL" or (errorHandler.buildDepError "SDL"))
-          ];
+        ];
         libs = [ (pkgs."SDL_image" or (errorHandler.sysDepError "SDL_image")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

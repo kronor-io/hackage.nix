@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-12-01T05:22:27Z";
         sha256 = "36847659c9b40ebefc335d52c76580ed584eee2393ead6ae2a623afaa63e3927";
-        };
+      };
       r1 = {
         nix = import ../hackage/type-flip-0.1.0.0-r1-f7811aba3017610117778d1407884c01d8d78c34b4e692ed5ce78bc14dc81640.nix;
         revNum = 1;
         revTimestamp = "2023-12-01T05:26:24Z";
         sha256 = "f7811aba3017610117778d1407884c01d8d78c34b4e692ed5ce78bc14dc81640";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

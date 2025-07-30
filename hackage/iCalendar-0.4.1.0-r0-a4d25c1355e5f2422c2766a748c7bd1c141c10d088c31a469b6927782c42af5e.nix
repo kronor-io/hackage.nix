@@ -21,7 +21,7 @@
       synopsis = "iCalendar data types, parser, and printer.";
       description = "Data definitions, parsing and printing of the iCalendar\nformat (RFC5545).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,8 +38,8 @@
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
           (hsPkgs."parsec" or (errorHandler.buildDepError "parsec"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.0")) (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"));
         buildable = true;
-        };
       };
-    }
+    };
+  }

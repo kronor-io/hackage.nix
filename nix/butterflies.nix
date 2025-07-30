@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-12-22T11:45:06Z";
         sha256 = "e3fbd6a4b2941f2a2130e4e0f4d30364f3c0b144a0b1ad1da31d8024eecff4a9";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.2" = {
     sha256 = "615497e08c16b00dec7435a87dbd279bbe94832423d91b7cff201afcf29ede6b";
     revisions = {
@@ -19,14 +19,14 @@
         revNum = 0;
         revTimestamp = "2018-11-06T07:35:32Z";
         sha256 = "929160e1923252b200f2d86cbe1c9cfa90784c3c10ea677f711be704525b9547";
-        };
+      };
       r1 = {
         nix = import ../hackage/butterflies-0.3.0.2-r1-c9fe444ee620b8201de7550b9fd7a66f3a378be47964082b5a215c27ca60adf7.nix;
         revNum = 1;
         revTimestamp = "2019-08-28T01:47:23Z";
         sha256 = "c9fe444ee620b8201de7550b9fd7a66f3a378be47964082b5a215c27ca60adf7";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

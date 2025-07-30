@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-07-19T06:33:26Z";
         sha256 = "4dea4b2564147911c5467ccb63b0efccd262759f4aa126896295d0918616e3c0";
-        };
+      };
       r1 = {
         nix = import ../hackage/svfactor-0.1-r1-db111228ff4613eea40da09bc85a0c1a2cf3acec6c55b1811680bcfa8f38d5b9.nix;
         revNum = 1;
         revTimestamp = "2019-09-22T09:04:26Z";
         sha256 = "db111228ff4613eea40da09bc85a0c1a2cf3acec6c55b1811680bcfa8f38d5b9";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

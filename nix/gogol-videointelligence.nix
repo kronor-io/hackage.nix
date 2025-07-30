@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:21:02Z";
         sha256 = "b2465cfd59886f0f1ff94b2acb2f7cb3dffc70a16f792cda4571a10354f201ff";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "2c81237bf158379d589c4cf78bc84362094a3a65667a0f22459c93b9d7ff4c9a";
     revisions = {
@@ -19,8 +19,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:39:28Z";
         sha256 = "7f72564905ac124572356b0db9cb8bf10c417787b503ec79b0aa2275c70de526";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "8a2f1d8c71d4d93a30f394e920313387d823767082240f733a73ff568bb8038c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-videointelligence-1.0.0-r0-0fb41fd248968b72b54b0e6a5ad2bddc3a24c7376b2970d2d770ab4e878a8875.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:09:39Z";
+        sha256 = "0fb41fd248968b72b54b0e6a5ad2bddc3a24c7376b2970d2d770ab4e878a8875";
+      };
+      default = "r0";
+    };
+  };
+}

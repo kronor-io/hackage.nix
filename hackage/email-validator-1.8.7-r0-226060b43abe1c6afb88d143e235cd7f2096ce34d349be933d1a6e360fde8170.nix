@@ -21,13 +21,13 @@
       synopsis = "Perform basic syntax and deliverability checks on email addresses.";
       description = "= WARNING\n\nThis package is no longer maintained on Hackage. Please obtain it\nfrom [the email-validator\nhomepage](https://michael.orlitzky.com/code/email-validator.xhtml)\ninstead. I am unable to delete my Hackage account or any of my\npackages; any further activity on Hackage should be considered\nmalicious.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "email-validator" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

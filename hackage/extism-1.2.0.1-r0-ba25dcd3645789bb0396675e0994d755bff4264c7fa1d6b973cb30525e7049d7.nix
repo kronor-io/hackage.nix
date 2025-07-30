@@ -22,12 +22,12 @@
       description = "Bindings to Extism, the universal plugin system";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -37,27 +37,27 @@
           (hsPkgs."extism-manifest" or (errorHandler.buildDepError "extism-manifest"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."binary" or (errorHandler.buildDepError "binary"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "extism-example" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."extism" or (errorHandler.buildDepError "extism"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "extism-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."extism" or (errorHandler.buildDepError "extism"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

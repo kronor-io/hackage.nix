@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-08-08T09:33:29Z";
         sha256 = "68b31b1d45990ddece2c3f7506fb202d3f6022bd2f588c0e0b81497f2c9a4766";
-        };
+      };
       r1 = {
         nix = import ../hackage/SpacePrivateers-0.1.0.0-r1-b59d607892ad860616cef196c83ff54388204102eae597acf88467a2f54764bf.nix;
         revNum = 1;
         revTimestamp = "2014-08-08T19:02:00Z";
         sha256 = "b59d607892ad860616cef196c83ff54388204102eae597acf88467a2f54764bf";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

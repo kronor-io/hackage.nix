@@ -21,7 +21,7 @@
       synopsis = "Tools for interacting with Bluesky / AT Protocol";
       description = "bluesky-tools provides tools that I've found useful while trying to integrate\nmy applications with the Bluesky social network (https://bsky.social).\nSome or most of the tools are more correctly AT protocol tools, rather than\nspecific to Bluesky, but I have not made that distinction in the docs.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,18 +36,18 @@
           (hsPkgs."network-uri" or (errorHandler.buildDepError "network-uri"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "bluesky-tools-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."bluesky-tools" or (errorHandler.buildDepError "bluesky-tools"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

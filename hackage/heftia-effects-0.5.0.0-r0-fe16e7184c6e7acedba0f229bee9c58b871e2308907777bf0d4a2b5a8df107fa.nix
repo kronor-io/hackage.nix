@@ -21,7 +21,7 @@
       synopsis = "higher-order algebraic effects done right";
       description = "This library is the battery-included version of the [heftia](https://hackage.haskell.org/package/heftia) package,\nproviding interpreters for standard effects.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "Teletype" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "KeyedEffects" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -74,9 +74,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Logging" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -94,9 +94,9 @@
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Continuation" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -112,9 +112,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ShiftReset" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -131,9 +131,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
             (hsPkgs."extra" or (errorHandler.buildDepError "extra"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Writer" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -149,9 +149,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SemanticsZoo" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -167,9 +167,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "FileSystemProvider" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -185,9 +185,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Subprocess" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -203,9 +203,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "UnliftIO" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -221,9 +221,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "Stream" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -239,9 +239,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "NonDet" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -259,10 +259,10 @@
             (hsPkgs."heftia-effects" or (errorHandler.buildDepError "heftia-effects"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -282,13 +282,13 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "heftia-bench" = {
           depends = [
@@ -314,9 +314,9 @@
             (hsPkgs."logict" or (errorHandler.buildDepError "logict"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."mpeff" or (errorHandler.buildDepError "mpeff"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.6" && (compiler.isGhc && (compiler.version).lt "9.10")) (hsPkgs."eff" or (errorHandler.buildDepError "eff"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.6" && (compiler.isGhc && compiler.version.lt "9.10")) (hsPkgs."eff" or (errorHandler.buildDepError "eff"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

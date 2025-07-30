@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:43:56Z";
         sha256 = "e99747d642326ee3cc0790ac1e674cf65442e9dccf52f0ac9b7ffa8569fafbd2";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-privatenetworks-2.0-r1-403b7d82cfd6f6bb384ad6d8c850830365ec1995846b992bddc056a89e967a4b.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:51:28Z";
         sha256 = "403b7d82cfd6f6bb384ad6d8c850830365ec1995846b992bddc056a89e967a4b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

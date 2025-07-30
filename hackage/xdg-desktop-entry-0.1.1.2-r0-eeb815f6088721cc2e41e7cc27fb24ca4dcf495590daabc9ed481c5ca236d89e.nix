@@ -21,7 +21,7 @@
       synopsis = "Parse files conforming to the xdg desktop entry spec";
       description = "Parse files conforming to the xdg desktop entry spec.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -48,9 +48,9 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."xdg-desktop-entry" or (errorHandler.buildDepError "xdg-desktop-entry"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

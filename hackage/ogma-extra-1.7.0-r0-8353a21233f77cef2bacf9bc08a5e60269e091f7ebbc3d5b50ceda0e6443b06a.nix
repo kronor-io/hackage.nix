@@ -21,7 +21,7 @@
       synopsis = "Ogma: Helper tool to interoperate between Copilot and other languages.";
       description = "Ogma is a tool to facilitate the integration of safe runtime monitors into\nother systems. Ogma extends\n<https://github.com/Copilot-Language/copilot Copilot>, a high-level runtime\nverification framework that generates hard real-time C99 code.\n\nThis package implements internal extensions to existing libraries\nand modules that are used in several ogma packages and their\ntesting facilities.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
           (hsPkgs."microstache" or (errorHandler.buildDepError "microstache"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unit-tests" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
             (hsPkgs."test-framework-quickcheck2" or (errorHandler.buildDepError "test-framework-quickcheck2"))
             (hsPkgs."ogma-extra" or (errorHandler.buildDepError "ogma-extra"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

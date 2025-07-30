@@ -21,7 +21,7 @@
       synopsis = "A SFTP client tool for secure file transfer operations";
       description = "Hsftp is a command-line tool for secure file transfer operations";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,12 +36,12 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."libssh2" or (errorHandler.pkgConfDepError "libssh2"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hsftp" = {
           depends = [
@@ -57,13 +57,13 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           pkgconfig = [
             (pkgconfPkgs."libssh2" or (errorHandler.pkgConfDepError "libssh2"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "hsftp-test" = {
           depends = [
@@ -84,12 +84,12 @@
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."yaml" or (errorHandler.buildDepError "yaml"))
-            ];
+          ];
           pkgconfig = [
             (pkgconfPkgs."libssh2" or (errorHandler.pkgConfDepError "libssh2"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

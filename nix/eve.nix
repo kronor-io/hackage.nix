@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-03-06T09:16:13Z";
         sha256 = "d5f95da3b8b1eb414081533e7e9fdbc4086ecebf0d539285cd4e6cff6eaf2e62";
-        };
+      };
       r1 = {
         nix = import ../hackage/eve-0.1.0-r1-b6dd437935b96c517d543a727bf77ecd9362eca4f17659db8878591ad9644033.nix;
         revNum = 1;
         revTimestamp = "2017-03-16T21:24:56Z";
         sha256 = "b6dd437935b96c517d543a727bf77ecd9362eca4f17659db8878591ad9644033";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "1804b2d8331263e7ddbc6a21273a111511de0a5f383a77a43d1c725f4a12d3f4";
     revisions = {
@@ -25,16 +25,16 @@
         revNum = 0;
         revTimestamp = "2017-03-06T22:15:18Z";
         sha256 = "21375bbddbb053d2f91c52a4d4035bdf0307f7a1a2122ee2ded6e47135f4e27e";
-        };
+      };
       r1 = {
         nix = import ../hackage/eve-0.1.1-r1-920f7b614ea515a4a7195d82358cf85c152f2e0a52b46244e3d48d48d56708d2.nix;
         revNum = 1;
         revTimestamp = "2017-03-16T21:28:48Z";
         sha256 = "920f7b614ea515a4a7195d82358cf85c152f2e0a52b46244e3d48d48d56708d2";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.2" = {
     sha256 = "93c89661d1554b94ea1672498e14d3c55af33a718116a241eafbed4d18353820";
     revisions = {
@@ -43,16 +43,16 @@
         revNum = 0;
         revTimestamp = "2017-03-07T18:09:03Z";
         sha256 = "58ede9816adc713103ea9177ae716b0e9a5509ad26e6f5b7f9b0c44f97331551";
-        };
+      };
       r1 = {
         nix = import ../hackage/eve-0.1.2-r1-5f7b2493d9f68f7f504235aa525e421e1e69c2802bcf1ef5041201f68629429e.nix;
         revNum = 1;
         revTimestamp = "2017-03-16T21:30:24Z";
         sha256 = "5f7b2493d9f68f7f504235aa525e421e1e69c2802bcf1ef5041201f68629429e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.6" = {
     sha256 = "275f1d025a1ac63bf608eb5bc533987e9d48cefcf75d9cc5d0d731d9c968440c";
     revisions = {
@@ -61,16 +61,16 @@
         revNum = 0;
         revTimestamp = "2017-03-16T01:36:42Z";
         sha256 = "bfc703a66a686906431cbe9e30292143e228f9d40d9068bdc112c37ed4dada67";
-        };
+      };
       r1 = {
         nix = import ../hackage/eve-0.1.6-r1-401666bd12b537cef6f593de9bf44b0d4758fa9f8a8d617e472e57633cec9bbd.nix;
         revNum = 1;
         revTimestamp = "2017-03-16T21:41:19Z";
         sha256 = "401666bd12b537cef6f593de9bf44b0d4758fa9f8a8d617e472e57633cec9bbd";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.7" = {
     sha256 = "b1d4ad466224f3cad47bce852e5c1605e3353b57adb1a4dc57591ee89e99b237";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2017-03-16T20:02:09Z";
         sha256 = "74b52c26bba18e5b2fd1360309f0219b38a2897bc948daa9fab30973935987d7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.8" = {
     sha256 = "1f2bfd2114adc4bee6096bf4ae0faa835117627eca225f9cebc9b860604d1bae";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2017-04-15T23:44:49Z";
         sha256 = "fe1229eb85020a6bf596af6dd371d46dd071f0f2537ca8b1fc7d3233ff71603e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.9.0" = {
     sha256 = "c9236a105e311b2ad9106df919155025273a72b54ef8cb8f039c6bfa96c76219";
     revisions = {
@@ -103,8 +103,8 @@
         revNum = 0;
         revTimestamp = "2020-10-21T02:29:53Z";
         sha256 = "1be024288b283f0fa90567387e2054afbda6d21a3f50dbc09ae205361c2b4152";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

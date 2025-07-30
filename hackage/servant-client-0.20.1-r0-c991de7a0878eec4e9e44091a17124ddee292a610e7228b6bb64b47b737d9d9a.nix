@@ -21,7 +21,7 @@
       synopsis = "Automatic derivation of querying functions for servant";
       description = "This library lets you derive automatically Haskell functions that\nlet you query each endpoint of a <http://hackage.haskell.org/package/servant servant> webservice.\n.\nSee <http://docs.servant.dev/en/stable/tutorial/Client.html the client section of the tutorial>.\n.\n<https://github.com/haskell-servant/servant/blob/master/servant-client/CHANGELOG.md CHANGELOG>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."monad-control" or (errorHandler.buildDepError "monad-control"))
           (hsPkgs."semigroupoids" or (errorHandler.buildDepError "semigroupoids"))
           (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -73,12 +73,12 @@
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
             (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = if compiler.isGhcjs && true then false else true;
-          };
+        };
         "readme" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -87,12 +87,12 @@
             (hsPkgs."servant" or (errorHandler.buildDepError "servant"))
             (hsPkgs."servant-client" or (errorHandler.buildDepError "servant-client"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.markdown-unlit.components.exes.markdown-unlit or (pkgs.buildPackages.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
-            ];
+            (hsPkgs.pkgsBuildBuild.markdown-unlit.components.exes.markdown-unlit or (pkgs.pkgsBuildBuild.markdown-unlit or (errorHandler.buildToolDepError "markdown-unlit:markdown-unlit")))
+          ];
           buildable = if compiler.isGhcjs && true then false else true;
-          };
         };
       };
-    }
+    };
+  }

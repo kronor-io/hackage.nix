@@ -21,20 +21,20 @@
       synopsis = "Run JSaddle @JSM@ with the GHC WASM backend";
       description = "Run JSaddle @JSM@ with the GHC WASM backend.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."jsaddle" or (errorHandler.buildDepError "jsaddle"))
-          ] ++ (pkgs.lib).optionals (system.isWasm32) [
+        ] ++ pkgs.lib.optionals (system.isWasm32) [
           (hsPkgs."aeson" or (errorHandler.buildDepError "aeson"))
           (hsPkgs."async" or (errorHandler.buildDepError "async"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."ghc-experimental" or (errorHandler.buildDepError "ghc-experimental"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

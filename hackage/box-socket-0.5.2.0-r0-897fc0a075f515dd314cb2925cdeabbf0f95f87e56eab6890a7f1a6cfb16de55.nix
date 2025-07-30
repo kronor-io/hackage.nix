@@ -21,7 +21,7 @@
       synopsis = "Box websockets";
       description = "Websockets built with the box library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,27 +33,27 @@
           (hsPkgs."profunctors" or (errorHandler.buildDepError "profunctors"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "box-socket" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."box-socket" or (errorHandler.buildDepError "box-socket"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

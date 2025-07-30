@@ -7,8 +7,8 @@
         revNum = 0;
         revTimestamp = "2015-10-24T03:23:23Z";
         sha256 = "080985d2f2b1d0a3311e69f497f25fd8cc3ef7e0932585c6cbd73b0b85e4f335";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "A programmable markup language to generate HTML";
       description = "Slab is an alternative syntax for writing HTML, plus some programming\nlanguage features (often found in templating languages, like conditionals\nand loops). You can visit the project homepage at <https://slab-lang.org>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -56,9 +56,9 @@
           (hsPkgs."wai-app-static" or (errorHandler.buildDepError "wai-app-static"))
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
           (hsPkgs."websockets" or (errorHandler.buildDepError "websockets"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "slab" = {
           depends = [
@@ -66,10 +66,10 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."protolude" or (errorHandler.buildDepError "protolude"))
             (hsPkgs."slab" or (errorHandler.buildDepError "slab"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "slab-examples" = {
           depends = [
@@ -87,9 +87,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-silver" or (errorHandler.buildDepError "tasty-silver"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

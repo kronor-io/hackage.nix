@@ -21,7 +21,7 @@
       synopsis = "A writer-biased RAW lock.";
       description = "A writer-biased RAW lock.\n\nIt allows for multiple readers to run concurrently with at most one\nappender, or a single writer running on isolation.\n\nThe code is safe in the presence of async exceptions, meaning that each\nactor will cleanup after itself if an exception is received.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."nothunks" or (errorHandler.buildDepError "nothunks"))
           (hsPkgs."strict-mvar" or (errorHandler.buildDepError "strict-mvar"))
           (hsPkgs."strict-stm" or (errorHandler.buildDepError "strict-stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "rawlock-test" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."strict-stm" or (errorHandler.buildDepError "strict-stm"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

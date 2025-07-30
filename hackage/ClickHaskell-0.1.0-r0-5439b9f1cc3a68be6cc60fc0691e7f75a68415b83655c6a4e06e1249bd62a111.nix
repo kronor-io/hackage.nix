@@ -21,7 +21,7 @@
       synopsis = "ClickHouse driver";
       description = "Small dependency footprint highlevel ClickHouse driver ";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."wide-word" or (errorHandler.buildDepError "wide-word"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

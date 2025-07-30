@@ -21,7 +21,7 @@
       synopsis = "Effectful streams and automata in coalgebraic encoding";
       description = "Effectful streams have an internal state and a step function.\nVarying the effect type, this gives many different useful concepts:\nFor example with a reader effect, it results in automata (a.k.a transducers or state machines).";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."simple-affine-space" or (errorHandler.buildDepError "simple-affine-space"))
           (hsPkgs."these" or (errorHandler.buildDepError "these"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "UserSawtooth" = {
           depends = [
@@ -52,9 +52,9 @@
             (hsPkgs."these" or (errorHandler.buildDepError "these"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."automaton" or (errorHandler.buildDepError "automaton"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ForeverSawtooth" = {
           depends = [
             (hsPkgs."MonadRandom" or (errorHandler.buildDepError "MonadRandom"))
@@ -68,10 +68,10 @@
             (hsPkgs."these" or (errorHandler.buildDepError "these"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."automaton" or (errorHandler.buildDepError "automaton"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "automaton-test" = {
           depends = [
@@ -90,9 +90,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

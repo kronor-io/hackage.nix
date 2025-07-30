@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2019-08-23T23:31:31Z";
         sha256 = "ede42f1b97529b5052ab45457643ecccf87a7f4ccdf1fb9598fc7450e89614fa";
-        };
+      };
       r1 = {
         nix = import ../hackage/hspec-parsec-0-r1-3469e0c2dbdbacc7adf27314a239c6d8a19790006a71dc82c0909b5b18efda0e.nix;
         revNum = 1;
         revTimestamp = "2019-08-24T00:09:11Z";
         sha256 = "3469e0c2dbdbacc7adf27314a239c6d8a19790006a71dc82c0909b5b18efda0e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

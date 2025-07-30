@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2024-12-02T03:54:36Z";
         sha256 = "5439b9f1cc3a68be6cc60fc0691e7f75a68415b83655c6a4e06e1249bd62a111";
-        };
+      };
       r1 = {
         nix = import ../hackage/ClickHaskell-0.1.0-r1-3f3f97114628d66a5ac3cc9a7e308aee5e1c98ecf495b6743ff72bba07d515b5.nix;
         revNum = 1;
         revTimestamp = "2024-12-04T22:24:05Z";
         sha256 = "3f3f97114628d66a5ac3cc9a7e308aee5e1c98ecf495b6743ff72bba07d515b5";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0" = {
     sha256 = "749bfa79a8d1cc770389f43e8165b5339f32f17e4e19afcfd54a9c406b79ba8f";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2025-03-23T06:15:06Z";
         sha256 = "b480d7f8c3eeff0d1066e6a4de9dd203c0808b712f5504f74281d0f718fd2b90";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

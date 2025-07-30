@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2022-06-10T10:14:28Z";
         sha256 = "45d66a80d353e4dcf922dc03061019f76d582cc2a257ee54d8b0f8363ac8bba6";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.1.0" = {
     sha256 = "88007fbeaea969e2bf57782f4a46e3f095aee97fe4c2bc51aaee60679f18eb27";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2022-06-15T09:35:55Z";
         sha256 = "f36695c612a960beeaf7c1db6e8348c423a11dcbc2bdad3f70fe766ccd7dbab8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.2.0" = {
     sha256 = "2aa7e33776a4f8a437a050687b8c59000b3d9a7258b8535ab4a4c39132afb1dc";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2022-10-10T12:36:00Z";
         sha256 = "4f1e4c5ab7910dd0a32850dedd2e7c7975847a91f0407ae99bb8f5166c6fc5fb";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.3.0" = {
     sha256 = "c1282adebe1bf0cfa953e6f6316cb95790f4fa1466422d221bca71a93af08289";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2022-10-14T08:43:57Z";
         sha256 = "5ca26680bcaaaa4a62639fd02b52bfc6478a0df33c87b9841df0b256b9f082d7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.3.1" = {
     sha256 = "3bd67867d1124f288663ebdb0dd56f644839d469fd41db61aba81dc841838ea7";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2022-10-14T20:35:33Z";
         sha256 = "ccf44f7ebfbe84554ba0b756bd7d3981540b0008766af3303f7a6b523b494255";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.3.2" = {
     sha256 = "322f0b56455f81090bbf56e98867daf7247192c664b096d1bcaa4e6989333f1d";
     revisions = {
@@ -67,10 +67,10 @@
         revNum = 0;
         revTimestamp = "2022-10-14T21:25:46Z";
         sha256 = "aa21aa4f9a8b3e0e1eb6bbc5a4a320b107a6b968284b22422f9e06758ddd8e3e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.3.3" = {
     sha256 = "ef787bbf444249c33f98bc01eee1925dba4be7233e9123c6c41a0691a836900f";
     revisions = {
@@ -79,10 +79,10 @@
         revNum = 0;
         revTimestamp = "2022-10-14T21:54:09Z";
         sha256 = "21d3a9f598d8ed026a8d25b722076d7f6757dfcb7ffe71fc9d8ece934defc63f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.0" = {
     sha256 = "4dfd4acf6a9b032025e3384903798f5bd709318ed459d9c44e927171bfae8888";
     revisions = {
@@ -91,10 +91,10 @@
         revNum = 0;
         revTimestamp = "2022-11-24T14:16:53Z";
         sha256 = "a4ee1fc01c33c5a84d180ec9bc16faf722b25bd9107dfbcf2834087ced5226c7";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.1.0" = {
     sha256 = "e73c595c690e2c23ee71afb85f4d057f78f49767ea72461f34cd658b40fc4f25";
     revisions = {
@@ -103,10 +103,10 @@
         revNum = 0;
         revTimestamp = "2024-12-19T13:33:06Z";
         sha256 = "b792b4a50aa5fa06b88025b03af75f1782c32da8528d719571bd0845448e7c9f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.1.1" = {
     sha256 = "20fc72ada20da33340a80e5ec82970f897e4e01e273bc0aadb1703476f5e8e19";
     revisions = {
@@ -115,8 +115,20 @@
         revNum = 0;
         revTimestamp = "2025-03-06T15:46:33Z";
         sha256 = "28c6eb7c5399694fd4a35a050f95890b6d6549e9f9356b086b246a1a459caafe";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.3.1.2" = {
+    sha256 = "db3fde70efdaa27c04c2cf92dd76ed2958d212618bf920d1574bf7f5264ba2c4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/registry-aeson-0.3.1.2-r0-6bfe5f823e192f57835daa001efe3e334ea9fe81215638798f2117fd2ed06ed5.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-17T10:43:15Z";
+        sha256 = "6bfe5f823e192f57835daa001efe3e334ea9fe81215638798f2117fd2ed06ed5";
+      };
+      default = "r0";
+    };
+  };
+}

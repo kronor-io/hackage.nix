@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2013-12-23T23:07:43Z";
         sha256 = "a3a68056cce6d407e5a416daa7288da28c7fda20429673463dd0b7a88444f2d2";
-        };
+      };
       r1 = {
         nix = import ../hackage/Piso-0.1-r1-77d29f8dce634a2f727ea0927a4da4fc3d09b9b28aeabfed8799fd6c8ba611f8.nix;
         revNum = 1;
         revTimestamp = "2017-05-05T12:28:04Z";
         sha256 = "77d29f8dce634a2f727ea0927a4da4fc3d09b9b28aeabfed8799fd6c8ba611f8";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2" = {
     sha256 = "36dd199c6799d7f171928d5d57b3dbd621dadb019fc1fc7cf5d62cf2e1e43f1f";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-05-09T14:48:12Z";
         sha256 = "167da0bf2c98d8f44615b3222eb82bf66567df4418980aa523af139fc971966b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "Simple tool for running commands in multiple directories";
       description = "Please see the README on GitHub at <https://github.com/jcranch/multidir#README>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."process" or (errorHandler.buildDepError "process"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."toml-reader" or (errorHandler.buildDepError "toml-reader"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "muld" = {
           depends = [
@@ -52,10 +52,10 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."toml-reader" or (errorHandler.buildDepError "toml-reader"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "Muld-test" = {
           depends = [
@@ -72,9 +72,9 @@
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."toml-reader" or (errorHandler.buildDepError "toml-reader"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

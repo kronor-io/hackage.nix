@@ -21,7 +21,7 @@
       synopsis = "An Hspec companion library for sydtest";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "sydtest-hspec-test" = {
           depends = [
@@ -44,12 +44,12 @@
             (hsPkgs."sydtest" or (errorHandler.buildDepError "sydtest"))
             (hsPkgs."sydtest-hspec" or (errorHandler.buildDepError "sydtest-hspec"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.sydtest-discover.components.exes.sydtest-discover or (pkgs.buildPackages.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.sydtest-discover.components.exes.sydtest-discover or (pkgs.pkgsBuildBuild.sydtest-discover or (errorHandler.buildToolDepError "sydtest-discover:sydtest-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

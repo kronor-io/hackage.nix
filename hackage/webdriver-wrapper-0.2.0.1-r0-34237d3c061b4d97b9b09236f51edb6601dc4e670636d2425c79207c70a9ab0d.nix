@@ -21,7 +21,7 @@
       synopsis = "Wrapper around the webdriver package that automatically manages Selenium";
       description = "Please see the README on GitHub at <https://github.com/gtollini/webdriver-wrapper#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -46,8 +46,8 @@
           (hsPkgs."webdriver" or (errorHandler.buildDepError "webdriver"))
           (hsPkgs."zip-archive" or (errorHandler.buildDepError "zip-archive"))
           (hsPkgs."zlib" or (errorHandler.buildDepError "zlib"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

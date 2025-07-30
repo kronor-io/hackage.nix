@@ -21,7 +21,7 @@
       synopsis = "Haskell bindings for OpenDHT";
       description = "Haskell bindings for [OpenDHT](https://github.com/savoirfairelinux/opendht) (based\non opendht-c, the C bindings for OpenDHT) exposing only pure Haskell data types.\n\nThis library defines a monad taking care of all pointers used to interact with\nopendht-c.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,14 +34,14 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
-          ];
+        ];
         pkgconfig = [
           (pkgconfPkgs."opendht-c" or (errorHandler.pkgConfDepError "opendht-c"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.c2hs.components.exes.c2hs or (pkgs.buildPackages.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.c2hs.components.exes.c2hs or (pkgs.pkgsBuildBuild.c2hs or (errorHandler.buildToolDepError "c2hs:c2hs")))
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

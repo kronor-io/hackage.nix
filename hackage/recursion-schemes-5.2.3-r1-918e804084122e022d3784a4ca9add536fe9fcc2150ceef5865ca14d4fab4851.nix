@@ -21,7 +21,7 @@
       synopsis = "Representing common recursion patterns as higher-order functions";
       description = "Many recursive functions share the same structure, e.g. pattern-match on the input and, depending on the data constructor, either recur on a smaller input or terminate the recursion with the base case. Another one: start with a seed value, use it to produce the first element of an infinite list, and recur on a modified seed in order to produce the rest of the list. Such a structure is called a recursion scheme. Using higher-order functions to implement those recursion schemes makes your code clearer, faster, and safer. See README for details.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -31,12 +31,12 @@
           (hsPkgs."data-fix" or (errorHandler.buildDepError "data-fix"))
           (hsPkgs."free" or (errorHandler.buildDepError "free"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ] ++ (pkgs.lib).optional (!(compiler.isGhc && (compiler.version).ge "8.2")) (hsPkgs."bifunctors" or (errorHandler.buildDepError "bifunctors"))) ++ (pkgs.lib).optionals (flags.template-haskell) [
+        ] ++ pkgs.lib.optional (!(compiler.isGhc && compiler.version.ge "8.2")) (hsPkgs."bifunctors" or (errorHandler.buildDepError "bifunctors"))) ++ pkgs.lib.optionals (flags.template-haskell) [
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."th-abstraction" or (errorHandler.buildDepError "th-abstraction"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "Expr" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."recursion-schemes" or (errorHandler.buildDepError "recursion-schemes"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

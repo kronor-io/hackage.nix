@@ -14,7 +14,7 @@
       identifier = {
         name = "hs-opentelemetry-instrumentation-persistent";
         version = "0.1.0.1";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "2024 Ian Duncan, Mercury Technologies";
       maintainer = "ian@iankduncan.com";
@@ -24,7 +24,7 @@
       synopsis = "";
       description = "Please see the README on GitHub at <https://github.com/iand675/hs-opentelemetry/tree/main/instrumentation/persistent#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,8 +38,8 @@
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vault" or (errorHandler.buildDepError "vault"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

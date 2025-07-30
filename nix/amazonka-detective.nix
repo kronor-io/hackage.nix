@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:09:58Z";
         sha256 = "0c08158816d2c9dedee6a713d4b678acebb730c591d5b1ea1143b2f65b9806de";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-detective-2.0-r1-a3f156c33d8502482d815b6910eaac7a44e7864ec2fcb8e91225b1fa53753f63.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:45:30Z";
         sha256 = "a3f156c33d8502482d815b6910eaac7a44e7864ec2fcb8e91225b1fa53753f63";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

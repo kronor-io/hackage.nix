@@ -22,11 +22,11 @@
       description = "Please see <https://github.com/cdepillabout/focuslist#readme README.md>.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cabal-doctest or (pkgs.buildPackages.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cabal-doctest or (pkgs.pkgsBuildBuild.cabal-doctest or (errorHandler.setupDepError "cabal-doctest")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -35,19 +35,19 @@
           (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
           (hsPkgs."mono-traversable" or (errorHandler.buildDepError "mono-traversable"))
           (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "focuslist-readme" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."focuslist" or (errorHandler.buildDepError "focuslist"))
             (hsPkgs."markdown-unlit" or (errorHandler.buildDepError "markdown-unlit"))
-            ];
+          ];
           buildable = if flags.buildreadme then true else false;
-          };
         };
+      };
       tests = {
         "focuslist-doctests" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."doctest" or (errorHandler.buildDepError "doctest"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "focuslist-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -70,9 +70,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hedgehog" or (errorHandler.buildDepError "tasty-hedgehog"))
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

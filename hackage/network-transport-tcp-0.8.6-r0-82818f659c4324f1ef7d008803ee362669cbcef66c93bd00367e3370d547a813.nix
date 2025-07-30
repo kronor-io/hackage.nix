@@ -21,7 +21,7 @@
       synopsis = "TCP instantiation of Network.Transport";
       description = "TCP instantiation of Network.Transport, which can be used to create Cloud Haskell backends";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."network" or (errorHandler.buildDepError "network"))
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "TestTCP" = {
           depends = [
@@ -45,11 +45,11 @@
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestQC" = {
-          depends = (pkgs.lib).optionals (flags.use-mock-network) [
+          depends = pkgs.lib.optionals (flags.use-mock-network) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
@@ -63,9 +63,9 @@
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."lockfree-queue" or (errorHandler.buildDepError "lockfree-queue"))
-            ];
+          ];
           buildable = if flags.use-mock-network then true else false;
-          };
         };
       };
-    }
+    };
+  }

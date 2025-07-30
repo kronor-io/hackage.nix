@@ -21,7 +21,7 @@
       synopsis = "Type-safe and efficient choreographies with location-set polymorphism.";
       description = "MultiChor is a library for functional choreographic programming in Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,9 +35,9 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "bank-2pc" = {
           depends = [
@@ -64,9 +64,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "lottery" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -92,9 +92,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bookseller-0-network" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -120,9 +120,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bookseller-1-simple" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -148,9 +148,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bookseller-2-higher-order" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -176,9 +176,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "bookseller-3-loc-poly" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -204,9 +204,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "diffiehellman" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -232,9 +232,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "gmw-real" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -260,9 +260,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "karatsuba" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -288,9 +288,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "kvs1" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -316,9 +316,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "kvs2" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -344,9 +344,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "kvs3" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -372,9 +372,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "kvs4" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -400,9 +400,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "mergesort" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -428,9 +428,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "oblivious-transfer" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -456,9 +456,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "quicksort" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -484,9 +484,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ring-leader" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -512,10 +512,10 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "testExamples" = {
           depends = [
@@ -542,9 +542,9 @@
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

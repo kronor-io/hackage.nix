@@ -21,6 +21,6 @@
       synopsis = "zlib C library bits";
       description = "This package provides the zlib C library bits that Haskell\nbindings can use to link against.";
       buildType = "Simple";
-      };
+    };
     components = { "library" = { buildable = true; }; };
-    }
+  }

@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-03-01T20:13:48Z";
         sha256 = "c1b79c1a730bcb67eeea0fc42a274e3af907df1edf82d8aba333a0d57c108678";
-        };
+      };
       r1 = {
         nix = import ../hackage/teeth-0.1.0.0-r1-84bb818fc4cb06bf91450e31e9a023926449a6157ce1e5de60649cda931db416.nix;
         revNum = 1;
         revTimestamp = "2015-03-01T20:20:24Z";
         sha256 = "84bb818fc4cb06bf91450e31e9a023926449a6157ce1e5de60649cda931db416";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.2" = {
     sha256 = "0c59db4fc490591772fd5b1c216c341fd10393b5751e5c4d0128fa9d2f716a6e";
     revisions = {
@@ -25,14 +25,14 @@
         revNum = 0;
         revTimestamp = "2016-10-27T09:38:00Z";
         sha256 = "89824971b7638bfc76a23e3f504e229398bbb044dd6af6b75451839f817e48e0";
-        };
+      };
       r1 = {
         nix = import ../hackage/teeth-0.2.0.2-r1-09a271505b8e1eae75ca6a51a4fb72c04cd74e9e8410154265e69a78af101f3d.nix;
         revNum = 1;
         revTimestamp = "2024-05-27T17:49:39Z";
         sha256 = "09a271505b8e1eae75ca6a51a4fb72c04cd74e9e8410154265e69a78af101f3d";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

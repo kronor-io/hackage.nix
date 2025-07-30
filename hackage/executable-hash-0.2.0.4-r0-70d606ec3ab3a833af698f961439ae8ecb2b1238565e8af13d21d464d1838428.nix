@@ -22,16 +22,16 @@
       description = "See README.md";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.bytestring or (pkgs.buildPackages.bytestring or (errorHandler.setupDepError "bytestring")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.cryptohash or (pkgs.buildPackages.cryptohash or (errorHandler.setupDepError "cryptohash")))
-        (hsPkgs.buildPackages.directory or (pkgs.buildPackages.directory or (errorHandler.setupDepError "directory")))
-        (hsPkgs.buildPackages.file-embed or (pkgs.buildPackages.file-embed or (errorHandler.setupDepError "file-embed")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.template-haskell or (pkgs.buildPackages.template-haskell or (errorHandler.setupDepError "template-haskell")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.bytestring or (pkgs.pkgsBuildBuild.bytestring or (errorHandler.setupDepError "bytestring")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.cryptohash or (pkgs.pkgsBuildBuild.cryptohash or (errorHandler.setupDepError "cryptohash")))
+        (hsPkgs.pkgsBuildBuild.directory or (pkgs.pkgsBuildBuild.directory or (errorHandler.setupDepError "directory")))
+        (hsPkgs.pkgsBuildBuild.file-embed or (pkgs.pkgsBuildBuild.file-embed or (errorHandler.setupDepError "file-embed")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.template-haskell or (pkgs.pkgsBuildBuild.template-haskell or (errorHandler.setupDepError "template-haskell")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,40 +42,40 @@
           (hsPkgs."executable-path" or (errorHandler.buildDepError "executable-path"))
           (hsPkgs."file-embed" or (errorHandler.buildDepError "file-embed"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "inject-executable-hash" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."executable-hash" or (errorHandler.buildDepError "executable-hash"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test-compute" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."executable-hash" or (errorHandler.buildDepError "executable-hash"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-inject" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."executable-hash" or (errorHandler.buildDepError "executable-hash"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-no-inject" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."executable-hash" or (errorHandler.buildDepError "executable-hash"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "A union-find/map data structure";
       description = "Please see the README on GitHub at <https://github.com/ejconlon/unimap#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."int-like" or (errorHandler.buildDepError "int-like"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
           (hsPkgs."optics" or (errorHandler.buildDepError "optics"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "unimap-test" = {
           depends = [
@@ -41,9 +41,9 @@
             (hsPkgs."optics" or (errorHandler.buildDepError "optics"))
             (hsPkgs."prop-unit" or (errorHandler.buildDepError "prop-unit"))
             (hsPkgs."unimap" or (errorHandler.buildDepError "unimap"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

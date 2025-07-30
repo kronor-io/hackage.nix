@@ -7,32 +7,32 @@
         revNum = 0;
         revTimestamp = "2014-11-22T21:57:36Z";
         sha256 = "e2b0681ca7276cd1d9a16205ca1307150a631489bd6aaa8ccf329329c00bc8b0";
-        };
+      };
       r1 = {
         nix = import ../hackage/tuple-morph-0.1.0.0-r1-10646c7894d0a90876feccdf2e969367ecddf9d9ea046d367b1c71cce5dcec25.nix;
         revNum = 1;
         revTimestamp = "2014-11-22T22:00:19Z";
         sha256 = "10646c7894d0a90876feccdf2e969367ecddf9d9ea046d367b1c71cce5dcec25";
-        };
+      };
       r2 = {
         nix = import ../hackage/tuple-morph-0.1.0.0-r2-6ad368e5bfdedd2b82585b9012e01b386fe95038f7c1209a36c567bf43ae054c.nix;
         revNum = 2;
         revTimestamp = "2014-11-22T22:02:36Z";
         sha256 = "6ad368e5bfdedd2b82585b9012e01b386fe95038f7c1209a36c567bf43ae054c";
-        };
+      };
       r3 = {
         nix = import ../hackage/tuple-morph-0.1.0.0-r3-bbc0b79e82d04c85c468c4cc4dae4d5b8ca9c31affffd78add9ea0f225d0441d.nix;
         revNum = 3;
         revTimestamp = "2014-11-22T22:03:35Z";
         sha256 = "bbc0b79e82d04c85c468c4cc4dae4d5b8ca9c31affffd78add9ea0f225d0441d";
-        };
+      };
       r4 = {
         nix = import ../hackage/tuple-morph-0.1.0.0-r4-835c4661ff3b962ec5fa6f1899c6cb0d241362f06636478935fd5475c684eada.nix;
         revNum = 4;
         revTimestamp = "2014-11-22T22:09:20Z";
         sha256 = "835c4661ff3b962ec5fa6f1899c6cb0d241362f06636478935fd5475c684eada";
-        };
-      default = "r4";
       };
+      default = "r4";
     };
-  }
+  };
+}

@@ -13,7 +13,7 @@
       ghcdebug = false;
       library-only = false;
       threaded = true;
-      };
+    };
     package = {
       specVersion = "1.12";
       identifier = { name = "hledger-web"; version = "1.40"; };
@@ -26,7 +26,7 @@
       synopsis = "Web user interface for the hledger accounting system";
       description = "A simple web user interface for the hledger accounting system,\nproviding a more modern UI than the command-line or terminal interfaces.\nIt can be used as a local single-user UI, or as a multi-user UI for\nviewing\\/adding\\/editing on the web.\n\nhledger is a robust, cross-platform set of tools for tracking money,\ntime, or any other commodity, using double-entry accounting and a\nsimple, editable file format, with command-line, terminal and web\ninterfaces. It is a Haskell rewrite of Ledger, and one of the leading\nimplementations of Plain Text Accounting. Read more at:\n<https://hledger.org>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -78,26 +78,26 @@
           (hsPkgs."yesod-form" or (errorHandler.buildDepError "yesod-form"))
           (hsPkgs."yesod-static" or (errorHandler.buildDepError "yesod-static"))
           (hsPkgs."yesod-test" or (errorHandler.buildDepError "yesod-test"))
-          ] ++ (pkgs.lib).optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
+        ] ++ pkgs.lib.optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
         buildable = true;
-        };
+      };
       exes = {
         "hledger-web" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hledger-web" or (errorHandler.buildDepError "hledger-web"))
-            ] ++ (pkgs.lib).optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
+          ] ++ pkgs.lib.optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
           buildable = if flags.library-only then false else true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."hledger-web" or (errorHandler.buildDepError "hledger-web"))
-            ] ++ (pkgs.lib).optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
+          ] ++ pkgs.lib.optional (flags.ghcdebug) (hsPkgs."ghc-debug-stub" or (errorHandler.buildDepError "ghc-debug-stub"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Haskell array programming.";
       description = "This package provides Haskell array programming, interface and environment.\n\nModule names clash with each other and with the Prelude.\n\n== Usage\n\n>>> import Harpie.Fixed qualified as F\n>>> import Harpie.Shape qualified as S\n>>> import Harpie.Array qualified as A\n\n>>> a = F.range @[2,3,4]\n>>> F.shape a\n[2,3,4]\n>>> pretty a\n[[[0,1,2,3],\n  [4,5,6,7],\n  [8,9,10,11]],\n [[12,13,14,15],\n  [16,17,18,19],\n  [20,21,22,23]]]\n\n>>> a = A.range [2,3,4]\n>>> F.shape a\n[2,3,4]\n>>> pretty a\n[[[0,1,2,3],\n  [4,5,6,7],\n  [8,9,10,11]],\n [[12,13,14,15],\n  [16,17,18,19],\n  [20,21,22,23]]]";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,17 +35,17 @@
           (hsPkgs."random" or (errorHandler.buildDepError "random"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."vector-algorithms" or (errorHandler.buildDepError "vector-algorithms"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."doctest-parallel" or (errorHandler.buildDepError "doctest-parallel"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

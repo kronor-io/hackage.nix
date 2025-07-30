@@ -21,7 +21,7 @@
       synopsis = "Regex based parsers";
       description = "Regex based parsers. See\n\n[\"Regex.Text\"]: To work with @Text@ from the @text@ library.\n\n[\"Regex.List\"]: To work with @String@s or lists.\n\n[\"Regex.Base\"]: To work with other sequences.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -30,15 +30,15 @@
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ] ++ (pkgs.lib).optionals (compiler.isGhc && true) [
+        ] ++ pkgs.lib.optionals (compiler.isGhc && true) [
           (hsPkgs."ghc-bignum" or (errorHandler.buildDepError "ghc-bignum"))
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-          ]) ++ (pkgs.lib).optionals (compiler.isMhs && true) [
+        ]) ++ pkgs.lib.optionals (compiler.isMhs && true) [
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -50,9 +50,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

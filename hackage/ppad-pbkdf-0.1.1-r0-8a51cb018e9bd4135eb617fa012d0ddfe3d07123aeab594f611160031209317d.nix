@@ -21,15 +21,15 @@
       synopsis = "A password-based key derivation function";
       description = "A pure implementation of the password-based key derivation function PBKDF2,\nper RFC 2898.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "pbkdf-tests" = {
           depends = [
@@ -43,10 +43,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "pbkdf-bench" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."ppad-pbkdf" or (errorHandler.buildDepError "ppad-pbkdf"))
             (hsPkgs."ppad-sha256" or (errorHandler.buildDepError "ppad-sha256"))
             (hsPkgs."ppad-sha512" or (errorHandler.buildDepError "ppad-sha512"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

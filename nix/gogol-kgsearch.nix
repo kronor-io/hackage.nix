@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2016-06-21T04:20:41Z";
         sha256 = "b85e84182245567e42c9516af282f6d4d56b51fced2172da225ae50a5ea500b4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "851191e764c93914fcda810cd103a4fbaca3b45c6a47c2a1d699198a81d5f337";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2016-11-03T13:30:52Z";
         sha256 = "724db288c7cedf39b594d2a9859fb3bda7a9b20510565cff2e22bd5cae6db837";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.2.0" = {
     sha256 = "e693a96569b16252ca14a7d684e51652b58d691456ab008b74c4276c29cf1a22";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2017-02-12T15:38:57Z";
         sha256 = "282cda1c80680d41691f053f9ee3f530910389b7a51ac44534e7199d91cb6143";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0" = {
     sha256 = "566c71568fdfdd8f83e263e41511eb36ca315da777b9e62a82e80ae788e18d4e";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2017-07-12T14:53:56Z";
         sha256 = "a24f8bc7b23262f33c97ef529079cc0ec71c5ef49067244f677e68ff426df2f1";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.0" = {
     sha256 = "300bc08164b8d5d7021914d8a0ce049dcfdc246f5f01a0ac42fc6ff170480320";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2019-02-05T19:19:02Z";
         sha256 = "650235b31260dfcbf3c80b9d6a4c5b368006d04345930d501d713c97f15e018d";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "64622c62b202ed7a1585ba26ecac79497878d22d592dd397043d9452aba1d47a";
     revisions = {
@@ -67,8 +67,20 @@
         revNum = 0;
         revTimestamp = "2019-08-23T07:36:44Z";
         sha256 = "5fc0b5349f5466b41069b325d987bc4b0385e71c22a3ae183e81478c2d26f39f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.0.0" = {
+    sha256 = "a7f8dde77409fb4d70648dd676bb24377e9e03014ff5b94ead9d86398b45fe0a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gogol-kgsearch-1.0.0-r0-3c5b9397887f11d6cd0cad57128d44bc68ad8e540f3f105124d00cd8b2f71423.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-07T06:08:25Z";
+        sha256 = "3c5b9397887f11d6cd0cad57128d44bc68ad8e540f3f105124d00cd8b2f71423";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-04-09T09:10:13Z";
         sha256 = "fb8ac2b8b4a7280031e7ca44dcdce5907ebdf96eb4cabbca0dd6297e5080c055";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.1.0" = {
     sha256 = "382e70b38cdfd2884fbbd6e596af523e208c7fee2518b91e0b97092bf88b3c54";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2024-09-29T15:37:55Z";
         sha256 = "17a5d6ee1fa94787b1b3349dc04e81ab42f2d5baeeb02b06877794969e41e07c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.2" = {
     sha256 = "6a48674913494967653d6b7262f9b4d1a22d324470461b13e270d58abd9fe927";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2024-12-02T13:38:46Z";
         sha256 = "dfa6ef75552221133667a284347e3df163c64cfff4e6a567e7a0a3784c1cb7db";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.2.1" = {
     sha256 = "ae37898242fadfc6291786e49dd86b28aeff3652f88843f906320cf18311f737";
     revisions = {
@@ -43,8 +43,80 @@
         revNum = 0;
         revTimestamp = "2025-04-05T16:25:57Z";
         sha256 = "c37d8d0641c4f1d049202c56a8f166f7c4ef5ded38162bbcd864717913ac3b1e";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "1.3" = {
+    sha256 = "fade97ca1e07c4379e16370b1576d1f65b9401fc7051d80580c465a8fe614e7a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.3-r0-7b406ed294956cc141187e0f91eae5900eae13725f7c3a26668b9266ed7c83ae.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-20T15:52:43Z";
+        sha256 = "7b406ed294956cc141187e0f91eae5900eae13725f7c3a26668b9266ed7c83ae";
+      };
+      default = "r0";
+    };
+  };
+  "1.4" = {
+    sha256 = "ef064cf706eda6748afe34342a65125ebca0adfd0b9ac44672611ade9db01551";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.4-r0-c6a40eae0fd169deea91d05be468a72a9fe7034b09e925960f30bb50f2997044.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-14T15:11:55Z";
+        sha256 = "c6a40eae0fd169deea91d05be468a72a9fe7034b09e925960f30bb50f2997044";
+      };
+      default = "r0";
+    };
+  };
+  "1.4.1" = {
+    sha256 = "76f19a31f35c0849d45ed04acc754c8a04800d72c7f97dc74eb58a127d711636";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.4.1-r0-6949ea3e2d8b4705f36a4ceb3b45ec11e9deabf9dc25e758ba7a5d75bfd8fa15.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-26T16:00:17Z";
+        sha256 = "6949ea3e2d8b4705f36a4ceb3b45ec11e9deabf9dc25e758ba7a5d75bfd8fa15";
+      };
+      default = "r0";
+    };
+  };
+  "1.4.2" = {
+    sha256 = "3f205dc7c9c3b53d7ee39b593fd603b567381ceac43d9466367681e9eb000eee";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.4.2-r0-0f9da420b4ac145d096d1d95fb30b1f21dc74d04bf741635efb78c02591257d2.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-01T09:18:19Z";
+        sha256 = "0f9da420b4ac145d096d1d95fb30b1f21dc74d04bf741635efb78c02591257d2";
+      };
+      default = "r0";
+    };
+  };
+  "1.4.3" = {
+    sha256 = "e18e3bfcaddf114e18e4f3d48574bdc1fd9d07ec94dce726bd5b7679324b37db";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.4.3-r0-32dac55e0128301d3e27bb90d0850b9d8bf18194a332c0afd15eac0e848d73df.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-01T13:32:58Z";
+        sha256 = "32dac55e0128301d3e27bb90d0850b9d8bf18194a332c0afd15eac0e848d73df";
+      };
+      default = "r0";
+    };
+  };
+  "1.4.4" = {
+    sha256 = "7c8463f1609feb42c89f139c22824818aad7c592f404b0a6e51634f2c461c8d5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/PenroseKiteDart-1.4.4-r0-bbfe0271fc0f0c028700ccd387173f69f9301a93b01805b3ea8b6bce7266e75b.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-09T16:11:47Z";
+        sha256 = "bbfe0271fc0f0c028700ccd387173f69f9301a93b01805b3ea8b6bce7266e75b";
+      };
+      default = "r0";
+    };
+  };
+}

@@ -21,7 +21,7 @@
       synopsis = "";
       description = "Please see the README at <https://codeberg.org/jjba23/yggdrasil-schema>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,9 +43,9 @@
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."neat-interpolation" or (errorHandler.buildDepError "neat-interpolation"))
           (hsPkgs."sqlite-simple" or (errorHandler.buildDepError "sqlite-simple"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "yggdrasil-schema-spec" = {
           depends = [
@@ -72,9 +72,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hspec" or (errorHandler.buildDepError "tasty-hspec"))
             (hsPkgs."yggdrasil-schema" or (errorHandler.buildDepError "yggdrasil-schema"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

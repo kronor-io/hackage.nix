@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2012-06-29T21:12:49Z";
         sha256 = "98c38c1150d1f93b6f63d6487ec20c6e4121cdf5f14acab9d1c0949dbef40996";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.1" = {
     sha256 = "e191eef939e409e3684352435f07c918055293013015faaa08f8ee5f7d26ec27";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2014-10-14T18:39:36Z";
         sha256 = "6ad7c9e17c817d9e3d7d45a69220523b5a7f7b09d6692e79020ca48558addf8a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2" = {
     sha256 = "c6ed155137d40262bf8aa38155bd93ecdc4bdbcb4ac83f5b980eeb8545ee377d";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2016-01-19T18:06:59Z";
         sha256 = "1d365c54e8e24e48ed0ce2827861715f630af3468ec01de97677f8def99929dd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.3" = {
     sha256 = "a990264ab1d26aee077b035c1959fb792e5b015e46010d08dd065dea2a4cb0bc";
     revisions = {
@@ -43,8 +43,8 @@
         revNum = 0;
         revTimestamp = "2017-04-16T18:51:05Z";
         sha256 = "e9989ea4a13476a47285d5d1631acd4f0255fea2f60d53958e97048cfb6e375a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

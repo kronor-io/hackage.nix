@@ -21,7 +21,7 @@
       synopsis = "Sandwich test contexts for MinIO";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -45,8 +45,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

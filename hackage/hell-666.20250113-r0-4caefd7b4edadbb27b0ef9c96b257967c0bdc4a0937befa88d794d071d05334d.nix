@@ -21,7 +21,7 @@
       synopsis = "Haskell-based shell scripting language";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "hell" = {
@@ -49,9 +49,9 @@
             (hsPkgs."typed-process" or (errorHandler.buildDepError "typed-process"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

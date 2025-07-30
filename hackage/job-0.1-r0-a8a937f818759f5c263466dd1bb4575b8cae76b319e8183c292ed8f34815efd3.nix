@@ -21,7 +21,7 @@
       synopsis = "Job queue";
       description = "Job queue";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -37,9 +37,9 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -49,9 +49,9 @@
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."resourcet" or (errorHandler.buildDepError "resourcet"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

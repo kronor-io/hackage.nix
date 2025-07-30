@@ -21,7 +21,7 @@
       synopsis = "Ollama Haskell library";
       description = "Haskell bindings for Ollama.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,9 +32,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."http-client" or (errorHandler.buildDepError "http-client"))
           (hsPkgs."http-types" or (errorHandler.buildDepError "http-types"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ollama-haskell-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."silently" or (errorHandler.buildDepError "silently"))
             (hsPkgs."ollama-haskell" or (errorHandler.buildDepError "ollama-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

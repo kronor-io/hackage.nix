@@ -14,7 +14,7 @@
       identifier = {
         name = "consumers-metrics-prometheus";
         version = "1.0.0.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Scrive AB";
       maintainer = "Andrzej Rybczak <andrzej@rybczak.net>,\nJonathan Jouty <jonathan.jouty@scrive.com>";
@@ -24,7 +24,7 @@
       synopsis = "Prometheus metrics for the consumers library";
       description = "Provides seamless instrumentation of your existing\nconsumers using Prometheus";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."safe-exceptions" or (errorHandler.buildDepError "safe-exceptions"))
           (hsPkgs."transformers-base" or (errorHandler.buildDepError "transformers-base"))
           (hsPkgs."prometheus-client" or (errorHandler.buildDepError "prometheus-client"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

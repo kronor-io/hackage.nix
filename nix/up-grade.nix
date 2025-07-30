@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-02-09T03:01:08Z";
         sha256 = "987d61e3eb5714ee285a98aa11aa97b8ce706c4b3ed84ab6db7d2c929c0acbb0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.2" = {
     sha256 = "cb893b55b492d6cbd7b447c320e4a2eaf618a4fcd37352b97dffc22784e955da";
     revisions = {
@@ -19,8 +19,8 @@
         revNum = 0;
         revTimestamp = "2015-02-10T01:33:12Z";
         sha256 = "aa436fea34c46eaf90b6124d130b99537daec902d6d732c449e9cbbfdfec3bb2";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

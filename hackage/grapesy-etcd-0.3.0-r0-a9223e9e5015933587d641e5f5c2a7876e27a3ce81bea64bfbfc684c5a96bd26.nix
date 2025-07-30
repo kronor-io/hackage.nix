@@ -21,7 +21,7 @@
       synopsis = "grapesy-etcd - GRPC interface to etcd";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
           (hsPkgs."grapesy" or (errorHandler.buildDepError "grapesy"))
           (hsPkgs."proto-lens-etcd" or (errorHandler.buildDepError "proto-lens-etcd"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

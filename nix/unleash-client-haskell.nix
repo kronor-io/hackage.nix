@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2023-10-14T16:17:55Z";
         sha256 = "824735929031b41e6497672f3bb5cab63d532761f604c952f197f5f5152adc05";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.4.8" = {
     sha256 = "f6cafcb6f32d914e1d46c38fb496afe6cab6f63fd045800450204a904b49d3b9";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2023-10-14T16:29:43Z";
         sha256 = "7511f1154ba19db512b545edad884ccf58538ebf3981fb5654e88a40437ffe40";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.0" = {
     sha256 = "3413c8f696177c724475874016a8cb14ceac7bb504fa258b6c8cdb5d97e4135c";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2023-10-15T07:44:55Z";
         sha256 = "06ceb63255ff79a290495fd30c6a3922573b3b948c8331dcb0a2b5c14e5ed9aa";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.6.0" = {
     sha256 = "6403fd508978101e676b4ea799d3862b02241c262362688a0c5867ccb60f83ee";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2023-10-16T06:46:39Z";
         sha256 = "f18a6abc9bdae9231810971f35a0a00258b6ad6773f1607395200eb948da67a8";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.7.0" = {
     sha256 = "e402441e7e0e6d32808c31a98de1d4e07c23e69b91a75e6153af29121976b601";
     revisions = {
@@ -55,8 +55,32 @@
         revNum = 0;
         revTimestamp = "2024-06-24T08:03:17Z";
         sha256 = "2bbdab6a174f782175b8faeeef1a627442d7955b48d1803c840d4fd6c7ccc9d4";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.8.0" = {
+    sha256 = "0361440b3972547464b2001f7f7e3aa853fd80a358d555e5a1e3bd8a5d597d8d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unleash-client-haskell-0.8.0-r0-0f25ae63264b9d716afee6d6234b86708cd426b4bcfce6010353a3a31976a46d.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-02T11:40:52Z";
+        sha256 = "0f25ae63264b9d716afee6d6234b86708cd426b4bcfce6010353a3a31976a46d";
+      };
+      default = "r0";
+    };
+  };
+  "0.8.1" = {
+    sha256 = "6c57f20f60066a546ec4326cc9ea3250646bfd2d3616d50f791013249722c2ad";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unleash-client-haskell-0.8.1-r0-deabe04adea478825e48e2b47c394d767b532010b7ae4e87caacc2ff299406da.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-02T11:56:40Z";
+        sha256 = "deabe04adea478825e48e2b47c394d767b532010b7ae4e87caacc2ff299406da";
+      };
+      default = "r0";
+    };
+  };
+}

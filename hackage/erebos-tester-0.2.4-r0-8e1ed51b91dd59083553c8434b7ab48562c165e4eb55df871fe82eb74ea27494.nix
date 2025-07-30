@@ -21,7 +21,7 @@
       synopsis = "Test framework with virtual network using Linux namespaces";
       description = "This framework is intended mainly for networking libraries/applications and\ncan run multiple concurrent instances of the tested application on\ndifferent nodes, possibly within separate subnets, on the virtual network.\nEach instance can receive its own commands and produce output to be checked\nvia standard input/output, as defined using custom script language.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "erebos-tester" = {
@@ -32,9 +32,9 @@
             (hsPkgs."linux-namespaces" or (errorHandler.buildDepError "linux-namespaces"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "erebos-tester-core" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -56,9 +56,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."th-compat" or (errorHandler.buildDepError "th-compat"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

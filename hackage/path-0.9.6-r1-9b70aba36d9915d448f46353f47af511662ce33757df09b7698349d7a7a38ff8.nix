@@ -21,7 +21,7 @@
       synopsis = "Support for well-typed paths";
       description = "Support for well-typed paths.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,25 +33,23 @@
           (hsPkgs."path".components.sublibs.os-string-compat or (errorHandler.buildDepError "path:os-string-compat"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ] ++ [
-          (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-          ];
+        ] ++ [ (hsPkgs."filepath" or (errorHandler.buildDepError "filepath")) ];
         buildable = true;
-        };
+      };
       sublibs = {
         "os-string-compat" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
-            ] ++ (if flags.os-string
+          ] ++ (if flags.os-string
             then [
               (hsPkgs."os-string" or (errorHandler.buildDepError "os-string"))
-              ]
+            ]
             else [
               (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
-              ]);
+            ]);
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -63,9 +61,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."path" or (errorHandler.buildDepError "path"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "test-ospath" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -75,9 +73,9 @@
             (hsPkgs."path" or (errorHandler.buildDepError "path"))
             (hsPkgs."path".components.sublibs.os-string-compat or (errorHandler.buildDepError "path:os-string-compat"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "validity-test" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -87,9 +85,9 @@
             (hsPkgs."genvalidity-hspec" or (errorHandler.buildDepError "genvalidity-hspec"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."path" or (errorHandler.buildDepError "path"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "validity-test-ospath" = {
           depends = [
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
@@ -101,9 +99,9 @@
             (hsPkgs."path" or (errorHandler.buildDepError "path"))
             (hsPkgs."path".components.sublibs.os-string-compat or (errorHandler.buildDepError "path:os-string-compat"))
             (hsPkgs."validity-bytestring" or (errorHandler.buildDepError "validity-bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

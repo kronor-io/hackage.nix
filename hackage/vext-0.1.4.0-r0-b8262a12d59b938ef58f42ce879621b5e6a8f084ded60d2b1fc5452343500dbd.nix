@@ -21,7 +21,7 @@
       synopsis = "Array library monomorphized with backpack";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,18 +34,18 @@
           (hsPkgs."run-st" or (errorHandler.buildDepError "run-st"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "prim-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -53,45 +53,45 @@
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "map-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "zip-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "type-eq-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "rep-eq-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "ord-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -100,9 +100,9 @@
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
             (hsPkgs."vext".components.sublibs.inst-bit or (errorHandler.buildDepError "vext:inst-bit"))
             (hsPkgs."vext".components.sublibs.rep-eq-indef or (errorHandler.buildDepError "vext:rep-eq-indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "mask-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -110,9 +110,9 @@
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
             (hsPkgs."vext".components.sublibs.inst-bit or (errorHandler.buildDepError "vext:inst-bit"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "permute-indef" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -120,26 +120,26 @@
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
             (hsPkgs."vext".components.sublibs.inst or (errorHandler.buildDepError "vext:inst"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "imp" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "inst-bit" = {
           depends = [
             (hsPkgs."vext".components.sublibs.imp or (errorHandler.buildDepError "vext:imp"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
             (hsPkgs."vext".components.sublibs.rep-eq-indef or (errorHandler.buildDepError "vext:rep-eq-indef"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "inst" = {
           depends = [
             (hsPkgs."vext".components.sublibs.imp or (errorHandler.buildDepError "vext:imp"))
@@ -152,29 +152,29 @@
             (hsPkgs."vext".components.sublibs.mask-indef or (errorHandler.buildDepError "vext:mask-indef"))
             (hsPkgs."vext".components.sublibs.prim-indef or (errorHandler.buildDepError "vext:prim-indef"))
             (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "pair-indef" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
+        };
         "pair-array-inst" = {
           depends = [
             (hsPkgs."vext".components.sublibs.inst or (errorHandler.buildDepError "vext:inst"))
             (hsPkgs."vext".components.sublibs.imp or (errorHandler.buildDepError "vext:imp"))
             (hsPkgs."vext".components.sublibs.pair-indef or (errorHandler.buildDepError "vext:pair-indef"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "pair-inst" = {
           depends = [
             (hsPkgs."vext".components.sublibs.pair-array-inst or (errorHandler.buildDepError "vext:pair-array-inst"))
             (hsPkgs."vext".components.sublibs.indef or (errorHandler.buildDepError "vext:indef"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -185,9 +185,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."natural-arithmetic" or (errorHandler.buildDepError "natural-arithmetic"))
             (hsPkgs."unlifted" or (errorHandler.buildDepError "unlifted"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

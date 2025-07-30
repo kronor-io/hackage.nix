@@ -21,14 +21,14 @@
       synopsis = "You want Symbolize with a Z";
       description = "You want Symbolize with a Z:\n\nHackage: <https://hackage.haskell.org/package/symbolize)>\n\nGitHub: <https://github.com/qqwy/haskell-symbolize>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."youProbablyWantSymbolizeWithAZ" or (errorHandler.buildDepError "youProbablyWantSymbolizeWithAZ"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

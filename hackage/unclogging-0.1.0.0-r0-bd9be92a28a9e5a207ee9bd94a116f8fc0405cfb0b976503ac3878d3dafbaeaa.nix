@@ -21,7 +21,7 @@
       synopsis = "a library which implements easy, concurrent and pretty logging";
       description = "Simple, yet extensible concurrent logging system based on publish/subscribe. The library is supposed to be easy to use, concurrent and pretty. It is practical for small applications like web-servers or command line programs.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "unclogging" = {
           depends = [
@@ -47,10 +47,10 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."unclogging" or (errorHandler.buildDepError "unclogging"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "unclogging-test" = {
           depends = [
@@ -61,9 +61,9 @@
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."unclogging" or (errorHandler.buildDepError "unclogging"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

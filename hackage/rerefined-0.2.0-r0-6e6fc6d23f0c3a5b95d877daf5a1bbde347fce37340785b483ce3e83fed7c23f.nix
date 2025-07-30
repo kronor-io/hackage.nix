@@ -21,7 +21,7 @@
       synopsis = "Refinement types, again";
       description = "Please see README.md.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."mono-traversable" or (errorHandler.buildDepError "mono-traversable"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."typeably" or (errorHandler.buildDepError "typeably"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

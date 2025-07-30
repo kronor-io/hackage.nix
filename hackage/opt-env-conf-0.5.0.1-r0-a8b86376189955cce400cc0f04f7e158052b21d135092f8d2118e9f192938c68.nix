@@ -21,7 +21,7 @@
       synopsis = "Settings parsing for Haskell: command-line arguments, environment variables, and configuration values.";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,8 +43,8 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."validity" or (errorHandler.buildDepError "validity"))
           (hsPkgs."validity-containers" or (errorHandler.buildDepError "validity-containers"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

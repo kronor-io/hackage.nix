@@ -21,7 +21,7 @@
       synopsis = "Immutaball platformer game";
       description = "The Immutaball platformer game is a rewrite of Neverball in Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -52,9 +52,9 @@
           (hsPkgs."curl" or (errorHandler.buildDepError "curl"))
           (hsPkgs."i18n" or (errorHandler.buildDepError "i18n"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "immutaball" = {
           depends = [
@@ -86,9 +86,9 @@
             (hsPkgs."i18n" or (errorHandler.buildDepError "i18n"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."immutaball-core" or (errorHandler.buildDepError "immutaball-core"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "immutaputt" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -119,10 +119,10 @@
             (hsPkgs."i18n" or (errorHandler.buildDepError "i18n"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."immutaball-core" or (errorHandler.buildDepError "immutaball-core"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test-immutaball" = {
           depends = [
@@ -159,9 +159,9 @@
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."QuickCheck" or (errorHandler.buildDepError "QuickCheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Di logging for WAI requests and responses";
       description = "Di logging for WAI requests and responses";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,8 +30,8 @@
           (hsPkgs."df1-wai" or (errorHandler.buildDepError "df1-wai"))
           (hsPkgs."di-df1" or (errorHandler.buildDepError "di-df1"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

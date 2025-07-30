@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-07-19T19:51:22Z";
         sha256 = "b41b1493c625504df5691cecc1f4ddcb8c73b2c7fff3aa23cf57a4083bd7e9bf";
-        };
+      };
       r1 = {
         nix = import ../hackage/refact-0.1.0.0-r1-dabba3be0f1707de0e3b93e431868864754dd156e0df92ecf49f60ff0b1a295a.nix;
         revNum = 1;
         revTimestamp = "2015-07-19T21:55:56Z";
         sha256 = "dabba3be0f1707de0e3b93e431868864754dd156e0df92ecf49f60ff0b1a295a";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.2.0.0" = {
     sha256 = "0e6d84927cd194a33452480d203d9193ad6d2e3c1a2cba32f9ad2f244694abc7";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2015-07-21T09:45:16Z";
         sha256 = "bd9f6614c46c8e7dbf8ea2e4261330f2e406d18c133054475aec0abdd8ae6127";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.0" = {
     sha256 = "fcb994c9e7aa3accaff47ec8dabde47a1a879c321457acf24d519bc3ccd340d9";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2015-07-24T16:42:31Z";
         sha256 = "5603ac2bfc088e90b0dc2ca5b92b176f134a691b5a79df2e0de43834d1b16686";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.1" = {
     sha256 = "21f0629cf251efe05ab1a1cd6d085944b612df52755a6c5c2c6b8e574687b45a";
     revisions = {
@@ -49,10 +49,10 @@
         revNum = 0;
         revTimestamp = "2015-07-26T15:02:19Z";
         sha256 = "398825d5f99e3bdc54bfe3b2a40ae82e9f30090dbbd1f389128960c40fd90572";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.3.0.2" = {
     sha256 = "0ad029727797c8ca5d179c7abf1bfc135d86a7d72cf93785ee12ad243aeb1f6c";
     revisions = {
@@ -61,8 +61,8 @@
         revNum = 0;
         revTimestamp = "2015-11-21T22:53:49Z";
         sha256 = "4ea82b93debdc0711e1bc4b5d8989b9e19613f369ff2049da33c5250b8d33bcd";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

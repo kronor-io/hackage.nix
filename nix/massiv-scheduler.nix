@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2019-03-20T20:00:59Z";
         sha256 = "f9dd7f1fc38dc44032b217ce70f62be1ace7f8430cfb6048903b7437d1a54408";
-        };
+      };
       r1 = {
         nix = import ../hackage/massiv-scheduler-0.1.0.0-r1-124575860eb0437a53b253a20861bc54f46de3ad9c0c46259e9762a651858bd6.nix;
         revNum = 1;
         revTimestamp = "2019-03-20T20:14:23Z";
         sha256 = "124575860eb0437a53b253a20861bc54f46de3ad9c0c46259e9762a651858bd6";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1.0" = {
     sha256 = "63a391ae31d2be02a6ea4f3332b3251496a26dd5d60e2dfab1a4df79d50b52c4";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2019-03-27T01:04:25Z";
         sha256 = "68276c1023a3eec4c2aef33488935d63e117eac16bfd608c52f2086cb2e9ebf2";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

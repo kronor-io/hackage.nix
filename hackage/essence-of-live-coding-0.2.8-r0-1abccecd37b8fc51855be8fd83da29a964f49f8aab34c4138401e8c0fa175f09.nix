@@ -21,7 +21,7 @@
       synopsis = "General purpose live coding framework";
       description = "essence-of-live-coding is a general purpose and type safe live coding framework.\n\nYou can run programs in it, and edit, recompile and reload them while they're running.\nInternally, the state of the live program is automatically migrated when performing hot code swap.\n\nThe library also offers an easy to use FRP interface.\nIt is parametrized by its side effects,\nseparates data flow cleanly from control flow,\nand allows to develop live programs from reusable, modular components.\nThere are also useful utilities for debugging and quickchecking.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,27 +35,27 @@
           (hsPkgs."mmorph" or (errorHandler.buildDepError "mmorph"))
           (hsPkgs."profunctors" or (errorHandler.buildDepError "profunctors"))
           (hsPkgs."selective" or (errorHandler.buildDepError "selective"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "TestExceptions" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."essence-of-live-coding" or (errorHandler.buildDepError "essence-of-live-coding"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestNonBlocking" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."essence-of-live-coding" or (errorHandler.buildDepError "essence-of-live-coding"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -72,9 +72,9 @@
             (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
             (hsPkgs."HUnit" or (errorHandler.buildDepError "HUnit"))
             (hsPkgs."vector-sized" or (errorHandler.buildDepError "vector-sized"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

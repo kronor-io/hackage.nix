@@ -14,7 +14,7 @@
       identifier = {
         name = "distributed-process-client-server";
         version = "0.2.8.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "Tim Watson 2012 - 2017";
       maintainer = "The Distributed Haskell team";
@@ -24,7 +24,7 @@
       synopsis = "The Cloud Haskell Application Platform";
       description = "Modelled after Erlang OTP's gen_server, this framework provides similar\nfacilities for Cloud Haskell, grouping essential practices for client/server\ndevelopment into a set of modules and standards designed to help you build\nconcurrent, distributed applications with relative ease.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."fingertree" or (errorHandler.buildDepError "fingertree"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ManagedProcessTests" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "PrioritisedProcessTests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -77,9 +77,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

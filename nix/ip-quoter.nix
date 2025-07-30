@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2015-06-10T19:19:23Z";
         sha256 = "dc9c9608a846931ce91bf7a9f0f38230431d9807ee7aea333a76fa47d9ec29d6";
-        };
+      };
       r1 = {
         nix = import ../hackage/ip-quoter-1.0.0.0-r1-5cd6b449c4acd24b27d27a839acdab85f65b5556dd7bc8be115b7e2f6dc5df11.nix;
         revNum = 1;
         revTimestamp = "2015-06-10T19:47:25Z";
         sha256 = "5cd6b449c4acd24b27d27a839acdab85f65b5556dd7bc8be115b7e2f6dc5df11";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "1.0.1.0" = {
     sha256 = "5ca4f7458fcae93dbfd68c554c6a44700010fbfcf9a83d51e0e69b42b9d5226a";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2015-06-24T17:03:31Z";
         sha256 = "f3ebdf406946c163ad8a808c73af34644ab5fc4789ec93055fc1541b541dc1d5";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "1.0.1.1" = {
     sha256 = "94c4369d0a83ed5f8a0bb8057d297935f19e7a51a568f4c5348936e9053929a0";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2015-06-24T17:19:45Z";
         sha256 = "d5d60460be69cca5556f6691f8ef51e5a02dbce12eacea789886f8461a9383e3";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

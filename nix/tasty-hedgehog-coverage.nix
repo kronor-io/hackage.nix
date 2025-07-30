@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2018-06-29T05:48:07Z";
         sha256 = "6bb18da600213fe1d84152c938ac80cea68557d165f2fda5bcb38439ec874418";
-        };
+      };
       r1 = {
         nix = import ../hackage/tasty-hedgehog-coverage-0.1.0.0-r1-4e90190de0a5cb8ce16844b1f5d566438e7dad42aad4b425b52e0d4c044f6ddc.nix;
         revNum = 1;
         revTimestamp = "2018-10-23T01:19:06Z";
         sha256 = "4e90190de0a5cb8ce16844b1f5d566438e7dad42aad4b425b52e0d4c044f6ddc";
-        };
+      };
       r2 = {
         nix = import ../hackage/tasty-hedgehog-coverage-0.1.0.0-r2-9db2673fbdfcaf12367b7853c95cebd4f5b307dafee1a2d768fe8564159ddf81.nix;
         revNum = 2;
         revTimestamp = "2019-02-20T05:49:01Z";
         sha256 = "9db2673fbdfcaf12367b7853c95cebd4f5b307dafee1a2d768fe8564159ddf81";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

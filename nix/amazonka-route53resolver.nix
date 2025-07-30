@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:45:40Z";
         sha256 = "ec9f5bb133b7b12bbf9c966025193bd1c923809c11980ff38a9359b8c9af2b02";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-route53resolver-2.0-r1-b0dde991cab00e5a743fad894616ba3549c81e4d94075ff1d8abd66582b985be.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:52:45Z";
         sha256 = "b0dde991cab00e5a743fad894616ba3549c81e4d94075ff1d8abd66582b985be";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

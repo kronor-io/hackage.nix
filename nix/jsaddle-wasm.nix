@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2024-10-20T13:44:33Z";
         sha256 = "131e07b448775e1d1ff7754837e6736b0db5fa04c5d624690468b4634311b411";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.1.0" = {
     sha256 = "5a3c0dae3d2ea0a4dfd8932bcc111fee3dd81ad92e2d08144e82f8c1ad5060b3";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2024-10-26T13:20:54Z";
         sha256 = "f599ec5e08c661f1aac7a83f38eb77f77da8a73451318f8f011a0b100c2d4bdf";
-        };
+      };
       r1 = {
         nix = import ../hackage/jsaddle-wasm-0.0.1.0-r1-a01fba942113b6d1754233ac404439b4140e6ce15ce502e67beeb1310a25d71b.nix;
         revNum = 1;
         revTimestamp = "2024-12-30T15:30:05Z";
         sha256 = "a01fba942113b6d1754233ac404439b4140e6ce15ce502e67beeb1310a25d71b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.0" = {
     sha256 = "b03b1ae33aa07596b4971f977250a4cc3c2c29f7cbac01b6fccc10ae32ef28fd";
     revisions = {
@@ -37,8 +37,44 @@
         revNum = 0;
         revTimestamp = "2025-03-06T10:00:16Z";
         sha256 = "ab3f5fbcea736d9e384cc56788418bfac546a7cce06c7e97d1029abe40acd69f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+  "0.1.1.0" = {
+    sha256 = "ad647cf01db466a6e8f5342c7eaeeaef09ce5b2766077ad207c791bee0ed2d6b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-wasm-0.1.1.0-r0-1cc7a0487e337449bdec669eda740f2518c85e153a859eb1ef88e0b612ed1989.nix;
+        revNum = 0;
+        revTimestamp = "2025-05-01T20:28:51Z";
+        sha256 = "1cc7a0487e337449bdec669eda740f2518c85e153a859eb1ef88e0b612ed1989";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.2.0" = {
+    sha256 = "df6575a57c8adae47a150bb1fe3ed0f0e0cb892c1af5c9b967158054de33d9aa";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-wasm-0.1.2.0-r0-a98b11b75c9c86aa380fdfb4dbae64f43abaa580dcef2172ba72b3b8084779e1.nix;
+        revNum = 0;
+        revTimestamp = "2025-06-27T20:43:14Z";
+        sha256 = "a98b11b75c9c86aa380fdfb4dbae64f43abaa580dcef2172ba72b3b8084779e1";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.2.1" = {
+    sha256 = "fb8cdd295cdbd709c18c2c9ba68136ce56fceeaab0f1208c6672b7dc4ae407a9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-wasm-0.1.2.1-r0-44ca427f5dfa469784e9f9963e13855afc826a07f73b9cdf7cf6fa8e3d49ab10.nix;
+        revNum = 0;
+        revTimestamp = "2025-07-10T18:07:56Z";
+        sha256 = "44ca427f5dfa469784e9f9963e13855afc826a07f73b9cdf7cf6fa8e3d49ab10";
+      };
+      default = "r0";
+    };
+  };
+}

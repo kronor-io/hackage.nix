@@ -22,12 +22,12 @@
       description = "Pure C++ code analysis with libclang.\n\nRefer to <http://clang.llvm.org/doxygen/group__CINDEX.html libclang's documentation> for usage.\nIn general, the naming scheme is @clang_getCursorType -> cursorType@, @CXCursor -> `Cursor`@.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        (hsPkgs.buildPackages.inline-c or (pkgs.buildPackages.inline-c or (errorHandler.setupDepError "inline-c")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+        (hsPkgs.pkgsBuildBuild.inline-c or (pkgs.pkgsBuildBuild.inline-c or (errorHandler.setupDepError "inline-c")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -42,13 +42,13 @@
           (hsPkgs."singletons" or (errorHandler.buildDepError "singletons"))
           (hsPkgs."microlens" or (errorHandler.buildDepError "microlens"))
           (hsPkgs."microlens-contra" or (errorHandler.buildDepError "microlens-contra"))
-          ];
+        ];
         libs = [ (pkgs."clang" or (errorHandler.sysDepError "clang")) ];
         build-tools = [
-          (hsPkgs.buildPackages.hsc2hs.components.exes.hsc2hs or (pkgs.buildPackages.hsc2hs or (errorHandler.buildToolDepError "hsc2hs:hsc2hs")))
-          ];
+          (hsPkgs.pkgsBuildBuild.hsc2hs.components.exes.hsc2hs or (pkgs.pkgsBuildBuild.hsc2hs or (errorHandler.buildToolDepError "hsc2hs:hsc2hs")))
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "find-classes" = {
           depends = [
@@ -58,10 +58,10 @@
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."hashable" or (errorHandler.buildDepError "hashable"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = false;
-          };
         };
+      };
       tests = {
         "list-fun-types" = {
           depends = [
@@ -69,18 +69,18 @@
             (hsPkgs."clang-pure" or (errorHandler.buildDepError "clang-pure"))
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "list-structs" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."clang-pure" or (errorHandler.buildDepError "clang-pure"))
             (hsPkgs."lens" or (errorHandler.buildDepError "lens"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

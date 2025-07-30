@@ -21,7 +21,7 @@
       synopsis = "SMT Based Verification: Symbolic Haskell theorem prover using SMT solving.";
       description = "Express properties about Haskell programs and automatically prove them using SMT\n(Satisfiability Modulo Theories) solvers.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -44,9 +44,9 @@
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."uniplate" or (errorHandler.buildDepError "uniplate"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "SBVTest" = {
           depends = [
@@ -64,16 +64,16 @@
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SBVConnections" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."sbv" or (errorHandler.buildDepError "sbv"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SBVDocTest" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -89,9 +89,9 @@
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "SBVHLint" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -107,10 +107,10 @@
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "SBVBench" = {
           depends = [
@@ -123,9 +123,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-bench" or (errorHandler.buildDepError "tasty-bench"))
             (hsPkgs."time" or (errorHandler.buildDepError "time"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

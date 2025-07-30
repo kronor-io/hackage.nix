@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2025-03-25T16:47:48Z";
         sha256 = "738d38fefe3809281f1c0f4c5b547c63a9332a797ba9bc0458cba92eff051625";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.0.1" = {
     sha256 = "c1b8c85ea6e30e019b211ad3495502e0aff1865c9660196ac65bf61af1bc59f1";
     revisions = {
@@ -19,8 +19,14 @@
         revNum = 0;
         revTimestamp = "2025-03-25T17:31:36Z";
         sha256 = "dee494df0fc08bf1acf1456d9bd431d4d7f209f0843f19b16867516b0e4913e7";
-        };
-      default = "r0";
       };
+      r1 = {
+        nix = import ../hackage/countdown-numbers-game-0.0.0.1-r1-b8a8b00b0ca760b070137631b63b2d1875df458d3e815024b77b1ec759342014.nix;
+        revNum = 1;
+        revTimestamp = "2025-06-04T09:47:08Z";
+        sha256 = "b8a8b00b0ca760b070137631b63b2d1875df458d3e815024b77b1ec759342014";
+      };
+      default = "r1";
     };
-  }
+  };
+}

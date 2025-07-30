@@ -21,7 +21,7 @@
       synopsis = "Case splitting plugin";
       description = "A GHC plugin that performs automatic case splitting";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."ghc-exactprint" or (errorHandler.buildDepError "ghc-exactprint"))
           (hsPkgs."ghc-paths" or (errorHandler.buildDepError "ghc-paths"))
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "auto-split-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

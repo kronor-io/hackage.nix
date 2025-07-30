@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-01-21T04:09:33Z";
         sha256 = "012f2ae597271cedd540f4e2251bde07fe52b37af0c0ed6d901564f260502dfe";
-        };
+      };
       r1 = {
         nix = import ../hackage/flippers-1.0.1-r1-e908ada5c891a6ac39cefb7e41648606d1a5f1b1048281f93bd496c5f22d73b4.nix;
         revNum = 1;
         revTimestamp = "2014-07-19T15:02:34Z";
         sha256 = "e908ada5c891a6ac39cefb7e41648606d1a5f1b1048281f93bd496c5f22d73b4";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

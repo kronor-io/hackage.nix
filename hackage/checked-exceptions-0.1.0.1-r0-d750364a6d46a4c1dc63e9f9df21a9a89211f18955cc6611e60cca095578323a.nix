@@ -21,7 +21,7 @@
       synopsis = "mtl-style checked exceptions";
       description = "A monad transformer that allows you to throw and catch a restricted set of exceptions, tracked at the type level.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."constraints" or (errorHandler.buildDepError "constraints"))
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
           (hsPkgs."ghc-tcplugins-extra" or (errorHandler.buildDepError "ghc-tcplugins-extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -46,9 +46,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

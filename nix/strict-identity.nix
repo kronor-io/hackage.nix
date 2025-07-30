@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2014-01-12T08:25:22Z";
         sha256 = "5e298df2c1a279e1dfd351485b0a8453d814ae6ff12e4679e80b228f471731cb";
-        };
+      };
       r1 = {
         nix = import ../hackage/strict-identity-0.1.0.0-r1-dfbae3f135c13e0809e251df1c3f654eaa80c74d8cce3be4ca5c29f777fb6a53.nix;
         revNum = 1;
         revTimestamp = "2017-02-15T01:12:11Z";
         sha256 = "dfbae3f135c13e0809e251df1c3f654eaa80c74d8cce3be4ca5c29f777fb6a53";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

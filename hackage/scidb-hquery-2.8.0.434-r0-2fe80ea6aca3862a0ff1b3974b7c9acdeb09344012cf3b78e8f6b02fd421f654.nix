@@ -22,11 +22,11 @@
       description = "The command hquery with no operands and no options will begin an\ninteracitve session with a SciDB server using SciDB's shim\nprotocol at host localhost and port 8080.  See the [homepage](https://github.com/mdgabriel/scidb-hquery.git),\n\"hquery -m\", and [www.paradigm4.com](http://www.paradigm4.com) for more infomation.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -55,14 +55,14 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
           (hsPkgs."x509-store" or (errorHandler.buildDepError "x509-store"))
-          ];
+        ];
         build-tools = [
-          (hsPkgs.buildPackages.BNFC.components.exes.bnfc or (pkgs.buildPackages.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
-          (hsPkgs.buildPackages.alex.components.exes.alex or (pkgs.buildPackages.alex or (errorHandler.buildToolDepError "alex:alex")))
-          (hsPkgs.buildPackages.happy.components.exes.happy or (pkgs.buildPackages.happy or (errorHandler.buildToolDepError "happy:happy")))
-          ];
+          (hsPkgs.pkgsBuildBuild.BNFC.components.exes.bnfc or (pkgs.pkgsBuildBuild.bnfc or (errorHandler.buildToolDepError "BNFC:bnfc")))
+          (hsPkgs.pkgsBuildBuild.alex.components.exes.alex or (pkgs.pkgsBuildBuild.alex or (errorHandler.buildToolDepError "alex:alex")))
+          (hsPkgs.pkgsBuildBuild.happy.components.exes.happy or (pkgs.pkgsBuildBuild.happy or (errorHandler.buildToolDepError "happy:happy")))
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "hquery" = {
           depends = [
@@ -93,9 +93,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."x509-store" or (errorHandler.buildDepError "x509-store"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

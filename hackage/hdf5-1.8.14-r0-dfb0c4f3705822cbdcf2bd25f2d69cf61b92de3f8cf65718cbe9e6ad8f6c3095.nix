@@ -21,7 +21,7 @@
       synopsis = "Haskell interface to the HDF5 scientific data storage library.";
       description = "This is a low-level but typesafe Haskell interface to the HDF5 library.  No pointers necessary.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,16 +35,16 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."tagged" or (errorHandler.buildDepError "tagged"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         pkgconfig = if flags.use-hdf5-serial
           then [
             (pkgconfPkgs."hdf5-serial" or (errorHandler.pkgConfDepError "hdf5-serial"))
-            ]
+          ]
           else [
             (pkgconfPkgs."hdf5" or (errorHandler.pkgConfDepError "hdf5"))
-            ];
+          ];
         buildable = true;
-        };
+      };
       tests = {
         "hdf5-test" = {
           depends = [
@@ -56,9 +56,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."exceptions" or (errorHandler.buildDepError "exceptions"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

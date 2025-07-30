@@ -21,7 +21,7 @@
       synopsis = "A desktop bar similar to xmobar, but with more GUI";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -82,12 +82,12 @@
           (hsPkgs."xdg-basedir" or (errorHandler.buildDepError "xdg-basedir"))
           (hsPkgs."xml" or (errorHandler.buildDepError "xml"))
           (hsPkgs."xml-helpers" or (errorHandler.buildDepError "xml-helpers"))
-          ] ++ (pkgs.lib).optional (flags.deprecated-pager-hints) (hsPkgs."xmonad" or (errorHandler.buildDepError "xmonad"));
+        ] ++ pkgs.lib.optional (flags.deprecated-pager-hints) (hsPkgs."xmonad" or (errorHandler.buildDepError "xmonad"));
         pkgconfig = [
           (pkgconfPkgs."gtk+-3.0" or (errorHandler.pkgConfDepError "gtk+-3.0"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "taffybar" = {
           depends = [
@@ -97,13 +97,13 @@
             (hsPkgs."hslogger" or (errorHandler.buildDepError "hslogger"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."taffybar" or (errorHandler.buildDepError "taffybar"))
-            ];
+          ];
           pkgconfig = [
             (pkgconfPkgs."gtk+-3.0" or (errorHandler.pkgConfDepError "gtk+-3.0"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "unit" = {
           depends = [
@@ -115,12 +115,12 @@
             (hsPkgs."hspec-golden" or (errorHandler.buildDepError "hspec-golden"))
             (hsPkgs."taffybar" or (errorHandler.buildDepError "taffybar"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Deeply-nested, multiple key type maps.";
       description = "Please see the README at https://github.com/mixphix/deep-map";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."indexed-traversable" or (errorHandler.buildDepError "indexed-traversable"))
           (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

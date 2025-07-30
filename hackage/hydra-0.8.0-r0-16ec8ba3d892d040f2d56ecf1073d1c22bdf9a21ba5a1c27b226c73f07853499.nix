@@ -21,7 +21,7 @@
       synopsis = "Type-aware transformations for data and programs";
       description = "Hydra is a domain-specific language for data models and data transformations. It is based on a typed lambda calculus, and transforms data and schemas between languages in a way which maintains type conformance. Hydra will even transform functional programs between selected languages, including much of its own source code.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."split" or (errorHandler.buildDepError "split"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "hydra-test" = {
           depends = [
@@ -62,9 +62,9 @@
             (hsPkgs."split" or (errorHandler.buildDepError "split"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

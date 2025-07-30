@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2023-07-27T21:46:07Z";
         sha256 = "838549c309283b28d4cf2b6ca610c1ff1e96bc9c8162f921c6e44634fdf89307";
-        };
+      };
       r1 = {
         nix = import ../hackage/amazonka-sagemaker-edge-2.0-r1-2a52a0bd5ee09e52f8013e06d73259fe904b5054b667003a1b00f792e42e4838.nix;
         revNum = 1;
         revTimestamp = "2024-05-13T07:53:33Z";
         sha256 = "2a52a0bd5ee09e52f8013e06d73259fe904b5054b667003a1b00f792e42e4838";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

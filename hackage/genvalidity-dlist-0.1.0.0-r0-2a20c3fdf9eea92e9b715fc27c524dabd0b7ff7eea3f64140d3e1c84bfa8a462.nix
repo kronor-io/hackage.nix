@@ -21,7 +21,7 @@
       synopsis = "GenValidity support for dlist";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."dlist" or (errorHandler.buildDepError "dlist"))
           (hsPkgs."genvalidity" or (errorHandler.buildDepError "genvalidity"))
           (hsPkgs."validity-dlist" or (errorHandler.buildDepError "validity-dlist"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

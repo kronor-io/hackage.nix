@@ -21,7 +21,7 @@
       synopsis = "Live in-memory sync of Obsidian Markdown notes";
       description = "";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,17 +39,17 @@
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."unionmount" or (errorHandler.buildDepError "unionmount"))
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "ob-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."ob" or (errorHandler.buildDepError "ob"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

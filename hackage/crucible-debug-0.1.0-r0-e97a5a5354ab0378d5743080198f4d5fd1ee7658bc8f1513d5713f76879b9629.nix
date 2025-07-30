@@ -21,7 +21,7 @@
       synopsis = "An interactive debugger for Crucible programs";
       description = "An interactive debugger for Crucible programs.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -41,19 +41,19 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."what4" or (errorHandler.buildDepError "what4"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "crucible-debug" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."crucible-debug" or (errorHandler.buildDepError "crucible-debug"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "crucible-debug-tests" = {
           depends = [
@@ -65,9 +65,9 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-golden" or (errorHandler.buildDepError "tasty-golden"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

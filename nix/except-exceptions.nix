@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2018-03-20T04:04:52Z";
         sha256 = "604a86fd76836cdc89475fdff9da882099071c186bf4a73efa5c13f9163a6212";
-        };
+      };
       r1 = {
         nix = import ../hackage/except-exceptions-0.1-r1-13b6f202914c198786f1ba67596c5e43b6793424aa80461460b2eee373e02226.nix;
         revNum = 1;
         revTimestamp = "2018-03-23T02:40:41Z";
         sha256 = "13b6f202914c198786f1ba67596c5e43b6793424aa80461460b2eee373e02226";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

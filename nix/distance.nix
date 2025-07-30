@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2017-01-07T11:50:39Z";
         sha256 = "2080b8ecf16b8e4cec7bfcdca8fa40805f7f139dbcd09762a317b16ceeaedbbd";
-        };
+      };
       r1 = {
         nix = import ../hackage/distance-0.1.0.0-r1-b8629453e8a81834e23eb577c6b304891ff60f36b956d03e59da854ba8adda47.nix;
         revNum = 1;
         revTimestamp = "2017-01-07T23:15:27Z";
         sha256 = "b8629453e8a81834e23eb577c6b304891ff60f36b956d03e59da854ba8adda47";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

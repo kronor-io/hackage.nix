@@ -21,7 +21,7 @@
       synopsis = "A monad for interfacing with external SMT solvers";
       description = "Hasmtlib is a library for generating SMTLib2-problems using a monad.\n.\nIt takes care of encoding your problem, marshaling the data to an external solver and parsing and interpreting the result into Haskell types.\nIt is highly inspired by ekmett/ersatz which does the same for QSAT.\nCommunication with external solvers is handled by tweag/smtlib-backends.\n.\nFor example we can utilize existing instances for V3 to symbolically use Num and Metric operations.\n.\n> {-# LANGUAGE DataKinds #-}\n.\n> import Language.Hasmtlib\n> import Linear\n.\n> -- instances with default impl\n> instance Codec a => Codec (V3 a)\n> instance Variable a => Variable (V3 a)\n.\n> main :: IO ()\n> main = do\n>   res <- solveWith (solver cvc5) $ do\n>     setLogic \"QF_NRA\"\n>\n>     u :: V3 (Expr RealSort) <- variable\n>     v <- variable\n>\n>     assert $ dot u v === 5\n>\n>     return (u,v)\n>\n>   print res\n.\nMay print:\n> (Sat,Just (V3 (-2.0) (-1.0) 0.0,V3 (-2.0) (-1.0) 0.0))";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,8 +39,8 @@
           (hsPkgs."bitvec" or (errorHandler.buildDepError "bitvec"))
           (hsPkgs."finite-typelits" or (errorHandler.buildDepError "finite-typelits"))
           (hsPkgs."vector-sized" or (errorHandler.buildDepError "vector-sized"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

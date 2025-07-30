@@ -21,7 +21,7 @@
       synopsis = "Automatically generate a GraphQL API for an SQLite database";
       description = "AirGQL automatically generates a GraphQL API for SQLite databases.\nIt analyses the database schema\nand builds the corresponding GraphQL introspection and data resolvers.\n\nThe generated API supports all basic CRUD operations and\neven complex queries and mutations including filters and pagination.\nIt's the perferct solution for easily integrating GraphQL support\ninto existing Haskell servers.\n\nAirGQL is part of the Airsequel project, which provides a complete solution\nfor building web applications on top of SQLite databases.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -56,9 +56,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
           (hsPkgs."wai-extra" or (errorHandler.buildDepError "wai-extra"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "airgql" = {
           depends = [
@@ -73,10 +73,10 @@
             (hsPkgs."wai" or (errorHandler.buildDepError "wai"))
             (hsPkgs."wai-cors" or (errorHandler.buildDepError "wai-cors"))
             (hsPkgs."warp" or (errorHandler.buildDepError "warp"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "airgql-test" = {
           depends = [
@@ -96,9 +96,9 @@
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."unix" or (errorHandler.buildDepError "unix"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

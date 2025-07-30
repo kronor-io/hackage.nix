@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2010-04-20T22:32:20Z";
         sha256 = "e763c8c0303e7097073fdc3263c45e75ce4cc33c6e71ca4fa6e620d65ccba6cc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.1" = {
     sha256 = "4cc3bc21a1b52052453d8a4fe7fe4b927e2fabd153cbf1895e32db02ecfc9f33";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2010-08-10T01:58:18Z";
         sha256 = "c66fc6033d0546e245a3dbae73741e4ef2a837001a1a9be20e0b4ebdabe50b01";
-        };
+      };
       r1 = {
         nix = import ../hackage/ui-command-0.5.1-r1-ed511bc4bff023804e53ac03a199c72b6387aa4ff35586c294f616843bf9500e.nix;
         revNum = 1;
         revTimestamp = "2024-02-07T00:25:44Z";
         sha256 = "ed511bc4bff023804e53ac03a199c72b6387aa4ff35586c294f616843bf9500e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.5.2" = {
     sha256 = "6f5950a88bdc97cfb6c4137a196fd8373452db8cf80723f1db1c56177adb2e42";
     revisions = {
@@ -37,10 +37,10 @@
         revNum = 0;
         revTimestamp = "2010-08-10T02:21:29Z";
         sha256 = "be39d8eb6e50795325a5366c3e011584fca6c71d31652a3cfc7dc80e76ad3e58";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.3" = {
     sha256 = "393dc782b16034e70da854163f1a186c669d787f6629bfa87c76c1efe2b4c896";
     revisions = {
@@ -49,10 +49,10 @@
         revNum = 0;
         revTimestamp = "2010-09-20T00:06:10Z";
         sha256 = "8f13f10f64f2c1c58193db8fbd5ba4352f8976f04f17a9986c01f46400d3321b";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.5.4" = {
     sha256 = "872781d8b75e1286266adff20c3316f5e8a6f232ac2d530aa8e11b5cae0009e3";
     revisions = {
@@ -61,14 +61,14 @@
         revNum = 0;
         revTimestamp = "2010-11-29T06:30:24Z";
         sha256 = "ed014ebd6b1c0f24578a1d2c1f7d626f0c28e9fe2a7712ea5568658b63f44543";
-        };
+      };
       r1 = {
         nix = import ../hackage/ui-command-0.5.4-r1-a2ca896fc1d4f9c0f858d991aba118624a91a544ebd3295790769b5432b17c6b.nix;
         revNum = 1;
         revTimestamp = "2024-02-07T00:05:26Z";
         sha256 = "a2ca896fc1d4f9c0f858d991aba118624a91a544ebd3295790769b5432b17c6b";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

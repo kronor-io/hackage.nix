@@ -21,7 +21,7 @@
       synopsis = "Produce Ronn from OptEnvConf";
       description = "Please see README.md";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
           (hsPkgs."ronn" or (errorHandler.buildDepError "ronn"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."ronn-optparse-applicative" or (errorHandler.buildDepError "ronn-optparse-applicative"))
             (hsPkgs."ronn-test" or (errorHandler.buildDepError "ronn-test"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

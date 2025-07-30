@@ -21,7 +21,7 @@
       synopsis = "http directory listing library";
       description = "Library for listing the files (href's) in an http directory.\nIt can also check the size, existence, modtime of files,\nand url redirects.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -37,15 +37,15 @@
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."time" or (errorHandler.buildDepError "time"))
           (hsPkgs."xml-conduit" or (errorHandler.buildDepError "xml-conduit"))
-          ] ++ (pkgs.lib).optionals (compiler.isGhc && (compiler.version).lt "8.0") [
+        ] ++ pkgs.lib.optionals (compiler.isGhc && compiler.version.lt "8.0") [
           (hsPkgs."semigroups" or (errorHandler.buildDepError "semigroups"))
           (hsPkgs."cryptonite" or (errorHandler.buildDepError "cryptonite"))
-          ]) ++ (pkgs.lib).optionals (compiler.isGhc && (compiler.version).lt "8.3") [
+        ]) ++ pkgs.lib.optionals (compiler.isGhc && compiler.version.lt "8.3") [
           (hsPkgs."tagstream-conduit" or (errorHandler.buildDepError "tagstream-conduit"))
           (hsPkgs."xml-conduit" or (errorHandler.buildDepError "xml-conduit"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "http-directory" = {
           depends = [
@@ -53,10 +53,10 @@
             (hsPkgs."http-directory" or (errorHandler.buildDepError "http-directory"))
             (hsPkgs."simple-cmd-args" or (errorHandler.buildDepError "simple-cmd-args"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = if flags.executable then true else false;
-          };
         };
+      };
       tests = {
         "test" = {
           depends = [
@@ -64,9 +64,9 @@
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."http-directory" or (errorHandler.buildDepError "http-directory"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

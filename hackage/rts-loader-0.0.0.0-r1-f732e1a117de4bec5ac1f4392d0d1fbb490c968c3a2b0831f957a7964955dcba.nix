@@ -22,11 +22,11 @@
       description = "Load and execute functions from Haskell dynamic libraries without being\nrestricted to a single RTS/GHC version.\n\nSee README.md below for more information.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.filepath or (pkgs.buildPackages.filepath or (errorHandler.setupDepError "filepath")))
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.filepath or (pkgs.pkgsBuildBuild.filepath or (errorHandler.setupDepError "filepath")))
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
           (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
           (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "rts-loader" = { buildable = true; };
         "rts-loader-example" = {
@@ -47,9 +47,9 @@
             (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
             (hsPkgs."rts-loader" or (errorHandler.buildDepError "rts-loader"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

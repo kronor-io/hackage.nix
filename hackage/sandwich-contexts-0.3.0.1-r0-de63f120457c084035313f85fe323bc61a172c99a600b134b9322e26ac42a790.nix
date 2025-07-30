@@ -21,7 +21,7 @@
       synopsis = "Contexts for the Sandwich test library";
       description = "Please see the <https://codedownio.github.io/sandwich documentation>.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = ([
@@ -55,12 +55,12 @@
           (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ] ++ (pkgs.lib).optionals (compiler.isGhc && (compiler.version).ge "9.6") [
+        ] ++ pkgs.lib.optionals (compiler.isGhc && compiler.version.ge "9.6") [
           (hsPkgs."crypton-connection" or (errorHandler.buildDepError "crypton-connection"))
           (hsPkgs."data-default" or (errorHandler.buildDepError "data-default"))
-          ]) ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).lt "9.6") (hsPkgs."connection" or (errorHandler.buildDepError "connection"));
+        ]) ++ pkgs.lib.optional (compiler.isGhc && compiler.version.lt "9.6") (hsPkgs."connection" or (errorHandler.buildDepError "connection"));
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -72,12 +72,12 @@
             (hsPkgs."sandwich-contexts" or (errorHandler.buildDepError "sandwich-contexts"))
             (hsPkgs."string-interpolate" or (errorHandler.buildDepError "string-interpolate"))
             (hsPkgs."unliftio" or (errorHandler.buildDepError "unliftio"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.sandwich.components.exes.sandwich-discover or (pkgs.buildPackages.sandwich-discover or (errorHandler.buildToolDepError "sandwich:sandwich-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.sandwich.components.exes.sandwich-discover or (pkgs.pkgsBuildBuild.sandwich-discover or (errorHandler.buildToolDepError "sandwich:sandwich-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

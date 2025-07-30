@@ -21,7 +21,7 @@
       synopsis = "Translate Haskell source to Template Haskell expression";
       description = "Translate from Haskell source code to Template Haskell expressions using the GHC parser";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."ghc" or (errorHandler.buildDepError "ghc"))
           (hsPkgs."ghc-boot" or (errorHandler.buildDepError "ghc-boot"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -43,9 +43,9 @@
             (hsPkgs."ghc-hs-meta" or (errorHandler.buildDepError "ghc-hs-meta"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

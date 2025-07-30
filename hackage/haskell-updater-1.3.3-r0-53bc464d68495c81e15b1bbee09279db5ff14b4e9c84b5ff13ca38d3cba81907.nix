@@ -21,7 +21,7 @@
       synopsis = "Rebuild Haskell dependencies in Gentoo";
       description = "haskell-updater rebuilds Haskell packages on Gentoo\nafter a GHC upgrade or a dependency upgrade.\nhaskell-updater is written so as to use only\nGHC's boot libraries so as to have no external\ndependencies.";
       buildType = "Simple";
-      };
+    };
     components = {
       exes = {
         "haskell-updater" = {
@@ -33,9 +33,9 @@
             (hsPkgs."directory" or (errorHandler.buildDepError "directory"))
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ] ++ (pkgs.lib).optional (compiler.isGhc && (compiler.version).ge "9.2.1") (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"));
+          ] ++ pkgs.lib.optional (compiler.isGhc && compiler.version.ge "9.2.1") (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"));
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

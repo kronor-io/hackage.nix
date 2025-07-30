@@ -21,7 +21,7 @@
       synopsis = "A user-friendly, dependently-typed library for asking your users questions";
       description = "A library making use of the terminal package to prompt users for answers in a CLI context.\n\nSupports freeform text as well as choices between sum type constructors.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,8 +29,8 @@
           (hsPkgs."microlens" or (errorHandler.buildDepError "microlens"))
           (hsPkgs."terminal" or (errorHandler.buildDepError "terminal"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

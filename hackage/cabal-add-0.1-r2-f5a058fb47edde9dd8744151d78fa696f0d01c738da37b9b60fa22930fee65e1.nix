@@ -21,7 +21,7 @@
       synopsis = "Extend Cabal build-depends from the command line";
       description = "Extend Cabal @build-depends@ from the command line.\nIt works on any sectioned Cabal file,\nsupports stanzas and conditional blocks,\nand preserves original formatting.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,12 +30,12 @@
           (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."mtl" or (errorHandler.buildDepError "mtl"))
-          ] ++ [
+        ] ++ [
           (hsPkgs."Cabal-syntax" or (errorHandler.buildDepError "Cabal-syntax"))
           (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "cabal-add" = {
           depends = [
@@ -47,14 +47,14 @@
             (hsPkgs."filepath" or (errorHandler.buildDepError "filepath"))
             (hsPkgs."optparse-applicative" or (errorHandler.buildDepError "optparse-applicative"))
             (hsPkgs."process" or (errorHandler.buildDepError "process"))
-            ] ++ (if flags.cabal-syntax
+          ] ++ (if flags.cabal-syntax
             then [
               (hsPkgs."Cabal-syntax" or (errorHandler.buildDepError "Cabal-syntax"))
-              ]
+            ]
             else [ (hsPkgs."Cabal" or (errorHandler.buildDepError "Cabal")) ]);
           buildable = true;
-          };
         };
+      };
       tests = {
         "cabal-add-tests" = {
           depends = [
@@ -65,12 +65,12 @@
             (hsPkgs."string-qq" or (errorHandler.buildDepError "string-qq"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."temporary" or (errorHandler.buildDepError "temporary"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.cabal-add.components.exes.cabal-add or (pkgs.buildPackages.cabal-add or (errorHandler.buildToolDepError "cabal-add:cabal-add")))
-            ];
+            (hsPkgs.pkgsBuildBuild.cabal-add.components.exes.cabal-add or (pkgs.pkgsBuildBuild.cabal-add or (errorHandler.buildToolDepError "cabal-add:cabal-add")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

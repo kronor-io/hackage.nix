@@ -7,14 +7,14 @@
         revNum = 0;
         revTimestamp = "2024-03-02T13:25:18Z";
         sha256 = "04edfe91a27a7230322228952f625472e88be3e9ce8e6c78a8ceee4f122f0900";
-        };
+      };
       r1 = {
         nix = import ../hackage/hetero-zip-0.1.0.0-r1-0b1d4ee451d5e395d43c5f28f56e0965bec67166daf9b3ab1053047af49749ce.nix;
         revNum = 1;
         revTimestamp = "2025-01-11T15:30:57Z";
         sha256 = "0b1d4ee451d5e395d43c5f28f56e0965bec67166daf9b3ab1053047af49749ce";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

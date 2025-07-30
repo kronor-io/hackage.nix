@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2010-10-06T09:26:24Z";
         sha256 = "7a478100f2235db138f07edbe9babf3ae122b685c4caf0261691317e6455e534";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.1" = {
     sha256 = "706ae520b6356ac41957c43670876383c8533d23cbbdc8b2c71c999f63944a09";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2011-08-04T13:07:50Z";
         sha256 = "145722772d9443fe4c124514288bb11cf8780034fd5188390c56526ff983ba43";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.0.2" = {
     sha256 = "698c22445f957fbdc557c87fee34de456fe7ac9bace6385fd684441f84b215b6";
     revisions = {
@@ -31,14 +31,14 @@
         revNum = 0;
         revTimestamp = "2020-10-06T09:04:00Z";
         sha256 = "b3a1cbaf126364dabd3e29279060696ddcc21abd655051cde1cfcd67e890b56c";
-        };
+      };
       r1 = {
         nix = import ../hackage/aterm-0.1.0.2-r1-b73978fd9270eb90910c0d36d6ae59b46d0adc031d6a24fc007eb8938699066e.nix;
         revNum = 1;
         revTimestamp = "2020-10-06T09:49:00Z";
         sha256 = "b73978fd9270eb90910c0d36d6ae59b46d0adc031d6a24fc007eb8938699066e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
-  }
+  };
+}

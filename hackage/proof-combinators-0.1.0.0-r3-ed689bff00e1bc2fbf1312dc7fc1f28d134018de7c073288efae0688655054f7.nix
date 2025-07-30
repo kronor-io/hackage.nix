@@ -21,11 +21,11 @@
       synopsis = "DEPRECATED";
       description = "Provides proof Combinators used in Liquid Haskell for Theorem Proving";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

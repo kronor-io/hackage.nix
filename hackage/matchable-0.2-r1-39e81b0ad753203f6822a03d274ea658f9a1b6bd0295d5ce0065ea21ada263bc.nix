@@ -21,7 +21,7 @@
       synopsis = "A type class for Matchable Functors.";
       description = "This package defines a type class @Matchable@, providing\n@zipMatch@ operation for zipping two values of any container-like\nfunctor type.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."generically" or (errorHandler.buildDepError "generically"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "matchable-test" = {
           depends = [
@@ -44,9 +44,9 @@
             (hsPkgs."matchable" or (errorHandler.buildDepError "matchable"))
             (hsPkgs."generically" or (errorHandler.buildDepError "generically"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

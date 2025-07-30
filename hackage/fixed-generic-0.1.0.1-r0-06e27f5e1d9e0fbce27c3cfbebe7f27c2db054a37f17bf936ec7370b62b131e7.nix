@@ -21,24 +21,24 @@
       synopsis = "Fixed-point number build on generic integral number";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/fixed-generic#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "fixed-generic-test" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."fixed-generic" or (errorHandler.buildDepError "fixed-generic"))
             (hsPkgs."ghc-internal" or (errorHandler.buildDepError "ghc-internal"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

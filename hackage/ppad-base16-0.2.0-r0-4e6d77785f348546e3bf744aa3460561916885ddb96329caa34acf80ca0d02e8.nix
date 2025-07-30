@@ -21,15 +21,15 @@
       synopsis = "Pure base16 encoding and decoding on bytestrings.";
       description = "Pure base16 (hexadecimal) encoding and decoding on bytestrings.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "base16-tests" = {
           depends = [
@@ -40,10 +40,10 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "base16-bench" = {
           depends = [
@@ -53,9 +53,9 @@
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."ppad-base16" or (errorHandler.buildDepError "ppad-base16"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "base16-weigh" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -65,9 +65,9 @@
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."ppad-base16" or (errorHandler.buildDepError "ppad-base16"))
             (hsPkgs."weigh" or (errorHandler.buildDepError "weigh"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

@@ -21,7 +21,7 @@
       synopsis = "Fast PostgreSQL driver with a flexible mapping API";
       description = "Root of the \\\"hasql\\\" ecosystem.\nThis library provides connection management, execution of queries and mapping of parameters and results.\nExtended functionality such as pooling, transactions and compile-time checking is provided by extension libraries.\nFor more details and tutorials see <https://github.com/nikita-volkov/hasql the readme>.\n\nThe API comes free from all kinds of exceptions.\nAll error-reporting is explicit and is presented using the 'Either' type.\n\n\\\"hasql\\\" requires you to have the \"\\libpq\\\" C-library installed to compile.\nStarting from version 1.7 of \\\"hasql\\\" it requires \\\"libpq\\\" of at least version 14.\n\\\"libpq\\\" comes distributed with PostgreSQL,\nso typically all you need is just to install the latest PostgreSQL distro.\n\nDespite the mentioned requirements for \\\"libpq\\\" \\\"hasql\\\" is compatible\nwith a wide range of PostgreSQL servers with tests having been conducted starting from\nversion 8.3.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -48,9 +48,9 @@
           (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
           (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       sublibs = {
         "testing-kit" = {
           depends = [
@@ -59,10 +59,10 @@
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."uuid" or (errorHandler.buildDepError "uuid"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "tasty" = {
           depends = [
@@ -74,44 +74,44 @@
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
             (hsPkgs."tasty-quickcheck" or (errorHandler.buildDepError "tasty-quickcheck"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "threads-test" = {
           depends = [
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "profiling" = {
           depends = [
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "hspec" = {
           depends = [
             (hsPkgs."hasql".components.sublibs.testing-kit or (errorHandler.buildDepError "hasql:testing-kit"))
             (hsPkgs."hspec" or (errorHandler.buildDepError "hspec"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
+      };
       benchmarks = {
         "benchmarks" = {
           depends = [
             (hsPkgs."criterion" or (errorHandler.buildDepError "criterion"))
             (hsPkgs."hasql" or (errorHandler.buildDepError "hasql"))
             (hsPkgs."rerebase" or (errorHandler.buildDepError "rerebase"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

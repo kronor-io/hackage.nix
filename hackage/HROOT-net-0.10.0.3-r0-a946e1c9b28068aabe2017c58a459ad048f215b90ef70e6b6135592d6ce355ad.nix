@@ -22,11 +22,11 @@
       description = "HROOT is a haskell Foreign Function Interface (FFI) binding to ROOT.\nROOT(http://root.cern.ch) is an object-oriented program and library\ndeveloped by CERN for physics data analysis.";
       buildType = "Custom";
       setup-depends = [
-        (hsPkgs.buildPackages.Cabal or (pkgs.buildPackages.Cabal or (errorHandler.setupDepError "Cabal")))
-        (hsPkgs.buildPackages.base or (pkgs.buildPackages.base or (errorHandler.setupDepError "base")))
-        (hsPkgs.buildPackages.process or (pkgs.buildPackages.process or (errorHandler.setupDepError "process")))
-        ];
-      };
+        (hsPkgs.pkgsBuildBuild.Cabal or (pkgs.pkgsBuildBuild.Cabal or (errorHandler.setupDepError "Cabal")))
+        (hsPkgs.pkgsBuildBuild.base or (pkgs.pkgsBuildBuild.base or (errorHandler.setupDepError "base")))
+        (hsPkgs.pkgsBuildBuild.process or (pkgs.pkgsBuildBuild.process or (errorHandler.setupDepError "process")))
+      ];
+    };
     components = {
       "library" = {
         depends = [
@@ -36,9 +36,9 @@
           (hsPkgs."stdcxx" or (errorHandler.buildDepError "stdcxx"))
           (hsPkgs."HROOT-core" or (errorHandler.buildDepError "HROOT-core"))
           (hsPkgs."HROOT-io" or (errorHandler.buildDepError "HROOT-io"))
-          ];
+        ];
         libs = [ (pkgs."RHTTP" or (errorHandler.sysDepError "RHTTP")) ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

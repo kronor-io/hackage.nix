@@ -21,7 +21,7 @@
       synopsis = "Monad classes for running queries with Persistent and Esqueleto";
       description = "This package introduces two classes: MonadSqlBackend for monadic contexts in\nwhich a SqlBackend is available, and MonadSqlTx for contexts in which we\ncan execute a SQL transaction.\n\nAdditionally, this package provides variants of query-running utilities from\nPersistent and Esqueleto which are concretized to use SqlBackend, generalized\nto a MonadSqlBackend m constraint rather than \"ReaderT backend\", and wrapped in\ncheckpointCallStack so that exceptions will include call stacks.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -34,8 +34,8 @@
           (hsPkgs."persistent" or (errorHandler.buildDepError "persistent"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."unliftio-core" or (errorHandler.buildDepError "unliftio-core"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

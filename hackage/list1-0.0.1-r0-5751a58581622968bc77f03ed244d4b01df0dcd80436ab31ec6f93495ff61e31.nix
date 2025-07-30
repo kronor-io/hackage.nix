@@ -21,14 +21,14 @@
       synopsis = "Helpers for working with NonEmpty lists.";
       description = "Please see the README at https://github.com/mixphix/list1";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."smash" or (errorHandler.buildDepError "smash"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

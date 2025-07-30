@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2018-04-22T11:17:00Z";
         sha256 = "6c18a273f612d68ce8041b45ca5a0a585ebd3a4d472bc8d578b7a150481eab6f";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.19.1.0" = {
     sha256 = "65c16276406a923a39b3ffdad61db8743bea15c7e784977709d2da600cea77ed";
     revisions = {
@@ -19,16 +19,16 @@
         revNum = 0;
         revTimestamp = "2018-08-14T13:08:19Z";
         sha256 = "f031ab4e6bc40f8540ea6e31faf4e8c0c506c85688e09f8500b10f1d10319c90";
-        };
+      };
       r1 = {
         nix = import ../hackage/hmatrix-sundials-0.19.1.0-r1-7dd3e48722691ade172ba1de3532675dc57f262eb1f999f795eb7ee3322b886e.nix;
         revNum = 1;
         revTimestamp = "2018-08-14T13:12:46Z";
         sha256 = "7dd3e48722691ade172ba1de3532675dc57f262eb1f999f795eb7ee3322b886e";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.20.1.0" = {
     sha256 = "d61b3a34844c7af5269a60915712acb73737238ee0afa4421c75a35dd51f507b";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2019-08-26T16:24:10Z";
         sha256 = "4cae03f7dc8c984506cf3b3fd3711039cb39129e31bd86983ba532787ecfd52c";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

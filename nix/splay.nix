@@ -7,10 +7,10 @@
         revNum = 0;
         revTimestamp = "2015-07-11T02:16:48Z";
         sha256 = "289101e80618a3ebaf2f204de9ce076e09cb5e5bb0579484c66bb89cae2e23cc";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.2" = {
     sha256 = "2d8508c7d4048987769f3ff2a35a37634051124685f30d76401bf7b539f5f1e3";
     revisions = {
@@ -19,10 +19,10 @@
         revNum = 0;
         revTimestamp = "2015-07-11T02:45:38Z";
         sha256 = "6ac61a2223f35c6d12e8d3029f600452e8c76e9e3dc2867da92c96029d737052";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.3" = {
     sha256 = "a1395e95585a6a830ea7cca95eb622cc1d34e9b7a94477043126890cee408f2f";
     revisions = {
@@ -31,10 +31,10 @@
         revNum = 0;
         revTimestamp = "2015-07-11T03:31:18Z";
         sha256 = "be031c7185327ed6758eac2b0001e3b8929c0bbc15165a7daaf221c7f11a1737";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.4" = {
     sha256 = "25a435fa332f425ccdeca01900b10db8e1b43ed4b80d3693b8a08cfe008da899";
     revisions = {
@@ -43,10 +43,10 @@
         revNum = 0;
         revTimestamp = "2015-07-11T06:06:35Z";
         sha256 = "c25954ebf47862fc00297758229768ad1947eaf1476eb6c54f041dd621efb2f0";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.5" = {
     sha256 = "2b120046304a23227e7fb963bf6f071e64a3e290ac56a49419941c013348598e";
     revisions = {
@@ -55,10 +55,10 @@
         revNum = 0;
         revTimestamp = "2015-07-11T09:43:51Z";
         sha256 = "ac716eefbe76b3448cde271dcd271076e182347dd6c51bef4b3b7866f7d9e86a";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.0.6" = {
     sha256 = "94295e6e39f7e452595a30d62eec03aafb062df4c7df40d7874b8a4785b105d7";
     revisions = {
@@ -67,8 +67,8 @@
         revNum = 0;
         revTimestamp = "2015-07-12T14:29:07Z";
         sha256 = "4b3bb3bed09c186ddb30eff5953e749aa87ee3a6ff7c550c4ff0b89d04ecdb91";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

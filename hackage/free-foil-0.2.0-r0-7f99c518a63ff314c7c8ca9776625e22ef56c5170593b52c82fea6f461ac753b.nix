@@ -21,7 +21,7 @@
       synopsis = "Efficient Type-Safe Capture-Avoiding Substitution for Free (Scoped Monads)";
       description = "Please see the README on GitHub at <https://github.com/fizruk/free-foil#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -33,9 +33,9 @@
           (hsPkgs."kind-generics" or (errorHandler.buildDepError "kind-generics"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "doctests" = {
           depends = [
@@ -49,9 +49,9 @@
             (hsPkgs."kind-generics" or (errorHandler.buildDepError "kind-generics"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "spec" = {
           depends = [
             (hsPkgs."array" or (errorHandler.buildDepError "array"))
@@ -63,9 +63,9 @@
             (hsPkgs."kind-generics" or (errorHandler.buildDepError "kind-generics"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

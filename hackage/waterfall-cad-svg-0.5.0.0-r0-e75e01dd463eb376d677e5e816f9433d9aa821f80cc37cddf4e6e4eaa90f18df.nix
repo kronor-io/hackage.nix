@@ -21,7 +21,7 @@
       synopsis = "Declarative CAD/Solid Modeling Library, SVG Support";
       description = "Please see the README on GitHub at <https://github.com/joe-warren/opencascade-hs#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -35,8 +35,8 @@
           (hsPkgs."svg-tree" or (errorHandler.buildDepError "svg-tree"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."waterfall-cad" or (errorHandler.buildDepError "waterfall-cad"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

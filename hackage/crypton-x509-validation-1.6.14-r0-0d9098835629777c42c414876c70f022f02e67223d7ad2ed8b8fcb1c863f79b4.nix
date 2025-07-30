@@ -21,7 +21,7 @@
       synopsis = "X.509 Certificate and CRL validation";
       description = "X.509 Certificate and CRL validation. please see README";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -39,9 +39,9 @@
           (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
           (hsPkgs."crypton" or (errorHandler.buildDepError "crypton"))
           (hsPkgs."iproute" or (errorHandler.buildDepError "iproute"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test-x509-validation" = {
           depends = [
@@ -58,9 +58,9 @@
             (hsPkgs."crypton-x509-store" or (errorHandler.buildDepError "crypton-x509-store"))
             (hsPkgs."crypton-x509-validation" or (errorHandler.buildDepError "crypton-x509-validation"))
             (hsPkgs."crypton" or (errorHandler.buildDepError "crypton"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

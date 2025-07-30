@@ -21,7 +21,7 @@
       synopsis = "HTTP/3 library";
       description = "HTTP/3 library including frames, QPACK, client and server.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."sockaddr" or (errorHandler.buildDepError "sockaddr"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
           (hsPkgs."time-manager" or (errorHandler.buildDepError "time-manager"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "h3-server" = {
           depends = [
@@ -57,9 +57,9 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."tls-session-manager" or (errorHandler.buildDepError "tls-session-manager"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
+        };
         "h3-client" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -72,9 +72,9 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
             (hsPkgs."unix-time" or (errorHandler.buildDepError "unix-time"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
+        };
         "qif" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -85,10 +85,10 @@
             (hsPkgs."http3" or (errorHandler.buildDepError "http3"))
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-            ];
+          ];
           buildable = if flags.devel then true else false;
-          };
         };
+      };
       tests = {
         "spec" = {
           depends = [
@@ -111,12 +111,12 @@
             (hsPkgs."quic" or (errorHandler.buildDepError "quic"))
             (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
             (hsPkgs."tls" or (errorHandler.buildDepError "tls"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.hspec-discover.components.exes.hspec-discover or (pkgs.buildPackages.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.hspec-discover.components.exes.hspec-discover or (pkgs.pkgsBuildBuild.hspec-discover or (errorHandler.buildToolDepError "hspec-discover:hspec-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

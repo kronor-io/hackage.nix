@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-10-13T12:59:42Z";
         sha256 = "c5ef49c637b479f5d5bf3a834ac81d4c1485c93f91e4ec9388e808d435bb74d5";
-        };
+      };
       r1 = {
         nix = import ../hackage/lxd-client-config-0.1.0.0-r1-847a4d13989e4c1ea63b194ce5f20949d1bcad625f1fb7fcc5a551dbb6bd4e44.nix;
         revNum = 1;
         revTimestamp = "2017-10-13T13:00:30Z";
         sha256 = "847a4d13989e4c1ea63b194ce5f20949d1bcad625f1fb7fcc5a551dbb6bd4e44";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.0.1" = {
     sha256 = "903852c99bebc0af3cc3a26734056003f9097ada08eb1f361abce097a120afcf";
     revisions = {
@@ -25,8 +25,8 @@
         revNum = 0;
         revTimestamp = "2017-10-18T09:30:14Z";
         sha256 = "0003eab9eedd8ec703511d181b04bf50e5caf7c1c507a85280e58fada436a143";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

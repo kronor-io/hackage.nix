@@ -21,7 +21,7 @@
       synopsis = "A basic framework for effect systems based on effects represented by GADTs.";
       description = "A basic framework for a Haskell effect system library based on GADTs-based effect representations\nwith a style that separates first-order effects and higher-order effects.\n.\nThis library set was created by being separated from\nthe [Heftia](https://hackage.haskell.org/package/heftia) extensible effects library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."containers" or (errorHandler.buildDepError "containers"))
           (hsPkgs."co-log-core" or (errorHandler.buildDepError "co-log-core"))
           (hsPkgs."unbounded-delays" or (errorHandler.buildDepError "unbounded-delays"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "test" = {
           depends = [
@@ -48,12 +48,12 @@
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."tasty" or (errorHandler.buildDepError "tasty"))
             (hsPkgs."tasty-hunit" or (errorHandler.buildDepError "tasty-hunit"))
-            ];
+          ];
           build-tools = [
-            (hsPkgs.buildPackages.tasty-discover.components.exes.tasty-discover or (pkgs.buildPackages.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
-            ];
+            (hsPkgs.pkgsBuildBuild.tasty-discover.components.exes.tasty-discover or (pkgs.pkgsBuildBuild.tasty-discover or (errorHandler.buildToolDepError "tasty-discover:tasty-discover")))
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

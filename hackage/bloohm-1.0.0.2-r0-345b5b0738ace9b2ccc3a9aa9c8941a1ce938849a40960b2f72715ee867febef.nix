@@ -21,7 +21,7 @@
       synopsis = "visual bloom filter for neotrellis m4 output";
       description = "visual bloom filter for process status visualization";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."crypton" or (errorHandler.buildDepError "crypton"))
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."memory" or (errorHandler.buildDepError "memory"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       exes = {
         "bloohm" = {
           depends = [
@@ -40,19 +40,19 @@
             (hsPkgs."serialport" or (errorHandler.buildDepError "serialport"))
             (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
             (hsPkgs."ReadArgs" or (errorHandler.buildDepError "ReadArgs"))
-            ];
+          ];
           buildable = true;
-          };
         };
+      };
       tests = {
         "bloohm-tests" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."bloohm" or (errorHandler.buildDepError "bloohm"))
             (hsPkgs."hedgehog" or (errorHandler.buildDepError "hedgehog"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

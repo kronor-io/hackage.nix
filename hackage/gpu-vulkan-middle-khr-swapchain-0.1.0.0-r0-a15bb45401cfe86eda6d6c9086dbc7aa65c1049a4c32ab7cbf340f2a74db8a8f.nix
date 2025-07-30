@@ -14,7 +14,7 @@
       identifier = {
         name = "gpu-vulkan-middle-khr-swapchain";
         version = "0.1.0.0";
-        };
+      };
       license = "BSD-3-Clause";
       copyright = "(c) 2025 Yoshikuni Jujo";
       maintainer = "yoshikuni.jujo@gmail.com";
@@ -24,7 +24,7 @@
       synopsis = "medium wrapper for VK_KHR_swapchain extension of the Vulkan API";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/gpu-vulkan-middle-khr-swapchain#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -38,9 +38,9 @@
           (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
           (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "gpu-vulkan-middle-khr-swapchain-test" = {
           depends = [
@@ -55,9 +55,9 @@
             (hsPkgs."storable-peek-poke" or (errorHandler.buildDepError "storable-peek-poke"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
             (hsPkgs."typelevel-tools-yj" or (errorHandler.buildDepError "typelevel-tools-yj"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

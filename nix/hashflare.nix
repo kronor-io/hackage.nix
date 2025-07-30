@@ -7,20 +7,20 @@
         revNum = 0;
         revTimestamp = "2017-01-20T23:33:57Z";
         sha256 = "f2731c2e6cc8adc3cf632f8c43caaf7bc1786d986f30e408e114a6051768ab7d";
-        };
+      };
       r1 = {
         nix = import ../hackage/hashflare-0.1.0.0-r1-a6f690f635b12064b1176286f46e129a99d2b6707e54460ea9a6edb6fd969606.nix;
         revNum = 1;
         revTimestamp = "2017-01-20T23:35:46Z";
         sha256 = "a6f690f635b12064b1176286f46e129a99d2b6707e54460ea9a6edb6fd969606";
-        };
+      };
       r2 = {
         nix = import ../hackage/hashflare-0.1.0.0-r2-accd8a66c743cbd6580182c1a85916dd6422d67a1587b7e2927849cd53e38f9a.nix;
         revNum = 2;
         revTimestamp = "2017-01-20T23:59:52Z";
         sha256 = "accd8a66c743cbd6580182c1a85916dd6422d67a1587b7e2927849cd53e38f9a";
-        };
-      default = "r2";
       };
+      default = "r2";
     };
-  }
+  };
+}

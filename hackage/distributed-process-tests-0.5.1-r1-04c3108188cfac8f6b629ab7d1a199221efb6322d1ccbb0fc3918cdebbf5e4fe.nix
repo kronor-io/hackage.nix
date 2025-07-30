@@ -21,7 +21,7 @@
       synopsis = "Tests and test support tools for distributed-process.";
       description = "Tests and test suite for Cloud Haskell libraries, specifically the core distributed-process library.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -40,9 +40,9 @@
           (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
           (hsPkgs."test-framework-hunit" or (errorHandler.buildDepError "test-framework-hunit"))
           (hsPkgs."stm" or (errorHandler.buildDepError "stm"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "TestCHInMemory" = {
           depends = [
@@ -52,20 +52,20 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestCHInTCP" = {
-          depends = (pkgs.lib).optionals (flags.tcp) [
+          depends = pkgs.lib.optionals (flags.tcp) [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
             (hsPkgs."distributed-process-tests" or (errorHandler.buildDepError "distributed-process-tests"))
             (hsPkgs."network" or (errorHandler.buildDepError "network"))
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-tcp" or (errorHandler.buildDepError "network-transport-tcp"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = if flags.tcp then true else false;
-          };
+        };
         "TestClosure" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -74,9 +74,9 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestStats" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -85,9 +85,9 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestMxInMemory" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -96,9 +96,9 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestTracingInMemory" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -107,9 +107,9 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
+        };
         "TestMxInTCP" = {
           depends = [
             (hsPkgs."base" or (errorHandler.buildDepError "base"))
@@ -118,9 +118,9 @@
             (hsPkgs."network-transport" or (errorHandler.buildDepError "network-transport"))
             (hsPkgs."network-transport-inmemory" or (errorHandler.buildDepError "network-transport-inmemory"))
             (hsPkgs."test-framework" or (errorHandler.buildDepError "test-framework"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

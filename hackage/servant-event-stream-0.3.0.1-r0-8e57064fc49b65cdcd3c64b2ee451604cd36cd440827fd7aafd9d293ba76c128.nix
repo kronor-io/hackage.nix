@@ -21,7 +21,7 @@
       synopsis = "Servant support for Server-Sent events";
       description = "This library adds necessary type combinators to support\nServer Sent Events within Servant ecosystem.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -32,14 +32,14 @@
           (hsPkgs."servant-foreign" or (errorHandler.buildDepError "servant-foreign"))
           (hsPkgs."servant-server" or (errorHandler.buildDepError "servant-server"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "tests-default" = {
           depends = [ (hsPkgs."base" or (errorHandler.buildDepError "base")) ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

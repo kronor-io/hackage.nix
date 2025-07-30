@@ -21,7 +21,7 @@
       synopsis = "";
       description = "GCP Storage bucket client for Haskell.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -30,9 +30,9 @@
           (hsPkgs."bytestring" or (errorHandler.buildDepError "bytestring"))
           (hsPkgs."google-cloud-common" or (errorHandler.buildDepError "google-cloud-common"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "google-cloud-storage-test" = {
           depends = [
@@ -42,9 +42,9 @@
             (hsPkgs."google-cloud-common" or (errorHandler.buildDepError "google-cloud-common"))
             (hsPkgs."google-cloud-storage" or (errorHandler.buildDepError "google-cloud-storage"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

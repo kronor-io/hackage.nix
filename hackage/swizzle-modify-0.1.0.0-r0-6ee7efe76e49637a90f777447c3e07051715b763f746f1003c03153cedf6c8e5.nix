@@ -21,7 +21,7 @@
       synopsis = "Swizzle modify functions";
       description = "Please see the README on GitHub at <https://github.com/YoshikuniJujo/swizzle-modify#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -29,9 +29,9 @@
           (hsPkgs."swizzle" or (errorHandler.buildDepError "swizzle"))
           (hsPkgs."swizzle-set" or (errorHandler.buildDepError "swizzle-set"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "swizzle-modify-test" = {
           depends = [
@@ -40,9 +40,9 @@
             (hsPkgs."swizzle-modify" or (errorHandler.buildDepError "swizzle-modify"))
             (hsPkgs."swizzle-set" or (errorHandler.buildDepError "swizzle-set"))
             (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

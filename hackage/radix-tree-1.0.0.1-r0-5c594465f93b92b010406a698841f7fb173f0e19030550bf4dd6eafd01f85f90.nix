@@ -21,7 +21,7 @@
       synopsis = "Radix trees";
       description = "Radix and PATRICIA trees, both spine-strict and spine-lazy.\nSee the <https://github.com/sergv/radix-tree/blob/master/README.md README>\nfor a brief overview of the data structures included in this package.";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -31,9 +31,9 @@
           (hsPkgs."primitive" or (errorHandler.buildDepError "primitive"))
           (hsPkgs."template-haskell" or (errorHandler.buildDepError "template-haskell"))
           (hsPkgs."text" or (errorHandler.buildDepError "text"))
-          ];
+        ];
         buildable = true;
-        };
+      };
       tests = {
         "properties" = {
           depends = [
@@ -45,9 +45,9 @@
             (hsPkgs."radix-tree" or (errorHandler.buildDepError "radix-tree"))
             (hsPkgs."random" or (errorHandler.buildDepError "random"))
             (hsPkgs."text" or (errorHandler.buildDepError "text"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }

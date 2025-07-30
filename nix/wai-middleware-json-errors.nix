@@ -7,16 +7,16 @@
         revNum = 0;
         revTimestamp = "2017-05-31T17:33:21Z";
         sha256 = "af9012b45cc4c484a7a9caab4abd0afa3c6640cb3a3ce7ab9b697869169ff7f0";
-        };
+      };
       r1 = {
         nix = import ../hackage/wai-middleware-json-errors-0.1.0-r1-71fa302a65b5b1177990520cd17d3b341317942d19ed485c9c14ec3f4738d844.nix;
         revNum = 1;
         revTimestamp = "2017-05-31T20:15:00Z";
         sha256 = "71fa302a65b5b1177990520cd17d3b341317942d19ed485c9c14ec3f4738d844";
-        };
-      default = "r1";
       };
+      default = "r1";
     };
+  };
   "0.1.1" = {
     sha256 = "30aaa320342de5986c649c0776c03a7813201690e3f3e46ddb5822f69d87041c";
     revisions = {
@@ -25,10 +25,10 @@
         revNum = 0;
         revTimestamp = "2017-05-31T20:37:59Z";
         sha256 = "7e6b85d45d7d1b870443075faf84ef2301633fbbf33c016776dcfacd285d6730";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
+  };
   "0.1.2" = {
     sha256 = "9434b64644de18f70dd1b19c392660af60eb665cdcc8fde2b2389316fc422d7e";
     revisions = {
@@ -37,8 +37,8 @@
         revNum = 0;
         revTimestamp = "2017-09-20T22:41:46Z";
         sha256 = "0cb6530a12da4dc677db22052b3637294a74f1657672a485bfcc796fd86f2595";
-        };
-      default = "r0";
       };
+      default = "r0";
     };
-  }
+  };
+}

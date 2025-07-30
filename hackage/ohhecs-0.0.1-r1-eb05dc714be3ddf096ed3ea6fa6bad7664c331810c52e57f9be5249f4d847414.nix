@@ -21,7 +21,7 @@
       synopsis = "An Entity-Component-Systems engine core.";
       description = "Please see the README on GitLab at <https://gitlab.com/spacekitteh/spaceRL#readme>";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -43,11 +43,11 @@
           (hsPkgs."xml-picklers" or (errorHandler.buildDepError "xml-picklers"))
           (hsPkgs."vector-th-unbox" or (errorHandler.buildDepError "vector-th-unbox"))
           (hsPkgs."witherable" or (errorHandler.buildDepError "witherable"))
-          ] ++ (pkgs.lib).optionals (flags.with_polysemy) [
+        ] ++ pkgs.lib.optionals (flags.with_polysemy) [
           (hsPkgs."polysemy" or (errorHandler.buildDepError "polysemy"))
           (hsPkgs."polysemy-plugin" or (errorHandler.buildDepError "polysemy-plugin"))
-          ];
+        ];
         buildable = true;
-        };
       };
-    }
+    };
+  }

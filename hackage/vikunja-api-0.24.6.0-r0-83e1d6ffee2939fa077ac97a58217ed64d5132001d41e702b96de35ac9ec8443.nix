@@ -21,7 +21,7 @@
       synopsis = "Auto-generated vikunja-api API Client";
       description = "\nClient library for calling the Vikunja API API based on http-client.\n\nhost: localhost\n\nbase path: /api/v1\n\nVikunja API API version: 0.24.6\n\nOpenAPI version: 3.0.1\n\nGenerator version: 7.6.0\n";
       buildType = "Simple";
-      };
+    };
     components = {
       "library" = {
         depends = [
@@ -49,13 +49,13 @@
           (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
           (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
           (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-          ] ++ (if flags.usekatip
+        ] ++ (if flags.usekatip
           then [ (hsPkgs."katip" or (errorHandler.buildDepError "katip")) ]
           else [
             (hsPkgs."monad-logger" or (errorHandler.buildDepError "monad-logger"))
-            ]);
+          ]);
         buildable = true;
-        };
+      };
       tests = {
         "tests" = {
           depends = [
@@ -74,9 +74,9 @@
             (hsPkgs."transformers" or (errorHandler.buildDepError "transformers"))
             (hsPkgs."unordered-containers" or (errorHandler.buildDepError "unordered-containers"))
             (hsPkgs."vector" or (errorHandler.buildDepError "vector"))
-            ];
+          ];
           buildable = true;
-          };
         };
       };
-    }
+    };
+  }
