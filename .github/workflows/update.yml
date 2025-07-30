@@ -19,9 +19,9 @@ jobs:
       - name: "Update hackage.nix"
         run: |
           export CABAL_DIR=$HOME/.cabal
-          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.cabal-install.ghc8107 -- v2-update
-          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.nix-tools.ghc8107.project.hsPkgs.nix-tools.components.exes.hackage-to-nix -- . $CABAL_DIR/packages/hackage.haskell.org/01-index.tar
-          nix run github:kronor-io/haskell.nix/proper-index-state#haskell-nix.update-index-state-hashes > index-state-hashes.nix
+          cabal update
+          nix run github:kronor-io/haskell.nix/wip-nixpkgs-ghc#haskell-nix.nix-tools.exes.hackage-to-nix -- . $CABAL_DIR/packages/hackage.haskell.org/01-index.tar
+          nix run github:kronor-io/haskell.nix/wip-nixpkgs-ghc#haskell-nix.update-index-state-hashes > index-state-hashes.nix
       - name: Commit and push changes
         run: |
           git config --local user.email "pranaysashank@users.noreply.github.com"
