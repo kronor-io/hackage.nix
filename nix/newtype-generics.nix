@@ -236,7 +236,13 @@
         revTimestamp = "2024-05-12T19:30:26Z";
         sha256 = "36b26be66f5736926fbd16fa3eadfcc96d23e13433e6348f0fa9509163fd0991";
       };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/newtype-generics-0.6.2-r5-e1bc40f387a21c6e59eff939f4e01b1eb14f069b683dce8c1c51094470c6342b.nix;
+        revNum = 5;
+        revTimestamp = "2025-07-30T22:33:30Z";
+        sha256 = "e1bc40f387a21c6e59eff939f4e01b1eb14f069b683dce8c1c51094470c6342b";
+      };
+      default = "r5";
     };
   };
 }
