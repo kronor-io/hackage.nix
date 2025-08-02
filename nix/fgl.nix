@@ -458,7 +458,13 @@
         revTimestamp = "2024-09-30T06:53:01Z";
         sha256 = "34e9599efc17bd19593eb212b511517cf54c8f1b5f215fc59a397a8a01fe9bd0";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fgl-5.8.3.0-r1-507f764d5096605759d8639d3a0113f596db08b197a54899e6b2559e113cd68f.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-01T09:47:03Z";
+        sha256 = "507f764d5096605759d8639d3a0113f596db08b197a54899e6b2559e113cd68f";
+      };
+      default = "r1";
     };
   };
 }

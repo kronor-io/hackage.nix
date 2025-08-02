@@ -1,4 +1,16 @@
 {
+  "0.10.0" = {
+    sha256 = "49813a0ee253f628cb8102dd6857905609b52e490c73c554d7cdf0cbce2926d2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crypton-asn1-encoding-0.10.0-r0-45494a1723a047a815d0d620481c1028dca28a4ea5cf2554868687da90753961.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-01T23:07:06Z";
+        sha256 = "45494a1723a047a815d0d620481c1028dca28a4ea5cf2554868687da90753961";
+      };
+      default = "r0";
+    };
+  };
   "0.9.6" = {
     sha256 = "36a917ced99c770ac635c047b3566b43bafd00256a72cacf2155015e7931275c";
     revisions = {

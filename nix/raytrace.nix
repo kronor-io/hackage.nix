@@ -11,4 +11,22 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "4c04630ce466d92419efdbca3932f1ac0ec4159ad38d98770a5f6df24cdea284";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/raytrace-0.2.0.0-r0-e3c35a0dbd50162fdf7b9c9b422f9475a7a414542df57bd39eeca71bdfad782e.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-01T00:20:14Z";
+        sha256 = "e3c35a0dbd50162fdf7b9c9b422f9475a7a414542df57bd39eeca71bdfad782e";
+      };
+      r1 = {
+        nix = import ../hackage/raytrace-0.2.0.0-r1-84d46cc82f0b1880f0ececb6aa2b546ab8af4d86766d24fe9f0537000d16102a.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-01T00:27:39Z";
+        sha256 = "84d46cc82f0b1880f0ececb6aa2b546ab8af4d86766d24fe9f0537000d16102a";
+      };
+      default = "r1";
+    };
+  };
 }
