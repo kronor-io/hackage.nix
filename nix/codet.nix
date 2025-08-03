@@ -20,7 +20,13 @@
         revTimestamp = "2024-05-29T14:12:23Z";
         sha256 = "da2aa54ec53233eaf2744bbc1c9af6a538648d3bc57433dc2799799e57cb17f2";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/codet-0.1.0.1-r1-3f1874a8e9554c60143f76493af3940d7bc07f26af1f4dcb2e81439d7c808a8c.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-02T16:28:37Z";
+        sha256 = "3f1874a8e9554c60143f76493af3940d7bc07f26af1f4dcb2e81439d7c808a8c";
+      };
+      default = "r1";
     };
   };
 }

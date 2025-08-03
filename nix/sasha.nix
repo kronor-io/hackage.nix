@@ -38,7 +38,13 @@
         revTimestamp = "2024-06-01T13:39:47Z";
         sha256 = "16079c6e84727a1b3cbdd4582c3cacf28700b703aa1f54f37ba745a924296c4c";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/sasha-0.2-r2-c4e5ce87414b04bcd09e1a03f39ab956f8cd5bc7bec94e7b772a3a3a4396ff1f.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-02T19:59:02Z";
+        sha256 = "c4e5ce87414b04bcd09e1a03f39ab956f8cd5bc7bec94e7b772a3a3a4396ff1f";
+      };
+      default = "r2";
     };
   };
 }
