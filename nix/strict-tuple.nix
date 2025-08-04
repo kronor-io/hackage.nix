@@ -140,7 +140,13 @@
         revTimestamp = "2024-08-23T15:27:22Z";
         sha256 = "f687fa918e6199d7788559177374b11c24d37ecd383ff69c9c0a2c9ed9f84417";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/strict-tuple-0.1.5.4-r2-3ddbc63b831284d995609f1b24e7d7fb496f3603ed4ac4e85c6f9d2f4440b7e3.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-03T22:36:05Z";
+        sha256 = "3ddbc63b831284d995609f1b24e7d7fb496f3603ed4ac4e85c6f9d2f4440b7e3";
+      };
+      default = "r2";
     };
   };
 }

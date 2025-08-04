@@ -8,7 +8,13 @@
         revTimestamp = "2018-02-04T04:18:54Z";
         sha256 = "a54ef0e71a0283c31d0426d0347c09bf5c20851ca1e4c279ace62297ac14c35e";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/haskyapi-0.0.0.1-r1-8dcfcc563d21bd3d3dc1e9f80e2bc435c49f73c605c99b45ae01b671dc259ea3.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-03T19:15:37Z";
+        sha256 = "8dcfcc563d21bd3d3dc1e9f80e2bc435c49f73c605c99b45ae01b671dc259ea3";
+      };
+      default = "r1";
     };
   };
   "0.0.0.2" = {
@@ -26,7 +32,19 @@
         revTimestamp = "2024-12-18T02:52:55Z";
         sha256 = "c081fa35a4fe2f6beae4798cc9507553b7cc8c1d556f360aa6575d16fc72f451";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/haskyapi-0.0.0.2-r2-b72d57626f2dd536eded4e4297f741d5ca31d4e705c0785b95cf5caa17e74c07.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-03T19:08:17Z";
+        sha256 = "b72d57626f2dd536eded4e4297f741d5ca31d4e705c0785b95cf5caa17e74c07";
+      };
+      r3 = {
+        nix = import ../hackage/haskyapi-0.0.0.2-r3-df40c2e63c524aa89fb6d388d0d0f613a939ebe807a8da4d540e630faef6696c.nix;
+        revNum = 3;
+        revTimestamp = "2025-08-03T19:12:32Z";
+        sha256 = "df40c2e63c524aa89fb6d388d0d0f613a939ebe807a8da4d540e630faef6696c";
+      };
+      default = "r3";
     };
   };
 }
