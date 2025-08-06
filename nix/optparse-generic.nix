@@ -386,7 +386,13 @@
         revTimestamp = "2024-02-01T23:56:40Z";
         sha256 = "acdd6557ab1489f26df46c07fab530f92f83cba1da0a15c510e820d8cea516a4";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/optparse-generic-1.5.2-r2-d3f68b7c100009cd8e91ce3d0b0b2eabb6a4303954a54e5628bd5c78efcc3a19.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-05T23:12:32Z";
+        sha256 = "d3f68b7c100009cd8e91ce3d0b0b2eabb6a4303954a54e5628bd5c78efcc3a19";
+      };
+      default = "r2";
     };
   };
 }

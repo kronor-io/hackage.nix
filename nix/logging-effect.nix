@@ -341,4 +341,16 @@
       default = "r1";
     };
   };
+  "1.4.1" = {
+    sha256 = "d772664bf3a2ab6329db3658c91568f7ff86e9c6df20ed62c347b54c39a10af1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/logging-effect-1.4.1-r0-1a723cc79526010d1ef30287a629bde41eeeeac210df93846d520f1fc7401a4e.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-05T20:01:39Z";
+        sha256 = "1a723cc79526010d1ef30287a629bde41eeeeac210df93846d520f1fc7401a4e";
+      };
+      default = "r0";
+    };
+  };
 }
