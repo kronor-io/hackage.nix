@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "1.9.0" = {
+    sha256 = "d22055ea737aa58b3665817e1588b5035af7c34e14a98acfaacbde414a1b971d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ogma-language-xmlspec-1.9.0-r0-c9686203518034bf58342b5e567d357f425f581ed6f3627450a80826bfd5dc4c.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-06T17:57:25Z";
+        sha256 = "c9686203518034bf58342b5e567d357f425f581ed6f3627450a80826bfd5dc4c";
+      };
+      default = "r0";
+    };
+  };
 }

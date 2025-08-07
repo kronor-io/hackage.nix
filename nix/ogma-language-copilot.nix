@@ -179,4 +179,16 @@
       default = "r0";
     };
   };
+  "1.9.0" = {
+    sha256 = "4cf4b3656063f2983febb540997ffaf2e01870d0662bb1f2af944e1baab0826a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ogma-language-copilot-1.9.0-r0-69076906c6399e81303a12404c3ed7b0b6564f5c07c0f3e883ff1496bf274e9b.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-06T17:57:34Z";
+        sha256 = "69076906c6399e81303a12404c3ed7b0b6564f5c07c0f3e883ff1496bf274e9b";
+      };
+      default = "r0";
+    };
+  };
 }
