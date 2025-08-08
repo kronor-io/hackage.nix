@@ -710,7 +710,13 @@
         revTimestamp = "2025-07-14T14:49:43Z";
         sha256 = "611a2af404770d8a69c17ec3a14b784c17275e49a5f1c3328cfce224ca2d78ad";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ghcide-2.11.0.0-r2-62464279516ab22f96342a962e628f637bd08783346bae7432ef5f071cff0d4f.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-07T13:22:42Z";
+        sha256 = "62464279516ab22f96342a962e628f637bd08783346bae7432ef5f071cff0d4f";
+      };
+      default = "r2";
     };
   };
   "2.2.0.0" = {
