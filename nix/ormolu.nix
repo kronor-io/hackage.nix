@@ -533,4 +533,16 @@
       default = "r0";
     };
   };
+  "0.8.0.1" = {
+    sha256 = "437f039f0bcdd103e5f86b66d54414b98c0332d9cb2de83d8a2182bfbf093d8a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ormolu-0.8.0.1-r0-f3d2ed02c452cfcaadb845a50815be04fd5264dd4eb17edf1990c289b38f2632.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-08T19:00:15Z";
+        sha256 = "f3d2ed02c452cfcaadb845a50815be04fd5264dd4eb17edf1990c289b38f2632";
+      };
+      default = "r0";
+    };
+  };
 }

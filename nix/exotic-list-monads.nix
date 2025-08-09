@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "1.2.1" = {
+    sha256 = "364271b2fdb6b926dd759d45c534bfda257882961f8f3127515c4b5b2eab4f27";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/exotic-list-monads-1.2.1-r0-5f20ce59f64acf7fcee11f4e5ee2d81c995a4b0b557df9d1842995602f676ed4.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-08T20:00:39Z";
+        sha256 = "5f20ce59f64acf7fcee11f4e5ee2d81c995a4b0b557df9d1842995602f676ed4";
+      };
+      default = "r0";
+    };
+  };
 }
