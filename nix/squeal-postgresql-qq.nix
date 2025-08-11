@@ -35,4 +35,28 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "e2beab4594571d9013783846d56ac2ba5605c1e1d39d8a1004a8bafaaaae3bf4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/squeal-postgresql-qq-0.1.2.0-r0-9675c988bf47af62725d32ccc34d4990559971af00cda7fd929c4167d1c25ab3.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-10T00:16:54Z";
+        sha256 = "9675c988bf47af62725d32ccc34d4990559971af00cda7fd929c4167d1c25ab3";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.2.1" = {
+    sha256 = "17ca38e130ffa1eb209bb1b75447fcebfce844ba54b2d971e9a9692e53360fcf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/squeal-postgresql-qq-0.1.2.1-r0-bfc785450b73bd4003282a8617e63017fa062e675ac520fb2d885bb9c3b7e521.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-10T00:28:16Z";
+        sha256 = "bfc785450b73bd4003282a8617e63017fa062e675ac520fb2d885bb9c3b7e521";
+      };
+      default = "r0";
+    };
+  };
 }
