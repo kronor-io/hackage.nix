@@ -44,7 +44,13 @@
         revTimestamp = "2025-06-04T09:47:07Z";
         sha256 = "b3be192a9fea46ae37f1054843d6a8c6689c8a3a637947046b282029c4d01e4b";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/boomwhacker-0.0.2-r3-56d96b3d5266bca64d97fba2f5f562eb740257037c8624c995238936c5407d43.nix;
+        revNum = 3;
+        revTimestamp = "2025-08-11T06:35:06Z";
+        sha256 = "56d96b3d5266bca64d97fba2f5f562eb740257037c8624c995238936c5407d43";
+      };
+      default = "r3";
     };
   };
 }

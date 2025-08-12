@@ -275,4 +275,16 @@
       default = "r0";
     };
   };
+  "0.9.0.0" = {
+    sha256 = "dceb39c002e7a866e9a034bc89a1bb6889b28a02cd51b2e2cdcf4a53c947aaf7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/elynx-markov-0.9.0.0-r0-784a3cad6b1928a6a9796b95a1374bc994d1bc3bd1ff0862448a00e622f1323f.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-11T07:26:08Z";
+        sha256 = "784a3cad6b1928a6a9796b95a1374bc994d1bc3bd1ff0862448a00e622f1323f";
+      };
+      default = "r0";
+    };
+  };
 }
