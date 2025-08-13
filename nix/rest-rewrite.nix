@@ -152,7 +152,13 @@
         revTimestamp = "2025-05-05T18:17:43Z";
         sha256 = "20ed368d3e3751e9f041bf45784c29f8a24fd910e21f30ced01647cb361edb85";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/rest-rewrite-0.4.5-r1-cb19044b4a17ebb2c03514d5e5223f3ef45663e03b45d82747357796f3ebc496.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-12T16:34:59Z";
+        sha256 = "cb19044b4a17ebb2c03514d5e5223f3ef45663e03b45d82747357796f3ebc496";
+      };
+      default = "r1";
     };
   };
 }
