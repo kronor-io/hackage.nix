@@ -122,7 +122,19 @@
         revTimestamp = "2025-02-09T17:45:19Z";
         sha256 = "20a0307d5b0080e6ce571706a2a391c44cc0d12c9372fad0015067ecfdc5bfec";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/configurator-pg-0.2.10-r2-3c93fa062e68aa5309fb4264feeb2c963c225711a647d9358eb1296a48b2a8d0.nix;
+        revNum = 2;
+        revTimestamp = "2025-08-17T10:20:00Z";
+        sha256 = "3c93fa062e68aa5309fb4264feeb2c963c225711a647d9358eb1296a48b2a8d0";
+      };
+      r3 = {
+        nix = import ../hackage/configurator-pg-0.2.10-r3-cf1e6172a9c7aa258d86295f2172cdae7ba5f36ff6ed189d16ee3d123204d794.nix;
+        revNum = 3;
+        revTimestamp = "2025-08-17T10:24:28Z";
+        sha256 = "cf1e6172a9c7aa258d86295f2172cdae7ba5f36ff6ed189d16ee3d123204d794";
+      };
+      default = "r3";
     };
   };
   "0.2.2" = {
