@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "c9dbaae7b25e60b2a1de5912018305613952d7b7196e17fe00836f1f454a075b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/commonmark-wikilink-0.2.0.0-r0-a55a5e94dbebb3eab525f35b797bbf36681d153d5911cc515a8cee575f366c51.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-19T01:30:37Z";
+        sha256 = "a55a5e94dbebb3eab525f35b797bbf36681d153d5911cc515a8cee575f366c51";
+      };
+      default = "r0";
+    };
+  };
 }
