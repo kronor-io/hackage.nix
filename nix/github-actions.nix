@@ -26,7 +26,13 @@
         revTimestamp = "2025-07-21T03:37:10Z";
         sha256 = "ecddfb15784fd4d54ec2784f13259a93bc105b5216ee53fd1f92575dfc0a4859";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/github-actions-0.1.1.0-r1-f86eb222f99400b3073e4310784743b3646a0d783a2d77107014e2f0e4d9bb89.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-20T08:15:52Z";
+        sha256 = "f86eb222f99400b3073e4310784743b3646a0d783a2d77107014e2f0e4d9bb89";
+      };
+      default = "r1";
     };
   };
 }

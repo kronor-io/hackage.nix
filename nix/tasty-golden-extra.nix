@@ -26,7 +26,13 @@
         revTimestamp = "2025-07-03T02:06:05Z";
         sha256 = "19d1c59728d74dfdd5d8041890c6f5ba3fd5da0a686e1486336c9503aceeb3c1";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/tasty-golden-extra-0.1.0.0-r4-6d06d02d4c1bcac5702cc2d0ffefbb6920102fce36450123b841872898f66c81.nix;
+        revNum = 4;
+        revTimestamp = "2025-08-20T07:48:33Z";
+        sha256 = "6d06d02d4c1bcac5702cc2d0ffefbb6920102fce36450123b841872898f66c81";
+      };
+      default = "r4";
     };
   };
 }

@@ -1046,7 +1046,13 @@
         revTimestamp = "2024-12-20T06:23:39Z";
         sha256 = "642785a2db236c7e94a5765e70690f88f87ef9c01a891669674b9cbc70a14948";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/dhall-1.42.1-r3-5449d501fb772535b84f2d2609b03a4596c2899654456356fb2c8be853c5fadc.nix;
+        revNum = 3;
+        revTimestamp = "2025-08-20T03:53:45Z";
+        sha256 = "5449d501fb772535b84f2d2609b03a4596c2899654456356fb2c8be853c5fadc";
+      };
+      default = "r3";
     };
   };
   "1.42.2" = {
@@ -1058,7 +1064,13 @@
         revTimestamp = "2025-01-19T20:49:41Z";
         sha256 = "2c5b6b63ff63b6267af65b0f85f2cdd6708068854c3e2d6c67e0a8acbeb94a69";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dhall-1.42.2-r1-f3d69875f05279f9055316728a5fcd70f6a99966efb5acd834ca4bedb0e9d14f.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-20T03:54:01Z";
+        sha256 = "f3d69875f05279f9055316728a5fcd70f6a99966efb5acd834ca4bedb0e9d14f";
+      };
+      default = "r1";
     };
   };
   "1.5.0" = {

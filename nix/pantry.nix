@@ -122,7 +122,13 @@
         revTimestamp = "2025-07-30T19:41:02Z";
         sha256 = "d23aad04f560280264bde7a8d20ed158a668c037c303dc00793d8af61176c491";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/pantry-0.11.0-r1-2dd0fd7e08f9c1464a993e288cba1128479f79e4b0c7977e5c1c26a68941127e.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-20T20:54:12Z";
+        sha256 = "2dd0fd7e08f9c1464a993e288cba1128479f79e4b0c7977e5c1c26a68941127e";
+      };
+      default = "r1";
     };
   };
   "0.2.0.0" = {

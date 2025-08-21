@@ -8,7 +8,13 @@
         revTimestamp = "2008-01-21T17:38:58Z";
         sha256 = "ee1271046c033d1d76d312d5c7fdadcab6caf7bb119b713a0f75bd00ec3502fa";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/COrdering-2.1-r1-4121d9d17488ad31693b7866c160beac52529f2b9dfdd3330c1510e72d86454e.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-20T20:43:02Z";
+        sha256 = "4121d9d17488ad31693b7866c160beac52529f2b9dfdd3330c1510e72d86454e";
+      };
+      default = "r1";
     };
   };
   "2.2" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2008-03-23T12:24:30Z";
         sha256 = "0e9b8536da31ecd2f8751c293f344e2b4b7e5cfef163e5647f137969e3e601a5";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/COrdering-2.2-r1-220ef59a551e9023cfad88052a8990c2e5a7fdd7e3c4e033a4d3ac998d09c3c0.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-20T20:40:58Z";
+        sha256 = "220ef59a551e9023cfad88052a8990c2e5a7fdd7e3c4e033a4d3ac998d09c3c0";
+      };
+      default = "r1";
     };
   };
   "2.3" = {
