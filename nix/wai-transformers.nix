@@ -113,4 +113,16 @@
       default = "r0";
     };
   };
+  "0.2.0" = {
+    sha256 = "3864d32806397d5df5c036850f194020a469529d459c1607364abe98e0a9fba6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wai-transformers-0.2.0-r0-1a680d0fb138782beb8efa0cc74476ae0059129cdeef6b4086cabdddc60db12e.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-22T11:44:11Z";
+        sha256 = "1a680d0fb138782beb8efa0cc74476ae0059129cdeef6b4086cabdddc60db12e";
+      };
+      default = "r0";
+    };
+  };
 }
