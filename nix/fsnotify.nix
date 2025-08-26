@@ -689,4 +689,16 @@
       default = "r0";
     };
   };
+  "0.4.4.0" = {
+    sha256 = "82b1afd9e2f0bf50afd190de4401132e879c031e06800c161e64eebbd1f2631b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fsnotify-0.4.4.0-r0-21cc696377bf01bc9b0a2e1edf2e03e43f6655d52d0622bdb493192820e1a5ba.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-25T23:37:12Z";
+        sha256 = "21cc696377bf01bc9b0a2e1edf2e03e43f6655d52d0622bdb493192820e1a5ba";
+      };
+      default = "r0";
+    };
+  };
 }
