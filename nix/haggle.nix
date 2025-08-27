@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.3.1" = {
+    sha256 = "c73eaaf2c1385c83fc5c44b84ec3b202977efe174318d676657556efcb0985db";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haggle-0.3.1-r0-a0d7d111b2aece8b7ab702b2e59e6a2e77341ee9d7a89938944fee16b61652bf.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-26T03:51:30Z";
+        sha256 = "a0d7d111b2aece8b7ab702b2e59e6a2e77341ee9d7a89938944fee16b61652bf";
+      };
+      default = "r0";
+    };
+  };
 }

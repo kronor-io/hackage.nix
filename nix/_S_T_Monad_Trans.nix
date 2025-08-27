@@ -311,4 +311,16 @@
       default = "r1";
     };
   };
+  "0.4.8.1" = {
+    sha256 = "7b281fe640ef983786d0457a446af2cd1f968def37b91be102a268361ff6a914";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/STMonadTrans-0.4.8.1-r0-3eef78e30de9615598801680275fa0406b6fd86e5abd01cebc94355d8782bb97.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-26T07:15:03Z";
+        sha256 = "3eef78e30de9615598801680275fa0406b6fd86e5abd01cebc94355d8782bb97";
+      };
+      default = "r0";
+    };
+  };
 }

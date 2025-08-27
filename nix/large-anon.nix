@@ -104,7 +104,13 @@
         revTimestamp = "2025-07-19T17:50:03Z";
         sha256 = "40b7ccf8be66ae87165cd9d07e99d476982fbfcaaa8dd2848475bd82aca4ccd5";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/large-anon-0.3.3-r1-39f2645527e2e35c758675368c409e87dd0222b67198f39e63c1210c894b1b53.nix;
+        revNum = 1;
+        revTimestamp = "2025-08-26T15:45:12Z";
+        sha256 = "39f2645527e2e35c758675368c409e87dd0222b67198f39e63c1210c894b1b53";
+      };
+      default = "r1";
     };
   };
 }

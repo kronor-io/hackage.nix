@@ -290,7 +290,13 @@
         revTimestamp = "2023-02-24T04:50:54Z";
         sha256 = "82c670b322b7722edd6d5e58f4a02d28539ca1b9368f7b9c93288333882817b4";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/BNFC-meta-0.6.1-r6-1ef34ee405ed534aa2174a225949105c8d7ddef396adb75528beb2d2fa15cc8a.nix;
+        revNum = 6;
+        revTimestamp = "2025-08-26T12:56:08Z";
+        sha256 = "1ef34ee405ed534aa2174a225949105c8d7ddef396adb75528beb2d2fa15cc8a";
+      };
+      default = "r6";
     };
   };
 }
