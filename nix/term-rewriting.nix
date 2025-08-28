@@ -185,4 +185,16 @@
       default = "r0";
     };
   };
+  "0.5" = {
+    sha256 = "6c1f5d010bb29d357cfc8536fd3369d563c90770af384114935152381b63bf33";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/term-rewriting-0.5-r0-53a4409d22a2bfecfd0936ae844d64da8866c3f92ace794bbfa13876dd6b5946.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-27T22:53:21Z";
+        sha256 = "53a4409d22a2bfecfd0936ae844d64da8866c3f92ace794bbfa13876dd6b5946";
+      };
+      default = "r0";
+    };
+  };
 }
