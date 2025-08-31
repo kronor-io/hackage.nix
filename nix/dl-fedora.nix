@@ -323,4 +323,16 @@
       default = "r0";
     };
   };
+  "2.1" = {
+    sha256 = "c30a255918bb73bd1a0f3b799d1a858cb36795d22af09f757deb4c5bbe4d17c8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dl-fedora-2.1-r0-dda290ce16c0d1436dc542503a7c361a10f0f9f8165460688c075e5d36c713c1.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-30T14:47:57Z";
+        sha256 = "dda290ce16c0d1436dc542503a7c361a10f0f9f8165460688c075e5d36c713c1";
+      };
+      default = "r0";
+    };
+  };
 }

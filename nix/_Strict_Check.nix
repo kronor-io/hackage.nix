@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "0.4.0" = {
+    sha256 = "6e8ce1b0698dd4b621e2a0d853221fd800622cd3ef99af733fec0775541af050";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/StrictCheck-0.4.0-r0-7c27f53d75ce883fd8f593f397cfe222c59541b96a36f6aa972d2f0c448145b8.nix;
+        revNum = 0;
+        revTimestamp = "2025-08-30T07:58:06Z";
+        sha256 = "7c27f53d75ce883fd8f593f397cfe222c59541b96a36f6aa972d2f0c448145b8";
+      };
+      default = "r0";
+    };
+  };
 }
