@@ -8,7 +8,13 @@
         revTimestamp = "2024-07-21T21:48:07Z";
         sha256 = "f85951b1c6238b7d111bd51c6625ffc98e40cb2c093b36064374214a43a9aedb";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ihp-openai-1.3.0-r1-67da409141e65c2363623b74c804578bcc41cc18d0966304d88e75b7c3afe20d.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-01T19:08:34Z";
+        sha256 = "67da409141e65c2363623b74c804578bcc41cc18d0966304d88e75b7c3afe20d";
+      };
+      default = "r1";
     };
   };
 }
