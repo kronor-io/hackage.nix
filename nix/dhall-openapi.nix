@@ -152,7 +152,13 @@
         revTimestamp = "2025-01-19T20:20:29Z";
         sha256 = "b3233957d1d9a85a8335a0e2bd5e1742c564ebd97955f4c326511bd6bfdd0845";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dhall-openapi-1.0.7-r1-4228cf37a412a131362c1ae9608eaeb1c908ae6a398923cfe2ef44cde3fe7e2f.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-02T19:17:06Z";
+        sha256 = "4228cf37a412a131362c1ae9608eaeb1c908ae6a398923cfe2ef44cde3fe7e2f";
+      };
+      default = "r1";
     };
   };
 }

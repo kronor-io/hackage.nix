@@ -80,7 +80,13 @@
         revTimestamp = "2024-10-08T09:36:39Z";
         sha256 = "9948ca46434e9f406b0fdd0aa6f3fe6bf297cf6299ad91d78932979149dc1a90";
       };
-      default = "r9";
+      r10 = {
+        nix = import ../hackage/dual-game-0.1.0.1-r10-5a65177551ed9e202bc83e6692ad995a0aefb4fcfc99c0b57df5dddd07e43821.nix;
+        revNum = 10;
+        revTimestamp = "2025-09-02T19:44:26Z";
+        sha256 = "5a65177551ed9e202bc83e6692ad995a0aefb4fcfc99c0b57df5dddd07e43821";
+      };
+      default = "r10";
     };
   };
 }

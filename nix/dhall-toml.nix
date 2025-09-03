@@ -80,7 +80,13 @@
         revTimestamp = "2025-01-19T20:21:17Z";
         sha256 = "99ff4d0f42c246fef9c437841c97645f53ea4a40cfa6448f56fa77c6810548e7";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dhall-toml-1.0.4-r1-cffcbd2c1c36104897e52338da7c03fbbc0c28eae235e03cb0ded2e5e2a611f6.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-02T19:18:09Z";
+        sha256 = "cffcbd2c1c36104897e52338da7c03fbbc0c28eae235e03cb0ded2e5e2a611f6";
+      };
+      default = "r1";
     };
   };
 }

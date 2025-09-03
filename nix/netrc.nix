@@ -113,4 +113,16 @@
       default = "r0";
     };
   };
+  "0.2.0.2" = {
+    sha256 = "bc787ae4679384bfbf3157518c0196dd2f21b142fe816a2cb0385f1f080d1e36";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/netrc-0.2.0.2-r0-e4e7ccae2414baf995e8bfef608fa978888ed788a9b7b2ea3afe80d45991a272.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-02T06:12:06Z";
+        sha256 = "e4e7ccae2414baf995e8bfef608fa978888ed788a9b7b2ea3afe80d45991a272";
+      };
+      default = "r0";
+    };
+  };
 }
