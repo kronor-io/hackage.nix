@@ -206,7 +206,13 @@
         revTimestamp = "2024-08-19T02:18:06Z";
         sha256 = "23554dd7c9814a53d0049ec59cd33eadeebc1b6bf7dd9f03bb1ec1845377a5f1";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/hlrdb-core-0.2.0.0-r6-3c49d9852db85f7f1134e5ce81d4b38871dc27be19a7ec634bac59640cebb452.nix;
+        revNum = 6;
+        revTimestamp = "2025-09-03T12:28:46Z";
+        sha256 = "3c49d9852db85f7f1134e5ce81d4b38871dc27be19a7ec634bac59640cebb452";
+      };
+      default = "r6";
     };
   };
 }
