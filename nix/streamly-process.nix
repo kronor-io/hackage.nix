@@ -65,4 +65,16 @@
       default = "r1";
     };
   };
+  "0.4.0" = {
+    sha256 = "493752b9b9ec1246bf84f29c13ca7ce5bfadfbc41afba9755c1e05bcc519eb4f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/streamly-process-0.4.0-r0-988396882e62a231ad26402cd4bafdd1abb45c62802b5261a0d7b4fb6ad3edb0.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-06T21:01:03Z";
+        sha256 = "988396882e62a231ad26402cd4bafdd1abb45c62802b5261a0d7b4fb6ad3edb0";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -206,7 +206,13 @@
         revTimestamp = "2024-12-20T07:53:49Z";
         sha256 = "9f3505df737dbc15921a1f7365e271fe332632e53ddca28391c4fd2c920cde51";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/nix-diff-1.0.21-r1-6f0fcc994b3613d42f19c1ceb7328f46731aed384100e8411bf3e00c7698fd48.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-06T14:20:21Z";
+        sha256 = "6f0fcc994b3613d42f19c1ceb7328f46731aed384100e8411bf3e00c7698fd48";
+      };
+      default = "r1";
     };
   };
   "1.0.3" = {
