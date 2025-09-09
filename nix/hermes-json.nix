@@ -122,7 +122,13 @@
         revTimestamp = "2025-07-16T22:09:04Z";
         sha256 = "04e0a208f1aecbd4bf738ad4e00984d9960729104f72df6d37b7153f46416cbf";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hermes-json-0.7.0.0-r1-d1fe74cc26fc7c4de12e4eab2bb74cda4eb9b4dc311c297caa23e40bdb1bd3b6.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-08T17:47:39Z";
+        sha256 = "d1fe74cc26fc7c4de12e4eab2bb74cda4eb9b4dc311c297caa23e40bdb1bd3b6";
+      };
+      default = "r1";
     };
   };
 }
