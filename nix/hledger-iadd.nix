@@ -590,7 +590,13 @@
         revTimestamp = "2025-06-02T18:33:55Z";
         sha256 = "b4ec052679e93bcb3a0dae70946f55980128e2209f4a3465af6747ac1f9a133a";
       };
-      default = "r9";
+      r10 = {
+        nix = import ../hackage/hledger-iadd-1.3.21-r10-d1aeb8b63707e39e4ea1f205010537c976975381729aa5f4683da9c502986804.nix;
+        revNum = 10;
+        revTimestamp = "2025-09-10T14:58:04Z";
+        sha256 = "d1aeb8b63707e39e4ea1f205010537c976975381729aa5f4683da9c502986804";
+      };
+      default = "r10";
     };
   };
   "1.3.3" = {
