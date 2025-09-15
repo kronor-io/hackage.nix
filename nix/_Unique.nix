@@ -302,7 +302,13 @@
         revTimestamp = "2025-07-18T08:14:37Z";
         sha256 = "67b990c288b6093d7e6babff00fb3527923d5516f1960d5a7f95973b306f92f1";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/Unique-0.4.8.0-r1-d2c53fd8f83aabc1a1b2694d1d78a4ecd9f3c6f741ab0f513020041cdf75b133.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-14T23:40:28Z";
+        sha256 = "d2c53fd8f83aabc1a1b2694d1d78a4ecd9f3c6f741ab0f513020041cdf75b133";
+      };
+      default = "r1";
     };
   };
 }
