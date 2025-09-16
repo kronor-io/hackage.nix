@@ -158,7 +158,13 @@
         revTimestamp = "2024-08-28T18:39:05Z";
         sha256 = "71b869c23cccf5bcd0adf67f9c389c0038bd6e0ec993272bfa2ff1f23d96a18d";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/plots-0.1.1.5-r1-0fbf8b62f1593a6b49c324b8bcf0c4e41ab093c04dbdbe5fba20c7ac4a89e13a.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-15T19:11:28Z";
+        sha256 = "0fbf8b62f1593a6b49c324b8bcf0c4e41ab093c04dbdbe5fba20c7ac4a89e13a";
+      };
+      default = "r1";
     };
   };
 }

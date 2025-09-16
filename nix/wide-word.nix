@@ -350,7 +350,13 @@
         revTimestamp = "2025-09-13T05:12:04Z";
         sha256 = "c5564ac922e32283381e5067c3ad7f23af58b890acf855435a25a2f0186efe27";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wide-word-0.1.8.1-r1-1e30ec3404e259eed830fceaccb97f6755071793c8d3c2756fade74369228098.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-15T20:57:18Z";
+        sha256 = "1e30ec3404e259eed830fceaccb97f6755071793c8d3c2756fade74369228098";
+      };
+      default = "r1";
     };
   };
 }
