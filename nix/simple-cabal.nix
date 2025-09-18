@@ -89,4 +89,16 @@
       default = "r0";
     };
   };
+  "0.2.0" = {
+    sha256 = "0f8c959799f62860bcaf077f6c7ba66b6ad0bcb8930fd94d895232a547513ad7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/simple-cabal-0.2.0-r0-a6da7b9e90ae932578c46e9fee6f7b0304ba96fe79b757213d61708df756371f.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-17T11:44:19Z";
+        sha256 = "a6da7b9e90ae932578c46e9fee6f7b0304ba96fe79b757213d61708df756371f";
+      };
+      default = "r0";
+    };
+  };
 }
