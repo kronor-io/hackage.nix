@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.1.0" = {
+    sha256 = "e11993af75e8f648e168770da606ab1cde52508cde3ba062af3ab440be88d5a2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nbparts-0.1.1.0-r0-393f53cc1e13c3d48bd4f7875de1d0e1ff255c9c1fa4e86f904b09781f4361b7.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-18T08:20:11Z";
+        sha256 = "393f53cc1e13c3d48bd4f7875de1d0e1ff255c9c1fa4e86f904b09781f4361b7";
+      };
+      default = "r0";
+    };
+  };
 }
