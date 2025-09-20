@@ -80,7 +80,13 @@
         revTimestamp = "2025-06-30T15:29:20Z";
         sha256 = "01b1dfcdaa22599edc932a00769dbee7c8e810206bb6f0bf724afa0527859492";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/diagrams-pandoc-0.4.1-r1-ed2def622fd6c86934b362d6edaaae49319ce1995bed8633440924d4ba5669de.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-19T10:38:35Z";
+        sha256 = "ed2def622fd6c86934b362d6edaaae49319ce1995bed8633440924d4ba5669de";
+      };
+      default = "r1";
     };
   };
 }

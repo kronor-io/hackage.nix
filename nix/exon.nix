@@ -320,7 +320,13 @@
         revTimestamp = "2025-03-15T14:51:39Z";
         sha256 = "5b8af59ebb0cac781038923b8aea93c027e1a55ef165933cf7050c45af6dab3f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/exon-1.7.2.0-r1-61a84b334c70b459c26653fd4bc91b684fd660fd37726fb7a7e2afb5842f1685.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-19T09:48:11Z";
+        sha256 = "61a84b334c70b459c26653fd4bc91b684fd660fd37726fb7a7e2afb5842f1685";
+      };
+      default = "r1";
     };
   };
 }
