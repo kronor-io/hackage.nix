@@ -74,7 +74,13 @@
         revTimestamp = "2025-01-01T23:49:22Z";
         sha256 = "365113b85b7df030813e35241e74e5990897cfbfeb29430277010dec21a02a7d";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/tasty-inspection-testing-0.2.1-r3-dbe49b066f9ca40811ddb70232a129b53c4bfc201763608cb7722d20309a7cbf.nix;
+        revNum = 3;
+        revTimestamp = "2025-09-20T20:25:49Z";
+        sha256 = "dbe49b066f9ca40811ddb70232a129b53c4bfc201763608cb7722d20309a7cbf";
+      };
+      default = "r3";
     };
   };
 }
