@@ -56,7 +56,13 @@
         revTimestamp = "2025-05-06T04:22:44Z";
         sha256 = "ca2a208a2fccdb63588a474857f415caa5f753fd0be63e8d67977e3cdc52002f";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/queue-sheet-0.8.0.1-r2-e464e6c0be8f82c44a041bd4885460b95e0280077c86e692c472a7c3895aa596.nix;
+        revNum = 2;
+        revTimestamp = "2025-09-22T21:56:17Z";
+        sha256 = "e464e6c0be8f82c44a041bd4885460b95e0280077c86e692c472a7c3895aa596";
+      };
+      default = "r2";
     };
   };
 }

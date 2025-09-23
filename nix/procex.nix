@@ -104,7 +104,13 @@
         revTimestamp = "2022-08-29T12:39:40Z";
         sha256 = "453b43d6053e6064683f58835c30785a53f6f48801eb51c43fc4f74282d54db2";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/procex-0.3.3-r1-d9a0807b39eac7543a34e8520b54af140bb8212b277168e6825a2aa65f4d52e9.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-22T16:41:55Z";
+        sha256 = "d9a0807b39eac7543a34e8520b54af140bb8212b277168e6825a2aa65f4d52e9";
+      };
+      default = "r1";
     };
   };
 }

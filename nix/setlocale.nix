@@ -92,7 +92,13 @@
         revTimestamp = "2025-01-03T16:40:09Z";
         sha256 = "cb1d03856a09622e5372e58c09a507308b013e50a67e84cf7faeb363300a28a2";
       };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/setlocale-1.0.0.10-r7-8ae0283824243e284549d6202084689c4ec5d80ad766484d25b537b30a11bb56.nix;
+        revNum = 7;
+        revTimestamp = "2025-09-22T14:51:38Z";
+        sha256 = "8ae0283824243e284549d6202084689c4ec5d80ad766484d25b537b30a11bb56";
+      };
+      default = "r7";
     };
   };
   "1.0.0.2" = {

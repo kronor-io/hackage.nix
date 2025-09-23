@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "0da80451df86e0b03c1cd63b61f5ac21e46a18f444dfc56888b8850fd39b5094";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/eventlog-live-influxdb-0.1.0.1-r0-bbc17c42b178693058e4b0282be76242355f9802fb366537bbeed2122bba70be.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-22T16:00:34Z";
+        sha256 = "bbc17c42b178693058e4b0282be76242355f9802fb366537bbeed2122bba70be";
+      };
+      default = "r0";
+    };
+  };
 }
