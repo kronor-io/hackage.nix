@@ -8,7 +8,13 @@
         revTimestamp = "2014-01-12T18:09:54Z";
         sha256 = "6ebfc8e4e7d93963957e12bdbc62560f2c428cae1483895701b76ac4ec0a215f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/avl-static-0.1.0.0-r1-f085ba32659494f4786df19a56cc8df717caa0da6fc5e15ddec3c3b44b0d8ee7.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-23T21:31:02Z";
+        sha256 = "f085ba32659494f4786df19a56cc8df717caa0da6fc5e15ddec3c3b44b0d8ee7";
+      };
+      default = "r1";
     };
   };
 }
