@@ -512,7 +512,13 @@
         revTimestamp = "2022-09-18T16:33:54Z";
         sha256 = "9685a946db19b75d2d3ca141a6f139457672abecd0bb963ab4d4ae01454fec86";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/selda-0.5.2.0-r1-063dde2fad27eb1a7b40bd0e6b96f077a1c3b6c9c7756fe8693c5dbcf9f724ef.nix;
+        revNum = 1;
+        revTimestamp = "2025-09-27T20:26:29Z";
+        sha256 = "063dde2fad27eb1a7b40bd0e6b96f077a1c3b6c9c7756fe8693c5dbcf9f724ef";
+      };
+      default = "r1";
     };
   };
 }

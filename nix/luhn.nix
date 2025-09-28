@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3" = {
+    sha256 = "9de36259f6959b3d81603ea731471089e8fd133503f76e2e1d07f242a781b0c0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/luhn-0.3-r0-39d582d86b0c607814137c76bb1dfab5904f3e8c3f899e529a175e860ecd652c.nix;
+        revNum = 0;
+        revTimestamp = "2025-09-27T21:54:09Z";
+        sha256 = "39d582d86b0c607814137c76bb1dfab5904f3e8c3f899e529a175e860ecd652c";
+      };
+      default = "r0";
+    };
+  };
 }
