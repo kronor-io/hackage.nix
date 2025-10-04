@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "3.0.0.0" = {
+    sha256 = "e193dafd275b78f0186cdd6d5d2313940fad0fd305cbeb7668d461100942a1c1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/oalg-base-3.0.0.0-r0-2911aacaeab8f53172232500574d00f58288dd43bb7ef491e67a40eefbbfd86d.nix;
+        revNum = 0;
+        revTimestamp = "2025-10-03T19:20:31Z";
+        sha256 = "2911aacaeab8f53172232500574d00f58288dd43bb7ef491e67a40eefbbfd86d";
+      };
+      default = "r0";
+    };
+  };
 }

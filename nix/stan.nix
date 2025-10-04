@@ -164,7 +164,13 @@
         revTimestamp = "2025-08-25T09:34:25Z";
         sha256 = "89193c121679139a176f30a6318b2e3d004873d8c40f9517345308a58b97b2b5";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/stan-0.2.1.0-r3-187fe45f1a13e373040929f4c490f8de7f2e2db719bfb45e167243b4ef1e39f3.nix;
+        revNum = 3;
+        revTimestamp = "2025-10-03T10:50:39Z";
+        sha256 = "187fe45f1a13e373040929f4c490f8de7f2e2db719bfb45e167243b4ef1e39f3";
+      };
+      default = "r3";
     };
   };
 }
