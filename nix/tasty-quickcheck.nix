@@ -152,7 +152,13 @@
         revTimestamp = "2025-06-17T21:09:53Z";
         sha256 = "fca860abe029f9d34cb5168d6a9ab438d7fc4c016c8c594bbf1655d58982fbf3";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/tasty-quickcheck-0.11.1-r4-bfb7a91061ec43d6c9b2b82d053186db73e32a92b39add073d8d00bef92a568f.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-07T20:44:13Z";
+        sha256 = "bfb7a91061ec43d6c9b2b82d053186db73e32a92b39add073d8d00bef92a568f";
+      };
+      default = "r4";
     };
   };
   "0.2" = {
