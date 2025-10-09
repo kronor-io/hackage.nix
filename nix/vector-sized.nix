@@ -434,7 +434,13 @@
         revTimestamp = "2023-10-21T13:12:46Z";
         sha256 = "1c85b70dbfe6fbdcc58d2706c626e6e38d1900276bbb6f1ba6cfee83941f45e6";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/vector-sized-1.5.0-r4-e8482614aba7e705373d63376695d55275e4e280512f7326c01955ca11d3ca65.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-08T23:21:53Z";
+        sha256 = "e8482614aba7e705373d63376695d55275e4e280512f7326c01955ca11d3ca65";
+      };
+      default = "r4";
     };
   };
   "1.6.1" = {

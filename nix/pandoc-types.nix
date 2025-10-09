@@ -854,7 +854,13 @@
         revTimestamp = "2025-06-17T16:56:44Z";
         sha256 = "3fafaab20aaae77934bab312f8c4769631da3a658960b563d64a0eddff265670";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/pandoc-types-1.23.1-r4-b8908a15cd12aabffded17f7a18eb87bf577a0fd14e9de08d7976d82139c99ea.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-08T06:09:21Z";
+        sha256 = "b8908a15cd12aabffded17f7a18eb87bf577a0fd14e9de08d7976d82139c99ea";
+      };
+      default = "r4";
     };
   };
   "1.7" = {

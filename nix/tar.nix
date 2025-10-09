@@ -554,7 +554,13 @@
         revTimestamp = "2025-10-01T23:51:26Z";
         sha256 = "0d1994a06313622b29192d1b6ede870849962d6ce23a9608204e139861871267";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/tar-0.6.4.0-r4-1a5ff2b64cd1bac53ea68d057631818cab6edf7108dc86e7be8ad020b2bf2580.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-08T23:27:01Z";
+        sha256 = "1a5ff2b64cd1bac53ea68d057631818cab6edf7108dc86e7be8ad020b2bf2580";
+      };
+      default = "r4";
     };
   };
   "0.7.0.0" = {

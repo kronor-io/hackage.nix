@@ -263,4 +263,16 @@
       default = "r0";
     };
   };
+  "2.4.0" = {
+    sha256 = "9fc32b476f2003dca9e9a27a4e0a6c7ef26a1bc4bd3ed172bce379227e65efb7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dear-imgui-2.4.0-r0-9f26ae0922fadbf92cd6fd2939e8398575305ec0f4ec46a6a81a410a86c0b656.nix;
+        revNum = 0;
+        revTimestamp = "2025-10-08T14:58:29Z";
+        sha256 = "9f26ae0922fadbf92cd6fd2939e8398575305ec0f4ec46a6a81a410a86c0b656";
+      };
+      default = "r0";
+    };
+  };
 }
