@@ -8,7 +8,13 @@
         revTimestamp = "2008-06-21T23:53:44Z";
         sha256 = "e53b3a7b76f640a4bde03d156542af00c7a39d8b5195d9be9dc5a33a885cfee3";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/regex-pcre-builtin-0.94.1.0.7.7-r1-1af5e392cfa00f451af6ff6b4b72966d97b2225660edabaa0a781d30d7da8a30.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-09T20:33:11Z";
+        sha256 = "1af5e392cfa00f451af6ff6b4b72966d97b2225660edabaa0a781d30d7da8a30";
+      };
+      default = "r1";
     };
   };
   "0.94.2.0.7.7" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2008-07-20T09:05:26Z";
         sha256 = "419f87f1383fbc3ff4575c9be19eeab88554ec3c6a452103de0a0846e6a2207e";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/regex-pcre-builtin-0.94.2.0.7.7-r1-38a6c83215d6d4e79e387d19a46a736668d615d79bfa72b2c77093bcc0f4b770.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-09T20:34:43Z";
+        sha256 = "38a6c83215d6d4e79e387d19a46a736668d615d79bfa72b2c77093bcc0f4b770";
+      };
+      default = "r1";
     };
   };
   "0.94.2.1.7.7" = {
