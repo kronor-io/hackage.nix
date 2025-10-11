@@ -242,7 +242,13 @@
         revTimestamp = "2025-08-09T18:32:48Z";
         sha256 = "fa335104b5fae58c9d5791e1ea9213eeb46753056c67a8d2149d181122658775";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hslua-module-system-1.2.3-r1-b46cdcc613625e1c4d52a15a886ed78466bb960e81cc435d2f5ddf9ea2297ba5.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-10T14:02:55Z";
+        sha256 = "b46cdcc613625e1c4d52a15a886ed78466bb960e81cc435d2f5ddf9ea2297ba5";
+      };
+      default = "r1";
     };
   };
 }
