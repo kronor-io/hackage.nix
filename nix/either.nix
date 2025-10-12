@@ -596,7 +596,13 @@
         revTimestamp = "2025-06-17T11:53:15Z";
         sha256 = "de3daf61db662a48c10420dee21e70966c8ce590263c563c70d57ef5e7cc03e1";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/either-5.0.3-r1-c3c5f462a2d5eb9fa66630252239b372c902e4cf12f128d5507bd2f5b32ebbcf.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-11T13:15:23Z";
+        sha256 = "c3c5f462a2d5eb9fa66630252239b372c902e4cf12f128d5507bd2f5b32ebbcf";
+      };
+      default = "r1";
     };
   };
 }
