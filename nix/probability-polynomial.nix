@@ -44,7 +44,13 @@
         revTimestamp = "2025-09-26T15:01:14Z";
         sha256 = "fc10063e8d049197890ff8849ca0716aeadcd9fd45aeb71a86e847d85680e66c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/probability-polynomial-1.0.1.0-r1-ef6a2f1fd9fffc6097c460d5c90e99f3571494bdef8a6a6396b38f7a4829ddbf.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-17T11:27:26Z";
+        sha256 = "ef6a2f1fd9fffc6097c460d5c90e99f3571494bdef8a6a6396b38f7a4829ddbf";
+      };
+      default = "r1";
     };
   };
 }
