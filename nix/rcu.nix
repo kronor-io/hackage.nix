@@ -158,7 +158,13 @@
         revTimestamp = "2023-08-09T12:18:24Z";
         sha256 = "43b6c36536e356c514e1d6c93ada49bca76ba355c742038aa9627ac4e27851b7";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/rcu-0.2.7-r1-f8eb388ddf753255bd9cc6c98aaf512adaefd5ffb4e5dde2e249640f1d9ca664.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-19T20:01:03Z";
+        sha256 = "f8eb388ddf753255bd9cc6c98aaf512adaefd5ffb4e5dde2e249640f1d9ca664";
+      };
+      default = "r1";
     };
   };
 }
