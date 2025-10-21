@@ -764,7 +764,13 @@
         revTimestamp = "2025-10-12T19:11:27Z";
         sha256 = "ad09054bdc743e8e50b69d4366f945d6b376aadab05920f008b00efb102cceb6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/Agda-2.8.0-r2-b73b1b6685650d4429074f10440952cecb7aef190a994f75d168c354d20b01a8.nix;
+        revNum = 2;
+        revTimestamp = "2025-10-20T05:51:27Z";
+        sha256 = "b73b1b6685650d4429074f10440952cecb7aef190a994f75d168c354d20b01a8";
+      };
+      default = "r2";
     };
   };
 }
