@@ -464,7 +464,13 @@
         revTimestamp = "2025-10-14T22:43:25Z";
         sha256 = "76e29b3355dbec0647d03901835bbfea998d7feedf573d27672fe0d410a38ccc";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/h-raylib-5.5.3.1-r1-95c091f63d942a1b28998814b575e55848f59f085906773aabe1ddb92d45057f.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-24T02:09:22Z";
+        sha256 = "95c091f63d942a1b28998814b575e55848f59f085906773aabe1ddb92d45057f";
+      };
+      default = "r1";
     };
   };
 }
