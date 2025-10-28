@@ -20,7 +20,13 @@
         revTimestamp = "2024-10-17T07:25:36Z";
         sha256 = "4d40b1c0dee34bdfc3ad051f3b260a77b8304afc2f5b336cce233a733e130cae";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/proquint-0.1.0.0-r3-1589f5efaf639030cb0f21b79e61a860ab6715776d300c6dc6ccfa2c1ec1ee19.nix;
+        revNum = 3;
+        revTimestamp = "2025-10-27T17:21:50Z";
+        sha256 = "1589f5efaf639030cb0f21b79e61a860ab6715776d300c6dc6ccfa2c1ec1ee19";
+      };
+      default = "r3";
     };
   };
 }

@@ -8,7 +8,13 @@
         revTimestamp = "2025-10-04T16:17:04Z";
         sha256 = "67d4731ce3ff612dfd3b62a5e6c323640e97ccf5cbd367135813cc2f764794f2";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/template-haskell-lift-0.1.0.0-r1-f6cd3ee45b0c68480c400bfca9f08f39e8e87a5eb823f206dbe06ab1923a4f1c.nix;
+        revNum = 1;
+        revTimestamp = "2025-10-27T19:22:55Z";
+        sha256 = "f6cd3ee45b0c68480c400bfca9f08f39e8e87a5eb823f206dbe06ab1923a4f1c";
+      };
+      default = "r1";
     };
   };
 }

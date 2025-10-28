@@ -50,7 +50,19 @@
         revTimestamp = "2022-03-19T16:11:21Z";
         sha256 = "93d0f745c90ac0f5ca7cf12ee667aab21567935dbe2d59cc9ec25e922e81e8db";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/soap-openssl-0.1.0.2-r4-bcbb623cb4f7645164aad1b3e68600c9c5db51bca32ff8241d4fe8ee42abc186.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-27T18:43:58Z";
+        sha256 = "bcbb623cb4f7645164aad1b3e68600c9c5db51bca32ff8241d4fe8ee42abc186";
+      };
+      r5 = {
+        nix = import ../hackage/soap-openssl-0.1.0.2-r5-a8573636f8701d11d921ac26f129943707b2e4d15247d902f44be8ea2150480d.nix;
+        revNum = 5;
+        revTimestamp = "2025-10-27T19:32:43Z";
+        sha256 = "a8573636f8701d11d921ac26f129943707b2e4d15247d902f44be8ea2150480d";
+      };
+      default = "r5";
     };
   };
 }

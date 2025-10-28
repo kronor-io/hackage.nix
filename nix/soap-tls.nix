@@ -74,7 +74,19 @@
         revTimestamp = "2022-03-19T16:11:49Z";
         sha256 = "96cb31254a515dc285c0137565343b0d76a74470cf64522deb365807af2c4619";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/soap-tls-0.1.1.4-r3-80923eb302f031379983c607fe42c8c769034658cbf157a1fc388f5fbd1bb4fa.nix;
+        revNum = 3;
+        revTimestamp = "2025-10-27T18:43:21Z";
+        sha256 = "80923eb302f031379983c607fe42c8c769034658cbf157a1fc388f5fbd1bb4fa";
+      };
+      r4 = {
+        nix = import ../hackage/soap-tls-0.1.1.4-r4-643c922fd91274e46f3ca74cca0775688295db31702b4fd24b447c0eef6b899f.nix;
+        revNum = 4;
+        revTimestamp = "2025-10-27T19:32:05Z";
+        sha256 = "643c922fd91274e46f3ca74cca0775688295db31702b4fd24b447c0eef6b899f";
+      };
+      default = "r4";
     };
   };
 }
