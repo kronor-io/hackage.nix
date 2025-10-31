@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "7764f4232ab197513d48d3ee2c72995988db2dca13442afaea14affe7ea7efad";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/no-recursion-0.2.0.0-r0-f2d041399ddc59e41c0721009bb8ded6135590a86a696a5e2c826ed8c0cb3bfa.nix;
+        revNum = 0;
+        revTimestamp = "2025-10-30T16:28:08Z";
+        sha256 = "f2d041399ddc59e41c0721009bb8ded6135590a86a696a5e2c826ed8c0cb3bfa";
+      };
+      default = "r0";
+    };
+  };
 }
