@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "1.0.20251105" = {
+    sha256 = "8a8fabb0a768c95503abd87a5ae6f23f72fd88083ae697026028a25404947eae";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/java-adt-1.0.20251105-r0-761aa4551ad7b6d13268ec4af925c8b4e5020b8e30a7bc5b296acc75d918c4ba.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-05T18:25:40Z";
+        sha256 = "761aa4551ad7b6d13268ec4af925c8b4e5020b8e30a7bc5b296acc75d918c4ba";
+      };
+      default = "r0";
+    };
+  };
 }
