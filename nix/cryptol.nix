@@ -335,4 +335,16 @@
       default = "r0";
     };
   };
+  "3.4.0" = {
+    sha256 = "5973570dfd307c0a27251bb8edcfd554034549b21dfba7b69f21963d3361a388";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cryptol-3.4.0-r0-3e3b6758338ba840597bcc30e6c9d12bb4aacc9103dc20a6ac8b6f2c62eec125.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-07T20:07:59Z";
+        sha256 = "3e3b6758338ba840597bcc30e6c9d12bb4aacc9103dc20a6ac8b6f2c62eec125";
+      };
+      default = "r0";
+    };
+  };
 }
