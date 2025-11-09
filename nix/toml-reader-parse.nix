@@ -8,7 +8,13 @@
         revTimestamp = "2022-09-19T12:19:38Z";
         sha256 = "5c96dd8eb66dc18a41d48a2ce0a6b98b0239708e955781b0bf1f99e9e5968429";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/toml-reader-parse-0.1.0.0-r1-db1d45e099ce3e9fa9763a1d835aad303da5c72e04ee599aaee665cb1cce69c5.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-08T13:23:07Z";
+        sha256 = "db1d45e099ce3e9fa9763a1d835aad303da5c72e04ee599aaee665cb1cce69c5";
+      };
+      default = "r1";
     };
   };
   "0.1.1.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2022-09-21T21:54:57Z";
         sha256 = "ec7d5238c0362d2306f4c55b34cbe22477bab2f365353030d93b662c013ac7f4";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/toml-reader-parse-0.1.1.0-r1-942cbaf125cfdfe2e9d35bfeedccbd9fedadf27ac319e6a57b2904d07cd791f2.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-08T13:24:45Z";
+        sha256 = "942cbaf125cfdfe2e9d35bfeedccbd9fedadf27ac319e6a57b2904d07cd791f2";
+      };
+      default = "r1";
     };
   };
   "0.1.1.1" = {
