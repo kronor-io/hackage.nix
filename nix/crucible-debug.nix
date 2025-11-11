@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "6afd3e35b7c7cad2b3f832fc382602d57c98ab389fc91c2d5a1e468dc45c6b44";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crucible-debug-0.1.2.0-r0-4fe270182278ced4297a33895165961596056095b0fc9d03c444ab3cfc6b3f05.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-10T21:44:29Z";
+        sha256 = "4fe270182278ced4297a33895165961596056095b0fc9d03c444ab3cfc6b3f05";
+      };
+      default = "r0";
+    };
+  };
 }

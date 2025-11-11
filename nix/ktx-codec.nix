@@ -98,7 +98,13 @@
         revTimestamp = "2025-11-07T20:29:36Z";
         sha256 = "d955f876e57db08ba27ce4819ce773e2f7f171e8808a7aa485757e378d920d82";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/ktx-codec-0.0.2.1-r4-c264ea69af918c20b5b826101eaf9c64a9d2d40878a3ba2656886899dfee1a5f.nix;
+        revNum = 4;
+        revTimestamp = "2025-11-10T14:05:27Z";
+        sha256 = "c264ea69af918c20b5b826101eaf9c64a9d2d40878a3ba2656886899dfee1a5f";
+      };
+      default = "r4";
     };
   };
 }
