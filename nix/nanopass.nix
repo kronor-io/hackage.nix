@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.0.3.1" = {
+    sha256 = "3e54c37c9f1b4bdeadf552315b5b3e1bee4ac69eb2b21744742c0b3560755d66";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nanopass-0.0.3.1-r0-6391dc091f654ff00ba2c72e50c2931c668c354fd98759f122dff95f40f9aae5.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-13T05:14:08Z";
+        sha256 = "6391dc091f654ff00ba2c72e50c2931c668c354fd98759f122dff95f40f9aae5";
+      };
+      default = "r0";
+    };
+  };
 }
