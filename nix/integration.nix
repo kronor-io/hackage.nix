@@ -56,7 +56,13 @@
         revTimestamp = "2015-03-07T07:53:12Z";
         sha256 = "8ccca1a6e4b187874f339e8b5b453652efac8186760910d4550804650a8e8211";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/integration-0.2.1-r1-90d93922993f3ac22168b9e339a6ead373aef774e66d67e30abbeefff59115d3.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-14T03:24:54Z";
+        sha256 = "90d93922993f3ac22168b9e339a6ead373aef774e66d67e30abbeefff59115d3";
+      };
+      default = "r1";
     };
   };
 }
