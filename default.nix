@@ -3146,6 +3146,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "bytestring-encoding" = import ./nix/bytestring-encoding.nix;
   "bytestring-encodings" = import ./nix/bytestring-encodings.nix;
   "bytestring-from" = import ./nix/bytestring-from.nix;
+  "bytestring-ft" = import ./nix/bytestring-ft.nix;
   "bytestring-handle" = import ./nix/bytestring-handle.nix;
   "bytestring-lexing" = import ./nix/bytestring-lexing.nix;
   "bytestring-mmap" = import ./nix/bytestring-mmap.nix;
@@ -5141,6 +5142,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "downloader" = import ./nix/downloader.nix;
   "dozenal" = import ./nix/dozenal.nix;
   "dozens" = import ./nix/dozens.nix;
+  "dpapi" = import ./nix/dpapi.nix;
   "dph-base" = import ./nix/dph-base.nix;
   "dph-examples" = import ./nix/dph-examples.nix;
   "dph-lifted-base" = import ./nix/dph-lifted-base.nix;
@@ -7663,6 +7665,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "haskell-dap" = import ./nix/haskell-dap.nix;
   "haskell-debug-adapter" = import ./nix/haskell-debug-adapter.nix;
   "haskell-debugger" = import ./nix/haskell-debugger.nix;
+  "haskell-debugger-view" = import ./nix/haskell-debugger-view.nix;
   "haskell-disque" = import ./nix/haskell-disque.nix;
   "haskell-docs" = import ./nix/haskell-docs.nix;
   "haskell-docs-cli" = import ./nix/haskell-docs-cli.nix;
@@ -18069,6 +18072,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "web3-polkadot" = import ./nix/web3-polkadot.nix;
   "web3-provider" = import ./nix/web3-provider.nix;
   "web3-solidity" = import ./nix/web3-solidity.nix;
+  "web3-tools" = import ./nix/web3-tools.nix;
   "webapi" = import ./nix/webapi.nix;
   "webapp" = import ./nix/webapp.nix;
   "webauthn" = import ./nix/webauthn.nix;
@@ -18747,6 +18751,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "zlib-bytes" = import ./nix/zlib-bytes.nix;
   "zlib-clib" = import ./nix/zlib-clib.nix;
   "zlib-conduit" = import ./nix/zlib-conduit.nix;
+  "zlib-core" = import ./nix/zlib-core.nix;
   "zlib-enum" = import ./nix/zlib-enum.nix;
   "zlib-lens" = import ./nix/zlib-lens.nix;
   "zm" = import ./nix/zm.nix;

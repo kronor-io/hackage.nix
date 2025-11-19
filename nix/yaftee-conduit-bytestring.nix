@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "31252b2e2e994fbe01aa7de76cba76e5caeb28ade7913c844f5a72aad5852b7f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yaftee-conduit-bytestring-0.1.0.1-r0-c9c63711bdb6b943c5f61bb840f78de3a72cd309a1dac84525cdd90f0862ed0a.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-18T04:27:45Z";
+        sha256 = "c9c63711bdb6b943c5f61bb840f78de3a72cd309a1dac84525cdd90f0862ed0a";
+      };
+      default = "r0";
+    };
+  };
 }
