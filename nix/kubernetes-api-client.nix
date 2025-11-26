@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.6.1.2" = {
+    sha256 = "b2cbc7861b135b753d5b5e1e04f90cf660c72a6cd8cbdff1bcf202bddd4d78f8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kubernetes-api-client-0.6.1.2-r0-1e8fc7d53511f08380b54cea92ab85c50c88e7ba97552d10e8712ee918976015.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-25T22:00:24Z";
+        sha256 = "1e8fc7d53511f08380b54cea92ab85c50c88e7ba97552d10e8712ee918976015";
+      };
+      default = "r0";
+    };
+  };
 }

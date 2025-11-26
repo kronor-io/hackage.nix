@@ -380,7 +380,13 @@
         revTimestamp = "2020-10-24T21:34:11Z";
         sha256 = "8e986745b7fd6b630682578546f52e5e8cc4f37c75fdb88c04afdf0054882019";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xlsx-0.8.2-r1-9ca895e9d43ece79e46fd8b6034a11158d191046752b4f28ea5273a9ce8c27a1.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-25T21:05:40Z";
+        sha256 = "9ca895e9d43ece79e46fd8b6034a11158d191046752b4f28ea5273a9ce8c27a1";
+      };
+      default = "r1";
     };
   };
   "0.8.3" = {
@@ -392,7 +398,13 @@
         revTimestamp = "2021-02-26T19:47:17Z";
         sha256 = "f5a2c6c780b7d1fd8378fcbdeef276cc73225e92377c6a23e402f2400665fa04";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xlsx-0.8.3-r1-6dbe8273ce6997f467a01f10cce3a047b10788fb7106016df4ec835bec845814.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-25T21:04:19Z";
+        sha256 = "6dbe8273ce6997f467a01f10cce3a047b10788fb7106016df4ec835bec845814";
+      };
+      default = "r1";
     };
   };
   "0.8.4" = {
@@ -404,7 +416,13 @@
         revTimestamp = "2021-06-19T15:42:01Z";
         sha256 = "4ec1135fb65c60a035d52edb29e5cb13572d33e4a4dc6f579b8363ae8a94dbbf";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xlsx-0.8.4-r1-6f5b88622d7189e365950eb9be7d4bba78849c53ffb6c1f0746aeb1b524a1f99.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-25T20:53:25Z";
+        sha256 = "6f5b88622d7189e365950eb9be7d4bba78849c53ffb6c1f0746aeb1b524a1f99";
+      };
+      default = "r1";
     };
   };
   "1.0.0" = {
@@ -416,7 +434,13 @@
         revTimestamp = "2022-03-22T19:52:31Z";
         sha256 = "e698604e2e20b30c7c35a2c529b2cb7d1a78f920fd7603661784cb2730304d8a";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xlsx-1.0.0-r1-3474a0ec9db56c35b537e57679b1c8c1ce5e5e5d32e79d35f284b42c0c9aa274.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-25T01:14:52Z";
+        sha256 = "3474a0ec9db56c35b537e57679b1c8c1ce5e5e5d32e79d35f284b42c0c9aa274";
+      };
+      default = "r1";
     };
   };
   "1.0.0.1" = {
@@ -428,7 +452,13 @@
         revTimestamp = "2022-03-23T18:46:58Z";
         sha256 = "08d4ebee3af7a41e40e43f1646373975f789d4f2942d1353ff6f1f1a910779a0";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xlsx-1.0.0.1-r1-7ee205a01b309a6a5ecdfe3df5308542b4cb4b91fadcd6e234376abe98c68de6.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-25T00:57:24Z";
+        sha256 = "7ee205a01b309a6a5ecdfe3df5308542b4cb4b91fadcd6e234376abe98c68de6";
+      };
+      default = "r1";
     };
   };
   "1.1.0" = {
