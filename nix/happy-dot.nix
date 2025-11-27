@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "1.0.0.1" = {
+    sha256 = "907d2f50b2c02444776e3d2f45ddc87d37449f5db49dc90be55ea11405ef2e9e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/happy-dot-1.0.0.1-r0-9df22a95719e3f0173096be267f3d6271162321324da6872adc44c7d6efd091a.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-26T12:16:09Z";
+        sha256 = "9df22a95719e3f0173096be267f3d6271162321324da6872adc44c7d6efd091a";
+      };
+      default = "r0";
+    };
+  };
 }

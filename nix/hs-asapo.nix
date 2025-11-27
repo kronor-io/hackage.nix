@@ -1,4 +1,16 @@
 {
+  "0.10.0" = {
+    sha256 = "42b56def5ca9b53b92015faebbef8868e5dc604243f8c48fb62aa4416828a9c8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hs-asapo-0.10.0-r0-c2dc142ce76294a3345579205527560572e2548aea03d7d71728f05809ec3c63.nix;
+        revNum = 0;
+        revTimestamp = "2025-11-26T14:37:08Z";
+        sha256 = "c2dc142ce76294a3345579205527560572e2548aea03d7d71728f05809ec3c63";
+      };
+      default = "r0";
+    };
+  };
   "0.9.0" = {
     sha256 = "ae5ab56a59e463260e3764dbf0b7d8957c6b88d8b77ed63bf6dfe0fbc1f74918";
     revisions = {

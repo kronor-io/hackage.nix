@@ -410,7 +410,13 @@
         revTimestamp = "2025-05-13T22:10:13Z";
         sha256 = "8dcb0bb6f907c842af1d65fa1bc4305bed69f6a38de4069db55e39811b7997b8";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/unix-2.7.3-r3-af2fac28305b3fd02a17ea81f9193bb40c7caef915047edcddc69fec293f0d51.nix;
+        revNum = 3;
+        revTimestamp = "2025-11-26T00:50:56Z";
+        sha256 = "af2fac28305b3fd02a17ea81f9193bb40c7caef915047edcddc69fec293f0d51";
+      };
+      default = "r3";
     };
   };
   "2.8.0.0" = {
