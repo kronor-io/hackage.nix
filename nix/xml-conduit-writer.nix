@@ -134,7 +134,13 @@
         revTimestamp = "2025-10-14T20:04:18Z";
         sha256 = "7c4c75ca2aa382b3e40ab10408d2cfc638b5f68060874922fbaa8f665824d99d";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xml-conduit-writer-0.1.1.6-r1-c97597fc150c77f089c7c9b486479eb5b424bb59cd059c608b28c18975028a82.nix;
+        revNum = 1;
+        revTimestamp = "2025-11-28T08:48:12Z";
+        sha256 = "c97597fc150c77f089c7c9b486479eb5b424bb59cd059c608b28c18975028a82";
+      };
+      default = "r1";
     };
   };
 }
