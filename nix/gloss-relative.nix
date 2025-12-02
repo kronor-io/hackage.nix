@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.1.0" = {
+    sha256 = "7f39b84420e8e892c934a3f6770088f7d7739630fbd9a5169aa6302e3a4cbb0e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gloss-relative-0.1.1.0-r0-e14a884b1e55a042cc0014557970a1b509a3962ab1e8db99df79539d692b4dae.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-01T01:41:49Z";
+        sha256 = "e14a884b1e55a042cc0014557970a1b509a3962ab1e8db99df79539d692b4dae";
+      };
+      default = "r0";
+    };
+  };
 }
