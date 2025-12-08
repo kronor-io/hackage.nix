@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "1.0.0.0" = {
+    sha256 = "fad0a46917549a021bbdb013b5d586156853d9f18209ffa32ad3bc7caae80bef";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/avif-1.0.0.0-r0-89b3b0b09901e6e24846dad0facabd5af612f7e926f31537659389c68153396b.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-07T19:19:06Z";
+        sha256 = "89b3b0b09901e6e24846dad0facabd5af612f7e926f31537659389c68153396b";
+      };
+      default = "r0";
+    };
+  };
 }

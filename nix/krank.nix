@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.3.1" = {
+    sha256 = "f803947ab1ebb0d283542aa713d9e01c640811392d06d5a999ba95ab2b297feb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/krank-0.3.1-r0-104be06acfc234f64e835d86ba3ad742a1d3aa37d83b0167ee1b7a5301de3c61.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-07T12:30:33Z";
+        sha256 = "104be06acfc234f64e835d86ba3ad742a1d3aa37d83b0167ee1b7a5301de3c61";
+      };
+      default = "r0";
+    };
+  };
 }

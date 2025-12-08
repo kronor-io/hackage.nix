@@ -8,7 +8,13 @@
         revTimestamp = "2016-11-21T12:20:08Z";
         sha256 = "a7d396e317a379a374afcf1b406196244e094584b2c1190581cf881a189366c3";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xml-isogen-0.1.0-r1-4ab2be2804db9246479309172d015b57c0819cac9db457ab39ff8f943a882269.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-07T14:52:35Z";
+        sha256 = "4ab2be2804db9246479309172d015b57c0819cac9db457ab39ff8f943a882269";
+      };
+      default = "r1";
     };
   };
   "0.2.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2017-09-27T12:29:07Z";
         sha256 = "ad4c2e0dd875baebdfcad52c5163866a9fce0de4439c9d3ff5d3ea8be5ea0fa9";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xml-isogen-0.2.0-r1-038d0f2dc06b3f1c4e1af942da349fe9e2e8400b36e42cd9e3d52a137874d6b7.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-07T17:18:56Z";
+        sha256 = "038d0f2dc06b3f1c4e1af942da349fe9e2e8400b36e42cd9e3d52a137874d6b7";
+      };
+      default = "r1";
     };
   };
   "0.2.1" = {
