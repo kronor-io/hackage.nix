@@ -56,7 +56,13 @@
         revTimestamp = "2025-11-27T13:49:40Z";
         sha256 = "f800dc9e35886db420ebd860f7a85c66de4d20b61729e90edebefefe54500b73";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hpqtypes-effectful-1.1.0.0-r1-b9930eada7a07661b0359d65f9cbc6a7444da6754c61efa759f236be5f6abdcb.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-10T16:26:10Z";
+        sha256 = "b9930eada7a07661b0359d65f9cbc6a7444da6754c61efa759f236be5f6abdcb";
+      };
+      default = "r1";
     };
   };
 }
