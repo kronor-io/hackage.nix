@@ -1184,7 +1184,13 @@
         revTimestamp = "2025-09-30T21:34:51Z";
         sha256 = "607593fe6ec77ff415c3707a4f13a8776cd6b08c4028dcbce824c323f6880fb9";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/cabal-install-3.16.0.0-r3-fc78f9888b31c07eb30ff823ef2a7e0996c8448baf5af3535e383b2907f2976d.nix;
+        revNum = 3;
+        revTimestamp = "2025-12-13T20:36:09Z";
+        sha256 = "fc78f9888b31c07eb30ff823ef2a7e0996c8448baf5af3535e383b2907f2976d";
+      };
+      default = "r3";
     };
   };
   "3.2.0.0" = {
