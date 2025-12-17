@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.2.1.0" = {
+    sha256 = "2e8c5b48892d5a41e453f09272a2bc27b3a7be2401d4dd51e5e9d5f04d04aa00";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hspec-yesod-0.2.1.0-r0-d802ff3d0c51730c6c7a65753f29ed2e226b52bb549ecec127d918082e73e9fb.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-16T23:53:17Z";
+        sha256 = "d802ff3d0c51730c6c7a65753f29ed2e226b52bb549ecec127d918082e73e9fb";
+      };
+      default = "r0";
+    };
+  };
 }
