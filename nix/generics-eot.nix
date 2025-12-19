@@ -95,4 +95,16 @@
       default = "r0";
     };
   };
+  "0.4.1.0" = {
+    sha256 = "035059b0bed15b8f83eb8948db5e5294cab4d8f220007f800a968b00d34c860a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/generics-eot-0.4.1.0-r0-06466c94dbdedeb1211f73d728e90d3a7764857ae39e993aeb4129a6ce9a449a.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-18T15:18:54Z";
+        sha256 = "06466c94dbdedeb1211f73d728e90d3a7764857ae39e993aeb4129a6ce9a449a";
+      };
+      default = "r0";
+    };
+  };
 }
