@@ -2279,4 +2279,16 @@
       default = "r0";
     };
   };
+  "4.2.0" = {
+    sha256 = "ac4f29420f0b10056df6f67fb57ad9517d55c90e29498469ae9322a15e60bf1f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/egison-4.2.0-r0-a4527bf7dcb2839d71f94731f622a0584d82c96faadf0c2a24c71256bd09364f.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-19T13:41:13Z";
+        sha256 = "a4527bf7dcb2839d71f94731f622a0584d82c96faadf0c2a24c71256bd09364f";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -80,7 +80,13 @@
         revTimestamp = "2025-07-15T21:52:11Z";
         sha256 = "cc7b44198c0978d0dc0ea4d85e7a4252d76ea3fe19dc10f7eb20a6386c00e0e6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/fast-digits-0.3.2.0-r2-92d12d51bb61c2015281bd5de51bd601692ed43fa7f70941d2517770961caf5a.nix;
+        revNum = 2;
+        revTimestamp = "2025-12-19T20:15:05Z";
+        sha256 = "92d12d51bb61c2015281bd5de51bd601692ed43fa7f70941d2517770961caf5a";
+      };
+      default = "r2";
     };
   };
 }
