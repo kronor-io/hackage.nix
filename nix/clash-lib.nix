@@ -1136,7 +1136,13 @@
         revTimestamp = "2025-11-06T19:59:31Z";
         sha256 = "6d08a798f5e2e4772290d6c480f0e3de4ef3309d737ace37f0a27281433e3adb";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/clash-lib-1.8.4-r1-801199597f8414852dcb55e1704ff266969e677faae2e5deaeb3ff85bf302e46.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-28T15:45:32Z";
+        sha256 = "801199597f8414852dcb55e1704ff266969e677faae2e5deaeb3ff85bf302e46";
+      };
+      default = "r1";
     };
   };
 }

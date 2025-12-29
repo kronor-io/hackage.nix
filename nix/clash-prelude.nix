@@ -998,7 +998,13 @@
         revTimestamp = "2025-11-06T19:59:23Z";
         sha256 = "4d1d9b05cc38f6c1e856de3035ee044bfcb7666e6ebeb978aef54da840255a67";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/clash-prelude-1.8.4-r1-310c76879f31f251a2d519a8e168d4e5a5bc84ea17b9bb481e44873dfbb7b64b.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-28T15:44:54Z";
+        sha256 = "310c76879f31f251a2d519a8e168d4e5a5bc84ea17b9bb481e44873dfbb7b64b";
+      };
+      default = "r1";
     };
   };
 }

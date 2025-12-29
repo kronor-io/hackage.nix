@@ -4376,7 +4376,13 @@
         revTimestamp = "2025-12-11T17:46:26Z";
         sha256 = "55637bd6ac327de36cd2b74e649baacadc881b735dd3c482001269c43fa3dc9d";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/warp-3.4.11-r1-9cea17b726d1909cf1a482c8a1502be518ac2d9ea2c8ceb745ef9726dcf0eb13.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-28T07:04:24Z";
+        sha256 = "9cea17b726d1909cf1a482c8a1502be518ac2d9ea2c8ceb745ef9726dcf0eb13";
+      };
+      default = "r1";
     };
   };
   "3.4.2" = {
