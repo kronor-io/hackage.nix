@@ -185,4 +185,16 @@
       default = "r0";
     };
   };
+  "0.8" = {
+    sha256 = "ce954f2776f5f05d7c8234f456a26d098ed77ca7289a90bd9e15f0948a3ba409";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/trackit-0.8-r0-9773d24106d02ed63d5dc9696d04d55d769cc8745e81bc0a762e7bae75b4356c.nix;
+        revNum = 0;
+        revTimestamp = "2025-12-29T10:03:01Z";
+        sha256 = "9773d24106d02ed63d5dc9696d04d55d769cc8745e81bc0a762e7bae75b4356c";
+      };
+      default = "r0";
+    };
+  };
 }

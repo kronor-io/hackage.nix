@@ -200,7 +200,13 @@
         revTimestamp = "2024-09-04T14:31:43Z";
         sha256 = "235df8eff07bd6cdb4257e23486bb35b9db016e4f41beaa3eccedbc7e3ab7398";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/enummapset-0.7.3.0-r1-a8ab0ecce792a2502dcc580abba3d1333757a7c44097d4cf52b2cc8437f925a0.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-29T12:37:42Z";
+        sha256 = "a8ab0ecce792a2502dcc580abba3d1333757a7c44097d4cf52b2cc8437f925a0";
+      };
+      default = "r1";
     };
   };
 }
