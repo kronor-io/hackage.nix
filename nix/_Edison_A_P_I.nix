@@ -128,7 +128,13 @@
         revTimestamp = "2025-02-04T22:21:02Z";
         sha256 = "1e671c6d9bf9e10ed50401d145e19dbdf813331274189968e10fd2d92884f1f1";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/EdisonAPI-1.3.3.2-r1-b22bea9e02f9485d2e662320ddc7d807e54140314ba7d59d1ced5a907b248e06.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-31T08:11:44Z";
+        sha256 = "b22bea9e02f9485d2e662320ddc7d807e54140314ba7d59d1ced5a907b248e06";
+      };
+      default = "r1";
     };
   };
 }

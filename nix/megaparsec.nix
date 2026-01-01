@@ -830,7 +830,13 @@
         revTimestamp = "2024-11-19T16:16:28Z";
         sha256 = "77e331b4240385974e68d1f8d5ca9014274983cc9ccb8caced743d360c3a409f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/megaparsec-9.7.0-r1-50afa64b166bfb4895e51cc961dd7e63fe4b656f3d32e80a2722918166d07e38.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-31T16:10:40Z";
+        sha256 = "50afa64b166bfb4895e51cc961dd7e63fe4b656f3d32e80a2722918166d07e38";
+      };
+      default = "r1";
     };
   };
 }

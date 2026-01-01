@@ -260,7 +260,13 @@
         revTimestamp = "2025-09-29T05:41:46Z";
         sha256 = "5280ea1ed8121b29bd4f602da26f4e694291b2ae9174c5d7a5e25402ef0bdd12";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fourmolu-0.19.0.1-r1-2346f9131042bf3d75d2419661a993ce2475992a80c35f0f0acf978f4fedeb53.nix;
+        revNum = 1;
+        revTimestamp = "2025-12-31T18:03:26Z";
+        sha256 = "2346f9131042bf3d75d2419661a993ce2475992a80c35f0f0acf978f4fedeb53";
+      };
+      default = "r1";
     };
   };
   "0.2.0.0" = {
