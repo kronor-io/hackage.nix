@@ -554,7 +554,13 @@
         revTimestamp = "2025-09-24T09:50:04Z";
         sha256 = "4f85ee1053234827cec315f4307ce058b048ede13e29a6f2f21eaea7606261c7";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ormolu-0.8.0.2-r1-2e8e13e61e8f0ff41c88910e6eb99a3e0ee22aed6651db7591a648ccf35acfc1.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-01T18:00:16Z";
+        sha256 = "2e8e13e61e8f0ff41c88910e6eb99a3e0ee22aed6651db7591a648ccf35acfc1";
+      };
+      default = "r1";
     };
   };
 }
