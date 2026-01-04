@@ -419,4 +419,16 @@
       default = "r1";
     };
   };
+  "0.7.2.0" = {
+    sha256 = "946654bcd8ea2dff7d0058061861a8c898be9addf20c92d3cfa53b679e737622";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/th-abstraction-0.7.2.0-r0-380819d6e14645bf66af99b6ea3d3d4309c523c7d0ee376e0678042622f1c272.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-03T14:49:08Z";
+        sha256 = "380819d6e14645bf66af99b6ea3d3d4309c523c7d0ee376e0678042622f1c272";
+      };
+      default = "r0";
+    };
+  };
 }

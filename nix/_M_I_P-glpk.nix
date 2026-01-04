@@ -20,7 +20,13 @@
         revTimestamp = "2025-01-04T01:01:45Z";
         sha256 = "6282000d2bb65b075f0094d598e7166a32516dea9e42325f6fa64385c6e35789";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/MIP-glpk-0.1.1.0-r3-6e95efa229c579576829efcfe0779a0ba96eedfd1b89ae951f98eb1196edae00.nix;
+        revNum = 3;
+        revTimestamp = "2026-01-03T15:04:39Z";
+        sha256 = "6e95efa229c579576829efcfe0779a0ba96eedfd1b89ae951f98eb1196edae00";
+      };
+      default = "r3";
     };
   };
   "0.2.0.0" = {
@@ -32,7 +38,13 @@
         revTimestamp = "2025-02-02T23:49:33Z";
         sha256 = "6e431d1173ed314754e5450f1ded4bb06c79241efef25b7bf1847c584c63942d";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/MIP-glpk-0.2.0.0-r1-197967c7e330cfaf0e3c92ddae453d6384b242bc454f0c2317f282d939db3472.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-03T15:03:43Z";
+        sha256 = "197967c7e330cfaf0e3c92ddae453d6384b242bc454f0c2317f282d939db3472";
+      };
+      default = "r1";
     };
   };
 }
