@@ -467,4 +467,16 @@
       default = "r0";
     };
   };
+  "0.8.7" = {
+    sha256 = "dd157c626cb0b0fa71adac3690305aeafccf503583fce387628b210fadc69806";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/th-lift-0.8.7-r0-b91da4aabdf753d716bc9a838dcbd12fa8ca53baa34c9ca16472e5af8c2640f6.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-04T01:10:10Z";
+        sha256 = "b91da4aabdf753d716bc9a838dcbd12fa8ca53baa34c9ca16472e5af8c2640f6";
+      };
+      default = "r0";
+    };
+  };
 }

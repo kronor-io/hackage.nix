@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.2.0.1" = {
+    sha256 = "493424d74066d51038ce3facaf7dfd0bee0dba4bdb0e9ae7475c68e03eafeb6d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/MIP-0.2.0.1-r0-58474bfa783e51f3cedfc53919f23e41937c6880fa4304d3e9b4c26e96d570b2.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-04T22:57:04Z";
+        sha256 = "58474bfa783e51f3cedfc53919f23e41937c6880fa4304d3e9b4c26e96d570b2";
+      };
+      default = "r0";
+    };
+  };
 }

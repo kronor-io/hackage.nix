@@ -56,7 +56,13 @@
         revTimestamp = "2025-09-23T01:29:59Z";
         sha256 = "4550b7acce78a6dad801d9f91c83da9c87922486f431ad7622120beccdef8206";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http-api-data-qq-0.1.0.1-r1-2b9eace5115fc211fcd946cc6c2beeb10e810813fa85b28436d17291dc96b6be.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-04T20:31:31Z";
+        sha256 = "2b9eace5115fc211fcd946cc6c2beeb10e810813fa85b28436d17291dc96b6be";
+      };
+      default = "r1";
     };
   };
 }
