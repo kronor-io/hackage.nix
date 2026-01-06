@@ -272,7 +272,13 @@
         revTimestamp = "2025-01-02T00:04:23Z";
         sha256 = "f1bd7cd851d53c309d65485517c2c3c90b0d569b0b1f18b9682fee46ca14ef0f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ttc-1.5.0.0-r1-5cbf618321ffdba68550d806969b888cc9af63ea833d50b3a091aedcb6fa79d6.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-05T15:34:45Z";
+        sha256 = "5cbf618321ffdba68550d806969b888cc9af63ea833d50b3a091aedcb6fa79d6";
+      };
+      default = "r1";
     };
   };
 }

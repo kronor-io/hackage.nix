@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "dc4845466b31356db74848b47cfe1652af666f22108bc5fd1060e3462a9df332";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/FirstPrelude-0.2.0.0-r0-522d109faf52bc1b40add2da58f54f13e26ff6ac62e591ce8001c9a1b025dc25.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-05T16:33:11Z";
+        sha256 = "522d109faf52bc1b40add2da58f54f13e26ff6ac62e591ce8001c9a1b025dc25";
+      };
+      default = "r0";
+    };
+  };
 }
