@@ -62,7 +62,13 @@
         revTimestamp = "2025-11-19T15:45:27Z";
         sha256 = "8973d0ab70bab6ac0603a492dd1218e334453dd4e06cba76b4f6711701c88e61";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/cabal-doctest-1.0.12-r1-07d3df12ad86466e731383dde34b9ddaa2210d2cb9566d7dd6d71f4fde10935a.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-06T12:33:29Z";
+        sha256 = "07d3df12ad86466e731383dde34b9ddaa2210d2cb9566d7dd6d71f4fde10935a";
+      };
+      default = "r1";
     };
   };
   "1.0.2" = {
