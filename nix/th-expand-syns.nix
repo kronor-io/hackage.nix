@@ -278,7 +278,13 @@
         revTimestamp = "2024-12-05T12:50:20Z";
         sha256 = "bb5f7482afb3b85dec2e955c72adf99976811b77561b87472529e62c4cbbcf33";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/th-expand-syns-0.4.12.0-r1-d71525fb41ae0ad251b36455bde2de78913fba7ba147f50f2b034eeacf57b026.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-07T23:53:16Z";
+        sha256 = "d71525fb41ae0ad251b36455bde2de78913fba7ba147f50f2b034eeacf57b026";
+      };
+      default = "r1";
     };
   };
   "0.4.2.0" = {

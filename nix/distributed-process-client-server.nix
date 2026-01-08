@@ -188,7 +188,13 @@
         revTimestamp = "2025-02-05T01:53:44Z";
         sha256 = "cee96bdb3d57b983804fd3caf0c3826855ee769151133eda4ca4ba940fe9f821";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/distributed-process-client-server-0.2.8.0-r1-d22da36302a112b2fdd46221d1c08b25239533f5322bac1fcfe5a60f64e8c4e7.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-07T13:25:12Z";
+        sha256 = "d22da36302a112b2fdd46221d1c08b25239533f5322bac1fcfe5a60f64e8c4e7";
+      };
+      default = "r1";
     };
   };
 }

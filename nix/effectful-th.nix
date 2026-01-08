@@ -98,7 +98,13 @@
         revTimestamp = "2024-12-17T14:50:48Z";
         sha256 = "6bb1052d5a0acf224bb36b9a178f782d444a9d3235bf9b33af59da3fc8bae20a";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/effectful-th-1.0.0.3-r2-2635afe5f48eb6e437269d4460ecb748bae0d0f2717c091d2b95edfa6e9c89d3.nix;
+        revNum = 2;
+        revTimestamp = "2026-01-07T09:17:53Z";
+        sha256 = "2635afe5f48eb6e437269d4460ecb748bae0d0f2717c091d2b95edfa6e9c89d3";
+      };
+      default = "r2";
     };
   };
 }

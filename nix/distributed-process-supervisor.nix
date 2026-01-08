@@ -104,7 +104,13 @@
         revTimestamp = "2025-02-05T01:57:07Z";
         sha256 = "8c3ceadadb3c7bc1b3c659ad98c2708095cc14b3db13098c63f70b2b6080efb0";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/distributed-process-supervisor-0.2.4-r1-eb0146d37edfa4debc69de5ee315a2ecee261c1818d21c5102a6bddcbedb2011.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-07T13:22:09Z";
+        sha256 = "eb0146d37edfa4debc69de5ee315a2ecee261c1818d21c5102a6bddcbedb2011";
+      };
+      default = "r1";
     };
   };
 }

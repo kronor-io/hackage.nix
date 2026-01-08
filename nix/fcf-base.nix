@@ -32,7 +32,13 @@
         revTimestamp = "2025-01-24T17:57:17Z";
         sha256 = "b49795c11caefc8be2edaf7afa6a93855e0e6c6fd4daf99429cfcf521308a1dc";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fcf-base-0.1.0.1-r1-ec84a233187509c9867d0b495ac87a3d70e154db707a7dc5afdb9dc17ae2dd7f.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-07T09:06:31Z";
+        sha256 = "ec84a233187509c9867d0b495ac87a3d70e154db707a7dc5afdb9dc17ae2dd7f";
+      };
+      default = "r1";
     };
   };
 }

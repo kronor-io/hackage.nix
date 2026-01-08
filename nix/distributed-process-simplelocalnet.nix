@@ -272,7 +272,13 @@
         revTimestamp = "2025-02-05T01:53:45Z";
         sha256 = "12ddd4eff2246f9b9f6a586df465029c5585b1f0be2c29e5b67d87e5e72684fa";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/distributed-process-simplelocalnet-0.3.3-r1-96b8949d002c6cae2c7230d782c09369fa877768ea1d5e082bceaaeb5ce39ea6.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-07T13:28:06Z";
+        sha256 = "96b8949d002c6cae2c7230d782c09369fa877768ea1d5e082bceaaeb5ce39ea6";
+      };
+      default = "r1";
     };
   };
 }

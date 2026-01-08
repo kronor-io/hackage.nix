@@ -488,7 +488,13 @@
         revTimestamp = "2025-03-15T11:56:58Z";
         sha256 = "f7b6c146c19132dce982d24933136fe6ed2e960ad2d314d1ac83a4e4ac660bff";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/text-icu-0.8.0.5-r2-142f695ab8a38c476ba0189ff8b8d81686ea9cdd5f68a1afede9240cb21dc8dc.nix;
+        revNum = 2;
+        revTimestamp = "2026-01-07T08:31:51Z";
+        sha256 = "142f695ab8a38c476ba0189ff8b8d81686ea9cdd5f68a1afede9240cb21dc8dc";
+      };
+      default = "r2";
     };
   };
 }

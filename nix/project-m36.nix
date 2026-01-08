@@ -263,4 +263,16 @@
       default = "r0";
     };
   };
+  "1.2.0" = {
+    sha256 = "6e7af2e02824adb1057253a51e697852d249e57096aa65c66385c9376758690c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/project-m36-1.2.0-r0-8d9b586166f720285781f601a6e34159e29956383f37452a215a49d55fe15ca0.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-07T05:04:22Z";
+        sha256 = "8d9b586166f720285781f601a6e34159e29956383f37452a215a49d55fe15ca0";
+      };
+      default = "r0";
+    };
+  };
 }

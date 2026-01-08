@@ -62,7 +62,13 @@
         revTimestamp = "2025-03-12T00:50:33Z";
         sha256 = "69fa9b53b61ecadae690bb954bb101fa5c9e260938bb99035b706f87774e8e5c";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/generic-monoid-0.1.0.1-r6-7bf152ccefef1bd7b0c5df7c2acad444d3524c096b2017d8bed4e3b5d684f9a1.nix;
+        revNum = 6;
+        revTimestamp = "2026-01-07T07:38:01Z";
+        sha256 = "7bf152ccefef1bd7b0c5df7c2acad444d3524c096b2017d8bed4e3b5d684f9a1";
+      };
+      default = "r6";
     };
   };
 }
