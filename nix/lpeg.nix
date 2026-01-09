@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "1.1.0.1" = {
+    sha256 = "6afc52f04b1ae0a01dc597137b1f3061065f77b900332cb98bfba6c147c2f864";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/lpeg-1.1.0.1-r0-597b80d44b1af65548aaeadb0613280668f8b07a95546cd6434a2a67168a2b01.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-08T15:43:42Z";
+        sha256 = "597b80d44b1af65548aaeadb0613280668f8b07a95546cd6434a2a67168a2b01";
+      };
+      default = "r0";
+    };
+  };
 }
