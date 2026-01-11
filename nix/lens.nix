@@ -4325,4 +4325,16 @@
       default = "r1";
     };
   };
+  "5.3.6" = {
+    sha256 = "d345dcf1fda4d4a127b84d42638b62f783cf52750bd8fd14ab1637510c1023c2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/lens-5.3.6-r0-73d1a2cd63d19710ea512d54869ba1a395f59be946bad7f6168154b7c9e79070.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-10T22:05:13Z";
+        sha256 = "73d1a2cd63d19710ea512d54869ba1a395f59be946bad7f6168154b7c9e79070";
+      };
+      default = "r0";
+    };
+  };
 }
