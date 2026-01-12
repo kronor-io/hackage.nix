@@ -32,7 +32,13 @@
         revTimestamp = "2024-12-23T10:13:22Z";
         sha256 = "1654f3ab27974a2caa5bdb398ca6678d50419f5d4ee4671798437a364b879ac0";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/th-deepstrict-0.1.1.0-r3-eb6cfba1e1d9eb194917ed5cb62538c553e2f2d336682a1703bf80034250bb2a.nix;
+        revNum = 3;
+        revTimestamp = "2026-01-11T13:23:31Z";
+        sha256 = "eb6cfba1e1d9eb194917ed5cb62538c553e2f2d336682a1703bf80034250bb2a";
+      };
+      default = "r3";
     };
   };
 }

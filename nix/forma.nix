@@ -152,7 +152,13 @@
         revTimestamp = "2024-06-15T16:35:15Z";
         sha256 = "6de6ac79f3cfd45288a00171b2070dd986b60223fab02d233aa09c3ae26b0952";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/forma-1.2.0-r4-d187497897fc5945da6f3da30d92027dc1caf1f663e6a4d5d6d7907c2b585dcd.nix;
+        revNum = 4;
+        revTimestamp = "2026-01-11T20:04:30Z";
+        sha256 = "d187497897fc5945da6f3da30d92027dc1caf1f663e6a4d5d6d7907c2b585dcd";
+      };
+      default = "r4";
     };
   };
 }

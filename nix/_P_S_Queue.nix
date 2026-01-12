@@ -128,7 +128,13 @@
         revTimestamp = "2025-08-24T18:16:20Z";
         sha256 = "47e435380ceb8478ceb144d2a74234cacf7121c6cc6975d3ae269cdf3dad762f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/PSQueue-1.2.2-r1-4a4af98a0076ca3a3edc9743a9cc4dbba0e142bb40a9f0db26b3402663979f27.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-11T13:04:39Z";
+        sha256 = "4a4af98a0076ca3a3edc9743a9cc4dbba0e142bb40a9f0db26b3402663979f27";
+      };
+      default = "r1";
     };
   };
 }

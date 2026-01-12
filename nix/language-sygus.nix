@@ -134,7 +134,13 @@
         revTimestamp = "2026-01-11T00:02:12Z";
         sha256 = "b8d1317c84d03dce87e6cb38ba3ae3c96b25a7aa989ed3e7a94cf88f5c01437c";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/language-sygus-0.1.1.3-r6-c5714aefc264401ebb2f9f5d382b7fa218de728a4041b2b983159ba57688b6a0.nix;
+        revNum = 6;
+        revTimestamp = "2026-01-11T04:22:35Z";
+        sha256 = "c5714aefc264401ebb2f9f5d382b7fa218de728a4041b2b983159ba57688b6a0";
+      };
+      default = "r6";
     };
   };
 }

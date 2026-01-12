@@ -374,7 +374,13 @@
         revTimestamp = "2025-06-28T17:51:17Z";
         sha256 = "a713c1afe3022f21f0fd0c77d846978c534c4e4a5a0935b07b068521c04e383f";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/string-interpolate-0.3.4.0-r4-23a5cd25d1d794d4b6e739be27b74d0abd363a6cf67c05efba7a4f13e9d340ea.nix;
+        revNum = 4;
+        revTimestamp = "2026-01-11T20:31:55Z";
+        sha256 = "23a5cd25d1d794d4b6e739be27b74d0abd363a6cf67c05efba7a4f13e9d340ea";
+      };
+      default = "r4";
     };
   };
 }

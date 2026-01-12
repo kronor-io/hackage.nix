@@ -8,7 +8,13 @@
         revTimestamp = "2024-12-30T15:03:54Z";
         sha256 = "64c5a3f2e7db79ad79f9c63d75d66bd14b02328ad9bc7a5b639c6de2724eb0fe";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/singletons-base-code-generator-0.1-r1-7c2081537654fd5092c8b67c59c609d236358b73f5eeed85889dbef2f5e458dc.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-11T00:21:57Z";
+        sha256 = "7c2081537654fd5092c8b67c59c609d236358b73f5eeed85889dbef2f5e458dc";
+      };
+      default = "r1";
     };
   };
 }

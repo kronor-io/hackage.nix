@@ -254,7 +254,13 @@
         revTimestamp = "2025-11-24T14:15:16Z";
         sha256 = "7b582d118adb92387663c23ff547b116ea374354fbf9284bad6882e59d8cd1b9";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/bhoogle-0.1.4.4-r6-19edc91f20946b6bcfc3f90087ae925cec4d7cd76743819601980d74a31660cc.nix;
+        revNum = 6;
+        revTimestamp = "2026-01-11T13:38:33Z";
+        sha256 = "19edc91f20946b6bcfc3f90087ae925cec4d7cd76743819601980d74a31660cc";
+      };
+      default = "r6";
     };
   };
 }

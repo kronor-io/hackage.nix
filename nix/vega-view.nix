@@ -239,4 +239,16 @@
       default = "r0";
     };
   };
+  "0.4.0.2" = {
+    sha256 = "a0d47a3aa10834520e6a13c48ae6a1d659af0a4aa6561861c22526a607d6117d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/vega-view-0.4.0.2-r0-0a9cffe7c6c96e4ed04568c81ba42f028511fc1a443332a757baacf246a37754.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-11T16:27:22Z";
+        sha256 = "0a9cffe7c6c96e4ed04568c81ba42f028511fc1a443332a757baacf246a37754";
+      };
+      default = "r0";
+    };
+  };
 }
