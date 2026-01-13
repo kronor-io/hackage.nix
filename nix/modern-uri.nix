@@ -482,7 +482,13 @@
         revTimestamp = "2025-01-21T11:37:52Z";
         sha256 = "1ff00fbd7e695b0695bb325a1fe375cc8c83b55cd7b7c08af083526809a8d76a";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/modern-uri-0.3.6.1-r4-05355ceb3de6fda6288556a99e2287618b711f8371ac1ec4b46087763d081a84.nix;
+        revNum = 4;
+        revTimestamp = "2026-01-12T20:59:19Z";
+        sha256 = "05355ceb3de6fda6288556a99e2287618b711f8371ac1ec4b46087763d081a84";
+      };
+      default = "r4";
     };
   };
 }

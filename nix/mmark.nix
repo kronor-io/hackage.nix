@@ -578,7 +578,13 @@
         revTimestamp = "2025-09-22T17:10:25Z";
         sha256 = "b9d6676ed273597e3832a5fa929023a83115d2c9754f9e0d523f04c99536c63f";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/mmark-0.0.8.0-r3-b800f64e3b7688e83beac687ece3fea49cb0b91ba0af6dee5e0eafb21cf245c1.nix;
+        revNum = 3;
+        revTimestamp = "2026-01-12T13:27:07Z";
+        sha256 = "b800f64e3b7688e83beac687ece3fea49cb0b91ba0af6dee5e0eafb21cf245c1";
+      };
+      default = "r3";
     };
   };
 }

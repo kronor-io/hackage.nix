@@ -104,7 +104,13 @@
         revTimestamp = "2026-01-05T15:09:22Z";
         sha256 = "29ecb25ecabe0bbb47020400b2452e6973fe577db720fcddebc81d61df464948";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/Hastructure-0.50.4-r3-40f3a0de7408aa1ac58ea205c9ceeeb509003b70aeacaeea76bc6b00c582f825.nix;
+        revNum = 3;
+        revTimestamp = "2026-01-12T05:19:43Z";
+        sha256 = "40f3a0de7408aa1ac58ea205c9ceeeb509003b70aeacaeea76bc6b00c582f825";
+      };
+      default = "r3";
     };
   };
 }
