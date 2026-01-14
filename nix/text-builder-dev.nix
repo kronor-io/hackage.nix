@@ -311,4 +311,16 @@
       default = "r0";
     };
   };
+  "0.4.0.1" = {
+    sha256 = "9431fa44d6adae6fbcce270e76f52de25685f4e080867e0dd009e621f3b818ff";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/text-builder-dev-0.4.0.1-r0-8c193daea4ab1249b8b39828c3bbbb17cdab45a79f952003eb8c4c5446305c81.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-13T09:53:20Z";
+        sha256 = "8c193daea4ab1249b8b39828c3bbbb17cdab45a79f952003eb8c4c5446305c81";
+      };
+      default = "r0";
+    };
+  };
 }
