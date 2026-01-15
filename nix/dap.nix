@@ -65,4 +65,16 @@
       default = "r0";
     };
   };
+  "0.4.0.0" = {
+    sha256 = "d79a8f839c6cc11e8fc83605dc6625974bbad23e2ac0e9d883069c13483e335b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dap-0.4.0.0-r0-24b636bf85a9c6433babf55dcaac6aa74476feefe3a4fc703425be617ffc9707.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-14T14:27:18Z";
+        sha256 = "24b636bf85a9c6433babf55dcaac6aa74476feefe3a4fc703425be617ffc9707";
+      };
+      default = "r0";
+    };
+  };
 }
