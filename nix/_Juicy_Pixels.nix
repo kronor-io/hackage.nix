@@ -1106,7 +1106,13 @@
         revTimestamp = "2024-06-06T18:35:17Z";
         sha256 = "8ccf945dfe1628b63985b0fd3a9b8248e9f5a2c1f2a75808c04b9fd530a04dbc";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/JuicyPixels-3.3.9-r1-bf5797222c7f3580b84b43cef84a51237b30d6be00a010d94ede59deeda19e06.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-15T19:34:45Z";
+        sha256 = "bf5797222c7f3580b84b43cef84a51237b30d6be00a010d94ede59deeda19e06";
+      };
+      default = "r1";
     };
   };
 }

@@ -8,7 +8,13 @@
         revTimestamp = "2025-03-25T21:32:41Z";
         sha256 = "d70b84239c7722cb4f33dcf6c9e8c4edce7720016089b392970913db1e9e6070";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crux-llvm-0.10-r1-30094d86c3a7e3da20736874c92aea6ca3bcf6acdabd4d2101dc7ab575a5a5bd.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-15T00:47:03Z";
+        sha256 = "30094d86c3a7e3da20736874c92aea6ca3bcf6acdabd4d2101dc7ab575a5a5bd";
+      };
+      default = "r1";
     };
   };
   "0.11.0.0" = {
@@ -50,7 +56,13 @@
         revTimestamp = "2024-08-30T20:06:10Z";
         sha256 = "f3a41f8321f3f120aa98a22d934381e98d05da8b5642fbbb504f3bf427fc8077";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crux-llvm-0.9-r1-d8f2cb49623e703902c84ce5b6cb3697f592268aeb5e220e51f38ccadcd94a9e.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-15T00:29:38Z";
+        sha256 = "d8f2cb49623e703902c84ce5b6cb3697f592268aeb5e220e51f38ccadcd94a9e";
+      };
+      default = "r1";
     };
   };
   "0.9.1" = {
@@ -68,7 +80,13 @@
         revTimestamp = "2025-03-25T19:49:10Z";
         sha256 = "b1f63d9b1398ea0737ae69d3dcdca91b82ce8ea17d2a13d6cc488446a1df6271";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/crux-llvm-0.9.1-r2-ea57c337fc11518d995c6cc5c9ab2d1c7152094a370b578a9c98931e36641495.nix;
+        revNum = 2;
+        revTimestamp = "2026-01-15T00:45:03Z";
+        sha256 = "ea57c337fc11518d995c6cc5c9ab2d1c7152094a370b578a9c98931e36641495";
+      };
+      default = "r2";
     };
   };
 }

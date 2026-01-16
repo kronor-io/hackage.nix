@@ -1082,7 +1082,13 @@
         revTimestamp = "2025-12-10T23:40:20Z";
         sha256 = "3794596a9f3dc6c13101b414b3bd5708c741ece665634b8db76ab0ad7fed8e54";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/HTTP-4000.5.0-r1-4cf03628597ffc2f3760e3da25dee116a64cfea26013d75dc386c98aecea5f6e.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-15T15:15:48Z";
+        sha256 = "4cf03628597ffc2f3760e3da25dee116a64cfea26013d75dc386c98aecea5f6e";
+      };
+      default = "r1";
     };
   };
 }

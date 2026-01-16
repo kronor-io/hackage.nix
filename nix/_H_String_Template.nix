@@ -746,7 +746,13 @@
         revTimestamp = "2025-05-11T15:09:37Z";
         sha256 = "772983c4730d3cf28bbbfc483e4fc13e0614ed315251e1c76dcf43f6cd03d6dd";
       };
-      default = "r9";
+      r10 = {
+        nix = import ../hackage/HStringTemplate-0.8.8-r10-65c1ed5d72f39749e598c1d9dee7e0357c97c75da044f84d99e69d6e3b7d290e.nix;
+        revNum = 10;
+        revTimestamp = "2026-01-15T15:12:05Z";
+        sha256 = "65c1ed5d72f39749e598c1d9dee7e0357c97c75da044f84d99e69d6e3b7d290e";
+      };
+      default = "r10";
     };
   };
 }
