@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.4.1" = {
+    sha256 = "671a091aed7eda5d8ab4414f3a52ad3af8e38bd028aa1b27d2a7b52e3ce95077";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/telescope-0.4.1-r0-8fc1e6178f25c1ebd78ef2b87fda7235192a1e2fc3ca1ad4ca7bd29755ec1aa5.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-16T15:57:04Z";
+        sha256 = "8fc1e6178f25c1ebd78ef2b87fda7235192a1e2fc3ca1ad4ca7bd29755ec1aa5";
+      };
+      default = "r0";
+    };
+  };
 }
