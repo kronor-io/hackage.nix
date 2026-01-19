@@ -404,7 +404,13 @@
         revTimestamp = "2025-01-02T06:49:25Z";
         sha256 = "10af3f7bdc545188d98179f85dfcd8f76d7de281c746b2eb9f675e48573e2acb";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/equational-reasoning-0.7.1.0-r1-506f33c15a9ac8c8c0ba8f25d41d9d134933f149ac9da65559774edb727e6110.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-18T03:41:01Z";
+        sha256 = "506f33c15a9ac8c8c0ba8f25d41d9d134933f149ac9da65559774edb727e6110";
+      };
+      default = "r1";
     };
   };
 }

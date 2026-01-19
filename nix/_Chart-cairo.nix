@@ -368,7 +368,13 @@
         revTimestamp = "2025-02-23T09:24:55Z";
         sha256 = "2b973fa427ec23e5c5e975d4ad035fe24647df4ce5769f8d0da2049db2da8466";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/Chart-cairo-1.9.4.1-r4-19718e3fbd0c3f7d84a337b799e08fa2bc7ab3a4c052564e0c39fe3586f081fb.nix;
+        revNum = 4;
+        revTimestamp = "2026-01-18T07:32:09Z";
+        sha256 = "19718e3fbd0c3f7d84a337b799e08fa2bc7ab3a4c052564e0c39fe3586f081fb";
+      };
+      default = "r4";
     };
   };
 }
