@@ -4364,7 +4364,13 @@
         revTimestamp = "2025-11-21T23:26:45Z";
         sha256 = "bcc7f8f45425bc31226b40355ddaef6d5e695fba27841afb6bcef1fd555a480c";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/warp-3.4.10-r2-29b41f8c4b18988f14afe104b9c53c037256b57d06e3b315df05c3898a79ffaf.nix;
+        revNum = 2;
+        revTimestamp = "2026-01-19T20:31:03Z";
+        sha256 = "29b41f8c4b18988f14afe104b9c53c037256b57d06e3b315df05c3898a79ffaf";
+      };
+      default = "r2";
     };
   };
   "3.4.11" = {
@@ -4382,7 +4388,13 @@
         revTimestamp = "2025-12-28T07:04:24Z";
         sha256 = "9cea17b726d1909cf1a482c8a1502be518ac2d9ea2c8ceb745ef9726dcf0eb13";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/warp-3.4.11-r2-aea5695147d053e149ffde2022e1f6c5fd4b62f651bfa29d5a26dd027f8bcf52.nix;
+        revNum = 2;
+        revTimestamp = "2026-01-19T20:31:59Z";
+        sha256 = "aea5695147d053e149ffde2022e1f6c5fd4b62f651bfa29d5a26dd027f8bcf52";
+      };
+      default = "r2";
     };
   };
   "3.4.12" = {
@@ -4394,7 +4406,13 @@
         revTimestamp = "2025-12-31T11:46:07Z";
         sha256 = "3271e362191836274fcd50c091db64f1774548ad3a292b0b608e79e25bc81805";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/warp-3.4.12-r1-e4444e07c4f1e82b35b4a38ad3f2fbef86dbede9f1238073d6b377cd8a3ce14c.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-19T20:32:37Z";
+        sha256 = "e4444e07c4f1e82b35b4a38ad3f2fbef86dbede9f1238073d6b377cd8a3ce14c";
+      };
+      default = "r1";
     };
   };
   "3.4.2" = {

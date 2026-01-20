@@ -149,4 +149,16 @@
       default = "r0";
     };
   };
+  "0.3.1" = {
+    sha256 = "89753252292cef8ef65771ee2c2dfcb6905df15c45136fbe18a0db4dfbedf156";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/time-manager-0.3.1-r0-939d10df173aea8f14ecb457fe895b08587d3eac2358164dc40858dbd51d672b.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-19T20:12:39Z";
+        sha256 = "939d10df173aea8f14ecb457fe895b08587d3eac2358164dc40858dbd51d672b";
+      };
+      default = "r0";
+    };
+  };
 }
