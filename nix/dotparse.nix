@@ -146,7 +146,13 @@
         revTimestamp = "2026-01-19T20:33:09Z";
         sha256 = "90dbcd8b40167b3e54340adb5cc9daa2f5ff7e52b9025279ce2700337a4c52ff";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dotparse-0.1.4.0-r1-7366a69042397cdaf8da8c59a4a9cfaf50e27cd3e0286a4cf1eb22186b6af48d.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-21T02:08:05Z";
+        sha256 = "7366a69042397cdaf8da8c59a4a9cfaf50e27cd3e0286a4cf1eb22186b6af48d";
+      };
+      default = "r1";
     };
   };
 }
