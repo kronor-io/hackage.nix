@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "1.4.1.4" = {
+    sha256 = "407c3f75ce0e279f8aef893d8f03500dc6b7c638a5ee3519e6257b48532e2d63";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/duckdb-ffi-1.4.1.4-r0-f0ffd0acee4932d6132e40e6636e0e5c238f7863ed6f5a41bc3b6e7691b208ed.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-22T22:06:22Z";
+        sha256 = "f0ffd0acee4932d6132e40e6636e0e5c238f7863ed6f5a41bc3b6e7691b208ed";
+      };
+      default = "r0";
+    };
+  };
 }
