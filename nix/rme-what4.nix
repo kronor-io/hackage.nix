@@ -29,4 +29,16 @@
       default = "r0";
     };
   };
+  "0.1.2" = {
+    sha256 = "9239c303e77b7b901d6a0ee160c45fa7028d777df265446c5c2fd4eda083d0fd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/rme-what4-0.1.2-r0-9d6a996f38cae3785fe942d8f7887ef5979a73bd9c32517932ae329d7822fd96.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-26T17:54:11Z";
+        sha256 = "9d6a996f38cae3785fe942d8f7887ef5979a73bd9c32517932ae329d7822fd96";
+      };
+      default = "r0";
+    };
+  };
 }
