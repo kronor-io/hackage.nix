@@ -485,6 +485,18 @@
       default = "r1";
     };
   };
+  "2.9.3.1" = {
+    sha256 = "3825c7902e64c693dbdb822b15e9030bfe013eb44cb264da382ab294bf47d3d7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/BNFC-2.9.3.1-r0-2ccde2fd4bb513b1523505eaf224fdb27ea231c990fb05bc35b7a5bab74c284b.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-28T10:14:52Z";
+        sha256 = "2ccde2fd4bb513b1523505eaf224fdb27ea231c990fb05bc35b7a5bab74c284b";
+      };
+      default = "r0";
+    };
+  };
   "2.9.4" = {
     sha256 = "f7d7158612a8c94c9daf34e89fcf4f6915bdd517925a85a2f3337ee1f27bc7bf";
     revisions = {
@@ -515,6 +527,18 @@
       default = "r0";
     };
   };
+  "2.9.4.2" = {
+    sha256 = "10bd00f4aa7dede60a66cafd048846521a815aeb452a75680e42826dbca087e1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/BNFC-2.9.4.2-r0-6a08a0fb3f9f77c64bcbbff1276638f52bd32746506e965168e2c10d4bf0f2dc.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-28T16:07:56Z";
+        sha256 = "6a08a0fb3f9f77c64bcbbff1276638f52bd32746506e965168e2c10d4bf0f2dc";
+      };
+      default = "r0";
+    };
+  };
   "2.9.5" = {
     sha256 = "fa35e9a2a2bd12c3680482a350f57963807ccc9e964a206cb09e5b1a4d02576b";
     revisions = {
@@ -523,6 +547,18 @@
         revNum = 0;
         revTimestamp = "2023-07-26T21:10:14Z";
         sha256 = "97152909bdf787791d760d167ed08bd7e6f0745408e03325f0878a857aaa83b6";
+      };
+      default = "r0";
+    };
+  };
+  "2.9.5.1" = {
+    sha256 = "2724788af9547b768dd3fb86047fa3580c0ef0bad94363de85137dc2f5e1232b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/BNFC-2.9.5.1-r0-326f7066ebd5d3874d6aecd5dc069292aab5a595ebe69a718c5c61ee427fc980.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-28T17:35:02Z";
+        sha256 = "326f7066ebd5d3874d6aecd5dc069292aab5a595ebe69a718c5c61ee427fc980";
       };
       default = "r0";
     };
@@ -547,6 +583,18 @@
         revNum = 0;
         revTimestamp = "2025-08-13T22:40:58Z";
         sha256 = "0d0f34c6c88877f9abfac8b84f5687e61e4878e426d249a64aa6d2f4c436dce5";
+      };
+      default = "r0";
+    };
+  };
+  "2.9.6.2" = {
+    sha256 = "99cd4eb70d99ce704966ca5b762e8093b1bbb1fa0a1b82e15c06288dfbb88a89";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/BNFC-2.9.6.2-r0-1e7287ee90d1490fe4643a9cc142a3b18ff6c2742478a2c47bc0dfb89a535468.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-28T21:44:38Z";
+        sha256 = "1e7287ee90d1490fe4643a9cc142a3b18ff6c2742478a2c47bc0dfb89a535468";
       };
       default = "r0";
     };
