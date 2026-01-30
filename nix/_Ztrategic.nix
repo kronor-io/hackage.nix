@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0" = {
+    sha256 = "89c2d111f1fcc19f6c0cc11806d9a30bf645bd648e026be9ab59dc1cf4cba307";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Ztrategic-0.2.0-r0-38abbb4edc145b5e25a6eb9b217c72c89b809654b1d971ceeb58c4c954c93a1e.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-29T18:46:37Z";
+        sha256 = "38abbb4edc145b5e25a6eb9b217c72c89b809654b1d971ceeb58c4c954c93a1e";
+      };
+      default = "r0";
+    };
+  };
 }
