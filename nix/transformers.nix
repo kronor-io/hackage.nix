@@ -782,7 +782,13 @@
         revTimestamp = "2026-01-12T12:42:54Z";
         sha256 = "7b36be73734cbb49d0499730ad226b798e63eb20ff1a6a96f9b99d3246060d82";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/transformers-0.6.3.0-r1-9be284cf67a9b843263192cd5a2d013f67f9a5bee48f6592b936e514cc53278a.nix;
+        revNum = 1;
+        revTimestamp = "2026-01-31T20:09:01Z";
+        sha256 = "9be284cf67a9b843263192cd5a2d013f67f9a5bee48f6592b936e514cc53278a";
+      };
+      default = "r1";
     };
   };
 }

@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.0.4" = {
+    sha256 = "3fc80164a2f4801bdac782681705946b5d76c70e611d2dbb319eb1237c8bbdea";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ghc-hie-0.0.4-r0-d5abdb7832b81b77c04a8e0d82e25152ab6a2c7f64829824f2aa5550deaa6225.nix;
+        revNum = 0;
+        revTimestamp = "2026-01-31T15:24:21Z";
+        sha256 = "d5abdb7832b81b77c04a8e0d82e25152ab6a2c7f64829824f2aa5550deaa6225";
+      };
+      default = "r0";
+    };
+  };
 }
