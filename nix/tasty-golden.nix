@@ -485,4 +485,16 @@
       default = "r0";
     };
   };
+  "2.3.6" = {
+    sha256 = "8f377fa3a21700c10f8895e01ab9fe3db6aa162429f8ae58fc00f2d391d70abc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tasty-golden-2.3.6-r0-bca7b66bdc0238d63e82164993f684fd7751c95b67a2533088f658840e3400fa.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-01T10:41:00Z";
+        sha256 = "bca7b66bdc0238d63e82164993f684fd7751c95b67a2533088f658840e3400fa";
+      };
+      default = "r0";
+    };
+  };
 }
