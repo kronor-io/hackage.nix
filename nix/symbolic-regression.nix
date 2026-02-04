@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "bb5574360a67fb3eac51eb37342fb1b4903436695c44fd6844ada24c169e0ff4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/symbolic-regression-0.2.0.0-r0-b6f9dc472b5fb006705057e4c5656ae22bb923444b3822381faf3782b9d00bc1.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-03T21:33:43Z";
+        sha256 = "b6f9dc472b5fb006705057e4c5656ae22bb923444b3822381faf3782b9d00bc1";
+      };
+      default = "r0";
+    };
+  };
 }
