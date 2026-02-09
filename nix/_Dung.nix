@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "2.0.0.0" = {
+    sha256 = "bb0ff1841abde258cd680b87c0ecee0dc88bc5686404969400bdc0e8e212b561";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/Dung-2.0.0.0-r0-2e2d63251108adb3e6107a078a03db304894621e9d038fa900a790d7e67a42b7.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-08T12:47:34Z";
+        sha256 = "2e2d63251108adb3e6107a078a03db304894621e9d038fa900a790d7e67a42b7";
+      };
+      default = "r0";
+    };
+  };
 }

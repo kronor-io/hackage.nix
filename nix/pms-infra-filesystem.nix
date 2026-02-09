@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.0.2.0" = {
+    sha256 = "7c7eb3d823ba24b02d7fde61994d95f266c4a16cb35df1e5ae9902216678733d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pms-infra-filesystem-0.0.2.0-r0-941fa21c3fc2a1ab96829cd8948897c80f57ff3ea7f3edeb83cfdf8d9160024f.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-08T01:28:46Z";
+        sha256 = "941fa21c3fc2a1ab96829cd8948897c80f57ff3ea7f3edeb83cfdf8d9160024f";
+      };
+      default = "r0";
+    };
+  };
 }
