@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "1.1.0.0" = {
+    sha256 = "a78ed521f4e8e4ef6c3106b24c46ff049e6414491d6c762823882dcffdadf7fb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/web3-polkadot-1.1.0.0-r0-1b70a0a63db0b6bbb3a196d584a15ee29dc031cf8bd91b422a8b5c85758efe4b.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-09T07:07:17Z";
+        sha256 = "1b70a0a63db0b6bbb3a196d584a15ee29dc031cf8bd91b422a8b5c85758efe4b";
+      };
+      default = "r0";
+    };
+  };
 }

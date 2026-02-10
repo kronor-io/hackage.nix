@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.1.1.3" = {
+    sha256 = "8b7c34ae52aff20c65fa8c9c4a7894df676af83421f19d01e364ceda9d39724d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/xdg-desktop-entry-0.1.1.3-r0-8c3b6132dab9ac934b7d393fd715f47d1e4d0801d602df2f699bfe53b6559ae9.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-09T08:36:18Z";
+        sha256 = "8c3b6132dab9ac934b7d393fd715f47d1e4d0801d602df2f699bfe53b6559ae9";
+      };
+      default = "r0";
+    };
+  };
 }

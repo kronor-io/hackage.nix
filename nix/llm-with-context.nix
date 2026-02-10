@@ -8,7 +8,19 @@
         revTimestamp = "2026-02-08T21:08:39Z";
         sha256 = "8cb3c0f75a9a0357a4a95c664a306a20226eed5d262415628dc3adc2d419d773";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/llm-with-context-0.1.0.0-r1-64cd9aee1754f83e4eeb02c4bbad89419852d56ab78e11d0844409a4a372211b.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-09T16:53:40Z";
+        sha256 = "64cd9aee1754f83e4eeb02c4bbad89419852d56ab78e11d0844409a4a372211b";
+      };
+      r2 = {
+        nix = import ../hackage/llm-with-context-0.1.0.0-r2-238ce727028d0f8e4eafe8d7879623b89a23b0c039219c4c6fe03ae6391ac4b4.nix;
+        revNum = 2;
+        revTimestamp = "2026-02-09T17:07:46Z";
+        sha256 = "238ce727028d0f8e4eafe8d7879623b89a23b0c039219c4c6fe03ae6391ac4b4";
+      };
+      default = "r2";
     };
   };
 }

@@ -32,7 +32,19 @@
         revTimestamp = "2026-02-08T20:37:26Z";
         sha256 = "4992f873bf257cc0686c78c4c2694e59edb1f42bbd7d26e9f976ea59452d1f4c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ClasshSS-0.2.0.0-r1-b77787cfa36855dab5222dc20199aa1018c61ba51274302805ef1f07e646cf9b.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-09T16:48:38Z";
+        sha256 = "b77787cfa36855dab5222dc20199aa1018c61ba51274302805ef1f07e646cf9b";
+      };
+      r2 = {
+        nix = import ../hackage/ClasshSS-0.2.0.0-r2-a0f061231fbe74bc58a2448316e4aaf5a51cc3f8aa81870423933e9fc466522a.nix;
+        revNum = 2;
+        revTimestamp = "2026-02-09T17:05:04Z";
+        sha256 = "a0f061231fbe74bc58a2448316e4aaf5a51cc3f8aa81870423933e9fc466522a";
+      };
+      default = "r2";
     };
   };
 }

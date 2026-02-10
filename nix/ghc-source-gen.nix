@@ -158,7 +158,13 @@
         revTimestamp = "2026-02-06T20:27:32Z";
         sha256 = "6efd2b488f0d6f0495f1c6263550e303c2c40b3c54ff80679fb3db2d72f93c5a";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ghc-source-gen-0.4.7.0-r1-ac6d03537a76e16bdedfaaebe8785a1d017c95cb7de418ca19a04912f48b0899.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-09T14:40:47Z";
+        sha256 = "ac6d03537a76e16bdedfaaebe8785a1d017c95cb7de418ca19a04912f48b0899";
+      };
+      default = "r1";
     };
   };
 }
