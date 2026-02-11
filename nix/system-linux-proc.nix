@@ -92,7 +92,13 @@
         revTimestamp = "2025-09-15T21:05:46Z";
         sha256 = "050bb3962beefa33558eed8db44c54736842d5c39d475ff74e33a02edef2e760";
       };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/system-linux-proc-0.1.1.1-r5-84c77c326f0e27dc1a140c0455ad68611d5315647fdb191b843b50a78e497895.nix;
+        revNum = 5;
+        revTimestamp = "2026-02-10T04:11:38Z";
+        sha256 = "84c77c326f0e27dc1a140c0455ad68611d5315647fdb191b843b50a78e497895";
+      };
+      default = "r5";
     };
   };
 }

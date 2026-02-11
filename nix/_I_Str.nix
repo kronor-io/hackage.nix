@@ -26,7 +26,13 @@
         revTimestamp = "2026-02-09T17:06:45Z";
         sha256 = "9c52362c56ef0abfed71909efd8ac4ed35185a787a6c64c05b29fa70d06ad54a";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/IStr-0.1.0.0-r4-ef72f91f1821569239f56b9a178f07922d1dd5de4d189c4e4eda6210c92a96c9.nix;
+        revNum = 4;
+        revTimestamp = "2026-02-10T20:43:03Z";
+        sha256 = "ef72f91f1821569239f56b9a178f07922d1dd5de4d189c4e4eda6210c92a96c9";
+      };
+      default = "r4";
     };
   };
 }

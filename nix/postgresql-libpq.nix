@@ -62,7 +62,13 @@
         revTimestamp = "2024-12-27T19:45:48Z";
         sha256 = "ca7facdf755f7ad3950e75eee4a388f52179b027ca983be362c400ab0a37a4c4";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/postgresql-libpq-0.11.0.0-r2-682d17c7bce588902dc01dc255328d8de4c633f98c7837eed8e5f1cc8b445af5.nix;
+        revNum = 2;
+        revTimestamp = "2026-02-10T16:31:43Z";
+        sha256 = "682d17c7bce588902dc01dc255328d8de4c633f98c7837eed8e5f1cc8b445af5";
+      };
+      default = "r2";
     };
   };
   "0.5" = {
