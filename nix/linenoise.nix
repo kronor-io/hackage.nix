@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.5.0" = {
+    sha256 = "8afdab55adb29f042929f7bc97c84b9328561221254ff8c2aae55a5c8b2faf92";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/linenoise-0.5.0-r0-ef289b54186751c9174771b1ee57db0d794e7ded990c3c889d6ff234c5370ac7.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-14T00:33:26Z";
+        sha256 = "ef289b54186751c9174771b1ee57db0d794e7ded990c3c889d6ff234c5370ac7";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -191,6 +191,18 @@
       default = "r0";
     };
   };
+  "0.1.15.0" = {
+    sha256 = "5e124e8ae0afd15cf61701dd976a30f732d5693fbc4489c25f864d3827c2cf79";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gtk-sni-tray-0.1.15.0-r0-0afc6385656385689c084b303d618ddb23a10fa92f901fcb0e1b9261257b4cff.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-14T00:20:29Z";
+        sha256 = "0afc6385656385689c084b303d618ddb23a10fa92f901fcb0e1b9261257b4cff";
+      };
+      default = "r0";
+    };
+  };
   "0.1.2.0" = {
     sha256 = "1503fa51f70923c6c70d703f7ca6c44b23be1b58bdcc4eb9134f374786b2afc6";
     revisions = {
