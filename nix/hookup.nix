@@ -224,7 +224,13 @@
         revTimestamp = "2026-01-14T04:51:26Z";
         sha256 = "11a0b4fafcd0c3ee155d8214fa51da8006446d501bcf9fad1e5f5af7911f387d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hookup-0.8-r2-4b09ac240734dd9e5c2d99908d18b5a189778bcee022c5906d9cbdccfe465159.nix;
+        revNum = 2;
+        revTimestamp = "2026-02-15T15:14:28Z";
+        sha256 = "4b09ac240734dd9e5c2d99908d18b5a189778bcee022c5906d9cbdccfe465159";
+      };
+      default = "r2";
     };
   };
 }
