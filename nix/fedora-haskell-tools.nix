@@ -125,4 +125,16 @@
       default = "r0";
     };
   };
+  "1.2" = {
+    sha256 = "a20765007edd9f400abe965046978ce80299d94b912d176cb062e1fa80a6599d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fedora-haskell-tools-1.2-r0-b7ce78425e68fae45e1857be187bbdab9879dc9682c5959c442ad8438c0e8797.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-17T17:10:37Z";
+        sha256 = "b7ce78425e68fae45e1857be187bbdab9879dc9682c5959c442ad8438c0e8797";
+      };
+      default = "r0";
+    };
+  };
 }
