@@ -275,4 +275,16 @@
       default = "r0";
     };
   };
+  "0.1.0.9" = {
+    sha256 = "2e3d1ed65d03255a11f0658ea39f955b0138a64324c0ff9306910809700ac6cd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/simplest-sqlite-0.1.0.9-r0-57abe458190ba87393fc74deb9eec88fd5b2a1bac4d29572bacc13b951ee5574.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-18T01:28:13Z";
+        sha256 = "57abe458190ba87393fc74deb9eec88fd5b2a1bac4d29572bacc13b951ee5574";
+      };
+      default = "r0";
+    };
+  };
 }

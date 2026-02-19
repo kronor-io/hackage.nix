@@ -365,4 +365,16 @@
       default = "r3";
     };
   };
+  "1.1.6.0" = {
+    sha256 = "1a42d33ce341973f4e4f3f0e10d00760056a0aca0e2a57180994bf2ac26c4e2b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/bitvec-1.1.6.0-r0-70ef28bc77f5a19510e4988fcfff329305f31140fe93f09b97351771e59eef03.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-18T00:32:25Z";
+        sha256 = "70ef28bc77f5a19510e4988fcfff329305f31140fe93f09b97351771e59eef03";
+      };
+      default = "r0";
+    };
+  };
 }

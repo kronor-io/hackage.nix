@@ -56,7 +56,13 @@
         revTimestamp = "2026-02-12T02:18:13Z";
         sha256 = "e1aba1bbd8059a102e8d77e7cfdceee88ead5b0d5307a481d0589e48bf2d5bd5";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/typed-protocols-1.2.0.0-r2-8fb04646639fded7c100c644e91730c5d10e96420084814fad723c0234c24cc1.nix;
+        revNum = 2;
+        revTimestamp = "2026-02-18T09:12:21Z";
+        sha256 = "8fb04646639fded7c100c644e91730c5d10e96420084814fad723c0234c24cc1";
+      };
+      default = "r2";
     };
   };
 }
