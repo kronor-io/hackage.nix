@@ -8,7 +8,13 @@
         revTimestamp = "2018-04-11T09:20:00Z";
         sha256 = "db2609e486919dc31fd6015db25e2dd5d3f161f473c892de916fb0b488a173eb";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timestamp-0.1-r1-eaade7c849eeb60b220ec19e3f5a938ff0b3714adafb7fb29dcc72692d7d59de.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-19T23:59:48Z";
+        sha256 = "eaade7c849eeb60b220ec19e3f5a938ff0b3714adafb7fb29dcc72692d7d59de";
+      };
+      default = "r1";
     };
   };
   "0.1.0.1" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2018-04-11T09:36:39Z";
         sha256 = "6a52f0ea8a35747bf934968d922e0554afa6522ac867edca7d5f2fcc02c1d3d6";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timestamp-0.1.0.1-r1-dcd43063da54d30e391a76269a93ea65d6d2177030fc755ca8be2207b16bbcad.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-19T23:59:09Z";
+        sha256 = "dcd43063da54d30e391a76269a93ea65d6d2177030fc755ca8be2207b16bbcad";
+      };
+      default = "r1";
     };
   };
   "0.1.1" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2018-04-16T08:54:56Z";
         sha256 = "0c188500d3153aca5e70b898516f1ce089263235252830b09a1305ddf5e35b41";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timestamp-0.1.1-r1-47c07f4038d874c27f0ad677080326bc4a39efb7cdbae818f6eecbc63882340b.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-19T23:58:15Z";
+        sha256 = "47c07f4038d874c27f0ad677080326bc4a39efb7cdbae818f6eecbc63882340b";
+      };
+      default = "r1";
     };
   };
   "0.2" = {
@@ -44,7 +62,13 @@
         revTimestamp = "2018-04-19T09:41:10Z";
         sha256 = "103fe49ce206922d3b14d57d8aff25eaf03c70fef5fcdaeaeb8416aaee163e51";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timestamp-0.2-r1-51870a68c713b1c8be23e4c04c60ad2572abcdf6dc8dedd3b722f3eac71acb3a.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-19T23:49:47Z";
+        sha256 = "51870a68c713b1c8be23e4c04c60ad2572abcdf6dc8dedd3b722f3eac71acb3a";
+      };
+      default = "r1";
     };
   };
 }

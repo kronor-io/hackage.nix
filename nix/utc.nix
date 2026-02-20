@@ -44,7 +44,13 @@
         revTimestamp = "2015-06-17T10:53:03Z";
         sha256 = "8c7851a86af297887ee69e1a8f5d1c50ecd1619be058e4f05ecc4aec42230794";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/utc-0.2.0.1-r1-a3d617dedd275f359c3f925c4c797589dea4db445ba9ef0702a2633dc7125f63.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-19T23:26:13Z";
+        sha256 = "a3d617dedd275f359c3f925c4c797589dea4db445ba9ef0702a2633dc7125f63";
+      };
+      default = "r1";
     };
   };
 }
