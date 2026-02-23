@@ -119,4 +119,28 @@
       default = "r0";
     };
   };
+  "2.4.0" = {
+    sha256 = "82559cc592043acc9559d5f7afe6bccaf2583d66d69316f91e79c54ea0637ef1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/openai-2.4.0-r0-a7f9b4fbb22faa489c49d39a288a0771dc2869810641fbb80185a34fe587a959.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-21T07:42:37Z";
+        sha256 = "a7f9b4fbb22faa489c49d39a288a0771dc2869810641fbb80185a34fe587a959";
+      };
+      default = "r0";
+    };
+  };
+  "2.5.0" = {
+    sha256 = "7383a665b309e1eab8f5da89c7fe71e10eb3d850bb8e9504743cb815a87ab77c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/openai-2.5.0-r0-8862553da2d30e9cda6ae90cfc6573ba7485ca04d50bdc2f0c202b96436ee78a.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-22T13:54:33Z";
+        sha256 = "8862553da2d30e9cda6ae90cfc6573ba7485ca04d50bdc2f0c202b96436ee78a";
+      };
+      default = "r0";
+    };
+  };
 }

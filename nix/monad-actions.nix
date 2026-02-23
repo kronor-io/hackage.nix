@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "2.0.0.0" = {
+    sha256 = "978ac07fb9f18030d73ab517c6eb2b23cf9b79ad4a3897f08671f8209843c5ea";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monad-actions-2.0.0.0-r0-4fd64bd5524e0c4c51379486212ce7a3f0009eef8515cb26542b5304224a96e9.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-22T20:58:43Z";
+        sha256 = "4fd64bd5524e0c4c51379486212ce7a3f0009eef8515cb26542b5304224a96e9";
+      };
+      default = "r0";
+    };
+  };
 }
