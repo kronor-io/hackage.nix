@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.2.1" = {
+    sha256 = "4497f92e70a4fc44836c74408205f2d8a9273d9876991200ef07c560050fed42";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crockford-0.2.1-r0-af03417e913019cace3f75eaea08b6dc8df277d9bcc06b194918c8c7d5cbe7f1.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-23T13:43:28Z";
+        sha256 = "af03417e913019cace3f75eaea08b6dc8df277d9bcc06b194918c8c7d5cbe7f1";
+      };
+      default = "r0";
+    };
+  };
 }

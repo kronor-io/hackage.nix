@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "1.0.1" = {
+    sha256 = "1da94bf882fab1096fd74aeee27ad46440dba47fea1a62637bd702b955415efc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kdl-hs-1.0.1-r0-ab89013315248223701e23b638d4e1ffc855d33fec58330f629e3edc5d427a69.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-23T02:04:48Z";
+        sha256 = "ab89013315248223701e23b638d4e1ffc855d33fec58330f629e3edc5d427a69";
+      };
+      default = "r0";
+    };
+  };
 }

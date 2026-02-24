@@ -20,7 +20,13 @@
         revTimestamp = "2025-01-07T18:06:38Z";
         sha256 = "7755e75891aa5f671a5e7319ef429c95311efebe1b962a6d250521318acaeb85";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/int-supply-1.0.0-r3-1d98745d68dc7227f5301015db9eed7375d3bfcda62961f83601770aee053f77.nix;
+        revNum = 3;
+        revTimestamp = "2026-02-23T14:53:58Z";
+        sha256 = "1d98745d68dc7227f5301015db9eed7375d3bfcda62961f83601770aee053f77";
+      };
+      default = "r3";
     };
   };
 }
