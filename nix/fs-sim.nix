@@ -80,7 +80,13 @@
         revTimestamp = "2025-09-29T13:55:56Z";
         sha256 = "8afbe70fe2f2ef046cc29b4db3c95d7e249f3a67222349c6fc2c7d789f81ba13";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/fs-sim-0.4.1.0-r1-09a62208cd0b54ea9e17539227a245640358011bb1c7c070f1d4e833e75e41ce.nix;
+        revNum = 1;
+        revTimestamp = "2026-02-24T09:25:04Z";
+        sha256 = "09a62208cd0b54ea9e17539227a245640358011bb1c7c070f1d4e833e75e41ce";
+      };
+      default = "r1";
     };
   };
 }

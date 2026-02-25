@@ -29,4 +29,16 @@
       default = "r3";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "785773573bd40de5590ac6dbf01d646583bb750f6b99c36a9d8936c9fda3833f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/scrappy-core-0.1.0.1-r0-f579a3e1811084f61cf4deb57c897916de6426f953d2bacfa55170a9d84c703c.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-24T15:44:30Z";
+        sha256 = "f579a3e1811084f61cf4deb57c897916de6426f953d2bacfa55170a9d84c703c";
+      };
+      default = "r0";
+    };
+  };
 }

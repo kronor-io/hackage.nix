@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.1.0" = {
+    sha256 = "6847e381454e33426ef1552283feeb2fe4fbeed355791e97f3733ef77aa440c4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pgmq-hasql-0.1.1.0-r0-2cefb28437534fc5444976a1505b8f8f2493d931a56b5547b989e586d8e8dd07.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-24T02:37:05Z";
+        sha256 = "2cefb28437534fc5444976a1505b8f8f2493d931a56b5547b989e586d8e8dd07";
+      };
+      default = "r0";
+    };
+  };
 }
