@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.2.4.1" = {
+    sha256 = "b273667df0bac0f946fb93e2df38dd56db97782f00439ae60b9b10de3b782c1a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nova-cache-0.2.4.1-r0-9bb34a3e7a52aaa113a2b7b0f8fc8bbd168a676b85e56336fb379cedaf99c0aa.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-27T02:26:04Z";
+        sha256 = "9bb34a3e7a52aaa113a2b7b0f8fc8bbd168a676b85e56336fb379cedaf99c0aa";
+      };
+      default = "r0";
+    };
+  };
 }

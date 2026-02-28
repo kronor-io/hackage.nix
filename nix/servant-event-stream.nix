@@ -101,4 +101,16 @@
       default = "r0";
     };
   };
+  "0.3.2.1" = {
+    sha256 = "6005345ade1a135d2166861f0035ea03620c358ec4af021e44df953ebe260969";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-event-stream-0.3.2.1-r0-bd03e05980284fb54dd7f5d9d61c171dce9e93d0d404aabd0832fe62d6f6f95e.nix;
+        revNum = 0;
+        revTimestamp = "2026-02-27T13:38:31Z";
+        sha256 = "bd03e05980284fb54dd7f5d9d61c171dce9e93d0d404aabd0832fe62d6f6f95e";
+      };
+      default = "r0";
+    };
+  };
 }
