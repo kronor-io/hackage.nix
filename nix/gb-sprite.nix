@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.2.1.2" = {
+    sha256 = "1be098b123714d3d81971f1d90638a8a920e93dcdf3da76b38dc2483fdeb7d05";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gb-sprite-0.2.1.2-r0-254c14caa853e3de4c92264ace599e1eb33aa3fd576b789c1668ff99c0a85fcd.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-02T19:03:20Z";
+        sha256 = "254c14caa853e3de4c92264ace599e1eb33aa3fd576b789c1668ff99c0a85fcd";
+      };
+      default = "r0";
+    };
+  };
 }
