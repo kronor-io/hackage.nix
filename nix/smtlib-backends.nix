@@ -62,7 +62,13 @@
         revTimestamp = "2025-01-23T19:33:06Z";
         sha256 = "a662fecbc8908337b8f19d9bb7e1515a29f4dd992a5eb88f1fcb59e6ab1d0871";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/smtlib-backends-0.4-r3-74d9b294ece95bb52c685389584d3c5b45cc24407c89076c57bd44cb2e015b56.nix;
+        revNum = 3;
+        revTimestamp = "2026-03-04T13:22:35Z";
+        sha256 = "74d9b294ece95bb52c685389584d3c5b45cc24407c89076c57bd44cb2e015b56";
+      };
+      default = "r3";
     };
   };
 }
