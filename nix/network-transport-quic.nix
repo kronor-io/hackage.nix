@@ -14,7 +14,13 @@
         revTimestamp = "2026-01-13T15:55:56Z";
         sha256 = "b9c74aa72df18e609f0fe1be458a3ded1f3dbb4300f9d10802fc3b2051f8b022";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/network-transport-quic-0.1.0-r2-e59bbe63c3c0bc8f5cf4dc24597e62de84825a9d38923503c79ea2a0aa984315.nix;
+        revNum = 2;
+        revTimestamp = "2026-03-07T14:50:16Z";
+        sha256 = "e59bbe63c3c0bc8f5cf4dc24597e62de84825a9d38923503c79ea2a0aa984315";
+      };
+      default = "r2";
     };
   };
   "0.1.1" = {
@@ -32,7 +38,13 @@
         revTimestamp = "2026-01-13T15:55:21Z";
         sha256 = "e851ac4adbbb037060f104c5cb4dac8c942276555704dc2a31edb971453ea96a";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/network-transport-quic-0.1.1-r2-c82e451b0d28759339e0ab72c960caba398de7cf1a1aa30044c2aa0cbd46953a.nix;
+        revNum = 2;
+        revTimestamp = "2026-03-07T14:48:06Z";
+        sha256 = "c82e451b0d28759339e0ab72c960caba398de7cf1a1aa30044c2aa0cbd46953a";
+      };
+      default = "r2";
     };
   };
 }
