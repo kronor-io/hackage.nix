@@ -263,4 +263,16 @@
       default = "r0";
     };
   };
+  "4.7" = {
+    sha256 = "b4bd73e2011ceda652b351e2332eae5d77cae50890acef8001df84dffc6f0773";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/copilot-interpreter-4.7-r0-a7718f807a8074caf83666aa442fb69b6f4d566280db9bebfa160c36eba2fee0.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-08T19:53:18Z";
+        sha256 = "a7718f807a8074caf83666aa442fb69b6f4d566280db9bebfa160c36eba2fee0";
+      };
+      default = "r0";
+    };
+  };
 }

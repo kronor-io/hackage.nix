@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "0.1.0.3" = {
+    sha256 = "75a119a7e1987e34d21c14885f44116797c37d5276a95bb94cead69adddc9f81";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wled-json-0.1.0.3-r0-8d4fb675204c0266b4b4a37828e186a5ebb1ecd20e4faed1a367f4f65f4dbf08.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-08T16:30:29Z";
+        sha256 = "8d4fb675204c0266b4b4a37828e186a5ebb1ecd20e4faed1a367f4f65f4dbf08";
+      };
+      default = "r0";
+    };
+  };
 }
