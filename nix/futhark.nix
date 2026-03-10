@@ -1340,7 +1340,13 @@
         revTimestamp = "2026-03-06T09:02:38Z";
         sha256 = "a23d4024ad2b91775eeaa65fc93ca829b8be4869fd660fce0416f546d25c2bbd";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/futhark-0.25.35-r2-eca297bad49fc63f6830f6f7f257134764379566aa57a1fa30577c3b53216ec3.nix;
+        revNum = 2;
+        revTimestamp = "2026-03-09T12:33:27Z";
+        sha256 = "eca297bad49fc63f6830f6f7f257134764379566aa57a1fa30577c3b53216ec3";
+      };
+      default = "r2";
     };
   };
   "0.25.4" = {

@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.2.0.1" = {
+    sha256 = "cafde27eb2e1c3cd66e32c9f4159bb252b82d370aecfb5700bf5ae59b90a5280";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hspec-tidy-formatter-0.2.0.1-r0-04ff66c1c266127ca39de1dc00e433b920c95f67f0be268211dbd04fcdc50699.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-09T11:28:54Z";
+        sha256 = "04ff66c1c266127ca39de1dc00e433b920c95f67f0be268211dbd04fcdc50699";
+      };
+      default = "r0";
+    };
+  };
 }

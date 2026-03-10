@@ -101,4 +101,16 @@
       default = "r1";
     };
   };
+  "0.4.0.0" = {
+    sha256 = "08ba0b4f63726ffa3ebd4d89a865c615a64cb467d078d7b333163f7f47fe8011";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/antigen-0.4.0.0-r0-3061b142657ed523cbfc3f9462261e039d896e541539f82cddb206e770e73ede.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-09T11:00:16Z";
+        sha256 = "3061b142657ed523cbfc3f9462261e039d896e541539f82cddb206e770e73ede";
+      };
+      default = "r0";
+    };
+  };
 }
