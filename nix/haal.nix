@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "b44b09536b3a6507529d4316cd52665342dae361c1c52ee00fb927818b7f94ce";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/haal-0.3.0.0-r0-37429d9f45f9ed783c0925b363110a2c14ce112ea12193b829fc346675f9cfa8.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-11T14:45:12Z";
+        sha256 = "37429d9f45f9ed783c0925b363110a2c14ce112ea12193b829fc346675f9cfa8";
+      };
+      default = "r0";
+    };
+  };
 }

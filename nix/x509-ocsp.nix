@@ -131,4 +131,16 @@
       default = "r2";
     };
   };
+  "0.5.0.0" = {
+    sha256 = "c161a940d0fa66e1b93b586e7ac44849a2453c7bccaad3e9a8fcf8dba2620147";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/x509-ocsp-0.5.0.0-r0-85fd6d48f8239963c428ba9ceda59979c454a33810abc0597f814bb95ccb4ab9.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-11T08:25:21Z";
+        sha256 = "85fd6d48f8239963c428ba9ceda59979c454a33810abc0597f814bb95ccb4ab9";
+      };
+      default = "r0";
+    };
+  };
 }

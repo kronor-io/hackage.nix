@@ -8,7 +8,13 @@
         revTimestamp = "2026-02-26T12:31:09Z";
         sha256 = "2df2395e59c552489c199a725dc10e278d94d5df23152cd56fd5bdd65a06ad48";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/beam-duckdb-0.1.0.0-r1-048dac0c94f62d3286afa3a76b35225170c9cc84bf8beec1b49af7ffc1219d31.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-11T23:21:41Z";
+        sha256 = "048dac0c94f62d3286afa3a76b35225170c9cc84bf8beec1b49af7ffc1219d31";
+      };
+      default = "r1";
     };
   };
   "0.1.1.0" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2026-03-04T01:31:20Z";
         sha256 = "df1203a9b6ceca7a3c69b6552884d0ba38573d42983d4d6bec98459f3cfe6b81";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/beam-duckdb-0.1.1.0-r1-696ee8bfd83efbef57f2b6287580a011731456ce834dd73d0488e62216e44ed3.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-11T23:22:37Z";
+        sha256 = "696ee8bfd83efbef57f2b6287580a011731456ce834dd73d0488e62216e44ed3";
+      };
+      default = "r1";
     };
   };
   "0.2.0.0" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2026-03-07T14:41:00Z";
         sha256 = "832b8c62b37bd0837171ce2c24c44f2eead03cebaa6c27db0f7b71882525e0f9";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/beam-duckdb-0.2.0.0-r1-6d36541069a7e1aba38f836395fac917e8a67887ea8a473d3047f6cd36a4d13d.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-11T23:23:26Z";
+        sha256 = "6d36541069a7e1aba38f836395fac917e8a67887ea8a473d3047f6cd36a4d13d";
+      };
+      default = "r1";
     };
   };
 }

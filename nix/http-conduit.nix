@@ -2876,7 +2876,13 @@
         revTimestamp = "2024-10-27T07:49:09Z";
         sha256 = "6a06ba7dfd40c5e9b90dc2836df7d790c54d511c67c835c48528569f9278782b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http-conduit-2.3.9.1-r1-6c521a2da3172343a5f6917bec1790f7cd3f0eb253a15e85a144b7f73b08dc69.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-11T07:07:59Z";
+        sha256 = "6c521a2da3172343a5f6917bec1790f7cd3f0eb253a15e85a144b7f73b08dc69";
+      };
+      default = "r1";
     };
   };
 }
