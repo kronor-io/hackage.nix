@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2" = {
+    sha256 = "ecd4ac138ba3d7422edce38141a27dc7f0c60abff434a950c6d9f2522268041d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fontwhich-0.2-r0-1cbc747f4fc2810c26d757651e5b48930eda0fa1597b5124fc2b99265408c713.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-12T15:07:52Z";
+        sha256 = "1cbc747f4fc2810c26d757651e5b48930eda0fa1597b5124fc2b99265408c713";
+      };
+      default = "r0";
+    };
+  };
 }
