@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.2" = {
+    sha256 = "54d4c9bc063a030753d2aea7b2ff6c6a65cbdeafe50df3dfd1879f946915d083";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hasql-postgresql-types-0.2-r0-a791d6c1377878a4de1c13e48001fc8e09f284d49069172b11dd3d77c56fabfd.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-15T08:58:16Z";
+        sha256 = "a791d6c1377878a4de1c13e48001fc8e09f284d49069172b11dd3d77c56fabfd";
+      };
+      default = "r0";
+    };
+  };
 }
