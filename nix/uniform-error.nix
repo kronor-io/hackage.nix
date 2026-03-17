@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.1.5.2" = {
+    sha256 = "61374ed7017cc962c5d1a73cc9f4b087b260102e318743dae1683e33236489cf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/uniform-error-0.1.5.2-r0-0d73c9c4cbba507d2a40928ec5570a09e5eebbf0d5a8b92f58bd7cac000febc6.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-16T16:59:17Z";
+        sha256 = "0d73c9c4cbba507d2a40928ec5570a09e5eebbf0d5a8b92f58bd7cac000febc6";
+      };
+      default = "r0";
+    };
+  };
 }
