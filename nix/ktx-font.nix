@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "06169bac558f6c75901f0e9e8f7907878734cb0e99947ec2be4c22dc8cc20d44";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ktx-font-0.1.0.1-r0-0e7ad9c01e8cf6a64dab6c946c7d8a30bf21f19961fa4553d0ded57aec94850f.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-17T23:42:47Z";
+        sha256 = "0e7ad9c01e8cf6a64dab6c946c7d8a30bf21f19961fa4553d0ded57aec94850f";
+      };
+      default = "r0";
+    };
+  };
 }

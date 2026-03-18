@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.0.0.3" = {
+    sha256 = "b8ce6d71aef3ac29d92f3de71b04d4e1a037d5b017387c90f80f8f49701c51db";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/freckle-memcached-0.0.0.3-r0-d4ead0b8542a8d5b473a76b7ea5850a1d2b2f0147d76cbd2b172b0f71db374d7.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-17T19:44:25Z";
+        sha256 = "d4ead0b8542a8d5b473a76b7ea5850a1d2b2f0147d76cbd2b172b0f71db374d7";
+      };
+      default = "r0";
+    };
+  };
 }
