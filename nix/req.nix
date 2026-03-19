@@ -500,7 +500,13 @@
         revTimestamp = "2026-01-18T10:53:46Z";
         sha256 = "9d8eb266a8a2ccec6fd46cc8178aa0a9bff344eea8a222926ad33be050520b54";
       };
-      default = "r7";
+      r8 = {
+        nix = import ../hackage/req-3.13.4-r8-40c7f8a7faee32385d3a97f6180ce9907cf2159fa2aaa193bdd3ee3ec74d6049.nix;
+        revNum = 8;
+        revTimestamp = "2026-03-18T08:38:52Z";
+        sha256 = "40c7f8a7faee32385d3a97f6180ce9907cf2159fa2aaa193bdd3ee3ec74d6049";
+      };
+      default = "r8";
     };
   };
   "3.2.0" = {
