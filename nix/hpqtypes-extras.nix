@@ -386,7 +386,13 @@
         revTimestamp = "2025-11-27T13:51:04Z";
         sha256 = "a7c6b23570487c00fa492e353aa576d41964825d15b485dab1680bef39328d17";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hpqtypes-extras-1.19.0.0-r1-6aa97902fd651e2f3eaaf427037040e0181af99202424708663950ce8ffaca83.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-19T15:14:28Z";
+        sha256 = "6aa97902fd651e2f3eaaf427037040e0181af99202424708663950ce8ffaca83";
+      };
+      default = "r1";
     };
   };
   "1.2.4" = {
