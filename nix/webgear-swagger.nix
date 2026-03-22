@@ -86,7 +86,13 @@
         revTimestamp = "2025-07-23T13:38:40Z";
         sha256 = "e64b80d080d15d8e822425ad40a092a7539f6e3b23a5a32b034f7cbdca393537";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/webgear-swagger-1.5.0-r1-c369c9de9173422c34660644a469b15077e28fb01f123cad8c3dd6dc4ec166d1.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-21T09:30:45Z";
+        sha256 = "c369c9de9173422c34660644a469b15077e28fb01f123cad8c3dd6dc4ec166d1";
+      };
+      default = "r1";
     };
   };
 }
