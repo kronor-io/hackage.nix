@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "2.2.0" = {
+    sha256 = "965684a9e12ac48e8e74ac0ffc2320ac4f4b04a5378f81a85e3ee3ed8e79e372";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/unwitch-2.2.0-r0-6e6abcf2d3bc5053899befc566ef674c6445a7fc931371db58af7fe32575a67a.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-24T10:06:02Z";
+        sha256 = "6e6abcf2d3bc5053899befc566ef674c6445a7fc931371db58af7fe32575a67a";
+      };
+      default = "r0";
+    };
+  };
 }

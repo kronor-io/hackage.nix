@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.1.1.2" = {
+    sha256 = "73cb01079994d661dec9e0d6b0aff0303b397e9558ca5fed00ea1e299d1f54eb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/megastore-0.1.1.2-r0-d13584f52c220da4b5c99639a5280c63ecf7be6acc4177f5a967313f2c8cd807.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-24T00:42:46Z";
+        sha256 = "d13584f52c220da4b5c99639a5280c63ecf7be6acc4177f5a967313f2c8cd807";
+      };
+      default = "r0";
+    };
+  };
 }
