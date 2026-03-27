@@ -44,7 +44,13 @@
         revTimestamp = "2025-12-10T13:12:22Z";
         sha256 = "7fe299c63d88141e2cef6fc4039382e9aa34ee3a97a2b99fdf0cf68ebabfbeca";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/blockio-0.1.1.1-r1-d53444d4b92078cde39a6b54c9f4682f57f7a60ccc2c44166b3b59b6262dc3b8.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-26T04:17:59Z";
+        sha256 = "d53444d4b92078cde39a6b54c9f4682f57f7a60ccc2c44166b3b59b6262dc3b8";
+      };
+      default = "r1";
     };
   };
 }

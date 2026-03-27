@@ -365,4 +365,16 @@
       default = "r0";
     };
   };
+  "0.9.9.3" = {
+    sha256 = "ebbd1528261e2594da6c38b67179a037caf2ffc5053e7e1e499b94f657fddc13";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/jsaddle-dom-0.9.9.3-r0-54789db3a4780c052f6570702c462dd94e034a48c4c56a0a1fe7d97b04ed9f17.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-26T04:41:49Z";
+        sha256 = "54789db3a4780c052f6570702c462dd94e034a48c4c56a0a1fe7d97b04ed9f17";
+      };
+      default = "r0";
+    };
+  };
 }
