@@ -152,7 +152,13 @@
         revTimestamp = "2025-01-28T04:42:37Z";
         sha256 = "9144556f1a58945e455dd67431bd16d0bd6b2960732dd9b60aa44dd472123a50";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/proto-lens-runtime-0.7.0.7-r1-04ba63ccd3f06e5840e8283af781f1be7d95a0fee22b0e6819c818456a5c2d27.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-29T14:53:04Z";
+        sha256 = "04ba63ccd3f06e5840e8283af781f1be7d95a0fee22b0e6819c818456a5c2d27";
+      };
+      default = "r1";
     };
   };
 }

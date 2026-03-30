@@ -152,7 +152,13 @@
         revTimestamp = "2025-01-28T04:38:38Z";
         sha256 = "015917774624e0e89d83279fe82678aa389dae0783936f8fccff2fdda07a8b00";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/proto-lens-arbitrary-0.1.2.14-r1-4b183254ed485b2bc7d7a0adecfa4424cba9a6e760f6057e30e0faf904bb2677.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-29T14:49:30Z";
+        sha256 = "4b183254ed485b2bc7d7a0adecfa4424cba9a6e760f6057e30e0faf904bb2677";
+      };
+      default = "r1";
     };
   };
   "0.1.2.2" = {

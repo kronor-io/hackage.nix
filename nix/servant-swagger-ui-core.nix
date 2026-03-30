@@ -200,7 +200,13 @@
         revTimestamp = "2025-05-17T01:06:04Z";
         sha256 = "b8708ab412c11d55a2d1e95d97d63bbbea3ee61614c15206812b4615537a89ba";
       };
-      default = "r12";
+      r13 = {
+        nix = import ../hackage/servant-swagger-ui-core-0.3.5-r13-b59c26cb4bbf9ba1e19c68a165331a4148624e88ee750fcf186f7f58d0a4d3e8.nix;
+        revNum = 13;
+        revTimestamp = "2026-03-29T11:20:52Z";
+        sha256 = "b59c26cb4bbf9ba1e19c68a165331a4148624e88ee750fcf186f7f58d0a4d3e8";
+      };
+      default = "r13";
     };
   };
 }

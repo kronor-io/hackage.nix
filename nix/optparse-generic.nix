@@ -401,4 +401,16 @@
       default = "r3";
     };
   };
+  "1.5.3" = {
+    sha256 = "3159070ee6b4c95b2ef2af0347c5e9b5c7a5ea8a5fb5527f86f77c3f1bc073c6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/optparse-generic-1.5.3-r0-75d7afcd3289cfd1f303b4644a450b50b825464f910524a56c2ce590a4647162.nix;
+        revNum = 0;
+        revTimestamp = "2026-03-29T17:18:51Z";
+        sha256 = "75d7afcd3289cfd1f303b4644a450b50b825464f910524a56c2ce590a4647162";
+      };
+      default = "r0";
+    };
+  };
 }
