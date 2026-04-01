@@ -140,7 +140,13 @@
         revTimestamp = "2021-12-26T01:36:57Z";
         sha256 = "7b26c1b749bb489dde2d4bb62d8f940d2f2cddc4adfa1fc70a15d48efcf610de";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/timezone-olson-0.2.1-r1-e0356537b38eabdd799cfd7a6078e41b339ab8fb75db9e23292af07313bab81f.nix;
+        revNum = 1;
+        revTimestamp = "2026-03-31T20:42:09Z";
+        sha256 = "e0356537b38eabdd799cfd7a6078e41b339ab8fb75db9e23292af07313bab81f";
+      };
+      default = "r1";
     };
   };
 }
