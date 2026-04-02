@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "1.0.0.1" = {
+    sha256 = "56f35d374d3555caae7ef61e2269bd9c71981d8c6c9bad79051f8d7a37010842";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/basesystems-1.0.0.1-r0-cb77d116341dbbbba24a344be7a1ed8a7e71d5e7a387d5733f6d74b36cdfad9c.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-01T21:34:06Z";
+        sha256 = "cb77d116341dbbbba24a344be7a1ed8a7e71d5e7a387d5733f6d74b36cdfad9c";
+      };
+      default = "r0";
+    };
+  };
 }

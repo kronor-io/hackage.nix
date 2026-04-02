@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "1.5.0" = {
+    sha256 = "9931bb94d0f680233ab60aae0dccc05f6ffbfc50ff1af02cd71bbe8294ca52e4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ihp-migrate-1.5.0-r0-a651b60621d1a5507eb49e6b2a4d2d37d9b958749c5a33afd6907119fe729e98.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-01T15:27:26Z";
+        sha256 = "a651b60621d1a5507eb49e6b2a4d2d37d9b958749c5a33afd6907119fe729e98";
+      };
+      default = "r0";
+    };
+  };
 }
