@@ -347,4 +347,16 @@
       default = "r0";
     };
   };
+  "1.4.0.0" = {
+    sha256 = "b9aa592877767e47684d88ab5186935272cf56d74424db128baf54fb594bb914";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/accelerate-1.4.0.0-r0-f6a60e1802d2340ab4a6334077fad3aad3e0ccc9743377dcf5a98a30a525d021.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-02T16:43:06Z";
+        sha256 = "f6a60e1802d2340ab4a6334077fad3aad3e0ccc9743377dcf5a98a30a525d021";
+      };
+      default = "r0";
+    };
+  };
 }

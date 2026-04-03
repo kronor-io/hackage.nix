@@ -134,7 +134,13 @@
         revTimestamp = "2026-03-07T04:33:15Z";
         sha256 = "0daaf114a49fb5f6fd575ae72996b3124d9dbafacdf790824ba1376698389e03";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crypton-connection-0.4.6-r1-a3764a44de9f43b1e9f590009ebbea1401fc3911e3ba41ce4d9b93d9f2a8d22e.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-02T23:48:15Z";
+        sha256 = "a3764a44de9f43b1e9f590009ebbea1401fc3911e3ba41ce4d9b93d9f2a8d22e";
+      };
+      default = "r1";
     };
   };
 }

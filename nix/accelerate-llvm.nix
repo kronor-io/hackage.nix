@@ -107,4 +107,16 @@
       default = "r0";
     };
   };
+  "1.4.0.0" = {
+    sha256 = "04fcdc86183ee69e831ecf789f9dc54e6e718aa1c8bd967be939c6c0aa0d2048";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/accelerate-llvm-1.4.0.0-r0-b5e0ca8a54b4c4ff749c41f3e0d292e787d69e99d2cc9f727cbc60d1512fc034.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-02T16:43:36Z";
+        sha256 = "b5e0ca8a54b4c4ff749c41f3e0d292e787d69e99d2cc9f727cbc60d1512fc034";
+      };
+      default = "r0";
+    };
+  };
 }
