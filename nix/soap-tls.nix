@@ -98,7 +98,13 @@
         revTimestamp = "2025-10-30T11:12:08Z";
         sha256 = "8b694c2eb5e7e5bb6daa4913d68c20b3bf318f4ea81c90d6adec5fc76e9e3678";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/soap-tls-0.2.0.0-r1-c8fa586692db70104734b19bbe4895adfabeb11e4a33d95cfae118b944421794.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-05T11:15:21Z";
+        sha256 = "c8fa586692db70104734b19bbe4895adfabeb11e4a33d95cfae118b944421794";
+      };
+      default = "r1";
     };
   };
 }
