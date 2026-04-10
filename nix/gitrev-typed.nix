@@ -8,7 +8,13 @@
         revTimestamp = "2025-05-07T00:06:40Z";
         sha256 = "905b696dec9c52486290cfef2d3156420de83f5b21bfb0821a37822f40ee1568";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gitrev-typed-0.1-r1-2b3ab33d4e3b787f700d849112536c9c340b7496aff86e1d49f9cf416414dff4.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-09T21:26:14Z";
+        sha256 = "2b3ab33d4e3b787f700d849112536c9c340b7496aff86e1d49f9cf416414dff4";
+      };
+      default = "r1";
     };
   };
 }
