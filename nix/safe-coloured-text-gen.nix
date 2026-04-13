@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.0.0.4" = {
+    sha256 = "9b882ea03c31d1a7683cf235b95d15527c2212d8cc94b8a74a2fd93746aecc68";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/safe-coloured-text-gen-0.0.0.4-r0-04182359ec1cc44871aeb5fac7b5f5077b546bdb1f3d7ea977c8cf1f86ecdc4a.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-12T11:15:32Z";
+        sha256 = "04182359ec1cc44871aeb5fac7b5f5077b546bdb1f3d7ea977c8cf1f86ecdc4a";
+      };
+      default = "r0";
+    };
+  };
 }
