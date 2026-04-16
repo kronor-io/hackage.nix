@@ -110,7 +110,13 @@
         revTimestamp = "2025-01-03T23:03:44Z";
         sha256 = "45d5835c56852bce8993e7599250f226cd3b77293cbe79756a669f3b3f22a66d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/universe-dependent-sum-1.3.1-r2-d7f049124beba3819ea544d80a6583c60ddbadfbe1f6ee1ec0d890fe684221f6.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-15T22:02:09Z";
+        sha256 = "d7f049124beba3819ea544d80a6583c60ddbadfbe1f6ee1ec0d890fe684221f6";
+      };
+      default = "r2";
     };
   };
 }

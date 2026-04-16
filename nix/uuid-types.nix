@@ -161,4 +161,16 @@
       default = "r3";
     };
   };
+  "1.0.6.1" = {
+    sha256 = "9f00f278b9711104b6acc1404d9f0d45c1183b4987cf9c07403bebc05c0c3024";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/uuid-types-1.0.6.1-r0-95e5bc79e3503c9bd7e68f0c7639400744c824074a0a2e0e4c7438a21c8c4d4f.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-15T16:27:43Z";
+        sha256 = "95e5bc79e3503c9bd7e68f0c7639400744c824074a0a2e0e4c7438a21c8c4d4f";
+      };
+      default = "r0";
+    };
+  };
 }

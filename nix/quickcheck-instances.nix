@@ -650,7 +650,19 @@
         revTimestamp = "2026-01-08T11:48:26Z";
         sha256 = "36c45f329c8104e1b97ea9e95396dccb63ad6b0f9df2ec0642707c30b278b3e4";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/quickcheck-instances-0.4-r1-da3c21a7ee156a79e36c233b7d0b46aad1e405b65fcc99d217db6b80783dcfc5.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-15T14:55:25Z";
+        sha256 = "da3c21a7ee156a79e36c233b7d0b46aad1e405b65fcc99d217db6b80783dcfc5";
+      };
+      r2 = {
+        nix = import ../hackage/quickcheck-instances-0.4-r2-7ad296a8cb4a20d08af8dd0c6e0e667de1cd8b53657fbbe94ceba188f29f22a9.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-15T18:14:48Z";
+        sha256 = "7ad296a8cb4a20d08af8dd0c6e0e667de1cd8b53657fbbe94ceba188f29f22a9";
+      };
+      default = "r2";
     };
   };
 }
