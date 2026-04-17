@@ -137,6 +137,18 @@
       default = "r1";
     };
   };
+  "0.1.1.14" = {
+    sha256 = "5f9bc0844bdc26318c8e3f3388a27977b90128b8912a3b2663fc2b063bfddd53";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/proto-lens-optparse-0.1.1.14-r0-356d0ca1d4b340b053c6cc8e064d5b0a52ccbc0a5a84d043930d785e485ddc0b.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-16T04:41:41Z";
+        sha256 = "356d0ca1d4b340b053c6cc8e064d5b0a52ccbc0a5a84d043930d785e485ddc0b";
+      };
+      default = "r0";
+    };
+  };
   "0.1.1.2" = {
     sha256 = "a5bc1afcd510c57a71814a48f822f69912a91d434e295011371bf351cf6a4fc1";
     revisions = {

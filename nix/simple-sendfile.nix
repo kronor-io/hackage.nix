@@ -560,7 +560,13 @@
         revTimestamp = "2019-05-01T23:09:54Z";
         sha256 = "2333dc08e9c974c8de0b6e17488d443efa265955f267b5f0bfbf8548d691fe9a";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/simple-sendfile-0.2.28-r3-d1877a237c6f8df4aec975305a0be2873aebffd75ea7881b3d32d40c8d41e2db.nix;
+        revNum = 3;
+        revTimestamp = "2026-04-16T22:22:07Z";
+        sha256 = "d1877a237c6f8df4aec975305a0be2873aebffd75ea7881b3d32d40c8d41e2db";
+      };
+      default = "r3";
     };
   };
   "0.2.29" = {

@@ -119,4 +119,16 @@
       default = "r0";
     };
   };
+  "0.11.0.9" = {
+    sha256 = "fa4c380e50accc1f87143e9c2abbfabea093a5f811bdeeff33f4ad081821361d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/A-gent-0.11.0.9-r0-bfaa06662b3c03a69099dd5916cdfc489af97cddd259d0a0cd86a3a353048ee4.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-16T11:06:34Z";
+        sha256 = "bfaa06662b3c03a69099dd5916cdfc489af97cddd259d0a0cd86a3a353048ee4";
+      };
+      default = "r0";
+    };
+  };
 }

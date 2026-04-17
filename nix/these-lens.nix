@@ -128,7 +128,13 @@
         revTimestamp = "2025-01-04T21:28:45Z";
         sha256 = "70210a36b24bdb4af82f8cf87f118b1cac034598c4b017ffee572188a7b1be1d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/these-lens-1.0.2-r2-d2bbb75f4f13df91b65119e5a5b8fa9b1525e624c8d2a40dd467942eafba80dd.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-16T16:12:45Z";
+        sha256 = "d2bbb75f4f13df91b65119e5a5b8fa9b1525e624c8d2a40dd467942eafba80dd";
+      };
+      default = "r2";
     };
   };
 }
