@@ -62,7 +62,13 @@
         revTimestamp = "2023-10-02T11:11:50Z";
         sha256 = "4757868eb6569472bf6779a3115887e7805674277a989f2491697c56cb760b1e";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/long-double-0.1.1.1-r2-3973211b218d231cbbc3626ca1e705e4cf70bf50114bf875898f6e3d38ea3d3a.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-17T16:42:38Z";
+        sha256 = "3973211b218d231cbbc3626ca1e705e4cf70bf50114bf875898f6e3d38ea3d3a";
+      };
+      default = "r2";
     };
   };
 }

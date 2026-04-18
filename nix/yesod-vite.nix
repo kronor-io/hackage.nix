@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "af0252706df40511a7d96d32f8cc94c8e904dfd9f86ea800afa7210ad702a4ab";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yesod-vite-0.2.0.0-r0-970b0480bf3cdbc7665f6984cb0037715cd8f7fb20e9b3af9e2aed76a9f50b34.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-17T10:59:09Z";
+        sha256 = "970b0480bf3cdbc7665f6984cb0037715cd8f7fb20e9b3af9e2aed76a9f50b34";
+      };
+      default = "r0";
+    };
+  };
 }
