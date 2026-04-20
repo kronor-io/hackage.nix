@@ -77,4 +77,16 @@
       default = "r0";
     };
   };
+  "0.2.0.5" = {
+    sha256 = "2265126b135a1bd2ba88d07684a197eb1e56106fe24e676efc34d1e4d0348e5c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shower-0.2.0.5-r0-979b3bf0f6eed9caf9d19ab95534d92f47e805366b3bc9780758a862301a0296.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-19T21:51:07Z";
+        sha256 = "979b3bf0f6eed9caf9d19ab95534d92f47e805366b3bc9780758a862301a0296";
+      };
+      default = "r0";
+    };
+  };
 }

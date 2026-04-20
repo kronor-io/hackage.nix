@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "b6b838f8c99760b32955c9c25cfdb1830e144b68b1a2186fc284a58c13c1e275";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/comonad-coactions-0.1.0.1-r0-321e02e8d6eaa17196d4e02f8ca032428a45ddf8216c7d47d39d138f7521d8df.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-19T01:00:39Z";
+        sha256 = "321e02e8d6eaa17196d4e02f8ca032428a45ddf8216c7d47d39d138f7521d8df";
+      };
+      default = "r0";
+    };
+  };
 }
