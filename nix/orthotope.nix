@@ -140,7 +140,13 @@
         revTimestamp = "2026-02-16T21:33:02Z";
         sha256 = "f57f7a5e5a19fbf1098b21ac107f9210c9b0b73bf64d0ec675835ee8bff7fc01";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/orthotope-0.1.8.0-r1-daa83aed303b00da95b832de7bf1f74c498ea6c21701672d18cb332cffd996b9.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-20T07:49:51Z";
+        sha256 = "daa83aed303b00da95b832de7bf1f74c498ea6c21701672d18cb332cffd996b9";
+      };
+      default = "r1";
     };
   };
 }

@@ -116,7 +116,13 @@
         revTimestamp = "2026-01-28T14:41:32Z";
         sha256 = "ed836689cdecc9beedbdddb5a1a6b1eeb9ee95d2926c56b5e7ab605fcd8799d4";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/hgmp-0.1.2.1-r4-9d247b386e069de731442038988a5cf4bb221913ceb9f639215dd52856472088.nix;
+        revNum = 4;
+        revTimestamp = "2026-04-20T16:37:08Z";
+        sha256 = "9d247b386e069de731442038988a5cf4bb221913ceb9f639215dd52856472088";
+      };
+      default = "r4";
     };
   };
 }
