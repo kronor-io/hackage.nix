@@ -176,7 +176,13 @@
         revTimestamp = "2025-03-10T23:11:34Z";
         sha256 = "bd9cd66c5c6bc7b3aaee35768da7cb7e7cbbd3a7fec7ad15a22dc78b88e66dc5";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ekg-json-0.1.1.1-r2-e72b7d8a91997d4dc50eca7988f4cd81397df794235be5ce05c1e2a85e8a1fb7.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-21T20:52:52Z";
+        sha256 = "e72b7d8a91997d4dc50eca7988f4cd81397df794235be5ce05c1e2a85e8a1fb7";
+      };
+      default = "r2";
     };
   };
 }

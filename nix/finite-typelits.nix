@@ -230,7 +230,13 @@
         revTimestamp = "2025-04-23T20:46:29Z";
         sha256 = "1bd2df3c0bf6892be8e9df512e86cad5ca2e0ba817a0645d146952d8f6efc7a4";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/finite-typelits-0.2.1.0-r2-13bf2b80828eae2ab154048ba0257f979465f0c8daf5e70437afaf099a5bce41.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-21T06:42:06Z";
+        sha256 = "13bf2b80828eae2ab154048ba0257f979465f0c8daf5e70437afaf099a5bce41";
+      };
+      default = "r2";
     };
   };
 }

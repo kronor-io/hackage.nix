@@ -65,4 +65,16 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "29d7a86ce354eb271d11771c0a4672b07fde2a92db61595c7668029d65387b46";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/riichi-scoring-0.3.0.0-r0-349fb0abad1e1d472ed92f06b3afca0756acbbc3c01a0756c4cf307423c0351c.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-21T16:25:16Z";
+        sha256 = "349fb0abad1e1d472ed92f06b3afca0756acbbc3c01a0756c4cf307423c0351c";
+      };
+      default = "r0";
+    };
+  };
 }
