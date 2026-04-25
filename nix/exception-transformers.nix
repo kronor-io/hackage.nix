@@ -140,7 +140,13 @@
         revTimestamp = "2023-08-31T15:59:37Z";
         sha256 = "4a3d3b8ccce5d8dc539e051ea25d221a417379f59e186f80081c962f552eab09";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/exception-transformers-0.4.0.12-r1-e3a74f8144abcb0ca9b25659f273c3781a145cee4ed1f513f5afe7fc063c26f7.nix;
+        revNum = 1;
+        revTimestamp = "2026-04-24T19:18:52Z";
+        sha256 = "e3a74f8144abcb0ca9b25659f273c3781a145cee4ed1f513f5afe7fc063c26f7";
+      };
+      default = "r1";
     };
   };
   "0.4.0.2" = {

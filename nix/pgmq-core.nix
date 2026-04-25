@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "c812f80d4e2a44a9d77b618383a71c7e6315822e99aeacd1eed762652175d15d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pgmq-core-0.2.0.0-r0-adb5d76e8dd32ea7792f58939c25d558a61fff9d37d82d1f70dd944e4793a7f7.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-24T03:07:58Z";
+        sha256 = "adb5d76e8dd32ea7792f58939c25d558a61fff9d37d82d1f70dd944e4793a7f7";
+      };
+      default = "r0";
+    };
+  };
 }
