@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.5.0.0" = {
+    sha256 = "b2447e712154739658324353ba4f8624bc516c80203fe324ce7fb83f5391a2c9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hhlo-0.5.0.0-r0-eeab38d435d6ba03697acea79489807cd8ac366eda4580d0e5e7226ae0808b51.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-27T13:35:24Z";
+        sha256 = "eeab38d435d6ba03697acea79489807cd8ac366eda4580d0e5e7226ae0808b51";
+      };
+      default = "r0";
+    };
+  };
 }
