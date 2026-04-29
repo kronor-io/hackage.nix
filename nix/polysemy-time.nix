@@ -293,4 +293,16 @@
       default = "r0";
     };
   };
+  "0.7.0.2" = {
+    sha256 = "218ddbb7138a274c6d990a1633c2436176c7b572f48af7fcc993b3a61a877d1a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polysemy-time-0.7.0.2-r0-f3505231bce5a57f79b50ce061306ad1f16c827cbf5636ae14c11fcbcfc52cd2.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-28T16:48:53Z";
+        sha256 = "f3505231bce5a57f79b50ce061306ad1f16c827cbf5636ae14c11fcbcfc52cd2";
+      };
+      default = "r0";
+    };
+  };
 }

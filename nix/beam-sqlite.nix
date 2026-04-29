@@ -275,4 +275,16 @@
       default = "r0";
     };
   };
+  "0.7.0.0" = {
+    sha256 = "62c9a395682e06897ae163a24ffcc7f4dc120bc03983f6179a77d1d77237726b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/beam-sqlite-0.7.0.0-r0-1b6eb32c36c62460d6fc0497f6b157623e9e499985076cf8bb32c3e89e430538.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-28T14:37:17Z";
+        sha256 = "1b6eb32c36c62460d6fc0497f6b157623e9e499985076cf8bb32c3e89e430538";
+      };
+      default = "r0";
+    };
+  };
 }
