@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "e4cb3ff2e06b62a563ee1cbaa6ed8d3891582372b9c4fb633737116c8a38765d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/spire-server-0.1.0.1-r0-9d75125f4961ec56c71db0360735b6f992e257847c53c7ae116d314ab11d3580.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-29T03:07:08Z";
+        sha256 = "9d75125f4961ec56c71db0360735b6f992e257847c53c7ae116d314ab11d3580";
+      };
+      default = "r0";
+    };
+  };
 }

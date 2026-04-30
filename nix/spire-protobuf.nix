@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "2c451e5adebb56a6f34f9165166ba50e4d879d23f42b7024464d8b41fa8acf23";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/spire-protobuf-0.1.0.1-r0-ac6687cc214d030d4f3910e3881b491ffb239bdbdabdc4b2a1fa70e18baabaad.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-29T03:07:11Z";
+        sha256 = "ac6687cc214d030d4f3910e3881b491ffb239bdbdabdc4b2a1fa70e18baabaad";
+      };
+      default = "r0";
+    };
+  };
 }
