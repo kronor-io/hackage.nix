@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "162e3f7998f2967e3cf83eb76eb1c1e5826ddb2650b21a651d578eb41225ebee";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/valiant-mtl-0.1.0.1-r0-f443a11ce03f10c2a73a38539e5505e04a45584c4c570dc4d1c6b2e5bb40569e.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-30T12:29:07Z";
+        sha256 = "f443a11ce03f10c2a73a38539e5505e04a45584c4c570dc4d1c6b2e5bb40569e";
+      };
+      default = "r0";
+    };
+  };
 }

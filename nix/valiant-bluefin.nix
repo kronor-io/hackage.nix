@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "8c26cda9b5f345c903fbfbdcb411c478948c20d6bc608b6e35abc51b5245c72a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/valiant-bluefin-0.1.0.1-r0-bfa10371b632d4b5c1bdb0f0a6fa444d0ec32d3535647de120305c108304cdb9.nix;
+        revNum = 0;
+        revTimestamp = "2026-04-30T12:29:06Z";
+        sha256 = "bfa10371b632d4b5c1bdb0f0a6fa444d0ec32d3535647de120305c108304cdb9";
+      };
+      default = "r0";
+    };
+  };
 }

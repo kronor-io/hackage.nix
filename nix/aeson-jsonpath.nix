@@ -62,7 +62,13 @@
         revTimestamp = "2026-01-07T15:56:04Z";
         sha256 = "7f5d73ecdc5a8a1dfd6f9814a5e43ff0bb2bc431d7e426492555e2fa4f7a1ba6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/aeson-jsonpath-0.3.0.2-r2-66d682979cc06060ad3cc1494cd006e63279cb1d40fc9534abdf87c65d43cd5e.nix;
+        revNum = 2;
+        revTimestamp = "2026-04-30T20:53:49Z";
+        sha256 = "66d682979cc06060ad3cc1494cd006e63279cb1d40fc9534abdf87c65d43cd5e";
+      };
+      default = "r2";
     };
   };
 }
