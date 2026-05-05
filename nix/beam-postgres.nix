@@ -302,7 +302,13 @@
         revTimestamp = "2026-04-28T14:37:11Z";
         sha256 = "93da676a275990cea69f5f60f6635c0a05f6e08f00d3c0b69787dbc1404d5d99";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/beam-postgres-0.6.0.0-r1-e96a60a2af4eb6b952468a86b736aa4e950102c84a0099aed8c3e2ba3773fe7f.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-04T00:48:07Z";
+        sha256 = "e96a60a2af4eb6b952468a86b736aa4e950102c84a0099aed8c3e2ba3773fe7f";
+      };
+      default = "r1";
     };
   };
 }

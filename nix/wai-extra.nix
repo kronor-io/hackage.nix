@@ -2786,7 +2786,13 @@
         revTimestamp = "2022-11-01T23:46:36Z";
         sha256 = "08982a22c03816cc0128ab1a5a15af1f399637a97b95c24105e204d08897d9b8";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/wai-extra-3.1.10-r2-ae1223215c98c29b85f2ab56fd649d979f3f9020b30307f74390992eaf74b255.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-04T12:53:32Z";
+        sha256 = "ae1223215c98c29b85f2ab56fd649d979f3f9020b30307f74390992eaf74b255";
+      };
+      default = "r2";
     };
   };
   "3.1.11" = {
@@ -2804,7 +2810,13 @@
         revTimestamp = "2022-11-01T23:46:52Z";
         sha256 = "28f9e68a28ef32d1afb17d7d1f818af198837b880fe622ce217768f18b4e5741";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/wai-extra-3.1.11-r2-5280f38c53aec1f1a7a7104a6c86e979c871720b0bbd91c36f2e87ec15d4d632.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-04T12:54:13Z";
+        sha256 = "5280f38c53aec1f1a7a7104a6c86e979c871720b0bbd91c36f2e87ec15d4d632";
+      };
+      default = "r2";
     };
   };
   "3.1.12" = {
@@ -2822,7 +2834,13 @@
         revTimestamp = "2022-11-01T23:47:04Z";
         sha256 = "1feb29da60c068119378b9ef65ccc05b78bcf028d242b7fa8f8b096017054d8c";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/wai-extra-3.1.12-r2-4b8ba298d997ab6cea528d8fdd0700ac2a31d425659012db2b61b95fd3c1c32f.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-04T12:54:27Z";
+        sha256 = "4b8ba298d997ab6cea528d8fdd0700ac2a31d425659012db2b61b95fd3c1c32f";
+      };
+      default = "r2";
     };
   };
   "3.1.12.1" = {
@@ -2846,7 +2864,13 @@
         revTimestamp = "2022-11-01T23:47:17Z";
         sha256 = "6ee24772ec025f43f09e8bcc663d1577aacd87476abf652fed4962ec4cc3318d";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/wai-extra-3.1.12.1-r3-4eb3a53d377ea63c86555640bf792182c1f44b2e773e771f321130fd869aaa9a.nix;
+        revNum = 3;
+        revTimestamp = "2026-05-04T12:54:40Z";
+        sha256 = "4eb3a53d377ea63c86555640bf792182c1f44b2e773e771f321130fd869aaa9a";
+      };
+      default = "r3";
     };
   };
   "3.1.13.0" = {
