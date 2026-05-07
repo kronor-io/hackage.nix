@@ -44,7 +44,13 @@
         revTimestamp = "2024-03-07T11:32:47Z";
         sha256 = "edf5964fa96bd849f897b7d6b52f136ceb7a45c59d043bde3e263b4f3b13ace8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/liquid-parallel-3.2.2.0.3-r1-4ae776a86351341373feac0d129fcb73bc460eb1d4f42b94e9c0650ebb08e68a.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-06T14:13:34Z";
+        sha256 = "4ae776a86351341373feac0d129fcb73bc460eb1d4f42b94e9c0650ebb08e68a";
+      };
+      default = "r1";
     };
   };
 }

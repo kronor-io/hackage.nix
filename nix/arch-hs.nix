@@ -212,7 +212,13 @@
         revTimestamp = "2025-09-12T17:15:10Z";
         sha256 = "45b24eebd20c5e217d93a9e7025ed4cde3e8e4e44f43d3c405e61db95ea1c381";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/arch-hs-0.12.1-r2-8390fabeb2d792bec2f07237cf26f7a367d931d9272346203b35fe41c5e3f6f2.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-06T15:43:55Z";
+        sha256 = "8390fabeb2d792bec2f07237cf26f7a367d931d9272346203b35fe41c5e3f6f2";
+      };
+      default = "r2";
     };
   };
   "0.2.0.0" = {
