@@ -284,7 +284,13 @@
         revTimestamp = "2026-04-17T14:56:11Z";
         sha256 = "d6cf796ef8980db1fbccc6338b99bbd5cddfd49867696c9c73fbfcb25cbb5733";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/toml-parser-2.0.2.0-r3-a5fd117bf1f72ef8b2a71eacc99c8a3112c0a309d9b448b29b5255ae77a51611.nix;
+        revNum = 3;
+        revTimestamp = "2026-05-07T19:55:27Z";
+        sha256 = "a5fd117bf1f72ef8b2a71eacc99c8a3112c0a309d9b448b29b5255ae77a51611";
+      };
+      default = "r3";
     };
   };
 }
