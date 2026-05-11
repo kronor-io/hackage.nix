@@ -68,7 +68,13 @@
         revTimestamp = "2025-05-02T14:19:00Z";
         sha256 = "ef65503c7661da37f2659c39f51b33c66cddd3cb1a14c4952252973bfd7bd32e";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ral-lens-0.2.1-r2-89e024aae75513a2e6396a32d77de7688bd41c82973d426ea0d16c9873efdf68.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-10T21:58:40Z";
+        sha256 = "89e024aae75513a2e6396a32d77de7688bd41c82973d426ea0d16c9873efdf68";
+      };
+      default = "r2";
     };
   };
 }

@@ -68,7 +68,13 @@
         revTimestamp = "2025-05-02T14:19:00Z";
         sha256 = "aacd6e21079b6c3861854faf698777487a74d26846750e33764a7b3159e0dc74";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ral-optics-0.2.1-r2-8be84368cc631c13368e49fb738cea1e1e1d9e088ac447925b6fb7e008a9990b.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-10T21:58:40Z";
+        sha256 = "8be84368cc631c13368e49fb738cea1e1e1d9e088ac447925b6fb7e008a9990b";
+      };
+      default = "r2";
     };
   };
 }

@@ -68,7 +68,13 @@
         revTimestamp = "2025-05-02T14:19:01Z";
         sha256 = "3ac80565df13bdefb02e70808e6e2f5e553f20b84e898fe401bfc5f68e57eace";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/vec-lens-0.4.1-r2-395f58fe4faf7fa2ecfd3e60ae33a794a7d20bd6b85e4a32b0b41e53c7f08666.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-10T21:58:41Z";
+        sha256 = "395f58fe4faf7fa2ecfd3e60ae33a794a7d20bd6b85e4a32b0b41e53c7f08666";
+      };
+      default = "r2";
     };
   };
 }

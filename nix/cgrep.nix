@@ -803,4 +803,16 @@
       default = "r0";
     };
   };
+  "9.2.2" = {
+    sha256 = "2b56d6254147d530befa78164b426b26bacbfa9b69966d70229f1124afda7b6a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cgrep-9.2.2-r0-de87777bb866d65f7c6ade73b09fa2a02d23b370b57049396e5ac7e77b073251.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-10T05:41:33Z";
+        sha256 = "de87777bb866d65f7c6ade73b09fa2a02d23b370b57049396e5ac7e77b073251";
+      };
+      default = "r0";
+    };
+  };
 }
