@@ -20,7 +20,13 @@
         revTimestamp = "2025-03-31T09:55:48Z";
         sha256 = "38557b4a7e95d5e2ee5e9bf8edf7f65d7d82d77e21121741acefc7ea6376ab8f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/defun-core-0.1.0.1-r1-b820fac4008ba87e800d8ffdaf774c3a231da0bbfdc60c42ea359bd9c810b97b.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-11T14:01:03Z";
+        sha256 = "b820fac4008ba87e800d8ffdaf774c3a231da0bbfdc60c42ea359bd9c810b97b";
+      };
+      default = "r1";
     };
   };
 }

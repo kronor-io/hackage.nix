@@ -164,7 +164,13 @@
         revTimestamp = "2025-01-05T17:38:58Z";
         sha256 = "f2863c5109fae42d4df03b1e3270aac4e3336e725e0cbe9663e8ccfc515a6ec1";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/singleton-bool-0.1.8-r2-94988e14281fa9c70714fbae5e32031f7008919c13b060ee16c714edb62858c0.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-11T13:19:00Z";
+        sha256 = "94988e14281fa9c70714fbae5e32031f7008919c13b060ee16c714edb62858c0";
+      };
+      default = "r2";
     };
   };
 }

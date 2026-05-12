@@ -47,4 +47,16 @@
       default = "r2";
     };
   };
+  "0.1.1.1" = {
+    sha256 = "3d8f88f65fce39507c781b4fc12df219b6cd9e48d00b43f5589cd81aca22de45";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/th-letrec-0.1.1.1-r0-db379c9f0c94bfbef55130a9ba3233d728ea757dd56a25a68ae8991ac89fe240.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-11T16:53:07Z";
+        sha256 = "db379c9f0c94bfbef55130a9ba3233d728ea757dd56a25a68ae8991ac89fe240";
+      };
+      default = "r0";
+    };
+  };
 }

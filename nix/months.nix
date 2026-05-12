@@ -116,7 +116,13 @@
         revTimestamp = "2024-08-02T16:12:53Z";
         sha256 = "27d2e12454bbcb7e3abce10e5f6050c55672d43254644786999487e14f9db1d2";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/months-0.2.1-r2-163ed8cf681fb0f11c223099f035a21c88733e4249bbe5e67fee4d7d4b3520f7.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-11T19:18:00Z";
+        sha256 = "163ed8cf681fb0f11c223099f035a21c88733e4249bbe5e67fee4d7d4b3520f7";
+      };
+      default = "r2";
     };
   };
 }

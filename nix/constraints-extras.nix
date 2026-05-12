@@ -320,7 +320,13 @@
         revTimestamp = "2025-01-18T18:56:53Z";
         sha256 = "5c901e2103d0e3238b29beb2751d20b67c6945749be553d38dd80b3490c57a63";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/constraints-extras-0.4.0.2-r1-a795b600d34183b61989bfd29597cf8b94e8b016b83f757d9cff19050cba1147.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-11T15:08:22Z";
+        sha256 = "a795b600d34183b61989bfd29597cf8b94e8b016b83f757d9cff19050cba1147";
+      };
+      default = "r1";
     };
   };
 }

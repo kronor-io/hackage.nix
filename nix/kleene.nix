@@ -74,7 +74,13 @@
         revTimestamp = "2024-07-03T16:25:34Z";
         sha256 = "be9e94b37e8560f672b6f97857f5fb53e1fca80abdfac99afcdbb3f64b097333";
       };
-      default = "r8";
+      r9 = {
+        nix = import ../hackage/kleene-0.1-r9-05eb786e710a8aa3d9ba590e1702ec0d91f7636ecfe6473fe5bfbe99f51f2eff.nix;
+        revNum = 9;
+        revTimestamp = "2026-05-11T19:43:40Z";
+        sha256 = "05eb786e710a8aa3d9ba590e1702ec0d91f7636ecfe6473fe5bfbe99f51f2eff";
+      };
+      default = "r9";
     };
   };
 }
