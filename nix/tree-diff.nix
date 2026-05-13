@@ -371,4 +371,28 @@
       default = "r1";
     };
   };
+  "0.3.5" = {
+    sha256 = "0cb455bcbde04d07632fe9e864f110e3aa82c9d46f8121b6a2f2cfebdc1f7f14";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tree-diff-0.3.5-r0-b176d8da9e3565ba845b97c5da4c65c7706ff2bc745c8f949f22da0b557e51f0.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-12T16:08:21Z";
+        sha256 = "b176d8da9e3565ba845b97c5da4c65c7706ff2bc745c8f949f22da0b557e51f0";
+      };
+      default = "r0";
+    };
+  };
+  "0.4" = {
+    sha256 = "ac53e08f2c5c2e1b8de12747b5a3b83e7ce90df96c55865308a5411463ffebf0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tree-diff-0.4-r0-4f0049fad4dd5eaf297458fb46a05c2ec2d5752244b5ace11d1be5a3717e94ce.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-12T20:40:25Z";
+        sha256 = "4f0049fad4dd5eaf297458fb46a05c2ec2d5752244b5ace11d1be5a3717e94ce";
+      };
+      default = "r0";
+    };
+  };
 }

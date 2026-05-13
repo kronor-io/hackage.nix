@@ -15649,6 +15649,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "soap" = import ./nix/soap.nix;
   "soap-openssl" = import ./nix/soap-openssl.nix;
   "soap-tls" = import ./nix/soap-tls.nix;
+  "soccer-table" = import ./nix/soccer-table.nix;
   "sock2stream" = import ./nix/sock2stream.nix;
   "sockaddr" = import ./nix/sockaddr.nix;
   "socket" = import ./nix/socket.nix;

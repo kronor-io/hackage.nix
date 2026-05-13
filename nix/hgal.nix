@@ -62,7 +62,13 @@
         revTimestamp = "2024-10-28T14:55:18Z";
         sha256 = "640432708b7356b72ca6096961234ffb5dd25e10c73722216e3a512ad848c4b6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hgal-2.0.0.3-r2-8f80655921dd51bbd51acfe7c38bc7b8834b88af0ff52a0354701f679aad2881.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-12T12:25:12Z";
+        sha256 = "8f80655921dd51bbd51acfe7c38bc7b8834b88af0ff52a0354701f679aad2881";
+      };
+      default = "r2";
     };
   };
 }

@@ -83,4 +83,16 @@
       default = "r9";
     };
   };
+  "0.2" = {
+    sha256 = "06c6ec4ef662870e0810fa1e22b93c6b34872d5e6983a03cbc3c4144b521c2f3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kleene-0.2-r0-7d76731c450c797050bfe47cee5648b7b867ccfcb1e844b7e7278c31407e746e.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-12T17:51:59Z";
+        sha256 = "7d76731c450c797050bfe47cee5648b7b867ccfcb1e844b7e7278c31407e746e";
+      };
+      default = "r0";
+    };
+  };
 }

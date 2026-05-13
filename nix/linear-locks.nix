@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "f525d0e5a0ec98b5b3ffd7b4259a462d303b4b35962b3493be64f6fb063a3383";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/linear-locks-0.1.0.1-r0-43fd82b12eb326181e7121c48d02487fb7bf979977135c2583865b6b6c42c441.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-12T11:25:47Z";
+        sha256 = "43fd82b12eb326181e7121c48d02487fb7bf979977135c2583865b6b6c42c441";
+      };
+      default = "r0";
+    };
+  };
 }
