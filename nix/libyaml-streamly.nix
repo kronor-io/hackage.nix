@@ -80,7 +80,13 @@
         revTimestamp = "2026-04-18T15:44:14Z";
         sha256 = "fd0f983d11eceabb98e093f561941956c9f0b7396a2ff4cc337d980963f6ab37";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/libyaml-streamly-0.2.4.0-r1-627af44fee5b3501d8a3671bd156cd7156c4d6d031aa1d5ca8a83964d4da72f9.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-13T15:44:57Z";
+        sha256 = "627af44fee5b3501d8a3671bd156cd7156c4d6d031aa1d5ca8a83964d4da72f9";
+      };
+      default = "r1";
     };
   };
 }
