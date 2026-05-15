@@ -92,7 +92,13 @@
         revTimestamp = "2026-04-21T11:21:52Z";
         sha256 = "c1e765890976b318dbb3512c2b33fa1603ff7eecd1f956f8899c0757b3ca35f1";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/bench-show-0.3.2-r4-550515d1825a9a79c74520c07f8fb0edcafffe7b6afbdd598fdd0dca60c31af0.nix;
+        revNum = 4;
+        revTimestamp = "2026-05-14T05:44:10Z";
+        sha256 = "550515d1825a9a79c74520c07f8fb0edcafffe7b6afbdd598fdd0dca60c31af0";
+      };
+      default = "r4";
     };
   };
 }
