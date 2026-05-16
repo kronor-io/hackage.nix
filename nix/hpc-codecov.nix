@@ -167,4 +167,16 @@
       default = "r0";
     };
   };
+  "0.6.4.1" = {
+    sha256 = "44d5f048971202ec24584b466bd3a49288ad63a0caeb22384a518e9bbc5874a6";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hpc-codecov-0.6.4.1-r0-d97d39ec728e90fed2344b0d48331c6b948e5c287ef509ba7bc99efc8322e805.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-15T08:55:00Z";
+        sha256 = "d97d39ec728e90fed2344b0d48331c6b948e5c287ef509ba7bc99efc8322e805";
+      };
+      default = "r0";
+    };
+  };
 }
