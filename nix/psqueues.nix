@@ -488,7 +488,13 @@
         revTimestamp = "2025-12-28T06:54:17Z";
         sha256 = "24b660add7d540e94245f6c4604d7b02bcfe75c36e68d5dad824cf28f7ebddf4";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/psqueues-0.2.8.3-r1-c43ae3c4a62a83e67436b6e944bb7743ac998dc9a5ca222288ea543420a18ae7.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-19T08:58:52Z";
+        sha256 = "c43ae3c4a62a83e67436b6e944bb7743ac998dc9a5ca222288ea543420a18ae7";
+      };
+      default = "r1";
     };
   };
 }
