@@ -314,7 +314,13 @@
         revTimestamp = "2026-05-04T00:48:48Z";
         sha256 = "446f188e981454005b1b725fd8d7360c47f611a299ed89892b286e3dbecefba7";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/beam-migrate-0.6.0.0-r2-6304396365a3a04eee68e34c4cc97c8c6da0969f5c8bfbaceb9168a5c82614dc.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-21T22:04:42Z";
+        sha256 = "6304396365a3a04eee68e34c4cc97c8c6da0969f5c8bfbaceb9168a5c82614dc";
+      };
+      default = "r2";
     };
   };
 }

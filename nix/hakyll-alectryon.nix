@@ -68,7 +68,13 @@
         revTimestamp = "2025-09-29T16:52:15Z";
         sha256 = "2024c1aa691e7b3e0627437446dad3dff6cb3b06c1fec8a8ce69f6c64079e40f";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hakyll-alectryon-0.2.0.0-r2-d217d26dc0b7759e68855fcd4738c3423b7ece6a8e87d13c5b4b1fb376b9ce9e.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-21T20:46:54Z";
+        sha256 = "d217d26dc0b7759e68855fcd4738c3423b7ece6a8e87d13c5b4b1fb376b9ce9e";
+      };
+      default = "r2";
     };
   };
 }

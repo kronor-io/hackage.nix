@@ -38,7 +38,13 @@
         revTimestamp = "2026-04-10T12:51:38Z";
         sha256 = "879df1923f6dbbb518e868bc36359bf2eeb36e8d9d8ae45ef2eef3558ecaf409";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ghc-stack-profiler-core-0.2.0.0-r1-0f4893962bd1a660251f6752c136f1c65cc5b77c623ff05587782088e0308500.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-21T12:04:44Z";
+        sha256 = "0f4893962bd1a660251f6752c136f1c65cc5b77c623ff05587782088e0308500";
+      };
+      default = "r1";
     };
   };
 }
