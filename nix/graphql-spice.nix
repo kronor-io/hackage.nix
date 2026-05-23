@@ -104,7 +104,13 @@
         revTimestamp = "2026-01-25T09:37:11Z";
         sha256 = "2172bbe189da30cd5c5a588067de555a16c2cbd132209b6a4e16ce2cc6258d4b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/graphql-spice-1.0.7.0-r1-8eb58ee23401b8cd953807240805be554cf164198d09c36a43cdd5733afd6536.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-22T04:34:16Z";
+        sha256 = "8eb58ee23401b8cd953807240805be554cf164198d09c36a43cdd5733afd6536";
+      };
+      default = "r1";
     };
   };
 }

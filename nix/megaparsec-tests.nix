@@ -266,7 +266,13 @@
         revTimestamp = "2026-05-20T19:31:29Z";
         sha256 = "7a9896dc82ea82d4a5be0e9f26fb5ec534ff6f8be780e99b172abc923c58e242";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/megaparsec-tests-9.7.0-r6-17ffa8afe29f126eebffaa3399bedfc3701af6447ee17339f907196a09608263.nix;
+        revNum = 6;
+        revTimestamp = "2026-05-22T06:33:43Z";
+        sha256 = "17ffa8afe29f126eebffaa3399bedfc3701af6447ee17339f907196a09608263";
+      };
+      default = "r6";
     };
   };
   "9.7.1" = {

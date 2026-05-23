@@ -116,7 +116,13 @@
         revTimestamp = "2026-01-05T21:33:04Z";
         sha256 = "8ad07afb78284d5e869cd4dd1b6cda284e9a8eeae7898218dc3f4d0d8ebd8100";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/parser-combinators-tests-1.3.1-r1-d050bcba24512b412bd90c972734ba906f10b1a693ec5df5e327b6660ca1ab35.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-22T06:42:46Z";
+        sha256 = "d050bcba24512b412bd90c972734ba906f10b1a693ec5df5e327b6660ca1ab35";
+      };
+      default = "r1";
     };
   };
 }

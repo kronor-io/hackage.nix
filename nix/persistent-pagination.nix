@@ -44,7 +44,13 @@
         revTimestamp = "2020-12-01T20:36:53Z";
         sha256 = "502a076dfbed528dafaa9c0a4b676c44fa1844aafe9c3058f3027ad4b0cf1169";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/persistent-pagination-0.1.1.2-r1-1eb6f4c6c9f89821c2bc1a3c9dbdc0bd20faf07f15912584302fec181d60da16.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-22T15:33:28Z";
+        sha256 = "1eb6f4c6c9f89821c2bc1a3c9dbdc0bd20faf07f15912584302fec181d60da16";
+      };
+      default = "r1";
     };
   };
 }

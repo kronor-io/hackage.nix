@@ -170,7 +170,13 @@
         revTimestamp = "2024-07-07T15:26:02Z";
         sha256 = "a74b6b628267e716c6433740b2cd3b193a0252d37f24d037975f491f692515d8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/monad-metrics-0.2.2.2-r1-0163db9ca58a779346c1064e72b9315f7396970fc93d8b07e1641c290c12ba11.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-22T15:30:47Z";
+        sha256 = "0163db9ca58a779346c1064e72b9315f7396970fc93d8b07e1641c290c12ba11";
+      };
+      default = "r1";
     };
   };
 }
