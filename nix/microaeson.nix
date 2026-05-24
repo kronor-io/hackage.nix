@@ -140,7 +140,13 @@
         revTimestamp = "2026-01-10T17:29:37Z";
         sha256 = "810957efbd6b623b95c20be8c7bc9f89497785cfa1f77d8075cf269ed0ff976d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/microaeson-0.1.0.3-r2-93f4d54f3db613b31d772bf7def88589500a892c5d67b42dc5cc6593f922b09d.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-23T14:49:55Z";
+        sha256 = "93f4d54f3db613b31d772bf7def88589500a892c5d67b42dc5cc6593f922b09d";
+      };
+      default = "r2";
     };
   };
 }
