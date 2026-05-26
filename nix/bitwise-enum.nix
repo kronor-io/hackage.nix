@@ -182,7 +182,13 @@
         revTimestamp = "2025-01-11T18:55:37Z";
         sha256 = "f2f4b46fee6a1b8adf1f076a1df5fe1eae00d355833cb0bafb3b6bf1f967dea6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/bitwise-enum-1.0.1.2-r2-cbfd8407c54abe81548a25b9919052e442a672f84066686f176b3e7226b9089b.nix;
+        revNum = 2;
+        revTimestamp = "2026-05-25T21:07:09Z";
+        sha256 = "cbfd8407c54abe81548a25b9919052e442a672f84066686f176b3e7226b9089b";
+      };
+      default = "r2";
     };
   };
 }

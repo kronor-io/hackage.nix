@@ -20,7 +20,13 @@
         revTimestamp = "2026-04-13T16:24:31Z";
         sha256 = "bad5d05bfa338cbf61bdfc648c4997b0fc3df2c5b0eaf5b25c7f18d290172069";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ihp-zip-0.1.1-r1-8b52dd022caef797e49745d707a8909e91089049b4911575a54cd6b85210da1b.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-25T07:42:52Z";
+        sha256 = "8b52dd022caef797e49745d707a8909e91089049b4911575a54cd6b85210da1b";
+      };
+      default = "r1";
     };
   };
 }
