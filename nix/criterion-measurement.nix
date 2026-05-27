@@ -116,7 +116,13 @@
         revTimestamp = "2026-04-02T13:33:53Z";
         sha256 = "a7317b4641149d7c2d52139cefded6b7c37bef153a03e0150db00e3189a8c3b0";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/criterion-measurement-0.2.4.0-r1-6f3efce76ca5abdf9cb59cf2cfe5056eb24bd6c08bab102fcec5fc3fb3e63652.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-26T01:26:45Z";
+        sha256 = "6f3efce76ca5abdf9cb59cf2cfe5056eb24bd6c08bab102fcec5fc3fb3e63652";
+      };
+      default = "r1";
     };
   };
 }
