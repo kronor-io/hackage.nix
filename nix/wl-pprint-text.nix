@@ -170,7 +170,13 @@
         revTimestamp = "2024-08-11T17:48:57Z";
         sha256 = "1c4a530614dcba74090b9507e41909ba25a8089e5d5b2fe7f2a92bd8bedc81bd";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/wl-pprint-text-1.2.0.2-r4-f06d67cd63f6bda4b24299e26ddbf0e252574dc924473cfc5919af10da5d867e.nix;
+        revNum = 4;
+        revTimestamp = "2026-05-27T20:32:12Z";
+        sha256 = "f06d67cd63f6bda4b24299e26ddbf0e252574dc924473cfc5919af10da5d867e";
+      };
+      default = "r4";
     };
   };
 }

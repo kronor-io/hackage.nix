@@ -44,7 +44,13 @@
         revTimestamp = "2026-01-22T02:54:31Z";
         sha256 = "7c2be4d5333786c0e1f6ed7b856c9424c03965013e161bbab07f94bf9a095196";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/os-string-2.0.10-r1-cb379c1fb1a6d8c912d04df24ca8d42c6c8f3b8a81943e85847b4219fbd21578.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-27T17:34:39Z";
+        sha256 = "cb379c1fb1a6d8c912d04df24ca8d42c6c8f3b8a81943e85847b4219fbd21578";
+      };
+      default = "r1";
     };
   };
   "2.0.2" = {
