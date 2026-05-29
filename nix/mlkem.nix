@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.2.1.0" = {
+    sha256 = "6da2bc59835f0ddab892ede68ee1fd9d8230efd959462078c174866330068957";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mlkem-0.2.1.0-r0-d8f7017fcc3fb59eaa7614e10b03b11cff20f744ec5efcec0079581f917ef11f.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-28T20:13:41Z";
+        sha256 = "d8f7017fcc3fb59eaa7614e10b03b11cff20f744ec5efcec0079581f917ef11f";
+      };
+      default = "r0";
+    };
+  };
 }

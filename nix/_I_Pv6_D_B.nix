@@ -209,4 +209,16 @@
       default = "r1";
     };
   };
+  "0.3.3.5" = {
+    sha256 = "9e6b64a88905f81c799cf63ca369d9772787a57fd24621ba38ea6079f14c2bff";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/IPv6DB-0.3.3.5-r0-fe46105fca17c87f64bce2c4128190bb2cd2dfc9332087d49edd39bd493c3cd2.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-28T18:04:41Z";
+        sha256 = "fe46105fca17c87f64bce2c4128190bb2cd2dfc9332087d49edd39bd493c3cd2";
+      };
+      default = "r0";
+    };
+  };
 }

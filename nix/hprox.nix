@@ -239,4 +239,16 @@
       default = "r0";
     };
   };
+  "0.7.1" = {
+    sha256 = "c6681e4c6487c4f8f852f0a0f63e0e42b4a077a62825e64d89e778d96dfb8794";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hprox-0.7.1-r0-835da09a5818815cc55eb6e65272637e0c5466913c905043410a011a47b81b55.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-28T08:28:58Z";
+        sha256 = "835da09a5818815cc55eb6e65272637e0c5466913c905043410a011a47b81b55";
+      };
+      default = "r0";
+    };
+  };
 }
