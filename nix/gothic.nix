@@ -164,7 +164,13 @@
         revTimestamp = "2026-03-12T15:29:43Z";
         sha256 = "9f75c55cfc77e459fa3b84af9cec8d59a6040b5bc9f4a5de5e33c03cf6e27714";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gothic-0.1.8.5-r1-6b3bb67f8751af30f1e5ebd32874f2b6845e4f088c18101b56c22b5f121e2fbf.nix;
+        revNum = 1;
+        revTimestamp = "2026-05-29T14:02:14Z";
+        sha256 = "6b3bb67f8751af30f1e5ebd32874f2b6845e4f088c18101b56c22b5f121e2fbf";
+      };
+      default = "r1";
     };
   };
 }

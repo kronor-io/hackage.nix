@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "1.0.0.0" = {
+    sha256 = "fba89feab799b30e7c7bf076c6097693d262163ab622f7a8a8cc78c85471b468";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hs-opentelemetry-instrumentation-conduit-1.0.0.0-r0-c4eda1b6737857f88d652d1b1772fc21d8ebb3c0768f942535e6c2b45837d70e.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-29T14:41:32Z";
+        sha256 = "c4eda1b6737857f88d652d1b1772fc21d8ebb3c0768f942535e6c2b45837d70e";
+      };
+      default = "r0";
+    };
+  };
 }

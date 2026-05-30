@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "1.0.0.0" = {
+    sha256 = "93a8f856393f76e454aa29ba0b07e133d885c7f4e227bf8ceba73210343d3490";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hs-opentelemetry-instrumentation-cloudflare-1.0.0.0-r0-58cba475f334cd5120216b7547e71389c0dd556318227a9228d16607b1640f79.nix;
+        revNum = 0;
+        revTimestamp = "2026-05-29T14:41:33Z";
+        sha256 = "58cba475f334cd5120216b7547e71389c0dd556318227a9228d16607b1640f79";
+      };
+      default = "r0";
+    };
+  };
 }
