@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.1.0.8" = {
+    sha256 = "7b1b3a78ffb39d25aaea11b1eb85ef19ed435d09cc848a8a0b6251703b04c82b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/wordlist-0.1.0.8-r0-7b23ea89dad4437c25736221e6256f4bbbf5c6ac364891af11ec6e8c8543f1d6.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-03T05:21:21Z";
+        sha256 = "7b23ea89dad4437c25736221e6256f4bbbf5c6ac364891af11ec6e8c8543f1d6";
+      };
+      default = "r0";
+    };
+  };
 }
