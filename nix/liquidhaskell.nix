@@ -578,6 +578,24 @@
         revTimestamp = "2026-05-06T15:54:44Z";
         sha256 = "0abb4e532024418341663674eb4be2a4a0d533863d1df248509ec1c0f192a2fc";
       };
+      r1 = {
+        nix = import ../hackage/liquidhaskell-0.9.14.1-r1-6af2802aa06b63858916584b1c2d0743e8389fa164616fd4f21aa38693af2071.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-04T19:39:00Z";
+        sha256 = "6af2802aa06b63858916584b1c2d0743e8389fa164616fd4f21aa38693af2071";
+      };
+      default = "r1";
+    };
+  };
+  "0.9.14.1.1" = {
+    sha256 = "e23569bf6ae7f9bf5c180fc04b362244e433351feecf0b587b6801ca8c0a1032";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/liquidhaskell-0.9.14.1.1-r0-ba4af7a621d3598534eb6f5aa467828316e7a361b4492893eb9c5be029cc8d9f.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-04T19:45:12Z";
+        sha256 = "ba4af7a621d3598534eb6f5aa467828316e7a361b4492893eb9c5be029cc8d9f";
+      };
       default = "r0";
     };
   };

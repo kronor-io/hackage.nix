@@ -203,4 +203,16 @@
       default = "r3";
     };
   };
+  "0.2.8.1" = {
+    sha256 = "a8db84d4e9025d0b55d18cdbe9702008dc36f04c342d91818f691aa51751f3e0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/probability-0.2.8.1-r0-f8175da2460765bc631a26d05eaa7bbff5e30ce10d92c56efd1947642bf37708.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-04T20:45:27Z";
+        sha256 = "f8175da2460765bc631a26d05eaa7bbff5e30ce10d92c56efd1947642bf37708";
+      };
+      default = "r0";
+    };
+  };
 }

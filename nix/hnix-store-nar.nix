@@ -20,7 +20,13 @@
         revTimestamp = "2024-10-09T13:26:40Z";
         sha256 = "374b1d356d66c8657470f71f7ade7e9e0e34eee636d9bb8ffeb49c4ca25be6e9";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hnix-store-nar-0.1.1.0-r1-b018626e59f9244245c0e6bf789de268369301fbe7131de712afc512ab6bba8c.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-04T12:49:54Z";
+        sha256 = "b018626e59f9244245c0e6bf789de268369301fbe7131de712afc512ab6bba8c";
+      };
+      default = "r1";
     };
   };
 }

@@ -32,7 +32,13 @@
         revTimestamp = "2024-03-18T11:59:58Z";
         sha256 = "55aff6fd4c4a5a8bdf7d2722c0f14cbafdbd26fa0a39589d9a9e19a8893ea186";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/optparse-applicative-cmdline-util-0.2.1-r1-854c4aad9116d5329db9cd553f436c85ec1ae343f61480aabedd84693a75e01e.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-04T12:31:47Z";
+        sha256 = "854c4aad9116d5329db9cd553f436c85ec1ae343f61480aabedd84693a75e01e";
+      };
+      default = "r1";
     };
   };
 }
