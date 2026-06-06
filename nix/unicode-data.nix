@@ -188,7 +188,13 @@
         revTimestamp = "2025-09-16T04:55:33Z";
         sha256 = "f3538e3f61938edc4ebcd0b6c23b2cdcd5ebee4800aa993bca8712df72e87865";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/unicode-data-0.8.0-r1-10270c065629de12285387b514026c5efc497cd0692661daf388eaa463272c9b.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-05T08:27:34Z";
+        sha256 = "10270c065629de12285387b514026c5efc497cd0692661daf388eaa463272c9b";
+      };
+      default = "r1";
     };
   };
 }
