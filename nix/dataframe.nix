@@ -644,7 +644,13 @@
         revTimestamp = "2026-05-16T05:45:16Z";
         sha256 = "6fd5cc488d531d46ef0f2cd9c50dadffa7448172af225437981976742e91f7de";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-2.1.0.0-r1-bc28762ea015d189855773333a975e04ae35b47db135ee4d6fafe0e322d8bc3c.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-07T22:26:15Z";
+        sha256 = "bc28762ea015d189855773333a975e04ae35b47db135ee4d6fafe0e322d8bc3c";
+      };
+      default = "r1";
     };
   };
   "2.1.0.1" = {
@@ -656,7 +662,13 @@
         revTimestamp = "2026-05-29T05:05:54Z";
         sha256 = "d0a5fce51be35b9716096d5590409ff437807f3521ef1e1cfd610a27aa208625";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-2.1.0.1-r1-de85a3443a617d022e0ed6bd09e7448b3e9e0ddee4c5556dee5ac5e1a2f4822a.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-07T22:27:06Z";
+        sha256 = "de85a3443a617d022e0ed6bd09e7448b3e9e0ddee4c5556dee5ac5e1a2f4822a";
+      };
+      default = "r1";
     };
   };
   "2.1.0.2" = {
@@ -668,7 +680,13 @@
         revTimestamp = "2026-06-06T09:52:03Z";
         sha256 = "14fc5ddae2123296e96a1e9dc431f6e537ed0974ac3e70bdd894b5e56a329e9b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-2.1.0.2-r1-de4910e453e88e1828e975b48c5907747504617d49abe6a2eb9e36c6ddca59ff.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-07T22:28:31Z";
+        sha256 = "de4910e453e88e1828e975b48c5907747504617d49abe6a2eb9e36c6ddca59ff";
+      };
+      default = "r1";
     };
   };
 }
