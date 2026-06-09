@@ -290,7 +290,13 @@
         revTimestamp = "2026-03-07T19:21:25Z";
         sha256 = "7e68d21d9975883be0797cca337f6bfb7e72a50de77a10e5ce22e1ceaf81fb56";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/xmonad-contrib-0.18.2-r1-03c2e5e0c947e92edb4d46b7f252fe5b0fcc12881edc1e562214c7ae4720d479.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-08T14:58:45Z";
+        sha256 = "03c2e5e0c947e92edb4d46b7f252fe5b0fcc12881edc1e562214c7ae4720d479";
+      };
+      default = "r1";
     };
   };
   "0.5" = {
