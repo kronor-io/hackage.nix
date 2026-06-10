@@ -8,7 +8,13 @@
         revTimestamp = "2024-11-03T04:44:01Z";
         sha256 = "b2400029cbdd95c45e8dc011fdb9e750071f5049a9ff416f151306640e6e9a8e";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sandwich-contexts-0.3.0.0-r1-f5e4980dd7538289438d9677e4251f20ad089792a302b77c9823bd868f2066f2.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-09T10:23:13Z";
+        sha256 = "f5e4980dd7538289438d9677e4251f20ad089792a302b77c9823bd868f2066f2";
+      };
+      default = "r1";
     };
   };
   "0.3.0.1" = {
@@ -20,7 +26,13 @@
         revTimestamp = "2024-11-14T11:37:58Z";
         sha256 = "de63f120457c084035313f85fe323bc61a172c99a600b134b9322e26ac42a790";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sandwich-contexts-0.3.0.1-r1-028d449b92361f39d77e36516530db2e894a53363c3c3a425aadf589609e7112.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-09T10:23:13Z";
+        sha256 = "028d449b92361f39d77e36516530db2e894a53363c3c3a425aadf589609e7112";
+      };
+      default = "r1";
     };
   };
   "0.3.0.2" = {
@@ -32,7 +44,13 @@
         revTimestamp = "2025-03-10T20:05:54Z";
         sha256 = "72710d46aecc9ba659da10119a13eb05ca5cc309bf1f52e1fb1d8ff516cd432f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sandwich-contexts-0.3.0.2-r1-a58a9045919e97b4ea94ff692f98b79c60aa85f5362195617a20623f944abda8.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-09T10:23:13Z";
+        sha256 = "a58a9045919e97b4ea94ff692f98b79c60aa85f5362195617a20623f944abda8";
+      };
+      default = "r1";
     };
   };
   "0.3.0.3" = {
@@ -44,7 +62,13 @@
         revTimestamp = "2025-06-22T18:48:40Z";
         sha256 = "c4ff0ae6add411bafce6d15817eeb9df5a3c26025d18a8f939d5d44a5869f4b6";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/sandwich-contexts-0.3.0.3-r1-8a02fe2600f5c45983041f0ac065d7d306fd884f67e36746ef1d8e801d2db6d1.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-09T10:23:14Z";
+        sha256 = "8a02fe2600f5c45983041f0ac065d7d306fd884f67e36746ef1d8e801d2db6d1";
+      };
+      default = "r1";
     };
   };
   "0.3.0.4" = {

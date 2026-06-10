@@ -536,7 +536,19 @@
         revTimestamp = "2025-08-26T18:36:18Z";
         sha256 = "9ac338c8da52d8a37db08434ca4480fef2cea4f9aac240f4f994bb467f5275b4";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/vector-0.13.2.0-r3-b28401c4550a63e54e212a83ee752230c4452dcd6a6e50a967e31627b8b2a648.nix;
+        revNum = 3;
+        revTimestamp = "2026-06-09T16:26:51Z";
+        sha256 = "b28401c4550a63e54e212a83ee752230c4452dcd6a6e50a967e31627b8b2a648";
+      };
+      r4 = {
+        nix = import ../hackage/vector-0.13.2.0-r4-47cd3fb53bd7670d3aaf116e4915a81bf553e2be6d963237a7e2b459a5343eb7.nix;
+        revNum = 4;
+        revTimestamp = "2026-06-09T16:44:18Z";
+        sha256 = "47cd3fb53bd7670d3aaf116e4915a81bf553e2be6d963237a7e2b459a5343eb7";
+      };
+      default = "r4";
     };
   };
   "0.2" = {
