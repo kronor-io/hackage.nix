@@ -179,4 +179,16 @@
       default = "r0";
     };
   };
+  "0.6.0" = {
+    sha256 = "edb9bd5fe6bcc788fdb7491099c7b1207e91f6b02d229535cf10fd8575cc3bdf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hpack-dhall-0.6.0-r0-66d179aa8fb57fd5410d4f0b5879428cd17f86572b52c45ceee3cf0302db4674.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-10T20:13:12Z";
+        sha256 = "66d179aa8fb57fd5410d4f0b5879428cd17f86572b52c45ceee3cf0302db4674";
+      };
+      default = "r0";
+    };
+  };
 }
