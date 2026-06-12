@@ -41,4 +41,16 @@
       default = "r0";
     };
   };
+  "0.1.3" = {
+    sha256 = "630be93c5a441ea1da7d47b14f188496b8909f2b3daa0ddc593b1a7d8ef2edd0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fpe-0.1.3-r0-ffbc7fffb0bb15714c646f2f5cd2f1be00f9173542aee3455daf0975613becee.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-11T03:26:41Z";
+        sha256 = "ffbc7fffb0bb15714c646f2f5cd2f1be00f9173542aee3455daf0975613becee";
+      };
+      default = "r0";
+    };
+  };
 }
