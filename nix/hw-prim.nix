@@ -1412,7 +1412,13 @@
         revTimestamp = "2025-03-08T01:54:25Z";
         sha256 = "9ce81e5b8bd1ef39d5d0f16f6a7fb840fb632eda7d191a33c73dc0ce6bab6b60";
       };
-      default = "r3";
+      r4 = {
+        nix = import ../hackage/hw-prim-0.6.3.2-r4-b7151fa1de2daa7cf4c74d91a6286fde3ec3b2208a996bbfb44f0d8c8a5d6244.nix;
+        revNum = 4;
+        revTimestamp = "2026-06-12T05:41:06Z";
+        sha256 = "b7151fa1de2daa7cf4c74d91a6286fde3ec3b2208a996bbfb44f0d8c8a5d6244";
+      };
+      default = "r4";
     };
   };
 }
