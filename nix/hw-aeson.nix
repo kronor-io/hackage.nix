@@ -176,7 +176,13 @@
         revTimestamp = "2023-12-18T10:48:43Z";
         sha256 = "ca918903077c5d51de60ef9ed69553e7f7dff91db783436d038ff9656d80004f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hw-aeson-0.1.9.0-r1-5e92ef6260f5aafab31bb1b83a9191136f28b7dd0859922d9e0999cf9e78a217.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-13T14:15:41Z";
+        sha256 = "5e92ef6260f5aafab31bb1b83a9191136f28b7dd0859922d9e0999cf9e78a217";
+      };
+      default = "r1";
     };
   };
 }
