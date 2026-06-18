@@ -50,7 +50,13 @@
         revTimestamp = "2026-06-15T04:50:42Z";
         sha256 = "3f46041ff4cf82ed118cf1fa7d71b9815e73e04b17339c7c9ba0446547343bb1";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-learn-1.1.0.0-r1-3692031878696c2d179793d69574a8e3a661bbc88d8ce88583276a8ad60c2768.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-17T01:01:58Z";
+        sha256 = "3692031878696c2d179793d69574a8e3a661bbc88d8ce88583276a8ad60c2768";
+      };
+      default = "r1";
     };
   };
 }

@@ -416,7 +416,13 @@
         revTimestamp = "2026-05-13T18:50:23Z";
         sha256 = "cdaa2d780eb37f0d3e075d81668de28eab9d3a27681234951ccb6daa2dce921f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tree-diff-0.4.1-r1-4500b9bc04c37e303e2f08c6913dabfe2c073f088012c062a8573a9690b2b751.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-17T14:11:58Z";
+        sha256 = "4500b9bc04c37e303e2f08c6913dabfe2c073f088012c062a8573a9690b2b751";
+      };
+      default = "r1";
     };
   };
 }

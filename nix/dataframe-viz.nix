@@ -56,7 +56,13 @@
         revTimestamp = "2026-06-15T04:49:48Z";
         sha256 = "c3738ccb4a18790ebf2063f3ea9abc50bde2d59a0d6d0c02e3ab9024fc71f7ff";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-viz-1.0.3.0-r1-663e96b79111524959c60fb9c0dd4f128c4ba03edef0ecc23325fde8b1ae75e5.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-17T01:09:25Z";
+        sha256 = "663e96b79111524959c60fb9c0dd4f128c4ba03edef0ecc23325fde8b1ae75e5";
+      };
+      default = "r1";
     };
   };
 }

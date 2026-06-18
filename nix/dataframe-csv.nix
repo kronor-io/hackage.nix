@@ -44,7 +44,13 @@
         revTimestamp = "2026-06-15T04:50:01Z";
         sha256 = "2deed310d4496be79e09572164903a6ed1572b53150e901ffb6e315b044c8134";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-csv-1.0.2.0-r1-19920aa5e6028d00b716bf0e8ed3d3aa4461e791ea0a0d29507f21ef30fbeceb.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-17T00:58:06Z";
+        sha256 = "19920aa5e6028d00b716bf0e8ed3d3aa4461e791ea0a0d29507f21ef30fbeceb";
+      };
+      default = "r1";
     };
   };
 }
