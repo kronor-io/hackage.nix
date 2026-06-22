@@ -371,4 +371,16 @@
       default = "r0";
     };
   };
+  "0.4.5" = {
+    sha256 = "9d5d223d1dd920cc5ee8e7b93cd7a59c7aa8e745dab21145a005a4439290d94d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mime-mail-ses-0.4.5-r0-72c7ded8f227f88abbe47ac2a181d153bf263056e5d7beb5a65b270812d6fb17.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-21T19:24:26Z";
+        sha256 = "72c7ded8f227f88abbe47ac2a181d153bf263056e5d7beb5a65b270812d6fb17";
+      };
+      default = "r0";
+    };
+  };
 }

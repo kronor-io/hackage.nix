@@ -296,7 +296,13 @@
         revTimestamp = "2025-07-18T09:40:05Z";
         sha256 = "5b9945f159a6ecd9b99e9caea670a00364d2e0eaf016ebb60a6529af58e4abbf";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/servant-quickcheck-0.1.1.0-r3-be1c6d6a6caa8132cc75a16c57912da8a3a35414500fabb0f5959406d13eb51d.nix;
+        revNum = 3;
+        revTimestamp = "2026-06-21T21:37:40Z";
+        sha256 = "be1c6d6a6caa8132cc75a16c57912da8a3a35414500fabb0f5959406d13eb51d";
+      };
+      default = "r3";
     };
   };
 }
