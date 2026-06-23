@@ -86,7 +86,13 @@
         revTimestamp = "2026-02-07T10:40:04Z";
         sha256 = "98d0bc725da4ee3b9f32605b16700561c984016d1b19258f75d2cb09a5de052d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/inf-backprop-0.2.0.2-r2-6a9653e9b51624409cf0cbf88d3c9d3d94d15cd9c9cec6879485c5164743c2e5.nix;
+        revNum = 2;
+        revTimestamp = "2026-06-22T15:50:52Z";
+        sha256 = "6a9653e9b51624409cf0cbf88d3c9d3d94d15cd9c9cec6879485c5164743c2e5";
+      };
+      default = "r2";
     };
   };
 }
