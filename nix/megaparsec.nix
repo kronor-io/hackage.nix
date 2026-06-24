@@ -869,4 +869,16 @@
       default = "r1";
     };
   };
+  "9.8.1" = {
+    sha256 = "e05c71a12a085b8e87f156dfee4a9a7c8cbd483a3abe9c779f921d0563b97aa8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/megaparsec-9.8.1-r0-3d5c3b29e01f8f047e5a84cb3232e5b78c14056e57449a8688a29fbaef55c337.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-23T16:03:40Z";
+        sha256 = "3d5c3b29e01f8f047e5a84cb3232e5b78c14056e57449a8688a29fbaef55c337";
+      };
+      default = "r0";
+    };
+  };
 }

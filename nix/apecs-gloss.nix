@@ -86,7 +86,13 @@
         revTimestamp = "2026-06-06T13:14:40Z";
         sha256 = "04abcba11c0f90c74405768bb1574aaa02f276c98ce8e99e01b9f9bc4ae0008d";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/apecs-gloss-0.2.4-r2-8bb8dc1f6b2029bb7d1fc5986121cd37822abcce849efc8c55e37fb6f0202f15.nix;
+        revNum = 2;
+        revTimestamp = "2026-06-23T17:38:52Z";
+        sha256 = "8bb8dc1f6b2029bb7d1fc5986121cd37822abcce849efc8c55e37fb6f0202f15";
+      };
+      default = "r2";
     };
   };
 }

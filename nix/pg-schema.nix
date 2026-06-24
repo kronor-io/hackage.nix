@@ -167,4 +167,16 @@
       default = "r0";
     };
   };
+  "0.8.1.0" = {
+    sha256 = "0b4db73793b5884efb62691ef92c4cb4be86e005a4d35b662db8145492b1fca8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pg-schema-0.8.1.0-r0-fbad55db83cad358110ddaf0257ccf33b3f49778124a501d71cf4d6ac1881a54.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-23T14:38:21Z";
+        sha256 = "fbad55db83cad358110ddaf0257ccf33b3f49778124a501d71cf4d6ac1881a54";
+      };
+      default = "r0";
+    };
+  };
 }
