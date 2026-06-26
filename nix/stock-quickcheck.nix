@@ -32,7 +32,13 @@
         revTimestamp = "2026-06-24T00:26:33Z";
         sha256 = "1b50e87e7550619d102ffca8412147cf878244fd8445172dc41652c637c0dd0a";
       };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/stock-quickcheck-0.1.0.0-r5-82c5a3d16f94094f89a30b2acc91b5fe1ddb84cf507060b01d8fa1daa9c332c9.nix;
+        revNum = 5;
+        revTimestamp = "2026-06-24T01:43:56Z";
+        sha256 = "82c5a3d16f94094f89a30b2acc91b5fe1ddb84cf507060b01d8fa1daa9c332c9";
+      };
+      default = "r5";
     };
   };
 }

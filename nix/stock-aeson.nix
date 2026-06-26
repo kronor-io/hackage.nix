@@ -32,7 +32,13 @@
         revTimestamp = "2026-06-24T00:23:27Z";
         sha256 = "a0759f5a264da898a63d1c87bacbe392ca13984f6017dafee0a4ac82171b8a8a";
       };
-      default = "r4";
+      r5 = {
+        nix = import ../hackage/stock-aeson-0.1.0.0-r5-b239538b286acc3017a09cd991d7ad174d7dac8e95e576ae78bd19f6ae0c2086.nix;
+        revNum = 5;
+        revTimestamp = "2026-06-24T01:45:15Z";
+        sha256 = "b239538b286acc3017a09cd991d7ad174d7dac8e95e576ae78bd19f6ae0c2086";
+      };
+      default = "r5";
     };
   };
 }

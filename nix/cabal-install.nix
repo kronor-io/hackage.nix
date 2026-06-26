@@ -1220,7 +1220,13 @@
         revTimestamp = "2026-01-01T17:11:21Z";
         sha256 = "c15af1c2216f376663c730ece1436d7c9931543d1a3a38520b524c43a8cf284d";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/cabal-install-3.14.2.0-r6-1eec83bb7bd23c0147b6d09ba0186f112cfb562ba34eb4ac3b9da46fe97007b1.nix;
+        revNum = 6;
+        revTimestamp = "2026-06-25T12:28:55Z";
+        sha256 = "1eec83bb7bd23c0147b6d09ba0186f112cfb562ba34eb4ac3b9da46fe97007b1";
+      };
+      default = "r6";
     };
   };
   "3.16.0.0" = {
@@ -1280,7 +1286,13 @@
         revTimestamp = "2026-05-08T22:40:19Z";
         sha256 = "5ec033144fc15f7cce55a625c5869c01eae15fcc5dc2d733ee697b8b596e16b0";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/cabal-install-3.16.1.0-r3-32407e9a5db05191c02ca582c50c3ef205f33be15107f73a758ecb3c57912211.nix;
+        revNum = 3;
+        revTimestamp = "2026-06-25T12:28:16Z";
+        sha256 = "32407e9a5db05191c02ca582c50c3ef205f33be15107f73a758ecb3c57912211";
+      };
+      default = "r3";
     };
   };
   "3.2.0.0" = {

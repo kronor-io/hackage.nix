@@ -423,6 +423,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "GeBoP" = import ./nix/_Ge_Bo_P.nix;
   "GenI" = import ./nix/_Gen_I.nix;
   "GenSmsPdu" = import ./nix/_Gen_Sms_Pdu.nix;
+  "GenZ" = import ./nix/_Gen_Z.nix;
   "Genbank" = import ./nix/_Genbank.nix;
   "Gene-CluEDO" = import ./nix/_Gene-_Clu_E_D_O.nix;
   "GeneralTicTacToe" = import ./nix/_General_Tic_Tac_Toe.nix;
@@ -10133,6 +10134,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "keyed-vals-mem" = import ./nix/keyed-vals-mem.nix;
   "keyed-vals-redis" = import ./nix/keyed-vals-redis.nix;
   "keylayouts" = import ./nix/keylayouts.nix;
+  "keymapp" = import ./nix/keymapp.nix;
   "keyring" = import ./nix/keyring.nix;
   "keys" = import ./nix/keys.nix;
   "keysafe" = import ./nix/keysafe.nix;
@@ -15162,6 +15164,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "servant-nix" = import ./nix/servant-nix.nix;
   "servant-oauth2" = import ./nix/servant-oauth2.nix;
   "servant-oauth2-examples" = import ./nix/servant-oauth2-examples.nix;
+  "servant-openapi-hs" = import ./nix/servant-openapi-hs.nix;
   "servant-openapi3" = import ./nix/servant-openapi3.nix;
   "servant-options" = import ./nix/servant-options.nix;
   "servant-pagination" = import ./nix/servant-pagination.nix;
