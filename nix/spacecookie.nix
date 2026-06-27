@@ -104,7 +104,13 @@
         revTimestamp = "2026-04-06T22:05:45Z";
         sha256 = "87414fe94b7c89fad9ada2ed67f255c7b6e5dc48d1372c9d8e8cb7d2ab4835cf";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/spacecookie-1.0.0.3-r2-5417b7c33b4e449c8518cc2ae97292c04732eba1c6fffda9aeedde81982a0875.nix;
+        revNum = 2;
+        revTimestamp = "2026-06-26T08:47:17Z";
+        sha256 = "5417b7c33b4e449c8518cc2ae97292c04732eba1c6fffda9aeedde81982a0875";
+      };
+      default = "r2";
     };
   };
   "1.1.0.0" = {
@@ -116,7 +122,13 @@
         revTimestamp = "2026-04-07T09:56:41Z";
         sha256 = "231259c257af852da4f768e9c88dc3d23a4100d647398843a7d3ff1f3d6f0de2";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/spacecookie-1.1.0.0-r1-de865e2e01e9650cfb43c58897391ef83a7888dfe099af225d4bb0947c455d0a.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-26T08:46:39Z";
+        sha256 = "de865e2e01e9650cfb43c58897391ef83a7888dfe099af225d4bb0947c455d0a";
+      };
+      default = "r1";
     };
   };
   "1.1.0.1" = {
@@ -128,7 +140,13 @@
         revTimestamp = "2026-04-17T09:20:27Z";
         sha256 = "4253e17308df0ea093a366eabbf5dfdc50f5f1c705b8d30687fe1d3525ffcb7b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/spacecookie-1.1.0.1-r1-ef798f3b3f19e827ba744f4249465e3979fa3eab97e00ebfde91aa035b78bf60.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-26T08:46:22Z";
+        sha256 = "ef798f3b3f19e827ba744f4249465e3979fa3eab97e00ebfde91aa035b78bf60";
+      };
+      default = "r1";
     };
   };
 }

@@ -191,4 +191,16 @@
       default = "r0";
     };
   };
+  "0.9" = {
+    sha256 = "581cf41645c47c5c67b8d0f0db4ad035569b04b3637039a3afe360bab28e4981";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fedora-repoquery-0.9-r0-4cd7ca0b7199e340d6db9187d009ec2a5f20166697a014a208d7259c040edec6.nix;
+        revNum = 0;
+        revTimestamp = "2026-06-26T14:00:53Z";
+        sha256 = "4cd7ca0b7199e340d6db9187d009ec2a5f20166697a014a208d7259c040edec6";
+      };
+      default = "r0";
+    };
+  };
 }

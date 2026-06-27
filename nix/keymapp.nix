@@ -8,7 +8,13 @@
         revTimestamp = "2026-06-25T19:23:13Z";
         sha256 = "951c9de7610bc34448d67b46e82a2815fd36649439d26dc1b6fe15851169349b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/keymapp-0.1.0-r1-dc4e9d7e1d3d8b6b235db561fe7129b50a818dc3fafd5367d87fa9bfd36073e8.nix;
+        revNum = 1;
+        revTimestamp = "2026-06-26T08:52:22Z";
+        sha256 = "dc4e9d7e1d3d8b6b235db561fe7129b50a818dc3fafd5367d87fa9bfd36073e8";
+      };
+      default = "r1";
     };
   };
 }
