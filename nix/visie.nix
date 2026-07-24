@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.6.2.0" = {
+    sha256 = "c76ad6c1bce42793cce3742ee05be9e52c60a427bbfea6d1ad7391b1008e828f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/visie-0.6.2.0-r0-e30006472d28cc9b740895b0dd64e5201dbce0a2544d0972ef52258c1500e115.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-01T08:51:49Z";
+        sha256 = "e30006472d28cc9b740895b0dd64e5201dbce0a2544d0972ef52258c1500e115";
+      };
+      default = "r0";
+    };
+  };
 }

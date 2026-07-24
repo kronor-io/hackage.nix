@@ -518,6 +518,24 @@
         revTimestamp = "2025-03-14T18:56:15Z";
         sha256 = "becdb48c4cd27572fda24d8a375a9b9e56417207fdfe0a8b7b2f794ef81739ca";
       };
+      r1 = {
+        nix = import ../hackage/hopenpgp-tools-0.23.11-r1-61b5678b389d57762ca9d7f937a48c78227a7673894473d4a5119bc2d52ae29c.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-08T01:17:40Z";
+        sha256 = "61b5678b389d57762ca9d7f937a48c78227a7673894473d4a5119bc2d52ae29c";
+      };
+      default = "r1";
+    };
+  };
+  "0.23.11.1" = {
+    sha256 = "d79adea3ce0d399409d40571e149a17f895e88d79cb50c37cfed94f903815031";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hopenpgp-tools-0.23.11.1-r0-fb067746028d0dc05d38f85f2a2d71e6d8225a6f8f3cac26407b1598935dd332.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-09T00:17:58Z";
+        sha256 = "fb067746028d0dc05d38f85f2a2d71e6d8225a6f8f3cac26407b1598935dd332";
+      };
       default = "r0";
     };
   };
@@ -619,6 +637,30 @@
         revNum = 0;
         revTimestamp = "2024-09-30T16:37:03Z";
         sha256 = "2e24278e396f35f0fa8d1b2a07e04a7c2fe5d9c1eae5d6b0d11753e5ecc31529";
+      };
+      default = "r0";
+    };
+  };
+  "0.24" = {
+    sha256 = "717b919db0cc9971ea2bae152bf91f435cad7111a71d73360ae6b969f82484f3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hopenpgp-tools-0.24-r0-aac996977f0e9c380076fd2db32591ed89d81f3b38a67d660e33e21a79c08d70.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T01:16:50Z";
+        sha256 = "aac996977f0e9c380076fd2db32591ed89d81f3b38a67d660e33e21a79c08d70";
+      };
+      default = "r0";
+    };
+  };
+  "0.25" = {
+    sha256 = "20f8ca76d3bf6afac2a3f0e63448a97279fe89ad51ffd2c41f04d881172395c0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hopenpgp-tools-0.25-r0-3cf51dd7867b550e56a77d967e09e9184dfa158063f55755a1934a3c86370871.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-22T21:34:58Z";
+        sha256 = "3cf51dd7867b550e56a77d967e09e9184dfa158063f55755a1934a3c86370871";
       };
       default = "r0";
     };

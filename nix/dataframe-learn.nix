@@ -77,4 +77,28 @@
       default = "r1";
     };
   };
+  "2.0.0.0" = {
+    sha256 = "0798962332e6673f5674c7221eba46dc368696dd59a1a977a24c46cdf44c7930";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-learn-2.0.0.0-r0-49533bac879303faa16015360bce1761441c77c2efdc2619936a7a49dcbaf3ed.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-13T23:02:54Z";
+        sha256 = "49533bac879303faa16015360bce1761441c77c2efdc2619936a7a49dcbaf3ed";
+      };
+      default = "r0";
+    };
+  };
+  "2.1.0.0" = {
+    sha256 = "7470834fd282c175007df6d9fc4a6c7b46d94c964b11f9991376b5b0fc398fd0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-learn-2.1.0.0-r0-815e053779b3af143463a1abe11afb45cdcbefb9697e983ca7371df8134f3ab6.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T00:28:08Z";
+        sha256 = "815e053779b3af143463a1abe11afb45cdcbefb9697e983ca7371df8134f3ab6";
+      };
+      default = "r0";
+    };
+  };
 }

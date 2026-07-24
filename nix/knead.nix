@@ -167,4 +167,16 @@
       default = "r1";
     };
   };
+  "1.0.2" = {
+    sha256 = "c0e1b1f185ecf5c13395d741f0698c2d17e3820188ef413f27247a1a0abfad98";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/knead-1.0.2-r0-6b9afbefce2ac76da9010c92e885fec2b03983bc71c4d2e352258a1934b28496.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-12T17:23:23Z";
+        sha256 = "6b9afbefce2ac76da9010c92e885fec2b03983bc71c4d2e352258a1934b28496";
+      };
+      default = "r0";
+    };
+  };
 }

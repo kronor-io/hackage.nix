@@ -677,4 +677,40 @@
       default = "r0";
     };
   };
+  "7.2.5" = {
+    sha256 = "89fa95e898067f18e388e68b941dcef09ebdfe26c96d5534592390642bf3aaf5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/taffybar-7.2.5-r0-c8a97a0adab3434d90a230695e76d4b5c13506f171b5eb82027ed32498f4c8fd.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T21:07:14Z";
+        sha256 = "c8a97a0adab3434d90a230695e76d4b5c13506f171b5eb82027ed32498f4c8fd";
+      };
+      default = "r0";
+    };
+  };
+  "7.2.6" = {
+    sha256 = "be8f1eea3570f11ad505413f726bce389ecddf39a42b42fb2812025001a3a8b0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/taffybar-7.2.6-r0-2a41a1fda28850538c268c1b7aa5483db6f17c263dae47c8b59fd587802536c6.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-15T20:56:54Z";
+        sha256 = "2a41a1fda28850538c268c1b7aa5483db6f17c263dae47c8b59fd587802536c6";
+      };
+      default = "r0";
+    };
+  };
+  "7.2.7" = {
+    sha256 = "1776f021a9c2a41f027be6c50c7cc29355d0b79491211ca2453850e26f533bdd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/taffybar-7.2.7-r0-fe350cdfef099acaa4e772e1568ee221f4865eb274c57b67ba63f0a36516a177.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T19:57:11Z";
+        sha256 = "fe350cdfef099acaa4e772e1568ee221f4865eb274c57b67ba63f0a36516a177";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -107,4 +107,28 @@
       default = "r0";
     };
   };
+  "2.0.0.0" = {
+    sha256 = "870667d1a9ad86edc30ca22d117c891a7e50b4f3d3aa69d5fba5dc06469f92e4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-core-2.0.0.0-r0-7772dfdca75db3022c92d0864e9e47d87bd8bcf1c87d0bdb243cad1c01a4bf07.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-13T22:48:54Z";
+        sha256 = "7772dfdca75db3022c92d0864e9e47d87bd8bcf1c87d0bdb243cad1c01a4bf07";
+      };
+      default = "r0";
+    };
+  };
+  "2.1.0.0" = {
+    sha256 = "2726b826b6676e80cb7b0d6cc0818d0a6a75e8058a262cbf21d2b865a00b458c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-core-2.1.0.0-r0-69b84d7dd4575acf2a26816bfacb71d60229aeb572888b1016f6cc8df0fc67bb.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T00:24:01Z";
+        sha256 = "69b84d7dd4575acf2a26816bfacb71d60229aeb572888b1016f6cc8df0fc67bb";
+      };
+      default = "r0";
+    };
+  };
 }

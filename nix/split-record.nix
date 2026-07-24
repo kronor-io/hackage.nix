@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.1.1.5" = {
+    sha256 = "bae31fb326e89eceac873718a1c8644fefbde2322d8d9bd5648e1755b143633e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/split-record-0.1.1.5-r0-3e49018d1245c00d6931fb40620143c85feba87d2696626c8748d67210e2b7c6.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-11T17:13:03Z";
+        sha256 = "3e49018d1245c00d6931fb40620143c85feba87d2696626c8748d67210e2b7c6";
+      };
+      default = "r0";
+    };
+  };
 }

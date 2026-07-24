@@ -80,7 +80,13 @@
         revTimestamp = "2025-09-22T02:11:07Z";
         sha256 = "8c4afe7a696682dadd042c1e323d43ae7361a443c29b4992984d54b374f254c3";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/microlens-pro-0.2.0.5-r1-298ec50941b452d9def71084dc3c61c872d4552d219b55500a2ec9cf3bd6d3eb.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-02T02:22:47Z";
+        sha256 = "298ec50941b452d9def71084dc3c61c872d4552d219b55500a2ec9cf3bd6d3eb";
+      };
+      default = "r1";
     };
   };
 }

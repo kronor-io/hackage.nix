@@ -47,4 +47,40 @@
       default = "r0";
     };
   };
+  "0.3.0" = {
+    sha256 = "7cfa528bdcbe563372da030bddcbc1d2c5b0d61a04bd59960d9ee82bc916f1b1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/free-foil-0.3.0-r0-3310ff700ea0aa9d75afcaf1c98e7861f23108c3fa2be53dbc5b1dbb1f8ab6c4.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-14T15:34:22Z";
+        sha256 = "3310ff700ea0aa9d75afcaf1c98e7861f23108c3fa2be53dbc5b1dbb1f8ab6c4";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.1" = {
+    sha256 = "0e516ee3d378b7aec4e5e8e7602b7386d139a258d2d25dcdb9d606e7ed90990f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/free-foil-0.3.1-r0-820e82d81cab094958e770984d8493a162e776c38936fc466c1daf8fe6cdeb57.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-14T17:44:56Z";
+        sha256 = "820e82d81cab094958e770984d8493a162e776c38936fc466c1daf8fe6cdeb57";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.2" = {
+    sha256 = "adb275d57b12c7f4457476bd62e7ef760b6bf5801e374441192e06e4f6edf564";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/free-foil-0.3.2-r0-cec5ff659a0214561bc7d5dc056137d1451d84e7133c658868e7f0ee1d762ee4.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-15T07:54:29Z";
+        sha256 = "cec5ff659a0214561bc7d5dc056137d1451d84e7133c658868e7f0ee1d762ee4";
+      };
+      default = "r0";
+    };
+  };
 }

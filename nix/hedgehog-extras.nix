@@ -26,7 +26,13 @@
         revTimestamp = "2026-03-30T00:45:47Z";
         sha256 = "f79886946d987cea3a938f67458a337abccf6acc896de5c421669f21ad30e167";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hedgehog-extras-0.10.1.0-r2-53e4cef4f15ff3b9c2072343a42873993c8376b48bb4d159006e0a98214ff382.nix;
+        revNum = 2;
+        revTimestamp = "2026-07-20T00:50:23Z";
+        sha256 = "53e4cef4f15ff3b9c2072343a42873993c8376b48bb4d159006e0a98214ff382";
+      };
+      default = "r2";
     };
   };
   "0.3.0.1" = {

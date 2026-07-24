@@ -2687,4 +2687,16 @@
       default = "r1";
     };
   };
+  "2.3.1.0" = {
+    sha256 = "ecf3ef2646a27cafc891de9e382c28fdde661cd4254d241e4af895b395234909";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/aeson-2.3.1.0-r0-9570d664d4ca7a8bf9177b0d0849909554042cc39b260e3e19d1bd6a7d2d5433.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-05T10:37:44Z";
+        sha256 = "9570d664d4ca7a8bf9177b0d0849909554042cc39b260e3e19d1bd6a7d2d5433";
+      };
+      default = "r0";
+    };
+  };
 }

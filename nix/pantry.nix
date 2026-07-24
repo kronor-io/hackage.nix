@@ -158,7 +158,37 @@
         revTimestamp = "2026-07-01T00:33:51Z";
         sha256 = "753e5dfe0bd822263db10c889e05288064f9ede0879d3854c44abbf3dac6dd1e";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/pantry-0.11.2-r2-a6f7b320db821792262c20b87f678150c8e702c118231322d166142e52ed206a.nix;
+        revNum = 2;
+        revTimestamp = "2026-07-01T21:58:43Z";
+        sha256 = "a6f7b320db821792262c20b87f678150c8e702c118231322d166142e52ed206a";
+      };
+      default = "r2";
+    };
+  };
+  "0.11.3" = {
+    sha256 = "eb91ea5de950e2b3b3c70c30b9f3675c6dd7d61181597f1f29f0cad0080fc3de";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pantry-0.11.3-r0-96fa2c7fa6cee9e470f984da567492f6bfaee058d14c1456f4f79b68a78d7be2.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T00:02:36Z";
+        sha256 = "96fa2c7fa6cee9e470f984da567492f6bfaee058d14c1456f4f79b68a78d7be2";
+      };
+      default = "r0";
+    };
+  };
+  "0.11.4" = {
+    sha256 = "fea9ad912d57c398c9fee5ef6a0b4a71007b0eec07cd6da835f9f5dd89f82350";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pantry-0.11.4-r0-9885d02c58e8725179146352b6d3f57395d3f1337c7713dc1409c61c9c21bb09.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-07T13:34:13Z";
+        sha256 = "9885d02c58e8725179146352b6d3f57395d3f1337c7713dc1409c61c9c21bb09";
+      };
+      default = "r0";
     };
   };
   "0.2.0.0" = {

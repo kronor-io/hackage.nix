@@ -28,7 +28,7 @@
           (hsPkgs."base" or (errorHandler.buildDepError "base"))
           (hsPkgs."deepseq" or (errorHandler.buildDepError "deepseq"))
         ] ++ pkgs.lib.optionals (!(compiler.isGhcjs && true)) (pkgs.lib.optional (!(compiler.isGhc && true)) (hsPkgs."time" or (errorHandler.buildDepError "time")));
-        frameworks = pkgs.lib.optionals (!(compiler.isGhcjs && true)) (pkgs.lib.optionals (compiler.isGhc && true) (pkgs.lib.optionals (!system.isWindows) (pkgs.lib.optional (system.isOsx || system.isIos) (pkgs."Security" or (errorHandler.sysDepError "Security")))));
+        frameworks = pkgs.lib.optionals (!(compiler.isGhcjs && true)) (pkgs.lib.optionals (compiler.isGhc && true) (pkgs.lib.optionals (!system.isWindows) (pkgs.lib.optional (system.isOsx || system.isIOS) (pkgs."Security" or (errorHandler.sysDepError "Security")))));
         buildable = true;
       };
       tests = {

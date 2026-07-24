@@ -35,4 +35,28 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "dae0e159dc2a5b679d77c33cdec09a56667470b4b824053966cda1091a618414";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shikumi-cache-postgres-0.1.2.0-r0-78d7b1bbf3ced847db7a2d773758c8f9e0379ee636a4162926df9c48db49a493.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-05T03:56:10Z";
+        sha256 = "78d7b1bbf3ced847db7a2d773758c8f9e0379ee636a4162926df9c48db49a493";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.2.1" = {
+    sha256 = "cc9375b7ee5da7c1d94ea4d428e50803f5bf9576b8d3652d6ada5d15c7716644";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shikumi-cache-postgres-0.1.2.1-r0-1a963186d2f7a38d0cdd1328926a9c2aaa677ef6cec7e2869511de98ba66fd14.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T02:42:15Z";
+        sha256 = "1a963186d2f7a38d0cdd1328926a9c2aaa677ef6cec7e2869511de98ba66fd14";
+      };
+      default = "r0";
+    };
+  };
 }

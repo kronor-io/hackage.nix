@@ -35,4 +35,52 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "597f9ffa7a04139487807f06deab2811542967c26e56544d0a6503ed629c0af5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-0.3.0.0-r0-9887194a274bde93071298785f5254f65ba2e5fb796a336480602c774ce87d4e.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T19:15:21Z";
+        sha256 = "9887194a274bde93071298785f5254f65ba2e5fb796a336480602c774ce87d4e";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.1.0" = {
+    sha256 = "4fd22448771fc7989ccbf4d54e68b6dda259378b5001648f2518de72914424c3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-0.3.1.0-r0-ba4943ee8e0bacc227cc94c179506c87cbb5b80cbcdc024d3e516ae99029588c.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-15T14:13:07Z";
+        sha256 = "ba4943ee8e0bacc227cc94c179506c87cbb5b80cbcdc024d3e516ae99029588c";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.0.0" = {
+    sha256 = "26cbb6d318480a8aeb9971a45451d1b4e528c4685fa43cc3bb89c580ba67747c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-0.4.0.0-r0-6369f62e58c320be3f829866d762c4380b4320afdc9dadf533d328287ce9db54.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T16:38:50Z";
+        sha256 = "6369f62e58c320be3f829866d762c4380b4320afdc9dadf533d328287ce9db54";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.1.0" = {
+    sha256 = "94ef294d1e332bdc3efeae0b270abeb03dac3f92330d1534d8a994d85b7885cf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-0.4.1.0-r0-a3042d9b195c2ff6bc04a10e0ff06ed2604181b3ff6a6caca03350a4e10a130e.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T00:29:52Z";
+        sha256 = "a3042d9b195c2ff6bc04a10e0ff06ed2604181b3ff6a6caca03350a4e10a130e";
+      };
+      default = "r0";
+    };
+  };
 }

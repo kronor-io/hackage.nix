@@ -395,4 +395,16 @@
       default = "r1";
     };
   };
+  "1.1.0" = {
+    sha256 = "d7eeb19d330d0a14479c226afa902df47a8b71b6a207f0dd145bd28e0427abe5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/bindings-DSL-1.1.0-r0-4b783045d1dfe5d173793789e13c5a3bc6173915056665918903a91b8bda213b.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-11T14:13:24Z";
+        sha256 = "4b783045d1dfe5d173793789e13c5a3bc6173915056665918903a91b8bda213b";
+      };
+      default = "r0";
+    };
+  };
 }

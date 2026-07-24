@@ -23,4 +23,28 @@
       default = "r0";
     };
   };
+  "0.17.0" = {
+    sha256 = "9d389c68ceb04095f0a794538b1d4c853916be613276e23bdc5dcd42e42ebd86";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hydra-kernel-0.17.0-r0-48158dde45595973cba0f098c9fb05f89857af61e765843c45bf956d7def0d9c.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-01T14:19:30Z";
+        sha256 = "48158dde45595973cba0f098c9fb05f89857af61e765843c45bf956d7def0d9c";
+      };
+      default = "r0";
+    };
+  };
+  "0.17.1" = {
+    sha256 = "10b72c173fdf10dc795f80d3c15a11d64f235d7bae15d9597862ff9a9c157bef";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hydra-kernel-0.17.1-r0-52c569fb22e34d9d07915af6d3b8a8189be0b544cfda0507fb3cea90de920c4c.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-16T19:55:08Z";
+        sha256 = "52c569fb22e34d9d07915af6d3b8a8189be0b544cfda0507fb3cea90de920c4c";
+      };
+      default = "r0";
+    };
+  };
 }

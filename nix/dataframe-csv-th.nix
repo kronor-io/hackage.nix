@@ -35,4 +35,28 @@
       default = "r0";
     };
   };
+  "1.1.0.0" = {
+    sha256 = "e5525ba3b5987159f750fd103ae54c218605658bfb5470b19006e391d84a73b4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-csv-th-1.1.0.0-r0-76e32bb3c8bc73dae9325748a0dc4e2d33acbe982c82a38e50653b2599a7b92f.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-13T23:03:50Z";
+        sha256 = "76e32bb3c8bc73dae9325748a0dc4e2d33acbe982c82a38e50653b2599a7b92f";
+      };
+      default = "r0";
+    };
+  };
+  "1.2.0.0" = {
+    sha256 = "ec6ee3970a8a405d71ba18876aa64162f3f33367d41840674bcfa44a204bc0d1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-csv-th-1.2.0.0-r0-859327f586e73c569c43c69dcff844207d09b96ebfed2458eba2c4e49d2a8dcc.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T00:26:01Z";
+        sha256 = "859327f586e73c569c43c69dcff844207d09b96ebfed2458eba2c4e49d2a8dcc";
+      };
+      default = "r0";
+    };
+  };
 }

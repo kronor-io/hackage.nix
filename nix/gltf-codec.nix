@@ -62,7 +62,13 @@
         revTimestamp = "2024-11-14T13:43:17Z";
         sha256 = "685df774608724fd46f359a4e24a4071e01a9b901b41b4f9e6e2daddd20c9af2";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gltf-codec-0.1.0.5-r1-20e5b10410f46384070b0fd139b8088a4d1daa2ab21ee215081185edd33a8f0f.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-02T14:40:57Z";
+        sha256 = "20e5b10410f46384070b0fd139b8088a4d1daa2ab21ee215081185edd33a8f0f";
+      };
+      default = "r1";
     };
   };
 }

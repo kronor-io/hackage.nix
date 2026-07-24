@@ -1376,7 +1376,13 @@
         revTimestamp = "2026-06-27T16:32:33Z";
         sha256 = "854e14391315bb85d380b49e4ca4b8f577b2e4949a186e0fd51f8c64ac0d314e";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/hoogle-5.0.19.0-r2-756647088f833f0f2a035d379bb973d7a41b1b4d57a40d7f97faf165dc936f5c.nix;
+        revNum = 2;
+        revTimestamp = "2026-07-04T10:06:46Z";
+        sha256 = "756647088f833f0f2a035d379bb973d7a41b1b4d57a40d7f97faf165dc936f5c";
+      };
+      default = "r2";
     };
   };
   "5.0.2" = {

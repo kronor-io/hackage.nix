@@ -878,6 +878,24 @@
         revTimestamp = "2025-03-14T18:49:29Z";
         sha256 = "5a392dfea55b38663d560b213e8549aa49a375b1ab05645aac52fcfb53818180";
       };
+      r1 = {
+        nix = import ../hackage/hOpenPGP-2.10.1-r1-c03dc74158e27bb08d10e1a450e5a32687943558fc5c7a0e14d3a46dcd5bcc70.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-08T01:15:58Z";
+        sha256 = "c03dc74158e27bb08d10e1a450e5a32687943558fc5c7a0e14d3a46dcd5bcc70";
+      };
+      default = "r1";
+    };
+  };
+  "2.10.1.1" = {
+    sha256 = "3229d707bc01d691b889cff85de16d75fdf2305bd11a2b8a4624b0fe879def95";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hOpenPGP-2.10.1.1-r0-2b26c6256610590973d82d5fabe12b9c0ff114a9f1e3f18773779b6d96115dae.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-08T23:23:09Z";
+        sha256 = "2b26c6256610590973d82d5fabe12b9c0ff114a9f1e3f18773779b6d96115dae";
+      };
       default = "r0";
     };
   };
@@ -1495,6 +1513,42 @@
         revNum = 0;
         revTimestamp = "2022-06-13T14:16:49Z";
         sha256 = "d4b4c335ba7a286e42de68c0fb42649bce7bfef787bcce170847edc210f00e8a";
+      };
+      default = "r0";
+    };
+  };
+  "3.0.0" = {
+    sha256 = "1122beed6b59f58752100fa18ce34b293eaff2707f55591ca91544e793fb4313";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hOpenPGP-3.0.0-r0-cffdc825fe12602d941640af2dbe4ce1fe50ff69ae8252ea18cf7b17df340740.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T18:58:21Z";
+        sha256 = "cffdc825fe12602d941640af2dbe4ce1fe50ff69ae8252ea18cf7b17df340740";
+      };
+      default = "r0";
+    };
+  };
+  "3.0.1" = {
+    sha256 = "47636a977d9245b69521135027b1291e956941f5b2c48444c65feef86ca615bb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hOpenPGP-3.0.1-r0-ca8dff18521773c2498be9bd67bdbb519545d7bbeede9a848209bbddd7358050.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-22T22:07:11Z";
+        sha256 = "ca8dff18521773c2498be9bd67bdbb519545d7bbeede9a848209bbddd7358050";
+      };
+      default = "r0";
+    };
+  };
+  "3.0.1.1" = {
+    sha256 = "51260920425db9a18218c0b5f335d8fdfee569a439c28f1cb133439319572140";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hOpenPGP-3.0.1.1-r0-760ab6429f6f7129dfe879e75ec957beba706ad7ebf04a53f448b9a57cd41747.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T01:49:04Z";
+        sha256 = "760ab6429f6f7129dfe879e75ec957beba706ad7ebf04a53f448b9a57cd41747";
       };
       default = "r0";
     };

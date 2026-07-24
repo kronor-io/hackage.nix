@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.2.1" = {
+    sha256 = "eac53fa4951a90c2e8fa721f80fcf12be1363dbe3462f81f1d1b6e508e2e375e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/bindings-fann-0.2.1-r0-8e378d86c4dee713df8e66cbf553827b1c25af08c86cb1750f7beefa13405495.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-11T15:29:45Z";
+        sha256 = "8e378d86c4dee713df8e66cbf553827b1c25af08c86cb1750f7beefa13405495";
+      };
+      default = "r0";
+    };
+  };
 }

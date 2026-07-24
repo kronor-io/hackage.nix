@@ -23,4 +23,64 @@
       default = "r0";
     };
   };
+  "0.2.1" = {
+    sha256 = "e283da8ea8bd843740a366d3c8a29941220a6c38a9439178a67e6aafa113f3b4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-eproc-0.2.1-r0-3b2dd82b87a9975e623e2af56cf7fc2478c4ac13ebff20cf22650d3d6d3aa779.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T17:04:20Z";
+        sha256 = "3b2dd82b87a9975e623e2af56cf7fc2478c4ac13ebff20cf22650d3d6d3aa779";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.2" = {
+    sha256 = "65403df8256f692dddb4c81d2305091da402d586809e7b38f281de3c7b8903f8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-eproc-0.2.2-r0-263c15ee77673a1c6a7cb5fe61015aec4681c299b74e1c90163b49e8d6753cd9.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T19:20:53Z";
+        sha256 = "263c15ee77673a1c6a7cb5fe61015aec4681c299b74e1c90163b49e8d6753cd9";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.0" = {
+    sha256 = "a74a1c3d8b70fba139a726fda2c1e60544fad12b998f64c7f376c15b21323599";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-eproc-0.3.0-r0-b33b1614fc292a49e6ce7fd612e06098619949c021c6d3513db00d3b0f509c4f.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-04T10:40:22Z";
+        sha256 = "b33b1614fc292a49e6ce7fd612e06098619949c021c6d3513db00d3b0f509c4f";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.0" = {
+    sha256 = "bd69122a49f247ce11f8ce4ea2aec36ec5e74996d74b77a286d40f564d0945ed";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-eproc-0.4.0-r0-9d8cf1f1ac7b5ea23e4fe1551917eb89ddf10a6759cbd6649583cce6e6d14ca3.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T17:40:08Z";
+        sha256 = "9d8cf1f1ac7b5ea23e4fe1551917eb89ddf10a6759cbd6649583cce6e6d14ca3";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.1" = {
+    sha256 = "b6d0e7e133170ec001ceee415008cdf0dc8a23cacaca96c5ae367c603e8b8590";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ppad-eproc-0.4.1-r0-300933241426487ad7d7ec0c91b298683a291d69b9c678caf03388e13aa28ed6.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-04T19:00:19Z";
+        sha256 = "300933241426487ad7d7ec0c91b298683a291d69b9c678caf03388e13aa28ed6";
+      };
+      default = "r0";
+    };
+  };
 }

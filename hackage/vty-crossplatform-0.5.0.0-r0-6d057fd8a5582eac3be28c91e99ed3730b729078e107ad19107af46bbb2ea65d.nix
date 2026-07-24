@@ -35,11 +35,11 @@
             then [
               (hsPkgs."vty-unix" or (errorHandler.buildDepError "vty-unix"))
             ]
-            else if system.isFreebsd || system.isOpenbsd || system.isNetbsd || system.isDragonfly
+            else if system.isFreebsd || system.isOpenbsd || system.isNetbsd || system.isDragonFly
               then [
                 (hsPkgs."vty-unix" or (errorHandler.buildDepError "vty-unix"))
               ]
-              else if system.isSolaris || system.isAix || system.isHpux || system.isIrix || system.isHurd
+              else if system.isSolaris || system.isAix || system.isHPUX || system.isIRIX || system.isHurd
                 then [
                   (hsPkgs."vty-unix" or (errorHandler.buildDepError "vty-unix"))
                 ]
@@ -48,9 +48,9 @@
           then true
           else if system.isLinux
             then true
-            else if system.isFreebsd || system.isOpenbsd || system.isNetbsd || system.isDragonfly
+            else if system.isFreebsd || system.isOpenbsd || system.isNetbsd || system.isDragonFly
               then true
-              else if system.isSolaris || system.isAix || system.isHpux || system.isIrix || system.isHurd
+              else if system.isSolaris || system.isAix || system.isHPUX || system.isIRIX || system.isHurd
                 then true
                 else if system.isWindows then true else false;
       };

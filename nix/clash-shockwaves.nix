@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "1.1.1" = {
+    sha256 = "99cd67cda952a7d6e3b140772a12605ba09496ddfe69c43b8872e12facf66587";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/clash-shockwaves-1.1.1-r0-a443bf49aae586ab100951f51ba92f4d9b67b24780c78cc8ad5848f8c8253ea8.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T13:43:13Z";
+        sha256 = "a443bf49aae586ab100951f51ba92f4d9b67b24780c78cc8ad5848f8c8253ea8";
+      };
+      default = "r0";
+    };
+  };
 }

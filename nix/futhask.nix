@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "1.0.0" = {
+    sha256 = "76fbc0d3f385a367442014603f1f0868eec71c7fe36ff48f093e126c0d445e61";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/futhask-1.0.0-r0-95632d6d0ba505c2813cb706b7e0c3b787276e9dea2d2889b8b017391896972b.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-08T14:40:07Z";
+        sha256 = "95632d6d0ba505c2813cb706b7e0c3b787276e9dea2d2889b8b017391896972b";
+      };
+      default = "r0";
+    };
+  };
 }

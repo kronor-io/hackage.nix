@@ -23,4 +23,28 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "a4bb856ec48ae40048f6132c308e0e5c47f8c929b883674997a06f970b238ecd";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kiroku-store-migrations-0.2.0.0-r0-64d74e6fde50047c8b1902589559578bc28872d68a5038dc423b5d21543088de.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-11T15:15:51Z";
+        sha256 = "64d74e6fde50047c8b1902589559578bc28872d68a5038dc423b5d21543088de";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.0.0" = {
+    sha256 = "d3e16e08a87f194f901091f259b41b846fbfbcf6cf5c2cd5138690936e12f3f9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kiroku-store-migrations-0.3.0.0-r0-66547edcd8324e71e21e5ce43ab172fd78678c199a141ce6843cc0837f739f3c.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-14T14:10:09Z";
+        sha256 = "66547edcd8324e71e21e5ce43ab172fd78678c199a141ce6843cc0837f739f3c";
+      };
+      default = "r0";
+    };
+  };
 }

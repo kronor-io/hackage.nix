@@ -149,6 +149,42 @@
       default = "r0";
     };
   };
+  "0.0.37" = {
+    sha256 = "d1770d97c5f5fd752c801d5ae0d28ecddce5d5fe4bb4e642e78c39236a48cd05";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/espial-0.0.37-r0-7ecce741f84ae3e60aba00b4592b2c9b34b2fac4ecaac6223b464bc056f31c03.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-01T02:22:33Z";
+        sha256 = "7ecce741f84ae3e60aba00b4592b2c9b34b2fac4ecaac6223b464bc056f31c03";
+      };
+      default = "r0";
+    };
+  };
+  "0.0.38" = {
+    sha256 = "cd1891372a8dc3d9d75f846dd1cc824aa242c61b492e22af81c3db45b785aebc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/espial-0.0.38-r0-b092abb18b3dac3ebecdf1592d9d9add0232deb040fc065f22d47d3688852519.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T19:22:10Z";
+        sha256 = "b092abb18b3dac3ebecdf1592d9d9add0232deb040fc065f22d47d3688852519";
+      };
+      default = "r0";
+    };
+  };
+  "0.0.39" = {
+    sha256 = "7e9deb55c48ebf2e0dbedf06572b5e06cf500b530afb95fae286ec1114a32ddf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/espial-0.0.39-r0-607880c9ca6def89dec06cd3af51edbda8d0f3a0e8f15b0233f36271decbbab7.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-04T00:38:47Z";
+        sha256 = "607880c9ca6def89dec06cd3af51edbda8d0f3a0e8f15b0233f36271decbbab7";
+      };
+      default = "r0";
+    };
+  };
   "0.0.4" = {
     sha256 = "d7a5176085e8668b0f78055086eec2481528d2540620baaa0c66b97ae4556097";
     revisions = {
@@ -157,6 +193,30 @@
         revNum = 0;
         revTimestamp = "2018-07-23T01:30:54Z";
         sha256 = "82db18c2c88bc56466d25e7215f3fc4388da8b2d2f279b81335d5eec18de507f";
+      };
+      default = "r0";
+    };
+  };
+  "0.0.40" = {
+    sha256 = "547a4e60e515835b6cb83c8d665e2be90b4b0dfe765123fcf1a235636a3e2f15";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/espial-0.0.40-r0-69095c2cb515585f9e25ac21772a86107c51805541f49706e066942e786c4082.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-11T22:11:12Z";
+        sha256 = "69095c2cb515585f9e25ac21772a86107c51805541f49706e066942e786c4082";
+      };
+      default = "r0";
+    };
+  };
+  "0.0.41" = {
+    sha256 = "e277cec4260344e5203f616833dd4600fb7522111a66cd9cb7c48237235f886f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/espial-0.0.41-r0-2548d8e55f9781b9c0e8cbfd4ccdaa11d524c4afced1588bdf83011ce3ab58ad.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-18T19:27:54Z";
+        sha256 = "2548d8e55f9781b9c0e8cbfd4ccdaa11d524c4afced1588bdf83011ce3ab58ad";
       };
       default = "r0";
     };

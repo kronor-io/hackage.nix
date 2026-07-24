@@ -29,4 +29,16 @@
       default = "r1";
     };
   };
+  "0.1.2" = {
+    sha256 = "6808e07f4a478a5559f6f3ad8823482c9982dc7ce0a054801d28f47ee8e61d64";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ihp-zip-0.1.2-r0-6c7dea89cdc392740e1a2e7332cd890240afa15211062536dfcbaae3afb825de.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-13T16:17:58Z";
+        sha256 = "6c7dea89cdc392740e1a2e7332cd890240afa15211062536dfcbaae3afb825de";
+      };
+      default = "r0";
+    };
+  };
 }

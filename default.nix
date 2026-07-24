@@ -2541,6 +2541,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "baikai" = import ./nix/baikai.nix;
   "baikai-claude" = import ./nix/baikai-claude.nix;
   "baikai-effectful" = import ./nix/baikai-effectful.nix;
+  "baikai-kit" = import ./nix/baikai-kit.nix;
   "baikai-openai" = import ./nix/baikai-openai.nix;
   "baikai-trace-otel" = import ./nix/baikai-trace-otel.nix;
   "bake" = import ./nix/bake.nix;
@@ -3232,6 +3233,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "bzlib-conduit-jappie" = import ./nix/bzlib-conduit-jappie.nix;
   "c-dsl" = import ./nix/c-dsl.nix;
   "c-enum" = import ./nix/c-enum.nix;
+  "c-expr-dsl" = import ./nix/c-expr-dsl.nix;
+  "c-expr-runtime" = import ./nix/c-expr-runtime.nix;
   "c-io" = import ./nix/c-io.nix;
   "c-mosquitto" = import ./nix/c-mosquitto.nix;
   "c-storable" = import ./nix/c-storable.nix;
@@ -3706,6 +3709,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "classy-prelude-yesod" = import ./nix/classy-prelude-yesod.nix;
   "classyplate" = import ./nix/classyplate.nix;
   "claude" = import ./nix/claude.nix;
+  "claude-gate" = import ./nix/claude-gate.nix;
   "clay" = import ./nix/clay.nix;
   "clckwrks" = import ./nix/clckwrks.nix;
   "clckwrks-cli" = import ./nix/clckwrks-cli.nix;
@@ -4131,6 +4135,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "constrained-categories" = import ./nix/constrained-categories.nix;
   "constrained-category" = import ./nix/constrained-category.nix;
   "constrained-dynamic" = import ./nix/constrained-dynamic.nix;
+  "constrained-generators" = import ./nix/constrained-generators.nix;
   "constrained-monads" = import ./nix/constrained-monads.nix;
   "constrained-normal" = import ./nix/constrained-normal.nix;
   "constrained-platform-instances" = import ./nix/constrained-platform-instances.nix;
@@ -4387,6 +4392,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "crypto-rng-effectful" = import ./nix/crypto-rng-effectful.nix;
   "crypto-simple" = import ./nix/crypto-simple.nix;
   "crypto-sodium" = import ./nix/crypto-sodium.nix;
+  "crypto-srp" = import ./nix/crypto-srp.nix;
   "crypto-token" = import ./nix/crypto-token.nix;
   "crypto-totp" = import ./nix/crypto-totp.nix;
   "cryptocipher" = import ./nix/cryptocipher.nix;
@@ -4702,6 +4708,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "dataframe-core" = import ./nix/dataframe-core.nix;
   "dataframe-csv" = import ./nix/dataframe-csv.nix;
   "dataframe-csv-th" = import ./nix/dataframe-csv-th.nix;
+  "dataframe-expr-serializer" = import ./nix/dataframe-expr-serializer.nix;
   "dataframe-fastcsv" = import ./nix/dataframe-fastcsv.nix;
   "dataframe-hasktorch" = import ./nix/dataframe-hasktorch.nix;
   "dataframe-huggingface" = import ./nix/dataframe-huggingface.nix;
@@ -4720,6 +4727,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "datarobot" = import ./nix/datarobot.nix;
   "datasets" = import ./nix/datasets.nix;
   "datastar-hs" = import ./nix/datastar-hs.nix;
+  "datastar-hs-brotli" = import ./nix/datastar-hs-brotli.nix;
+  "datastar-hs-zlib" = import ./nix/datastar-hs-zlib.nix;
   "dataurl" = import ./nix/dataurl.nix;
   "date-cache" = import ./nix/date-cache.nix;
   "date-conversions" = import ./nix/date-conversions.nix;
@@ -5549,6 +5558,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "emojis" = import ./nix/emojis.nix;
   "empty" = import ./nix/empty.nix;
   "empty-monad" = import ./nix/empty-monad.nix;
+  "encapsule" = import ./nix/encapsule.nix;
   "enchant" = import ./nix/enchant.nix;
   "enclosed-exceptions" = import ./nix/enclosed-exceptions.nix;
   "encode-string" = import ./nix/encode-string.nix;
@@ -6270,6 +6280,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "fraction" = import ./nix/fraction.nix;
   "fractionizer" = import ./nix/fractionizer.nix;
   "frag" = import ./nix/frag.nix;
+  "fragr" = import ./nix/fragr.nix;
   "frame" = import ./nix/frame.nix;
   "frame-markdown" = import ./nix/frame-markdown.nix;
   "franchise" = import ./nix/franchise.nix;
@@ -6445,6 +6456,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "futhark-manifest" = import ./nix/futhark-manifest.nix;
   "futhark-server" = import ./nix/futhark-server.nix;
   "futhask" = import ./nix/futhask.nix;
+  "futhask-base" = import ./nix/futhask-base.nix;
   "futun" = import ./nix/futun.nix;
   "future" = import ./nix/future.nix;
   "future-resource" = import ./nix/future-resource.nix;
@@ -8075,6 +8087,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hax" = import ./nix/hax.nix;
   "haxl" = import ./nix/haxl.nix;
   "haxl-amazonka" = import ./nix/haxl-amazonka.nix;
+  "haxl-effectful" = import ./nix/haxl-effectful.nix;
   "haxl-facebook" = import ./nix/haxl-facebook.nix;
   "haxparse" = import ./nix/haxparse.nix;
   "haxr" = import ./nix/haxr.nix;
@@ -8324,6 +8337,17 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hgeometry-svg" = import ./nix/hgeometry-svg.nix;
   "hgeos" = import ./nix/hgeos.nix;
   "hgettext" = import ./nix/hgettext.nix;
+  "hgg" = import ./nix/hgg.nix;
+  "hgg-3d" = import ./nix/hgg-3d.nix;
+  "hgg-analyze-bridge" = import ./nix/hgg-analyze-bridge.nix;
+  "hgg-core" = import ./nix/hgg-core.nix;
+  "hgg-custom" = import ./nix/hgg-custom.nix;
+  "hgg-frame" = import ./nix/hgg-frame.nix;
+  "hgg-ihaskell" = import ./nix/hgg-ihaskell.nix;
+  "hgg-latex" = import ./nix/hgg-latex.nix;
+  "hgg-pdf" = import ./nix/hgg-pdf.nix;
+  "hgg-rasterific" = import ./nix/hgg-rasterific.nix;
+  "hgg-svg" = import ./nix/hgg-svg.nix;
   "hgis" = import ./nix/hgis.nix;
   "hgithub" = import ./nix/hgithub.nix;
   "hgl-example" = import ./nix/hgl-example.nix;
@@ -8998,6 +9022,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hspec-dirstream" = import ./nix/hspec-dirstream.nix;
   "hspec-discover" = import ./nix/hspec-discover.nix;
   "hspec-discover-discover" = import ./nix/hspec-discover-discover.nix;
+  "hspec-effectful" = import ./nix/hspec-effectful.nix;
+  "hspec-effectful-discover" = import ./nix/hspec-effectful-discover.nix;
   "hspec-expectations" = import ./nix/hspec-expectations.nix;
   "hspec-expectations-json" = import ./nix/hspec-expectations-json.nix;
   "hspec-expectations-lens" = import ./nix/hspec-expectations-lens.nix;
@@ -9150,6 +9176,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "http-client-auth" = import ./nix/http-client-auth.nix;
   "http-client-brread-timeout" = import ./nix/http-client-brread-timeout.nix;
   "http-client-conduit" = import ./nix/http-client-conduit.nix;
+  "http-client-effectful" = import ./nix/http-client-effectful.nix;
   "http-client-extra" = import ./nix/http-client-extra.nix;
   "http-client-lens" = import ./nix/http-client-lens.nix;
   "http-client-multipart" = import ./nix/http-client-multipart.nix;
@@ -9208,8 +9235,10 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "http-wget" = import ./nix/http-wget.nix;
   "http2" = import ./nix/http2.nix;
   "http2-client" = import ./nix/http2-client.nix;
+  "http2-client-effectful" = import ./nix/http2-client-effectful.nix;
   "http2-client-exe" = import ./nix/http2-client-exe.nix;
   "http2-client-grpc" = import ./nix/http2-client-grpc.nix;
+  "http2-client-grpc-effectful" = import ./nix/http2-client-grpc-effectful.nix;
   "http2-grpc-proto-lens" = import ./nix/http2-grpc-proto-lens.nix;
   "http2-grpc-proto3-wire" = import ./nix/http2-grpc-proto3-wire.nix;
   "http2-grpc-types" = import ./nix/http2-grpc-types.nix;
@@ -9241,6 +9270,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hums" = import ./nix/hums.nix;
   "hunch" = import ./nix/hunch.nix;
   "hunit-dejafu" = import ./nix/hunit-dejafu.nix;
+  "hunit-effectful" = import ./nix/hunit-effectful.nix;
   "hunit-gui" = import ./nix/hunit-gui.nix;
   "hunit-parsec" = import ./nix/hunit-parsec.nix;
   "hunit-rematch" = import ./nix/hunit-rematch.nix;
@@ -9351,10 +9381,24 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hybrid" = import ./nix/hybrid.nix;
   "hybrid-vectors" = import ./nix/hybrid-vectors.nix;
   "hydra" = import ./nix/hydra.nix;
+  "hydra-bench" = import ./nix/hydra-bench.nix;
+  "hydra-build" = import ./nix/hydra-build.nix;
+  "hydra-coq" = import ./nix/hydra-coq.nix;
+  "hydra-ext" = import ./nix/hydra-ext.nix;
+  "hydra-go" = import ./nix/hydra-go.nix;
   "hydra-haskell" = import ./nix/hydra-haskell.nix;
   "hydra-hs" = import ./nix/hydra-hs.nix;
+  "hydra-java" = import ./nix/hydra-java.nix;
+  "hydra-jvm" = import ./nix/hydra-jvm.nix;
   "hydra-kernel" = import ./nix/hydra-kernel.nix;
+  "hydra-lisp" = import ./nix/hydra-lisp.nix;
+  "hydra-pg" = import ./nix/hydra-pg.nix;
   "hydra-print" = import ./nix/hydra-print.nix;
+  "hydra-python" = import ./nix/hydra-python.nix;
+  "hydra-rdf" = import ./nix/hydra-rdf.nix;
+  "hydra-scala" = import ./nix/hydra-scala.nix;
+  "hydra-typescript" = import ./nix/hydra-typescript.nix;
+  "hydra-wasm" = import ./nix/hydra-wasm.nix;
   "hydrogen" = import ./nix/hydrogen.nix;
   "hydrogen-cli" = import ./nix/hydrogen-cli.nix;
   "hydrogen-cli-args" = import ./nix/hydrogen-cli-args.nix;
@@ -9432,6 +9476,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "idn" = import ./nix/idn.nix;
   "idna" = import ./nix/idna.nix;
   "idna2008" = import ./nix/idna2008.nix;
+  "idnaparse" = import ./nix/idnaparse.nix;
   "idringen" = import ./nix/idringen.nix;
   "idris" = import ./nix/idris.nix;
   "ieee" = import ./nix/ieee.nix;
@@ -9745,6 +9790,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "ipfs" = import ./nix/ipfs.nix;
   "ipfs-api" = import ./nix/ipfs-api.nix;
   "ipld-cid" = import ./nix/ipld-cid.nix;
+  "ipldm" = import ./nix/ipldm.nix;
   "ipopt-hs" = import ./nix/ipopt-hs.nix;
   "ipprint" = import ./nix/ipprint.nix;
   "iproute" = import ./nix/iproute.nix;
@@ -10120,6 +10166,11 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "keiki-codec-json" = import ./nix/keiki-codec-json.nix;
   "keiki-codec-json-test" = import ./nix/keiki-codec-json-test.nix;
   "keiretsu" = import ./nix/keiretsu.nix;
+  "keiro" = import ./nix/keiro.nix;
+  "keiro-core" = import ./nix/keiro-core.nix;
+  "keiro-dsl" = import ./nix/keiro-dsl.nix;
+  "keiro-migrations" = import ./nix/keiro-migrations.nix;
+  "keiro-pgmq" = import ./nix/keiro-pgmq.nix;
   "kempe" = import ./nix/kempe.nix;
   "kerry" = import ./nix/kerry.nix;
   "kesha" = import ./nix/kesha.nix;
@@ -10164,6 +10215,11 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "kind-rational" = import ./nix/kind-rational.nix;
   "kindly-functors" = import ./nix/kindly-functors.nix;
   "kinds" = import ./nix/kinds.nix;
+  "kioku-api" = import ./nix/kioku-api.nix;
+  "kioku-cli" = import ./nix/kioku-cli.nix;
+  "kioku-core" = import ./nix/kioku-core.nix;
+  "kioku-migrate" = import ./nix/kioku-migrate.nix;
+  "kioku-migrations" = import ./nix/kioku-migrations.nix;
   "kiroku-cli" = import ./nix/kiroku-cli.nix;
   "kiroku-metrics" = import ./nix/kiroku-metrics.nix;
   "kiroku-otel" = import ./nix/kiroku-otel.nix;
@@ -10331,6 +10387,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "language-lua" = import ./nix/language-lua.nix;
   "language-lua-qq" = import ./nix/language-lua-qq.nix;
   "language-lua2" = import ./nix/language-lua2.nix;
+  "language-lustre" = import ./nix/language-lustre.nix;
   "language-mixal" = import ./nix/language-mixal.nix;
   "language-ninja" = import ./nix/language-ninja.nix;
   "language-nix" = import ./nix/language-nix.nix;
@@ -10386,6 +10443,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "latex-svg-pandoc" = import ./nix/latex-svg-pandoc.nix;
   "lathe" = import ./nix/lathe.nix;
   "lathe-time" = import ./nix/lathe-time.nix;
+  "lattest-lib" = import ./nix/lattest-lib.nix;
   "lattices" = import ./nix/lattices.nix;
   "launchdarkly-server-sdk" = import ./nix/launchdarkly-server-sdk.nix;
   "launchdarkly-server-sdk-redis-hedis" = import ./nix/launchdarkly-server-sdk-redis-hedis.nix;
@@ -10535,6 +10593,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "libarchive-clib" = import ./nix/libarchive-clib.nix;
   "libarchive-conduit" = import ./nix/libarchive-conduit.nix;
   "libasterix" = import ./nix/libasterix.nix;
+  "libclang-bindings" = import ./nix/libclang-bindings.nix;
   "libconfig" = import ./nix/libconfig.nix;
   "libcspm" = import ./nix/libcspm.nix;
   "libexpect" = import ./nix/libexpect.nix;
@@ -10626,6 +10685,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "lighttpd-conf-qq" = import ./nix/lighttpd-conf-qq.nix;
   "lilypond" = import ./nix/lilypond.nix;
   "lima" = import ./nix/lima.nix;
+  "limcalc" = import ./nix/limcalc.nix;
   "limp" = import ./nix/limp.nix;
   "limp-cbc" = import ./nix/limp-cbc.nix;
   "lin-alg" = import ./nix/lin-alg.nix;
@@ -10762,6 +10822,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "ll-picosat" = import ./nix/ll-picosat.nix;
   "llama-cpp-haskell" = import ./nix/llama-cpp-haskell.nix;
   "llama-cpp-hs" = import ./nix/llama-cpp-hs.nix;
+  "llm-simple" = import ./nix/llm-simple.nix;
   "llm-with-context" = import ./nix/llm-with-context.nix;
   "llrbtree" = import ./nix/llrbtree.nix;
   "llsd" = import ./nix/llsd.nix;
@@ -11071,6 +11132,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "marching-cubes2" = import ./nix/marching-cubes2.nix;
   "marihana" = import ./nix/marihana.nix;
   "marionetta" = import ./nix/marionetta.nix;
+  "marionette" = import ./nix/marionette.nix;
+  "marionette-effectful" = import ./nix/marionette-effectful.nix;
   "markdown" = import ./nix/markdown.nix;
   "markdown-kate" = import ./nix/markdown-kate.nix;
   "markdown-pap" = import ./nix/markdown-pap.nix;
@@ -11216,6 +11279,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "memfd" = import ./nix/memfd.nix;
   "meminfo" = import ./nix/meminfo.nix;
   "memis" = import ./nix/memis.nix;
+  "memo-io" = import ./nix/memo-io.nix;
   "memo-map" = import ./nix/memo-map.nix;
   "memo-ptr" = import ./nix/memo-ptr.nix;
   "memo-sqlite" = import ./nix/memo-sqlite.nix;
@@ -11402,6 +11466,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "mkbndl" = import ./nix/mkbndl.nix;
   "mkcabal" = import ./nix/mkcabal.nix;
   "ml-w" = import ./nix/ml-w.nix;
+  "mldsa" = import ./nix/mldsa.nix;
   "mlist" = import ./nix/mlist.nix;
   "mlkem" = import ./nix/mlkem.nix;
   "mltool" = import ./nix/mltool.nix;
@@ -11632,6 +11697,9 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "monzo" = import ./nix/monzo.nix;
   "moo" = import ./nix/moo.nix;
   "moo-nad" = import ./nix/moo-nad.nix;
+  "moonlight-algebra" = import ./nix/moonlight-algebra.nix;
+  "moonlight-core" = import ./nix/moonlight-core.nix;
+  "moonlight-delta" = import ./nix/moonlight-delta.nix;
   "moonshine" = import ./nix/moonshine.nix;
   "more-containers" = import ./nix/more-containers.nix;
   "more-extensible-effects" = import ./nix/more-extensible-effects.nix;
@@ -12137,6 +12205,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "nix-eval" = import ./nix/nix-eval.nix;
   "nix-freeze-tree" = import ./nix/nix-freeze-tree.nix;
   "nix-graph" = import ./nix/nix-graph.nix;
+  "nix-lang" = import ./nix/nix-lang.nix;
+  "nix-lang-qq" = import ./nix/nix-lang-qq.nix;
   "nix-narinfo" = import ./nix/nix-narinfo.nix;
   "nix-paths" = import ./nix/nix-paths.nix;
   "nix-serve-ng" = import ./nix/nix-serve-ng.nix;
@@ -12999,6 +13069,12 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "pg-harness" = import ./nix/pg-harness.nix;
   "pg-harness-client" = import ./nix/pg-harness-client.nix;
   "pg-harness-server" = import ./nix/pg-harness-server.nix;
+  "pg-migrate" = import ./nix/pg-migrate.nix;
+  "pg-migrate-cli" = import ./nix/pg-migrate-cli.nix;
+  "pg-migrate-embed" = import ./nix/pg-migrate-embed.nix;
+  "pg-migrate-import-codd" = import ./nix/pg-migrate-import-codd.nix;
+  "pg-migrate-import-hasql-migration" = import ./nix/pg-migrate-import-hasql-migration.nix;
+  "pg-migrate-test-support" = import ./nix/pg-migrate-test-support.nix;
   "pg-query" = import ./nix/pg-query.nix;
   "pg-recorder" = import ./nix/pg-recorder.nix;
   "pg-schema" = import ./nix/pg-schema.nix;
@@ -13014,6 +13090,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "pgmq-hasql" = import ./nix/pgmq-hasql.nix;
   "pgmq-migration" = import ./nix/pgmq-migration.nix;
   "pgp-wordlist" = import ./nix/pgp-wordlist.nix;
+  "pgqueuer-hs" = import ./nix/pgqueuer-hs.nix;
   "pgrep" = import ./nix/pgrep.nix;
   "pgsql-simple" = import ./nix/pgsql-simple.nix;
   "pgstream" = import ./nix/pgstream.nix;
@@ -14416,6 +14493,10 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "relational-record-examples" = import ./nix/relational-record-examples.nix;
   "relational-schemas" = import ./nix/relational-schemas.nix;
   "relative-date" = import ./nix/relative-date.nix;
+  "relay-pagination" = import ./nix/relay-pagination.nix;
+  "relay-pagination-conformance" = import ./nix/relay-pagination-conformance.nix;
+  "relay-pagination-hasql" = import ./nix/relay-pagination-hasql.nix;
+  "relay-pagination-servant" = import ./nix/relay-pagination-servant.nix;
   "releaser" = import ./nix/releaser.nix;
   "relevant-time" = import ./nix/relevant-time.nix;
   "reliable-io" = import ./nix/reliable-io.nix;
@@ -14721,6 +14802,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "rstream" = import ./nix/rstream.nix;
   "rt" = import ./nix/rt.nix;
   "rtcm" = import ./nix/rtcm.nix;
+  "rtk" = import ./nix/rtk.nix;
   "rtld" = import ./nix/rtld.nix;
   "rtlsdr" = import ./nix/rtlsdr.nix;
   "rtnetlink" = import ./nix/rtnetlink.nix;
@@ -15000,12 +15082,16 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "secp256k1-legacy" = import ./nix/secp256k1-legacy.nix;
   "secret-santa" = import ./nix/secret-santa.nix;
   "secret-sharing" = import ./nix/secret-sharing.nix;
+  "secretspec" = import ./nix/secretspec.nix;
   "secrm" = import ./nix/secrm.nix;
   "secure-memory" = import ./nix/secure-memory.nix;
   "secure-sockets" = import ./nix/secure-sockets.nix;
   "secureUDP" = import ./nix/secure_U_D_P.nix;
   "securemem" = import ./nix/securemem.nix;
   "sednaDBXML" = import ./nix/sedna_D_B_X_M_L.nix;
+  "seihou-cli" = import ./nix/seihou-cli.nix;
+  "seihou-core" = import ./nix/seihou-core.nix;
+  "seihou-okf-extension" = import ./nix/seihou-okf-extension.nix;
   "seitz-symbol" = import ./nix/seitz-symbol.nix;
   "sel" = import ./nix/sel.nix;
   "selda" = import ./nix/selda.nix;
@@ -15271,6 +15357,14 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "setop" = import ./nix/setop.nix;
   "setops" = import ./nix/setops.nix;
   "sets" = import ./nix/sets.nix;
+  "settei" = import ./nix/settei.nix;
+  "settei-dhall" = import ./nix/settei-dhall.nix;
+  "settei-env" = import ./nix/settei-env.nix;
+  "settei-formats" = import ./nix/settei-formats.nix;
+  "settei-kdl" = import ./nix/settei-kdl.nix;
+  "settei-kubernetes" = import ./nix/settei-kubernetes.nix;
+  "settei-optparse-applicative" = import ./nix/settei-optparse-applicative.nix;
+  "settei-yaml" = import ./nix/settei-yaml.nix;
   "setters" = import ./nix/setters.nix;
   "settings" = import ./nix/settings.nix;
   "sexp" = import ./nix/sexp.nix;
@@ -16420,6 +16514,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "stream-monad" = import ./nix/stream-monad.nix;
   "streamdeck" = import ./nix/streamdeck.nix;
   "streamed" = import ./nix/streamed.nix;
+  "streamgraph" = import ./nix/streamgraph.nix;
   "streaming" = import ./nix/streaming.nix;
   "streaming-attoparsec" = import ./nix/streaming-attoparsec.nix;
   "streaming-base64" = import ./nix/streaming-base64.nix;
@@ -16658,6 +16753,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "swift-lda" = import ./nix/swift-lda.nix;
   "swish" = import ./nix/swish.nix;
   "swiss" = import ./nix/swiss.nix;
+  "swiss-army-knife" = import ./nix/swiss-army-knife.nix;
   "swiss-ephemeris" = import ./nix/swiss-ephemeris.nix;
   "swisstable" = import ./nix/swisstable.nix;
   "switch" = import ./nix/switch.nix;
@@ -16887,6 +16983,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "tasty-discover" = import ./nix/tasty-discover.nix;
   "tasty-expected-failure" = import ./nix/tasty-expected-failure.nix;
   "tasty-fail-fast" = import ./nix/tasty-fail-fast.nix;
+  "tasty-falsify" = import ./nix/tasty-falsify.nix;
   "tasty-flaky" = import ./nix/tasty-flaky.nix;
   "tasty-focus" = import ./nix/tasty-focus.nix;
   "tasty-golden" = import ./nix/tasty-golden.nix;
@@ -17621,6 +17718,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "tuple" = import ./nix/tuple.nix;
   "tuple-append" = import ./nix/tuple-append.nix;
   "tuple-append-instances" = import ./nix/tuple-append-instances.nix;
+  "tuple-classes" = import ./nix/tuple-classes.nix;
   "tuple-fields" = import ./nix/tuple-fields.nix;
   "tuple-gen" = import ./nix/tuple-gen.nix;
   "tuple-generic" = import ./nix/tuple-generic.nix;
@@ -18328,6 +18426,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "void" = import ./nix/void.nix;
   "vorbiscomment" = import ./nix/vorbiscomment.nix;
   "vowpal-utils" = import ./nix/vowpal-utils.nix;
+  "voxgig-struct" = import ./nix/voxgig-struct.nix;
   "voyeur" = import ./nix/voyeur.nix;
   "vp-tree" = import ./nix/vp-tree.nix;
   "vpn-router" = import ./nix/vpn-router.nix;

@@ -11,4 +11,40 @@
       default = "r0";
     };
   };
+  "4.1.0" = {
+    sha256 = "c9010efba86dd70d9aecee577d05db5e4fa9883388a8693430038ad174b9021d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-openapi-hs-4.1.0-r0-90efb6d9f0322fc87779b63348988d507083478db993a614172f4b39626fe838.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T16:34:47Z";
+        sha256 = "90efb6d9f0322fc87779b63348988d507083478db993a614172f4b39626fe838";
+      };
+      default = "r0";
+    };
+  };
+  "5.0.0" = {
+    sha256 = "5849444bb7d7cc66f280ce45316f894e9d906630eada381df841e5e189befed4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-openapi-hs-5.0.0-r0-1cb75f9248443e598f48f94b41315abfe7a4466bdf0da990cb3d215d035c74a9.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T21:46:21Z";
+        sha256 = "1cb75f9248443e598f48f94b41315abfe7a4466bdf0da990cb3d215d035c74a9";
+      };
+      default = "r0";
+    };
+  };
+  "5.1.0" = {
+    sha256 = "bdea68aeb9b9dfbb601a3ad02aedd182c1e46c25576c41b3ccb41f13cdbf6a21";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/servant-openapi-hs-5.1.0-r0-359b86dbb75d41e9d9cb586364ce770b972051c57801395ccde721ff5c3cab54.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-22T18:28:20Z";
+        sha256 = "359b86dbb75d41e9d9cb586364ce770b972051c57801395ccde721ff5c3cab54";
+      };
+      default = "r0";
+    };
+  };
 }

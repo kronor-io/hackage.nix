@@ -1,0 +1,38 @@
+{
+  "1.0.0" = {
+    sha256 = "461f33ff9008a7451889c6e1e3214c40f06b1be62af37730365d0217ac6dfb91";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tuple-classes-1.0.0-r0-2ab74c83d4e195f104c2dd78413377cf78a953ee3d9f5b4030f2c7adb0957edf.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-05T23:58:00Z";
+        sha256 = "2ab74c83d4e195f104c2dd78413377cf78a953ee3d9f5b4030f2c7adb0957edf";
+      };
+      default = "r0";
+    };
+  };
+  "1.0.1" = {
+    sha256 = "6b9881feab256f84bd0c53a67161cf7a16b3c11ea224472d405d9d7a88788d83";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tuple-classes-1.0.1-r0-6a9a5ae5e55e1db96c71f85371928fc360c71a000f910e794dc95bcf9a79b7fe.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-06T00:13:52Z";
+        sha256 = "6a9a5ae5e55e1db96c71f85371928fc360c71a000f910e794dc95bcf9a79b7fe";
+      };
+      default = "r0";
+    };
+  };
+  "1.0.2" = {
+    sha256 = "8f271f5cf03925212ff1ae31146fce974f19fb9475a72d16b2f9b72f84ae8a02";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tuple-classes-1.0.2-r0-aa11d9245760f417d26a5c18daf87b654087e50c3d5fb33a2f3d5414bd6bd57d.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-23T12:26:34Z";
+        sha256 = "aa11d9245760f417d26a5c18daf87b654087e50c3d5fb33a2f3d5414bd6bd57d";
+      };
+      default = "r0";
+    };
+  };
+}

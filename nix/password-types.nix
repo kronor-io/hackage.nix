@@ -35,4 +35,16 @@
       default = "r4";
     };
   };
+  "1.0.1.0" = {
+    sha256 = "9ed3088babca5af90cc4e28ee7346b1de53e32c9b69e4f77058e5ef4a56a558e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/password-types-1.0.1.0-r0-75de121f8d7c1a5a904058da2f17e86f89f29fc2855f7e372148edbe8c208c96.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T15:01:24Z";
+        sha256 = "75de121f8d7c1a5a904058da2f17e86f89f29fc2855f7e372148edbe8c208c96";
+      };
+      default = "r0";
+    };
+  };
 }

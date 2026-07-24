@@ -413,4 +413,16 @@
       default = "r1";
     };
   };
+  "0.2.20260708.0" = {
+    sha256 = "960364006da6c74992c84837aedab45830b9a8df6c1a0a20937254948446f812";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tzdata-0.2.20260708.0-r0-996f12b1780e04e22f08fb117c61706eadfeebcf4e5956cbaca9e03ead5080aa.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-10T02:09:17Z";
+        sha256 = "996f12b1780e04e22f08fb117c61706eadfeebcf4e5956cbaca9e03ead5080aa";
+      };
+      default = "r0";
+    };
+  };
 }

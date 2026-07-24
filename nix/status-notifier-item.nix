@@ -227,6 +227,30 @@
       default = "r0";
     };
   };
+  "0.3.2.15" = {
+    sha256 = "7ada8e14f6d5d7982cef88504991506429eedbbbbb990b7b84608fb72385c8e4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/status-notifier-item-0.3.2.15-r0-90e1c3775f1a69efa446e6196f420f0eb6e11ad30bad98203a2a2714407ef75d.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-02T20:49:38Z";
+        sha256 = "90e1c3775f1a69efa446e6196f420f0eb6e11ad30bad98203a2a2714407ef75d";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.2.16" = {
+    sha256 = "8b5bfdcb3c720c552106bc445a130a082b54d4b21e4d9e5ccd97f597982fa6fe";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/status-notifier-item-0.3.2.16-r0-cd648b070b77d7f17c4b099d3563187b7c2fb4090935f09c8a5013166846ba03.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-15T20:27:37Z";
+        sha256 = "cd648b070b77d7f17c4b099d3563187b7c2fb4090935f09c8a5013166846ba03";
+      };
+      default = "r0";
+    };
+  };
   "0.3.2.2" = {
     sha256 = "afb8b1119a0d516772d08710d80afd1ab15fd6508e3c03fd457c663a27fa91e2";
     revisions = {

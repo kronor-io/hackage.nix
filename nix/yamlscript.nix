@@ -167,6 +167,78 @@
       default = "r0";
     };
   };
+  "0.2.24.0" = {
+    sha256 = "4ea13620608d8d365f249dc34e165b8318a7d6a4e643af9891f1adb7c94a66fc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.24.0-r0-e348ec1bf38fa7d9140d659ce89d1f1c67eb91cf12d4f39817b8f8eb22bd36d2.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T18:26:09Z";
+        sha256 = "e348ec1bf38fa7d9140d659ce89d1f1c67eb91cf12d4f39817b8f8eb22bd36d2";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.25.0" = {
+    sha256 = "82e7920d5564faccf5502fd4750fc2813b40b644b1d9a087c769bc08d4641e80";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.25.0-r0-2bc8cf51d57a08c795853a39bebfe5aab82d0797f594e19f3fcbe971e270a806.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-04T22:11:53Z";
+        sha256 = "2bc8cf51d57a08c795853a39bebfe5aab82d0797f594e19f3fcbe971e270a806";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.26.0" = {
+    sha256 = "70c70e9fcf0210bdf867d20da2acaabb02f0ccae31a67141a575b990a5086562";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.26.0-r0-7a1acdb8f27d40cbde3d22bbf8b91502add95ed39ee6308a49198df38c874279.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-06T01:06:56Z";
+        sha256 = "7a1acdb8f27d40cbde3d22bbf8b91502add95ed39ee6308a49198df38c874279";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.27.0" = {
+    sha256 = "24c1b03bc5b1b2429afade48379fbb1501abfae448dbf78ef45b063f1647f646";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.27.0-r0-3200390c9e5257e285e438a35b054b5b07234c0b704a8a2f54a7f2a79e443580.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-10T15:02:02Z";
+        sha256 = "3200390c9e5257e285e438a35b054b5b07234c0b704a8a2f54a7f2a79e443580";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.28.0" = {
+    sha256 = "0b9b1cd2dfd6d4594f48b69bfcea314b21e6ec5a32d502dbfabb6260d35d433b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.28.0-r0-03e53c29eb764ef216984a33cf52b87605968c4c10b722eff565d0853b8ec5c6.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-16T01:59:31Z";
+        sha256 = "03e53c29eb764ef216984a33cf52b87605968c4c10b722eff565d0853b8ec5c6";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.29.0" = {
+    sha256 = "1d03ef64fb77da77d4ba9a66991f37d15caab101c90524d3db113bdc8bf2f674";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/yamlscript-0.2.29.0-r0-41d2fdac7ff4384ec8669edc0bf4395cd03676b5f6bc9c006e570c4ef9ef46ac.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T20:15:05Z";
+        sha256 = "41d2fdac7ff4384ec8669edc0bf4395cd03676b5f6bc9c006e570c4ef9ef46ac";
+      };
+      default = "r0";
+    };
+  };
   "0.2.3.0" = {
     sha256 = "ab64fb2b96d8799d4e32da9bc39f1e6191ff32c94cda9eab661ec40b6b738c25";
     revisions = {

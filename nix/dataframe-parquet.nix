@@ -83,4 +83,28 @@
       default = "r0";
     };
   };
+  "1.2.0.0" = {
+    sha256 = "3aaeaec87e86cefdb9a77339de5954c73305bfeeb9e93cc93dea2a3ba3a862d7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-parquet-1.2.0.0-r0-5aea967faf2942f538e903c7db5e075d157c687be196d3971800faec2d0fab47.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-13T23:01:26Z";
+        sha256 = "5aea967faf2942f538e903c7db5e075d157c687be196d3971800faec2d0fab47";
+      };
+      default = "r0";
+    };
+  };
+  "1.3.0.0" = {
+    sha256 = "8d2e0029f5bac13e07bf4168ff0f6f2341e7733b0cb1095e1353a9b589fae6fb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-parquet-1.3.0.0-r0-0432356424d905a3767284e5f627b65a782850ba7b5b4b35b02262cf9d4354c4.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T00:27:27Z";
+        sha256 = "0432356424d905a3767284e5f627b65a782850ba7b5b4b35b02262cf9d4354c4";
+      };
+      default = "r0";
+    };
+  };
 }

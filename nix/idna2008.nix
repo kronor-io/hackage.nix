@@ -32,7 +32,13 @@
         revTimestamp = "2026-06-10T23:56:21Z";
         sha256 = "19ccd921ec84555ae2f434082b19de6e8e54060bd01d33c89820c9288348ef48";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/idna2008-1.0.0.1-r1-d2b4983af0f8472ddcb59e441e9799b94abb072bcacb7c82cf0681bf74fd0483.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-03T05:34:22Z";
+        sha256 = "d2b4983af0f8472ddcb59e441e9799b94abb072bcacb7c82cf0681bf74fd0483";
+      };
+      default = "r1";
     };
   };
 }

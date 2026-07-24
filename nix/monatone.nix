@@ -47,4 +47,28 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "031672440e13cb9def2b732c942f6cbb59e1afd363f75fd718de8607ebed36ba";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monatone-0.3.0.0-r0-5c3a332eb7454f8f68eeb58964bf73445b353e0ccb22d9f9a72d0a2e66497768.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T09:42:01Z";
+        sha256 = "5c3a332eb7454f8f68eeb58964bf73445b353e0ccb22d9f9a72d0a2e66497768";
+      };
+      default = "r0";
+    };
+  };
+  "0.4.0.0" = {
+    sha256 = "3dbdca3a64e8d98497532dc898a32c9b132dd58acd5c428de3dcba228cf2180d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monatone-0.4.0.0-r0-0f043c7a652fad995df4aec946d2fd9289e51341eaba2b729584195e849520cf.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T05:16:07Z";
+        sha256 = "0f043c7a652fad995df4aec946d2fd9289e51341eaba2b729584195e849520cf";
+      };
+      default = "r0";
+    };
+  };
 }

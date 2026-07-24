@@ -23,4 +23,40 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "8525976094ee045a0f852efd29860c2773b285ddcdca0debb54b6aaf7b02b406";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-trace-otel-0.3.0.0-r0-ca5cb3c8ad13cfcc61829631ffb4c19dcc11ab9f54c3992c04731fe10d78e886.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-03T19:15:30Z";
+        sha256 = "ca5cb3c8ad13cfcc61829631ffb4c19dcc11ab9f54c3992c04731fe10d78e886";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.0.1" = {
+    sha256 = "ab8c8718409a39137d06b2a9460e0825187582981b91b22c875a1d6e18352992";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-trace-otel-0.3.0.1-r0-8b7c54a721e0c727bca566628c88483d7d128c207752e00cccb1526c0e49fd74.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-15T14:19:14Z";
+        sha256 = "8b7c54a721e0c727bca566628c88483d7d128c207752e00cccb1526c0e49fd74";
+      };
+      default = "r0";
+    };
+  };
+  "0.3.0.2" = {
+    sha256 = "2675a5eea21b1756ec522f27db6e9dd3541a11bbbbd53d16e8a8afcd951c30c5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-trace-otel-0.3.0.2-r0-529ccec7428e06d1a97fea00dfa174d2626260f382da777ab7d77d1115990787.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-20T16:39:22Z";
+        sha256 = "529ccec7428e06d1a97fea00dfa174d2626260f382da777ab7d77d1115990787";
+      };
+      default = "r0";
+    };
+  };
 }

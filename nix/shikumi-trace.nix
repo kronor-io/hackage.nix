@@ -35,4 +35,28 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "f3261db89d26f9c0130c4021ac9db733cde2a06f9dc617de59a3d0849a24728e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shikumi-trace-0.2.0.0-r0-ea60bf6a3379db40c81580c7877722500667ded1ce44d01bbd970122bfeb02e8.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-05T03:53:53Z";
+        sha256 = "ea60bf6a3379db40c81580c7877722500667ded1ce44d01bbd970122bfeb02e8";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.0.1" = {
+    sha256 = "06bf92527bf30a55522399a5fb32955eae913339ffb6ef5257437ddfa6c850ad";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shikumi-trace-0.2.0.1-r0-49488f4a2709d5d7cbc89161c54ae70f9a7b045f2445c494e1e4ee8360b88224.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-21T02:42:15Z";
+        sha256 = "49488f4a2709d5d7cbc89161c54ae70f9a7b045f2445c494e1e4ee8360b88224";
+      };
+      default = "r0";
+    };
+  };
 }
