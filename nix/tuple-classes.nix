@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "1.0.3" = {
+    sha256 = "b94f4d98177c3952e464f6ebbcebd6893a8bba49a64ea6173c2ae296e1b74ec5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tuple-classes-1.0.3-r0-0ffb8b7517f33e9bcad1cd4eb79ae1ec8876cd204867be7c68b53027222d5e61.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-24T23:23:44Z";
+        sha256 = "0ffb8b7517f33e9bcad1cd4eb79ae1ec8876cd204867be7c68b53027222d5e61";
+      };
+      default = "r0";
+    };
+  };
 }
