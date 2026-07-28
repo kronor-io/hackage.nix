@@ -65,4 +65,16 @@
       default = "r1";
     };
   };
+  "0.1.0.5" = {
+    sha256 = "f006e7600a5ababbc1f0b81b0db624e67d91f1666204c33e103a411d824bb6a2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/union-find-array-0.1.0.5-r0-46c0342b204e1100b1e93480615f25f2ca51d767d0c67bf19af0295557f38d6f.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-27T11:30:43Z";
+        sha256 = "46c0342b204e1100b1e93480615f25f2ca51d767d0c67bf19af0295557f38d6f";
+      };
+      default = "r0";
+    };
+  };
 }
