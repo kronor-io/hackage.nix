@@ -32,7 +32,13 @@
         revTimestamp = "2009-04-07T21:16:20Z";
         sha256 = "1a21e8dff55396f87a7b9b25b85183f29eda9487219a52695667c69422352c42";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/pointfree-1.0.2-r1-962908a2a1b4f039a0c34050760adaad13e16b8baee520a024ddb8bfb25ba133.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-28T20:36:55Z";
+        sha256 = "962908a2a1b4f039a0c34050760adaad13e16b8baee520a024ddb8bfb25ba133";
+      };
+      default = "r1";
     };
   };
   "1.0.3" = {
@@ -44,7 +50,13 @@
         revTimestamp = "2009-04-07T21:44:42Z";
         sha256 = "32d1caa6ba689d957c1a00fea182e2275c4e550aa18006c85a347e7c6cc5fe4b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/pointfree-1.0.3-r1-c7a9788083ead7c35c70ea477a91bc32d4b862c990c7b6c07b53cbf26ab5f7e1.nix;
+        revNum = 1;
+        revTimestamp = "2026-07-28T20:35:39Z";
+        sha256 = "c7a9788083ead7c35c70ea477a91bc32d4b862c990c7b6c07b53cbf26ab5f7e1";
+      };
+      default = "r1";
     };
   };
   "1.0.4" = {
