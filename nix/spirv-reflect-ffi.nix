@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.4.1" = {
+    sha256 = "5160cd2c64c8ea2b995c232c3e9660bb36cf088d8721e6389ba39f1c66ecf348";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/spirv-reflect-ffi-0.4.1-r0-3160f460d1fda41fad17334c8825c1987c2961a9e12eb26334b1b0493a69b10b.nix;
+        revNum = 0;
+        revTimestamp = "2026-07-31T20:39:16Z";
+        sha256 = "3160f460d1fda41fad17334c8825c1987c2961a9e12eb26334b1b0493a69b10b";
+      };
+      default = "r0";
+    };
+  };
 }
