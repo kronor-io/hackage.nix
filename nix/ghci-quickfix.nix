@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.1.1.1" = {
+    sha256 = "cf1b227e885174b6e875b9839af2d2828eae5ddeeff74dff13e46f4a3b97f1b7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ghci-quickfix-0.1.1.1-r0-090803e312225e341780798199a34e3db6bf59969035c3ff9067731adef8a780.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-01T19:59:59Z";
+        sha256 = "090803e312225e341780798199a34e3db6bf59969035c3ff9067731adef8a780";
+      };
+      default = "r0";
+    };
+  };
 }

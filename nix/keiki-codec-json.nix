@@ -83,4 +83,16 @@
       default = "r0";
     };
   };
+  "0.7.0.0" = {
+    sha256 = "721295225597a4b32684d992337290f904320a5333c97c105c13de471576b36d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/keiki-codec-json-0.7.0.0-r0-606d9bed972b93dcc8c1698ab58f1422986c8283b5df90d6868138a547cd4fa1.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-01T13:04:40Z";
+        sha256 = "606d9bed972b93dcc8c1698ab58f1422986c8283b5df90d6868138a547cd4fa1";
+      };
+      default = "r0";
+    };
+  };
 }

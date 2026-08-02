@@ -41,4 +41,16 @@
       default = "r0";
     };
   };
+  "0.2.2.0" = {
+    sha256 = "9cd36c161dc3abfebb0dbdf8609a8b34fa3aa25145bc946017123865844dc477";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/quote-quot-0.2.2.0-r0-1f0be3ebbb3a8bbf3f7e0b90f840b319d3459f782d5a9c69fd252613a5842b15.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-02T00:07:01Z";
+        sha256 = "1f0be3ebbb3a8bbf3f7e0b90f840b319d3459f782d5a9c69fd252613a5842b15";
+      };
+      default = "r0";
+    };
+  };
 }
