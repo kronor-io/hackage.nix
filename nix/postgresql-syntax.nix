@@ -263,4 +263,16 @@
       default = "r0";
     };
   };
+  "0.5.0.2" = {
+    sha256 = "44c057d23b5ee0a843d4c04517117a740336e3bf0b006fdbd655f56742865229";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/postgresql-syntax-0.5.0.2-r0-f58009951a6a2e65d253801c2644bcce5ec50d70f26aec2efb62879bb5ab7f39.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-02T11:31:36Z";
+        sha256 = "f58009951a6a2e65d253801c2644bcce5ec50d70f26aec2efb62879bb5ab7f39";
+      };
+      default = "r0";
+    };
+  };
 }
