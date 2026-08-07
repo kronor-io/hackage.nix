@@ -83,4 +83,16 @@
       default = "r0";
     };
   };
+  "0.4.0.1" = {
+    sha256 = "fb249c0dfd8218f81c43e650da95bee0fab569c997a5833f5c17b8da93fa047d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-hasktorch-0.4.0.1-r0-b87f8e544d462a410503fed51e25d8c57f67ea4057c7021d906250b89c2152e8.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-06T15:53:20Z";
+        sha256 = "b87f8e544d462a410503fed51e25d8c57f67ea4057c7021d906250b89c2152e8";
+      };
+      default = "r0";
+    };
+  };
 }
