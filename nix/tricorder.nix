@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "e0bae71ac3fecfb494ba6a6081b4b2c9e73ac8e20a9af88a87d8a6debf41fbed";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tricorder-0.2.0.0-r0-668ecb09e15fd71a331dd7d1a298cdfd31d7bcaacfdb623d38fcfcdc9f81acdd.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-07T09:43:16Z";
+        sha256 = "668ecb09e15fd71a331dd7d1a298cdfd31d7bcaacfdb623d38fcfcdc9f81acdd";
+      };
+      default = "r0";
+    };
+  };
 }

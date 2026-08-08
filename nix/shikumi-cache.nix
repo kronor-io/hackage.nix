@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "0.1.2.2" = {
+    sha256 = "69d3bdd51a2a3a0c1ee14899cfca11b9a7907aff3a74f570d95733b2a1922499";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shikumi-cache-0.1.2.2-r0-1ccca464cb6b2bf8e140aa0306a516731d5aae942496e3ff82bead511c21685f.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-07T16:25:02Z";
+        sha256 = "1ccca464cb6b2bf8e140aa0306a516731d5aae942496e3ff82bead511c21685f";
+      };
+      default = "r0";
+    };
+  };
 }
