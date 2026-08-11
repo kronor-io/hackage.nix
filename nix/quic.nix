@@ -929,4 +929,16 @@
       default = "r1";
     };
   };
+  "0.3.3" = {
+    sha256 = "fd0b72351655e6487991b5054bc3071a7d3d777429474e7371a94c5ac133d85d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/quic-0.3.3-r0-6d52df75e5e68ddee984ab3b39e09326a9fe6fc54496515a51b9ec4e59f33aa8.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-10T09:27:47Z";
+        sha256 = "6d52df75e5e68ddee984ab3b39e09326a9fe6fc54496515a51b9ec4e59f33aa8";
+      };
+      default = "r0";
+    };
+  };
 }

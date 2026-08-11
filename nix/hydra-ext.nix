@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.17.4" = {
+    sha256 = "97a17bbe26d807aa5b265109e1dd2b7f2b61f8d3579806d1b466a7c508b5bbf4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hydra-ext-0.17.4-r0-b732fc25fbf05c0b1ae260a75689cc6cf451e350ec8c375be54277cf3b19c1d4.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-10T02:42:29Z";
+        sha256 = "b732fc25fbf05c0b1ae260a75689cc6cf451e350ec8c375be54277cf3b19c1d4";
+      };
+      default = "r0";
+    };
+  };
 }
