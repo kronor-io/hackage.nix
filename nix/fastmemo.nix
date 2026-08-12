@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.1.2" = {
+    sha256 = "31399118f1bd301fca7168acb337e9397c6ef582866a56fe7ba7221623cefce8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fastmemo-0.1.2-r0-e58d2a0bda331762a8e941de0889ed53588b1428bdc4295739103d48d5cba3ac.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-11T04:22:47Z";
+        sha256 = "e58d2a0bda331762a8e941de0889ed53588b1428bdc4295739103d48d5cba3ac";
+      };
+      default = "r0";
+    };
+  };
 }
