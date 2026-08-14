@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "f03a73013e5c4920036f1824d2d6cf1b330a1449fe32c5426ca5a1bc571d4692";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/atelier-db-0.2.0.0-r0-10f93fa27b9288214b3ec2054aafc9704f3a2b3108df8f9ef1b942a4bdb81299.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-13T10:15:48Z";
+        sha256 = "10f93fa27b9288214b3ec2054aafc9704f3a2b3108df8f9ef1b942a4bdb81299";
+      };
+      default = "r0";
+    };
+  };
 }

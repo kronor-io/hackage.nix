@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.1.1.1" = {
+    sha256 = "879a9ba41faa6c7e36c9caf9d475cf99c3446061c90a566ab0fe80dc957ce4a8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/stakhanov-0.1.1.1-r0-4c4446994948c6d6b4c377bd5bfc336ae6becc709f48090f87344dd247f820d0.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-13T14:13:08Z";
+        sha256 = "4c4446994948c6d6b4c377bd5bfc336ae6becc709f48090f87344dd247f820d0";
+      };
+      default = "r0";
+    };
+  };
 }
