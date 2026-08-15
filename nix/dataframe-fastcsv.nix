@@ -89,4 +89,16 @@
       default = "r1";
     };
   };
+  "1.4.1.0" = {
+    sha256 = "2690b95783d80e26286a55bbbad31e04293fb7f5e4758a465525a031962611d0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dataframe-fastcsv-1.4.1.0-r0-9fb2f0027c3d0cef832ec6a7045276f0ee91af3fdd3f18d91c9fb7767f95097e.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-14T06:18:00Z";
+        sha256 = "9fb2f0027c3d0cef832ec6a7045276f0ee91af3fdd3f18d91c9fb7767f95097e";
+      };
+      default = "r0";
+    };
+  };
 }

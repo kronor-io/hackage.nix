@@ -38,7 +38,13 @@
         revTimestamp = "2026-08-12T01:54:29Z";
         sha256 = "a38e5b7e1ff74105513fec946f0f395a4bded7c0fed0e82e394ee856fbe62816";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/dataframe-expr-serializer-1.2.0.1-r2-672b7652e5c7f9e9e3c0119264180fb0f43c596ebfe930437299ecad7245780e.nix;
+        revNum = 2;
+        revTimestamp = "2026-08-14T06:20:43Z";
+        sha256 = "672b7652e5c7f9e9e3c0119264180fb0f43c596ebfe930437299ecad7245780e";
+      };
+      default = "r2";
     };
   };
 }

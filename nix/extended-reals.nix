@@ -176,7 +176,13 @@
         revTimestamp = "2025-06-17T21:06:48Z";
         sha256 = "f3a4cc9f484dd32b597ff8fb644f775fb5bcd404d24842c681bde9cb42f5c9f0";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/extended-reals-0.2.7.0-r2-819e51997cab02b592e2bb3105adceb56e24ae9d0c6b87d4b51b8abc14bf72aa.nix;
+        revNum = 2;
+        revTimestamp = "2026-08-14T23:13:10Z";
+        sha256 = "819e51997cab02b592e2bb3105adceb56e24ae9d0c6b87d4b51b8abc14bf72aa";
+      };
+      default = "r2";
     };
   };
 }
