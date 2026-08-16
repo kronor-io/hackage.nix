@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "a3563a833bc9234afcd57924ab70d3a15c79729dc5d6d03311c24941dac6e1c4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mangrove-cli-0.2.0.0-r0-05941acdf4a57f34439374fcc8f2708713329798b57a894aec8e108d580a7686.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-15T04:26:35Z";
+        sha256 = "05941acdf4a57f34439374fcc8f2708713329798b57a894aec8e108d580a7686";
+      };
+      default = "r0";
+    };
+  };
 }
