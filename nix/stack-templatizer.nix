@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "ab1a95f847c6132baa2a62e91a1aa938c2c9b5cfcec171710c851016c56f633d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/stack-templatizer-0.1.2.0-r0-788b187aeaabb0026b633f9ea2e8af168964905386de933f94f4e53b4cc9ac0d.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-16T20:42:14Z";
+        sha256 = "788b187aeaabb0026b633f9ea2e8af168964905386de933f94f4e53b4cc9ac0d";
+      };
+      default = "r0";
+    };
+  };
 }
