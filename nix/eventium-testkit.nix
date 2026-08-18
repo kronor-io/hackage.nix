@@ -107,4 +107,16 @@
       default = "r0";
     };
   };
+  "0.6.1" = {
+    sha256 = "3913951952ae3bf41a40f3c4f491d847520137bb55693ad08d1a221d8987eadb";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/eventium-testkit-0.6.1-r0-68c0556be109405cf5ec2eedb1fcbe0f84ab8d728abb178a2a80f76e8c06b84e.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-17T18:21:50Z";
+        sha256 = "68c0556be109405cf5ec2eedb1fcbe0f84ab8d728abb178a2a80f76e8c06b84e";
+      };
+      default = "r0";
+    };
+  };
 }

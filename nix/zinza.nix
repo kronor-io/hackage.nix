@@ -80,7 +80,13 @@
         revTimestamp = "2025-06-05T14:35:49Z";
         sha256 = "ecef3e75a30a7ac9bbb23d3f6b11172f24db13ea40f5b3c1d96698f186726bc6";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/zinza-0.2.1-r2-b875db42ace7412942db2f19a74d9ded84018a50c39e45367b68fa8dd3e437bd.nix;
+        revNum = 2;
+        revTimestamp = "2026-08-17T13:33:47Z";
+        sha256 = "b875db42ace7412942db2f19a74d9ded84018a50c39e45367b68fa8dd3e437bd";
+      };
+      default = "r2";
     };
   };
 }

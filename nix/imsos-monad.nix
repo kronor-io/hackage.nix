@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.4.0" = {
+    sha256 = "ece2bab9a144f3bd106dcc2bcc87153f394b6b2103cb0653f9a066b107b4f312";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/imsos-monad-0.2.4.0-r0-add0c416933a34006e7b7590a3b03e5ba49e3c2d58e18662f8a3b1c0d0ace5f0.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-17T16:20:02Z";
+        sha256 = "add0c416933a34006e7b7590a3b03e5ba49e3c2d58e18662f8a3b1c0d0ace5f0";
+      };
+      default = "r0";
+    };
+  };
 }
