@@ -107,4 +107,16 @@
       default = "r0";
     };
   };
+  "1.1.0.1" = {
+    sha256 = "974fc485b6b9b67e13c108241439d6b8cbdffa4bb4403bd7b45a0d4456d76558";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/datastar-hs-1.1.0.1-r0-d51f4117cdf5718a0ceeebd969c6c49a33063253a9b6af9a69c70fcaf81eea32.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-18T22:17:48Z";
+        sha256 = "d51f4117cdf5718a0ceeebd969c6c49a33063253a9b6af9a69c70fcaf81eea32";
+      };
+      default = "r0";
+    };
+  };
 }

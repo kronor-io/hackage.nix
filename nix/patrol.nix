@@ -299,4 +299,16 @@
       default = "r0";
     };
   };
+  "1.3.0.0" = {
+    sha256 = "9fabc47ba5c34051b9c9932b62b101c784158782e1ab030b54c6214e037a1bd4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/patrol-1.3.0.0-r0-fa5c01b49760a8e53557ef59ce3af60e70d00d565a20d8212d6a9527eac9fc82.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-18T15:04:49Z";
+        sha256 = "fa5c01b49760a8e53557ef59ce3af60e70d00d565a20d8212d6a9527eac9fc82";
+      };
+      default = "r0";
+    };
+  };
 }
