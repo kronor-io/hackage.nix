@@ -239,4 +239,16 @@
       default = "r5";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "2f7508f65a13c2ad7249fe4c9410bb0d094b6e0f7162dbeb3e0cb0304e3f34de";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mmark-ext-0.3.0.0-r0-2429eac48756826b2d475f4766c9d97829cbbb3bc03774133efe5ae58b42db41.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-20T13:28:32Z";
+        sha256 = "2429eac48756826b2d475f4766c9d97829cbbb3bc03774133efe5ae58b42db41";
+      };
+      default = "r0";
+    };
+  };
 }

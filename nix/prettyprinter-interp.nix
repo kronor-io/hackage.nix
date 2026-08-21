@@ -50,7 +50,13 @@
         revTimestamp = "2025-03-06T16:14:31Z";
         sha256 = "3741dbb628c6735673934556cc1bca5703ded2676bfe4baa93ffad16ca16f530";
       };
-      default = "r5";
+      r6 = {
+        nix = import ../hackage/prettyprinter-interp-0.2.0.0-r6-8556a8c0acf71780bad1bf27cc01e6e08054132f32a6d8836fd4d727f3448f2b.nix;
+        revNum = 6;
+        revTimestamp = "2026-08-20T15:30:44Z";
+        sha256 = "8556a8c0acf71780bad1bf27cc01e6e08054132f32a6d8836fd4d727f3448f2b";
+      };
+      default = "r6";
     };
   };
 }

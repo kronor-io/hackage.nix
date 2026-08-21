@@ -209,4 +209,16 @@
       default = "r0";
     };
   };
+  "1.4.1.1" = {
+    sha256 = "6222b80c39ed06b8bd5274d1c82b4cc1d3c47c21253d28b92b74223ac663b2a2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/futhark-server-1.4.1.1-r0-30796d850d75b166cdf581499c547d03b6d9f516f3ae1fb7dbf3412f6a172e45.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-20T13:56:26Z";
+        sha256 = "30796d850d75b166cdf581499c547d03b6d9f516f3ae1fb7dbf3412f6a172e45";
+      };
+      default = "r0";
+    };
+  };
 }
