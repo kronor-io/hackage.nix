@@ -161,4 +161,16 @@
       default = "r1";
     };
   };
+  "0.1.0.0" = {
+    sha256 = "135b6bd433d12988214cd65a4261a7e5cb25ddb3bd30adc51440feed42244d09";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mmark-cli-0.1.0.0-r0-02492646401a43bfdcdbe239cccb5c2c436b0e4372f92235336ddd8928005449.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-21T10:01:28Z";
+        sha256 = "02492646401a43bfdcdbe239cccb5c2c436b0e4372f92235336ddd8928005449";
+      };
+      default = "r0";
+    };
+  };
 }
