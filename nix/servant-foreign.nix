@@ -272,7 +272,13 @@
         revTimestamp = "2026-08-21T14:57:30Z";
         sha256 = "fc22f4d119b00e21c5c63c715422c633ed85d80644c4eef795f6a02b47378b3c";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/servant-foreign-0.16.1-r3-1b61e76b974e217b33c9c676e950ea15df7ad900dedb54756276bb65d88b7f7d.nix;
+        revNum = 3;
+        revTimestamp = "2026-08-22T13:33:33Z";
+        sha256 = "1b61e76b974e217b33c9c676e950ea15df7ad900dedb54756276bb65d88b7f7d";
+      };
+      default = "r3";
     };
   };
   "0.5" = {
