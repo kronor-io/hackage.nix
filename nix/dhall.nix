@@ -1088,7 +1088,13 @@
         revTimestamp = "2025-09-06T18:26:55Z";
         sha256 = "3a812cc88343be8eb65ebab48f08bed694f3f33fe9bfc6c4a262fe53f4b55b5d";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dhall-1.42.3-r1-2ccea5f3b70aee76e7815dd7dc3a93cda76863586ce93fb7c11dd7a236ef9d1f.nix;
+        revNum = 1;
+        revTimestamp = "2026-08-23T22:25:22Z";
+        sha256 = "2ccea5f3b70aee76e7815dd7dc3a93cda76863586ce93fb7c11dd7a236ef9d1f";
+      };
+      default = "r1";
     };
   };
   "1.5.0" = {

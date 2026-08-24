@@ -221,4 +221,16 @@
       default = "r0";
     };
   };
+  "0.2.6.0" = {
+    sha256 = "bee28f6f6e626ab004c09e743227d596b9a01a59fdb84f947cc1400e914e4977";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hasql-notifications-0.2.6.0-r0-1d8edde04415b8ccae2b532204ba4902c6a82eef9c294db36cd039ffe7bfd323.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-23T21:33:55Z";
+        sha256 = "1d8edde04415b8ccae2b532204ba4902c6a82eef9c294db36cd039ffe7bfd323";
+      };
+      default = "r0";
+    };
+  };
 }
