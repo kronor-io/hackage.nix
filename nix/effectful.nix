@@ -239,4 +239,16 @@
       default = "r0";
     };
   };
+  "2.7.1.0" = {
+    sha256 = "02f0dcbf270ffe05a1cfbe7b552ba278b6e73e01fc752fc1045436ebc53e8f8f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/effectful-2.7.1.0-r0-35847b4359df36d3f2ca16ff888f6426ce35373d9d80aedbdd4c27b4a72d8a7f.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-24T01:32:38Z";
+        sha256 = "35847b4359df36d3f2ca16ff888f6426ce35373d9d80aedbdd4c27b4a72d8a7f";
+      };
+      default = "r0";
+    };
+  };
 }
