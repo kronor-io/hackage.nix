@@ -191,4 +191,16 @@
       default = "r0";
     };
   };
+  "3.0" = {
+    sha256 = "2455f75b14cee921a9a5d3b7974bfd6dfe837d74cb839c64dec2e173f0478cb3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hsinstall-3.0-r0-fc2c91843d85602dea89a89a2e7566ba3fa5678f0e36eaf0a81752b89dc12d5c.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-28T12:49:22Z";
+        sha256 = "fc2c91843d85602dea89a89a2e7566ba3fa5678f0e36eaf0a81752b89dc12d5c";
+      };
+      default = "r0";
+    };
+  };
 }

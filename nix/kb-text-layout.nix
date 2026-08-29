@@ -41,4 +41,16 @@
       default = "r0";
     };
   };
+  "0.1.0.2" = {
+    sha256 = "aeb3b1a6805d2c46e229307ac702cf5eefa287f77aeee88b1edd5a4af294cebf";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kb-text-layout-0.1.0.2-r0-14e58ea8badc350524078daf8d5224588ce286681f9c608436bcb4c82a2e295f.nix;
+        revNum = 0;
+        revTimestamp = "2026-08-28T21:32:15Z";
+        sha256 = "14e58ea8badc350524078daf8d5224588ce286681f9c608436bcb4c82a2e295f";
+      };
+      default = "r0";
+    };
+  };
 }
