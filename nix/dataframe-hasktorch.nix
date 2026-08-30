@@ -104,7 +104,13 @@
         revTimestamp = "2026-08-14T06:20:44Z";
         sha256 = "247fb031cacbfeecc3886da8bed2e01c032867feed4cb7df889bdff85a1cfdec";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/dataframe-hasktorch-0.4.0.1-r3-64eb8c1d84a28862f4c5d07a90cf9f6fc1781a70f685d2caada4af5961d4db73.nix;
+        revNum = 3;
+        revTimestamp = "2026-08-29T20:20:30Z";
+        sha256 = "64eb8c1d84a28862f4c5d07a90cf9f6fc1781a70f685d2caada4af5961d4db73";
+      };
+      default = "r3";
     };
   };
 }

@@ -140,7 +140,13 @@
         revTimestamp = "2026-08-14T06:20:46Z";
         sha256 = "09f47418ba2d45a45c23e17363496567adb93fa4fe47ca1f69a298e07dcda950";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/dataframe-parquet-1.5.0.0-r3-1d4f397b5459c8f7ec74b41b16e7b575f0ace77a600a946fab7a9cdbc25880ae.nix;
+        revNum = 3;
+        revTimestamp = "2026-08-29T20:20:27Z";
+        sha256 = "1d4f397b5459c8f7ec74b41b16e7b575f0ace77a600a946fab7a9cdbc25880ae";
+      };
+      default = "r3";
     };
   };
 }

@@ -614,7 +614,13 @@
         revTimestamp = "2025-03-23T13:31:26Z";
         sha256 = "2e725905042fff5abd07ff32090eb252fd0863e5d9405593fd886401315edc87";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/threepenny-gui-0.9.4.2-r2-e44db573a5da4f7ff8052b12b0b3697c78c0c858231076fef88f2561523c5854.nix;
+        revNum = 2;
+        revTimestamp = "2026-08-29T07:19:40Z";
+        sha256 = "e44db573a5da4f7ff8052b12b0b3697c78c0c858231076fef88f2561523c5854";
+      };
+      default = "r2";
     };
   };
 }

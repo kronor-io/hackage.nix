@@ -26,7 +26,13 @@
         revTimestamp = "2026-08-14T06:20:45Z";
         sha256 = "91eed02b2d7836b0a7f6cff671fbb257088d564dccdbfcb5e8e841ca11a4e9fd";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/dataframe-huggingface-1.2.0.2-r2-3b0879f96645f042da609a8c66c98e470e1ae721113b0e39b23faa2b700316c9.nix;
+        revNum = 2;
+        revTimestamp = "2026-08-29T20:20:32Z";
+        sha256 = "3b0879f96645f042da609a8c66c98e470e1ae721113b0e39b23faa2b700316c9";
+      };
+      default = "r2";
     };
   };
 }
