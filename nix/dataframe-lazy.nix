@@ -152,7 +152,13 @@
         revTimestamp = "2026-08-29T20:13:34Z";
         sha256 = "cc11437f17abadb6ed61388e32e0e7a6662feb5226b833b7d998e0f381b3b717";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dataframe-lazy-2.4.1.0-r1-3a590aae7201748e8f9a7dd64e7b9ec8bb31d262ab1e8685434814b1f2406608.nix;
+        revNum = 1;
+        revTimestamp = "2026-08-30T04:19:50Z";
+        sha256 = "3a590aae7201748e8f9a7dd64e7b9ec8bb31d262ab1e8685434814b1f2406608";
+      };
+      default = "r1";
     };
   };
 }
