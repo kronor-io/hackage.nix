@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3.0" = {
+    sha256 = "544727ad056f62caf68c24d481dc9db32258a9528403d1ce9983db7ed2032b48";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hpgsql-simple-compat-0.3.0-r0-8aafb262b7446075fd1a12efa829f42e3a60a513170b911c8b8a5eec7c0ad8a1.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-03T18:54:16Z";
+        sha256 = "8aafb262b7446075fd1a12efa829f42e3a60a513170b911c8b8a5eec7c0ad8a1";
+      };
+      default = "r0";
+    };
+  };
 }
