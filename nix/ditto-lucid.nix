@@ -191,4 +191,16 @@
       default = "r0";
     };
   };
+  "0.5.0" = {
+    sha256 = "8fc1115fc5a0d034e8fbb3ceea047eb18e9f8af4f44c514400dab3024b9ca96d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ditto-lucid-0.5.0-r0-656e5681bc2365297d15e3a6cce989775a72ff2ebf1f217a2b88e99881b65ba1.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-05T00:17:56Z";
+        sha256 = "656e5681bc2365297d15e3a6cce989775a72ff2ebf1f217a2b88e99881b65ba1";
+      };
+      default = "r0";
+    };
+  };
 }
