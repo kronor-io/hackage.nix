@@ -1700,7 +1700,19 @@
         revTimestamp = "2026-08-27T11:08:33Z";
         sha256 = "d5c4f6843cdb1069607445ad7ed433a04d9a1bace090e883aa30c77d63eab458";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hledger-web-1.52.3-r1-82ce26dcf8f7dbb1b500ed81cffcbcdd636c86d2ac2f51c4d31af8e2104bdd37.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-07T04:16:01Z";
+        sha256 = "82ce26dcf8f7dbb1b500ed81cffcbcdd636c86d2ac2f51c4d31af8e2104bdd37";
+      };
+      r2 = {
+        nix = import ../hackage/hledger-web-1.52.3-r2-5b778d5f4df3bea36817a5c208cf86a597319a4fc7e7fdeabfbbba93bf7a19d1.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-07T04:49:09Z";
+        sha256 = "5b778d5f4df3bea36817a5c208cf86a597319a4fc7e7fdeabfbbba93bf7a19d1";
+      };
+      default = "r2";
     };
   };
   "1.9" = {
