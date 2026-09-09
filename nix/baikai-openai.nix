@@ -107,4 +107,16 @@
       default = "r0";
     };
   };
+  "0.7.0.0" = {
+    sha256 = "2fb5280106226369b6ca829502ed4233fe4cde2c2807115a347f19dca092c2e5";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/baikai-openai-0.7.0.0-r0-5b1745f2977c37e82e434acfcf19d8ddc66eef2a0015eecdaf3b00640c7e3f15.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-08T14:51:07Z";
+        sha256 = "5b1745f2977c37e82e434acfcf19d8ddc66eef2a0015eecdaf3b00640c7e3f15";
+      };
+      default = "r0";
+    };
+  };
 }
