@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.0.0.3" = {
+    sha256 = "fb98430c6af38736dd5b95d93e4e249e629619aaa439057f305dbef3cc568b2e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sdl3-bindgen-sys-0.0.0.3-r0-6e395d06adee6e7124dcff69449cb585de5dd64ddd2313d663d36f085436424b.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-14T00:23:51Z";
+        sha256 = "6e395d06adee6e7124dcff69449cb585de5dd64ddd2313d663d36f085436424b";
+      };
+      default = "r0";
+    };
+  };
 }
