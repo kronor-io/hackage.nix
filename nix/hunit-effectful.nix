@@ -8,7 +8,13 @@
         revTimestamp = "2026-07-10T15:39:12Z";
         sha256 = "862ad07e2bfd363efd01563dd76926cf3791ee2af76f7d80558a52193d712014";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hunit-effectful-1.0.0-r1-8cba23509faf8356f0dfffdae69a62203567ceb9909528e8b1d85671deba46f1.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-14T17:03:05Z";
+        sha256 = "8cba23509faf8356f0dfffdae69a62203567ceb9909528e8b1d85671deba46f1";
+      };
+      default = "r1";
     };
   };
 }

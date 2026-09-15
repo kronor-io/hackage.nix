@@ -8,7 +8,13 @@
         revTimestamp = "2026-07-27T15:42:33Z";
         sha256 = "0c88eff685b228b0637967d341e831cb24c448cf8c903f208737445be8dc929f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/wai-effectful-1.0.0-r1-2ea90c1fd7215d47ab226e74c4ec3924661ac2cf146f629cf8599c1b1f1e15c0.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-14T17:03:10Z";
+        sha256 = "2ea90c1fd7215d47ab226e74c4ec3924661ac2cf146f629cf8599c1b1f1e15c0";
+      };
+      default = "r1";
     };
   };
 }

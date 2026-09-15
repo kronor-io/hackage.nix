@@ -20,7 +20,13 @@
         revTimestamp = "2026-08-05T08:32:01Z";
         sha256 = "5733430737264d1214e700c7656cef35c91cb5e7703c2853e5c5b83faaad9409";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/warp-effectful-1.1.0-r1-cfdcd2917fc216c393c5b0562eed75c28054a4635294fea9de491a99d047e6f1.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-14T17:03:11Z";
+        sha256 = "cfdcd2917fc216c393c5b0562eed75c28054a4635294fea9de491a99d047e6f1";
+      };
+      default = "r1";
     };
   };
 }

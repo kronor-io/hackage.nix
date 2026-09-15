@@ -20,7 +20,13 @@
         revTimestamp = "2026-08-05T08:33:42Z";
         sha256 = "ca0367e20ae7d08e75d25761ba42f160b5ba6ea45dd388f4ba7fd4b49508927f";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-client-grpc-effectful-1.0.1-r1-4449680173d8a8d7b774a298367e670d4fad91cfc20d21516d81903a33d37fda.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-14T17:03:04Z";
+        sha256 = "4449680173d8a8d7b774a298367e670d4fad91cfc20d21516d81903a33d37fda";
+      };
+      default = "r1";
     };
   };
 }

@@ -68,7 +68,13 @@
         revTimestamp = "2026-08-21T13:35:24Z";
         sha256 = "455fb7736f315241f9586272a720b4320b813cd2c2b6afb3b9f3b8dbb9c249d9";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hspec-effectful-1.1.2-r1-381cfc5a08417049ac7d7085e3ce5a10d80e0b5835a864c1caa52483ed3e9dc9.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-14T17:03:03Z";
+        sha256 = "381cfc5a08417049ac7d7085e3ce5a10d80e0b5835a864c1caa52483ed3e9dc9";
+      };
+      default = "r1";
     };
   };
 }
