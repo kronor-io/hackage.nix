@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "c1628652d54d2546c26ffe128b4bc22a4c120920413029a290f8492653d2f849";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/atrophy-0.2.0.0-r0-c157d494ab3b85aa9a67731d7cb4278d7b218f66425feaa7cd69546644683c58.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-15T21:25:27Z";
+        sha256 = "c157d494ab3b85aa9a67731d7cb4278d7b218f66425feaa7cd69546644683c58";
+      };
+      default = "r0";
+    };
+  };
 }

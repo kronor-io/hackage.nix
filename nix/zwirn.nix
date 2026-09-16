@@ -41,4 +41,16 @@
       default = "r0";
     };
   };
+  "0.2.3.1" = {
+    sha256 = "c6edf9cce589111086a72b0f9603d20e8742b773102321baf5cba0602e03efa3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/zwirn-0.2.3.1-r0-115f47c39bf904dbcb0994911de68bc65cb09b062672be734d20265de644b0d8.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-15T17:56:20Z";
+        sha256 = "115f47c39bf904dbcb0994911de68bc65cb09b062672be734d20265de644b0d8";
+      };
+      default = "r0";
+    };
+  };
 }
