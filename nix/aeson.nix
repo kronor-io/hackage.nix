@@ -2720,7 +2720,13 @@
         revTimestamp = "2026-09-12T18:04:12Z";
         sha256 = "9d6c5c6288b90c63694ebd045f6ec244aa24eb264050adc0882ea447bc6de5e8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/aeson-2.3.2.0-r1-9adf079015348cf24eacbe1f474c549aa7ccb59a412a61997368bf87cb732c66.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-17T21:39:03Z";
+        sha256 = "9adf079015348cf24eacbe1f474c549aa7ccb59a412a61997368bf87cb732c66";
+      };
+      default = "r1";
     };
   };
 }

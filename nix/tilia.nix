@@ -8,7 +8,19 @@
         revTimestamp = "2026-09-16T15:44:16Z";
         sha256 = "cc0915e997febe7eb9e5353fe3f10c6d2488cdcfe700284d19e809bb13d0f43c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tilia-0.0.1.0-r1-8176f744b9ea6d00b6ae39e128ed316bb4c985aa78531e5f693a0b3b0341e044.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-17T06:54:16Z";
+        sha256 = "8176f744b9ea6d00b6ae39e128ed316bb4c985aa78531e5f693a0b3b0341e044";
+      };
+      r2 = {
+        nix = import ../hackage/tilia-0.0.1.0-r2-65076b8fa3d46bb7d5dd8e425e0b62b1add44fffaef557d15b29e5a722e41986.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-17T07:07:32Z";
+        sha256 = "65076b8fa3d46bb7d5dd8e425e0b62b1add44fffaef557d15b29e5a722e41986";
+      };
+      default = "r2";
     };
   };
 }
