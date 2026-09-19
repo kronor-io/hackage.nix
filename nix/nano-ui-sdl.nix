@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "4ef1aa4d1e57cb6f4c876ff04e9e0116bca6d827fa886ffb0416ed0dfc7b3ff8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nano-ui-sdl-0.1.0.1-r0-6b86da3f3e908c7db1b0ab21da9c0f91f82f6d33e3f7a65bd80fd27876dee2b7.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-18T20:40:43Z";
+        sha256 = "6b86da3f3e908c7db1b0ab21da9c0f91f82f6d33e3f7a65bd80fd27876dee2b7";
+      };
+      default = "r0";
+    };
+  };
 }

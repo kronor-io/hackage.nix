@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "1.2.0.0" = {
+    sha256 = "52476ea457fa9cdd5117a34e8b434c1389509cb3fd3bf86454f34061313cf6c0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pg-migrate-import-hasql-migration-1.2.0.0-r0-f23cb8a65d50058c9fa83648493039b6e0c44cbd1326e0bd61572ee156cf4fd0.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-18T19:10:34Z";
+        sha256 = "f23cb8a65d50058c9fa83648493039b6e0c44cbd1326e0bd61572ee156cf4fd0";
+      };
+      default = "r0";
+    };
+  };
 }
