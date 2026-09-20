@@ -92,7 +92,13 @@
         revTimestamp = "2026-03-02T12:17:56Z";
         sha256 = "e79de025a97421a81c63b846092d1633301d41b329b3999dadb6f0138c6e3054";
       };
-      default = "r10";
+      r11 = {
+        nix = import ../hackage/lens-properties-4.11.1-r11-ae6984edb00fc6077e6816feb3f7e034b520f3d3bfc3fed73629c8f9c2e39842.nix;
+        revNum = 11;
+        revTimestamp = "2026-09-19T21:26:01Z";
+        sha256 = "ae6984edb00fc6077e6816feb3f7e034b520f3d3bfc3fed73629c8f9c2e39842";
+      };
+      default = "r11";
     };
   };
   "4.7" = {
