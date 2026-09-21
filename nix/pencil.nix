@@ -83,4 +83,16 @@
       default = "r1";
     };
   };
+  "1.0.2" = {
+    sha256 = "ed2780deba399c48ae2ef170dc0e44ec65a7335babe51c4ab06af519e660d6d9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/pencil-1.0.2-r0-ef3a36aff9df6410c57eb52ccdc4033022e2b3e03f20c3df3c990aeede4d2925.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-20T20:47:43Z";
+        sha256 = "ef3a36aff9df6410c57eb52ccdc4033022e2b3e03f20c3df3c990aeede4d2925";
+      };
+      default = "r0";
+    };
+  };
 }
