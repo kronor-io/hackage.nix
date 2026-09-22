@@ -791,4 +791,16 @@
       default = "r1";
     };
   };
+  "0.5" = {
+    sha256 = "928260b9db16e216d38793aba776743399ba977308dd88877a3fdf834ea3bd30";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/zip-archive-0.5-r0-b81733e9b429f9ecb351fe806b2edc10bac8199273b7d7932ffa3653596f0053.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-21T18:19:52Z";
+        sha256 = "b81733e9b429f9ecb351fe806b2edc10bac8199273b7d7932ffa3653596f0053";
+      };
+      default = "r0";
+    };
+  };
 }
