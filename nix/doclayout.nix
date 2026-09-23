@@ -173,4 +173,16 @@
       default = "r0";
     };
   };
+  "0.6" = {
+    sha256 = "32b5385063385039eba138c79cabd88fed140fdbc1703a3380664fe96d006c33";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/doclayout-0.6-r0-5f396328fb1948d826da18ab1841ff6604a7f668129e954ab834aba1df025af9.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-22T04:43:55Z";
+        sha256 = "5f396328fb1948d826da18ab1841ff6604a7f668129e954ab834aba1df025af9";
+      };
+      default = "r0";
+    };
+  };
 }

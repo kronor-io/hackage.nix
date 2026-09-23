@@ -50,7 +50,13 @@
         revTimestamp = "2025-07-11T10:10:49Z";
         sha256 = "36cd315b249d9ea89be4f4a164ee8896098adb5f5cc55e566a96daf350ddc25c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ods2csv-0.1.0.2-r1-91dc0ee22a360a80642a94c260f648b8de12d293c11fa70650c8f7d0f99f9bf7.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-22T09:24:08Z";
+        sha256 = "91dc0ee22a360a80642a94c260f648b8de12d293c11fa70650c8f7d0f99f9bf7";
+      };
+      default = "r1";
     };
   };
 }
