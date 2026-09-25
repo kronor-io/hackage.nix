@@ -32,7 +32,13 @@
         revTimestamp = "2026-03-06T00:53:22Z";
         sha256 = "9bca85e7c7e4129b038465f4a6d76893eaff916ff7efe1fc167ac2e9db61dc15";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hash-tree-0.1.0-r1-0fd15f6423f36c4e68f5d85e4b84e868faeee34c111a90dbb22c522a0fc3ea07.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-24T01:39:09Z";
+        sha256 = "0fd15f6423f36c4e68f5d85e4b84e868faeee34c111a90dbb22c522a0fc3ea07";
+      };
+      default = "r1";
     };
   };
 }

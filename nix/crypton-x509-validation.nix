@@ -98,7 +98,13 @@
         revTimestamp = "2026-06-03T05:49:24Z";
         sha256 = "7fd1231e0ce13be7bbb95a348da58919174d341572309ff4471e39c3b3f4e68a";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/crypton-x509-validation-1.9.1-r2-791c13c1e87c7511a49347573520d0f9f1e311eb9b7d2851beb62273e5cdfc0e.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-24T01:39:05Z";
+        sha256 = "791c13c1e87c7511a49347573520d0f9f1e311eb9b7d2851beb62273e5cdfc0e";
+      };
+      default = "r2";
     };
   };
 }

@@ -86,7 +86,13 @@
         revTimestamp = "2026-06-03T05:43:31Z";
         sha256 = "6ed60424bd0664695db63cfda2052172bf6842b560dfb6f48478448c6f39ec65";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crypton-x509-1.9.1-r1-e75d41c30bbba0c3db42254b090561caa16a81afc857c3e634ca739bbf8c566f.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-24T01:39:03Z";
+        sha256 = "e75d41c30bbba0c3db42254b090561caa16a81afc857c3e634ca739bbf8c566f";
+      };
+      default = "r1";
     };
   };
 }
