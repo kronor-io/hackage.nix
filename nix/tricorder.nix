@@ -68,7 +68,13 @@
         revTimestamp = "2026-08-17T10:05:42Z";
         sha256 = "21aa6b9ab3108c1e540381cce07add7d2cb1794d1c3c92490c2dde21b51fec17";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tricorder-0.2.1.0-r1-f806c858c8f80394f3b80803decc18c0e8059357e092bb567ec8ecd7c878f47a.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:11:11Z";
+        sha256 = "f806c858c8f80394f3b80803decc18c0e8059357e092bb567ec8ecd7c878f47a";
+      };
+      default = "r1";
     };
   };
   "0.2.2.0" = {
@@ -80,7 +86,13 @@
         revTimestamp = "2026-09-05T09:24:25Z";
         sha256 = "9bebdaf09d47ff58cb63c04a454ed34fe623291277c53ebda8a96878867e406c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tricorder-0.2.2.0-r1-afa284b1dfdd27b83d945b1804ef3c8b4317031777216669ee5c1ddf82fce598.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:11:16Z";
+        sha256 = "afa284b1dfdd27b83d945b1804ef3c8b4317031777216669ee5c1ddf82fce598";
+      };
+      default = "r1";
     };
   };
   "0.2.2.2" = {
@@ -92,7 +104,13 @@
         revTimestamp = "2026-09-10T14:09:10Z";
         sha256 = "7f656c92301483b8e034a11f3c5f287211fd49e7f9d4df05f0bfcd17af50bb84";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tricorder-0.2.2.2-r1-9b76cf09ae2085bb5e4ba483ba1b4cd15244e1b5eb765d43cb2f6417c361fc60.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:11:21Z";
+        sha256 = "9b76cf09ae2085bb5e4ba483ba1b4cd15244e1b5eb765d43cb2f6417c361fc60";
+      };
+      default = "r1";
     };
   };
   "0.2.2.3" = {
@@ -104,7 +122,13 @@
         revTimestamp = "2026-09-11T13:57:20Z";
         sha256 = "9a6fd79ebac7079aa85b7343423e33e11523edd5e9ece98c1a05692eb3fd201c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tricorder-0.2.2.3-r1-736907079aa35e894576248caa06022440f15c124d2887ace5bebcf1b89407ab.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:11:26Z";
+        sha256 = "736907079aa35e894576248caa06022440f15c124d2887ace5bebcf1b89407ab";
+      };
+      default = "r1";
     };
   };
   "0.3.0.0" = {
@@ -116,7 +140,13 @@
         revTimestamp = "2026-09-15T09:54:33Z";
         sha256 = "58254bb6cf8ce725b511359bfe375ca1d815f8ca401612906253fcab9b031544";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tricorder-0.3.0.0-r1-6090adf8cd86550b72e7628f0cf6432052f6138b90ba62ad29f80190d515d138.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:11:30Z";
+        sha256 = "6090adf8cd86550b72e7628f0cf6432052f6138b90ba62ad29f80190d515d138";
+      };
+      default = "r1";
     };
   };
   "0.4.0.0" = {
@@ -140,7 +170,13 @@
         revTimestamp = "2026-09-22T08:55:16Z";
         sha256 = "549842294eb1d361876a79cf08c294c240ac55bc2174254747dd44a01a36023e";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/tricorder-0.4.0.0-r3-075fd7e7d0ec6fbf90a5dc145ff193f2a450114d836421b47e62ccc267c65471.nix;
+        revNum = 3;
+        revTimestamp = "2026-09-25T13:11:35Z";
+        sha256 = "075fd7e7d0ec6fbf90a5dc145ff193f2a450114d836421b47e62ccc267c65471";
+      };
+      default = "r3";
     };
   };
   "0.4.1.0" = {
@@ -158,7 +194,13 @@
         revTimestamp = "2026-09-22T08:54:43Z";
         sha256 = "b977248575af0dcd68f27465a0c5b5ecf1a2e466cb5993805a8571b3b809a8fd";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tricorder-0.4.1.0-r2-b302503e1b9f7589ec91e6f4e4476647b34cf6b91ac4a5eb8f1d3895e0095dd4.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-25T13:11:39Z";
+        sha256 = "b302503e1b9f7589ec91e6f4e4476647b34cf6b91ac4a5eb8f1d3895e0095dd4";
+      };
+      default = "r2";
     };
   };
   "0.4.1.1" = {
@@ -176,7 +218,13 @@
         revTimestamp = "2026-09-22T08:57:14Z";
         sha256 = "50552089aa995bb54ea5f2885176e77c7bc8b175ae0b6f7e4eb7ff86614fea06";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tricorder-0.4.1.1-r2-5eb706a76c0d2db276ebe3ee734c6db2e348a3430b871573bb6ef26ecd66ca6c.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-25T13:11:44Z";
+        sha256 = "5eb706a76c0d2db276ebe3ee734c6db2e348a3430b871573bb6ef26ecd66ca6c";
+      };
+      default = "r2";
     };
   };
 }

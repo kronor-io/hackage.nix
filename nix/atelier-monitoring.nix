@@ -8,7 +8,13 @@
         revTimestamp = "2026-08-14T13:38:07Z";
         sha256 = "8c0f4c997018df57a1fe16d9c4291373dca6778fdc83a5dac1f6e9f1569be8ec";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/atelier-monitoring-0.1.0.0-r1-61afa8ad1a1d83a6fb96dfbace11bbe0de16cd914744ff456bb7ac5c451aae04.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T13:10:16Z";
+        sha256 = "61afa8ad1a1d83a6fb96dfbace11bbe0de16cd914744ff456bb7ac5c451aae04";
+      };
+      default = "r1";
     };
   };
 }

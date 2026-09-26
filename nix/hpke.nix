@@ -38,7 +38,13 @@
         revTimestamp = "2026-09-24T01:43:25Z";
         sha256 = "0a38e8bb686c61576c7b23fc93cee39b0e37d9d64a11c839a239ae9edaa94384";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hpke-0.2.0-r1-90a50806a02eaba16b557e5f22f23ce3a096781d458cff1e8c7867843811f9d7.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-25T12:51:48Z";
+        sha256 = "90a50806a02eaba16b557e5f22f23ce3a096781d458cff1e8c7867843811f9d7";
+      };
+      default = "r1";
     };
   };
 }

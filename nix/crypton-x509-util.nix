@@ -26,7 +26,13 @@
         revTimestamp = "2026-09-24T01:39:04Z";
         sha256 = "d8bf51c0b61e71671a55c6caf9fcae722c9666e400a0ce2a5a93a29c0bdc1b6b";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/crypton-x509-util-1.9.0-r2-c2781c1e5a9bcd4264f81952cc051ed485c77131e51706825959d6d4f5da76a0.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-25T12:51:51Z";
+        sha256 = "c2781c1e5a9bcd4264f81952cc051ed485c77131e51706825959d6d4f5da76a0";
+      };
+      default = "r2";
     };
   };
 }

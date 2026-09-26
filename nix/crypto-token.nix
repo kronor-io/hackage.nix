@@ -116,7 +116,13 @@
         revTimestamp = "2026-09-24T01:39:07Z";
         sha256 = "547eba762bc5ca113035dceb65d0624ac2d072fad6e0e0c7363e40f3a2abf33c";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/crypto-token-0.2.0-r2-9d93402c3b8044d6e86b4058b9eb5ea2048fbd5016fa786355927e69b3c8e34e.nix;
+        revNum = 2;
+        revTimestamp = "2026-09-25T13:06:38Z";
+        sha256 = "9d93402c3b8044d6e86b4058b9eb5ea2048fbd5016fa786355927e69b3c8e34e";
+      };
+      default = "r2";
     };
   };
 }
