@@ -1484,7 +1484,13 @@
         revTimestamp = "2026-09-10T23:44:22Z";
         sha256 = "ba372dbd9a892c9b8e8cc813b80391a861610452aec6dfcaedefad3a46feea00";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/hledger-ui-1.52.4-r1-bc83c591fb13a4d275781d69c0b1b9f3bcca17166bf2be500e2d2a8bbafd1b29.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-26T14:14:16Z";
+        sha256 = "bc83c591fb13a4d275781d69c0b1b9f3bcca17166bf2be500e2d2a8bbafd1b29";
+      };
+      default = "r1";
     };
   };
   "1.9" = {

@@ -266,7 +266,13 @@
         revTimestamp = "2025-09-13T18:22:45Z";
         sha256 = "929a5a35c3e087b9fcb9321925230a12ee0f753e4f5350766e3898bb5226f4c7";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/tasty-rerun-1.1.20-r3-3d46bc0c71ba54a8d7e0d60ab56595c6ed5b4ed02fadb615c69a7163f1eb09f8.nix;
+        revNum = 3;
+        revTimestamp = "2026-09-26T07:55:17Z";
+        sha256 = "3d46bc0c71ba54a8d7e0d60ab56595c6ed5b4ed02fadb615c69a7163f1eb09f8";
+      };
+      default = "r3";
     };
   };
   "1.1.3" = {
