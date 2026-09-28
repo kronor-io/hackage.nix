@@ -68,7 +68,13 @@
         revTimestamp = "2025-09-22T10:12:29Z";
         sha256 = "3c4b901eb93b75bcb206bc52f7a8646ba604d60776de839a774780c2d4087fd7";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gridtables-0.1.1.0-r1-98d1371f9cce31605a250ba63121d5b219df8655576ed054cfa2bb3275965cdc.nix;
+        revNum = 1;
+        revTimestamp = "2026-09-27T16:29:16Z";
+        sha256 = "98d1371f9cce31605a250ba63121d5b219df8655576ed054cfa2bb3275965cdc";
+      };
+      default = "r1";
     };
   };
 }

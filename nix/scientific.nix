@@ -803,4 +803,16 @@
       default = "r0";
     };
   };
+  "0.3.9.0" = {
+    sha256 = "39e9c7baa13852e245f5fc9c82d82eb564cd15a0dcb3a2850d9a1fc13af1c707";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/scientific-0.3.9.0-r0-867d3d862acf041cf1540eca4e1d699797e9d8b61ade41a8284c94ad83ff540d.nix;
+        revNum = 0;
+        revTimestamp = "2026-09-27T09:36:51Z";
+        sha256 = "867d3d862acf041cf1540eca4e1d699797e9d8b61ade41a8284c94ad83ff540d";
+      };
+      default = "r0";
+    };
+  };
 }
