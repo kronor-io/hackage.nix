@@ -302,7 +302,13 @@
         revTimestamp = "2026-01-11T10:49:26Z";
         sha256 = "50ae7884592a9cefa3ac53f2b6b7f031dc17b44879d67b41438e840091638faf";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/comfort-array-0.5.5-r3-708026f70070284645a34299ce4a68c78d7face797701f99e8a5a6a91e331134.nix;
+        revNum = 3;
+        revTimestamp = "2026-09-28T17:33:03Z";
+        sha256 = "708026f70070284645a34299ce4a68c78d7face797701f99e8a5a6a91e331134";
+      };
+      default = "r3";
     };
   };
 }
