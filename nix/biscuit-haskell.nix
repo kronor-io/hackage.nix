@@ -116,7 +116,13 @@
         revTimestamp = "2026-09-27T16:34:27Z";
         sha256 = "f9c1902beb7ddae17ce2524b92ad691bfd21f97929f528c7bd4f7e028249eef8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/biscuit-haskell-0.5.0.0-r1-14863c0821d412c421dfcff71650e2fcd2fa5b5f380c954c7ff7b72bfc58c53d.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-02T19:12:01Z";
+        sha256 = "14863c0821d412c421dfcff71650e2fcd2fa5b5f380c954c7ff7b72bfc58c53d";
+      };
+      default = "r1";
     };
   };
 }

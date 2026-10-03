@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "36f63baf0080b26df629f71f8e1bda8a0a8fd351506df54c703040f78469b374";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sydtest-mutation-runtime-0.2.0.0-r0-3880de9b390c4be86b47a8789b4ac404e51da8b866bdf386151b034a4c533282.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-02T10:13:07Z";
+        sha256 = "3880de9b390c4be86b47a8789b4ac404e51da8b866bdf386151b034a4c533282";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -14,7 +14,13 @@
         revTimestamp = "2026-09-30T15:09:16Z";
         sha256 = "980a82a0ec228969af2f17a0443bdf1861855e94bab76814b18595349dd67ecc";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/acme-not-a-joke-0.1.0.0-r2-57fbd99c6ed98416d558652cca4d6bec4786f763dc8145b36090376afe4e3fc8.nix;
+        revNum = 2;
+        revTimestamp = "2026-10-02T19:34:48Z";
+        sha256 = "57fbd99c6ed98416d558652cca4d6bec4786f763dc8145b36090376afe4e3fc8";
+      };
+      default = "r2";
     };
   };
 }
