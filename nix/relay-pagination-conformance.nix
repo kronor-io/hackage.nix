@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.1.1.1" = {
+    sha256 = "53fb4a2b6c6ad5a2cfcc272005e122f92b81f74a1c59279b8235aca40991abb9";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/relay-pagination-conformance-0.1.1.1-r0-e6ebd123c5c7b09ba5518eddfe62543cc221f499337890bfaa308f2e2c2dade5.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-05T22:39:44Z";
+        sha256 = "e6ebd123c5c7b09ba5518eddfe62543cc221f499337890bfaa308f2e2c2dade5";
+      };
+      default = "r0";
+    };
+  };
 }
