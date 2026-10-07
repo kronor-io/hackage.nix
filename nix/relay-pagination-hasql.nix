@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.1.1.2" = {
+    sha256 = "17e86cf82633350fa82eef26ddf42e6f10a03ba450fedc2038aa608b9b742b51";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/relay-pagination-hasql-0.1.1.2-r0-309caf72c9dae9c137eb876a7f638af635a889616eba24ba570756d662dab20c.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-06T17:53:20Z";
+        sha256 = "309caf72c9dae9c137eb876a7f638af635a889616eba24ba570756d662dab20c";
+      };
+      default = "r0";
+    };
+  };
 }
