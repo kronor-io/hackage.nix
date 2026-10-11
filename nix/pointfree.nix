@@ -218,7 +218,13 @@
         revTimestamp = "2024-10-14T18:04:57Z";
         sha256 = "ce5321d333c96d1c795a43ee8343872611dd117a5fb9739ea48536f2e6ca82da";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/pointfree-1.1.1.12-r2-c2dca4f279ad9c6b7cbb92f554ddcd27863da70fb77368151e55bb6f3cdbb9c8.nix;
+        revNum = 2;
+        revTimestamp = "2026-10-10T17:54:30Z";
+        sha256 = "c2dca4f279ad9c6b7cbb92f554ddcd27863da70fb77368151e55bb6f3cdbb9c8";
+      };
+      default = "r2";
     };
   };
   "1.1.1.2" = {

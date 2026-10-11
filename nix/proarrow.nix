@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "d6c9699afa9893d62fd755819f640f4faee9903702573844c764cf94238804ea";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/proarrow-0.3.0.0-r0-8cb932a464209f8444fd522be66ca98ddc55f0a0cefb80cb3a1cf0b23407bc1a.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-10T19:40:06Z";
+        sha256 = "8cb932a464209f8444fd522be66ca98ddc55f0a0cefb80cb3a1cf0b23407bc1a";
+      };
+      default = "r0";
+    };
+  };
 }
