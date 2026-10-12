@@ -113,4 +113,16 @@
       default = "r0";
     };
   };
+  "0.4" = {
+    sha256 = "648ae4f08727d624f6a1c23fbe196c30ae9e71ab56b088d470db24573a85b9bc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/emacs-module-0.4-r0-4323a2ae1364130441533283d1de09a034eb1e8a95830417212b716c58e9ea43.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-11T21:59:13Z";
+        sha256 = "4323a2ae1364130441533283d1de09a034eb1e8a95830417212b716c58e9ea43";
+      };
+      default = "r0";
+    };
+  };
 }
