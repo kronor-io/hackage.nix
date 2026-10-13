@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.2.0.0" = {
+    sha256 = "5700f206bc4365eac08fdfc849cb945f643b1f222cc4d94222302c89a284a71c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/libheif-hs-0.2.0.0-r0-afbd75e415a0b983135b9b5dd090d42f7107e1c9354c1afb4702c26fb96c9bc1.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-12T14:09:39Z";
+        sha256 = "afbd75e415a0b983135b9b5dd090d42f7107e1c9354c1afb4702c26fb96c9bc1";
+      };
+      default = "r0";
+    };
+  };
 }
