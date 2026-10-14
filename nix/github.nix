@@ -590,7 +590,13 @@
         revTimestamp = "2026-08-29T06:24:55Z";
         sha256 = "46c34b41f8066e18404879e3556e5bfd909f1827465b59e9397d78311bd7eb83";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/github-0.30.0.2-r2-0112a677e40920cfb119dfd4446f217e751515643db36e5b6efbbaed811c3a1c.nix;
+        revNum = 2;
+        revTimestamp = "2026-10-13T08:04:05Z";
+        sha256 = "0112a677e40920cfb119dfd4446f217e751515643db36e5b6efbbaed811c3a1c";
+      };
+      default = "r2";
     };
   };
   "0.4.0" = {
