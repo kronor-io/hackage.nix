@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.5.1.0" = {
+    sha256 = "1347abab64ce100bbe5a4c03ace69e31129dad751e7a24330d678a9393eec99c";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/sydtest-mutation-plugin-0.5.1.0-r0-f9e72941278e69f4d2864ea084e59a65b783ae4472ffa5ef42c8cfc85f6322fa.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-14T11:01:48Z";
+        sha256 = "f9e72941278e69f4d2864ea084e59a65b783ae4472ffa5ef42c8cfc85f6322fa";
+      };
+      default = "r0";
+    };
+  };
 }
