@@ -410,7 +410,13 @@
         revTimestamp = "2026-10-06T07:05:29Z";
         sha256 = "3413a2e53eb01337d9cadc65211ab1758dabd797b0df049b196e1ecb5d623b50";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-tls-0.5.5-r1-350af6331ddfe6ca5f6e7910f93b0e722f79f52fa6b29ebca3ca396ed62e549d.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-15T04:49:13Z";
+        sha256 = "350af6331ddfe6ca5f6e7910f93b0e722f79f52fa6b29ebca3ca396ed62e549d";
+      };
+      default = "r1";
     };
   };
 }
