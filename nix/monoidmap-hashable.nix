@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "0.0.0.3" = {
+    sha256 = "f11928bd57386c0073d1efaea01388a95182e00a01f45a888f91afa44949bedc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monoidmap-hashable-0.0.0.3-r0-24411e0f7f9f759df15c53b26c7078a788bf80e0d41a65b7b59fbee15099d764.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-17T03:52:25Z";
+        sha256 = "24411e0f7f9f759df15c53b26c7078a788bf80e0d41a65b7b59fbee15099d764";
+      };
+      default = "r0";
+    };
+  };
 }
