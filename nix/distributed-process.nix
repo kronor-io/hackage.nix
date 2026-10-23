@@ -446,7 +446,13 @@
         revTimestamp = "2026-10-13T23:32:09Z";
         sha256 = "33885cf1ec4b088610ee084d807854875bda20996fef5342fe10e78a28edae28";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/distributed-process-0.7.10-r1-7bf4a2572ec2e28e02c9b1a09a4ce356c101cc57fda2bc55105ae0cd6d56f6ca.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-22T14:50:36Z";
+        sha256 = "7bf4a2572ec2e28e02c9b1a09a4ce356c101cc57fda2bc55105ae0cd6d56f6ca";
+      };
+      default = "r1";
     };
   };
   "0.7.2" = {
