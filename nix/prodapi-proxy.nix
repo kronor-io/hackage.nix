@@ -20,7 +20,13 @@
         revTimestamp = "2026-09-30T18:25:09Z";
         sha256 = "5251c8f7f80d4740a109167fec1239caa72023289eb38b6fa144886177ce600e";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/prodapi-proxy-0.2.0.0-r1-1731247f7d7be5e25ffa0c0116f9eb431915d924fb7e58fd5979984c5d8f4465.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-23T10:50:58Z";
+        sha256 = "1731247f7d7be5e25ffa0c0116f9eb431915d924fb7e58fd5979984c5d8f4465";
+      };
+      default = "r1";
     };
   };
 }

@@ -86,7 +86,13 @@
         revTimestamp = "2026-10-12T19:05:07Z";
         sha256 = "5bf6812b8ebefb7ece2c841bce1b6686a398e42d3c7fb48afee376dab2d18143";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/dnsbase-1.0.2.3-r2-1c91a068823682b703402caa0aa38ddc5b18c75cf43f193f17eea326ca8627cc.nix;
+        revNum = 2;
+        revTimestamp = "2026-10-23T01:04:20Z";
+        sha256 = "1c91a068823682b703402caa0aa38ddc5b18c75cf43f193f17eea326ca8627cc";
+      };
+      default = "r2";
     };
   };
 }

@@ -1450,6 +1450,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "acme-missiles" = import ./nix/acme-missiles.nix;
   "acme-mutable-package" = import ./nix/acme-mutable-package.nix;
   "acme-not-a-joke" = import ./nix/acme-not-a-joke.nix;
+  "acme-not-a-joke-wai" = import ./nix/acme-not-a-joke-wai.nix;
+  "acme-not-a-joke-warp" = import ./nix/acme-not-a-joke-warp.nix;
   "acme-now" = import ./nix/acme-now.nix;
   "acme-numbersystem" = import ./nix/acme-numbersystem.nix;
   "acme-omitted" = import ./nix/acme-omitted.nix;
@@ -10128,6 +10130,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "jsonl-conduit" = import ./nix/jsonl-conduit.nix;
   "jsonlogic" = import ./nix/jsonlogic.nix;
   "jsonlogic-aeson" = import ./nix/jsonlogic-aeson.nix;
+  "jsonlogic-hs" = import ./nix/jsonlogic-hs.nix;
   "jsonnet" = import ./nix/jsonnet.nix;
   "jsonpatch" = import ./nix/jsonpatch.nix;
   "jsonpath" = import ./nix/jsonpath.nix;
@@ -19524,6 +19527,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "zigbee-znet25" = import ./nix/zigbee-znet25.nix;
   "zigzag" = import ./nix/zigzag.nix;
   "zim-parser" = import ./nix/zim-parser.nix;
+  "zim-to-markdown" = import ./nix/zim-to-markdown.nix;
   "zinza" = import ./nix/zinza.nix;
   "zio" = import ./nix/zio.nix;
   "zip" = import ./nix/zip.nix;
