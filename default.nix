@@ -3442,6 +3442,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "cas-store" = import ./nix/cas-store.nix;
   "casa-abbreviations-and-acronyms" = import ./nix/casa-abbreviations-and-acronyms.nix;
   "casa-client" = import ./nix/casa-client.nix;
+  "casa-reoc" = import ./nix/casa-reoc.nix;
   "casa-types" = import ./nix/casa-types.nix;
   "casadi-bindings" = import ./nix/casadi-bindings.nix;
   "casadi-bindings-control" = import ./nix/casadi-bindings-control.nix;
@@ -8304,6 +8305,10 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hen" = import ./nix/hen.nix;
   "henet" = import ./nix/henet.nix;
   "henforcer" = import ./nix/henforcer.nix;
+  "heni" = import ./nix/heni.nix;
+  "heni-cli" = import ./nix/heni-cli.nix;
+  "heni-hspec" = import ./nix/heni-hspec.nix;
+  "heni-tasty" = import ./nix/heni-tasty.nix;
   "hepevt" = import ./nix/hepevt.nix;
   "heph-aligned-storable" = import ./nix/heph-aligned-storable.nix;
   "heph-sparse-set" = import ./nix/heph-sparse-set.nix;
@@ -17143,6 +17148,11 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "takedouble" = import ./nix/takedouble.nix;
   "takusen-oracle" = import ./nix/takusen-oracle.nix;
   "tal" = import ./nix/tal.nix;
+  "tala-compiler" = import ./nix/tala-compiler.nix;
+  "tala-core" = import ./nix/tala-core.nix;
+  "tala-frontend" = import ./nix/tala-frontend.nix;
+  "tala-syntax" = import ./nix/tala-syntax.nix;
+  "tala-tooling" = import ./nix/tala-tooling.nix;
   "talash" = import ./nix/talash.nix;
   "tamarin-prover" = import ./nix/tamarin-prover.nix;
   "tamarin-prover-term" = import ./nix/tamarin-prover-term.nix;

@@ -563,4 +563,16 @@
       default = "r0";
     };
   };
+  "2.3.0" = {
+    sha256 = "166158e1706fe368dcf2cabc7e7c223f262d60c12f918e7b60f5cb26041a079f";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/dhscanner-kbgen-2.3.0-r0-f0459fe45308d8d653cde3867a3631c17dee65506984009e69af9cab7553dbe6.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-24T13:30:44Z";
+        sha256 = "f0459fe45308d8d653cde3867a3631c17dee65506984009e69af9cab7553dbe6";
+      };
+      default = "r0";
+    };
+  };
 }
