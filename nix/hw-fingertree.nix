@@ -110,7 +110,13 @@
         revTimestamp = "2022-08-31T06:51:12Z";
         sha256 = "e3426c3da4ad22f4356df2a7788601ab3de12b734ebf3c81529e3b66ffdf0202";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/hw-fingertree-0.1.2.1-r3-16d0a424d9c4d68bf7e15eae70218608296b18b10573798158fb5c22551e763f.nix;
+        revNum = 3;
+        revTimestamp = "2026-10-25T11:07:50Z";
+        sha256 = "16d0a424d9c4d68bf7e15eae70218608296b18b10573798158fb5c22551e763f";
+      };
+      default = "r3";
     };
   };
 }

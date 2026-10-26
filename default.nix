@@ -2095,6 +2095,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "ansi-terminal-game" = import ./nix/ansi-terminal-game.nix;
   "ansi-terminal-types" = import ./nix/ansi-terminal-types.nix;
   "ansi-wl-pprint" = import ./nix/ansi-wl-pprint.nix;
+  "ansido" = import ./nix/ansido.nix;
   "ansiform" = import ./nix/ansiform.nix;
   "ansigraph" = import ./nix/ansigraph.nix;
   "antagonist" = import ./nix/antagonist.nix;
@@ -2343,6 +2344,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "async-refresh" = import ./nix/async-refresh.nix;
   "async-refresh-tokens" = import ./nix/async-refresh-tokens.nix;
   "async-timer" = import ./nix/async-timer.nix;
+  "asyncapi3" = import ./nix/asyncapi3.nix;
   "asynchronous-exceptions" = import ./nix/asynchronous-exceptions.nix;
   "atelier-core" = import ./nix/atelier-core.nix;
   "atelier-db" = import ./nix/atelier-db.nix;
@@ -2559,6 +2561,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "baikai-kit" = import ./nix/baikai-kit.nix;
   "baikai-openai" = import ./nix/baikai-openai.nix;
   "baikai-trace-otel" = import ./nix/baikai-trace-otel.nix;
+  "baikai-typesafe" = import ./nix/baikai-typesafe.nix;
   "bake" = import ./nix/bake.nix;
   "balkon" = import ./nix/balkon.nix;
   "ballast" = import ./nix/ballast.nix;
@@ -5479,6 +5482,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "effectful-config-file-secretspec" = import ./nix/effectful-config-file-secretspec.nix;
   "effectful-core" = import ./nix/effectful-core.nix;
   "effectful-data-cache" = import ./nix/effectful-data-cache.nix;
+  "effectful-data-cache-opentelemetry" = import ./nix/effectful-data-cache-opentelemetry.nix;
   "effectful-opaleye" = import ./nix/effectful-opaleye.nix;
   "effectful-plugin" = import ./nix/effectful-plugin.nix;
   "effectful-poolboy" = import ./nix/effectful-poolboy.nix;
@@ -11768,6 +11772,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "monitor" = import ./nix/monitor.nix;
   "monky" = import ./nix/monky.nix;
   "mono-foldable" = import ./nix/mono-foldable.nix;
+  "mono-hash" = import ./nix/mono-hash.nix;
   "mono-traversable" = import ./nix/mono-traversable.nix;
   "mono-traversable-instances" = import ./nix/mono-traversable-instances.nix;
   "mono-traversable-keys" = import ./nix/mono-traversable-keys.nix;
@@ -14397,6 +14402,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "rdf4h" = import ./nix/rdf4h.nix;
   "rdf4h-vocab-activitystreams" = import ./nix/rdf4h-vocab-activitystreams.nix;
   "rdioh" = import ./nix/rdioh.nix;
+  "rdkafka-hs" = import ./nix/rdkafka-hs.nix;
   "rds-data" = import ./nix/rds-data.nix;
   "rds-data-codecs" = import ./nix/rds-data-codecs.nix;
   "rds-data-polysemy" = import ./nix/rds-data-polysemy.nix;
@@ -18105,6 +18111,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "typesafe-ai" = import ./nix/typesafe-ai.nix;
   "typesafe-ai-core" = import ./nix/typesafe-ai-core.nix;
   "typesafe-endian" = import ./nix/typesafe-endian.nix;
+  "typesafe-hs" = import ./nix/typesafe-hs.nix;
   "typesafe-precure" = import ./nix/typesafe-precure.nix;
   "typescript-docs" = import ./nix/typescript-docs.nix;
   "typical" = import ./nix/typical.nix;

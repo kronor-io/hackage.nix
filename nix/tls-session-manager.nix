@@ -221,4 +221,16 @@
       default = "r0";
     };
   };
+  "0.1.2" = {
+    sha256 = "3d61c6302f20bdbfdc2b81323dcba8ba41227dbee30ad7fab7197aa147c70e0d";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tls-session-manager-0.1.2-r0-3ddd76bb0b961fb6c97c821122248761355c658c4bdcac98db290ef3181210d7.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-25T08:43:41Z";
+        sha256 = "3ddd76bb0b961fb6c97c821122248761355c658c4bdcac98db290ef3181210d7";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -35,4 +35,28 @@
       default = "r0";
     };
   };
+  "0.1.1.0" = {
+    sha256 = "fd003a3b78884ee99ab188405edc420f2d2f0fb3d5cc2b0887bd02eef74d5b6a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/effectful-config-file-secretspec-0.1.1.0-r0-150f787eff5fa85d26ea4dd7aae2d3a43d4eec2de4353eb41e88501bc8b2a821.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-25T22:28:51Z";
+        sha256 = "150f787eff5fa85d26ea4dd7aae2d3a43d4eec2de4353eb41e88501bc8b2a821";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.1.1" = {
+    sha256 = "e92e59ddb7d5c2d61e9412b264bb127dd06777ce5bbd6e05b247b076824ada17";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/effectful-config-file-secretspec-0.1.1.1-r0-79d04cb0fcf57b3402f2bdae97254e51ea296838d414f9b212c8cf4255e6fe49.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-25T23:01:19Z";
+        sha256 = "79d04cb0fcf57b3402f2bdae97254e51ea296838d414f9b212c8cf4255e6fe49";
+      };
+      default = "r0";
+    };
+  };
 }

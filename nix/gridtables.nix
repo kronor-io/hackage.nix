@@ -77,4 +77,16 @@
       default = "r1";
     };
   };
+  "0.1.1.1" = {
+    sha256 = "e93c9823e98b882dde82037e68029c519cd8efb4c604c53b3e1496777b2d5233";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gridtables-0.1.1.1-r0-f9bbfb0a9c6c4fc241e57c6425b41a6d2fc10b5f1a37aee078a40d9e5c62a091.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-25T18:06:37Z";
+        sha256 = "f9bbfb0a9c6c4fc241e57c6425b41a6d2fc10b5f1a37aee078a40d9e5c62a091";
+      };
+      default = "r0";
+    };
+  };
 }
