@@ -26,7 +26,13 @@
         revTimestamp = "2025-01-08T17:40:11Z";
         sha256 = "de8eaa8535b48375f7536d2ea9f5da2ecf5f3e6e0c4e9de318663e1582a1a47e";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/LPFP-core-1.1.5-r1-39e5ed63e15a2062e52353c2e2a8d2c0df3149e7cb23d1bf493653d7f4b12fee.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-26T13:51:55Z";
+        sha256 = "39e5ed63e15a2062e52353c2e2a8d2c0df3149e7cb23d1bf493653d7f4b12fee";
+      };
+      default = "r1";
     };
   };
 }

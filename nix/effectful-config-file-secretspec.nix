@@ -59,4 +59,16 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "d0ea960c8dc4c3fe2b7d1a770d2269b1ffece4765e882ad7ea4082f0bc227e60";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/effectful-config-file-secretspec-0.1.2.0-r0-9740c52b774defdba58d7cd4acd404d8e33cab7492afd59704c09be71887bedb.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-26T22:19:01Z";
+        sha256 = "9740c52b774defdba58d7cd4acd404d8e33cab7492afd59704c09be71887bedb";
+      };
+      default = "r0";
+    };
+  };
 }

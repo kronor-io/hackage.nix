@@ -50,7 +50,13 @@
         revTimestamp = "2025-03-28T19:55:05Z";
         sha256 = "b574d18ca313c5c14776b0a960ea0848c9f838e8d2632d95c4cedb3abb6384d2";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/Vis-1.0.0-r2-e55cf2692ccb1ee9060fde3f87e46653a9730f04d342b4e6eaca8e81a79e7585.nix;
+        revNum = 2;
+        revTimestamp = "2026-10-26T14:00:11Z";
+        sha256 = "e55cf2692ccb1ee9060fde3f87e46653a9730f04d342b4e6eaca8e81a79e7585";
+      };
+      default = "r2";
     };
   };
 }

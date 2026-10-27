@@ -5482,6 +5482,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "effectful-config-file-secretspec" = import ./nix/effectful-config-file-secretspec.nix;
   "effectful-core" = import ./nix/effectful-core.nix;
   "effectful-data-cache" = import ./nix/effectful-data-cache.nix;
+  "effectful-data-cache-memcache" = import ./nix/effectful-data-cache-memcache.nix;
   "effectful-data-cache-opentelemetry" = import ./nix/effectful-data-cache-opentelemetry.nix;
   "effectful-opaleye" = import ./nix/effectful-opaleye.nix;
   "effectful-plugin" = import ./nix/effectful-plugin.nix;
@@ -6065,6 +6066,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "fields-json" = import ./nix/fields-json.nix;
   "fieldwise" = import ./nix/fieldwise.nix;
   "fig" = import ./nix/fig.nix;
+  "figment" = import ./nix/figment.nix;
   "file-collection" = import ./nix/file-collection.nix;
   "file-command-qq" = import ./nix/file-command-qq.nix;
   "file-embed" = import ./nix/file-embed.nix;
@@ -8319,6 +8321,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "heptapod" = import ./nix/heptapod.nix;
   "her-lexer" = import ./nix/her-lexer.nix;
   "her-lexer-parsec" = import ./nix/her-lexer-parsec.nix;
+  "herald" = import ./nix/herald.nix;
   "herb" = import ./nix/herb.nix;
   "herbalizer" = import ./nix/herbalizer.nix;
   "hercules-ci-agent" = import ./nix/hercules-ci-agent.nix;
@@ -10724,6 +10727,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "liblawless" = import ./nix/liblawless.nix;
   "liblinear-enumerator" = import ./nix/liblinear-enumerator.nix;
   "libltdl" = import ./nix/libltdl.nix;
+  "libmagic" = import ./nix/libmagic.nix;
   "libmdbx" = import ./nix/libmdbx.nix;
   "libmodbus" = import ./nix/libmodbus.nix;
   "libmolude" = import ./nix/libmolude.nix;
@@ -13226,6 +13230,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "pgmq-core" = import ./nix/pgmq-core.nix;
   "pgmq-effectful" = import ./nix/pgmq-effectful.nix;
   "pgmq-hasql" = import ./nix/pgmq-hasql.nix;
+  "pgmq-inspect" = import ./nix/pgmq-inspect.nix;
   "pgmq-migration" = import ./nix/pgmq-migration.nix;
   "pgp-wordlist" = import ./nix/pgp-wordlist.nix;
   "pgqueuer-hs" = import ./nix/pgqueuer-hs.nix;

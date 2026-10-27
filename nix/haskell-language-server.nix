@@ -392,7 +392,13 @@
         revTimestamp = "2026-09-04T10:38:07Z";
         sha256 = "077546ce6befaf03ffbd8074f01949214bc74a7ef993c8d4e9a9a7f0098b1a59";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/haskell-language-server-2.15.0.0-r1-6b7855086c03ef3a425c2c6f7a44da873556d6d5855a25ebc6d240f243815372.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-26T11:43:21Z";
+        sha256 = "6b7855086c03ef3a425c2c6f7a44da873556d6d5855a25ebc6d240f243815372";
+      };
+      default = "r1";
     };
   };
   "2.2.0.0" = {

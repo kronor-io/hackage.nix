@@ -56,7 +56,13 @@
         revTimestamp = "2025-01-23T16:35:40Z";
         sha256 = "69b7e105dd65630ca6ce8e7bd1a860f7841b1593a7ab454d7bb8238b1ab1070a";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/gitea-api-1.23.1.0-r1-ccccc7327d61fe83e2642e26aecc41b9073b81e16b240e20e36f31294cef5ff8.nix;
+        revNum = 1;
+        revTimestamp = "2026-10-26T09:47:53Z";
+        sha256 = "ccccc7327d61fe83e2642e26aecc41b9073b81e16b240e20e36f31294cef5ff8";
+      };
+      default = "r1";
     };
   };
 }
