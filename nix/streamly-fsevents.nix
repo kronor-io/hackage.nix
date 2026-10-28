@@ -32,7 +32,13 @@
         revTimestamp = "2026-10-21T12:09:44Z";
         sha256 = "89a03a875767ee8225f264d8820f6e45be8cddcc734410b4481ea7412ae98d22";
       };
-      default = "r2";
+      r3 = {
+        nix = import ../hackage/streamly-fsevents-0.1.1-r3-cd09d4a7e1ecb2179e1c2908c750aefbc9ca82fa4b20da79fe47096566e2bf7b.nix;
+        revNum = 3;
+        revTimestamp = "2026-10-27T22:46:52Z";
+        sha256 = "cd09d4a7e1ecb2179e1c2908c750aefbc9ca82fa4b20da79fe47096566e2bf7b";
+      };
+      default = "r3";
     };
   };
 }

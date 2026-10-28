@@ -227,4 +227,16 @@
       default = "r0";
     };
   };
+  "1.0" = {
+    sha256 = "40ce654284080dd7dffca5ea3f77a834e5acefc936d523aab09b0cd3d5dd1d40";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/nonempty-vector-1.0-r0-08418c11cebe72924e234c81e231f1524c976f73798b6e421385e2ac1a429857.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-27T21:53:05Z";
+        sha256 = "08418c11cebe72924e234c81e231f1524c976f73798b6e421385e2ac1a429857";
+      };
+      default = "r0";
+    };
+  };
 }

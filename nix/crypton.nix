@@ -263,6 +263,18 @@
       default = "r0";
     };
   };
+  "2.1.11" = {
+    sha256 = "6d4bc207aaf024b75086dc2caf53fc4dae7cb312814da232e62aa36cacd98e86";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/crypton-2.1.11-r0-96ac02d8e3beed093407f7f4f4ac8a151175804f8711e1b66a53108cfb7daf6d.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-27T06:44:47Z";
+        sha256 = "96ac02d8e3beed093407f7f4f4ac8a151175804f8711e1b66a53108cfb7daf6d";
+      };
+      default = "r0";
+    };
+  };
   "2.1.2" = {
     sha256 = "f0f6bcabbe20ecf71e71ea53537c311caacdc1a601031549cf0623ec1444bafb";
     revisions = {
