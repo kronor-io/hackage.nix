@@ -71,6 +71,18 @@
       default = "r0";
     };
   };
+  "0.12.0.1" = {
+    sha256 = "096a66d0da0f99faa97457a5e91ef4b0fbe9dadd5d5c86e6e644676403a23271";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/okf-cli-0.12.0.1-r0-32d0b92d9fb9930cf7ce2b2eb4d39fe2f830924e3fcd5e890dc6480c319691b4.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-29T03:19:22Z";
+        sha256 = "32d0b92d9fb9930cf7ce2b2eb4d39fe2f830924e3fcd5e890dc6480c319691b4";
+      };
+      default = "r0";
+    };
+  };
   "0.2.0.0" = {
     sha256 = "357ad9d982f3f342b108071a31379d117f3fbfc5f8176319d538bb993e07b1b6";
     revisions = {
