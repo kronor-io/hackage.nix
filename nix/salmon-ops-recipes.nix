@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "e95a617502ceab10b7dcef48b9a0b557a00ec93679e2ebae70a6c080f87e3353";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/salmon-ops-recipes-0.3.0.0-r0-9406bb9b57e814b9233636e8a2af98855c3f4fef38bbef436c02d24cd6e44d6b.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-31T17:34:56Z";
+        sha256 = "9406bb9b57e814b9233636e8a2af98855c3f4fef38bbef436c02d24cd6e44d6b";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -119,4 +119,16 @@
       default = "r0";
     };
   };
+  "0.23.0.0" = {
+    sha256 = "74bc8938363a0aebddab0bb74502ad02c20770163fb98ddabc0418c96ddf288a";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/keiro-test-support-0.23.0.0-r0-3f3b5bb99f8a8a312881fc353e2ccf357ad8718985dccd455e6be4387259e301.nix;
+        revNum = 0;
+        revTimestamp = "2026-10-31T12:32:38Z";
+        sha256 = "3f3b5bb99f8a8a312881fc353e2ccf357ad8718985dccd455e6be4387259e301";
+      };
+      default = "r0";
+    };
+  };
 }
