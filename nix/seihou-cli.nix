@@ -95,6 +95,18 @@
       default = "r0";
     };
   };
+  "0.14.0.0" = {
+    sha256 = "f4d58b132cd54651101f5516410ff6f1b21a79264d4daf1f9bf1bdfc8780fe31";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/seihou-cli-0.14.0.0-r0-a1d32b677d842c52ee9f54e8669fb7769a2e00e2dcfbbfa89d29f0400c65ceed.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-01T21:37:45Z";
+        sha256 = "a1d32b677d842c52ee9f54e8669fb7769a2e00e2dcfbbfa89d29f0400c65ceed";
+      };
+      default = "r0";
+    };
+  };
   "0.4.0.0" = {
     sha256 = "820708ce78dce7592b158bdd1e744dae8025b7b5b54dbad15b23c60a6b200ae0";
     revisions = {

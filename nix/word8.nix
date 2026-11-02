@@ -119,4 +119,16 @@
       default = "r0";
     };
   };
+  "0.1.4" = {
+    sha256 = "88d58024b15d3bb6dcc9d5a8185a0e420ce1b64a173f1d55527990dccd64d8d4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/word8-0.1.4-r0-d9bf1824426a07f58d2144bf9ee22652066266f12c59a6013de9f0c524284a80.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-01T21:46:48Z";
+        sha256 = "d9bf1824426a07f58d2144bf9ee22652066266f12c59a6013de9f0c524284a80";
+      };
+      default = "r0";
+    };
+  };
 }

@@ -131,4 +131,16 @@
       default = "r0";
     };
   };
+  "0.19.0" = {
+    sha256 = "893b5964096ee9bf8a115093e97a1867145ea5997b434c7a1a8b887931155ed7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/libasterix-0.19.0-r0-6c0d8b3b31aec0802c535efe0446745609f04dbf81026808bafe468e24222acc.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-01T10:08:12Z";
+        sha256 = "6c0d8b3b31aec0802c535efe0446745609f04dbf81026808bafe468e24222acc";
+      };
+      default = "r0";
+    };
+  };
 }
