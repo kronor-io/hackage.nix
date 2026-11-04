@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.3" = {
+    sha256 = "1ecedfb430816dcc64c0d65ba3226c851f19f029e0e8ef017640869a88558c32";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polytropos-core-0.1.0.3-r0-21484361517fd5dcf1149e8619f49c7edb96d9dabff5d0ef11474bbe72038e75.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-03T03:49:24Z";
+        sha256 = "21484361517fd5dcf1149e8619f49c7edb96d9dabff5d0ef11474bbe72038e75";
+      };
+      default = "r0";
+    };
+  };
 }

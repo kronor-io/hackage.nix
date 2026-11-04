@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.3" = {
+    sha256 = "8778db8f3956597c447b8893bb26dfa1cd2ed284f171fc1582af10ba400fca88";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/polytropos-beam-0.1.0.3-r0-af31041c383bc01534212f1310ff585256a59a3bdec4d5bdab7d88d66809289d.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-03T03:49:29Z";
+        sha256 = "af31041c383bc01534212f1310ff585256a59a3bdec4d5bdab7d88d66809289d";
+      };
+      default = "r0";
+    };
+  };
 }
