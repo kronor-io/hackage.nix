@@ -365,4 +365,16 @@
       default = "r5";
     };
   };
+  "0.5.0.2" = {
+    sha256 = "f3e1f7d5f5acc1fd75b7244b71195bc91f2d0df5dc1505d6b33e20648ef977e4";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/smtp-mail-0.5.0.2-r0-a405793f01e8d607622e5168e076a08c14f356178977f9930e9a1a75643c6bb8.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-04T14:19:39Z";
+        sha256 = "a405793f01e8d607622e5168e076a08c14f356178977f9930e9a1a75643c6bb8";
+      };
+      default = "r0";
+    };
+  };
 }
