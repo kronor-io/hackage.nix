@@ -1700,7 +1700,19 @@
         revTimestamp = "2026-10-30T11:35:36Z";
         sha256 = "3af51226d1f0a3c42d49def072c09fcee8c8d90acbbeff3542e4dbd1eeeb34ad";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/http2-5.4.12-r1-d6602d5b55f3800bd2434a0f6e8cf1417e7df96f0a03b2a4de2131d738e08897.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-05T11:55:02Z";
+        sha256 = "d6602d5b55f3800bd2434a0f6e8cf1417e7df96f0a03b2a4de2131d738e08897";
+      };
+      r2 = {
+        nix = import ../hackage/http2-5.4.12-r2-3e39226b23e25be0c05b452fd1ca1b3bbbc8aaa29eb649c57adf224514702bbb.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-05T12:07:59Z";
+        sha256 = "3e39226b23e25be0c05b452fd1ca1b3bbbc8aaa29eb649c57adf224514702bbb";
+      };
+      default = "r2";
     };
   };
   "5.4.2" = {
