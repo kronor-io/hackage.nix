@@ -6123,6 +6123,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "finite-table" = import ./nix/finite-table.nix;
   "finite-typelits" = import ./nix/finite-typelits.nix;
   "finito" = import ./nix/finito.nix;
+  "fir" = import ./nix/fir.nix;
   "fire-number-calc" = import ./nix/fire-number-calc.nix;
   "firebase-database" = import ./nix/firebase-database.nix;
   "firebase-hs" = import ./nix/firebase-hs.nix;
@@ -15721,11 +15722,14 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "shine-varying" = import ./nix/shine-varying.nix;
   "shivers-cfg" = import ./nix/shivers-cfg.nix;
   "shoap" = import ./nix/shoap.nix;
+  "shomei-client" = import ./nix/shomei-client.nix;
   "shomei-core" = import ./nix/shomei-core.nix;
   "shomei-jwt" = import ./nix/shomei-jwt.nix;
   "shomei-migrations" = import ./nix/shomei-migrations.nix;
   "shomei-postgres" = import ./nix/shomei-postgres.nix;
   "shomei-servant" = import ./nix/shomei-servant.nix;
+  "shomei-server" = import ./nix/shomei-server.nix;
+  "shomei-webauthn" = import ./nix/shomei-webauthn.nix;
   "shopify" = import ./nix/shopify.nix;
   "short-vec" = import ./nix/short-vec.nix;
   "short-vec-lens" = import ./nix/short-vec-lens.nix;
@@ -19023,9 +19027,14 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "winery" = import ./nix/winery.nix;
   "winio" = import ./nix/winio.nix;
   "wire-streams" = import ./nix/wire-streams.nix;
+  "wireform-arrow" = import ./nix/wireform-arrow.nix;
+  "wireform-columnar-core" = import ./nix/wireform-columnar-core.nix;
   "wireform-core" = import ./nix/wireform-core.nix;
   "wireform-derive" = import ./nix/wireform-derive.nix;
+  "wireform-flatbuffers" = import ./nix/wireform-flatbuffers.nix;
+  "wireform-parquet" = import ./nix/wireform-parquet.nix;
   "wireform-proto" = import ./nix/wireform-proto.nix;
+  "wireform-thrift" = import ./nix/wireform-thrift.nix;
   "wireform-yaml" = import ./nix/wireform-yaml.nix;
   "wireguard-hs" = import ./nix/wireguard-hs.nix;
   "wires" = import ./nix/wires.nix;

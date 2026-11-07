@@ -71,4 +71,16 @@
       default = "r0";
     };
   };
+  "0.2.1.0" = {
+    sha256 = "7cb780f0b2c3847112d27a4c8f1a83461960e1ab3028dd19e73701ec15ab69fa";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/agentic-anthropic-0.2.1.0-r0-7bab6c158a8fda704cf5b04163599c4a9ffc13da92f8d8ee6b93913f0cffd1c6.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-06T18:05:57Z";
+        sha256 = "7bab6c158a8fda704cf5b04163599c4a9ffc13da92f8d8ee6b93913f0cffd1c6";
+      };
+      default = "r0";
+    };
+  };
 }
