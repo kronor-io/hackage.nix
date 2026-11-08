@@ -167,4 +167,28 @@
       default = "r0";
     };
   };
+  "2.6.0" = {
+    sha256 = "3b901aa89c4052e71f3932fddb05870e05932e1bcfe511710d6f4fca2b60d1dc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/rocksdb-haskell-jprupp-2.6.0-r0-4208f9d91d30f60f77d84e6b601f196ec518e5fcfa1516985e318e43e45c3c1d.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-07T00:56:53Z";
+        sha256 = "4208f9d91d30f60f77d84e6b601f196ec518e5fcfa1516985e318e43e45c3c1d";
+      };
+      default = "r0";
+    };
+  };
+  "2.6.1" = {
+    sha256 = "fd16412d094d613c94311229b6ba6f3b126a6dffd3f61098fbab88541eba7d62";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/rocksdb-haskell-jprupp-2.6.1-r0-b97e92f311865e12242868ec8dcc53a66a96da489b4cd9996be3b5893c9d5e6a.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-07T14:36:40Z";
+        sha256 = "b97e92f311865e12242868ec8dcc53a66a96da489b4cd9996be3b5893c9d5e6a";
+      };
+      default = "r0";
+    };
+  };
 }
