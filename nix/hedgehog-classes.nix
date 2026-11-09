@@ -266,7 +266,13 @@
         revTimestamp = "2025-06-03T19:17:32Z";
         sha256 = "737e7fd40835c0c07b2e0dc56731878a90dd505ae17965c4b67d85e077a646be";
       };
-      default = "r6";
+      r7 = {
+        nix = import ../hackage/hedgehog-classes-0.2.5.4-r7-649ea3fe6dd9ca49a96105869282c981120d72ec9a319aa850863bafee79748f.nix;
+        revNum = 7;
+        revTimestamp = "2026-11-08T16:25:54Z";
+        sha256 = "649ea3fe6dd9ca49a96105869282c981120d72ec9a319aa850863bafee79748f";
+      };
+      default = "r7";
     };
   };
 }
