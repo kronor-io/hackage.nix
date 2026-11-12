@@ -536,7 +536,13 @@
         revTimestamp = "2025-08-13T15:19:59Z";
         sha256 = "8fcaaf12614bc9c919bc2cad72eb9d2f683fd1d930e9cab81babb94add742e89";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/diagrams-postscript-1.5.3-r1-8a57ff83cd176e48f71092d8272a7f20edee1c5a33d541f815da0706cacb2264.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-11T17:26:35Z";
+        sha256 = "8a57ff83cd176e48f71092d8272a7f20edee1c5a33d541f815da0706cacb2264";
+      };
+      default = "r1";
     };
   };
 }

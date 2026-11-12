@@ -62,7 +62,13 @@
         revTimestamp = "2026-06-12T02:38:48Z";
         sha256 = "c0663f5f428108680f4aae0f67b7b357c1bb5954281c7fbe941c50c58cd79f18";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/os-string-2.0.11-r1-145faf9d57c4e3dc799708ffc5880f3592010e024209dc7aca78466c56487656.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-11T06:25:29Z";
+        sha256 = "145faf9d57c4e3dc799708ffc5880f3592010e024209dc7aca78466c56487656";
+      };
+      default = "r1";
     };
   };
   "2.0.2" = {
