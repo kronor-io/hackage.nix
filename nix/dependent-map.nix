@@ -212,7 +212,13 @@
         revTimestamp = "2025-10-19T13:45:40Z";
         sha256 = "778b6e2b90b13c6ed7ce195de403cb6d21a4aa6d0bd9ce0dcd65c30e1195a3b8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/dependent-map-0.4.0.1-r1-0bfe7c16c5d7abe61a5ff288ce8c1ef28aef06433e54c138b214ba5a71583235.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-12T11:33:57Z";
+        sha256 = "0bfe7c16c5d7abe61a5ff288ce8c1ef28aef06433e54c138b214ba5a71583235";
+      };
+      default = "r1";
     };
   };
 }

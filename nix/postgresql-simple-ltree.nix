@@ -14,7 +14,19 @@
         revTimestamp = "2022-07-22T19:22:28Z";
         sha256 = "4547489ebbbfa5aed8ba7cbb9495732794eda52b13efa8b52358b2b51f7355b3";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/postgresql-simple-ltree-0.0.0.0-r2-96b18e49bfca1336a91b82bfd3f6f5a8476888849ca4b519d54332dbe64537cf.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-12T15:03:50Z";
+        sha256 = "96b18e49bfca1336a91b82bfd3f6f5a8476888849ca4b519d54332dbe64537cf";
+      };
+      r3 = {
+        nix = import ../hackage/postgresql-simple-ltree-0.0.0.0-r3-1f5e98bf72b74b0853fccbd4212fb819625062250dad0a6b68f5965c316f6fb4.nix;
+        revNum = 3;
+        revTimestamp = "2026-11-12T15:10:19Z";
+        sha256 = "1f5e98bf72b74b0853fccbd4212fb819625062250dad0a6b68f5965c316f6fb4";
+      };
+      default = "r3";
     };
   };
 }

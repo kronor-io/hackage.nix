@@ -80,7 +80,13 @@
         revTimestamp = "2025-04-05T08:24:48Z";
         sha256 = "f28479ac13e98630807181323f76ee60acf4e312a33e31fbd26a61ec10bb59cd";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/ghc-trace-events-0.1.2.10-r1-e40e2a90937fc9256475bef8d345d09f6f013294d936565ac49deecf36920763.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-12T12:02:32Z";
+        sha256 = "e40e2a90937fc9256475bef8d345d09f6f013294d936565ac49deecf36920763";
+      };
+      default = "r1";
     };
   };
   "0.1.2.2" = {

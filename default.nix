@@ -9431,6 +9431,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hup" = import ./nix/hup.nix;
   "hurdle" = import ./nix/hurdle.nix;
   "hurl" = import ./nix/hurl.nix;
+  "hurl-workbench-cli" = import ./nix/hurl-workbench-cli.nix;
+  "hurl-workbench-core" = import ./nix/hurl-workbench-core.nix;
   "hurl-xml" = import ./nix/hurl-xml.nix;
   "hurriyet" = import ./nix/hurriyet.nix;
   "husk-scheme" = import ./nix/husk-scheme.nix;
@@ -10114,6 +10116,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "jort" = import ./nix/jort.nix;
   "jose" = import ./nix/jose.nix;
   "jose-jwt" = import ./nix/jose-jwt.nix;
+  "jose-jwt-botan" = import ./nix/jose-jwt-botan.nix;
   "jot" = import ./nix/jot.nix;
   "journalctl-stream" = import ./nix/journalctl-stream.nix;
   "joy-rewrite" = import ./nix/joy-rewrite.nix;
@@ -13853,6 +13856,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "praglude" = import ./nix/praglude.nix;
   "pragmatic-show" = import ./nix/pragmatic-show.nix;
   "prairie" = import ./nix/prairie.nix;
+  "praxo-core" = import ./nix/praxo-core.nix;
   "preamble" = import ./nix/preamble.nix;
   "precis" = import ./nix/precis.nix;
   "precursor" = import ./nix/precursor.nix;
