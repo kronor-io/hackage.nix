@@ -59,6 +59,30 @@
       default = "r0";
     };
   };
+  "0.13.0.0" = {
+    sha256 = "adf2118c8b3dc78d2f91d09fa21a1115fe3031e4478e714c2fbddd115eb54f3b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shibuya-metrics-0.13.0.0-r0-7535be7e52fcd98e118a7d7cef1742fd23185b7c8a345c123d75e79c1e7ff65b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-13T04:23:34Z";
+        sha256 = "7535be7e52fcd98e118a7d7cef1742fd23185b7c8a345c123d75e79c1e7ff65b";
+      };
+      default = "r0";
+    };
+  };
+  "0.13.0.1" = {
+    sha256 = "b908e79cc52110854c44741ac1fc2a52592ca82afff3b8da0ac6dccbe2a94af2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shibuya-metrics-0.13.0.1-r0-9677ff6fd971d17ea300fbcfbe0adddd71cbba79b9d225648a0fc4fa17c5da16.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-13T15:03:14Z";
+        sha256 = "9677ff6fd971d17ea300fbcfbe0adddd71cbba79b9d225648a0fc4fa17c5da16";
+      };
+      default = "r0";
+    };
+  };
   "0.2.0.0" = {
     sha256 = "9bc24a45d07cf86a679588518bb05c8afab5196f35431a083a035aa056a7efd9";
     revisions = {

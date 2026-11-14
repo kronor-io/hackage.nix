@@ -59,6 +59,30 @@
       default = "r0";
     };
   };
+  "0.13.0.0" = {
+    sha256 = "ae9c949f72637706284df0c533029f6a2297088506f0c51d33ed7c72a5f951fc";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shibuya-core-0.13.0.0-r0-bc0d03437aa9d9f70bcb82a130782a175545cdd84c90b5d71e3271fc1572d374.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-13T04:21:08Z";
+        sha256 = "bc0d03437aa9d9f70bcb82a130782a175545cdd84c90b5d71e3271fc1572d374";
+      };
+      default = "r0";
+    };
+  };
+  "0.13.0.1" = {
+    sha256 = "6b8c5a3caab35d148bda82619912ae0dbe31c0c45e1d6e37266f99dcc764a67b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/shibuya-core-0.13.0.1-r0-c0a3910cb7ef7ed66a1ec6263a44504ecd4b32e59e99bb8da47a1ec025b3d12b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-13T15:02:45Z";
+        sha256 = "c0a3910cb7ef7ed66a1ec6263a44504ecd4b32e59e99bb8da47a1ec025b3d12b";
+      };
+      default = "r0";
+    };
+  };
   "0.2.0.0" = {
     sha256 = "18f507e6f7b32fab913a28a8673bf0ce7c382c530426e06225b3b75617075198";
     revisions = {

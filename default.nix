@@ -7157,6 +7157,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "glue-core" = import ./nix/glue-core.nix;
   "glue-ekg" = import ./nix/glue-ekg.nix;
   "glue-example" = import ./nix/glue-example.nix;
+  "glue-prometheus" = import ./nix/glue-prometheus.nix;
   "gluturtle" = import ./nix/gluturtle.nix;
   "gmail-simple" = import ./nix/gmail-simple.nix;
   "gmap" = import ./nix/gmap.nix;
@@ -10133,10 +10134,12 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "jsaddle-clib" = import ./nix/jsaddle-clib.nix;
   "jsaddle-dom" = import ./nix/jsaddle-dom.nix;
   "jsaddle-hello" = import ./nix/jsaddle-hello.nix;
+  "jsaddle-terminal" = import ./nix/jsaddle-terminal.nix;
   "jsaddle-warp" = import ./nix/jsaddle-warp.nix;
   "jsaddle-wasm" = import ./nix/jsaddle-wasm.nix;
   "jsaddle-webkit2gtk" = import ./nix/jsaddle-webkit2gtk.nix;
   "jsaddle-webkitgtk" = import ./nix/jsaddle-webkitgtk.nix;
+  "jsaddle-webview2" = import ./nix/jsaddle-webview2.nix;
   "jsaddle-wkwebview" = import ./nix/jsaddle-wkwebview.nix;
   "jsc" = import ./nix/jsc.nix;
   "jsdom-extras" = import ./nix/jsdom-extras.nix;
@@ -10256,6 +10259,8 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "kansas-lava-cores" = import ./nix/kansas-lava-cores.nix;
   "kansas-lava-papilio" = import ./nix/kansas-lava-papilio.nix;
   "kansas-lava-shake" = import ./nix/kansas-lava-shake.nix;
+  "kansoku-api" = import ./nix/kansoku-api.nix;
+  "kansoku-client" = import ./nix/kansoku-client.nix;
   "karabiner-config" = import ./nix/karabiner-config.nix;
   "karakuri" = import ./nix/karakuri.nix;
   "karps" = import ./nix/karps.nix;
@@ -10510,6 +10515,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "landlock" = import ./nix/landlock.nix;
   "lang" = import ./nix/lang.nix;
   "langchain-hs" = import ./nix/langchain-hs.nix;
+  "langchain-hs-anthropic" = import ./nix/langchain-hs-anthropic.nix;
   "langchain-hs-core" = import ./nix/langchain-hs-core.nix;
   "langchain-hs-gemini" = import ./nix/langchain-hs-gemini.nix;
   "langchain-hs-graph" = import ./nix/langchain-hs-graph.nix;
