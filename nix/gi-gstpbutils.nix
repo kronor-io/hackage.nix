@@ -179,4 +179,16 @@
       default = "r0";
     };
   };
+  "1.0.29" = {
+    sha256 = "42f81c3860b83ad9ff888bbc4d88017daa29c7288a5afc7a9089adcdead1d4d2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-gstpbutils-1.0.29-r0-3dba0f67fddd418bfe19420773d7fc3e6de4774aec9fd7fdbbb3551e0359ed1a.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T10:29:01Z";
+        sha256 = "3dba0f67fddd418bfe19420773d7fc3e6de4774aec9fd7fdbbb3551e0359ed1a";
+      };
+      default = "r0";
+    };
+  };
 }

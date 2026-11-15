@@ -23,4 +23,28 @@
       default = "r0";
     };
   };
+  "0.2.8" = {
+    sha256 = "cb25e43922ab2adfeadb4e222cccf0ec9a5b0b75f0a6956dc49d91d29485500b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hsjuiz-0.2.8-r0-1efbec7b33c501438a167150833159977bdf4834894e6a79067c17acd87e4b08.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T01:29:20Z";
+        sha256 = "1efbec7b33c501438a167150833159977bdf4834894e6a79067c17acd87e4b08";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.9" = {
+    sha256 = "89b5c2abe593fc99bd4c3441e6b64bc136b49181edc2176ff1b658131c5f75f2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hsjuiz-0.2.9-r0-cc28952d4937367d86baa38007bdd4043aaa36c8a56d96285a8c43768b9e83d7.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T23:08:47Z";
+        sha256 = "cc28952d4937367d86baa38007bdd4043aaa36c8a56d96285a8c43768b9e83d7";
+      };
+      default = "r0";
+    };
+  };
 }

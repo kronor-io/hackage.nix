@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.3.4" = {
+    sha256 = "b6f2298948a28a2da6a9c361e34db2c355cd93874019973c6d157ad8ad7a0593";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-keybinder-0.3.4-r0-58f0e643aee904341969990b16dd5d20a910ed3fbe4e7789c080c517714151b1.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T10:30:13Z";
+        sha256 = "58f0e643aee904341969990b16dd5d20a910ed3fbe4e7789c080c517714151b1";
+      };
+      default = "r0";
+    };
+  };
 }

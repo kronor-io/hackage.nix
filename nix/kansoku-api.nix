@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.3.0.0" = {
+    sha256 = "d0df6b272124bfc065452e46ac44dffc54840098e9bb9a37c99447043d3a182b";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/kansoku-api-0.3.0.0-r0-8fc8f99695d4267f51f7449252fd1edced464a370bcb8ed0bb7a8130d966fed9.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T14:47:41Z";
+        sha256 = "8fc8f99695d4267f51f7449252fd1edced464a370bcb8ed0bb7a8130d966fed9";
+      };
+      default = "r0";
+    };
+  };
 }

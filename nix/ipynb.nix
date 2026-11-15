@@ -53,4 +53,16 @@
       default = "r1";
     };
   };
+  "0.3" = {
+    sha256 = "c74a3bfd971be12384c44c2dad3f8d3d772cf133a3119a14c3412a22e86390ed";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ipynb-0.3-r0-6e5925def86141032494aecc6c5d186431ce94d619b68c7fe8ed85ccbcedb42b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T18:06:11Z";
+        sha256 = "6e5925def86141032494aecc6c5d186431ce94d619b68c7fe8ed85ccbcedb42b";
+      };
+      default = "r0";
+    };
+  };
 }

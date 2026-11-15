@@ -35,4 +35,16 @@
       default = "r0";
     };
   };
+  "6.0.5" = {
+    sha256 = "01e28a3368020e358634fffe22b5685da47d6b5ef0b1a57cf566a24ae156bf08";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/gi-webkitwebprocessextension-6.0.5-r0-2d325493430958294e3ac9c9d536297fa9bd2180585efb3cb4b9a4edca6dea55.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-14T10:33:01Z";
+        sha256 = "2d325493430958294e3ac9c9d536297fa9bd2180585efb3cb4b9a4edca6dea55";
+      };
+      default = "r0";
+    };
+  };
 }
