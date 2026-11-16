@@ -35,4 +35,40 @@
       default = "r0";
     };
   };
+  "0.6.0" = {
+    sha256 = "88a69c97a9e34b22d61cb33379bb28bb22101aa4a4d74c38d58d868a843652c2";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/praxo-core-0.6.0-r0-e64e883cd424c2f14bc4c6afc6fa3e520b8fb3b6e8c3277eea9feb1c7ea5e941.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-15T02:40:18Z";
+        sha256 = "e64e883cd424c2f14bc4c6afc6fa3e520b8fb3b6e8c3277eea9feb1c7ea5e941";
+      };
+      default = "r0";
+    };
+  };
+  "0.6.1" = {
+    sha256 = "4629200b998d603ea9dce239e02ddcf6a308a303ada5411db02ff5899bf4b990";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/praxo-core-0.6.1-r0-8f1e0990ddd8276c37be2e7756b4f7aa098c2263c99bd946e29739bd40b8bcdd.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-15T03:45:26Z";
+        sha256 = "8f1e0990ddd8276c37be2e7756b4f7aa098c2263c99bd946e29739bd40b8bcdd";
+      };
+      default = "r0";
+    };
+  };
+  "0.7.0" = {
+    sha256 = "87f896ace3c142a9caea906027e366ef019f0e0754ca489354478b5baef5b5d0";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/praxo-core-0.7.0-r0-5d6eb785565c907150fea84efdf964d5d69a77852fbd01b0118368f57cc15f3c.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-15T13:51:18Z";
+        sha256 = "5d6eb785565c907150fea84efdf964d5d69a77852fbd01b0118368f57cc15f3c";
+      };
+      default = "r0";
+    };
+  };
 }
