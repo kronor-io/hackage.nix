@@ -143,4 +143,16 @@
       default = "r0";
     };
   };
+  "0.4.2.1" = {
+    sha256 = "b10ecddf1c20a46613ed5c69fffbb021f45759b5dedc7efe72f310ef96fd7220";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/memcache-0.4.2.1-r0-4658cd8dfd90d3818e2395a1f16f076bf3866b1b6c5f68184f4dfc000faced21.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-18T19:05:26Z";
+        sha256 = "4658cd8dfd90d3818e2395a1f16f076bf3866b1b6c5f68184f4dfc000faced21";
+      };
+      default = "r0";
+    };
+  };
 }
