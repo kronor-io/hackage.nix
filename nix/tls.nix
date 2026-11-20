@@ -2570,7 +2570,13 @@
         revTimestamp = "2026-11-18T09:15:33Z";
         sha256 = "9fdb92365bb1ca606212672c0d53c8810a6a34f01fb24c52b05249294c1e189a";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-2.4.16-r1-393a64acc86e2f3425bf1a223239ac6e68fc026e85880eb6ea1887a5342ed80c.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-19T09:37:55Z";
+        sha256 = "393a64acc86e2f3425bf1a223239ac6e68fc026e85880eb6ea1887a5342ed80c";
+      };
+      default = "r1";
     };
   };
   "2.4.2" = {
@@ -2732,7 +2738,13 @@
         revTimestamp = "2026-11-18T09:15:25Z";
         sha256 = "bece4de1bf660be93cd933c6317e8d7cc5e390e5b4548a713630dc846ba42fee";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-2.5.3-r1-3f99cd06a5e8c420e95ff9fdf317162dd0415c07d0e7556e5abedb20f24b6e6a.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-19T09:37:53Z";
+        sha256 = "3f99cd06a5e8c420e95ff9fdf317162dd0415c07d0e7556e5abedb20f24b6e6a";
+      };
+      default = "r1";
     };
   };
 }

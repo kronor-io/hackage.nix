@@ -347,4 +347,16 @@
       default = "r0";
     };
   };
+  "0.21.0" = {
+    sha256 = "cf49dcb23baa68854dffb35ce8daed242ca2453cdf651bfd8a6d363988285941";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hledger-flow-0.21.0-r0-3d821c949f4db4ebe616e1700ab0333a510d83b8c19d38910f82771d3805d536.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-19T21:08:11Z";
+        sha256 = "3d821c949f4db4ebe616e1700ab0333a510d83b8c19d38910f82771d3805d536";
+      };
+      default = "r0";
+    };
+  };
 }
