@@ -32,7 +32,13 @@
         revTimestamp = "2026-11-19T21:31:37Z";
         sha256 = "c3463f79588e3ecc6c468bc841edb7fc5822ff43a341845bf361892d1d7a8426";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crypton-x509-store-1.10.2-r1-1bc536e5f6b30aa37d56d69b0e8ba4d5ea6929179deea6cbad4ad3c870339f45.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T00:43:23Z";
+        sha256 = "1bc536e5f6b30aa37d56d69b0e8ba4d5ea6929179deea6cbad4ad3c870339f45";
+      };
+      default = "r1";
     };
   };
   "1.6.10" = {

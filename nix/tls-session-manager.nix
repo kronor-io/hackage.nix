@@ -14,7 +14,13 @@
         revTimestamp = "2017-07-30T17:13:13Z";
         sha256 = "7974845d309a0d6574e595620e4abf0c1c0a4d28465cef4ac40caf76a7f814b4";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tls-session-manager-0.0.0.0-r2-52386ae623f31a0cbdd7588fba51d798eb42891aa6913ad4f51302e87bdda574.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-20T04:13:19Z";
+        sha256 = "52386ae623f31a0cbdd7588fba51d798eb42891aa6913ad4f51302e87bdda574";
+      };
+      default = "r2";
     };
   };
   "0.0.0.1" = {
@@ -32,7 +38,13 @@
         revTimestamp = "2017-07-30T16:58:21Z";
         sha256 = "015c52458b5669aa0055469b2a25382095e6bb28398a9ccf7070ce5db1ebd042";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/tls-session-manager-0.0.0.1-r2-e2c3a59a62113acbda2604db7daacb563855677e9f4e8100fb43481783b91589.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-20T04:13:19Z";
+        sha256 = "e2c3a59a62113acbda2604db7daacb563855677e9f4e8100fb43481783b91589";
+      };
+      default = "r2";
     };
   };
   "0.0.0.2" = {
@@ -44,7 +56,13 @@
         revTimestamp = "2017-12-08T02:54:23Z";
         sha256 = "e3d3f8a026196df46746a19d3d7d31211b2fca3aefed9074e951b2dcc1b8833c";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.0.0.2-r1-ad3262952f748744a40bd58ff5705cd70bdc1972286d20395878410732f1aa86.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:13:20Z";
+        sha256 = "ad3262952f748744a40bd58ff5705cd70bdc1972286d20395878410732f1aa86";
+      };
+      default = "r1";
     };
   };
   "0.0.1.0" = {
@@ -56,7 +74,13 @@
         revTimestamp = "2019-06-07T09:16:24Z";
         sha256 = "8e215d77171277b944d3caf938b0f3b734d0b32952157cee1f127188bf00f7ba";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.0.1.0-r1-596dfdaf38bcae28ec62e01617929d9705afdd34e334c66668c7fb022fa8a768.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:13:22Z";
+        sha256 = "596dfdaf38bcae28ec62e01617929d9705afdd34e334c66668c7fb022fa8a768";
+      };
+      default = "r1";
     };
   };
   "0.0.2.0" = {
@@ -68,7 +92,13 @@
         revTimestamp = "2019-06-25T04:56:05Z";
         sha256 = "2cae0a603082828ab9eed35bdb913dd8032cad28ca8603fb67181acbec87fbd7";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.0.2.0-r1-601f5134587083a67bb254ce1457d2a39b80f64709f373f8e8133ff06924a800.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:13:24Z";
+        sha256 = "601f5134587083a67bb254ce1457d2a39b80f64709f373f8e8133ff06924a800";
+      };
+      default = "r1";
     };
   };
   "0.0.2.1" = {
@@ -80,7 +110,13 @@
         revTimestamp = "2019-06-28T05:34:48Z";
         sha256 = "218c13f7405a86ec5e320bdd7058702d813c965385f5bcc9b6df9f191314df0b";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.0.2.1-r1-276a22ac047f41767d0ab5b5d4c5df41705e2cf75627865b7a1eea14212d8a87.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:13:25Z";
+        sha256 = "276a22ac047f41767d0ab5b5d4c5df41705e2cf75627865b7a1eea14212d8a87";
+      };
+      default = "r1";
     };
   };
   "0.0.3" = {
@@ -92,7 +128,13 @@
         revTimestamp = "2019-07-10T01:51:11Z";
         sha256 = "8d203f0503d50dba47d4e2251c374349afaeb4b44f54a5961500afb7506c51a8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.0.3-r1-892d19503467aade83c5be54454144bd3cf1d34c45c0b32a97942400e8f43172.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:13:25Z";
+        sha256 = "892d19503467aade83c5be54454144bd3cf1d34c45c0b32a97942400e8f43172";
+      };
+      default = "r1";
     };
   };
   "0.0.4" = {
@@ -229,6 +271,24 @@
         revNum = 0;
         revTimestamp = "2026-10-25T08:43:41Z";
         sha256 = "3ddd76bb0b961fb6c97c821122248761355c658c4bdcac98db290ef3181210d7";
+      };
+      r1 = {
+        nix = import ../hackage/tls-session-manager-0.1.2-r1-5af13b0abe30de6e561c862987d2baa22820c79a36bfb4c17a7666308d6a01c7.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T04:16:30Z";
+        sha256 = "5af13b0abe30de6e561c862987d2baa22820c79a36bfb4c17a7666308d6a01c7";
+      };
+      default = "r1";
+    };
+  };
+  "0.1.3" = {
+    sha256 = "62959b2b09093909fb6460d228bc898e057fabd0ec05839e98a956fbe1db5055";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/tls-session-manager-0.1.3-r0-1d1cfdd7f25acd97f2381d11c9948d5c9f660164300b86f131a29289873880cb.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-20T07:08:52Z";
+        sha256 = "1d1cfdd7f25acd97f2381d11c9948d5c9f660164300b86f131a29289873880cb";
       };
       default = "r0";
     };

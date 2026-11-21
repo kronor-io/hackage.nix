@@ -47,4 +47,16 @@
       default = "r0";
     };
   };
+  "0.1.6.0" = {
+    sha256 = "a15f725910e31bc83ca5a5b5ef98b7b5c5f767b671ac570334fe19ddbd922be8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/oglyad-0.1.6.0-r0-1d35460276b1737886c12c849a7be600c5e60c6ce25422e42170a2c9d2cbd571.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-20T06:18:45Z";
+        sha256 = "1d35460276b1737886c12c849a7be600c5e60c6ce25422e42170a2c9d2cbd571";
+      };
+      default = "r0";
+    };
+  };
 }

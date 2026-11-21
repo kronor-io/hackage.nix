@@ -56,7 +56,13 @@
         revTimestamp = "2026-11-06T02:29:25Z";
         sha256 = "e1f7072565d16eb563f9df42684098749a0d00fbf66287b9abecc2d4a1e9eff8";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/h3spec-0.1.15-r1-8c3db1813728a91b6ea9f06a81de890e533d568b81f39adc292895f50deeb744.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T05:53:14Z";
+        sha256 = "8c3db1813728a91b6ea9f06a81de890e533d568b81f39adc292895f50deeb744";
+      };
+      default = "r1";
     };
   };
 }

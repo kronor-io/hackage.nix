@@ -56,7 +56,13 @@
         revTimestamp = "2026-11-19T21:31:36Z";
         sha256 = "71270cd4ded3e5f650ab699ecdb80555a12824d99506691321bfae4503a7da43";
       };
-      default = "r0";
+      r1 = {
+        nix = import ../hackage/crypton-x509-1.11.0-r1-d91f6472f95342c4cc3e734358ac406f04550383debfaeb86e25043a6c8a5d6f.nix;
+        revNum = 1;
+        revTimestamp = "2026-11-20T00:43:23Z";
+        sha256 = "d91f6472f95342c4cc3e734358ac406f04550383debfaeb86e25043a6c8a5d6f";
+      };
+      default = "r1";
     };
   };
   "1.7.6" = {

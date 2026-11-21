@@ -86,7 +86,13 @@
         revTimestamp = "2026-11-01T21:04:38Z";
         sha256 = "3337bcdfe6027fc59bc3272c0bd7b4a3425bb6142a9a1108ac17fc4c9c3533c4";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/network-transport-quic-0.2.0-r2-093e9b6e979d4e835b6ed57b0df403fc2d0d1a052a9c73785c5c927be306f312.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-20T13:56:36Z";
+        sha256 = "093e9b6e979d4e835b6ed57b0df403fc2d0d1a052a9c73785c5c927be306f312";
+      };
+      default = "r2";
     };
   };
 }
