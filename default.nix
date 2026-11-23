@@ -18760,6 +18760,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "vinyl-utils" = import ./nix/vinyl-utils.nix;
   "vinyl-vectors" = import ./nix/vinyl-vectors.nix;
   "virthualenv" = import ./nix/virthualenv.nix;
+  "virustotal" = import ./nix/virustotal.nix;
   "visibility" = import ./nix/visibility.nix;
   "visie" = import ./nix/visie.nix;
   "vision" = import ./nix/vision.nix;
