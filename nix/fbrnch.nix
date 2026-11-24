@@ -347,4 +347,16 @@
       default = "r0";
     };
   };
+  "1.8.4" = {
+    sha256 = "0789d5e7e3b73e2f4e2f56e1670a0f21c93a46922a6d60f824ebb6b486d23c35";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/fbrnch-1.8.4-r0-afe21d7b592a651f600766650007bd1764532367d32a858d59148240eb1ab12b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-23T14:28:18Z";
+        sha256 = "afe21d7b592a651f600766650007bd1764532367d32a858d59148240eb1ab12b";
+      };
+      default = "r0";
+    };
+  };
 }

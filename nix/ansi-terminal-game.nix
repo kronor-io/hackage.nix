@@ -488,7 +488,13 @@
         revTimestamp = "2026-08-14T12:57:11Z";
         sha256 = "bedd7f56d778e6a9e4cb1d5609fc4f5f5e3955eabdd7863806bf298f0ce858f8";
       };
-      default = "r1";
+      r2 = {
+        nix = import ../hackage/ansi-terminal-game-1.9.4.0-r2-c0a088610858fb4d81a5d57ff42cbd60d7660a4784d4d78a13afcacf499cb7cc.nix;
+        revNum = 2;
+        revTimestamp = "2026-11-23T10:16:41Z";
+        sha256 = "c0a088610858fb4d81a5d57ff42cbd60d7660a4784d4d78a13afcacf499cb7cc";
+      };
+      default = "r2";
     };
   };
 }
