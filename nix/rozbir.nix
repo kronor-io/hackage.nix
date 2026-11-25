@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.1.0.1" = {
+    sha256 = "7425ea74826ace5078780097a8a3e44faa27f4f798f52c17c2a7eb8264a0e622";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/rozbir-0.1.0.1-r0-b725d4479a6139a03530922869ebcc9c5428359c2a40d41d6c3b18186b987c96.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-25T01:15:45Z";
+        sha256 = "b725d4479a6139a03530922869ebcc9c5428359c2a40d41d6c3b18186b987c96";
+      };
+      default = "r0";
+    };
+  };
 }
