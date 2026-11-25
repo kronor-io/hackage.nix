@@ -23,4 +23,16 @@
       default = "r0";
     };
   };
+  "0.1.2.0" = {
+    sha256 = "4108404aa17f0f8bf1643d4fa76ea43dd6ac1080e308eac26114a3b689caa39e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/mischief-render-0.1.2.0-r0-023e2333ef4f03ac27351ac9b01a7988da9f509e41f97aa88b11d1ea655a845c.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-24T00:58:04Z";
+        sha256 = "023e2333ef4f03ac27351ac9b01a7988da9f509e41f97aa88b11d1ea655a845c";
+      };
+      default = "r0";
+    };
+  };
 }

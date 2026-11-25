@@ -395,4 +395,28 @@
       default = "r0";
     };
   };
+  "0.1.5.1" = {
+    sha256 = "5b20bb8f9108f26ee413c0ce1ea4639fd70f10b9de1f79e99658da6623df92e1";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monoidmap-0.1.5.1-r0-a413a55916748ee8a49135b3f7568006e812bf7af0326a1c5a9789324b2e51af.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-24T04:43:20Z";
+        sha256 = "a413a55916748ee8a49135b3f7568006e812bf7af0326a1c5a9789324b2e51af";
+      };
+      default = "r0";
+    };
+  };
+  "0.2.0.0" = {
+    sha256 = "9bde468e88a9d925caa5035dfe5053fddb5f420827544fe4ad88c98cba7e0df7";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/monoidmap-0.2.0.0-r0-641bcfbfe1947aaa87373f5be203940f97eaafc321219fe9a3c572b48e64fca8.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-24T08:47:49Z";
+        sha256 = "641bcfbfe1947aaa87373f5be203940f97eaafc321219fe9a3c572b48e64fca8";
+      };
+      default = "r0";
+    };
+  };
 }

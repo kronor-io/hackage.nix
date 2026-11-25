@@ -11,4 +11,16 @@
       default = "r0";
     };
   };
+  "0.0.2" = {
+    sha256 = "250b91ecaf8017663dcec0c5cc950c5db9915ac540154368e62e1d1da2372b00";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/happy-arbitrary-0.0.2-r0-e485237872e09d70a2c0386610f041d0162994bcc02eac297d6714b507122d92.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-24T17:37:10Z";
+        sha256 = "e485237872e09d70a2c0386610f041d0162994bcc02eac297d6714b507122d92";
+      };
+      default = "r0";
+    };
+  };
 }
