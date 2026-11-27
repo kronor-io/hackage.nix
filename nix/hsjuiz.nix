@@ -155,4 +155,16 @@
       default = "r0";
     };
   };
+  "0.3.7" = {
+    sha256 = "a30eb68265f61acd6dd1ff027a4e1e2f2fb63926126a695a6ddd1fd53bab6b57";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hsjuiz-0.3.7-r0-a7089727b449b043553d71a0199c7f4ec9aebc9f57018b356f4425c5b9d603a3.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-26T04:47:33Z";
+        sha256 = "a7089727b449b043553d71a0199c7f4ec9aebc9f57018b356f4425c5b9d603a3";
+      };
+      default = "r0";
+    };
+  };
 }

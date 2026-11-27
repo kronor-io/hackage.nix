@@ -3438,6 +3438,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "carbonara" = import ./nix/carbonara.nix;
   "carboncopy" = import ./nix/carboncopy.nix;
   "cardano-addresses" = import ./nix/cardano-addresses.nix;
+  "cardano-c-clib" = import ./nix/cardano-c-clib.nix;
   "cardano-coin-selection" = import ./nix/cardano-coin-selection.nix;
   "cardano-crypto" = import ./nix/cardano-crypto.nix;
   "cardano-transactions" = import ./nix/cardano-transactions.nix;
@@ -3954,6 +3955,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "combinatorics" = import ./nix/combinatorics.nix;
   "combinators" = import ./nix/combinators.nix;
   "combobuffer" = import ./nix/combobuffer.nix;
+  "cometa" = import ./nix/cometa.nix;
   "comfort-array" = import ./nix/comfort-array.nix;
   "comfort-array-shape" = import ./nix/comfort-array-shape.nix;
   "comfort-blas" = import ./nix/comfort-blas.nix;
@@ -12550,6 +12552,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "nri-test-encoding" = import ./nix/nri-test-encoding.nix;
   "nsis" = import ./nix/nsis.nix;
   "nspace" = import ./nix/nspace.nix;
+  "ntfs" = import ./nix/ntfs.nix;
   "nth-prime" = import ./nix/nth-prime.nix;
   "ntha" = import ./nix/ntha.nix;
   "nthable" = import ./nix/nthable.nix;
@@ -16353,6 +16356,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "sq" = import ./nix/sq.nix;
   "sqel" = import ./nix/sqel.nix;
   "sqids" = import ./nix/sqids.nix;
+  "sqiff" = import ./nix/sqiff.nix;
   "sqint" = import ./nix/sqint.nix;
   "sqitch-plan" = import ./nix/sqitch-plan.nix;
   "sql-simple" = import ./nix/sql-simple.nix;

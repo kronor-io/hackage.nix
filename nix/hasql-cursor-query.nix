@@ -167,4 +167,16 @@
       default = "r0";
     };
   };
+  "0.4.5.5" = {
+    sha256 = "ad7d0ee1519e499a5be0a11f53370044a8f40c6d6557a51c6bac6e94ce72fbd8";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/hasql-cursor-query-0.4.5.5-r0-c16238d42fc5344b4094c235484d3be283386ad46dbe235c7a58c1ece9775936.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-26T13:12:45Z";
+        sha256 = "c16238d42fc5344b4094c235484d3be283386ad46dbe235c7a58c1ece9775936";
+      };
+      default = "r0";
+    };
+  };
 }
