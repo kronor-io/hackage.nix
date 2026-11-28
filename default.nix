@@ -5858,6 +5858,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "exceptions" = import ./nix/exceptions.nix;
   "exceptiot" = import ./nix/exceptiot.nix;
   "exchangealgebra" = import ./nix/exchangealgebra.nix;
+  "exchangealgebra-einvoice" = import ./nix/exchangealgebra-einvoice.nix;
   "exchangerates" = import ./nix/exchangerates.nix;
   "execs" = import ./nix/execs.nix;
   "executable-hash" = import ./nix/executable-hash.nix;
@@ -8819,6 +8820,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "hooks-dir" = import ./nix/hooks-dir.nix;
   "hooks-exe" = import ./nix/hooks-exe.nix;
   "hookup" = import ./nix/hookup.nix;
+  "hooky" = import ./nix/hooky.nix;
   "hoop" = import ./nix/hoop.nix;
   "hoopl" = import ./nix/hoopl.nix;
   "hoovie" = import ./nix/hoovie.nix;
@@ -10928,6 +10930,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "linear-tests" = import ./nix/linear-tests.nix;
   "linear-vect" = import ./nix/linear-vect.nix;
   "linearEqSolver" = import ./nix/linear_Eq_Solver.nix;
+  "linearizable" = import ./nix/linearizable.nix;
   "linearmap-category" = import ./nix/linearmap-category.nix;
   "linearscan" = import ./nix/linearscan.nix;
   "linearscan-hoopl" = import ./nix/linearscan-hoopl.nix;
@@ -13350,6 +13353,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "pgrep" = import ./nix/pgrep.nix;
   "pgsql-simple" = import ./nix/pgsql-simple.nix;
   "pgstream" = import ./nix/pgstream.nix;
+  "pgstyle" = import ./nix/pgstyle.nix;
   "pgvector" = import ./nix/pgvector.nix;
   "phantom-state" = import ./nix/phantom-state.nix;
   "phasechange" = import ./nix/phasechange.nix;
@@ -14423,6 +14427,9 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "radixtree" = import ./nix/radixtree.nix;
   "rados-haskell" = import ./nix/rados-haskell.nix;
   "raft" = import ./nix/raft.nix;
+  "raft-consensus" = import ./nix/raft-consensus.nix;
+  "raft-consensus-distributed-process" = import ./nix/raft-consensus-distributed-process.nix;
+  "raft-consensus-wal" = import ./nix/raft-consensus-wal.nix;
   "rail-compiler-editor" = import ./nix/rail-compiler-editor.nix;
   "railroad" = import ./nix/railroad.nix;
   "rails-session" = import ./nix/rails-session.nix;
@@ -15838,6 +15845,9 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "shpider" = import ./nix/shpider.nix;
   "shplit" = import ./nix/shplit.nix;
   "shqq" = import ./nix/shqq.nix;
+  "shroom" = import ./nix/shroom.nix;
+  "shroom-baikai" = import ./nix/shroom-baikai.nix;
+  "shroom-class" = import ./nix/shroom-class.nix;
   "shuffle" = import ./nix/shuffle.nix;
   "shunya-library" = import ./nix/shunya-library.nix;
   "shunyalib" = import ./nix/shunyalib.nix;
@@ -18949,6 +18959,7 @@ with builtins; mapAttrs (_: mapAttrs (_: data: rec {
   "waitra" = import ./nix/waitra.nix;
   "waiz" = import ./nix/waiz.nix;
   "wakame" = import ./nix/wakame.nix;
+  "wal" = import ./nix/wal.nix;
   "waldo" = import ./nix/waldo.nix;
   "wallpaper" = import ./nix/wallpaper.nix;
   "warc" = import ./nix/warc.nix;

@@ -161,4 +161,16 @@
       default = "r0";
     };
   };
+  "1.0.0" = {
+    sha256 = "722e3bc4371c6d480d6dc3cad9dec47c3dbd207d77dd6bcff5d0af21190dca90";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/cabal-flatpak-1.0.0-r0-ce423a77a9b15bc24737833baaefcd4d32f3d8acef2591181492afca09e5460b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-27T13:25:50Z";
+        sha256 = "ce423a77a9b15bc24737833baaefcd4d32f3d8acef2591181492afca09e5460b";
+      };
+      default = "r0";
+    };
+  };
 }

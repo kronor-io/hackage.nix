@@ -23,4 +23,28 @@
       default = "r0";
     };
   };
+  "0.1.0.2" = {
+    sha256 = "670d4f4450b8d5b9669f350c139484701635f02c76f30f97559b748b653ae89e";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ntfs-0.1.0.2-r0-2347ad4eb0a901156fe207551bab300bd75ae0ef5ce6fb20811fee638c23e55b.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-27T00:25:16Z";
+        sha256 = "2347ad4eb0a901156fe207551bab300bd75ae0ef5ce6fb20811fee638c23e55b";
+      };
+      default = "r0";
+    };
+  };
+  "0.1.1.0" = {
+    sha256 = "4c56fbb72eeca84900197d2f63340f1f72e334dcfb00e86a6f979b94a8cb20f3";
+    revisions = {
+      r0 = {
+        nix = import ../hackage/ntfs-0.1.1.0-r0-46c92aba5123162910430b8c5662c2b05e602bfab9182bbc27b0497fa6fb10a2.nix;
+        revNum = 0;
+        revTimestamp = "2026-11-27T01:33:26Z";
+        sha256 = "46c92aba5123162910430b8c5662c2b05e602bfab9182bbc27b0497fa6fb10a2";
+      };
+      default = "r0";
+    };
+  };
 }
